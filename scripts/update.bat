@@ -1,5 +1,5 @@
-e:
-cd qgis\qWat
+c:
+cd qgep_sige
 git stash
 git pull
 pause
