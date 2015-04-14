@@ -1,4 +1,4 @@
-.log
-.ffs
-.recover
+*.log
+*.ffs
+*.recover
 
