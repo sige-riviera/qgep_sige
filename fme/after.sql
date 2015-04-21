@@ -26,3 +26,12 @@ FROM qgep.od_wastewater_node no WHERE no.situation_geometry = rp.situation_geome
 
 REFRESH MATERIALIZED VIEW qgep.vw_network_segment ;
 REFRESH MATERIALIZED VIEW qgep.vw_network_node ;
+
+
+
+UPDATE qgep.od_manhole
+   SET _usage_current=(SELECT usage_current FROM qgep.manhole_symbology_attribs(obj_id)),
+       _function_hierarchic=(SELECT function_hierarchic FROM qgep.manhole_symbology_attribs(obj_id))
+;
+-- set manhole orientation to zero where it isn't already set
+UPDATE qgep.od_manhole SET _orientation = 0 WHERE _orientation IS NULL;
