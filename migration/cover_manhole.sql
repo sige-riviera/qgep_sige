@@ -30,6 +30,6 @@ SELECT
 --  geometry,
   Z1
 FROM sa.aw_schacht_deckel deckel
-LEFT JOIN sa.aw_schact schacht ON deckel.fid_schacht = schacht.fid
+LEFT JOIN sa.aw_schacht schacht ON deckel.fid_schacht = schacht.fid
 LEFT JOIN sa.aw_schacht_deckel_geo deckel_geo ON deckel_geo.fid = deckel.fid
 WHERE deckel.deleted IS NOT NULL AND schacht.deleted IS NOT NULL
