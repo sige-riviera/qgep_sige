@@ -11,7 +11,7 @@
   location_name,
   remark,
   ws_remark,
---  node_geometry,
+  situation_geometry,
   level
 )
 
@@ -27,7 +27,7 @@ SELECT
   ortsbezeichnung,
   deckel.bemerkung,
   substr(schacht.bemerkung, 1, 80),
---  geometry,
+  ST_SetSRID(ST_Point( deckel_geo.x1, deckel_geo.y1 ), 21781 ),
   Z1
 FROM sa.aw_schacht_deckel deckel
 LEFT JOIN sa.aw_schacht schacht ON deckel.fid_schacht = schacht.fid
