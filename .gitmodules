@@ -1,0 +1,3 @@
+[submodule "QGEP-Datamodel"]
+	path = QGEP-Datamodel
+	url = git@github.com:QGEP/QGEP-Datamodel.git
