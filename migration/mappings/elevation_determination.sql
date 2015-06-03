@@ -21,44 +21,37 @@ SET default_with_oids = false;
 
 --
 -- TOC entry 584 (class 1259 OID 484607)
--- Name: map_manhole_function; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
+-- Name: map_elevation_determination; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
 --
 
-CREATE TABLE map_manhole_function (
+CREATE TABLE map_elevation_determination (
     old integer NOT NULL,
     new integer
 );
 
 
-ALTER TABLE sa.map_manhole_function OWNER TO postgres;
+ALTER TABLE sa.map_elevation_determination OWNER TO postgres;
 
 --
 -- TOC entry 5386 (class 0 OID 484607)
 -- Dependencies: 584
--- Data for Name: map_manhole_function; Type: TABLE DATA; Schema: sa; Owner: postgres
+-- Data for Name: map_elevation_determination; Type: TABLE DATA; Schema: sa; Owner: postgres
 --
 
-COPY map_manhole_function (old, new) FROM stdin;
-10005	204
-10006	204
-10003	204
-10002	4536
-3	4532
-14	204
-24	4536
-26	5346
-36	\N
-38	5345
+COPY map_elevation_determination (old, new) FROM stdin;
+1	4780
+2	4779
+3	4778
 \.
 
 
 --
 -- TOC entry 5228 (class 2606 OID 484611)
--- Name: map_manhole_function_pkey; Type: CONSTRAINT; Schema: sa; Owner: postgres; Tablespace: 
+-- Name: map_elevation_determination_pkey; Type: CONSTRAINT; Schema: sa; Owner: postgres; Tablespace: 
 --
 
-ALTER TABLE ONLY map_manhole_function
-    ADD CONSTRAINT map_manhole_function_pkey PRIMARY KEY (old);
+ALTER TABLE ONLY map_elevation_determination
+    ADD CONSTRAINT map_elevation_determination_pkey PRIMARY KEY (old);
 
 
 -- Completed on 2015-06-02 18:12:52 CEST

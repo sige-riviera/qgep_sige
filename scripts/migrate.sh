@@ -24,10 +24,15 @@ psql -f ${DIR}/migration/mappings/reach_horizontal_positioning.sql
 psql -f ${DIR}/migration/mappings/manhole_function.sql
 psql -f ${DIR}/migration/mappings/usage_current.sql
 psql -f ${DIR}/migration/mappings/status.sql
+psql -f ${DIR}/migration/mappings/reach_material.sql
+psql -f ${DIR}/migration/mappings/elevation_determination.sql
+psql -f ${DIR}/migration/mappings/function_hydraulic.sql
 
 psql -f ${DIR}/migration/organisations.sql
 psql -f ${DIR}/migration/cover_manhole.sql
 psql -f ${DIR}/migration/profiles.sql
 psql -f ${DIR}/migration/reach_channel.sql
+
+psql -f ${DIR}/migration/90_create_topology.sql
 
 OWNER=qgep SCHEMA=qgep DATABASE=qgep_sige ${DIR}/QGEP-Datamodel/scripts/change_owner.sh

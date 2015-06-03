@@ -12,7 +12,10 @@ INSERT INTO qgep.vw_qgep_reach(
   horizontal_positioning,
   clear_height,
   fk_pipe_profile,
-  usage_current
+  usage_current,
+  material,
+  function_hydraulic,
+  elevation_determination
 )
 SELECT
   name2,
@@ -25,7 +28,10 @@ SELECT
   hp.new,
   NULLIF(COALESCE(profil_hoehe, profil_breite), 0),
   pp.obj_id,
-  uc.new
+  uc.new,
+  rm.new,
+  fhy.new,
+  ed.new
   
 FROM sa.aw_haltung haltung
 LEFT JOIN haltung_geo geom on geom.gid = haltung.fid
@@ -45,4 +51,9 @@ LEFT JOIN qgep.od_pipe_profile pp ON pp.profile_type =
      WHEN pa.id=7 THEN 3353
   END
   AND pp.height_width_ratio = COALESCE(round(NULLIF(haltung.profil_hoehe, 0)/haltung.profil_breite, 2),1)
+
+LEFT JOIN sa.map_reach_material rm ON haltung.id_material = rm.old
+LEFT JOIN sa.map_function_hydraulic fhy ON haltung.id_funktion_hydrau = fhy.old
+LEFT JOIN sa.map_elevation_determination ed ON haltung.id_hoehengenauigkeit = ed.old
+
 WHERE haltung.deleted <> 1;

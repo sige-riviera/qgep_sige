@@ -21,44 +21,37 @@ SET default_with_oids = false;
 
 --
 -- TOC entry 584 (class 1259 OID 484607)
--- Name: map_manhole_function; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
+-- Name: map_function_hydraulic; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
 --
 
-CREATE TABLE map_manhole_function (
+CREATE TABLE map_function_hydraulic (
     old integer NOT NULL,
-    new integer
+    new integer NOT NULL
 );
 
 
-ALTER TABLE sa.map_manhole_function OWNER TO postgres;
+ALTER TABLE sa.map_function_hydraulic OWNER TO postgres;
 
 --
 -- TOC entry 5386 (class 0 OID 484607)
 -- Dependencies: 584
--- Data for Name: map_manhole_function; Type: TABLE DATA; Schema: sa; Owner: postgres
+-- Data for Name: map_function_hydraulic; Type: TABLE DATA; Schema: sa; Owner: postgres
 --
 
-COPY map_manhole_function (old, new) FROM stdin;
-10005	204
-10006	204
-10003	204
-10002	4536
-3	4532
-14	204
-24	4536
-26	5346
-36	\N
-38	5345
+COPY map_function_hydraulic (old, new) FROM stdin;
+2	23
+5	367
+10	5321
 \.
 
 
 --
 -- TOC entry 5228 (class 2606 OID 484611)
--- Name: map_manhole_function_pkey; Type: CONSTRAINT; Schema: sa; Owner: postgres; Tablespace: 
+-- Name: map_function_hydraulic_pkey; Type: CONSTRAINT; Schema: sa; Owner: postgres; Tablespace: 
 --
 
-ALTER TABLE ONLY map_manhole_function
-    ADD CONSTRAINT map_manhole_function_pkey PRIMARY KEY (old);
+ALTER TABLE ONLY map_function_hydraulic
+    ADD CONSTRAINT map_function_hydraulic_pkey PRIMARY KEY (old, new);
 
 
 -- Completed on 2015-06-02 18:12:52 CEST
