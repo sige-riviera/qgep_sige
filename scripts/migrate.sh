@@ -22,6 +22,7 @@ psql -c 'ALTER SCHEMA sige_assainissement RENAME TO sa'
 psql -f ${DIR}/migration/mappings/function_hierarchic.sql
 psql -f ${DIR}/migration/mappings/reach_horizontal_positioning.sql
 psql -f ${DIR}/migration/mappings/manhole_function.sql
+psql -f ${DIR}/migration/mappings/usage_current.sql
 
 psql -f ${DIR}/migration/organisations.sql
 psql -f ${DIR}/migration/cover_manhole.sql

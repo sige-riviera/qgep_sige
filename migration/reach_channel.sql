@@ -11,7 +11,8 @@ INSERT INTO qgep.vw_qgep_reach(
   function_hierarchic,
   horizontal_positioning,
   clear_height,
-  fk_pipe_profile
+  fk_pipe_profile,
+  usage_current
 )
 SELECT
   name2,
@@ -23,13 +24,17 @@ SELECT
   fh.new,
   hp.new,
   NULLIF(COALESCE(profil_hoehe, profil_breite), 0),
-  pp.obj_id
+  pp.obj_id,
+  uc.new
   
 FROM sa.aw_haltung haltung
 LEFT JOIN haltung_geo geom on geom.gid = haltung.fid
 LEFT JOIN sa.map_function_hierarchic fh ON haltung.id_funktion_hierarch = fh.old
 LEFT JOIN sa.map_horizontal_positioning hp ON haltung.id_lagegenauigkeit = hp.old
+LEFT JOIN sa.map_usage_current uc ON haltung.id_nutzungs_art = uc.old
 LEFT JOIN sa.aw_profilart_tbd pa ON pa.id = haltung.id_profilart
+-- Join the profile based on it's type and the height/width-ratio
+-- This code has to match the code in profiles.sql
 LEFT JOIN qgep.od_pipe_profile pp ON pp.profile_type =
   CASE WHEN pa.id=1 THEN 5377
      WHEN pa.id=2 THEN 3350
