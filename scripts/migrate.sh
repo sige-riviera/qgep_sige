@@ -27,6 +27,7 @@ psql -f ${DIR}/migration/mappings/status.sql
 psql -f ${DIR}/migration/mappings/reach_material.sql
 psql -f ${DIR}/migration/mappings/elevation_determination.sql
 psql -f ${DIR}/migration/mappings/function_hydraulic.sql
+psql -f ${DIR}/migration/mappings/access_aid_kind.sql
 
 psql -f ${DIR}/migration/organisations.sql
 psql -f ${DIR}/migration/cover_manhole.sql
