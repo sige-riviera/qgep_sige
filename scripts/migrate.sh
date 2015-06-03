@@ -20,6 +20,11 @@ pg_restore -d qgep_sige ${DIR}/migration/dump_topobase.backup
 psql -c 'ALTER SCHEMA sige_assainissement RENAME TO sa' -d qgep_sige
 
 psql -d qgep_sige -f ${DIR}/migration/mappings/function_hierarchic.sql
+psql -d qgep_sige -f ${DIR}/migration/mappings/reach_horizontal_positioning.sql
+psql -d qgep_sige -f ${DIR}/migration/mappings/manhole_function.sql
 
+psql -d qgep_sige -f ${DIR}/migration/organisations.sql
 psql -d qgep_sige -f ${DIR}/migration/cover_manhole.sql
 psql -d qgep_sige -f ${DIR}/migration/reach_channel.sql
+
+OWNER=qgep SCHEMA=qgep DATABASE=qgep_sige ${DIR}/QGEP-Datamodel/scripts/change_owner.sh

@@ -8,7 +8,9 @@ INSERT INTO qgep.vw_qgep_reach(
   year_of_construction,
   slope_per_mill, -- == gefaelle?
   progression_geometry,
-  function_hierarchic
+  function_hierarchic,
+  horizontal_positioning,
+  width
 )
 SELECT
   name2,
@@ -17,9 +19,12 @@ SELECT
   baujahr,
   gefaelle,
   geometry,
-  fh.new
+  fh.new,
+  hp.new,
+  profil_breite
   
 FROM sa.aw_haltung haltung
 LEFT JOIN haltung_geo geom on geom.gid = haltung.fid
 LEFT JOIN sa.map_function_hierarchic fh ON haltung.id_funktion_hierarch = fh.old
+LEFT JOIN sa.map_horizontal_positioning hp ON haltung.id_lagegenauigkeit = hp.old
 WHERE haltung.deleted <> 1;
