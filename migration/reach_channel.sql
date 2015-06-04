@@ -34,7 +34,7 @@ SELECT
   ed.new
   
 FROM sa.aw_haltung haltung
-LEFT JOIN haltung_geo geom on geom.gid = haltung.fid
+LEFT JOIN haltung_geo geom on geom.gid = haltung.gid
 LEFT JOIN sa.map_function_hierarchic fh ON haltung.id_funktion_hierarch = fh.old
 LEFT JOIN sa.map_horizontal_positioning hp ON haltung.id_lagegenauigkeit = hp.old
 LEFT JOIN sa.map_usage_current uc ON haltung.id_nutzungs_art = uc.old
