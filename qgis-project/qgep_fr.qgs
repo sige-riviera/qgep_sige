@@ -222,9 +222,9 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>549542.92656061053276062</xmin>
+      <xmin>549511.42376736970618367</xmin>
       <ymin>133163.61238760501146317</ymin>
-      <xmax>563610.08227900951169431</xmax>
+      <xmax>563610.8506398203317076</xmax>
       <ymax>153126.51698945497628301</ymax>
     </extent>
     <rotation>0</rotation>
@@ -7704,7 +7704,7 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>vw_qgep_reach</id>
       <datasource>service='pg_qgep_sige' key='obj_id' srid=21781 type=LineString table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
       <title></title>
@@ -8644,7 +8644,7 @@
         <property key="labeling/bufferColorB" value="255"/>
         <property key="labeling/bufferColorG" value="255"/>
         <property key="labeling/bufferColorR" value="255"/>
-        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferDraw" value="true"/>
         <property key="labeling/bufferJoinStyle" value="64"/>
         <property key="labeling/bufferNoFill" value="false"/>
         <property key="labeling/bufferSize" value="1"/>
@@ -8806,7 +8806,7 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" font="Cantarell,11,-1,5,50,0,0,0,0,0" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" font="Cantarell,11,-1,5,50,0,0,0,0,0" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
@@ -8999,7 +8999,7 @@
           </attributeEditorContainer>
         </attributeEditorContainer>
         <attributeEditorContainer name="Maintenance">
-          <attributeEditorRelation relation="" name="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_reach20141013202956655_ws_obj_id"/>
+          <attributeEditorRelation relation="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_reach20141013202956655_ws_obj_id" name="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_reach20141013202956655_ws_obj_id"/>
         </attributeEditorContainer>
       </attributeEditorForm>
       <attributeactions/>
