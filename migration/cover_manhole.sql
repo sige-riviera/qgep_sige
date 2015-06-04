@@ -81,6 +81,18 @@ LEFT JOIN qgep.od_wastewater_structure ws ON schacht.fid::text = ws.identifier
 WHERE id_einstieghilfe IS NOT NULL;
 
 -------------------------
+-- BACKFLOW PREVENTION
+-------------------------
+INSERT INTO qgep.vw_backflow_prevention(
+  kind,
+  fk_wastewater_structure
+)
+SELECT 5757, ws.obj_id -- 5757: backflow_flap
+FROM sa.aw_schacht schacht
+LEFT JOIN qgep.od_wastewater_structure ws ON schacht.fid::text = ws.identifier
+WHERE id_schachtart = 10006;
+
+-------------------------
 -- FIX ws.identifier
 -------------------------
 
