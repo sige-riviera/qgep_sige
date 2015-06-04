@@ -25,7 +25,7 @@ SELECT
   gefaelle,
   geometry,
   fh.new,
-  hp.new,
+  COALESCE(hp.new, 5379),
   NULLIF(COALESCE(profil_hoehe, profil_breite), 0),
   pp.obj_id,
   uc.new,
