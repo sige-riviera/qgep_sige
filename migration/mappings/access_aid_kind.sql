@@ -43,8 +43,8 @@ COPY map_access_aid_kind (old, new) FROM stdin;
 2	91
 3	92
 4	241
-6	3473
-7	3048
+5	3473
+6	3048
 \.
 
 
