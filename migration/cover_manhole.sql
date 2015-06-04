@@ -40,7 +40,8 @@ INSERT INTO qgep.vw_qgep_cover
   level,
   manhole_function,
   status,
-  ws_identifier
+  ws_identifier,
+  fk_owner
 )
 
 SELECT
@@ -59,12 +60,15 @@ SELECT
   Z1,
   CASE WHEN id_aeration=1 THEN 4533 ELSE mf.new END,
   st.new,
-  schacht.fid
+  schacht.fid,
+  org.obj_id
 FROM sa.aw_schacht_deckel deckel
 LEFT JOIN sa.aw_schacht schacht ON deckel.fid_schacht = schacht.fid
 LEFT JOIN sa.aw_schacht_deckel_geo deckel_geo ON deckel_geo.gid = deckel.gid
 LEFT JOIN sa.map_manhole_function mf ON schacht.id_schachtart = mf.old
 LEFT JOIN sa.map_status st ON schacht.id_status = st.old
+LEFT JOIN sa.ba_eigentumsverhaeltnis_tbd ev ON ev.id = schacht.id_eigentumsverhaeltnis
+LEFT JOIN qgep.od_organisation org ON org.identifier = ev.value
 WHERE COALESCE(deckel.deleted, 0) = 0 AND COALESCE(schacht.deleted, 0) = 0;
 
 -------------------------

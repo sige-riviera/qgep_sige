@@ -17,7 +17,8 @@ INSERT INTO qgep.vw_qgep_reach(
   function_hydraulic,
   elevation_determination,
   rp_from_level,
-  rp_to_level
+  rp_to_level,
+  fk_owner
 )
 SELECT
   haltung.name,
@@ -35,7 +36,8 @@ SELECT
   fhy.new,
   ed.new,
   rp_from_level,
-  rp_to_level
+  rp_to_level,
+  org.obj_id
   
 FROM sa.aw_haltung haltung
 LEFT JOIN haltung_geo geom on geom.gid = haltung.gid
@@ -59,5 +61,7 @@ LEFT JOIN qgep.od_pipe_profile pp ON pp.profile_type =
 LEFT JOIN sa.map_reach_material rm ON haltung.id_material = rm.old
 LEFT JOIN sa.map_function_hydraulic fhy ON haltung.id_funktion_hydrau = fhy.old
 LEFT JOIN sa.map_elevation_determination ed ON haltung.id_hoehengenauigkeit = ed.old
+LEFT JOIN sa.ba_eigentumsverhaeltnis_tbd ev ON ev.id = schacht.id_eigentumsverhaeltnis
+LEFT JOIN qgep.od_organisation org ON org.identifier = ev.value
 
 WHERE COALESCE(haltung.deleted, 0) = 0;
