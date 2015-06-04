@@ -18,7 +18,7 @@ INSERT INTO qgep.vw_qgep_reach(
   elevation_determination
 )
 SELECT
-  name2,
+  haltung.name,
   bemerkung,
   haltungslaenge,
   baujahr,
