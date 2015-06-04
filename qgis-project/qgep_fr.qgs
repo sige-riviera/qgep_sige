@@ -3,12 +3,6 @@
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_reach" name="vw_qgep_reach">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_cover" name="vw_qgep_cover">
-      <customproperties/>
-    </layer-tree-layer>
     <layer-tree-group expanded="0" checked="Qt::Checked" name="Value Lists">
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Discharge Point">
@@ -149,43 +143,49 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_pipe_profile" name="od_pipe_profile">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_pipe_profile" name="profil de tuyau">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
     <layer-tree-group expanded="0" checked="Qt::Checked" name="Wastewater Structures">
       <customproperties/>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Structure Parts">
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="Structure Parts">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_access_aid" name="vw_access_aid">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_access_aid" name="dispositif d'accès">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_backflow_prevention" name="vw_backflow_prevention">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_backflow_prevention" name="protection contre le refoulement">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_benching" name="vw_benching">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_benching" name="banquette">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_cover___" name="vw_cover">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_cover___" name="couvercle">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_dryweather_downspout" name="vw_dryweather_downspout">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_dryweather_downspout" name="tuyau de chute par temps sec">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_dryweather_flume" name="vw_dryweather_flume">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_dryweather_flume" name="cunette de débit temps sec">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_wastewater_structure" name="od_wastewater_structure">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_wastewater_structure" name="ouvrage">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_channel_" name="vw_channel">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_channel_" name="canalisation">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_maintenance_event" name="od_maintenance_event">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_maintenance_event" name="évènement de maintenance">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_reach" name="qgep_tronçon">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_cover" name="qgep_couvercle">
+      <customproperties/>
+    </layer-tree-layer>
   </layer-tree-group>
   <relations>
     <relation referencingLayer="od_maintenance_event" referencedLayer="vw_qgep_cover" id="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_qgep_cover_obj_id" name="Maintenances">
@@ -334,16 +334,6 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="vw_qgep_reach" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="vw_qgep_reach" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="vw_qgep_cover" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="vw_qgep_cover" visible="1"/>
-      </filegroup>
-    </legendlayer>
     <legendgroup open="false" checked="Qt::Checked" name="Value Lists">
       <legendgroup open="false" checked="Qt::Checked" name="Discharge Point">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Relevance" showFeatureCount="0">
@@ -542,61 +532,71 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_pipe_profile" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="profil de tuyau" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_pipe_profile" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
     <legendgroup open="false" checked="Qt::Checked" name="Wastewater Structures">
-      <legendgroup open="false" checked="Qt::Checked" name="Structure Parts">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_access_aid" showFeatureCount="0">
+      <legendgroup open="true" checked="Qt::Checked" name="Structure Parts">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="dispositif d'accès" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_access_aid" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_backflow_prevention" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="protection contre le refoulement" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_backflow_prevention" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_benching" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="banquette" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_benching" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_cover" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="couvercle" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_cover___" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_dryweather_downspout" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="tuyau de chute par temps sec" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_dryweather_downspout" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_dryweather_flume" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="cunette de débit temps sec" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_dryweather_flume" visible="1"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_wastewater_structure" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ouvrage" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_wastewater_structure" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_channel" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="canalisation" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_channel_" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_maintenance_event" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="évènement de maintenance" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_maintenance_event" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="qgep_tronçon" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="vw_qgep_reach" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="qgep_couvercle" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="vw_qgep_cover" visible="1"/>
+      </filegroup>
+    </legendlayer>
   </legend>
   <projectlayers layercount="47">
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
@@ -607,7 +607,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>od_maintenance_event</layername>
+      <layername>évènement de maintenance</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -622,7 +622,7 @@
       </srs>
       <customproperties/>
       <provider encoding="System">postgres</provider>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE("obj_id", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <expressionfields/>
       <map-layer-style-manager current="">
@@ -690,15 +690,15 @@
         <alias field="base_data" index="1" name="base_information"/>
         <alias field="cost" index="2" name="couts"/>
         <alias field="data_details" index="3" name="donnees_detaillees"/>
-        <alias field="dataowner" index="14" name=""/>
+        <alias field="dataowner" index="14" name="propriétaire de la donnée"/>
         <alias field="duration" index="4" name="duree"/>
-        <alias field="fk_wastewater_structure" index="16" name=""/>
+        <alias field="fk_wastewater_structure" index="16" name="ouvrage"/>
         <alias field="identifier" index="5" name="designation"/>
         <alias field="kind" index="6" name="genre"/>
-        <alias field="last_modification" index="13" name=""/>
-        <alias field="obj_id" index="0" name=""/>
+        <alias field="last_modification" index="13" name="dernière modification"/>
+        <alias field="obj_id" index="0" name="obj_id"/>
         <alias field="operator" index="7" name="executant"/>
-        <alias field="provider" index="15" name=""/>
+        <alias field="provider" index="15" name="fournisseur des données"/>
         <alias field="reason" index="8" name="causes"/>
         <alias field="remark" index="9" name="remarque"/>
         <alias field="result" index="10" name="resultat"/>
@@ -770,7 +770,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>od_pipe_profile</layername>
+      <layername>profil de tuyau</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -823,13 +823,13 @@
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <aliases>
-        <alias field="dataowner" index="6" name=""/>
+        <alias field="dataowner" index="6" name="propriétaire de la donnée"/>
         <alias field="height_width_ratio" index="1" name="rapport_hauteur_largeur"/>
         <alias field="identifier" index="2" name="designation"/>
-        <alias field="last_modification" index="5" name=""/>
-        <alias field="obj_id" index="0" name=""/>
+        <alias field="last_modification" index="5" name="dernière modification"/>
+        <alias field="obj_id" index="0" name="obj_id"/>
         <alias field="profile_type" index="3" name="type_profil"/>
-        <alias field="provider" index="7" name=""/>
+        <alias field="provider" index="7" name="fournisseur des données"/>
         <alias field="remark" index="4" name="remarque"/>
       </aliases>
       <excludeAttributesWMS/>
@@ -870,7 +870,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>od_wastewater_structure</layername>
+      <layername>ouvrage</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
@@ -1190,22 +1190,22 @@
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <aliases>
-        <alias field="_function_hierarchic" index="26" name=""/>
-        <alias field="_usage_current" index="25" name=""/>
+        <alias field="_function_hierarchic" index="26" name="fonction hiérarchique"/>
+        <alias field="_usage_current" index="25" name="utilisation actuelle"/>
         <alias field="accessibility" index="1" name="acces"/>
         <alias field="contract_section" index="2" name="lot_construction"/>
-        <alias field="dataowner" index="21" name=""/>
+        <alias field="dataowner" index="21" name="propriétaire de la donnée"/>
         <alias field="detail_geometry_3d_geometry" index="3" name=""/>
         <alias field="financing" index="4" name="financement"/>
-        <alias field="fk_operator" index="24" name=""/>
-        <alias field="fk_owner" index="23" name=""/>
+        <alias field="fk_operator" index="24" name="opérateur"/>
+        <alias field="fk_owner" index="23" name="propriétaire"/>
         <alias field="gross_costs" index="5" name="couts_bruts"/>
         <alias field="identifier" index="6" name="designation"/>
         <alias field="inspection_interval" index="7" name="intervalle_inspection"/>
-        <alias field="last_modification" index="20" name=""/>
+        <alias field="last_modification" index="20" name="dernière modification"/>
         <alias field="location_name" index="8" name="lieu_dit"/>
-        <alias field="obj_id" index="0" name=""/>
-        <alias field="provider" index="22" name=""/>
+        <alias field="obj_id" index="0" name="obj_id"/>
+        <alias field="provider" index="22" name="fournisseur des données"/>
         <alias field="records" index="9" name="dossier"/>
         <alias field="remark" index="10" name="remarque"/>
         <alias field="renovation_necessity" index="11" name="necessite_assainir"/>
@@ -4475,7 +4475,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_access_aid</layername>
+      <layername>dispositif d'accès</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -4531,13 +4531,13 @@
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <aliases>
-        <alias field="dataowner" index="6" name=""/>
-        <alias field="fk_wastewater_structure" index="8" name=""/>
-        <alias field="identifier" index="2" name=""/>
+        <alias field="dataowner" index="6" name="propriétaire de la donnée"/>
+        <alias field="fk_wastewater_structure" index="8" name="ouvrage"/>
+        <alias field="identifier" index="2" name="identifiant"/>
         <alias field="kind" index="1" name="genre"/>
-        <alias field="last_modification" index="5" name=""/>
-        <alias field="obj_id" index="0" name=""/>
-        <alias field="provider" index="7" name=""/>
+        <alias field="last_modification" index="5" name="dernière modification"/>
+        <alias field="obj_id" index="0" name="obj_id"/>
+        <alias field="provider" index="7" name="fournisseur des données"/>
         <alias field="remark" index="3" name="remarque"/>
         <alias field="renovation_demand" index="4" name="remise_en_etat"/>
       </aliases>
@@ -4582,7 +4582,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_backflow_prevention</layername>
+      <layername>protection contre le refoulement</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -4597,7 +4597,7 @@
       </srs>
       <customproperties/>
       <provider encoding="System">postgres</provider>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE("obj_id", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <expressionfields/>
       <map-layer-style-manager current="">
@@ -4644,14 +4644,14 @@
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <aliases>
-        <alias field="dataowner" index="8" name=""/>
-        <alias field="fk_wastewater_structure" index="10" name=""/>
+        <alias field="dataowner" index="8" name="propriétaire de la donnée"/>
+        <alias field="fk_wastewater_structure" index="10" name="structure"/>
         <alias field="gross_costs" index="1" name="couts_bruts"/>
-        <alias field="identifier" index="4" name=""/>
+        <alias field="identifier" index="4" name="identifiant"/>
         <alias field="kind" index="2" name="genre"/>
-        <alias field="last_modification" index="7" name=""/>
-        <alias field="obj_id" index="0" name=""/>
-        <alias field="provider" index="9" name=""/>
+        <alias field="last_modification" index="7" name="dernière modification"/>
+        <alias field="obj_id" index="0" name="obj_id"/>
+        <alias field="provider" index="9" name="fournisseur des données"/>
         <alias field="remark" index="5" name="remarque"/>
         <alias field="renovation_demand" index="6" name="remise_en_etat"/>
         <alias field="year_of_replacement" index="3" name="annee_remplacement"/>
@@ -4703,7 +4703,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_benching</layername>
+      <layername>banquette</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -4759,13 +4759,13 @@
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <aliases>
-        <alias field="dataowner" index="6" name=""/>
-        <alias field="fk_wastewater_structure" index="8" name=""/>
-        <alias field="identifier" index="2" name=""/>
+        <alias field="dataowner" index="6" name="propriétaire de la donnée"/>
+        <alias field="fk_wastewater_structure" index="8" name="ouvrage"/>
+        <alias field="identifier" index="2" name="identifiant"/>
         <alias field="kind" index="1" name="genre"/>
-        <alias field="last_modification" index="5" name=""/>
-        <alias field="obj_id" index="0" name=""/>
-        <alias field="provider" index="7" name=""/>
+        <alias field="last_modification" index="5" name="dernière modification"/>
+        <alias field="obj_id" index="0" name="obj_id"/>
+        <alias field="provider" index="7" name="fournisseur des données"/>
         <alias field="remark" index="3" name="remarque"/>
         <alias field="renovation_demand" index="4" name="remise_en_etat"/>
       </aliases>
@@ -4810,7 +4810,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_channel</layername>
+      <layername>canalisation</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -4945,23 +4945,23 @@
         <alias field="bedding_encasement" index="1" name="lit_de_pose"/>
         <alias field="connection_type" index="2" name="raccordement"/>
         <alias field="contract_section" index="10" name="lot_construction"/>
-        <alias field="dataowner" index="30" name=""/>
+        <alias field="dataowner" index="30" name="propriétaire de la donnée"/>
         <alias field="detail_geometry_3d_geometry" index="12" name=""/>
         <alias field="detail_geometry_geometry" index="11" name=""/>
         <alias field="financing" index="13" name="financement"/>
-        <alias field="fk_operator" index="33" name=""/>
-        <alias field="fk_owner" index="32" name=""/>
+        <alias field="fk_operator" index="33" name="opérateur"/>
+        <alias field="fk_owner" index="32" name="propriétaire"/>
         <alias field="function_hierarchic" index="3" name="fonction_hierarchique"/>
         <alias field="function_hydraulic" index="4" name="fonction_hydraulique"/>
         <alias field="gross_costs" index="14" name="couts_bruts"/>
         <alias field="identifier" index="15" name="designation"/>
         <alias field="inspection_interval" index="16" name="intervalle_inspection"/>
         <alias field="jetting_interval" index="5" name="intervalle_curage"/>
-        <alias field="last_modification" index="29" name=""/>
+        <alias field="last_modification" index="29" name="dernière modification"/>
         <alias field="location_name" index="17" name="lieu_dit"/>
-        <alias field="obj_id" index="0" name=""/>
+        <alias field="obj_id" index="0" name="obj_id"/>
         <alias field="pipe_length" index="6" name="l_tuyau"/>
-        <alias field="provider" index="31" name=""/>
+        <alias field="provider" index="31" name="fournisseur des données"/>
         <alias field="records" index="18" name="dossier"/>
         <alias field="remark" index="19" name="remarque"/>
         <alias field="renovation_necessity" index="20" name="necessite_assainir"/>
@@ -5092,7 +5092,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_cover</layername>
+      <layername>couvercle</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
@@ -5393,18 +5393,18 @@
       <aliases>
         <alias field="brand" index="1" name="fabricant"/>
         <alias field="cover_shape" index="2" name="forme_couvercle"/>
-        <alias field="dataowner" index="15" name=""/>
+        <alias field="dataowner" index="15" name="propriétaire de la donnée"/>
         <alias field="depth" index="3" name="epaisseur"/>
         <alias field="diameter" index="4" name="diametre"/>
         <alias field="fastening" index="5" name="fermeture"/>
-        <alias field="fk_wastewater_structure" index="17" name=""/>
-        <alias field="identifier" index="11" name=""/>
-        <alias field="last_modification" index="14" name=""/>
+        <alias field="fk_wastewater_structure" index="17" name="ouvrage"/>
+        <alias field="identifier" index="11" name="identifiant"/>
+        <alias field="last_modification" index="14" name="dernière modification"/>
         <alias field="level" index="6" name="cote"/>
         <alias field="material" index="7" name="materiau"/>
-        <alias field="obj_id" index="0" name=""/>
+        <alias field="obj_id" index="0" name="obj_id"/>
         <alias field="positional_accuracy" index="8" name="determination_planimetrique"/>
-        <alias field="provider" index="16" name=""/>
+        <alias field="provider" index="16" name="fournisseur des données"/>
         <alias field="remark" index="12" name="remarque"/>
         <alias field="renovation_demand" index="13" name="remise_en_etat"/>
         <alias field="sludge_bucket" index="9" name="ramasse_boues"/>
@@ -5478,7 +5478,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_dryweather_downspout</layername>
+      <layername>tuyau de chute par temps sec</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -5534,13 +5534,13 @@
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <aliases>
-        <alias field="dataowner" index="6" name=""/>
+        <alias field="dataowner" index="6" name="propriétaire de la donnée"/>
         <alias field="diameter" index="1" name="diametre"/>
-        <alias field="fk_wastewater_structure" index="8" name=""/>
-        <alias field="identifier" index="2" name=""/>
-        <alias field="last_modification" index="5" name=""/>
-        <alias field="obj_id" index="0" name=""/>
-        <alias field="provider" index="7" name=""/>
+        <alias field="fk_wastewater_structure" index="8" name="ouvrage"/>
+        <alias field="identifier" index="2" name="identifiant"/>
+        <alias field="last_modification" index="5" name="dernière modification"/>
+        <alias field="obj_id" index="0" name="obj_id"/>
+        <alias field="provider" index="7" name="fournisseur des données"/>
         <alias field="remark" index="3" name="remarque"/>
         <alias field="renovation_demand" index="4" name="remise_en_etat"/>
       </aliases>
@@ -5585,7 +5585,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_dryweather_flume</layername>
+      <layername>cunette de débit temps sec</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -5641,13 +5641,13 @@
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <aliases>
-        <alias field="dataowner" index="6" name=""/>
-        <alias field="fk_wastewater_structure" index="8" name=""/>
-        <alias field="identifier" index="2" name=""/>
-        <alias field="last_modification" index="5" name=""/>
+        <alias field="dataowner" index="6" name="propriétaire de la donnée"/>
+        <alias field="fk_wastewater_structure" index="8" name="ouvrage"/>
+        <alias field="identifier" index="2" name="identifiant"/>
+        <alias field="last_modification" index="5" name="dernière modification"/>
         <alias field="material" index="1" name="materiau"/>
-        <alias field="obj_id" index="0" name=""/>
-        <alias field="provider" index="7" name=""/>
+        <alias field="obj_id" index="0" name="obj_id"/>
+        <alias field="provider" index="7" name="fournisseur des données"/>
         <alias field="remark" index="3" name="remarque"/>
         <alias field="renovation_demand" index="4" name="remise_en_etat"/>
       </aliases>
@@ -5684,7 +5684,7 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="-4.65661e-10" maximumScale="5000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="5000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>vw_qgep_cover</id>
       <datasource>service='pg_qgep_sige' user='qgep' sslmode=disable key='obj_id' estimatedmetadata=true srid=21781 type=Point table="qgep"."vw_qgep_cover" (situation_geometry) sql=</datasource>
       <title></title>
@@ -5692,7 +5692,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_qgep_cover</layername>
+      <layername>qgep_couvercle</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
@@ -7265,7 +7265,7 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="5000" font="Cantarell,11,-1,5,50,0,0,0,0,0" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="5000" font="Cantarell,11,-1,5,50,0,0,0,0,0" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
@@ -7278,16 +7278,16 @@
       <aliases>
         <alias field="absorption_capacity" index="55" name="capacite_absorption_sol"/>
         <alias field="accessibility" index="19" name="acces"/>
-        <alias field="backflow_level" index="66" name=""/>
-        <alias field="bottom_level" index="67" name=""/>
+        <alias field="backflow_level" index="66" name="côte de refoulement"/>
+        <alias field="bottom_level" index="67" name="côte radier"/>
         <alias field="brand" index="1" name="fabricant"/>
         <alias field="bypass" index="48" name="bypass"/>
-        <alias field="channel_function_hierarchic" index="46" name=""/>
-        <alias field="channel_usage_current" index="45" name=""/>
+        <alias field="channel_function_hierarchic" index="46" name="fonction hiérarchique"/>
+        <alias field="channel_usage_current" index="45" name="utilisation actuelle"/>
         <alias field="contract_section" index="20" name="lot_construction"/>
         <alias field="cover_material" index="6" name="materiau"/>
         <alias field="cover_shape" index="2" name="forme_couvercle"/>
-        <alias field="dataowner" index="14" name=""/>
+        <alias field="dataowner" index="14" name="propriétaire de la donnée"/>
         <alias field="defects" index="56" name="lacunes"/>
         <alias field="depth" index="38" name="epaisseur"/>
         <alias field="diameter" index="3" name="diametre"/>
@@ -7298,23 +7298,23 @@
         <alias field="emergency_spillway" index="59" name="trop_plein_de_secours"/>
         <alias field="fastening" index="4" name="fermeture"/>
         <alias field="financing" index="21" name="financement"/>
-        <alias field="fk_operator" index="37" name=""/>
-        <alias field="fk_owner" index="36" name=""/>
+        <alias field="fk_operator" index="37" name="opérateur"/>
+        <alias field="fk_owner" index="36" name="Propriétaire"/>
         <alias field="gross_costs" index="22" name="couts_bruts"/>
         <alias field="highwater_level" index="51" name="cote_crue"/>
         <alias field="identifier" index="10" name="designation"/>
         <alias field="inspection_interval" index="23" name="intervalle_inspection"/>
         <alias field="kind" index="60" name="genre"/>
         <alias field="labeling" index="61" name="signalisation"/>
-        <alias field="last_modification" index="13" name=""/>
+        <alias field="last_modification" index="13" name="dernière modificaiton"/>
         <alias field="level" index="5" name="cote"/>
         <alias field="location_name" index="24" name="lieu_dit"/>
         <alias field="manhole_function" index="42" name="fonction"/>
-        <alias field="manhole_orientation" index="47" name=""/>
+        <alias field="manhole_orientation" index="47" name="orientation de la chambre"/>
         <alias field="material" index="43" name="materiau"/>
-        <alias field="obj_id" index="0" name=""/>
+        <alias field="obj_id" index="0" name="obj_id"/>
         <alias field="positional_accuracy" index="7" name="determination_planimetrique"/>
-        <alias field="provider" index="15" name=""/>
+        <alias field="provider" index="15" name="fournisseur des données"/>
         <alias field="records" index="25" name="dossier"/>
         <alias field="relevance" index="52" name="signifiance"/>
         <alias field="remark" index="11" name="remarque"/>
@@ -7337,23 +7337,23 @@
         <alias field="venting" index="9" name="aeration"/>
         <alias field="waterlevel_hydraulic" index="54" name="niveau_eau_hydraulique"/>
         <alias field="watertightness" index="64" name="etancheite"/>
-        <alias field="wn_dataowner" index="71" name=""/>
-        <alias field="wn_identifier" index="68" name=""/>
-        <alias field="wn_last_modification" index="70" name=""/>
-        <alias field="wn_obj_id" index="65" name=""/>
-        <alias field="wn_provider" index="72" name=""/>
-        <alias field="wn_remark" index="69" name=""/>
+        <alias field="wn_dataowner" index="71" name="propriétaire de la donnée"/>
+        <alias field="wn_identifier" index="68" name="identifiant noeud"/>
+        <alias field="wn_last_modification" index="70" name="dernière modification"/>
+        <alias field="wn_obj_id" index="65" name="obj_id noeud"/>
+        <alias field="wn_provider" index="72" name="fournisseur des données"/>
+        <alias field="wn_remark" index="69" name="remarque"/>
         <alias field="ws_identifier" index="18" name=""/>
-        <alias field="ws_obj_id" index="17" name=""/>
+        <alias field="ws_obj_id" index="17" name="obj_id structure"/>
         <alias field="ws_remark" index="26" name=""/>
-        <alias field="ws_type" index="16" name=""/>
+        <alias field="ws_type" index="16" name="type"/>
         <alias field="year_of_construction" index="34" name="annee_de_construction"/>
         <alias field="year_of_replacement" index="35" name="annee_de_remplacement"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeEditorForm>
-        <attributeEditorContainer name="General">
+        <attributeEditorContainer name="Général">
           <attributeEditorField index="16" name="ws_type"/>
           <attributeEditorField index="10" name="identifier"/>
           <attributeEditorField index="24" name="location_name"/>
@@ -7370,7 +7370,7 @@
           <attributeEditorField index="39" name="dimension1"/>
           <attributeEditorField index="40" name="dimension2"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Cover">
+        <attributeEditorContainer name="Couvercle">
           <attributeEditorField index="1" name="brand"/>
           <attributeEditorField index="2" name="cover_shape"/>
           <attributeEditorField index="3" name="diameter"/>
@@ -7381,7 +7381,7 @@
           <attributeEditorField index="14" name="dataowner"/>
           <attributeEditorField index="15" name="provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Structure">
+        <attributeEditorContainer name="Ouvrage du réseau">
           <attributeEditorField index="17" name="ws_obj_id"/>
           <attributeEditorField index="19" name="accessibility"/>
           <attributeEditorField index="20" name="contract_section"/>
@@ -7402,7 +7402,7 @@
           <attributeEditorField index="36" name="fk_owner"/>
           <attributeEditorField index="37" name="fk_operator"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Manhole">
+        <attributeEditorContainer name="Chambre">
           <attributeEditorField index="38" name="depth"/>
           <attributeEditorField index="39" name="dimension1"/>
           <attributeEditorField index="40" name="dimension2"/>
@@ -7411,7 +7411,7 @@
           <attributeEditorField index="43" name="material"/>
           <attributeEditorField index="44" name="surface_inflow"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Special Structure">
+        <attributeEditorContainer name="Ouvrage spécial">
           <attributeEditorField index="48" name="bypass"/>
           <attributeEditorField index="49" name="special_structure_function"/>
           <attributeEditorField index="50" name="stormwater_tank_arrangement"/>
@@ -7419,7 +7419,7 @@
           <attributeEditorField index="38" name="depth"/>
           <attributeEditorField index="59" name="emergency_spillway"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Discharge Point">
+        <attributeEditorContainer name="Exutoire au milieu récepteur">
           <attributeEditorField index="38" name="depth"/>
           <attributeEditorField index="59" name="emergency_spillway"/>
           <attributeEditorField index="51" name="highwater_level"/>
@@ -7428,7 +7428,7 @@
           <attributeEditorField index="41" name="upper_elevation"/>
           <attributeEditorField index="54" name="waterlevel_hydraulic"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Infiltration Installation">
+        <attributeEditorContainer name="Installation d'infiltration">
           <attributeEditorField index="56" name="defects"/>
           <attributeEditorField index="57" name="distance_to_aquifer"/>
           <attributeEditorField index="58" name="effective_area"/>
@@ -7442,7 +7442,7 @@
           <attributeEditorField index="40" name="dimension2"/>
           <attributeEditorField index="41" name="upper_elevation"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Node">
+        <attributeEditorContainer name="Noeud du réseau">
           <attributeEditorField index="65" name="wn_obj_id"/>
           <attributeEditorField index="66" name="backflow_level"/>
           <attributeEditorField index="67" name="bottom_level"/>
@@ -7452,26 +7452,26 @@
           <attributeEditorField index="71" name="wn_dataowner"/>
           <attributeEditorField index="72" name="wn_provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Covers">
-          <attributeEditorRelation relation="" name="vw_cover20150507162234308_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
+        <attributeEditorContainer name="Couvercles">
+          <attributeEditorRelation relation="vw_cover20150507162234308_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_cover20150507162234308_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Access Aid">
-          <attributeEditorRelation relation="" name="vw_access_aid20150507162234295_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
+        <attributeEditorContainer name="Dispositif d'accès">
+          <attributeEditorRelation relation="vw_access_aid20150507162234295_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_access_aid20150507162234295_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Backflow Prevention">
-          <attributeEditorRelation relation="" name="vw_backflow_prevention20150531093552085_fk_wastewater_structure_vw_qgep_cover_ws_obj_id"/>
+        <attributeEditorContainer name="Protection contre le refoulement">
+          <attributeEditorRelation relation="vw_backflow_prevention20150531093552085_fk_wastewater_structure_vw_qgep_cover_ws_obj_id" name="vw_backflow_prevention20150531093552085_fk_wastewater_structure_vw_qgep_cover_ws_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Dryweather Flume">
-          <attributeEditorRelation relation="" name="vw_dryweather_flume20150507162234250_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
+        <attributeEditorContainer name="Cunette de débit temps sec">
+          <attributeEditorRelation relation="vw_dryweather_flume20150507162234250_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_dryweather_flume20150507162234250_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Benching">
-          <attributeEditorRelation relation="" name="vw_benching20150507162234281_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
+        <attributeEditorContainer name="Banquette">
+          <attributeEditorRelation relation="vw_benching20150507162234281_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_benching20150507162234281_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Dryweather Downspout">
-          <attributeEditorRelation relation="" name="vw_dryweather_downspout20150507162234268_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
+        <attributeEditorContainer name="Tuyau de chute par temps sec">
+          <attributeEditorRelation relation="vw_dryweather_downspout20150507162234268_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_dryweather_downspout20150507162234268_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
         </attributeEditorContainer>
         <attributeEditorContainer name="Maintenance">
-          <attributeEditorRelation relation="" name="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_qgep_cover_obj_id"/>
+          <attributeEditorRelation relation="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_qgep_cover_obj_id" name="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_qgep_cover_obj_id"/>
         </attributeEditorContainer>
       </attributeEditorForm>
       <attributeactions>
@@ -7704,7 +7704,7 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>vw_qgep_reach</id>
       <datasource>service='pg_qgep_sige' key='obj_id' srid=21781 type=LineString table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
       <title></title>
@@ -7712,7 +7712,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_qgep_reach</layername>
+      <layername>qgep_tronçon</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
@@ -8806,7 +8806,7 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" font="Cantarell,11,-1,5,50,0,0,0,0,0" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" font="Cantarell,11,-1,5,50,0,0,0,0,0" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
@@ -8823,13 +8823,13 @@
         <alias field="coefficient_of_friction" index="3" name="k_strickler"/>
         <alias field="connection_type" index="21" name="raccordement"/>
         <alias field="contract_section" index="29" name="lot_construction"/>
-        <alias field="dataowner" index="49" name=""/>
+        <alias field="dataowner" index="49" name="propriétaire de la donnée"/>
         <alias field="elevation_determination" index="4" name="determination_altimetrique"/>
         <alias field="financing" index="30" name="financement"/>
-        <alias field="fk_operator" index="45" name=""/>
-        <alias field="fk_owner" index="44" name=""/>
-        <alias field="fk_pipe_profile" index="18" name=""/>
-        <alias field="fk_wastewater_structure" index="51" name=""/>
+        <alias field="fk_operator" index="45" name="opérateur"/>
+        <alias field="fk_owner" index="44" name="propriétaire"/>
+        <alias field="fk_pipe_profile" index="18" name="profil de tuyau"/>
+        <alias field="fk_wastewater_structure" index="51" name="ouvrage"/>
         <alias field="function_hierarchic" index="20" name="fonction_hierarchique"/>
         <alias field="function_hydraulic" index="22" name="fonction_hydraulique"/>
         <alias field="gross_costs" index="31" name="couts_bruts"/>
@@ -8838,14 +8838,14 @@
         <alias field="inside_coating" index="6" name="protection_interieure"/>
         <alias field="inspection_interval" index="32" name="intervalle_inspection"/>
         <alias field="jetting_interval" index="23" name="intervalle_curage"/>
-        <alias field="last_modification" index="48" name=""/>
+        <alias field="last_modification" index="48" name="dernière modification"/>
         <alias field="length_effective" index="7" name="l_effective"/>
         <alias field="location_name" index="33" name="lieu_dit"/>
         <alias field="material" index="9" name="materiau"/>
-        <alias field="obj_id" index="0" name=""/>
+        <alias field="obj_id" index="0" name="obj_id"/>
         <alias field="pipe_length" index="24" name="l_tuyau"/>
         <alias field="progression_3d_geometry" index="10" name=""/>
-        <alias field="provider" index="50" name=""/>
+        <alias field="provider" index="50" name="fournisseur des données"/>
         <alias field="records" index="34" name="dossier"/>
         <alias field="reliner_material" index="11" name="relining_materiaux"/>
         <alias field="reliner_nominal_size" index="12" name="reliner_diametre_nominale"/>
@@ -8855,47 +8855,47 @@
         <alias field="renovation_necessity" index="35" name="necessite_assainir"/>
         <alias field="replacement_value" index="36" name="valeur_remplacement"/>
         <alias field="ring_stiffness" index="15" name="rigidite_annulaire"/>
-        <alias field="rp_from_dataowner" index="60" name=""/>
+        <alias field="rp_from_dataowner" index="60" name="propriétaire de la donnée"/>
         <alias field="rp_from_elevation_accuracy" index="53" name="precision_altimetrique"/>
         <alias field="rp_from_fk_wastewater_networkelement" index="62" name=""/>
         <alias field="rp_from_identifier" index="54" name="designation"/>
-        <alias field="rp_from_last_modification" index="59" name=""/>
+        <alias field="rp_from_last_modification" index="59" name="dernière modification"/>
         <alias field="rp_from_level" index="55" name="cote"/>
-        <alias field="rp_from_obj_id" index="52" name=""/>
+        <alias field="rp_from_obj_id" index="52" name="obj_id sommet de"/>
         <alias field="rp_from_outlet_shape" index="56" name="forme_sortie"/>
         <alias field="rp_from_position_of_connection" index="57" name=""/>
-        <alias field="rp_from_provider" index="61" name=""/>
+        <alias field="rp_from_provider" index="61" name="fournisseur des données"/>
         <alias field="rp_from_remark" index="58" name="remarque"/>
-        <alias field="rp_to_dataowner" index="71" name=""/>
+        <alias field="rp_to_dataowner" index="71" name="propriétaire de la donnée"/>
         <alias field="rp_to_elevation_accuracy" index="64" name="precision_altimetrique"/>
         <alias field="rp_to_fk_wastewater_networkelement" index="73" name=""/>
         <alias field="rp_to_identifier" index="65" name="designation"/>
-        <alias field="rp_to_last_modification" index="70" name=""/>
+        <alias field="rp_to_last_modification" index="70" name="dernière modification"/>
         <alias field="rp_to_level" index="66" name="cote"/>
-        <alias field="rp_to_obj_id" index="63" name=""/>
+        <alias field="rp_to_obj_id" index="63" name="obj_id sommet vers"/>
         <alias field="rp_to_outlet_shape" index="67" name="forme_sortie"/>
         <alias field="rp_to_position_of_connection" index="68" name=""/>
-        <alias field="rp_to_provider" index="72" name=""/>
+        <alias field="rp_to_provider" index="72" name="fournisseur des données"/>
         <alias field="rp_to_remark" index="69" name="remarque"/>
         <alias field="rv_base_year" index="37" name="vr_annee_reference"/>
         <alias field="rv_construction_type" index="38" name="vr_type_construction"/>
         <alias field="slope_building_plan" index="16" name="pente_plan"/>
-        <alias field="slope_per_mill" index="8" name=""/>
+        <alias field="slope_per_mill" index="8" name="pente pour mille"/>
         <alias field="status" index="39" name="etat"/>
         <alias field="structure_condition" index="40" name="etat_constructif"/>
         <alias field="subsidies" index="41" name="subventions"/>
         <alias field="usage_current" index="25" name="genre_utilisation_actuel"/>
         <alias field="usage_planned" index="26" name="genre_utilisation_prevu"/>
         <alias field="wall_roughness" index="17" name="k_colebrook"/>
-        <alias field="width" index="2" name=""/>
-        <alias field="ws_obj_id" index="27" name=""/>
+        <alias field="width" index="2" name="largeur"/>
+        <alias field="ws_obj_id" index="27" name="obj_id structure"/>
         <alias field="year_of_construction" index="42" name="annee_de_construction"/>
         <alias field="year_of_replacement" index="43" name="annee_de_remplacement"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeEditorForm>
-        <attributeEditorContainer name="General">
+        <attributeEditorContainer name="Général">
           <attributeEditorField index="1" name="clear_height"/>
           <attributeEditorField index="7" name="length_effective"/>
           <attributeEditorField index="9" name="material"/>
@@ -8912,7 +8912,7 @@
           <attributeEditorField index="42" name="year_of_construction"/>
           <attributeEditorField index="47" name="remark"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Reach">
+        <attributeEditorContainer name="tron4on">
           <attributeEditorField index="0" name="obj_id"/>
           <attributeEditorField index="1" name="clear_height"/>
           <attributeEditorField index="2" name="width"/>
@@ -8933,14 +8933,14 @@
           <attributeEditorField index="17" name="wall_roughness"/>
           <attributeEditorField index="18" name="fk_pipe_profile"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Networkelement">
+        <attributeEditorContainer name="élément du réseau">
           <attributeEditorField index="46" name="identifier"/>
           <attributeEditorField index="47" name="remark"/>
           <attributeEditorField index="48" name="last_modification"/>
           <attributeEditorField index="49" name="dataowner"/>
           <attributeEditorField index="50" name="provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Channel">
+        <attributeEditorContainer name="Canalisation">
           <attributeEditorField index="20" name="function_hierarchic"/>
           <attributeEditorField index="21" name="connection_type"/>
           <attributeEditorField index="22" name="function_hydraulic"/>
@@ -8949,7 +8949,7 @@
           <attributeEditorField index="25" name="usage_current"/>
           <attributeEditorField index="26" name="usage_planned"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Structure">
+        <attributeEditorContainer name="Ouvrage du réseau">
           <attributeEditorField index="27" name="ws_obj_id"/>
           <attributeEditorField index="28" name="accessibility"/>
           <attributeEditorField index="29" name="contract_section"/>
@@ -8970,8 +8970,8 @@
           <attributeEditorField index="44" name="fk_owner"/>
           <attributeEditorField index="45" name="fk_operator"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Reach Points">
-          <attributeEditorContainer name="From">
+        <attributeEditorContainer name="Sommets du tronçon">
+          <attributeEditorContainer name="De">
             <attributeEditorField index="52" name="rp_from_obj_id"/>
             <attributeEditorField index="53" name="rp_from_elevation_accuracy"/>
             <attributeEditorField index="54" name="rp_from_identifier"/>
@@ -8984,7 +8984,7 @@
             <attributeEditorField index="61" name="rp_from_provider"/>
             <attributeEditorField index="62" name="rp_from_fk_wastewater_networkelement"/>
           </attributeEditorContainer>
-          <attributeEditorContainer name="To">
+          <attributeEditorContainer name="De">
             <attributeEditorField index="63" name="rp_to_obj_id"/>
             <attributeEditorField index="64" name="rp_to_elevation_accuracy"/>
             <attributeEditorField index="65" name="rp_to_identifier"/>
@@ -9234,7 +9234,6 @@
       <ProjectCRSProj4String type="QString">+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</ProjectCRSProj4String>
       <ProjectCrs type="QString">EPSG:21781</ProjectCrs>
       <ProjectCRSID type="int">1919</ProjectCRSID>
-      <ProjectionsEnabled type="int">0</ProjectionsEnabled>
     </SpatialRefSys>
     <Paths>
       <Absolute type="bool">false</Absolute>
@@ -9250,40 +9249,15 @@
     </Gui>
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
-      <LayerSnappingList type="QStringList">
-        <value>od_wastewater_structure</value>
-        <value>vw_qgep_reach</value>
-        <value>vw_cover___</value>
-        <value>vw_qgep_cover</value>
-      </LayerSnappingList>
-      <LayerSnappingEnabledList type="QStringList">
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-      </LayerSnappingEnabledList>
+      <LayerSnappingList type="QStringList"/>
+      <LayerSnappingEnabledList type="QStringList"/>
       <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
-      <LayerSnappingToleranceUnitList type="QStringList">
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-      </LayerSnappingToleranceUnitList>
-      <LayerSnapToList type="QStringList">
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-      </LayerSnapToList>
+      <LayerSnappingToleranceUnitList type="QStringList"/>
+      <LayerSnapToList type="QStringList"/>
       <DefaultSnapType type="QString">off</DefaultSnapType>
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
-      <LayerSnappingToleranceList type="QStringList">
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-      </LayerSnappingToleranceList>
+      <LayerSnappingToleranceList type="QStringList"/>
     </Digitizing>
     <PositionPrecision>
       <DecimalPlaces type="int">2</DecimalPlaces>
