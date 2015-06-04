@@ -1,4 +1,6 @@
-﻿CREATE OR REPLACE FUNCTION public.first_agg ( anyelement, anyelement )
+﻿-- https://wiki.postgresql.org/wiki/First/last_%28aggregate%29
+
+CREATE OR REPLACE FUNCTION public.first_agg ( anyelement, anyelement )
 RETURNS anyelement LANGUAGE sql IMMUTABLE STRICT AS $$
         SELECT $1;
 $$;
