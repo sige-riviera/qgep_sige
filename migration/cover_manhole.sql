@@ -65,7 +65,7 @@ LEFT JOIN sa.aw_schacht schacht ON deckel.fid_schacht = schacht.fid
 LEFT JOIN sa.aw_schacht_deckel_geo deckel_geo ON deckel_geo.fid = deckel.fid
 LEFT JOIN sa.map_manhole_function mf ON schacht.id_schachtart = mf.old
 LEFT JOIN sa.map_status st ON schacht.id_status = st.old
-WHERE deckel.deleted IS NOT NULL AND schacht.deleted IS NOT NULL;
+WHERE COALESCE(deckel.deleted, 0) = 0 AND COALESCE(schacht.deleted, 0) = 0;
 
 -------------------------
 -- ACCESS AID

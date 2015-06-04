@@ -56,4 +56,4 @@ LEFT JOIN sa.map_reach_material rm ON haltung.id_material = rm.old
 LEFT JOIN sa.map_function_hydraulic fhy ON haltung.id_funktion_hydrau = fhy.old
 LEFT JOIN sa.map_elevation_determination ed ON haltung.id_hoehengenauigkeit = ed.old
 
-WHERE haltung.deleted <> 1;
+WHERE COALESCE(haltung.deleted, 0) = 0;
