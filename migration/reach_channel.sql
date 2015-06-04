@@ -1,5 +1,5 @@
 ﻿-- compute geometry from aw_haltung_geo
-WITH haltung_geo AS (SELECT gid, St_SetSRID(ST_GeomFromText('LINESTRING('||string_agg(y1::varchar||' '||x1::varchar, ',' ORDER BY seq)||')'),21781) AS geometry FROM sa.aw_haltung_geo GROUP BY gid)
+WITH haltung_geo AS (SELECT gid, first(z1) as rp_from_level, last(z1) as rp_to_level, St_SetSRID(ST_GeomFromText('LINESTRING('||string_agg(y1::varchar||' '||x1::varchar, ',' ORDER BY seq)||')'),21781) AS geometry FROM sa.aw_haltung_geo GROUP BY gid)
 
 INSERT INTO qgep.vw_qgep_reach(
   identifier,
@@ -15,7 +15,9 @@ INSERT INTO qgep.vw_qgep_reach(
   usage_current,
   material,
   function_hydraulic,
-  elevation_determination
+  elevation_determination,
+  rp_from_level,
+  rp_to_level
 )
 SELECT
   haltung.name,
@@ -31,7 +33,9 @@ SELECT
   uc.new,
   rm.new,
   fhy.new,
-  ed.new
+  ed.new,
+  rp_from_level,
+  rp_to_level
   
 FROM sa.aw_haltung haltung
 LEFT JOIN haltung_geo geom on geom.gid = haltung.gid

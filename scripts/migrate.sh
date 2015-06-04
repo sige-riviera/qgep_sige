@@ -19,21 +19,23 @@ psql -c "UPDATE qgep.is_oid_prefixes SET active=FALSE WHERE prefix<>'${OIDPREFIX
 pg_restore -d qgep_sige ${DIR}/migration/dump_topobase.backup
 psql -c 'ALTER SCHEMA sige_assainissement RENAME TO sa'
 
-psql -f ${DIR}/migration/mappings/function_hierarchic.sql
-psql -f ${DIR}/migration/mappings/reach_horizontal_positioning.sql
-psql -f ${DIR}/migration/mappings/manhole_function.sql
-psql -f ${DIR}/migration/mappings/usage_current.sql
-psql -f ${DIR}/migration/mappings/status.sql
-psql -f ${DIR}/migration/mappings/reach_material.sql
-psql -f ${DIR}/migration/mappings/elevation_determination.sql
-psql -f ${DIR}/migration/mappings/function_hydraulic.sql
-psql -f ${DIR}/migration/mappings/access_aid_kind.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/aggregates_first_last.sql
 
-psql -f ${DIR}/migration/organisations.sql
-psql -f ${DIR}/migration/cover_manhole.sql
-psql -f ${DIR}/migration/profiles.sql
-psql -f ${DIR}/migration/reach_channel.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/mappings/function_hierarchic.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/mappings/reach_horizontal_positioning.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/mappings/manhole_function.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/mappings/usage_current.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/mappings/status.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/mappings/reach_material.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/mappings/elevation_determination.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/mappings/function_hydraulic.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/mappings/access_aid_kind.sql
 
-psql -f ${DIR}/migration/90_create_topology.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/organisations.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/cover_manhole.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/profiles.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/reach_channel.sql
+
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/90_create_topology.sql
 
 OWNER=qgep SCHEMA=qgep DATABASE=qgep_sige ${DIR}/QGEP-Datamodel/scripts/change_owner.sh
