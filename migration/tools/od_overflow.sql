@@ -6,7 +6,8 @@
  * Unless they are connected to some other wastewater structure which we did not yet take care of.
  * 
  */
-CREATE VIEW sa.netzlinien AS
+DROP VIEW IF EXISTS sa.netzlinien;
+CREATE OR REPLACE VIEW sa.netzlinien AS
 
 WITH netzlinien AS (
 SELECT 
@@ -18,6 +19,7 @@ FROM sa.aw_netzlinie_geo
 GROUP BY gid)
 
 SELECT 
+  netzlinien.gid,
   aw_schacht.name2 AS ws_identifier,
   wn_from.obj_id AS wn_from_obj_id, 
   wn_to.obj_id AS wn_to_obj_id,
