@@ -23,6 +23,16 @@
  * At the end of the script the old fid is replaced with the real identifier.
  */
 
+-- compute netzlinien
+WITH netzlinien AS (
+SELECT 
+  gid, 
+  ST_SetSRID(ST_Point(first(y1),first(x1)),21781) as from_point, 
+  ST_SetSRID(ST_Point(last(y1),last(x1)),21781) as to_point, 
+  St_SetSRID(ST_GeomFromText('LINESTRING('||string_agg(y1::varchar||' '||x1::varchar, ',' ORDER BY seq)||')'),21781) AS geometry 
+FROM sa.aw_netzlinie_geo 
+GROUP BY gid)
+
 INSERT INTO qgep.vw_qgep_cover
  (
   ws_type,
@@ -95,6 +105,12 @@ SELECT 5757, ws.obj_id -- 5757: backflow_flap
 FROM sa.aw_schacht schacht
 LEFT JOIN qgep.od_wastewater_structure ws ON schacht.fid::text = ws.identifier
 WHERE id_schachtart = 10006;
+
+-------------------------
+-- overflows
+-------------------------
+
+
 
 -------------------------
 -- FIX ws.identifier
