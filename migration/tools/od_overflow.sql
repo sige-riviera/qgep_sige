@@ -6,6 +6,7 @@
  * Unless they are connected to some other wastewater structure which we did not yet take care of.
  * 
  */
+CREATE VIEW sa.netzlinien AS
 
 WITH netzlinien AS (
 SELECT 
@@ -20,7 +21,8 @@ SELECT
   aw_schacht.name2 AS ws_identifier,
   wn_from.obj_id AS wn_from_obj_id, 
   wn_to.obj_id AS wn_to_obj_id,
-  id_schachtart AS type
+  id_schachtart AS type,
+  geometry
 FROM 
 sa.aw_schacht
 LEFT JOIN qgep.vw_wastewater_node wn_from ON identifier = name2
