@@ -1,5 +1,12 @@
 ﻿-- compute geometry from aw_haltung_geo
-WITH haltung_geo AS (SELECT gid, first(z1) as rp_from_level, last(z1) as rp_to_level, St_SetSRID(ST_GeomFromText('LINESTRING('||string_agg(y1::varchar||' '||x1::varchar, ',' ORDER BY seq)||')'),21781) AS geometry FROM sa.aw_haltung_geo GROUP BY gid)
+WITH haltung_geo AS (
+SELECT 
+  gid, 
+  first(z1) as rp_from_level, 
+  last(z1) as rp_to_level, 
+  St_SetSRID(ST_GeomFromText('LINESTRING('||string_agg(y1::varchar||' '||x1::varchar, ',' ORDER BY seq)||')'),21781) AS geometry 
+FROM sa.aw_haltung_geo 
+GROUP BY gid)
 
 INSERT INTO qgep.vw_qgep_reach(
   identifier,
@@ -61,7 +68,7 @@ LEFT JOIN qgep.od_pipe_profile pp ON pp.profile_type =
 LEFT JOIN sa.map_reach_material rm ON haltung.id_material = rm.old
 LEFT JOIN sa.map_function_hydraulic fhy ON haltung.id_funktion_hydrau = fhy.old
 LEFT JOIN sa.map_elevation_determination ed ON haltung.id_hoehengenauigkeit = ed.old
-LEFT JOIN sa.ba_eigentumsverhaeltnis_tbd ev ON ev.id = schacht.id_eigentumsverhaeltnis
+LEFT JOIN sa.ba_eigentumsverhaeltnis_tbd ev ON ev.id = haltung.id_eigentumsverhaeltnis
 LEFT JOIN qgep.od_organisation org ON org.identifier = ev.value
 
 WHERE COALESCE(haltung.deleted, 0) = 0;
