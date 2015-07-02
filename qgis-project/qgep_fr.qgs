@@ -231,13 +231,13 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>552996.39013436844106764</xmin>
-      <ymin>139701.19770903681637719</ymin>
-      <xmax>560046.10357059387024492</xmax>
-      <ymax>149682.65000996174057946</ymax>
+      <xmin>552999.09621846408117563</xmin>
+      <ymin>138671.26804929261561483</ymin>
+      <xmax>561442.55143648863304406</xmax>
+      <ymax>150119.38210628705564886</ymax>
     </extent>
     <rotation>0</rotation>
-    <projections>0</projections>
+    <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
         <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
@@ -251,45 +251,9 @@
       </spatialrefsys>
     </destinationsrs>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_network_segment20140827212359527"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__realestate20150211112947342"/>
       <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_cover"/>
       <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_cover___"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wastewater_node20141111091100662"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_cover20140822215511882"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wizard_cover_manhole20141025170618565"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="single_objects__linear_element20150211112947351"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_wastewater_structure20140728163138856"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_special_structure20141013203257795"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach_point20140728163138843"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="building_addresses__building_entrance_pos20150211112947254"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_cover20140414160716920"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_network_node20140827212753645"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach20140822215411222"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="single_objects__surface_element20150211113252990"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wizard_reach_channel20141025180143924"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20141025180235004"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20140925140846596"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20141013202956655"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__realestate_posnumber20150211112947328"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach_point20140822215511891"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="territorial_boundaries__municipal_boundary20150211112947357"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_manhole20141013203257827"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20141025180333308"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_channel20141024144506339"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_catchment_area20140827102410654"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_wastewater_structure20140822215511905"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="land_cover__lcsurface_postext20150211112947362"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_cover20140728163138882"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_network_node20140827212404914"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach20140822194040121"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__boundary_point20150211112947336"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_network_segment20140827212755598"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_cover20141013203237315"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="land_cover__lcsurface20150211102116489"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="building_addresses__street_name_pos20150211112947319"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach20140728162912956"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wizard_cover_special_structure20150129140416706"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_reach"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <visibility-presets/>
@@ -9370,12 +9334,12 @@
       <DegreeFormat type="QString">D</DegreeFormat>
     </PositionPrecision>
     <WCSUrl type="QString"></WCSUrl>
-    <WMSContactPhone type="QString"></WMSContactPhone>
     <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSContactPhone type="QString"></WMSContactPhone>
     <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
     <Measure>
-      <Ellipsoid type="QString">NONE</Ellipsoid>
+      <Ellipsoid type="QString">bessel</Ellipsoid>
     </Measure>
     <WMSPrecision type="QString">8</WMSPrecision>
     <WFSTLayers>
@@ -9419,7 +9383,7 @@
       <ProjectCRSProj4String type="QString">+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</ProjectCRSProj4String>
       <ProjectCrs type="QString">EPSG:21781</ProjectCrs>
       <ProjectCRSID type="int">1919</ProjectCRSID>
-      <ProjectionsEnabled type="int">0</ProjectionsEnabled>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
     </SpatialRefSys>
     <DefaultStyles>
       <Fill type="QString"></Fill>
