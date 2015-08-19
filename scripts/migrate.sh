@@ -11,12 +11,12 @@ export PGSERVICE=pg_qgep_sige
 psql -c 'DROP SCHEMA IF EXISTS qgep CASCADE'
 psql -c 'DROP SCHEMA IF EXISTS sige_assainissement CASCADE'
 psql -c 'DROP SCHEMA IF EXISTS sa CASCADE'
-${DIR}/QGEP-Datamodel/scripts/db_setup.sh
+${DIR}/datamodel/scripts/db_setup.sh
 
 psql -c "UPDATE qgep.is_oid_prefixes SET active=TRUE WHERE prefix='${OIDPREFIX}'"
 psql -c "UPDATE qgep.is_oid_prefixes SET active=FALSE WHERE prefix<>'${OIDPREFIX}'"
 
-pg_restore -d qgep_sige ${DIR}/migration/dump_topobase.backup
+pg_restore -O -d qgep_sige ${DIR}/migration/dump_topobase.backup
 psql -c 'ALTER SCHEMA sige_assainissement RENAME TO sa'
 
 psql -v ON_ERROR_STOP=on -f ${DIR}/migration/aggregates_first_last.sql
