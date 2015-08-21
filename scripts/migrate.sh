@@ -16,7 +16,7 @@ ${DIR}/datamodel/scripts/db_setup.sh
 psql -c "UPDATE qgep.is_oid_prefixes SET active=TRUE WHERE prefix='${OIDPREFIX}'"
 psql -c "UPDATE qgep.is_oid_prefixes SET active=FALSE WHERE prefix<>'${OIDPREFIX}'"
 
-pg_restore -O -d qgep_sige ${DIR}/migration/dump_topobase.backup
+pg_restore --no-owner -d qgep_sige ${DIR}/migration/dump_topobase.backup
 psql -c 'ALTER SCHEMA sige_assainissement RENAME TO sa'
 
 psql -v ON_ERROR_STOP=on -f ${DIR}/migration/aggregates_first_last.sql
@@ -38,4 +38,4 @@ psql -v ON_ERROR_STOP=on -f ${DIR}/migration/reach_channel.sql
 
 psql -v ON_ERROR_STOP=on -f ${DIR}/migration/90_create_topology.sql
 
-OWNER=qgep SCHEMA=qgep DATABASE=qgep_sige ${DIR}/QGEP-Datamodel/scripts/change_owner.sh
+OWNER=qgep SCHEMA=qgep DATABASE=qgep_sige ${DIR}/datamodel/scripts/change_owner.sh
