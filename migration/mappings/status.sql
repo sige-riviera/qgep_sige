@@ -39,7 +39,7 @@ ALTER TABLE sa.map_status OWNER TO postgres;
 --
 
 COPY map_status (old, new) FROM stdin;
-1	6528
+1	8493
 3	6526
 4	3633
 6	6530

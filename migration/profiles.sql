@@ -1,9 +1,9 @@
 ﻿INSERT INTO qgep.od_pipe_profile(profile_type, height_width_ratio, identifier)
 SELECT  
-CASE WHEN pa.id=1 THEN 5377
+CASE WHEN pa.id=1 THEN 3357
      WHEN pa.id=2 THEN 3350
      WHEN pa.id=3 THEN 3353
-     WHEN pa.id=4 THEN 5377
+     WHEN pa.id=4 THEN 3357
      WHEN pa.id=5 THEN 3357
      WHEN pa.id=6 THEN 3351
      WHEN pa.id=7 THEN 3353
