@@ -1,12 +1,12 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.11.0-Master">
+<qgis projectname="" version="2.13.0-Master">
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_reach" name="tronçon">
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_cover" name="couvercle">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_cover" name="couvercle">
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_reach" name="tronçon">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-group expanded="0" checked="Qt::Checked" name="Wastewater Structures">
@@ -204,14 +204,18 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
+    <layer-tree-group expanded="0" checked="Qt::Checked" name="cadastre">
+      <customproperties>
+        <property key="embedded" value="1"/>
+        <property key="embedded-invisible-layers"/>
+        <property key="embedded_project" value="../../../data/cadastre/cadastre.qgs"/>
+      </customproperties>
+    </layer-tree-group>
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Landeskarte_1_25_000___LK2520150824104659681" name="Landeskarte 1:25'000 | LK25">
+      <customproperties/>
+    </layer-tree-layer>
   </layer-tree-group>
   <relations>
-    <relation referencingLayer="od_maintenance_event" referencedLayer="vw_qgep_cover" id="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_qgep_cover_obj_id" name="Maintenances">
-      <fieldRef referencedField="ws_obj_id" referencingField="fk_wastewater_structure"/>
-    </relation>
-    <relation referencingLayer="od_maintenance_event" referencedLayer="vw_qgep_reach" id="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_reach20141013202956655_ws_obj_id" name="Maintenances">
-      <fieldRef referencedField="ws_obj_id" referencingField="fk_wastewater_structure"/>
-    </relation>
     <relation referencingLayer="vw_qgep_reach" referencedLayer="od_pipe_profile" id="reach-fk_pipe_profile" name="Reaches">
       <fieldRef referencedField="obj_id" referencingField="fk_pipe_profile"/>
     </relation>
@@ -240,13 +244,13 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>549511.42376736970618367</xmin>
-      <ymin>133163.61238760501146317</ymin>
-      <xmax>563610.8506398203317076</xmax>
-      <ymax>153126.51698945497628301</ymax>
+      <xmin>556430.60892926552332938</xmin>
+      <ymin>144738.08278960519237444</ymin>
+      <xmax>556478.90633823443204165</xmax>
+      <ymax>144806.46546760230557993</ymax>
     </extent>
     <rotation>0</rotation>
-    <projections>0</projections>
+    <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
         <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
@@ -259,7 +263,27 @@
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
-    <layer_coordinate_transform_info/>
+    <layer_coordinate_transform_info>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="cs_posnumero_de_batiment20130514143756039"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="axe_rue20130514143437774"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_cover___"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_posimmeuble20130514143633121"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_ddp20130514143538213"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_reach"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="pf_pfa20130514144154766"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="pf_pfp20130514144226845"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="Landeskarte_1_25_000___LK2520150824104659681"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_lineaire20130514144047075"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_cover"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="cs_batiment20130514143721709"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_bien_fonds20130514143508556"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_surfacique20130514144124647"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_batiment_souterrain20130514143946785"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="ad_posnumero_maison20130514143346530"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="cs_surfacecs20130514143830750"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="no_posnomlocallieudit20130514143906869"/>
+      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_point_limite20130514143552315"/>
+    </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="0">
@@ -313,17 +337,33 @@
       <item>vw_qgep_reach</item>
       <item>vw_network_segment</item>
       <item>vw_network_node</item>
+      <item>pf_pfa20130514144154766</item>
+      <item>ad_posnumero_maison20130514143346530</item>
+      <item>cs_posnumero_de_batiment20130514143756039</item>
+      <item>bf_posimmeuble20130514143633121</item>
+      <item>no_posnomlocallieudit20130514143906869</item>
+      <item>bf_point_limite20130514143552315</item>
+      <item>axe_rue20130514143437774</item>
+      <item>pf_pfp20130514144226845</item>
+      <item>bf_bien_fonds20130514143508556</item>
+      <item>bf_ddp20130514143538213</item>
+      <item>cs_surfacecs20130514143830750</item>
+      <item>od_element_lineaire20130514144047075</item>
+      <item>od_element_surfacique20130514144124647</item>
+      <item>cs_batiment20130514143721709</item>
+      <item>od_batiment_souterrain20130514143946785</item>
+      <item>Landeskarte_1_25_000___LK2520150824104659681</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="tronçon" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="vw_qgep_reach" visible="1"/>
-      </filegroup>
-    </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="couvercle" showFeatureCount="0">
       <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="vw_qgep_cover" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="tronçon" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="vw_qgep_reach" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendgroup open="false" checked="Qt::Checked" name="Wastewater Structures">
@@ -600,11 +640,58 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
+    <legendgroup embedded="1" open="false" checked="Qt::Checked" name="cadastre" project="../../../data/cadastre/cadastre.qgs"/>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Landeskarte 1:25'000 | LK25" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Landeskarte_1_25_000___LK2520150824104659681" visible="0"/>
+      </filegroup>
+    </legendlayer>
   </legend>
-  <projectlayers layercount="50">
+  <projectlayers layercount="66">
+    <maplayer minimumScale="3000" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="1">
+      <id>Landeskarte_1_25_000___LK2520150824104659681</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ch.swisstopo.pixelkarte-farbe&amp;referer=http://map.geo.admin.ch&amp;styles=ch.swisstopo.pixelkarte-farbe&amp;tileDimensions=Time%3D20151231&amp;tileMatrixSet=21781_26&amp;url=http://wmts.geo.admin.ch/1.0.0/WMTSCapabilities.xml</datasource>
+      <title></title>
+      <abstract></abstract>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Landeskarte 1:25'000 | LK25</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="0.117647" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>od_maintenance_event</id>
-      <datasource>service='pg_qgep' sslmode=disable key='obj_id' estimatedmetadata=true table="qgep"."od_maintenance_event" sql=</datasource>
+      <datasource>service='pg_qgep' sslmode=disable key='"obj_id"' estimatedmetadata=true table="qgep"."od_maintenance_event" sql=</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -686,15 +773,14 @@
         <edittype widgetv2type="TextEdit" name="fk_provider">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="fk_wastewater_structure">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
         <edittype widgetv2type="TextEdit" name="fk_operator_company">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -705,9 +791,8 @@
         <alias field="dataowner" index="14" name="propriétaire de la donnée"/>
         <alias field="duration" index="4" name="duree"/>
         <alias field="fk_dataowner" index="16" name=""/>
-        <alias field="fk_operator_company" index="19" name=""/>
+        <alias field="fk_operator_company" index="18" name=""/>
         <alias field="fk_provider" index="17" name=""/>
-        <alias field="fk_wastewater_structure" index="18" name="ouvrage"/>
         <alias field="identifier" index="5" name="designation"/>
         <alias field="kind" index="6" name="genre"/>
         <alias field="last_modification" index="13" name="dernière modification"/>
@@ -723,6 +808,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="obj_id">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -778,9 +867,6 @@
         <edittype widgetv2type="TextEdit" name="fk_provider">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="fk_wastewater_structure">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
         <edittype widgetv2type="TextEdit" name="fk_operator_company">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
@@ -788,7 +874,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>od_pipe_profile</id>
-      <datasource>service='pg_qgep' key='obj_id' table="qgep"."od_pipe_profile" sql=</datasource>
+      <datasource>service='pg_qgep' key='"obj_id"' table="qgep"."od_pipe_profile" sql=</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -849,6 +935,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -867,6 +955,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="obj_id">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -960,6 +1052,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -976,6 +1070,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -1066,6 +1164,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -1082,6 +1182,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -1172,6 +1276,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -1188,6 +1294,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -1278,6 +1388,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -1294,6 +1406,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -1387,6 +1503,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -1404,6 +1522,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -1497,6 +1619,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -1513,6 +1637,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -1606,6 +1734,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -1623,6 +1753,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -1716,6 +1850,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -1732,6 +1868,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -1822,6 +1962,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -1838,6 +1980,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -1928,6 +2074,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -1944,6 +2092,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -2034,6 +2186,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -2050,6 +2204,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -2140,6 +2298,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -2156,6 +2316,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -2246,6 +2410,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -2262,6 +2428,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -2352,6 +2522,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -2368,6 +2540,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -2458,6 +2634,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -2474,6 +2652,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -2564,6 +2746,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -2580,6 +2764,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -2670,6 +2858,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -2686,6 +2876,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -2776,6 +2970,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -2792,6 +2988,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -2882,6 +3082,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -2898,6 +3100,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -2988,6 +3194,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -3004,6 +3212,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -3094,6 +3306,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -3110,6 +3324,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -3200,6 +3418,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -3216,6 +3436,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -3306,6 +3530,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -3322,6 +3548,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -3412,6 +3642,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -3428,6 +3660,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -3518,6 +3754,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -3534,6 +3772,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -3624,6 +3866,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -3640,6 +3884,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -3730,6 +3978,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -3746,6 +3996,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -3836,6 +4090,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -3852,6 +4108,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -3942,6 +4202,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -3958,6 +4220,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -4048,6 +4314,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -4064,6 +4332,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -4154,6 +4426,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -4170,6 +4444,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -4260,6 +4538,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -4276,6 +4556,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -4366,6 +4650,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -4382,6 +4668,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -4472,6 +4762,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -4488,6 +4780,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -4578,6 +4874,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -4594,6 +4892,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -4684,6 +4986,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -4700,6 +5004,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -4790,6 +5098,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -4806,6 +5116,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="code">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -4838,7 +5152,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vw_access_aid</id>
-      <datasource>service='pg_qgep' sslmode=disable key='obj_id' estimatedmetadata=true table="qgep"."vw_access_aid" sql=</datasource>
+      <datasource>service='pg_qgep' sslmode=disable key='"obj_id"' estimatedmetadata=true table="qgep"."vw_access_aid" sql=</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -4896,6 +5210,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -4913,6 +5229,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="obj_id">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -4945,7 +5265,7 @@
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vw_backflow_prevention</id>
-      <datasource>service='pg_qgep' sslmode=disable key='obj_id' estimatedmetadata=true table="qgep"."vw_backflow_prevention" sql=</datasource>
+      <datasource>service='pg_qgep' sslmode=disable key='"obj_id"' estimatedmetadata=true table="qgep"."vw_backflow_prevention" sql=</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -5009,6 +5329,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -5028,6 +5350,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="obj_id">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -5066,7 +5392,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vw_benching</id>
-      <datasource>service='pg_qgep' sslmode=disable key='obj_id' estimatedmetadata=true table="qgep"."vw_benching" sql=</datasource>
+      <datasource>service='pg_qgep' sslmode=disable key='"obj_id"' estimatedmetadata=true table="qgep"."vw_benching" sql=</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -5124,6 +5450,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -5141,6 +5469,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="obj_id">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -5173,7 +5505,7 @@
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vw_channel_</id>
-      <datasource>service='pg_qgep' key='obj_id' table="qgep"."vw_channel" sql=</datasource>
+      <datasource>service='pg_qgep' key='"obj_id"' table="qgep"."vw_channel" sql=</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -5306,6 +5638,8 @@
       </edittypes>
       <editform>./forms/channel.ui</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>uifilelayout</editorlayout>
@@ -5348,6 +5682,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="Hidden" name="obj_id">
           <widgetv2config fieldEditable="1" labelOnTop="0"/>
@@ -5455,7 +5793,7 @@
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>vw_cover___</id>
-      <datasource>service='pg_qgep' sslmode=disable key='obj_id' estimatedmetadata=true srid=21781 type=Point table="qgep"."vw_cover" (situation_geometry) sql=</datasource>
+      <datasource>service='pg_qgep' sslmode=disable key='"obj_id"' estimatedmetadata=true srid=21781 type=Point table="qgep"."vw_cover" (situation_geometry) sql=</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -5546,16 +5884,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -5580,6 +5918,7 @@
           </effect>
         </effect>
       </renderer-v2>
+      <labeling type="simple"/>
       <customproperties>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
@@ -5757,6 +6096,8 @@
       <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" showAll="1"/>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -5783,6 +6124,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="obj_id">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -5842,7 +6187,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vw_dryweather_downspout</id>
-      <datasource>service='pg_qgep' sslmode=disable key='obj_id' estimatedmetadata=true table="qgep"."vw_dryweather_downspout" sql=</datasource>
+      <datasource>service='pg_qgep' sslmode=disable key='"obj_id"' estimatedmetadata=true table="qgep"."vw_dryweather_downspout" sql=</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -5900,6 +6245,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -5917,6 +6264,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="obj_id">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -5949,7 +6300,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vw_dryweather_flume</id>
-      <datasource>service='pg_qgep' sslmode=disable key='obj_id' estimatedmetadata=true table="qgep"."vw_dryweather_flume" sql=</datasource>
+      <datasource>service='pg_qgep' sslmode=disable key='"obj_id"' estimatedmetadata=true table="qgep"."vw_dryweather_flume" sql=</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -6007,6 +6358,8 @@
       </edittypes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -6024,6 +6377,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="obj_id">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -6123,16 +6480,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="diameter"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -6157,6 +6514,7 @@
           </effect>
         </effect>
       </renderer-v2>
+      <labeling type="simple"/>
       <customproperties/>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -6185,6 +6543,8 @@
       </labelattributes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -6203,6 +6563,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="gid">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -6320,7 +6684,7 @@
             <layer pass="0" class="SimpleLine" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -6329,10 +6693,10 @@
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -6355,6 +6719,7 @@
           </effect>
         </effect>
       </renderer-v2>
+      <labeling type="simple"/>
       <customproperties/>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -6383,6 +6748,8 @@
       </labelattributes>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>generatedlayout</editorlayout>
@@ -6407,6 +6774,10 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="gid">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -6458,9 +6829,9 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="5000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="-4.65661e-10" maximumScale="5000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>vw_qgep_cover</id>
-      <datasource>service='pg_qgep' sslmode=disable key='obj_id' estimatedmetadata=true srid=21781 type=Point table="qgep"."vw_qgep_cover" (situation_geometry) sql=</datasource>
+      <datasource>service='pg_qgep' sslmode=disable key='"obj_id"' estimatedmetadata=true srid=21781 type=Point table="qgep"."vw_qgep_cover" (situation_geometry) sql=</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -6751,16 +7122,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.35"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="3"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -6784,16 +7155,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.35"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="3"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -6817,16 +7188,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="1.5"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -6850,16 +7221,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="1.5"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -6883,16 +7254,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -6916,16 +7287,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -6949,16 +7320,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="1.5"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -6982,16 +7353,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="1.5"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7015,16 +7386,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="0.8"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7048,16 +7419,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="0.8"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7081,16 +7452,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="1.5"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7114,16 +7485,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="1.5"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7147,16 +7518,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="1.2,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7178,16 +7549,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="-1.2,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.35"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7209,16 +7580,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="4"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7238,16 +7609,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7271,16 +7642,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="1.2,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7302,16 +7673,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="-1.2,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.35"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7333,16 +7704,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="4"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7366,16 +7737,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.35"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="4"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7397,16 +7768,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="equilateral_triangle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="3.7"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7430,16 +7801,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.35"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="4"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7461,16 +7832,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="equilateral_triangle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="3.7"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7494,16 +7865,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.35"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="3"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7525,16 +7896,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="0.5,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.35"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7556,16 +7927,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="-0.5,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.35"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7589,16 +7960,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.35"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="3"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7620,16 +7991,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="0.5,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.35"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7651,16 +8022,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="-0.5,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.35"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7684,16 +8055,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="1.5"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7715,16 +8086,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="0.25,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="1"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7746,16 +8117,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="-0.25,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="1"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7779,16 +8150,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="1.5"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7810,16 +8181,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="0.25,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="1"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7841,16 +8212,16 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="-0.25,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="1"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
               <effect enabled="0" type="effectStack">
@@ -7873,6 +8244,7 @@
           </effect>
         </effect>
       </renderer-v2>
+      <labeling type="simple"/>
       <customproperties>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
@@ -8025,7 +8397,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>obj_id</displayfield>
+      <displayfield>identifier</displayfield>
       <label>0</label>
       <labelattributes>
         <label fieldname="" text="Label"/>
@@ -8048,7 +8420,7 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="5000" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="5000" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -8056,6 +8428,8 @@
       <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" showAll="1"/>
       <editform>../../../cpp/qgis/build/output/bin</editform>
       <editforminit>qgepplugin.ui.forms.vw_cover_open</editforminit>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>tablayout</editorlayout>
@@ -8238,14 +8612,14 @@
           <attributeEditorField index="73" name="wn_provider"/>
         </attributeEditorContainer>
         <attributeEditorContainer name="Couvercles">
-          <attributeEditorRelation relation="" name="vw_cover20150507162234308_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
+          <attributeEditorRelation relation="vw_cover20150507162234308_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_cover20150507162234308_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
         </attributeEditorContainer>
         <attributeEditorContainer name="Structure Parts">
-          <attributeEditorRelation relation="" name="vw_access_aid20150507162234295_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
-          <attributeEditorRelation relation="" name="vw_backflow_prevention20150531093552085_fk_wastewater_structure_vw_qgep_cover_ws_obj_id"/>
-          <attributeEditorRelation relation="" name="vw_dryweather_flume20150507162234250_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
-          <attributeEditorRelation relation="" name="vw_benching20150507162234281_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
-          <attributeEditorRelation relation="" name="vw_dryweather_downspout20150507162234268_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
+          <attributeEditorRelation relation="vw_access_aid20150507162234295_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_access_aid20150507162234295_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
+          <attributeEditorRelation relation="vw_backflow_prevention20150531093552085_fk_wastewater_structure_vw_qgep_cover_ws_obj_id" name="vw_backflow_prevention20150531093552085_fk_wastewater_structure_vw_qgep_cover_ws_obj_id"/>
+          <attributeEditorRelation relation="vw_dryweather_flume20150507162234250_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_dryweather_flume20150507162234250_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
+          <attributeEditorRelation relation="vw_benching20150507162234281_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_benching20150507162234281_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
+          <attributeEditorRelation relation="vw_dryweather_downspout20150507162234268_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_dryweather_downspout20150507162234268_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
         </attributeEditorContainer>
         <attributeEditorContainer name="Maintenance">
           <attributeEditorRelation relation="" name="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_qgep_cover_obj_id"/>
@@ -8255,6 +8629,10 @@
         <actionsetting action="feature = QgsMapLayerRegistry.instance().mapLayer('od_wastewater_structure').getFeatures( QgsFeatureRequest().setFilterExpression( 'obj_id = \'{}\''.format( '[% &quot;ws_obj_id&quot; %]' ) ) ).next()&#xa;qgepplugin.ui.forms.digitizeDrainageChannel(feature.id(), 'od_wastewater_structure')" icon="" capture="0" type="1" name="Digitize Drainage Channel"/>
         <actionsetting action="ws_lyr = QgsMapLayerRegistry.instance().mapLayer('od_wastewater_structure')&#xa;feature = ws_lyr.getFeatures( QgsFeatureRequest().setFilterExpression( 'obj_id = \'{}\''.format( '[% &quot;ws_obj_id&quot; %]' ) ) ).next()&#xa;ws_lyr.startEditing()&#xa;ws_lyr.setSelectedFeatures([feature.id()])&#xa;qgis.utils.iface.setActiveLayer(ws_lyr)&#xa;qgis.utils.iface.actionAddPart().trigger()" icon="" capture="0" type="1" name="Digitize"/>
       </attributeactions>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="obj_id">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -8485,9 +8863,9 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>vw_qgep_reach</id>
-      <datasource>service='pg_qgep' key='obj_id' srid=21781 type=LineString table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
+      <datasource>service='pg_qgep' key='"obj_id"' srid=21781 type=LineString table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -8778,7 +9156,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -8787,14 +9165,14 @@
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MapUnit"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="0"/>
               <prop k="width_dd_active" v="1"/>
               <prop k="width_dd_expression" v="toreal(width) / 1000"/>
               <prop k="width_dd_field" v=""/>
               <prop k="width_dd_useexpr" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -8811,7 +9189,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -8824,10 +9202,10 @@
               <prop k="offset_dd_expression" v="toreal(width) / 2000"/>
               <prop k="offset_dd_field" v=""/>
               <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MapUnit"/>
               <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -8844,7 +9222,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -8857,10 +9235,10 @@
               <prop k="offset_dd_expression" v="toreal(width) / - 2000"/>
               <prop k="offset_dd_field" v=""/>
               <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MapUnit"/>
               <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -8879,7 +9257,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -8888,14 +9266,14 @@
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MapUnit"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="0"/>
               <prop k="width_dd_active" v="1"/>
               <prop k="width_dd_expression" v="toreal(width) / 1000"/>
               <prop k="width_dd_field" v=""/>
               <prop k="width_dd_useexpr" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -8912,7 +9290,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -8925,10 +9303,10 @@
               <prop k="offset_dd_expression" v="toreal(width) / 2000"/>
               <prop k="offset_dd_field" v=""/>
               <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MapUnit"/>
               <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -8945,7 +9323,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -8958,10 +9336,10 @@
               <prop k="offset_dd_expression" v="toreal(width) / - 2000"/>
               <prop k="offset_dd_field" v=""/>
               <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MapUnit"/>
               <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -8980,7 +9358,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -8989,10 +9367,10 @@
               <prop k="line_width" v="0.5"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9011,7 +9389,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9020,10 +9398,10 @@
               <prop k="line_width" v="0.5"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9042,7 +9420,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9051,10 +9429,10 @@
               <prop k="line_width" v="0.5"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9073,7 +9451,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9082,10 +9460,10 @@
               <prop k="line_width" v="0.5"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9104,7 +9482,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9113,10 +9491,10 @@
               <prop k="line_width" v="0.3"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9135,7 +9513,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9144,10 +9522,10 @@
               <prop k="line_width" v="0.3"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9166,7 +9544,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9175,14 +9553,14 @@
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MapUnit"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="0"/>
               <prop k="width_dd_active" v="1"/>
               <prop k="width_dd_expression" v="toreal(width) / 1000"/>
               <prop k="width_dd_field" v=""/>
               <prop k="width_dd_useexpr" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9199,7 +9577,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9212,10 +9590,10 @@
               <prop k="offset_dd_expression" v="toreal(width) / 2000"/>
               <prop k="offset_dd_field" v=""/>
               <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MapUnit"/>
               <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9232,7 +9610,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9245,10 +9623,10 @@
               <prop k="offset_dd_expression" v="toreal(width) / - 2000"/>
               <prop k="offset_dd_field" v=""/>
               <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MapUnit"/>
               <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9267,7 +9645,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9276,14 +9654,14 @@
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MapUnit"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="0"/>
               <prop k="width_dd_active" v="1"/>
               <prop k="width_dd_expression" v="toreal(width) / 1000"/>
               <prop k="width_dd_field" v=""/>
               <prop k="width_dd_useexpr" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9300,7 +9678,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9313,10 +9691,10 @@
               <prop k="offset_dd_expression" v="toreal(width) / 2000"/>
               <prop k="offset_dd_field" v=""/>
               <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MapUnit"/>
               <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9333,7 +9711,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9346,10 +9724,10 @@
               <prop k="offset_dd_expression" v="toreal(width) / - 2000"/>
               <prop k="offset_dd_field" v=""/>
               <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MapUnit"/>
               <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9368,7 +9746,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9377,10 +9755,10 @@
               <prop k="line_width" v="0.5"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9399,7 +9777,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
@@ -9408,10 +9786,10 @@
               <prop k="line_width" v="0.5"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
                   <prop k="blend_mode" v="0"/>
@@ -9432,6 +9810,7 @@
           </effect>
         </effect>
       </renderer-v2>
+      <labeling type="simple"/>
       <customproperties>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="true"/>
@@ -9581,6 +9960,8 @@
         <property key="labeling/wrapChar" value=""/>
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
+        <property key="variableNames" value="_fields_"/>
+        <property key="variableValues" value=""/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -9608,7 +9989,7 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -9616,6 +9997,8 @@
       <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" showAll="1"/>
       <editform>./forms/reach.ui</editform>
       <editforminit/>
+      <editforminitusecode>0</editforminitusecode>
+      <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <annotationform>../../../cpp/qgis/build/output/bin</annotationform>
       <editorlayout>tablayout</editorlayout>
@@ -9805,10 +10188,14 @@
           </attributeEditorContainer>
         </attributeEditorContainer>
         <attributeEditorContainer name="Maintenance">
-          <attributeEditorRelation relation="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_reach20141013202956655_ws_obj_id" name="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_reach20141013202956655_ws_obj_id"/>
+          <attributeEditorRelation relation="" name="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_reach20141013202956655_ws_obj_id"/>
         </attributeEditorContainer>
       </attributeEditorForm>
       <attributeactions/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="obj_id">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -10045,14 +10432,43 @@
     </maplayer>
   </projectlayers>
   <properties>
-    <SpatialRefSys>
-      <ProjectCRSProj4String type="QString">+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</ProjectCRSProj4String>
-      <ProjectCrs type="QString">EPSG:21781</ProjectCrs>
-      <ProjectCRSID type="int">1919</ProjectCRSID>
-    </SpatialRefSys>
+    <Variables>
+      <variableNames type="QStringList"/>
+      <variableValues type="QStringList"/>
+    </Variables>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WFSUrl type="QString"></WFSUrl>
     <Paths>
       <Absolute type="bool">false</Absolute>
     </Paths>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WFSLayers type="QStringList"/>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">D</DegreeFormat>
+    </PositionPrecision>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <Measure>
+      <Ellipsoid type="QString">NONE</Ellipsoid>
+    </Measure>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
     <Gui>
       <SelectionColorBluePart type="int">0</SelectionColorBluePart>
       <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
@@ -10066,12 +10482,42 @@
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
         <value>vw_cover___</value>
+        <value>vw_network_node</value>
+        <value>vw_network_segment</value>
         <value>vw_qgep_cover</value>
         <value>vw_qgep_reach</value>
-        <value>vw_network_segment</value>
-        <value>vw_network_node</value>
+        <value>pf_pfa20130514144154766</value>
+        <value>ad_posnumero_maison20130514143346530</value>
+        <value>cs_posnumero_de_batiment20130514143756039</value>
+        <value>bf_posimmeuble20130514143633121</value>
+        <value>no_posnomlocallieudit20130514143906869</value>
+        <value>bf_point_limite20130514143552315</value>
+        <value>axe_rue20130514143437774</value>
+        <value>pf_pfp20130514144226845</value>
+        <value>bf_bien_fonds20130514143508556</value>
+        <value>bf_ddp20130514143538213</value>
+        <value>cs_surfacecs20130514143830750</value>
+        <value>od_element_lineaire20130514144047075</value>
+        <value>od_element_surfacique20130514144124647</value>
+        <value>cs_batiment20130514143721709</value>
+        <value>od_batiment_souterrain20130514143946785</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
@@ -10086,8 +10532,38 @@
         <value>2</value>
         <value>2</value>
         <value>2</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -10102,15 +10578,116 @@
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
+        <value>8.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
+    <Identify>
+      <disabledLayers type="QStringList">
+        <value>Landeskarte_1_25_000___LK2520150824104659681</value>
+        <value>ad_posnumero_maison20130514143346530</value>
+        <value>axe_rue20130514143437774</value>
+        <value>bf_bien_fonds20130514143508556</value>
+        <value>bf_ddp20130514143538213</value>
+        <value>bf_point_limite20130514143552315</value>
+        <value>bf_posimmeuble20130514143633121</value>
+        <value>cs_batiment20130514143721709</value>
+        <value>cs_posnumero_de_batiment20130514143756039</value>
+        <value>cs_surfacecs20130514143830750</value>
+        <value>no_posnomlocallieudit20130514143906869</value>
+        <value>od_batiment_souterrain20130514143946785</value>
+        <value>od_element_lineaire20130514144047075</value>
+        <value>od_element_surfacique20130514144124647</value>
+        <value>od_maintenance_event</value>
+        <value>od_pipe_profile</value>
+        <value>pf_pfa20130514144154766</value>
+        <value>pf_pfp20130514144226845</value>
+        <value>vl_access_aid_kind</value>
+        <value>vl_backflow_prevention_kind</value>
+        <value>vl_channel_bedding_encasement</value>
+        <value>vl_channel_connection_type</value>
+        <value>vl_channel_function_hierarchic</value>
+        <value>vl_channel_function_hydraulic</value>
+        <value>vl_channel_usage_current</value>
+        <value>vl_channel_usage_planned</value>
+        <value>vl_cover_cover_shape</value>
+        <value>vl_cover_fastening</value>
+        <value>vl_cover_material</value>
+        <value>vl_cover_sludge_bucket</value>
+        <value>vl_cover_venting</value>
+        <value>vl_discharge_point_relevance</value>
+        <value>vl_maintenance_event_kind</value>
+        <value>vl_maintenance_event_status</value>
+        <value>vl_manhole_function</value>
+        <value>vl_pipe_profile_profile_type</value>
+        <value>vl_reach_elevation_determination</value>
+        <value>vl_reach_horizontal_positioning</value>
+        <value>vl_reach_inside_coating</value>
+        <value>vl_reach_material</value>
+        <value>vl_reach_point_elevation_accuracy</value>
+        <value>vl_reach_point_outlet_shape</value>
+        <value>vl_reach_reliner_material</value>
+        <value>vl_reach_relining_construction</value>
+        <value>vl_reach_relining_kind</value>
+        <value>vl_special_structure_bypass</value>
+        <value>vl_special_structure_function</value>
+        <value>vl_special_structure_stormwater_tank_arrangement</value>
+        <value>vl_structure_part_renovation_demand</value>
+        <value>vl_wastewater_structure_accessibility</value>
+        <value>vl_wastewater_structure_financing</value>
+        <value>vl_wastewater_structure_renovation_necessity</value>
+        <value>vl_wastewater_structure_rv_construction_type</value>
+        <value>vl_wastewater_structure_status</value>
+        <value>vl_wastewater_structure_structure_condition</value>
+        <value>vw_access_aid</value>
+        <value>vw_backflow_prevention</value>
+        <value>vw_benching</value>
+        <value>vw_channel_</value>
+        <value>vw_cover___</value>
+        <value>vw_dryweather_downspout</value>
+        <value>vw_dryweather_flume</value>
+        <value>vw_network_node</value>
+        <value>vw_network_segment</value>
+      </disabledLayers>
+    </Identify>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSAccessConstraints type="QString"></WMSAccessConstraints>
+    <WCSLayers type="QStringList"/>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:21781</ProjectCrs>
+      <ProjectCRSID type="int">1919</ProjectCRSID>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <DefaultStyles>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <RandomColors type="bool">true</RandomColors>
+      <AlphaInt type="int">255</AlphaInt>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
+    <WMSFees type="QString"></WMSFees>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSUrl type="QString"></WMSUrl>
   </properties>
   <visibility-presets/>
 </qgis>
