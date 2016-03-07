@@ -36,6 +36,7 @@ psql -v ON_ERROR_STOP=on -f ${DIR}/migration/cover_manhole.sql
 psql -v ON_ERROR_STOP=on -f ${DIR}/migration/profiles.sql
 psql -v ON_ERROR_STOP=on -f ${DIR}/migration/reach_channel.sql
 psql -v ON_ERROR_STOP=on -f ${DIR}/migration/prank_weir.sql
+psql -v ON_ERROR_STOP=on -f ${DIR}/migration/reachpoint_manhole_identifier.sql
 
 psql -v ON_ERROR_STOP=on -f ${DIR}/migration/90_create_topology.sql
 
