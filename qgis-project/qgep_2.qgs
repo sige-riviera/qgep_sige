@@ -228,10 +228,10 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Checked" name="cadastre">
+    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="cadastre">
       <customproperties>
         <property key="embedded" value="1"/>
-        <property key="embedded-invisible-layers"/>
+        <property key="embedded-invisible-layers" value="pf_pfa20130514144154766"/>
         <property key="embedded_project" value="../../cadastre/cadastre.qgs"/>
       </customproperties>
     </layer-tree-group>
@@ -289,10 +289,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>553659.25582094385754317</xmin>
-      <ymin>140914.09167144107050262</ymin>
-      <xmax>561016.32582094299141318</xmax>
-      <ymax>150700.03839848094503395</ymax>
+      <xmin>554440.40825710271019489</xmin>
+      <ymin>145656.82735076441895217</ymin>
+      <xmax>554497.11174576857592911</xmax>
+      <ymax>145732.25103428517468274</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -781,7 +781,7 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup embedded="1" open="false" checked="Qt::Checked" name="cadastre" project="../../cadastre/cadastre.qgs"/>
+    <legendgroup embedded="1" open="false" checked="Qt::PartiallyChecked" name="cadastre" project="../../cadastre/cadastre.qgs"/>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="carte" showFeatureCount="0">
       <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="pixel20160303102602394" visible="1"/>
