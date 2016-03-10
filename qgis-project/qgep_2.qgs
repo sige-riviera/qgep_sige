@@ -53,6 +53,9 @@
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_examination20160309111740549" name="inspection">
         <customproperties/>
       </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_damage20160309111740741" name="vw_qgep_damage">
+        <customproperties/>
+      </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_data_media20160309111740597" name="od_data_media">
         <customproperties/>
       </layer-tree-layer>
@@ -81,9 +84,6 @@
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_examination_weather20160309111740727" name="vl_examination_weather">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_damage20160309111740741" name="vw_qgep_damage">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -586,6 +586,11 @@
           <legendlayerfile isInOverview="0" layerid="od_examination20160309111740549" visible="1"/>
         </filegroup>
       </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_qgep_damage" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="vw_qgep_damage20160309111740741" visible="1"/>
+        </filegroup>
+      </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_data_media" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_data_media20160309111740597" visible="1"/>
@@ -634,11 +639,6 @@
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_examination_weather" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_examination_weather20160309111740727" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_qgep_damage" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="vw_qgep_damage20160309111740741" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
@@ -10791,6 +10791,12 @@ def my_form_open(dialog, layer, feature):
       <ColorRamp type="QString"></ColorRamp>
     </DefaultStyles>
     <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <quickfinder_plugin>
+      <qftsfilepath type="QString">/home/drouzaud/Documents/QGEP/sige/qgis-project/qgep_sige.qfts</qftsfilepath>
+      <project type="bool">true</project>
+      <refreshDelay type="int">15</refreshDelay>
+      <refreshAuto type="bool">true</refreshAuto>
+    </quickfinder_plugin>
     <WMSContactMail type="QString"></WMSContactMail>
     <WMSImageQuality type="int">90</WMSImageQuality>
     <WMSRestrictedComposers type="QStringList"/>
