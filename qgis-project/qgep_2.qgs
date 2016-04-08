@@ -39,25 +39,19 @@
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_channel_" name="vw_channel">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_maintenance_event" name="od_maintenance_event">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="re_maintenance_event_wastewater_structure" name="re_maintenance_event_wastewater_structure">
-        <customproperties/>
-      </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_organisation" name="od_organisation">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Checked" name="Inspection">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="Inspection">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_examination20160309111740549" name="inspection">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="re_maintenance_event_wastewater_structure" name="re_maintenance_event_wastewater_structure">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_maintenance" name="vw_qgep_maintenance">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_maintenance" name="évènements de maintenance">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_damage" name="vw_qgep_damage">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_damage" name="dégâts">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_data_media20160309111740597" name="od_data_media">
@@ -66,32 +60,8 @@
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_file20160309111740611" name="od_file">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_channel_code" name="vl_damage_channel_code">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_channel_connection20160309111740641" name="vl_damage_channel_connection">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_manhole_connection20160309111740654" name="vl_damage_manhole_connection">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_manhole_damage_code_manhole20160309111740670" name="vl_damage_manhole_code">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_single_damage_class" name="vl_damage_single_damage_class">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_data_media_kind20160309111740697" name="vl_data_media_kind">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_examination_recording_type20160309111740713" name="vl_examination_recording_type">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_examination_weather20160309111740727" name="vl_examination_weather">
-        <customproperties/>
-      </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Checked" name="Value Lists">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="Value Lists">
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Discharge Point">
         <customproperties/>
@@ -162,7 +132,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Maintenance Event">
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="VL Maintenance Event">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_maintenance_event_kind" name="vl_maintenance_event_kind">
           <customproperties/>
@@ -248,13 +218,40 @@
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Pipe Profile">
         <customproperties/>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_pipe_profile" name="od_pipe_profile">
+          <customproperties/>
+        </layer-tree-layer>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_pipe_profile_profile_type" name="vl_pipe_profile_profile_type">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_pipe_profile" name="od_pipe_profile">
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="VL Inspection">
         <customproperties/>
-      </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_channel_connection20160309111740641" name="vl_damage_channel_connection">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_manhole_connection20160309111740654" name="vl_damage_manhole_connection">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_channel_code" name="vl_damage_channel_code">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_manhole_damage_code_manhole20160309111740670" name="vl_damage_manhole_code">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_single_damage_class" name="vl_damage_single_damage_class">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_data_media_kind20160309111740697" name="vl_data_media_kind">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_examination_recording_type20160309111740713" name="vl_examination_recording_type">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_examination_weather20160309111740727" name="vl_examination_weather">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
     </layer-tree-group>
     <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Hydraulic">
       <customproperties/>
@@ -322,6 +319,9 @@
     <relation referencingLayer="vw_qgep_cover" referencedLayer="od_organisation" id="vw_qgep_cover_fk_owner_od_organisation_obj_id" name="Owner Cover">
       <fieldRef referencedField="obj_id" referencingField="fk_owner"/>
     </relation>
+    <relation referencingLayer="vw_qgep_damage" referencedLayer="vw_qgep_maintenance" id="vw_qgep_damage_fs_examination_vw_qgep_maintenance_obj_id" name="Dégâts">
+      <fieldRef referencedField="obj_id" referencingField="fs_examination"/>
+    </relation>
     <relation referencingLayer="vw_qgep_reach" referencedLayer="od_organisation" id="vw_qgep_reach_fk_operator_od_organisation_obj_id" name="Operator Reach">
       <fieldRef referencedField="obj_id" referencingField="fk_operator"/>
     </relation>
@@ -335,10 +335,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>557078.71209369448479265</xmin>
-      <ymin>146459.7331189745455049</ymin>
-      <xmax>557187.44790630543138832</xmax>
-      <ymax>146509.98688102542655542</ymax>
+      <xmin>556800.29472912976052612</xmin>
+      <ymin>146317.8437459830311127</ymin>
+      <xmax>556872.78527087031397969</xmax>
+      <ymax>146351.34625401697121561</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -458,7 +458,6 @@
       <item>vw_qgep_reach</item>
       <item>vl_maintenance_event_kind</item>
       <item>vl_maintenance_event_status</item>
-      <item>od_maintenance_event</item>
       <item>vl_access_aid_kind</item>
       <item>vw_access_aid</item>
       <item>vl_backflow_prevention_kind</item>
@@ -503,7 +502,6 @@
       <item>cs_batiment20130514143721709</item>
       <item>od_batiment_souterrain20130514143946785</item>
       <item>pixel20160303102602394</item>
-      <item>od_examination20160309111740549</item>
       <item>od_data_media20160309111740597</item>
       <item>od_file20160309111740611</item>
       <item>vl_damage_channel_code</item>
@@ -572,34 +570,24 @@
           <legendlayerfile isInOverview="0" layerid="vw_channel_" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_maintenance_event" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="od_maintenance_event" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="re_maintenance_event_wastewater_structure" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="re_maintenance_event_wastewater_structure" visible="1"/>
-        </filegroup>
-      </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_organisation" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_organisation" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Checked" name="Inspection">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="inspection" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Checked" name="Inspection">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="re_maintenance_event_wastewater_structure" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="od_examination20160309111740549" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="re_maintenance_event_wastewater_structure" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_qgep_maintenance" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="évènements de maintenance" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_qgep_maintenance" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_qgep_damage" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="dégâts" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_qgep_damage" visible="1"/>
         </filegroup>
@@ -614,48 +602,8 @@
           <legendlayerfile isInOverview="0" layerid="od_file20160309111740611" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_damage_channel_code" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="vl_damage_channel_code" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_damage_channel_connection" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="vl_damage_channel_connection20160309111740641" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_damage_manhole_connection" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="vl_damage_manhole_connection20160309111740654" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_damage_manhole_code" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="vl_damage_manhole_damage_code_manhole20160309111740670" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_damage_single_damage_class" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="vl_damage_single_damage_class" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_data_media_kind" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="vl_data_media_kind20160309111740697" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_examination_recording_type" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="vl_examination_recording_type20160309111740713" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_examination_weather" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="vl_examination_weather20160309111740727" visible="1"/>
-        </filegroup>
-      </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Checked" name="Value Lists">
+    <legendgroup open="true" checked="Qt::Checked" name="Value Lists">
       <legendgroup open="false" checked="Qt::Checked" name="Discharge Point">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Relevance" showFeatureCount="0">
           <filegroup open="true" hidden="false">
@@ -750,7 +698,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="VL Maintenance Event">
+      <legendgroup open="true" checked="Qt::Checked" name="VL Maintenance Event">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_maintenance_event_kind" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_maintenance_event_kind" visible="1"/>
@@ -876,17 +824,59 @@
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Checked" name="Pipe Profile">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_pipe_profile" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="od_pipe_profile" visible="1"/>
+          </filegroup>
+        </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_pipe_profile_profile_type" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_pipe_profile_profile_type" visible="1"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_pipe_profile" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="od_pipe_profile" visible="1"/>
-        </filegroup>
-      </legendlayer>
+      <legendgroup open="true" checked="Qt::Checked" name="VL Inspection">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_damage_channel_connection" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="vl_damage_channel_connection20160309111740641" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_damage_manhole_connection" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="vl_damage_manhole_connection20160309111740654" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_damage_channel_code" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="vl_damage_channel_code" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_damage_manhole_code" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="vl_damage_manhole_damage_code_manhole20160309111740670" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_damage_single_damage_class" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="vl_damage_single_damage_class" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_data_media_kind" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="vl_data_media_kind20160309111740697" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_examination_recording_type" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="vl_examination_recording_type20160309111740713" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_examination_weather" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="vl_examination_weather20160309111740727" visible="1"/>
+          </filegroup>
+        </legendlayer>
+      </legendgroup>
     </legendgroup>
     <legendgroup open="false" checked="Qt::Unchecked" name="Hydraulic">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="vw_wastewater_node" showFeatureCount="0">
@@ -939,7 +929,7 @@
       </srs>
       <customproperties/>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE("obj_id", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -993,86 +983,6 @@
       </conditionalstyles>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
-      <id>od_examination20160309111740549</id>
-      <datasource>service='pg_qgep_sige' key='"obj_id"' table="qgep"."od_examination" sql=</datasource>
-      <shortname>od_examination</shortname>
-      <title></title>
-      <abstract></abstract>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>inspection</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-          <srsid>3452</srsid>
-          <srid>4326</srid>
-          <authid>EPSG:4326</authid>
-          <description>WGS 84</description>
-          <projectionacronym>longlat</projectionacronym>
-          <ellipsoidacronym>WGS84</ellipsoidacronym>
-          <geographicflag>true</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <customproperties/>
-      <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
-      <vectorjoins/>
-      <layerDependencies/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="obj_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="equipment">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="topointidentifier">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="frompointidentifier">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="inspected_length">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="recording_type">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="vehicle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="videonumber">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="weather">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="fs_reach_point">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
-      <annotationform>.</annotationform>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions/>
-      <editform>.</editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-    </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>od_file20160309111740611</id>
       <datasource>service='pg_qgep_sige' key='"obj_id"' table="qgep"."od_file" sql=</datasource>
       <shortname>od_file</shortname>
@@ -1096,7 +1006,7 @@
       </srs>
       <customproperties/>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE("obj_id", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -1146,131 +1056,6 @@
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-    </maplayer>
-    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
-      <id>od_maintenance_event</id>
-      <datasource>service='pg_qgep_sige' key='"obj_id"' estimatedmetadata=true table="qgep"."od_maintenance_event" sql=</datasource>
-      <shortname></shortname>
-      <title></title>
-      <abstract></abstract>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>od_maintenance_event</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-          <srsid>3452</srsid>
-          <srid>4326</srid>
-          <authid>EPSG:4326</authid>
-          <description>WGS 84</description>
-          <projectionacronym>longlat</projectionacronym>
-          <ellipsoidacronym>WGS84</ellipsoidacronym>
-          <geographicflag>true</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <customproperties/>
-      <provider encoding="System">postgres</provider>
-      <previewExpression>COALESCE("obj_id", '&lt;NULL>')</previewExpression>
-      <vectorjoins/>
-      <layerDependencies/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="obj_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="base_data">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="cost">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="data_details">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="duration">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="identifier">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="kind">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" Layer="vl_maintenance_event_kind" Value="value_en" labelOnTop="0" AllowMulti="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="operator">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="reason">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="remark">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="result">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="status">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" Layer="vl_maintenance_event_status" Value="value_en" labelOnTop="0" AllowMulti="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="time_point">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="last_modification">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="dataowner">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="provider">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="fk_dataowner">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="fk_provider">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="fk_operator_company">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
-      <annotationform>$HOME</annotationform>
-      <aliases>
-        <alias field="base_data" index="1" name=""/>
-        <alias field="cost" index="2" name=""/>
-        <alias field="data_details" index="3" name=""/>
-        <alias field="dataowner" index="14" name=""/>
-        <alias field="duration" index="4" name=""/>
-        <alias field="identifier" index="5" name=""/>
-        <alias field="kind" index="6" name=""/>
-        <alias field="last_modification" index="13" name=""/>
-        <alias field="obj_id" index="0" name=""/>
-        <alias field="operator" index="7" name=""/>
-        <alias field="provider" index="15" name=""/>
-        <alias field="reason" index="8" name=""/>
-        <alias field="remark" index="9" name=""/>
-        <alias field="result" index="10" name=""/>
-        <alias field="status" index="11" name=""/>
-        <alias field="time_point" index="12" name=""/>
-      </aliases>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions/>
-      <editform>$HOME</editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3474,7 +3259,7 @@
       </srs>
       <customproperties/>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE("code", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -3548,7 +3333,7 @@
       </srs>
       <customproperties/>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE("code", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -3857,7 +3642,7 @@
       </srs>
       <customproperties/>
       <provider encoding="System">postgres</provider>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE("code", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -6441,12 +6226,6 @@
       </conditionalstyles>
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1000" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>547510</xmin>
-        <ymin>133658.19873023999389261</ymin>
-        <xmax>563275.15000000002328306</xmax>
-        <ymax>154628.08457390000694431</ymax>
-      </extent>
       <id>vw_cover___</id>
       <datasource>service='pg_qgep_sige' key='"obj_id"' estimatedmetadata=true srid=21781 type=Point table="qgep"."vw_cover" (situation_geometry) sql=</datasource>
       <shortname></shortname>
@@ -7275,12 +7054,6 @@
       </conditionalstyles>
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="5000" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>547510</xmin>
-        <ymin>133658.19873023999389261</ymin>
-        <xmax>563275.15000000002328306</xmax>
-        <ymax>154628.08457390000694431</ymax>
-      </extent>
       <id>vw_qgep_cover</id>
       <datasource>service='pg_qgep_sige' key='"obj_id"' estimatedmetadata=true srid=21781 type=Point table="qgep"."vw_qgep_cover" (situation_geometry) sql=</datasource>
       <shortname></shortname>
@@ -9209,7 +8982,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="100000" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vw_qgep_damage</id>
       <datasource>service='pg_qgep_sige' key='"obj_id"' table="qgep"."vw_qgep_damage" sql=</datasource>
       <shortname>vw_qgep_damage</shortname>
@@ -9218,7 +8991,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_qgep_damage</layername>
+      <layername>dégâts</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -9231,10 +9004,19 @@
           <geographicflag>true</geographicflag>
         </spatialrefsys>
       </srs>
-      <customproperties/>
+      <customproperties>
+        <property key="variableNames" value="_fields_"/>
+        <property key="variableValues" value=""/>
+      </customproperties>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
-      <vectorjoins/>
+      <previewExpression>    COALESCE("vl_damage_single_damage_class_value_fr"||' ' ,'') || comments</previewExpression>
+      <vectorjoins>
+        <join hasCustomPrefix="1" joinFieldName="code" customPrefix="vl_damage_single_damage_class_" targetFieldName="single_damage_class" memoryCache="1" joinLayerId="vl_damage_single_damage_class">
+          <joinFieldsSubset>
+            <field name="value_fr"/>
+          </joinFieldsSubset>
+        </join>
+      </vectorjoins>
       <layerDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
@@ -9250,8 +9032,8 @@
         <edittype widgetv2type="TextEdit" name="comments">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="single_damage_class">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        <edittype widgetv2type="ValueRelation" name="single_damage_class">
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" Layer="vl_damage_single_damage_class" Value="value_fr" labelOnTop="0" AllowMulti="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="last_modification">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -9262,8 +9044,8 @@
         <edittype widgetv2type="TextEdit" name="provider">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="fs_examination">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        <edittype widgetv2type="RelationReference" name="fs_examination">
+          <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="vw_qgep_damage_fs_examination_vw_qgep_maintenance_obj_id" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="quantification2">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -9286,20 +9068,33 @@
         <edittype widgetv2type="TextEdit" name="connection">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="damage_code">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
         <edittype widgetv2type="TextEdit" name="damage_end">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="damage_begin">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
+        <edittype widgetv2type="ValueRelation" name="manhole_damage_code">
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" Layer="vl_damage_manhole_damage_code_manhole20160309111740670" Value="value_fr" labelOnTop="0" AllowMulti="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="yyy_manhole_schachtbereich">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
+        <edittype widgetv2type="ValueRelation" name="channel_damage_code">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" Layer="vl_damage_channel_code" Value="value_fr" labelOnTop="0" AllowMulti="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="vl_damage_single_damage_class_value_fr">
+          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
+      <aliases>
+        <alias field="channel_damage_code" index="19" name="code collecteur"/>
+        <alias field="comments" index="2" name="description"/>
+        <alias field="damage_type" index="0" name="type de dommage"/>
+        <alias field="manhole_damage_code" index="17" name="code chambre"/>
+        <alias field="single_damage_class" index="3" name="gravité"/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
@@ -9307,10 +9102,43 @@
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
+      <editorlayout>tablayout</editorlayout>
+      <attributeEditorForm>
+        <attributeEditorContainer name="Dégâts" columnCount="1">
+          <attributeEditorField index="1" name="obj_id"/>
+          <attributeEditorField index="2" name="comments"/>
+          <attributeEditorField index="3" name="single_damage_class"/>
+          <attributeEditorField index="9" name="distance"/>
+          <attributeEditorField index="11" name="video_counter"/>
+          <attributeEditorField index="19" name="channel_damage_code"/>
+          <attributeEditorField index="17" name="manhole_damage_code"/>
+          <attributeEditorField index="10" name="quantification1"/>
+          <attributeEditorField index="8" name="quantification2"/>
+        </attributeEditorContainer>
+      </attributeEditorForm>
+      <widgets>
+        <widget name="vl_damage_channel_code_value_fr">
+          <config/>
+        </widget>
+      </widgets>
       <conditionalstyles>
         <rowstyles/>
         <fieldstyles/>
@@ -9325,7 +9153,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_qgep_maintenance</layername>
+      <layername>évènements de maintenance</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -9343,7 +9171,7 @@
         <property key="variableValues" value=""/>
       </customproperties>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression>COALESCE("obj_id", '&lt;NULL>')</previewExpression>
+      <previewExpression> year( time_point)||'.'||month( time_point)||'.'||day( time_point)</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -9351,11 +9179,13 @@
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="maintenance_type">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        <edittype widgetv2type="ValueMap" name="maintenance_type">
+          <widgetv2config fieldEditable="0" labelOnTop="0">
+            <value key="inspection" value="examination"/>
+          </widgetv2config>
         </edittype>
         <edittype widgetv2type="TextEdit" name="obj_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="base_data">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -9372,8 +9202,8 @@
         <edittype widgetv2type="TextEdit" name="identifier">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="kind">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        <edittype widgetv2type="ValueRelation" name="kind">
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" Layer="vl_maintenance_event_kind" Value="value_fr" labelOnTop="0" AllowMulti="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="operator">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -9387,11 +9217,11 @@
         <edittype widgetv2type="TextEdit" name="result">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="status">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        <edittype widgetv2type="ValueRelation" name="status">
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" Layer="vl_maintenance_event_status" Value="value_fr" labelOnTop="0" AllowMulti="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="time_point">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        <edittype widgetv2type="DateTime" name="time_point">
+          <widgetv2config fieldEditable="1" calendar_popup="1" allow_null="1" display_format="yyyy-MM-dd" field_format="yyyy-MM-dd" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="last_modification">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -9410,6 +9240,9 @@
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_operator_company">
           <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="obj_id" Layer="od_organisation" Value="identifier" labelOnTop="0" AllowMulti="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="active_zone">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="equipment">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -9440,6 +9273,20 @@
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
+      <aliases>
+        <alias field="fk_operator_company" index="19" name="entreprise"/>
+        <alias field="fs_reach_point" index="29" name="sommet de collecteur"/>
+        <alias field="inspected_length" index="24" name="longueur inspectée"/>
+        <alias field="kind" index="7" name="type"/>
+        <alias field="maintenance_type" index="0" name="sous-type"/>
+        <alias field="operator" index="8" name="opérateur"/>
+        <alias field="reason" index="9" name="motif"/>
+        <alias field="remark" index="10" name="remarque"/>
+        <alias field="result" index="11" name="résultats"/>
+        <alias field="status" index="12" name="état"/>
+        <alias field="time_point" index="13" name="date"/>
+        <alias field="videonumber" index="27" name="vidéo"/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
@@ -9465,9 +9312,34 @@ def my_form_open(dialog, layer, feature):
 	control = dialog.findChild(QWidget, "MyLineEdit")
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
+      <editorlayout>tablayout</editorlayout>
+      <attributeEditorForm>
+        <attributeEditorContainer name="Evènement" columnCount="1">
+          <attributeEditorContainer name="Maintenance" columnCount="2">
+            <attributeEditorField index="1" name="obj_id"/>
+            <attributeEditorField index="0" name="maintenance_type"/>
+            <attributeEditorField index="7" name="kind"/>
+            <attributeEditorField index="8" name="operator"/>
+            <attributeEditorField index="9" name="reason"/>
+            <attributeEditorField index="10" name="remark"/>
+            <attributeEditorField index="11" name="result"/>
+            <attributeEditorField index="12" name="status"/>
+            <attributeEditorField index="13" name="time_point"/>
+            <attributeEditorField index="19" name="fk_operator_company"/>
+          </attributeEditorContainer>
+          <attributeEditorContainer name="Inspection" columnCount="2">
+            <attributeEditorField index="24" name="inspected_length"/>
+            <attributeEditorField index="27" name="videonumber"/>
+            <attributeEditorField index="29" name="fs_reach_point"/>
+          </attributeEditorContainer>
+          <attributeEditorRelation relation="vw_qgep_damage_fs_examination_vw_qgep_maintenance_obj_id" name="vw_qgep_damage_fs_examination_vw_qgep_maintenance_obj_id"/>
+        </attributeEditorContainer>
+      </attributeEditorForm>
       <widgets>
         <widget name="re_maintenance_wastewaterstructure_maintenance">
+          <config/>
+        </widget>
+        <widget name="vw_qgep_damage_fs_examination_vw_qgep_maintenance_obj_id">
           <config/>
         </widget>
       </widgets>
@@ -9477,12 +9349,6 @@ def my_form_open(dialog, layer, feature):
       </conditionalstyles>
     </maplayer>
     <maplayer minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>549847.1244071900146082</xmin>
-        <ymin>133638.91964003001339734</ymin>
-        <xmax>563275.15000000002328306</xmax>
-        <ymax>152651.20973703000345267</ymax>
-      </extent>
       <id>vw_qgep_reach</id>
       <datasource>service='pg_qgep_sige' key='"obj_id"' srid=21781 type=LineString table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
       <shortname></shortname>
@@ -9741,6 +9607,15 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="rp_to_fk_wastewater_networkelement">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="me_obj_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="me_active_zone">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="me_identifier">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="material_abbr_en">
