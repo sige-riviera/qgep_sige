@@ -1,6 +1,7 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis projectname="" version="2.15.0-Master">
   <title></title>
+  <autotransaction active="1"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
     <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_cover" name="couvercle">
@@ -41,19 +42,22 @@
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_maintenance_event" name="od_maintenance_event">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="re_maintenance_event_wastewater_structure20160111110603931" name="re_maintenance_event_wastewater_structure">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="re_maintenance_event_wastewater_structure" name="re_maintenance_event_wastewater_structure">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_organisation20160212172933583" name="od_organisation">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_organisation" name="od_organisation">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Checked" name="Inspection">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="Inspection">
       <customproperties/>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_examination20160309111740549" name="inspection">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_damage20160309111740741" name="vw_qgep_damage">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_maintenance" name="vw_qgep_maintenance">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_damage" name="vw_qgep_damage">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_data_media20160309111740597" name="od_data_media">
@@ -279,11 +283,11 @@
     </layer-tree-layer>
   </layer-tree-group>
   <relations>
-    <relation referencingLayer="re_maintenance_event_wastewater_structure20160111110603931" referencedLayer="od_maintenance_event" id="re_maintenance_event_wastewater_structure20160111110603931_fk_maintenance_event_od_maintenance_event_obj_id" name="Wastewater Structures">
-      <fieldRef referencedField="obj_id" referencingField="fk_maintenance_event"/>
-    </relation>
-    <relation referencingLayer="re_maintenance_event_wastewater_structure20160111110603931" referencedLayer="vw_qgep_cover" id="re_maintenance_event_wastewater_structure20160111110603931_fk_wastewater_structure_vw_qgep_cover_ws_obj_id" name="Maintenances">
+    <relation referencingLayer="re_maintenance_event_wastewater_structure" referencedLayer="vw_qgep_cover" id="re_maintenance_wastewaterstructure_cover" name="Maintenances">
       <fieldRef referencedField="ws_obj_id" referencingField="fk_wastewater_structure"/>
+    </relation>
+    <relation referencingLayer="re_maintenance_event_wastewater_structure" referencedLayer="vw_qgep_maintenance" id="re_maintenance_wastewaterstructure_maintenance" name="Wastewater Structures">
+      <fieldRef referencedField="obj_id" referencingField="fk_maintenance_event"/>
     </relation>
     <relation referencingLayer="vw_qgep_reach" referencedLayer="od_pipe_profile" id="reach-fk_pipe_profile" name="Reaches">
       <fieldRef referencedField="obj_id" referencingField="fk_pipe_profile"/>
@@ -309,16 +313,16 @@
     <relation referencingLayer="vw_dryweather_flume" referencedLayer="vw_qgep_cover" id="vw_dryweather_flume20150507162234250_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="Dryweather Flumes">
       <fieldRef referencedField="ws_obj_id" referencingField="fk_wastewater_structure"/>
     </relation>
-    <relation referencingLayer="vw_qgep_cover" referencedLayer="od_organisation20160212172933583" id="vw_qgep_cover_fk_operator_od_organisation20160212172933583_obj_id" name="Operator Cover">
+    <relation referencingLayer="vw_qgep_cover" referencedLayer="od_organisation" id="vw_qgep_cover_fk_operator_od_organisation_obj_id" name="Operator Cover">
       <fieldRef referencedField="obj_id" referencingField="fk_operator"/>
     </relation>
-    <relation referencingLayer="vw_qgep_cover" referencedLayer="od_organisation20160212172933583" id="vw_qgep_cover_fk_owner_od_organisation20160212172933583_obj_id" name="Owner Cover">
+    <relation referencingLayer="vw_qgep_cover" referencedLayer="od_organisation" id="vw_qgep_cover_fk_owner_od_organisation_obj_id" name="Owner Cover">
       <fieldRef referencedField="obj_id" referencingField="fk_owner"/>
     </relation>
-    <relation referencingLayer="vw_qgep_reach" referencedLayer="od_organisation20160212172933583" id="vw_qgep_reach_fk_operator_od_organisation20160212172933583_obj_id" name="Operator Reach">
+    <relation referencingLayer="vw_qgep_reach" referencedLayer="od_organisation" id="vw_qgep_reach_fk_operator_od_organisation_obj_id" name="Operator Reach">
       <fieldRef referencedField="obj_id" referencingField="fk_operator"/>
     </relation>
-    <relation referencingLayer="vw_qgep_reach" referencedLayer="od_organisation20160212172933583" id="vw_qgep_reach_fk_owner_od_organisation20160212172933583_obj_id" name="Owner Reach">
+    <relation referencingLayer="vw_qgep_reach" referencedLayer="od_organisation" id="vw_qgep_reach_fk_owner_od_organisation_obj_id" name="Owner Reach">
       <fieldRef referencedField="obj_id" referencingField="fk_owner"/>
     </relation>
     <relation referencingLayer="vw_wastewater_node20150607121012062" referencedLayer="vw_qgep_cover" id="wastewater_node-fk_wastewater-structure" name="Wastewater Nodes">
@@ -328,10 +332,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>557688.45489957882091403</xmin>
-      <ymin>147084.73556647211080417</ymin>
-      <xmax>558514.28510042116977274</xmax>
-      <ymax>147466.40443352790316567</ymax>
+      <xmin>557688.50093707884661853</xmin>
+      <ymin>147084.75684334049583413</ymin>
+      <xmax>558514.23906292114406824</xmax>
+      <ymax>147466.38315665951813571</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -478,8 +482,8 @@
       <item>vl_cover_positional_accuracy20151117153235900</item>
       <item>vl_manhole_material20151117174216343</item>
       <item>vl_manhole_surface_inflow20151117174216393</item>
-      <item>re_maintenance_event_wastewater_structure20160111110603931</item>
-      <item>od_organisation20160212172933583</item>
+      <item>re_maintenance_event_wastewater_structure</item>
+      <item>od_organisation</item>
       <item>pf_pfa20130514144154766</item>
       <item>ad_posnumero_maison20130514143346530</item>
       <item>cs_posnumero_de_batiment20130514143756039</item>
@@ -507,7 +511,8 @@
       <item>vl_data_media_kind20160309111740697</item>
       <item>vl_examination_recording_type20160309111740713</item>
       <item>vl_examination_weather20160309111740727</item>
-      <item>vw_qgep_damage20160309111740741</item>
+      <item>vw_qgep_damage</item>
+      <item>vw_qgep_maintenance</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -571,24 +576,29 @@
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="re_maintenance_event_wastewater_structure" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="re_maintenance_event_wastewater_structure20160111110603931" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="re_maintenance_event_wastewater_structure" visible="1"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_organisation" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="od_organisation20160212172933583" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="od_organisation" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Checked" name="Inspection">
+    <legendgroup open="true" checked="Qt::Checked" name="Inspection">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="inspection" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_examination20160309111740549" visible="1"/>
         </filegroup>
       </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_qgep_maintenance" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="vw_qgep_maintenance" visible="1"/>
+        </filegroup>
+      </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_qgep_damage" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="vw_qgep_damage20160309111740741" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="vw_qgep_damage" visible="1"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_data_media" showFeatureCount="0">
@@ -904,7 +914,7 @@
   <projectlayers>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>od_data_media20160309111740597</id>
-      <datasource>service='pg_qgep_sige' sslmode=disable key='"obj_id"' table="qgep"."od_data_media" sql=</datasource>
+      <datasource>service='pg_qgep_sige' key='"obj_id"' table="qgep"."od_data_media" sql=</datasource>
       <shortname>od_data_media</shortname>
       <title></title>
       <abstract></abstract>
@@ -981,7 +991,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>od_examination20160309111740549</id>
-      <datasource>service='pg_qgep_sige' sslmode=disable key='"obj_id"' table="qgep"."od_examination" sql=</datasource>
+      <datasource>service='pg_qgep_sige' key='"obj_id"' table="qgep"."od_examination" sql=</datasource>
       <shortname>od_examination</shortname>
       <title></title>
       <abstract></abstract>
@@ -1061,7 +1071,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>od_file20160309111740611</id>
-      <datasource>service='pg_qgep_sige' sslmode=disable key='"obj_id"' table="qgep"."od_file" sql=</datasource>
+      <datasource>service='pg_qgep_sige' key='"obj_id"' table="qgep"."od_file" sql=</datasource>
       <shortname>od_file</shortname>
       <title></title>
       <abstract></abstract>
@@ -1268,7 +1278,7 @@
       </conditionalstyles>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
-      <id>od_organisation20160212172933583</id>
+      <id>od_organisation</id>
       <datasource>service='pg_qgep' key='"obj_id"' table="qgep"."od_organisation" sql=</datasource>
       <shortname>od_organisation</shortname>
       <title></title>
@@ -1766,7 +1776,7 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="-4.65661e-10">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -1867,7 +1877,7 @@
       <blendMode>0</blendMode>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
-      <id>re_maintenance_event_wastewater_structure20160111110603931</id>
+      <id>re_maintenance_event_wastewater_structure</id>
       <datasource>service='pg_qgep' key='"obj_id"' table="qgep"."re_maintenance_event_wastewater_structure" sql=</datasource>
       <shortname>re_maintenance_event_wastewater_structure</shortname>
       <title></title>
@@ -3143,7 +3153,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vl_damage_channel_channel_damage_code20160309111740627</id>
-      <datasource>service='pg_qgep_sige' sslmode=disable key='code' table="qgep"."vl_damage_channel_code" sql=</datasource>
+      <datasource>service='pg_qgep_sige' key='code' table="qgep"."vl_damage_channel_code" sql=</datasource>
       <shortname>vl_damage_channel_channel_damage_code</shortname>
       <title></title>
       <abstract></abstract>
@@ -3217,7 +3227,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vl_damage_channel_connection20160309111740641</id>
-      <datasource>service='pg_qgep_sige' sslmode=disable key='code' table="qgep"."vl_damage_channel_connection" sql=</datasource>
+      <datasource>service='pg_qgep_sige' key='code' table="qgep"."vl_damage_channel_connection" sql=</datasource>
       <shortname>vl_damage_channel_connection</shortname>
       <title></title>
       <abstract></abstract>
@@ -3291,7 +3301,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vl_damage_manhole_connection20160309111740654</id>
-      <datasource>service='pg_qgep_sige' sslmode=disable key='code' table="qgep"."vl_damage_manhole_connection" sql=</datasource>
+      <datasource>service='pg_qgep_sige' key='code' table="qgep"."vl_damage_manhole_connection" sql=</datasource>
       <shortname>vl_damage_manhole_connection</shortname>
       <title></title>
       <abstract></abstract>
@@ -3365,7 +3375,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vl_damage_manhole_damage_code_manhole20160309111740670</id>
-      <datasource>service='pg_qgep_sige' sslmode=disable key='code' table="qgep"."vl_damage_manhole_code" sql=</datasource>
+      <datasource>service='pg_qgep_sige' key='code' table="qgep"."vl_damage_manhole_code" sql=</datasource>
       <shortname>vl_damage_manhole_damage_code_manhole</shortname>
       <title></title>
       <abstract></abstract>
@@ -3439,7 +3449,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vl_damage_single_damage_class20160309111740685</id>
-      <datasource>service='pg_qgep_sige' sslmode=disable key='code' table="qgep"."vl_damage_single_damage_class" sql=</datasource>
+      <datasource>service='pg_qgep_sige' key='code' table="qgep"."vl_damage_single_damage_class" sql=</datasource>
       <shortname>vl_damage_single_damage_class</shortname>
       <title></title>
       <abstract></abstract>
@@ -3513,7 +3523,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vl_data_media_kind20160309111740697</id>
-      <datasource>service='pg_qgep_sige' sslmode=disable key='code' table="qgep"."vl_data_media_kind" sql=</datasource>
+      <datasource>service='pg_qgep_sige' key='code' table="qgep"."vl_data_media_kind" sql=</datasource>
       <shortname>vl_data_media_kind</shortname>
       <title></title>
       <abstract></abstract>
@@ -3674,7 +3684,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vl_examination_recording_type20160309111740713</id>
-      <datasource>service='pg_qgep_sige' sslmode=disable key='code' table="qgep"."vl_examination_recording_type" sql=</datasource>
+      <datasource>service='pg_qgep_sige' key='code' table="qgep"."vl_examination_recording_type" sql=</datasource>
       <shortname>vl_examination_recording_type</shortname>
       <title></title>
       <abstract></abstract>
@@ -3748,7 +3758,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vl_examination_weather20160309111740727</id>
-      <datasource>service='pg_qgep_sige' sslmode=disable key='code' table="qgep"."vl_examination_weather" sql=</datasource>
+      <datasource>service='pg_qgep_sige' key='code' table="qgep"."vl_examination_weather" sql=</datasource>
       <shortname>vl_examination_weather</shortname>
       <title></title>
       <abstract></abstract>
@@ -6520,6 +6530,7 @@
               <prop k="angle" v="0"/>
               <prop k="color" v="120,83,180,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -6726,7 +6737,7 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="-4.65661e-10">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -7008,6 +7019,7 @@
               <prop k="angle" v="0"/>
               <prop k="color" v="208,29,56,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7398,10 +7410,10 @@
           <widgetv2config AllowNull="1" fieldEditable="1" Step="1" Style="SpinBox" labelOnTop="0" Min="1900" Max="2200"/>
         </edittype>
         <edittype widgetv2type="RelationReference" name="fk_owner">
-          <widgetv2config OrderByValue="0" fieldEditable="1" ShowForm="0" Relation="vw_qgep_cover_fk_owner_od_organisation20160212172933583_obj_id" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="0"/>
+          <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="vw_qgep_cover_fk_owner_od_organisation_obj_id" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="0"/>
         </edittype>
         <edittype widgetv2type="RelationReference" name="fk_operator">
-          <widgetv2config OrderByValue="0" fieldEditable="1" ShowForm="0" Relation="vw_qgep_cover_fk_operator_od_organisation20160212172933583_obj_id" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="0"/>
+          <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="vw_qgep_cover_fk_operator_od_organisation_obj_id" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="_label">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -7548,6 +7560,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7581,6 +7594,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7614,6 +7628,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7645,6 +7660,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="0.25,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7676,6 +7692,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="-0.25,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7709,6 +7726,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7740,6 +7758,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="0.25,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7771,6 +7790,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="-0.25,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7804,6 +7824,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7837,6 +7858,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7870,6 +7892,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7903,6 +7926,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7936,6 +7960,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -7969,6 +7994,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8002,6 +8028,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8035,6 +8062,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8068,6 +8096,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8093,6 +8122,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8126,6 +8156,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8155,6 +8186,7 @@
               <prop k="angle" v="0"/>
               <prop k="color" v="255,33,252,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8188,6 +8220,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8213,6 +8246,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="1.2,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8244,6 +8278,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="-1.2,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8275,6 +8310,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8308,6 +8344,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="1.2,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8339,6 +8376,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="-1.2,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8370,6 +8408,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8403,6 +8442,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8434,6 +8474,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="equilateral_triangle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8467,6 +8508,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8498,6 +8540,7 @@
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="equilateral_triangle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8531,6 +8574,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8562,6 +8606,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="0.5,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8593,6 +8638,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="-0.5,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8626,6 +8672,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8657,6 +8704,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="0.5,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8688,6 +8736,7 @@
               <prop k="color_border_dd_field" v=""/>
               <prop k="color_border_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
               <prop k="offset" v="-0.5,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -8903,7 +8952,7 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="5000" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="5000" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="0">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -8996,7 +9045,7 @@
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <attributeEditorContainer name="General">
+        <attributeEditorContainer name="General" columnCount="0">
           <attributeEditorField index="16" name="ws_type"/>
           <attributeEditorField index="10" name="identifier"/>
           <attributeEditorField index="24" name="location_name"/>
@@ -9013,7 +9062,7 @@
           <attributeEditorField index="40" name="dimension1"/>
           <attributeEditorField index="41" name="dimension2"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Cover">
+        <attributeEditorContainer name="Cover" columnCount="0">
           <attributeEditorField index="1" name="brand"/>
           <attributeEditorField index="2" name="cover_shape"/>
           <attributeEditorField index="3" name="diameter"/>
@@ -9024,7 +9073,7 @@
           <attributeEditorField index="-1" name="dataowner"/>
           <attributeEditorField index="-1" name="provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Structure">
+        <attributeEditorContainer name="Wastewater Structure" columnCount="0">
           <attributeEditorField index="17" name="ws_obj_id"/>
           <attributeEditorField index="19" name="accessibility"/>
           <attributeEditorField index="20" name="contract_section"/>
@@ -9045,7 +9094,7 @@
           <attributeEditorField index="36" name="fk_owner"/>
           <attributeEditorField index="37" name="fk_operator"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Manhole">
+        <attributeEditorContainer name="Manhole" columnCount="0">
           <attributeEditorField index="39" name="depth"/>
           <attributeEditorField index="40" name="dimension1"/>
           <attributeEditorField index="41" name="dimension2"/>
@@ -9054,7 +9103,7 @@
           <attributeEditorField index="44" name="material"/>
           <attributeEditorField index="45" name="surface_inflow"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Special Structure">
+        <attributeEditorContainer name="Special Structure" columnCount="0">
           <attributeEditorField index="49" name="bypass"/>
           <attributeEditorField index="50" name="special_structure_function"/>
           <attributeEditorField index="51" name="stormwater_tank_arrangement"/>
@@ -9062,7 +9111,7 @@
           <attributeEditorField index="39" name="depth"/>
           <attributeEditorField index="60" name="emergency_spillway"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Discharge Point">
+        <attributeEditorContainer name="Discharge Point" columnCount="0">
           <attributeEditorField index="39" name="depth"/>
           <attributeEditorField index="60" name="emergency_spillway"/>
           <attributeEditorField index="52" name="highwater_level"/>
@@ -9071,7 +9120,7 @@
           <attributeEditorField index="42" name="upper_elevation"/>
           <attributeEditorField index="55" name="waterlevel_hydraulic"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Infiltration Installation">
+        <attributeEditorContainer name="Infiltration Installation" columnCount="0">
           <attributeEditorField index="57" name="defects"/>
           <attributeEditorField index="58" name="distance_to_aquifer"/>
           <attributeEditorField index="59" name="effective_area"/>
@@ -9085,7 +9134,7 @@
           <attributeEditorField index="41" name="dimension2"/>
           <attributeEditorField index="42" name="upper_elevation"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Node">
+        <attributeEditorContainer name="Wastewater Node" columnCount="0">
           <attributeEditorField index="66" name="wn_obj_id"/>
           <attributeEditorField index="67" name="backflow_level"/>
           <attributeEditorField index="68" name="bottom_level"/>
@@ -9095,27 +9144,27 @@
           <attributeEditorField index="-1" name="wn_dataowner"/>
           <attributeEditorField index="-1" name="wn_provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Covers">
+        <attributeEditorContainer name="Covers" columnCount="0">
           <attributeEditorRelation relation="vw_cover20150507162234308_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_cover20150507162234308_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Structure Parts">
+        <attributeEditorContainer name="Structure Parts" columnCount="0">
           <attributeEditorRelation relation="vw_access_aid20150507162234295_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_access_aid20150507162234295_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
           <attributeEditorRelation relation="vw_backflow_prevention20150531093552085_fk_wastewater_structure_vw_qgep_cover_ws_obj_id" name="vw_backflow_prevention20150531093552085_fk_wastewater_structure_vw_qgep_cover_ws_obj_id"/>
           <attributeEditorRelation relation="vw_dryweather_flume20150507162234250_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_dryweather_flume20150507162234250_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
           <attributeEditorRelation relation="vw_benching20150507162234281_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_benching20150507162234281_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
           <attributeEditorRelation relation="vw_dryweather_downspout20150507162234268_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id" name="vw_dryweather_downspout20150507162234268_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Maintenance">
-          <attributeEditorRelation relation="re_maintenance_event_wastewater_structure20160111110603931_fk_wastewater_structure_vw_qgep_cover_ws_obj_id" name="re_maintenance_event_wastewater_structure20160111110603931_fk_wastewater_structure_vw_qgep_cover_ws_obj_id"/>
+        <attributeEditorContainer name="Maintenance" columnCount="0">
+          <attributeEditorRelation relation="re_maintenance_wastewaterstructure_cover" name="re_maintenance_wastewaterstructure_cover"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Nodes">
+        <attributeEditorContainer name="Wastewater Nodes" columnCount="0">
           <attributeEditorRelation relation="wastewater_node-fk_wastewater-structure" name="wastewater_node-fk_wastewater-structure"/>
         </attributeEditorContainer>
       </attributeEditorForm>
       <widgets>
-        <widget name="re_maintenance_event_wastewater_structure20160111110603931_fk_wastewater_structure_vw_qgep_cover_ws_obj_id">
+        <widget name="re_maintenance_wastewaterstructure_cover">
           <config>
-            <option key="nm-rel" value="re_maintenance_event_wastewater_structure20160111110603931_fk_maintenance_event_od_maintenance_event_obj_id"/>
+            <option key="nm-rel" value="re_maintenance_wastewaterstructure_maintenance"/>
           </config>
         </widget>
         <widget name="vw_access_aid20150507162234295_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id">
@@ -9146,8 +9195,8 @@
       </conditionalstyles>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
-      <id>vw_qgep_damage20160309111740741</id>
-      <datasource>service='pg_qgep_sige' sslmode=disable key='"obj_id"' table="qgep"."vw_qgep_damage" sql=</datasource>
+      <id>vw_qgep_damage</id>
+      <datasource>service='pg_qgep_sige' key='"obj_id"' table="qgep"."vw_qgep_damage" sql=</datasource>
       <shortname>vw_qgep_damage</shortname>
       <title></title>
       <abstract></abstract>
@@ -9252,6 +9301,166 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
+    <maplayer minimumScale="100000" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+      <id>vw_qgep_maintenance</id>
+      <datasource>service='pg_qgep_sige' key='"obj_id"' table="qgep"."vw_qgep_maintenance" sql=</datasource>
+      <shortname>vw_qgep_maintenance</shortname>
+      <title></title>
+      <abstract></abstract>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>vw_qgep_maintenance</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="variableNames" value="_fields_"/>
+        <property key="variableValues" value=""/>
+      </customproperties>
+      <provider encoding="UTF-8">postgres</provider>
+      <previewExpression></previewExpression>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="maintenance_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="obj_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="base_data">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cost">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="data_details">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="duration">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="identifier">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="kind">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="operator">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="reason">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="remark">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="result">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="status">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="time_point">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="last_modification">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dataowner">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="provider">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fk_dataowner">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fk_provider">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_operator_company">
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="obj_id" Layer="od_organisation" Value="identifier" labelOnTop="0" AllowMulti="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="equipment">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="topointidentifier">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="frompointidentifier">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="inspected_length">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="recording_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="vehicle">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="videonumber">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="weather">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fs_reach_point">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+      </edittypes>
+      <annotationform>.</annotationform>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions/>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets>
+        <widget name="re_maintenance_wastewaterstructure_maintenance">
+          <config/>
+        </widget>
+      </widgets>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+    </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>vw_qgep_reach</id>
       <datasource>service='pg_qgep' key='"obj_id"' srid=21781 type=LineString table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
@@ -9346,7 +9555,7 @@
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="RelationReference" name="fk_pipe_profile">
-          <widgetv2config OrderByValue="0" fieldEditable="1" ShowForm="0" Relation="reach-fk_pipe_profile" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="1"/>
+          <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="reach-fk_pipe_profile" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="1"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="bedding_encasement">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -9424,10 +9633,10 @@
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="RelationReference" name="fk_owner">
-          <widgetv2config OrderByValue="0" fieldEditable="1" ShowForm="0" Relation="vw_qgep_reach_fk_owner_od_organisation20160212172933583_obj_id" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="0"/>
+          <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="vw_qgep_reach_fk_owner_od_organisation_obj_id" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="0"/>
         </edittype>
         <edittype widgetv2type="RelationReference" name="fk_operator">
-          <widgetv2config OrderByValue="0" fieldEditable="1" ShowForm="0" Relation="vw_qgep_reach_fk_operator_od_organisation20160212172933583_obj_id" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="0"/>
+          <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="vw_qgep_reach_fk_operator_od_organisation_obj_id" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="identifier">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -9445,7 +9654,7 @@
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="RelationReference" name="fk_wastewater_structure">
-          <widgetv2config OrderByValue="0" fieldEditable="1" ShowForm="1" Relation="reach-fk_wastewater_structure-channel" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="0"/>
+          <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="1" Relation="reach-fk_wastewater_structure-channel" ReadOnly="0" MapIdentification="0" labelOnTop="0" AllowNULL="0"/>
         </edittype>
         <edittype widgetv2type="Hidden" name="rp_from_obj_id">
           <widgetv2config fieldEditable="1" labelOnTop="0"/>
@@ -10404,7 +10613,7 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="0">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -10508,7 +10717,7 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <attributeEditorContainer name="General">
+        <attributeEditorContainer name="General" columnCount="0">
           <attributeEditorField index="1" name="clear_height"/>
           <attributeEditorField index="7" name="length_effective"/>
           <attributeEditorField index="9" name="material"/>
@@ -10525,7 +10734,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField index="42" name="year_of_construction"/>
           <attributeEditorField index="47" name="remark"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Reach">
+        <attributeEditorContainer name="Reach" columnCount="0">
           <attributeEditorField index="0" name="obj_id"/>
           <attributeEditorField index="1" name="clear_height"/>
           <attributeEditorField index="2" name="width"/>
@@ -10546,14 +10755,14 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField index="17" name="wall_roughness"/>
           <attributeEditorField index="18" name="fk_pipe_profile"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Networkelement">
+        <attributeEditorContainer name="Wastewater Networkelement" columnCount="0">
           <attributeEditorField index="46" name="identifier"/>
           <attributeEditorField index="47" name="remark"/>
           <attributeEditorField index="48" name="last_modification"/>
           <attributeEditorField index="-1" name="dataowner"/>
           <attributeEditorField index="-1" name="provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Channel">
+        <attributeEditorContainer name="Channel" columnCount="0">
           <attributeEditorField index="20" name="function_hierarchic"/>
           <attributeEditorField index="21" name="connection_type"/>
           <attributeEditorField index="22" name="function_hydraulic"/>
@@ -10562,7 +10771,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField index="25" name="usage_current"/>
           <attributeEditorField index="26" name="usage_planned"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Structure">
+        <attributeEditorContainer name="Wastewater Structure" columnCount="0">
           <attributeEditorField index="27" name="ws_obj_id"/>
           <attributeEditorField index="28" name="accessibility"/>
           <attributeEditorField index="29" name="contract_section"/>
@@ -10583,8 +10792,8 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField index="44" name="fk_owner"/>
           <attributeEditorField index="45" name="fk_operator"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Reach Points">
-          <attributeEditorContainer name="From">
+        <attributeEditorContainer name="Reach Points" columnCount="0">
+          <attributeEditorContainer name="From" columnCount="0">
             <attributeEditorField index="52" name="rp_from_obj_id"/>
             <attributeEditorField index="53" name="rp_from_elevation_accuracy"/>
             <attributeEditorField index="54" name="rp_from_identifier"/>
@@ -10597,7 +10806,7 @@ def my_form_open(dialog, layer, feature):
             <attributeEditorField index="-1" name="rp_from_provider"/>
             <attributeEditorField index="62" name="rp_from_fk_wastewater_networkelement"/>
           </attributeEditorContainer>
-          <attributeEditorContainer name="To">
+          <attributeEditorContainer name="To" columnCount="0">
             <attributeEditorField index="63" name="rp_to_obj_id"/>
             <attributeEditorField index="64" name="rp_to_elevation_accuracy"/>
             <attributeEditorField index="65" name="rp_to_identifier"/>
@@ -10611,7 +10820,7 @@ def my_form_open(dialog, layer, feature):
             <attributeEditorField index="73" name="rp_to_fk_wastewater_networkelement"/>
           </attributeEditorContainer>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Maintenance">
+        <attributeEditorContainer name="Maintenance" columnCount="0">
           <attributeEditorRelation relation="" name="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_reach20141013202956655_ws_obj_id"/>
         </attributeEditorContainer>
       </attributeEditorForm>
@@ -10687,6 +10896,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="135,149,100,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -10778,7 +10988,7 @@ def my_form_open(dialog, layer, feature):
     </SpatialRefSys>
     <Measurement>
       <DistanceUnits type="QString">meters</DistanceUnits>
-      <AreaUnits type="QString"></AreaUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
     </Measurement>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
@@ -10987,8 +11197,8 @@ def my_form_open(dialog, layer, feature):
       <Ellipsoid type="QString">NONE</Ellipsoid>
     </Measure>
     <WFSUrl type="QString"></WFSUrl>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
     <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
   </properties>
   <visibility-presets/>
 </qgis>
