@@ -58,7 +58,10 @@ SELECT
   'manhole',
   schacht.name2,
   unten_hoehe,
-  1000*tiefe,
+  CASE  -- remove depth (apparently level was used instead)
+	WHEN tiefe < 100 THEN 1000*tiefe
+	ELSE NULL
+  END,
   baujahr,
   dn,
   breite,
