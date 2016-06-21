@@ -58,7 +58,7 @@ SELECT
   'manhole',
   schacht.name2,
   unten_hoehe,
-  tiefe,
+  1000*tiefe,
   baujahr,
   dn,
   breite,
