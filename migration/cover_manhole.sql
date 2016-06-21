@@ -36,7 +36,7 @@ GROUP BY gid)
 INSERT INTO qgep.vw_qgep_cover
  (
   ws_type,
-  identifier,
+  co_identifier,
   bottom_level,
   depth,
   year_of_construction,
@@ -50,7 +50,7 @@ INSERT INTO qgep.vw_qgep_cover
   level,
   manhole_function,
   status,
-  ws_identifier,
+  identifier,
   fk_owner
 )
 
