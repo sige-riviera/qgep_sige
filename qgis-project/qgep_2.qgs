@@ -8,7 +8,7 @@
     <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_cover" name="couvercle">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_reach" name="tronçon">
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_reach" name="tronçon">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Wastewater Structures">
@@ -59,7 +59,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Checked" name="Value Lists">
+    <layer-tree-group expanded="0" checked="Qt::Checked" name="Value Lists">
       <customproperties/>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_organisation" name="od_organisation">
         <customproperties/>
@@ -91,7 +91,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="1" checked="Qt::Checked" name="VL Manhole">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Manhole">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_manhole_material20151117174216343" name="MH Material">
           <customproperties/>
@@ -269,7 +269,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" mutually-exclusive="1" name="Fond de plan" mutually-exclusive-child="1">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Fond de plan" mutually-exclusive-child="1">
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="cadastre">
         <customproperties>
@@ -294,7 +294,7 @@
           <property key="embedded_project" value="../../cadastre/cadastre.qgs"/>
         </customproperties>
       </layer-tree-group>
-      <layer-tree-layer expanded="0" checked="Qt::PartiallyChecked" id="pixel20160303102602394" name="carte">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="pixel20160303102602394" name="carte">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="SWISSIMAGE20160519073918455" name="SWISSIMAGE">
@@ -337,10 +337,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>560529.88129403674975038</xmin>
-      <ymin>147392.64846943903830834</ymin>
-      <xmax>560579.33509408729150891</xmax>
-      <ymax>147415.50422818688093685</ymax>
+      <xmin>561772.21830030786804855</xmin>
+      <ymin>142514.2421766463376116</ymin>
+      <xmax>562152.39438819559291005</xmax>
+      <ymax>142689.94582201869343407</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -526,8 +526,8 @@
         <legendlayerfile isInOverview="0" layerid="vw_qgep_cover" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="tronçon" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="tronçon" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="vw_qgep_reach" visible="1"/>
       </filegroup>
     </legendlayer>
@@ -602,7 +602,7 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Checked" name="Value Lists">
+    <legendgroup open="false" checked="Qt::Checked" name="Value Lists">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_organisation" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_organisation" visible="1"/>
@@ -644,7 +644,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="true" checked="Qt::Checked" name="VL Manhole">
+      <legendgroup open="false" checked="Qt::Checked" name="VL Manhole">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="MH Material" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_manhole_material20151117174216343" visible="1"/>
@@ -901,9 +901,9 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Fond de plan">
+    <legendgroup open="true" checked="Qt::Unchecked" name="Fond de plan">
       <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="cadastre" project="../../cadastre/cadastre.qgs"/>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::PartiallyChecked" name="carte" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="carte" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="pixel20160303102602394" visible="0"/>
         </filegroup>
@@ -7204,7 +7204,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="5000" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="1" maximumScale="5000" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>547510</xmin>
         <ymin>133658.19873023999389261</ymin>
@@ -8747,7 +8747,7 @@
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="CASE WHEN $scale &lt;= 500 THEN _label ||'\n'||round(depth/1000,2)|| ' m.'  ELSE  ws_identifier END"/>
+        <property key="labeling/fieldName" value="CASE WHEN $scale &lt;= 500 THEN _label ||'\n'||round(depth/1000,2)|| ' m.' ELSE co_identifier END"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
@@ -8906,7 +8906,7 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="5000" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="5000" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="5000">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -9098,7 +9098,7 @@
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <attributeEditorContainer name="General" columnCount="0">
+        <attributeEditorContainer name="General" groupBox="0" columnCount="0">
           <attributeEditorField index="16" name="ws_type"/>
           <attributeEditorField index="18" name="identifier"/>
           <attributeEditorField index="24" name="location_name"/>
@@ -9115,7 +9115,7 @@
           <attributeEditorField index="40" name="dimension1"/>
           <attributeEditorField index="41" name="dimension2"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Cover" columnCount="0">
+        <attributeEditorContainer name="Cover" groupBox="0" columnCount="0">
           <attributeEditorField index="1" name="brand"/>
           <attributeEditorField index="2" name="cover_shape"/>
           <attributeEditorField index="3" name="diameter"/>
@@ -9126,7 +9126,7 @@
           <attributeEditorField index="-1" name="dataowner"/>
           <attributeEditorField index="-1" name="provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Structure" columnCount="0">
+        <attributeEditorContainer name="Wastewater Structure" groupBox="0" columnCount="0">
           <attributeEditorField index="-1" name="ws_obj_id"/>
           <attributeEditorField index="19" name="accessibility"/>
           <attributeEditorField index="20" name="contract_section"/>
@@ -9147,7 +9147,7 @@
           <attributeEditorField index="36" name="fk_owner"/>
           <attributeEditorField index="37" name="fk_operator"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Manhole" columnCount="0">
+        <attributeEditorContainer name="Manhole" groupBox="0" columnCount="0">
           <attributeEditorField index="39" name="depth"/>
           <attributeEditorField index="40" name="dimension1"/>
           <attributeEditorField index="41" name="dimension2"/>
@@ -9156,7 +9156,7 @@
           <attributeEditorField index="44" name="material"/>
           <attributeEditorField index="45" name="surface_inflow"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Special Structure" columnCount="0">
+        <attributeEditorContainer name="Special Structure" groupBox="0" columnCount="0">
           <attributeEditorField index="49" name="bypass"/>
           <attributeEditorField index="50" name="special_structure_function"/>
           <attributeEditorField index="51" name="stormwater_tank_arrangement"/>
@@ -9164,7 +9164,7 @@
           <attributeEditorField index="39" name="depth"/>
           <attributeEditorField index="60" name="emergency_spillway"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Discharge Point" columnCount="0">
+        <attributeEditorContainer name="Discharge Point" groupBox="0" columnCount="0">
           <attributeEditorField index="39" name="depth"/>
           <attributeEditorField index="60" name="emergency_spillway"/>
           <attributeEditorField index="52" name="highwater_level"/>
@@ -9173,7 +9173,7 @@
           <attributeEditorField index="42" name="upper_elevation"/>
           <attributeEditorField index="55" name="waterlevel_hydraulic"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Infiltration Installation" columnCount="0">
+        <attributeEditorContainer name="Infiltration Installation" groupBox="0" columnCount="0">
           <attributeEditorField index="57" name="defects"/>
           <attributeEditorField index="58" name="distance_to_aquifer"/>
           <attributeEditorField index="59" name="effective_area"/>
@@ -9187,7 +9187,7 @@
           <attributeEditorField index="41" name="dimension2"/>
           <attributeEditorField index="42" name="upper_elevation"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Node" columnCount="0">
+        <attributeEditorContainer name="Wastewater Node" groupBox="0" columnCount="0">
           <attributeEditorField index="66" name="wn_obj_id"/>
           <attributeEditorField index="67" name="backflow_level"/>
           <attributeEditorField index="68" name="bottom_level"/>
@@ -9197,20 +9197,20 @@
           <attributeEditorField index="-1" name="wn_dataowner"/>
           <attributeEditorField index="-1" name="wn_provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Covers" columnCount="0">
+        <attributeEditorContainer name="Covers" groupBox="0" columnCount="0">
           <attributeEditorRelation relation="" name="vw_cover20150507162234308_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Structure Parts" columnCount="0">
+        <attributeEditorContainer name="Structure Parts" groupBox="0" columnCount="0">
           <attributeEditorRelation relation="" name="vw_access_aid20150507162234295_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
           <attributeEditorRelation relation="" name="vw_backflow_prevention20150531093552085_fk_wastewater_structure_vw_qgep_cover_ws_obj_id"/>
           <attributeEditorRelation relation="" name="vw_dryweather_flume20150507162234250_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
           <attributeEditorRelation relation="" name="vw_benching20150507162234281_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
           <attributeEditorRelation relation="" name="vw_dryweather_downspout20150507162234268_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Maintenance" columnCount="0">
+        <attributeEditorContainer name="Maintenance" groupBox="0" columnCount="0">
           <attributeEditorRelation relation="" name="re_maintenance_wastewaterstructure_cover"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Nodes" columnCount="0">
+        <attributeEditorContainer name="Wastewater Nodes" groupBox="0" columnCount="0">
           <attributeEditorRelation relation="" name="wastewater_node-fk_wastewater-structure"/>
         </attributeEditorContainer>
       </attributeEditorForm>
@@ -9420,7 +9420,7 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <attributeEditorContainer name="Dégâts" columnCount="1">
+        <attributeEditorContainer name="Dégâts" groupBox="0" columnCount="1">
           <attributeEditorField index="1" name="obj_id"/>
           <attributeEditorField index="2" name="comments"/>
           <attributeEditorField index="10" name="single_damage_class"/>
@@ -9644,7 +9644,7 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <attributeEditorContainer name="Maintenance" columnCount="2">
+        <attributeEditorContainer name="Maintenance" groupBox="1" columnCount="2">
           <attributeEditorField index="1" name="obj_id"/>
           <attributeEditorField index="0" name="maintenance_type"/>
           <attributeEditorField index="7" name="kind"/>
@@ -9656,15 +9656,15 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField index="13" name="time_point"/>
           <attributeEditorField index="-1" name="fk_operator_company"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Inspection" columnCount="2">
+        <attributeEditorContainer name="Inspection" groupBox="1" columnCount="2">
           <attributeEditorField index="23" name="inspected_length"/>
           <attributeEditorField index="27" name="videonumber"/>
           <attributeEditorField index="-1" name="fs_reach_point"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Dégâts" columnCount="1">
+        <attributeEditorContainer name="Dégâts" groupBox="1" columnCount="1">
           <attributeEditorRelation relation="damage_maintenance_event" name="damage_maintenance_event"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Collecteurs" columnCount="2">
+        <attributeEditorContainer name="Collecteurs" groupBox="1" columnCount="2">
           <attributeEditorRelation relation="re_maintenance_wastewaterstructure_maintenance" name="re_maintenance_wastewaterstructure_maintenance"/>
         </attributeEditorContainer>
       </attributeEditorForm>
@@ -10426,7 +10426,7 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <attributeEditorContainer name="General" columnCount="0">
+        <attributeEditorContainer name="General" groupBox="0" columnCount="0">
           <attributeEditorField index="1" name="clear_height"/>
           <attributeEditorField index="7" name="length_effective"/>
           <attributeEditorField index="9" name="material"/>
@@ -10443,7 +10443,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField index="42" name="year_of_construction"/>
           <attributeEditorField index="47" name="remark"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Reach" columnCount="0">
+        <attributeEditorContainer name="Reach" groupBox="0" columnCount="0">
           <attributeEditorField index="0" name="obj_id"/>
           <attributeEditorField index="1" name="clear_height"/>
           <attributeEditorField index="2" name="width"/>
@@ -10464,14 +10464,14 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField index="17" name="wall_roughness"/>
           <attributeEditorField index="18" name="fk_pipe_profile"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Networkelement" columnCount="0">
+        <attributeEditorContainer name="Wastewater Networkelement" groupBox="0" columnCount="0">
           <attributeEditorField index="46" name="identifier"/>
           <attributeEditorField index="47" name="remark"/>
           <attributeEditorField index="48" name="last_modification"/>
           <attributeEditorField index="-1" name="dataowner"/>
           <attributeEditorField index="-1" name="provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Channel" columnCount="0">
+        <attributeEditorContainer name="Channel" groupBox="0" columnCount="0">
           <attributeEditorField index="20" name="function_hierarchic"/>
           <attributeEditorField index="21" name="connection_type"/>
           <attributeEditorField index="22" name="function_hydraulic"/>
@@ -10480,7 +10480,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField index="25" name="usage_current"/>
           <attributeEditorField index="26" name="usage_planned"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Structure" columnCount="0">
+        <attributeEditorContainer name="Wastewater Structure" groupBox="0" columnCount="0">
           <attributeEditorField index="27" name="ws_obj_id"/>
           <attributeEditorField index="28" name="accessibility"/>
           <attributeEditorField index="29" name="contract_section"/>
@@ -10501,8 +10501,8 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField index="44" name="fk_owner"/>
           <attributeEditorField index="45" name="fk_operator"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Reach Points" columnCount="0">
-          <attributeEditorContainer name="From" columnCount="0">
+        <attributeEditorContainer name="Reach Points" groupBox="0" columnCount="0">
+          <attributeEditorContainer name="From" groupBox="1" columnCount="0">
             <attributeEditorField index="52" name="rp_from_obj_id"/>
             <attributeEditorField index="53" name="rp_from_elevation_accuracy"/>
             <attributeEditorField index="54" name="rp_from_identifier"/>
@@ -10515,7 +10515,7 @@ def my_form_open(dialog, layer, feature):
             <attributeEditorField index="-1" name="rp_from_provider"/>
             <attributeEditorField index="62" name="rp_from_fk_wastewater_networkelement"/>
           </attributeEditorContainer>
-          <attributeEditorContainer name="To" columnCount="0">
+          <attributeEditorContainer name="To" groupBox="1" columnCount="0">
             <attributeEditorField index="63" name="rp_to_obj_id"/>
             <attributeEditorField index="64" name="rp_to_elevation_accuracy"/>
             <attributeEditorField index="65" name="rp_to_identifier"/>
@@ -10529,7 +10529,7 @@ def my_form_open(dialog, layer, feature):
             <attributeEditorField index="73" name="rp_to_fk_wastewater_networkelement"/>
           </attributeEditorContainer>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Maintenance" columnCount="0">
+        <attributeEditorContainer name="Maintenance" groupBox="0" columnCount="0">
           <attributeEditorRelation relation="re_maintenance_event_wastewater_structure_fk_wastewater_structure_vw_qgep_reach_obj_id" name="re_maintenance_event_wastewater_structure_fk_wastewater_structure_vw_qgep_reach_obj_id"/>
         </attributeEditorContainer>
       </attributeEditorForm>
