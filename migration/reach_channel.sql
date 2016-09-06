@@ -33,7 +33,7 @@ SELECT
   haltungslaenge,
   baujahr,
   gefaelle,
-  geometry,
+  ST_ForceCurve(geometry),
   fh.new,
   COALESCE(hp.new, 5379),
   NULLIF(COALESCE(profil_hoehe, profil_breite), 0),

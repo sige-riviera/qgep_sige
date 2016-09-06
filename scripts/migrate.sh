@@ -16,7 +16,7 @@ ${DIR}/datamodel/scripts/db_setup.sh
 psql -c "UPDATE qgep.is_oid_prefixes SET active=TRUE WHERE prefix='${OIDPREFIX}'"
 psql -c "UPDATE qgep.is_oid_prefixes SET active=FALSE WHERE prefix<>'${OIDPREFIX}'"
 
-pg_restore --no-owner -d qgep_sige ${DIR}/migration/dump_topobase.backup
+pg_restore --no-owner -d qgep_sige ${DIR}/migration/dump_topobase_95.backup
 psql -c 'ALTER SCHEMA sige_assainissement RENAME TO sa'
 
 psql -v ON_ERROR_STOP=on -f ${DIR}/migration/aggregates_first_last.sql
