@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.15.0-Master">
+<qgis projectname="" version="2.16.1">
   <title></title>
   <autotransaction active="1"/>
   <evaluateDefaultValues active="0"/>
@@ -337,10 +337,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>561772.21830030786804855</xmin>
-      <ymin>142514.2421766463376116</ymin>
-      <xmax>562152.39438819559291005</xmax>
-      <ymax>142689.94582201869343407</ymax>
+      <xmin>557991.95359232788905501</xmin>
+      <ymin>144784.76756886282237247</ymin>
+      <xmax>558250.60058451537042856</xmax>
+      <ymax>145128.80475848534842953</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -1029,7 +1029,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -1116,7 +1116,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -1197,7 +1197,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../../git/project</editform>
@@ -1287,7 +1287,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -1689,7 +1689,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -1795,7 +1795,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../../git/project</editform>
@@ -1867,6 +1867,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -1882,7 +1888,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -1954,6 +1960,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>../../git/project</annotationform>
       <aliases>
@@ -1969,7 +1981,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../../git/project</editform>
@@ -2041,6 +2053,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -2056,7 +2074,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -2128,6 +2146,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -2143,7 +2167,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -2218,6 +2242,12 @@
         <edittype widgetv2type="TextEdit" name="order_fct_hierarchic">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -2234,7 +2264,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -2306,6 +2336,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -2321,7 +2357,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -2396,6 +2432,12 @@
         <edittype widgetv2type="TextEdit" name="order_usage_current">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -2412,7 +2454,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -2484,6 +2526,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -2499,7 +2547,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -2571,6 +2619,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -2586,7 +2640,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -2658,6 +2712,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -2673,7 +2733,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -2745,6 +2805,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -2760,7 +2826,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -2832,12 +2898,18 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>../../git/project</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../../git/project</editform>
@@ -2909,6 +2981,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -2924,7 +3002,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -2996,6 +3074,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -3011,7 +3095,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -3084,12 +3168,18 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -3162,12 +3252,18 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -3240,12 +3336,18 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -3318,12 +3420,18 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -3396,12 +3504,18 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -3474,12 +3588,18 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -3551,6 +3671,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -3566,7 +3692,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -3639,12 +3765,18 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -3717,12 +3849,18 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -3794,6 +3932,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -3809,7 +3953,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -3881,6 +4025,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -3896,7 +4046,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -3968,6 +4118,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -3983,7 +4139,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -4055,12 +4211,18 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>../../git/project</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../../git/project</editform>
@@ -4132,12 +4294,18 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>../../git/project</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../../git/project</editform>
@@ -4209,6 +4377,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -4224,7 +4398,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -4296,6 +4470,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -4311,7 +4491,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -4383,6 +4563,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -4398,7 +4584,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -4470,6 +4656,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -4485,7 +4677,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -4557,6 +4749,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -4572,7 +4770,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -4644,6 +4842,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -4659,7 +4863,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -4731,6 +4935,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -4746,7 +4956,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -4818,6 +5028,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -4833,7 +5049,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -4905,6 +5121,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -4920,7 +5142,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -4992,6 +5214,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -5007,7 +5235,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -5079,6 +5307,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -5094,7 +5328,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -5166,6 +5400,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -5181,7 +5421,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -5253,6 +5493,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -5268,7 +5514,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -5340,6 +5586,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -5355,7 +5607,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -5427,6 +5679,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -5442,7 +5700,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -5514,6 +5772,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -5529,7 +5793,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -5601,6 +5865,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -5616,7 +5886,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -5688,6 +5958,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -5703,7 +5979,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -5775,6 +6051,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -5790,7 +6072,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -5862,6 +6144,12 @@
         <edittype widgetv2type="TextEdit" name="active">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="value_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="abbr_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>$HOME</annotationform>
       <aliases>
@@ -5877,7 +6165,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -5963,7 +6251,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -6057,7 +6345,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -6143,7 +6431,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -6328,7 +6616,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="1" type="field" name="obj_id"/>
           <column width="-1" hidden="1" type="field" name="detail_geometry_geometry"/>
@@ -6701,7 +6989,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -6787,7 +7075,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -6873,7 +7161,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>$HOME</editform>
@@ -7023,7 +7311,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../../git/project</editform>
@@ -7188,7 +7476,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../../git/project</editform>
@@ -7288,10 +7576,10 @@
         </edittype>
         <edittype widgetv2type="ValueMap" name="ws_type">
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0">
-            <value key="Discharge Point" value="discharge_point"/>
-            <value key="Infiltration Installation" value="infiltration_installation"/>
-            <value key="Manhole" value="manhole"/>
-            <value key="Special Structure" value="special_structure"/>
+            <value key="Chambre" value="manhole"/>
+            <value key="Exutoire" value="discharge_point"/>
+            <value key="Installation d'infiltration" value="infiltration_installation"/>
+            <value key="Ouvrage spécial" value="special_structure"/>
           </widgetv2config>
         </edittype>
         <edittype widgetv2type="TextEdit" name="co_obj_id">
@@ -7340,7 +7628,7 @@
           <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_status" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="structure_condition">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_structure_condition" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="0" Key="code" constraint="" Layer="vl_wastewater_structure_structure_condition" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Range" name="subsidies">
           <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="9999999.99" Suffix=" CHF"/>
@@ -7394,7 +7682,7 @@
           <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_special_structure_bypass" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="special_structure_function">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_special_structure_function" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="0" Key="code" constraint="" Layer="vl_special_structure_function" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="stormwater_tank_arrangement">
           <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_special_structure_stormwater_tank_arrangement" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
@@ -7427,13 +7715,13 @@
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="kind">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="labeling">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="seepage_utilization">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="vehicle_access">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -8190,7 +8478,7 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
-              <prop k="offset" v="1.2,0"/>
+              <prop k="offset" v="1.19999999999999996,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
@@ -8222,7 +8510,7 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
-              <prop k="offset" v="-1.2,0"/>
+              <prop k="offset" v="-1.19999999999999996,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
@@ -8288,7 +8576,7 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
-              <prop k="offset" v="1.2,0"/>
+              <prop k="offset" v="1.19999999999999996,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
@@ -8320,7 +8608,7 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="line"/>
-              <prop k="offset" v="-1.2,0"/>
+              <prop k="offset" v="-1.19999999999999996,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
@@ -8936,73 +9224,76 @@
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>$HOME</annotationform>
       <aliases>
-        <alias field="absorption_capacity" index="56" name=""/>
-        <alias field="accessibility" index="19" name=""/>
-        <alias field="backflow_level" index="67" name=""/>
-        <alias field="bottom_level" index="68" name=""/>
-        <alias field="brand" index="1" name=""/>
-        <alias field="bypass" index="49" name=""/>
-        <alias field="channel_function_hierarchic" index="47" name=""/>
-        <alias field="channel_usage_current" index="46" name=""/>
-        <alias field="contract_section" index="20" name=""/>
-        <alias field="cover_material" index="6" name=""/>
-        <alias field="cover_shape" index="2" name=""/>
-        <alias field="defects" index="57" name=""/>
-        <alias field="depth" index="39" name=""/>
-        <alias field="diameter" index="3" name=""/>
+        <alias field="absorption_capacity" index="56" name="Capacité absorption du sol"/>
+        <alias field="accessibility" index="19" name="Accès"/>
+        <alias field="backflow_level" index="67" name="Côte de refoulement"/>
+        <alias field="bottom_level" index="68" name="Côte radier"/>
+        <alias field="brand" index="1" name="Fabricant"/>
+        <alias field="bypass" index="49" name="Bypass"/>
+        <alias field="channel_function_hierarchic" index="47" name="Fonction hiérarchique"/>
+        <alias field="channel_usage_current" index="46" name="Utilisation actuelle"/>
+        <alias field="co_identifier" index="10" name="Désignation couvercle"/>
+        <alias field="contract_section" index="20" name="Lot construction"/>
+        <alias field="cover_material" index="6" name="Matériau"/>
+        <alias field="cover_shape" index="2" name="Forme couvercle"/>
+        <alias field="defects" index="57" name="Lacunes"/>
+        <alias field="depth" index="39" name="Profondeur"/>
+        <alias field="diameter" index="3" name="Diamètre"/>
         <alias field="dimension1" index="40" name=""/>
         <alias field="dimension2" index="41" name=""/>
-        <alias field="distance_to_aquifer" index="58" name=""/>
-        <alias field="effective_area" index="59" name=""/>
-        <alias field="emergency_spillway" index="60" name=""/>
-        <alias field="fastening" index="4" name=""/>
-        <alias field="financing" index="21" name=""/>
-        <alias field="fk_operator" index="37" name=""/>
-        <alias field="fk_owner" index="36" name=""/>
-        <alias field="gross_costs" index="22" name=""/>
-        <alias field="highwater_level" index="52" name=""/>
-        <alias field="identifier" index="18" name=""/>
-        <alias field="inspection_interval" index="23" name=""/>
-        <alias field="kind" index="61" name=""/>
+        <alias field="distance_to_aquifer" index="58" name="Distance aquifère"/>
+        <alias field="effective_area" index="59" name="Surface utile"/>
+        <alias field="emergency_spillway" index="60" name="Trop plein de secours"/>
+        <alias field="fastening" index="4" name="Fermeture"/>
+        <alias field="financing" index="21" name="Financement"/>
+        <alias field="fk_dataowner" index="14" name="Propriétaire des données"/>
+        <alias field="fk_operator" index="37" name="Opérateur"/>
+        <alias field="fk_owner" index="36" name="Propriétaire"/>
+        <alias field="fk_provider" index="15" name="Fournisseur des données"/>
+        <alias field="gross_costs" index="22" name="Coûts bruts"/>
+        <alias field="highwater_level" index="52" name="Côte crue"/>
+        <alias field="identifier" index="18" name="Désignation"/>
+        <alias field="inspection_interval" index="23" name="Intervalle inspection"/>
+        <alias field="kind" index="61" name="Genre"/>
         <alias field="labeling" index="62" name=""/>
-        <alias field="last_modification" index="13" name=""/>
-        <alias field="level" index="5" name=""/>
-        <alias field="location_name" index="24" name=""/>
-        <alias field="manhole_function" index="43" name=""/>
+        <alias field="last_modification" index="13" name="Dernière modification"/>
+        <alias field="level" index="5" name="Côte"/>
+        <alias field="location_name" index="24" name="Lieu dit"/>
+        <alias field="manhole_function" index="43" name="Fonction chambre"/>
         <alias field="manhole_orientation" index="48" name=""/>
-        <alias field="material" index="44" name=""/>
+        <alias field="material" index="44" name="Matériau"/>
         <alias field="obj_id" index="0" name=""/>
-        <alias field="positional_accuracy" index="7" name=""/>
-        <alias field="records" index="25" name=""/>
-        <alias field="relevance" index="53" name=""/>
-        <alias field="remark" index="11" name=""/>
-        <alias field="renovation_demand" index="12" name=""/>
-        <alias field="renovation_necessity" index="27" name=""/>
-        <alias field="replacement_value" index="28" name=""/>
-        <alias field="rv_base_year" index="29" name=""/>
-        <alias field="rv_construction_type" index="30" name=""/>
-        <alias field="seepage_utilization" index="63" name=""/>
-        <alias field="sludge_bucket" index="8" name=""/>
+        <alias field="positional_accuracy" index="7" name="Précision planimétrique"/>
+        <alias field="records" index="25" name="Dossier"/>
+        <alias field="relevance" index="53" name="Relevance"/>
+        <alias field="remark" index="11" name="Remarques"/>
+        <alias field="renovation_demand" index="12" name="Remise en état"/>
+        <alias field="renovation_necessity" index="27" name="Nécessité d'assainir"/>
+        <alias field="replacement_value" index="28" name="Valeur remplacement"/>
+        <alias field="rv_base_year" index="29" name="VR année référence"/>
+        <alias field="rv_construction_type" index="30" name="VR type construction"/>
+        <alias field="seepage_utilization" index="63" name="Eau infiltration"/>
+        <alias field="sludge_bucket" index="8" name="Ramasse boues"/>
         <alias field="special_structure_function" index="50" name=""/>
-        <alias field="status" index="31" name=""/>
-        <alias field="stormwater_tank_arrangement" index="51" name=""/>
-        <alias field="structure_condition" index="32" name=""/>
-        <alias field="subsidies" index="33" name=""/>
-        <alias field="surface_inflow" index="45" name=""/>
-        <alias field="terrain_level" index="54" name=""/>
-        <alias field="upper_elevation" index="42" name=""/>
-        <alias field="vehicle_access" index="64" name=""/>
-        <alias field="venting" index="9" name=""/>
-        <alias field="waterlevel_hydraulic" index="55" name=""/>
-        <alias field="watertightness" index="65" name=""/>
+        <alias field="status" index="31" name="Status"/>
+        <alias field="stormwater_tank_arrangement" index="51" name="BEP disposition"/>
+        <alias field="structure_condition" index="32" name="Etat constructif"/>
+        <alias field="subsidies" index="33" name="Subventions"/>
+        <alias field="surface_inflow" index="45" name="Arrivée eaux sup"/>
+        <alias field="terrain_level" index="54" name="Côte terrain"/>
+        <alias field="upper_elevation" index="42" name="Côte plafond"/>
+        <alias field="vehicle_access" index="64" name="Véhicue d'apiration"/>
+        <alias field="venting" index="9" name="Aération"/>
+        <alias field="waterlevel_hydraulic" index="55" name="Niveau hydraulique"/>
+        <alias field="watertightness" index="65" name="Etanchéité"/>
         <alias field="wn_identifier" index="69" name=""/>
         <alias field="wn_last_modification" index="71" name=""/>
         <alias field="wn_obj_id" index="66" name=""/>
-        <alias field="wn_remark" index="70" name=""/>
-        <alias field="ws_remark" index="26" name=""/>
-        <alias field="ws_type" index="16" name=""/>
-        <alias field="year_of_construction" index="34" name=""/>
-        <alias field="year_of_replacement" index="35" name=""/>
+        <alias field="wn_remark" index="70" name="Remarques"/>
+        <alias field="ws_remark" index="26" name="Remarques"/>
+        <alias field="ws_type" index="16" name="Type"/>
+        <alias field="year_of_construction" index="34" name="Année de construction"/>
+        <alias field="year_of_replacement" index="35" name="Année de remplacement"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -9010,7 +9301,7 @@
         <actionsetting showInAttributeTable="1" action="feature = QgsMapLayerRegistry.instance().mapLayer('od_wastewater_structure').getFeatures( QgsFeatureRequest().setFilterExpression( 'obj_id = \'{}\''.format( '[% &quot;ws_obj_id&quot; %]' ) ) ).next()&#xa;qgepplugin.ui.forms.digitizeDrainageChannel(feature.id(), 'od_wastewater_structure')" icon="" capture="0" type="1" name="Digitize Drainage Channel" shortTitle=""/>
         <actionsetting showInAttributeTable="1" action="ws_lyr = QgsMapLayerRegistry.instance().mapLayer('od_wastewater_structure')&#xa;feature = ws_lyr.getFeatures( QgsFeatureRequest().setFilterExpression( 'obj_id = \'{}\''.format( '[% &quot;ws_obj_id&quot; %]' ) ) ).next()&#xa;ws_lyr.startEditing()&#xa;ws_lyr.setSelectedFeatures([feature.id()])&#xa;qgis.utils.iface.setActiveLayer(ws_lyr)&#xa;qgis.utils.iface.actionAddPart().trigger()" icon="" capture="0" type="1" name="Digitize" shortTitle=""/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="1" type="field" name="channel_usage_current"/>
           <column width="-1" hidden="1" type="field" name="channel_function_hierarchic"/>
@@ -9091,14 +9382,14 @@
       </attributetableconfig>
       <editform>$HOME</editform>
       <editforminit>vw_cover_open</editforminit>
-      <editforminitcodesource>2</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitcodesource>1</editforminitcodesource>
+      <editforminitfilepath>./python/cover_form.py</editforminitfilepath>
       <editforminitcode><![CDATA[from qgepplugin.ui.forms import vw_cover_open
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <attributeEditorContainer name="General" groupBox="0" columnCount="0">
+        <attributeEditorContainer name="Général" groupBox="0" columnCount="1">
           <attributeEditorField index="16" name="ws_type"/>
           <attributeEditorField index="18" name="identifier"/>
           <attributeEditorField index="24" name="location_name"/>
@@ -9115,7 +9406,7 @@
           <attributeEditorField index="40" name="dimension1"/>
           <attributeEditorField index="41" name="dimension2"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Cover" groupBox="0" columnCount="0">
+        <attributeEditorContainer name="Couvercle" groupBox="0" columnCount="1">
           <attributeEditorField index="1" name="brand"/>
           <attributeEditorField index="2" name="cover_shape"/>
           <attributeEditorField index="3" name="diameter"/>
@@ -9126,7 +9417,7 @@
           <attributeEditorField index="-1" name="dataowner"/>
           <attributeEditorField index="-1" name="provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Structure" groupBox="0" columnCount="0">
+        <attributeEditorContainer name="Ouvrage du réseau" groupBox="0" columnCount="1">
           <attributeEditorField index="-1" name="ws_obj_id"/>
           <attributeEditorField index="19" name="accessibility"/>
           <attributeEditorField index="20" name="contract_section"/>
@@ -9147,7 +9438,7 @@
           <attributeEditorField index="36" name="fk_owner"/>
           <attributeEditorField index="37" name="fk_operator"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Manhole" groupBox="0" columnCount="0">
+        <attributeEditorContainer name="Chambre" groupBox="0" columnCount="1">
           <attributeEditorField index="39" name="depth"/>
           <attributeEditorField index="40" name="dimension1"/>
           <attributeEditorField index="41" name="dimension2"/>
@@ -9156,7 +9447,7 @@
           <attributeEditorField index="44" name="material"/>
           <attributeEditorField index="45" name="surface_inflow"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Special Structure" groupBox="0" columnCount="0">
+        <attributeEditorContainer name="Ouvrage special" groupBox="0" columnCount="1">
           <attributeEditorField index="49" name="bypass"/>
           <attributeEditorField index="50" name="special_structure_function"/>
           <attributeEditorField index="51" name="stormwater_tank_arrangement"/>
@@ -9164,7 +9455,7 @@
           <attributeEditorField index="39" name="depth"/>
           <attributeEditorField index="60" name="emergency_spillway"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Discharge Point" groupBox="0" columnCount="0">
+        <attributeEditorContainer name="Exutoire" groupBox="0" columnCount="1">
           <attributeEditorField index="39" name="depth"/>
           <attributeEditorField index="60" name="emergency_spillway"/>
           <attributeEditorField index="52" name="highwater_level"/>
@@ -9173,7 +9464,7 @@
           <attributeEditorField index="42" name="upper_elevation"/>
           <attributeEditorField index="55" name="waterlevel_hydraulic"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Infiltration Installation" groupBox="0" columnCount="0">
+        <attributeEditorContainer name="Installation d'infiltration" groupBox="0" columnCount="1">
           <attributeEditorField index="57" name="defects"/>
           <attributeEditorField index="58" name="distance_to_aquifer"/>
           <attributeEditorField index="59" name="effective_area"/>
@@ -9187,7 +9478,7 @@
           <attributeEditorField index="41" name="dimension2"/>
           <attributeEditorField index="42" name="upper_elevation"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Node" groupBox="0" columnCount="0">
+        <attributeEditorContainer name="Noeud de réseau" groupBox="0" columnCount="1">
           <attributeEditorField index="66" name="wn_obj_id"/>
           <attributeEditorField index="67" name="backflow_level"/>
           <attributeEditorField index="68" name="bottom_level"/>
@@ -9197,10 +9488,10 @@
           <attributeEditorField index="-1" name="wn_dataowner"/>
           <attributeEditorField index="-1" name="wn_provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Covers" groupBox="0" columnCount="0">
+        <attributeEditorContainer name="Couvercles multiples" groupBox="0" columnCount="1">
           <attributeEditorRelation relation="" name="vw_cover20150507162234308_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Structure Parts" groupBox="0" columnCount="0">
+        <attributeEditorContainer name="Eléments d'ouvrage" groupBox="0" columnCount="1">
           <attributeEditorRelation relation="" name="vw_access_aid20150507162234295_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
           <attributeEditorRelation relation="" name="vw_backflow_prevention20150531093552085_fk_wastewater_structure_vw_qgep_cover_ws_obj_id"/>
           <attributeEditorRelation relation="" name="vw_dryweather_flume20150507162234250_fk_wastewater_structure_vw_qgep_cover20150506155849784_obj_id"/>
@@ -9210,7 +9501,7 @@
         <attributeEditorContainer name="Maintenance" groupBox="0" columnCount="0">
           <attributeEditorRelation relation="" name="re_maintenance_wastewaterstructure_cover"/>
         </attributeEditorContainer>
-        <attributeEditorContainer name="Wastewater Nodes" groupBox="0" columnCount="0">
+        <attributeEditorContainer name="Noeuds multiples" groupBox="0" columnCount="1">
           <attributeEditorRelation relation="" name="wastewater_node-fk_wastewater-structure"/>
         </attributeEditorContainer>
       </attributeEditorForm>
@@ -9368,7 +9659,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="damage_type"/>
           <column width="-1" hidden="0" type="field" name="obj_id"/>
@@ -9585,7 +9876,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="maintenance_type"/>
           <column width="-1" hidden="0" type="field" name="obj_id"/>
@@ -9694,7 +9985,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>152651.20973703000345267</ymax>
       </extent>
       <id>vw_qgep_reach</id>
-      <datasource>service='pg_qgep_sige' key='"obj_id"' srid=21781 type=LineString table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
+      <datasource>service='pg_qgep_sige' key='"obj_id"' srid=21781 type=CompoundCurve table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -10395,7 +10686,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="1" type="field" name="progression_3d_geometry"/>
           <column width="-1" hidden="1" type="field" name="rp_from_obj_id"/>
@@ -10676,7 +10967,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="0"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../../git/project</editform>
