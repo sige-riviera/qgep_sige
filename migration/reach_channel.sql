@@ -25,12 +25,13 @@ INSERT INTO qgep.vw_qgep_reach(
   elevation_determination,
   rp_from_level,
   rp_to_level,
-  fk_owner
+  fk_owner,
+  structure_condition
 )
 SELECT
   haltung.name,
   bemerkung,
-  haltungslaenge,
+  ((rp_from_level-rp_to_level)^2+(ST_Length(geometry))^2)^.5,
   baujahr,
   gefaelle,
   ST_ForceCurve(geometry),
@@ -44,7 +45,8 @@ SELECT
   ed.new,
   rp_from_level,
   rp_to_level,
-  org.obj_id
+  org.obj_id,
+  3037
   
 FROM sa.aw_haltung haltung
 LEFT JOIN haltung_geo geom on geom.gid = haltung.gid
