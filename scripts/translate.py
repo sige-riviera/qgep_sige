@@ -1,4 +1,5 @@
-#!/bin/python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 
 import psycopg2, psycopg2.extras
@@ -7,7 +8,24 @@ import psycopg2, psycopg2.extras
 pg_service = "pg_qgep"
 
 
-layers = {'vw_qgep_wastewater_structure': 'chambre'}
+layers = {
+    'vw_qgep_wastewater_structure': 
+        {'name': 'chambre',
+         'tabs': {'General': 'Général',
+                  'Cover': 'Couvercle',
+                  'Wastewater Structure': 'Ouvrage',
+                  'Manhole': 'Chambre',
+                  'Special Structure': 'Ouvrage spécial',
+                  'Discharge Point': 'Exutoir',
+                  'Infiltration Installation': 'Installation d''infiltration',
+                  'Wastewater Node': 'Noeud',
+                  'Covers': 'Couvercles',
+                  'Structure Parts': 'Elément d''ouvrage',
+                  'Maintenance': 'Maintenance',
+                  'Wastewater Nodes': 'Noeuds',
+                  'Files': 'Fichiers'},
+         'additional_translations': {}}
+        }
 
 
 
@@ -22,14 +40,31 @@ def get_field_translation(field):
 	if trans is None:
 		return None
 	else:
-		return trans[0]
+		return trans[0].lower()
+
+def get_table_translation(table):
+	cur.execute("SELECT name_fr FROM qgep.is_dictionary_od_table WHERE tablename LIKE '%{0}' LIMIT 1".format(table))
+	trans = cur.fetchone()
+	if trans is None:
+		return None
+	else:
+		return trans[0].lower()
 
 
 for layer in QgsMapLayerRegistry.instance().mapLayers().values():
 	if layer.id() in layers.keys():
-		layer.setName(layers[layer.id()])
+		layer.setName(layers[layer.id()]['name'])
+		tabs = layer.editFormConfig().tabs()
+		# tabs
+		for tab in layer.editFormConfig().tabs():
+			print tab.name()
+			if tab.name() in layers[layer.id()]['tabs']:
+				tab.setName(layers[layer.id()]['tabs'][tab.name()])
+			else:
+				print("Tab {0} not translated".format(tab.name()))
+		# fields
 		for idx,field in enumerate(layer.fields()):
-			print(layer.name(),idx,field.name())
+			#print(layer.name(),idx,field.name())
 			# translation
 			trans = get_field_translation(field.name())
 			if trans is not None:
@@ -44,8 +79,13 @@ for layer in QgsMapLayerRegistry.instance().mapLayers().values():
 					cfg["Value"] = "value_fr"
 					layer.editFormConfig().setWidgetConfig(idx, cfg)
 					print("set value relation")
+			
+			# value maps
+			if layer.editFormConfig().widgetType(idx) == 'ValueMap':
+				cfg = layer.editFormConfig().widgetConfig(idx)
+				for key in cfg.keys():
+					trans = get_table_translation(key)
+					if trans:
+						cfg[key] = trans
+				layer.editFormConfig().setWidgetConfig(idx, cfg)
 
-		
-		
-		
-		
