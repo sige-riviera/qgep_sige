@@ -11,7 +11,7 @@ pg_service = "pg_qgep"
 layers = {
     'vw_qgep_wastewater_structure': 
         {'name': 'chambre',
-         'tabs': {'General': 'Général',
+         'tabs': {'General': u'Général',
                   'Cover': 'Couvercle',
                   'Wastewater Structure': 'Ouvrage',
                   'Manhole': 'Chambre',
@@ -24,8 +24,20 @@ layers = {
                   'Maintenance': 'Maintenance',
                   'Wastewater Nodes': 'Noeuds',
                   'Files': 'Fichiers'},
-         'additional_translations': {'manhole_function': 'fonction'}}
+         'additional_translations': {'manhole_function': 'fonction'}
+        },
+    'vw_qgep_reach':
+        {'name': 'tronçon',
+         'tabs': {'General': 'Général',
+                  'Reach': 'Tronçon',
+                  'Wastewater Networkelement': 'Element du réseau',
+                  'Channel': 'Canalisation',
+                  'Wastewater Structure': 'Ouvrage',
+                  'Reach Points': 'Point de tronçon',
+                  'Maintenance': 'Maintenance'},
+         'additional_translations': {}
         }
+    }
 
 
 
@@ -67,7 +79,7 @@ for layer in QgsMapLayerRegistry.instance().mapLayers().values():
 			# translation
 			trans = get_field_translation(field.name())
 			if field.name() in layers[layer.id()]['additional_translations']:
-				layer.addAttributeAlias(idx, layers[layer.id()]['additional_translations'][field.anme()])
+				layer.addAttributeAlias(idx, layers[layer.id()]['additional_translations'][field.name()])
 			elif trans is not None:
 				layer.addAttributeAlias(idx, trans)
 			else:
@@ -89,4 +101,3 @@ for layer in QgsMapLayerRegistry.instance().mapLayers().values():
 						cfg[trans] = cfg[key]
 						del cfg[key]
 				layer.editFormConfig().setWidgetConfig(idx, cfg)
-
