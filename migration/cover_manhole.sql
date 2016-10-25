@@ -33,7 +33,7 @@ SELECT
 FROM sa.aw_netzlinie_geo 
 GROUP BY gid)
 
-INSERT INTO qgep.vw_qgep_cover
+INSERT INTO qgep.vw_qgep_wastewater_structure
  (
   ws_type,
   co_identifier,
