@@ -24,7 +24,7 @@ layers = {
                   'Maintenance': 'Maintenance',
                   'Wastewater Nodes': 'Noeuds',
                   'Files': 'Fichiers'},
-         'additional_translations': {}}
+         'additional_translations': {'manhole_function': 'fonction'}}
         }
 
 
@@ -57,7 +57,6 @@ for layer in QgsMapLayerRegistry.instance().mapLayers().values():
 		tabs = layer.editFormConfig().tabs()
 		# tabs
 		for tab in layer.editFormConfig().tabs():
-			print tab.name()
 			if tab.name() in layers[layer.id()]['tabs']:
 				tab.setName(layers[layer.id()]['tabs'][tab.name()])
 			else:
@@ -67,7 +66,9 @@ for layer in QgsMapLayerRegistry.instance().mapLayers().values():
 			#print(layer.name(),idx,field.name())
 			# translation
 			trans = get_field_translation(field.name())
-			if trans is not None:
+			if field.name() in layers[layer.id()]['additional_translations']:
+				layer.addAttributeAlias(idx, layers[layer.id()]['additional_translations'][field.anme()])
+			elif trans is not None:
 				layer.addAttributeAlias(idx, trans)
 			else:
 				print("Field {0} is not translated".format(field.name()))
@@ -78,14 +79,14 @@ for layer in QgsMapLayerRegistry.instance().mapLayers().values():
 				if cfg["Value"] == "value_en":
 					cfg["Value"] = "value_fr"
 					layer.editFormConfig().setWidgetConfig(idx, cfg)
-					print("set value relation")
 			
 			# value maps
 			if layer.editFormConfig().widgetType(idx) == 'ValueMap':
 				cfg = layer.editFormConfig().widgetConfig(idx)
 				for key in cfg.keys():
-					trans = get_table_translation(key)
+					trans = get_table_translation(cfg[key])
 					if trans:
-						cfg[key] = trans
+						cfg[trans] = cfg[key]
+						del cfg[key]
 				layer.editFormConfig().setWidgetConfig(idx, cfg)
 
