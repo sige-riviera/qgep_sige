@@ -1,14 +1,14 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.17.0">
+<qgis projectname="" version="2.18.0">
   <title></title>
   <autotransaction active="1"/>
   <evaluateDefaultValues active="1"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_wastewater_structure" name="vw_qgep_wastewater_structure">
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_wastewater_structure" name="chambre">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_reach" name="vw_qgep_reach">
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_reach" name="tronçon">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-group expanded="0" checked="Qt::Checked" name="Wastewater Structures">
@@ -350,10 +350,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>745106.29224999994039536</xmin>
-      <ymin>258164.61167499999282882</ymin>
-      <xmax>753476.79774999991059303</xmax>
-      <ymax>266968.58132499997736886</ymax>
+      <xmin>553306.78892937221098691</xmin>
+      <ymin>141613.35166063814540394</ymin>
+      <xmax>561677.29442945041228086</xmax>
+      <ymax>150417.32131063847918995</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -499,12 +499,12 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="vw_qgep_wastewater_structure" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="chambre" showFeatureCount="0">
       <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="vw_qgep_wastewater_structure" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="vw_qgep_reach" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="tronçon" showFeatureCount="0">
       <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="vw_qgep_reach" visible="1"/>
       </filegroup>
@@ -9241,7 +9241,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_qgep_reach</layername>
+      <layername>tronçon</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
@@ -10709,13 +10709,13 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="999" Suffix=" m^(1/3)/s"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="elevation_determination">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_elevation_determination" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_elevation_determination" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="horizontal_positioning">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_horizontal_positioning" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_horizontal_positioning" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="inside_coating">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_inside_coating" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_inside_coating" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Range" name="length_effective">
           <widgetv2config AllowNull="1" fieldEditable="1" Step="10" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="30000" Suffix=" m"/>
@@ -10724,22 +10724,22 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="material">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_material" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_material" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="progression3d_geometry">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="reliner_material">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_reliner_material" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_reliner_material" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="reliner_nominal_size">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="relining_construction">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_relining_construction" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_relining_construction" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="relining_kind">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_relining_kind" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_relining_kind" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ring_stiffness">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -10757,13 +10757,13 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="function_hierarchic">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_channel_function_hierarchic" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_channel_function_hierarchic" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="connection_type">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_channel_connection_type" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_channel_connection_type" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="function_hydraulic">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_channel_function_hydraulic" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_channel_function_hydraulic" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="jetting_interval">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -10772,22 +10772,22 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="usage_current">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_channel_usage_current" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_channel_usage_current" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="usage_planned">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_channel_usage_planned" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_channel_usage_planned" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ws_obj_id">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="accessibility">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_accessibility" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_accessibility" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="contract_section">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="financing">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_financing" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_financing" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="gross_costs">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -10802,7 +10802,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="renovation_necessity">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_renovation_necessity" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_renovation_necessity" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="replacement_value">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -10811,13 +10811,13 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="rv_construction_type">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_rv_construction_type" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_rv_construction_type" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="status">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_status" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_status" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="structure_condition">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_structure_condition" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_structure_condition" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="subsidies">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -10856,7 +10856,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="rp_from_elevation_accuracy">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_point_elevation_accuracy" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_point_elevation_accuracy" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="rp_from_identifier">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -10865,7 +10865,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config AllowNull="1" fieldEditable="1" Step="10" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="4000" Suffix=" m.a.s.l."/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="rp_from_outlet_shape">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_point_outlet_shape" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_point_outlet_shape" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="rp_from_position_of_connection">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -10889,7 +10889,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="rp_to_elevation_accuracy">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_point_elevation_accuracy" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_point_elevation_accuracy" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="rp_to_identifier">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -10898,7 +10898,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config AllowNull="1" fieldEditable="1" Step="10" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="4000" Suffix=" m.a.s.l."/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="rp_to_outlet_shape">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_point_outlet_shape" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_point_outlet_shape" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="rp_to_position_of_connection">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -10938,112 +10938,37 @@ def my_form_open(dialog, layer, feature):
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
-        <rules key="{b3f3f0a1-c8d2-4416-8d68-3de95a17bc02}">
-          <rule scalemaxdenom="2001" filter="width >= 300 and horizontal_positioning = 5378" key="{9e580459-8bfa-4f04-be8f-68986341bd8e}" symbol="0" label="Wide reaches, accurate positioning, scale &lt;=2000"/>
-          <rule scalemaxdenom="2001" filter="width >= 300 and horizontal_positioning &lt;> 5378" key="{a424a253-3ec2-46b0-9b46-a4a4cb732fb7}" symbol="1" label="Wide reaches, inaccurate positioning, scale &lt;=2000"/>
-          <rule scalemaxdenom="2001" filter="(width &lt; 300 OR width IS NULL) AND function_hierarchic IN (5068,5069,5070,5071) AND horizontal_positioning = 5378" key="{dd8104d5-d8fe-4f14-93dc-feb27d310ac3}" symbol="2" label="Narrow main reaches, accurate positioning, scale &lt;=2000"/>
-          <rule scalemaxdenom="2001" filter="(width &lt; 300 OR width IS NULL) AND function_hierarchic IN (5068,5069,5070,5071) AND horizontal_positioning &lt;> 5378" key="{1a35f8ac-80d4-4195-95e4-076f6dbe1ecc}" symbol="3" label="Narrow main reaches, inaccurate positioning, scale &lt;=2000"/>
-          <rule scalemaxdenom="2001" filter="(width &lt; 300 OR width IS NULL) AND function_hierarchic NOT IN (5068,5069,5070,5071) AND horizontal_positioning = 5378" key="{05072394-efd2-4299-abf8-f34a029a23a6}" symbol="4" label="Narrow minor reaches, accurate positioning, scale &lt;=2000"/>
-          <rule scalemaxdenom="2001" filter="(width &lt; 300 OR width IS NULL) AND function_hierarchic NOT IN (5068,5069,5070,5071) AND horizontal_positioning &lt;> 5378" key="{e1b5e5a1-8ad6-447d-9483-c38ab0e189e6}" symbol="5" label="Narrow minor reaches, inaccurate positioning, scale &lt;=2000"/>
-          <rule scalemaxdenom="5001" filter="width >= 600 and horizontal_positioning = 5378" key="{37d45500-ee03-4438-8431-1f6c18bc8ac9}" symbol="6" scalemindenom="2001" label="Wide reaches, accurate positioning, scale 2000-5000"/>
-          <rule scalemaxdenom="5001" filter="width >= 600 and horizontal_positioning &lt;> 5378" key="{5085b144-096c-4a99-b901-c48d8ccab0de}" symbol="7" scalemindenom="2001" label="Wide reaches, inaccurate positioning, scale 2000-5000"/>
-          <rule scalemaxdenom="5001" filter="(width &lt; 600 OR width IS NULL) AND function_hierarchic IN (5068,5069,5070,5071) AND horizontal_positioning = 5378" key="{4d7a3723-99a5-420a-b1e6-ff0a12b8ede4}" symbol="8" scalemindenom="2001" label="Narrow main reaches, accurate positioning, scale 1000-3000"/>
-          <rule scalemaxdenom="5001" filter="(width &lt; 600 OR width IS NULL) AND function_hierarchic IN (5068,5069,5070,5071) AND horizontal_positioning &lt;> 5378" key="{551fba99-38e1-4d21-9007-1e1ebba2a1d8}" symbol="9" scalemindenom="2001" label="Narrow main reaches, inaccurate positioning, scale 1000-3000"/>
-          <rule scalemaxdenom="100000" filter="function_hierarchic IN (5068,5069,5070,5071) AND horizontal_positioning = 5378" key="{d0a8418c-2231-46eb-abe3-d840c2c67437}" symbol="10" scalemindenom="5001" label="Main reaches, accurate positioning, scale >5000"/>
-          <rule scalemaxdenom="100000" filter="function_hierarchic IN (5068,5069,5070,5071) AND horizontal_positioning &lt;> 5378" key="{c7db9a9a-3d0f-4ab1-b0d3-301987626cab}" symbol="11" scalemindenom="5001" label="Main reaches, accurate positioning, scale >5000"/>
-          <rule scalemaxdenom="2001" filter="function_hierarchic IS NULL or horizontal_positioning IS NULL" key="{7bf9a846-7dbb-4eed-aa7e-39a4ac741ff1}" symbol="12" label="Missing attributes"/>
+        <rules key="{efa81e53-ae9a-42b9-ba41-d384ffe8c25d}">
+          <rule filter="function_hierarchic IN (5068,5069,5070,5071) AND fk_owner = 'ch15z36dOG000025'" key="{dcfdd718-a614-4147-9c11-0936517d0d1f}" symbol="0" label="primaire"/>
+          <rule filter="function_hierarchic NOT IN (5068,5069,5070,5071) AN fk_owner = 'ch15z36dOG000025'" key="{471e8d8e-2527-43b4-b694-6769244c2374}" symbol="1" label="secondaire"/>
+          <rule filter="fk_owner != 'ch15z36dOG000025'" key="{84d75c4c-9cb1-4e5a-b672-e844c5137f30}" symbol="2" label="étranger"/>
+          <rule filter="ELSE" key="{cb892b95-2a25-4c81-88ac-2f1109b817d3}" symbol="3" label="données manquantes"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="line" name="0">
             <layer pass="0" class="SimpleLine" locked="0">
               <prop k="capstyle" v="flat"/>
               <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,30' WHEN usage_current = 4516 THEN '0,255,0,30' WHEN usage_current = 4518 THEN '0,170,255,30' WHEN usage_current = 4522 THEN '102,0,102,30' WHEN usage_current IN (4524, 4526) THEN '255,0,0,30' ELSE '161,161,161,30' END"/>
+              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
+              <prop k="customdash_dd_active" v="1"/>
+              <prop k="customdash_dd_expression" v="CASE WHEN horizontal_positioning = 5378 THEN '1;0' ELSE '4;2' END"/>
+              <prop k="customdash_dd_field" v=""/>
+              <prop k="customdash_dd_useexpr" v="1"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.26"/>
-              <prop k="line_width_unit" v="MapUnit"/>
+              <prop k="line_width" v="0.6"/>
+              <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_dd_active" v="1"/>
-              <prop k="width_dd_expression" v="toreal(width) / 1000"/>
-              <prop k="width_dd_field" v=""/>
-              <prop k="width_dd_useexpr" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="203,176,112,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_dd_active" v="1"/>
-              <prop k="offset_dd_expression" v="toreal(width) / 2000"/>
-              <prop k="offset_dd_field" v=""/>
-              <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MapUnit"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_dd_active" v="1"/>
-              <prop k="offset_dd_expression" v="toreal(width) / - 2000"/>
-              <prop k="offset_dd_field" v=""/>
-              <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MapUnit"/>
-              <prop k="use_custom_dash" v="0"/>
+              <prop k="use_custom_dash" v="1"/>
               <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
@@ -11059,76 +10984,14 @@ def my_form_open(dialog, layer, feature):
             <layer pass="0" class="SimpleLine" locked="0">
               <prop k="capstyle" v="flat"/>
               <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,30' WHEN usage_current = 4516 THEN '0,255,0,30' WHEN usage_current = 4518 THEN '0,170,255,30' WHEN usage_current = 4522 THEN '102,0,102,30' WHEN usage_current IN (4524, 4526) THEN '255,0,0,30' ELSE '161,161,161,30' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.26"/>
-              <prop k="line_width_unit" v="MapUnit"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_dd_active" v="1"/>
-              <prop k="width_dd_expression" v="toreal(width) / 1000"/>
-              <prop k="width_dd_field" v=""/>
-              <prop k="width_dd_useexpr" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
               <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="203,176,112,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_dd_active" v="1"/>
-              <prop k="offset_dd_expression" v="toreal(width) / 2000"/>
-              <prop k="offset_dd_field" v=""/>
-              <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MapUnit"/>
-              <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="1.5;1"/>
+              <prop k="customdash_dd_active" v="1"/>
+              <prop k="customdash_dd_expression" v="CASE WHEN horizontal_positioning = 5378 THEN '1;0' ELSE '4;2' END"/>
+              <prop k="customdash_dd_field" v=""/>
+              <prop k="customdash_dd_useexpr" v="1"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
@@ -11138,12 +11001,8 @@ def my_form_open(dialog, layer, feature):
               <prop k="line_width" v="0.3"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
-              <prop k="offset_dd_active" v="1"/>
-              <prop k="offset_dd_expression" v="toreal(width) / - 2000"/>
-              <prop k="offset_dd_field" v=""/>
-              <prop k="offset_dd_useexpr" v="1"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MapUnit"/>
+              <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="1"/>
               <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
@@ -11156,52 +11015,25 @@ def my_form_open(dialog, layer, feature):
               </effect>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="10">
+          <symbol alpha="1" clip_to_extent="1" type="line" name="2">
             <layer pass="0" class="SimpleLine" locked="0">
               <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.5"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="11">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
+              <prop k="color_dd_active" v="0"/>
               <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="1.5;1"/>
+              <prop k="customdash_dd_active" v="1"/>
+              <prop k="customdash_dd_expression" v="CASE WHEN horizontal_positioning = 5378 THEN '1;0' ELSE '4;2' END"/>
+              <prop k="customdash_dd_field" v=""/>
+              <prop k="customdash_dd_useexpr" v="1"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.5"/>
+              <prop k="line_width" v="0.3"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -11218,7 +11050,7 @@ def my_form_open(dialog, layer, feature):
               </effect>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="12">
+          <symbol alpha="1" clip_to_extent="1" type="line" name="3">
             <layer pass="5" class="SimpleLine" locked="0">
               <prop k="capstyle" v="round"/>
               <prop k="customdash" v="5;2"/>
@@ -11237,403 +11069,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="2">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.5"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="3">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.5"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="4">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="5">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="6">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,30' WHEN usage_current = 4516 THEN '0,255,0,30' WHEN usage_current = 4518 THEN '0,170,255,30' WHEN usage_current = 4522 THEN '102,0,102,30' WHEN usage_current IN (4524, 4526) THEN '255,0,0,30' ELSE '161,161,161,30' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.26"/>
-              <prop k="line_width_unit" v="MapUnit"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_dd_active" v="1"/>
-              <prop k="width_dd_expression" v="toreal(width) / 1000"/>
-              <prop k="width_dd_field" v=""/>
-              <prop k="width_dd_useexpr" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="203,176,112,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_dd_active" v="1"/>
-              <prop k="offset_dd_expression" v="toreal(width) / 2000"/>
-              <prop k="offset_dd_field" v=""/>
-              <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MapUnit"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_dd_active" v="1"/>
-              <prop k="offset_dd_expression" v="toreal(width) / - 2000"/>
-              <prop k="offset_dd_field" v=""/>
-              <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MapUnit"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="7">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,30' WHEN usage_current = 4516 THEN '0,255,0,30' WHEN usage_current = 4518 THEN '0,170,255,30' WHEN usage_current = 4522 THEN '102,0,102,30' WHEN usage_current IN (4524, 4526) THEN '255,0,0,30' ELSE '161,161,161,30' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.26"/>
-              <prop k="line_width_unit" v="MapUnit"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_dd_active" v="1"/>
-              <prop k="width_dd_expression" v="toreal(width) / 1000"/>
-              <prop k="width_dd_field" v=""/>
-              <prop k="width_dd_useexpr" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="203,176,112,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_dd_active" v="1"/>
-              <prop k="offset_dd_expression" v="toreal(width) / 2000"/>
-              <prop k="offset_dd_field" v=""/>
-              <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MapUnit"/>
-              <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_dd_active" v="1"/>
-              <prop k="offset_dd_expression" v="toreal(width) / - 2000"/>
-              <prop k="offset_dd_field" v=""/>
-              <prop k="offset_dd_useexpr" v="1"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MapUnit"/>
-              <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="8">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.5"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="9">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.5"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
         </symbols>
-        <effect enabled="0" type="effectStack">
-          <effect type="drawSource">
-            <prop k="blend_mode" v="0"/>
-            <prop k="draw_mode" v="2"/>
-            <prop k="enabled" v="1"/>
-            <prop k="transparency" v="0"/>
-          </effect>
-        </effect>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
@@ -11802,8 +11238,8 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -11862,54 +11298,54 @@ def my_form_open(dialog, layer, feature):
       <annotationform>$HOME</annotationform>
       <aliases>
         <alias field="obj_id" index="0" name=""/>
-        <alias field="clear_height" index="1" name=""/>
-        <alias field="width" index="2" name=""/>
-        <alias field="coefficient_of_friction" index="3" name=""/>
-        <alias field="elevation_determination" index="4" name=""/>
-        <alias field="horizontal_positioning" index="5" name=""/>
-        <alias field="inside_coating" index="6" name=""/>
-        <alias field="length_effective" index="7" name=""/>
+        <alias field="clear_height" index="1" name="hauteur_max_profil"/>
+        <alias field="width" index="2" name="largeur"/>
+        <alias field="coefficient_of_friction" index="3" name="k_strickler"/>
+        <alias field="elevation_determination" index="4" name="determination_altimetrique"/>
+        <alias field="horizontal_positioning" index="5" name="determination_planimetrique"/>
+        <alias field="inside_coating" index="6" name="protection_interieure"/>
+        <alias field="length_effective" index="7" name="l_effective"/>
         <alias field="slope_per_mill" index="8" name=""/>
-        <alias field="material" index="9" name=""/>
+        <alias field="material" index="9" name="materiau"/>
         <alias field="progression3d_geometry" index="10" name=""/>
-        <alias field="reliner_material" index="11" name=""/>
-        <alias field="reliner_nominal_size" index="12" name=""/>
-        <alias field="relining_construction" index="13" name=""/>
-        <alias field="relining_kind" index="14" name=""/>
-        <alias field="ring_stiffness" index="15" name=""/>
-        <alias field="slope_building_plan" index="16" name=""/>
-        <alias field="wall_roughness" index="17" name=""/>
+        <alias field="reliner_material" index="11" name="relining_materiaux"/>
+        <alias field="reliner_nominal_size" index="12" name="reliner_diametre_nominale"/>
+        <alias field="relining_construction" index="13" name="relining_technique"/>
+        <alias field="relining_kind" index="14" name="relining_genre"/>
+        <alias field="ring_stiffness" index="15" name="rigidite_annulaire"/>
+        <alias field="slope_building_plan" index="16" name="pente_plan"/>
+        <alias field="wall_roughness" index="17" name="k_colebrook"/>
         <alias field="fk_pipe_profile" index="18" name=""/>
-        <alias field="bedding_encasement" index="19" name=""/>
-        <alias field="function_hierarchic" index="20" name=""/>
-        <alias field="connection_type" index="21" name=""/>
-        <alias field="function_hydraulic" index="22" name=""/>
-        <alias field="jetting_interval" index="23" name=""/>
-        <alias field="pipe_length" index="24" name=""/>
-        <alias field="usage_current" index="25" name=""/>
-        <alias field="usage_planned" index="26" name=""/>
+        <alias field="bedding_encasement" index="19" name="lit_de_pose"/>
+        <alias field="function_hierarchic" index="20" name="fonction_hierarchique"/>
+        <alias field="connection_type" index="21" name="raccordement"/>
+        <alias field="function_hydraulic" index="22" name="fonction_hydraulique"/>
+        <alias field="jetting_interval" index="23" name="intervalle_curage"/>
+        <alias field="pipe_length" index="24" name="l_tuyau"/>
+        <alias field="usage_current" index="25" name="genre_utilisation_actuel"/>
+        <alias field="usage_planned" index="26" name="genre_utilisation_prevu"/>
         <alias field="ws_obj_id" index="27" name=""/>
-        <alias field="accessibility" index="28" name=""/>
-        <alias field="contract_section" index="29" name=""/>
-        <alias field="financing" index="30" name=""/>
-        <alias field="gross_costs" index="31" name=""/>
-        <alias field="inspection_interval" index="32" name=""/>
-        <alias field="location_name" index="33" name=""/>
-        <alias field="records" index="34" name=""/>
-        <alias field="renovation_necessity" index="35" name=""/>
-        <alias field="replacement_value" index="36" name=""/>
-        <alias field="rv_base_year" index="37" name=""/>
-        <alias field="rv_construction_type" index="38" name=""/>
-        <alias field="status" index="39" name=""/>
-        <alias field="structure_condition" index="40" name=""/>
-        <alias field="subsidies" index="41" name=""/>
-        <alias field="year_of_construction" index="42" name=""/>
-        <alias field="year_of_replacement" index="43" name=""/>
+        <alias field="accessibility" index="28" name="acces"/>
+        <alias field="contract_section" index="29" name="lot_construction"/>
+        <alias field="financing" index="30" name="financement"/>
+        <alias field="gross_costs" index="31" name="couts_bruts"/>
+        <alias field="inspection_interval" index="32" name="intervalle_inspection"/>
+        <alias field="location_name" index="33" name="lieu_dit"/>
+        <alias field="records" index="34" name="dossier"/>
+        <alias field="renovation_necessity" index="35" name="necessite_assainir"/>
+        <alias field="replacement_value" index="36" name="valeur_remplacement"/>
+        <alias field="rv_base_year" index="37" name="vr_annee_reference"/>
+        <alias field="rv_construction_type" index="38" name="vr_type_construction"/>
+        <alias field="status" index="39" name="etat"/>
+        <alias field="structure_condition" index="40" name="etat_constructif"/>
+        <alias field="subsidies" index="41" name="subventions"/>
+        <alias field="year_of_construction" index="42" name="annee_de_construction"/>
+        <alias field="year_of_replacement" index="43" name="annee_de_remplacement"/>
         <alias field="fk_owner" index="44" name=""/>
         <alias field="fk_operator" index="45" name=""/>
-        <alias field="identifier" index="46" name=""/>
-        <alias field="remark" index="47" name=""/>
-        <alias field="last_modification" index="48" name=""/>
+        <alias field="identifier" index="46" name="designation"/>
+        <alias field="remark" index="47" name="remarque"/>
+        <alias field="last_modification" index="48" name="derniere_modification"/>
         <alias field="fk_dataowner" index="49" name=""/>
         <alias field="fk_provider" index="50" name=""/>
         <alias field="fk_wastewater_structure" index="51" name=""/>
@@ -12054,7 +11490,7 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="General" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="GÃ©nÃ©ral" groupBox="0" columnCount="0">
           <attributeEditorField showLabel="1" index="1" name="clear_height"/>
           <attributeEditorField showLabel="1" index="7" name="length_effective"/>
           <attributeEditorField showLabel="1" index="9" name="material"/>
@@ -12071,7 +11507,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="42" name="year_of_construction"/>
           <attributeEditorField showLabel="1" index="47" name="remark"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Reach" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="TronÃ§on" groupBox="0" columnCount="0">
           <attributeEditorField showLabel="1" index="0" name="obj_id"/>
           <attributeEditorField showLabel="1" index="1" name="clear_height"/>
           <attributeEditorField showLabel="1" index="2" name="width"/>
@@ -12092,14 +11528,14 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="17" name="wall_roughness"/>
           <attributeEditorField showLabel="1" index="18" name="fk_pipe_profile"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Wastewater Networkelement" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Element du réseau" groupBox="0" columnCount="0">
           <attributeEditorField showLabel="1" index="46" name="identifier"/>
           <attributeEditorField showLabel="1" index="47" name="remark"/>
           <attributeEditorField showLabel="1" index="48" name="last_modification"/>
           <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
           <attributeEditorField showLabel="1" index="-1" name="provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Channel" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Canalisation" groupBox="0" columnCount="0">
           <attributeEditorField showLabel="1" index="20" name="function_hierarchic"/>
           <attributeEditorField showLabel="1" index="21" name="connection_type"/>
           <attributeEditorField showLabel="1" index="22" name="function_hydraulic"/>
@@ -12108,7 +11544,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="25" name="usage_current"/>
           <attributeEditorField showLabel="1" index="26" name="usage_planned"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Wastewater Structure" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Ouvrage" groupBox="0" columnCount="0">
           <attributeEditorField showLabel="1" index="27" name="ws_obj_id"/>
           <attributeEditorField showLabel="1" index="28" name="accessibility"/>
           <attributeEditorField showLabel="1" index="29" name="contract_section"/>
@@ -12129,7 +11565,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="44" name="fk_owner"/>
           <attributeEditorField showLabel="1" index="45" name="fk_operator"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Reach Points" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Point de tronÃ§on" groupBox="0" columnCount="0">
           <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="From" groupBox="1" columnCount="0">
             <attributeEditorField showLabel="1" index="52" name="rp_from_obj_id"/>
             <attributeEditorField showLabel="1" index="53" name="rp_from_elevation_accuracy"/>
@@ -12185,7 +11621,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>vw_qgep_wastewater_structure</layername>
+      <layername>chambre</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
@@ -12290,28 +11726,28 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0" Editable="1"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="cover_shape">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_cover_shape" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_cover_shape" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Range" name="diameter">
           <widgetv2config AllowNull="1" fieldEditable="1" Step="10" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="4000" Suffix=" mm"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fastening">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_fastening" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_fastening" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Range" name="level">
-          <widgetv2config AllowNull="1" fieldEditable="1" Step="10" constraint="&quot;level&quot; IS NOT NULL" Style="SpinBox" labelOnTop="0" constraintDescription="Level must not be NULL" Min="0" notNull="0" Max="4000" Suffix=" m.a.s.l."/>
+          <widgetv2config AllowNull="1" fieldEditable="1" Step="10" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="Level must not be NULL" Min="0" notNull="0" Max="4000" Suffix=" m.a.s.l."/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="cover_material">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_material" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_material" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="positional_accuracy">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_positional_accuracy20151117153235900" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_positional_accuracy20151117153235900" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="sludge_bucket">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_sludge_bucket" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_sludge_bucket" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="venting">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_venting" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_venting" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="co_identifier">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -12320,7 +11756,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="renovation_demand">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_structure_part_renovation_demand" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_structure_part_renovation_demand" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="DateTime" name="last_modification">
           <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="0" display_format="yyyy-MM-dd" field_format="yyyy-MM-dd" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -12333,10 +11769,10 @@ def my_form_open(dialog, layer, feature):
         </edittype>
         <edittype widgetv2type="ValueMap" name="ws_type">
           <widgetv2config fieldEditable="1" constraint="&quot;ws_type&quot; IS NOT NULL" labelOnTop="0" constraintDescription="Please choose a wastewater structure type" notNull="0">
-            <value key="Discharge Point" value="discharge_point"/>
-            <value key="Infiltration Installation" value="infiltration_installation"/>
-            <value key="Manhole" value="manhole"/>
-            <value key="Special Structure" value="special_structure"/>
+            <value key="chambre standard" value="manhole"/>
+            <value key="exutoire au milieu récepteur" value="discharge_point"/>
+            <value key="installation d'infiltration" value="infiltration_installation"/>
+            <value key="ouvrage spécial" value="special_structure"/>
           </widgetv2config>
         </edittype>
         <edittype widgetv2type="TextEdit" name="co_obj_id">
@@ -12346,13 +11782,13 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="accessibility">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_accessibility" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_accessibility" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="contract_section">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="financing">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_financing" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_financing" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Range" name="gross_costs">
           <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="9999999.99" Suffix=" CHF"/>
@@ -12370,7 +11806,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="renovation_necessity">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_renovation_necessity" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_renovation_necessity" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Range" name="replacement_value">
           <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="9999999.99" Suffix=" CHF"/>
@@ -12379,13 +11815,13 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="1800" notNull="0" Max="2900"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="rv_construction_type">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_rv_construction_type" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_rv_construction_type" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="status">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_status" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_status" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="structure_condition">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_structure_condition" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_structure_condition" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Range" name="subsidies">
           <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="9999999.99" Suffix=" CHF"/>
@@ -12418,13 +11854,13 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="manhole_function">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_manhole_function" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_manhole_function" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="material">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_manhole_material20151117174216343" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_manhole_material20151117174216343" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="surface_inflow">
-          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_manhole_surface_inflow20151117174216393" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_manhole_surface_inflow20151117174216393" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Hidden" name="channel_usage_current">
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -12436,19 +11872,19 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="bypass">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_special_structure_bypass" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_special_structure_bypass" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="special_structure_function">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_special_structure_function" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_special_structure_function" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="stormwater_tank_arrangement">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_special_structure_stormwater_tank_arrangement" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_special_structure_stormwater_tank_arrangement" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Range" name="highwater_level">
           <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="5"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="relevance">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_discharge_point_relevance" Value="value_en" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_discharge_point_relevance" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Range" name="terrain_level">
           <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="4000" Suffix=" m.a.s.l."/>
@@ -13984,74 +13420,74 @@ def my_form_open(dialog, layer, feature):
       <annotationform>$HOME</annotationform>
       <aliases>
         <alias field="obj_id" index="0" name=""/>
-        <alias field="brand" index="1" name=""/>
-        <alias field="cover_shape" index="2" name=""/>
-        <alias field="diameter" index="3" name=""/>
-        <alias field="fastening" index="4" name=""/>
-        <alias field="level" index="5" name=""/>
+        <alias field="brand" index="1" name="fabricant"/>
+        <alias field="cover_shape" index="2" name="forme_couvercle"/>
+        <alias field="diameter" index="3" name="diametre"/>
+        <alias field="fastening" index="4" name="fermeture"/>
+        <alias field="level" index="5" name="cote"/>
         <alias field="cover_material" index="6" name=""/>
-        <alias field="positional_accuracy" index="7" name=""/>
-        <alias field="sludge_bucket" index="8" name=""/>
-        <alias field="venting" index="9" name=""/>
+        <alias field="positional_accuracy" index="7" name="determination_planimetrique"/>
+        <alias field="sludge_bucket" index="8" name="ramasse_boues"/>
+        <alias field="venting" index="9" name="aeration"/>
         <alias field="co_identifier" index="10" name=""/>
-        <alias field="remark" index="11" name=""/>
-        <alias field="renovation_demand" index="12" name=""/>
-        <alias field="last_modification" index="13" name=""/>
+        <alias field="remark" index="11" name="remarque"/>
+        <alias field="renovation_demand" index="12" name="remise_en_etat"/>
+        <alias field="last_modification" index="13" name="derniere_modification"/>
         <alias field="fk_dataowner" index="14" name=""/>
         <alias field="fk_provider" index="15" name=""/>
         <alias field="ws_type" index="16" name=""/>
         <alias field="co_obj_id" index="17" name=""/>
-        <alias field="identifier" index="18" name=""/>
-        <alias field="accessibility" index="19" name=""/>
-        <alias field="contract_section" index="20" name=""/>
-        <alias field="financing" index="21" name=""/>
-        <alias field="gross_costs" index="22" name=""/>
-        <alias field="inspection_interval" index="23" name=""/>
-        <alias field="location_name" index="24" name=""/>
-        <alias field="records" index="25" name=""/>
+        <alias field="identifier" index="18" name="designation"/>
+        <alias field="accessibility" index="19" name="acces"/>
+        <alias field="contract_section" index="20" name="lot_construction"/>
+        <alias field="financing" index="21" name="financement"/>
+        <alias field="gross_costs" index="22" name="couts_bruts"/>
+        <alias field="inspection_interval" index="23" name="intervalle_inspection"/>
+        <alias field="location_name" index="24" name="lieu_dit"/>
+        <alias field="records" index="25" name="dossier"/>
         <alias field="ws_remark" index="26" name=""/>
-        <alias field="renovation_necessity" index="27" name=""/>
-        <alias field="replacement_value" index="28" name=""/>
-        <alias field="rv_base_year" index="29" name=""/>
-        <alias field="rv_construction_type" index="30" name=""/>
-        <alias field="status" index="31" name=""/>
-        <alias field="structure_condition" index="32" name=""/>
-        <alias field="subsidies" index="33" name=""/>
-        <alias field="year_of_construction" index="34" name=""/>
-        <alias field="year_of_replacement" index="35" name=""/>
+        <alias field="renovation_necessity" index="27" name="necessite_assainir"/>
+        <alias field="replacement_value" index="28" name="valeur_remplacement"/>
+        <alias field="rv_base_year" index="29" name="vr_annee_reference"/>
+        <alias field="rv_construction_type" index="30" name="vr_type_construction"/>
+        <alias field="status" index="31" name="etat"/>
+        <alias field="structure_condition" index="32" name="etat_constructif"/>
+        <alias field="subsidies" index="33" name="subventions"/>
+        <alias field="year_of_construction" index="34" name="annee_de_construction"/>
+        <alias field="year_of_replacement" index="35" name="annee_de_remplacement"/>
         <alias field="fk_owner" index="36" name=""/>
         <alias field="fk_operator" index="37" name=""/>
         <alias field="_label" index="38" name=""/>
-        <alias field="depth" index="39" name=""/>
-        <alias field="dimension1" index="40" name=""/>
-        <alias field="dimension2" index="41" name=""/>
-        <alias field="upper_elevation" index="42" name=""/>
-        <alias field="manhole_function" index="43" name=""/>
-        <alias field="material" index="44" name=""/>
-        <alias field="surface_inflow" index="45" name=""/>
+        <alias field="depth" index="39" name="epaisseur"/>
+        <alias field="dimension1" index="40" name="dimension1"/>
+        <alias field="dimension2" index="41" name="dimension2"/>
+        <alias field="upper_elevation" index="42" name="cote_plafond"/>
+        <alias field="manhole_function" index="43" name="fonction"/>
+        <alias field="material" index="44" name="materiau"/>
+        <alias field="surface_inflow" index="45" name="arrivee_eaux_sup"/>
         <alias field="channel_usage_current" index="46" name=""/>
         <alias field="channel_function_hierarchic" index="47" name=""/>
         <alias field="manhole_orientation" index="48" name=""/>
-        <alias field="bypass" index="49" name=""/>
+        <alias field="bypass" index="49" name="bypass"/>
         <alias field="special_structure_function" index="50" name=""/>
-        <alias field="stormwater_tank_arrangement" index="51" name=""/>
-        <alias field="highwater_level" index="52" name=""/>
-        <alias field="relevance" index="53" name=""/>
-        <alias field="terrain_level" index="54" name=""/>
-        <alias field="waterlevel_hydraulic" index="55" name=""/>
-        <alias field="absorption_capacity" index="56" name=""/>
-        <alias field="defects" index="57" name=""/>
-        <alias field="distance_to_aquifer" index="58" name=""/>
-        <alias field="effective_area" index="59" name=""/>
-        <alias field="emergency_spillway" index="60" name=""/>
-        <alias field="kind" index="61" name=""/>
-        <alias field="labeling" index="62" name=""/>
-        <alias field="seepage_utilization" index="63" name=""/>
-        <alias field="vehicle_access" index="64" name=""/>
-        <alias field="watertightness" index="65" name=""/>
+        <alias field="stormwater_tank_arrangement" index="51" name="bep_disposition"/>
+        <alias field="highwater_level" index="52" name="cote_crue"/>
+        <alias field="relevance" index="53" name="signifiance"/>
+        <alias field="terrain_level" index="54" name="cote_terrain"/>
+        <alias field="waterlevel_hydraulic" index="55" name="niveau_eau_hydraulique"/>
+        <alias field="absorption_capacity" index="56" name="capacite_absorption_sol"/>
+        <alias field="defects" index="57" name="lacunes"/>
+        <alias field="distance_to_aquifer" index="58" name="distance_aquifere"/>
+        <alias field="effective_area" index="59" name="surface_utile"/>
+        <alias field="emergency_spillway" index="60" name="trop_plein_de_secours"/>
+        <alias field="kind" index="61" name="genre"/>
+        <alias field="labeling" index="62" name="signalisation"/>
+        <alias field="seepage_utilization" index="63" name="eau_infiltration"/>
+        <alias field="vehicle_access" index="64" name="vehicule_d_aspiration"/>
+        <alias field="watertightness" index="65" name="etancheite"/>
         <alias field="wn_obj_id" index="66" name=""/>
-        <alias field="backflow_level" index="67" name=""/>
-        <alias field="bottom_level" index="68" name=""/>
+        <alias field="backflow_level" index="67" name="cote_refoulement"/>
+        <alias field="bottom_level" index="68" name="cote_radier"/>
         <alias field="wn_identifier" index="69" name=""/>
         <alias field="wn_remark" index="70" name=""/>
         <alias field="wn_last_modification" index="71" name=""/>
@@ -14153,7 +13589,7 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="General" groupBox="0" columnCount="2">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="2">
           <attributeEditorField showLabel="1" index="18" name="identifier"/>
           <attributeEditorField showLabel="1" index="16" name="ws_type"/>
           <attributeEditorField showLabel="1" index="24" name="location_name"/>
@@ -14170,7 +13606,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="40" name="dimension1"/>
           <attributeEditorField showLabel="1" index="41" name="dimension2"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Cover" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Couvercle" groupBox="0" columnCount="0">
           <attributeEditorField showLabel="1" index="1" name="brand"/>
           <attributeEditorField showLabel="1" index="2" name="cover_shape"/>
           <attributeEditorField showLabel="1" index="3" name="diameter"/>
@@ -14182,7 +13618,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="-1" name="provider"/>
           <attributeEditorField showLabel="1" index="17" name="co_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Wastewater Structure" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Ouvrage" groupBox="0" columnCount="0">
           <attributeEditorField showLabel="1" index="19" name="accessibility"/>
           <attributeEditorField showLabel="1" index="20" name="contract_section"/>
           <attributeEditorField showLabel="1" index="21" name="financing"/>
@@ -14203,7 +13639,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="37" name="fk_operator"/>
           <attributeEditorField showLabel="1" index="0" name="obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'manhole'" name="Manhole" groupBox="0" columnCount="1">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'manhole'" name="Chambre" groupBox="0" columnCount="1">
           <attributeEditorField showLabel="1" index="39" name="depth"/>
           <attributeEditorField showLabel="1" index="40" name="dimension1"/>
           <attributeEditorField showLabel="1" index="41" name="dimension2"/>
@@ -14212,7 +13648,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="44" name="material"/>
           <attributeEditorField showLabel="1" index="45" name="surface_inflow"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'special_structure'" name="Special Structure" groupBox="0" columnCount="1">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'special_structure'" name="Ouvrage spécial" groupBox="0" columnCount="1">
           <attributeEditorField showLabel="1" index="49" name="bypass"/>
           <attributeEditorField showLabel="1" index="50" name="special_structure_function"/>
           <attributeEditorField showLabel="1" index="51" name="stormwater_tank_arrangement"/>
@@ -14220,7 +13656,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="39" name="depth"/>
           <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'discharge_point'" name="Discharge Point" groupBox="0" columnCount="1">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'discharge_point'" name="Exutoir" groupBox="0" columnCount="1">
           <attributeEditorField showLabel="1" index="39" name="depth"/>
           <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
           <attributeEditorField showLabel="1" index="52" name="highwater_level"/>
@@ -14229,7 +13665,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
           <attributeEditorField showLabel="1" index="55" name="waterlevel_hydraulic"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'infiltration_installation'" name="Infiltration Installation" groupBox="0" columnCount="1">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'infiltration_installation'" name="Installation dinfiltration" groupBox="0" columnCount="1">
           <attributeEditorField showLabel="1" index="57" name="defects"/>
           <attributeEditorField showLabel="1" index="58" name="distance_to_aquifer"/>
           <attributeEditorField showLabel="1" index="59" name="effective_area"/>
@@ -14243,7 +13679,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="41" name="dimension2"/>
           <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Wastewater Node" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Noeud" groupBox="0" columnCount="0">
           <attributeEditorField showLabel="1" index="66" name="wn_obj_id"/>
           <attributeEditorField showLabel="1" index="67" name="backflow_level"/>
           <attributeEditorField showLabel="1" index="68" name="bottom_level"/>
@@ -14253,10 +13689,10 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="-1" name="wn_dataowner"/>
           <attributeEditorField showLabel="1" index="-1" name="wn_provider"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Covers" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Couvercles" groupBox="0" columnCount="0">
           <attributeEditorRelation showLinkButton="1" relation="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Structure Parts" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Elément douvrage" groupBox="0" columnCount="0">
           <attributeEditorRelation showLinkButton="1" relation="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
           <attributeEditorRelation showLinkButton="1" relation="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
           <attributeEditorRelation showLinkButton="1" relation="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
@@ -14266,10 +13702,10 @@ def my_form_open(dialog, layer, feature):
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="0" columnCount="0">
           <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="re_maintenance_event_wastewater_structure_fk_wastewater_structure_vw_qgep_wastewater_structure_ws_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Wastewater Nodes" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Noeuds" groupBox="0" columnCount="0">
           <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="wastewater_node-fk_wastewater-structure"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Files" groupBox="0" columnCount="1">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Fichiers" groupBox="0" columnCount="1">
           <attributeEditorRelation showLinkButton="1" relation="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id"/>
         </attributeEditorContainer>
       </attributeEditorForm>
@@ -14522,6 +13958,12 @@ def my_form_open(dialog, layer, feature):
     </DefaultStyles>
     <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
     <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <quickfinder_plugin>
+      <qftsfilepath type="QString">/home/drouzaud/Documents/QGEP/sige/qgis-project/qgep_sige.qfts</qftsfilepath>
+      <project type="bool">true</project>
+      <refreshDelay type="int">15</refreshDelay>
+      <refreshAuto type="bool">true</refreshAuto>
+    </quickfinder_plugin>
     <WMSContactMail type="QString"></WMSContactMail>
     <WMSImageQuality type="int">90</WMSImageQuality>
     <wincan2qgep_plugin>
