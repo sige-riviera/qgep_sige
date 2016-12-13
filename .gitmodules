@@ -1,9 +1,9 @@
 [submodule "datamodel"]
 	path = datamodel
-	url = git@github.com:QGEP/datamodel.git
+	url = https://github.com/QGEP/datamodel.git
 [submodule "QGEP"]
 	path = QGEP
-	url = git@github.com:QGEP/QGEP.git
+	url = https://github.com/QGEP/QGEP.git
 [submodule "cadastre"]
 	path = cadastre
-	url = git@github.com:sige-riviera/cadastre.git
+	url =https://github.com/sige-riviera/cadastre.git
