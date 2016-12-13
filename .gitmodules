@@ -4,3 +4,6 @@
 [submodule "QGEP"]
 	path = QGEP
 	url = git@github.com:QGEP/QGEP.git
+[submodule "cadastre"]
+	path = cadastre
+	url = git@github.com:sige-riviera/cadastre.git

@@ -4,7 +4,7 @@ SELECT
   gid, 
   first(z1) as rp_from_level, 
   last(z1) as rp_to_level, 
-  St_SetSRID(ST_GeomFromText('LINESTRING('||string_agg(y1::varchar||' '||x1::varchar, ',' ORDER BY seq)||')'),21781) AS geometry 
+  ST_Fineltra(St_SetSRID(ST_GeomFromText('LINESTRING('||string_agg(y1::varchar||' '||x1::varchar, ',' ORDER BY seq)||')'),21781), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95')::Geometry(Linestring,2056) AS geometry 
 FROM sa.aw_haltung_geo 
 GROUP BY gid)
 

@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.0">
+<qgis projectname="" version="2.18.1">
   <title></title>
   <autotransaction active="1"/>
   <evaluateDefaultValues active="1"/>
@@ -266,8 +266,27 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Checked" name="Cadastral Data">
+    <layer-tree-group expanded="1" checked="Qt::Checked" mutually-exclusive="1" name="Fonds de plan" mutually-exclusive-child="0">
       <customproperties/>
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Cadastre">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded-invisible-layers"/>
+          <property key="embedded_project" value="../cadastre/cadastre_pg.qgs"/>
+        </customproperties>
+      </layer-tree-group>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="SWISSIMAGE20161213094045281" name="SWISSIMAGE">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded_project" value="../cadastre/cadastre_pg.qgs"/>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="National_Map_1_25_00020161213094052164" name="National Map 1:25'000">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded_project" value="../cadastre/cadastre_pg.qgs"/>
+        </customproperties>
+      </layer-tree-layer>
     </layer-tree-group>
   </layer-tree-group>
   <relations>
@@ -350,20 +369,20 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>553306.78892937221098691</xmin>
-      <ymin>141613.35166063814540394</ymin>
-      <xmax>561677.29442945041228086</xmax>
-      <ymax>150417.32131063847918995</ymax>
+      <xmin>2554738.41192852240055799</xmin>
+      <ymin>1138050.13653096626512706</ymin>
+      <xmax>2563108.91742854099720716</xmax>
+      <ymax>1146854.10618096659891307</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
-        <srsid>1919</srsid>
-        <srid>21781</srid>
-        <authid>EPSG:21781</authid>
-        <description>CH1903 / LV03</description>
+        <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>47</srsid>
+        <srid>2056</srid>
+        <authid>EPSG:2056</authid>
+        <description>CH1903+ / LV95</description>
         <projectionacronym>somerc</projectionacronym>
         <ellipsoidacronym>bessel</ellipsoidacronym>
         <geographicflag>false</geographicflag>
@@ -371,60 +390,23 @@
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_network_segment20140827212359527"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20150415105100407"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__realestate20150211112947342"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_reach"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__realestate_posnumber"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_cover___"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wastewater_node20141111091100662"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="single_objects__linear_element"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_cover20140822215511882"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wizard_cover_manhole20141025170618565"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="single_objects__linear_element20150211112947351"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__boundary_point"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_wastewater_structure20140728163138856"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_special_structure20141013203257795"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach_point20140728163138843"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="building_addresses__building_entrance_pos20150211112947254"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_cover20140414160716920"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_network_node20140827212753645"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="Landeskarte_1_25_000_1_1_Mio__farbe20150401143000299"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="single_objects__surface_element"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="building_addresses__street_name_pos"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach20140822215411222"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="land_cover__lcsurface"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach20150415105009524"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__realestate"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="single_objects__surface_element20150211113252990"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wizard_reach_channel20141025180143924"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20141025180235004"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20140925140846596"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20141013202956655"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__realestate_posnumber20150211112947328"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach_point20140822215511891"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="territorial_boundaries__municipal_boundary20150211112947357"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_manhole20141013203257827"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_wastewater_structure"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20141025180333308"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_channel20141024144506339"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_catchment_area20140827102410654"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_wastewater_structure20140822215511905"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_wastewater_structure"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="land_cover__lcsurface_postext20150211112947362"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_cover20140728163138882"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_network_node20140827212404914"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach20140822194040121"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__boundary_point20150211112947336"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_network_segment20140827212755598"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_cover20141013203237315"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="land_cover__lcsurface20150211102116489"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="land_cover__lcsurface_postext"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="building_addresses__street_name_pos20150211112947319"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="building_addresses__building_entrance_pos"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach20140728162912956"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="territorial_boundaries__municipal_boundary"/>
-      <layer_coordinate_transform destAuthId="EPSG:21781" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wizard_cover_special_structure20150129140416706"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="no_nomenclature20161124151011953"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_wastewater_structure"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_surfacique20161123111234045"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="pf_points_fixes20161123144654375"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_wastewater_structure"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_immeuble20161019163752305"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_cover___"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="cs_couverture_sol20161117155047081"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_reach"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_element_lineaire20161123134458480"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="National_Map_1_25_00020161213094052164"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="SWISSIMAGE20161213093902008"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ab_rue20161122113837293"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_point_limite20161123141033694"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_entree_batiment20161124100003328"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="National_Map_1_25_00020161213093853574"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="SWISSIMAGE20161213094045281"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
@@ -496,6 +478,17 @@
       <item>vl_data_media_kind</item>
       <item>vl_file_class</item>
       <item>vl_file_kind</item>
+      <item>no_nomenclature20161124151011953</item>
+      <item>od_entree_batiment20161124100003328</item>
+      <item>bf_point_limite20161123141033694</item>
+      <item>pf_points_fixes20161123144654375</item>
+      <item>ab_rue20161122113837293</item>
+      <item>od_element_lineaire20161123134458480</item>
+      <item>bf_immeuble20161019163752305</item>
+      <item>od_element_surfacique20161123111234045</item>
+      <item>cs_couverture_sol20161117155047081</item>
+      <item>National_Map_1_25_00020161213094052164</item>
+      <item>SWISSIMAGE20161213094045281</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -874,9 +867,23 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Checked" name="Cadastral Data"/>
+    <legendgroup open="true" checked="Qt::Checked" name="Fonds de plan">
+      <legendgroup embedded="1" open="false" checked="Qt::Checked" name="Cadastre" project="../cadastre/cadastre_pg.qgs"/>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SWISSIMAGE" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="SWISSIMAGE20161213094045281" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="National Map 1:25'000" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="National_Map_1_25_00020161213094052164" visible="0"/>
+        </filegroup>
+      </legendlayer>
+    </legendgroup>
   </legend>
   <projectlayers>
+    <maplayer embedded="1" id="National_Map_1_25_00020161213094052164" project="../cadastre/cadastre_pg.qgs"/>
+    <maplayer embedded="1" id="SWISSIMAGE20161213094045281" project="../cadastre/cadastre_pg.qgs"/>
     <maplayer minimumScale="100000" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>od_file20160921105557083</id>
       <datasource>service='pg_qgep' key='obj_id' table="qgep"."od_file" sql=</datasource>
@@ -953,7 +960,7 @@
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="obj_id" index="0" name=""/>
         <alias field="class" index="1" name=""/>
@@ -984,10 +991,10 @@
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -1078,7 +1085,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="obj_id" index="0" name=""/>
         <alias field="identifier" index="1" name=""/>
@@ -1105,10 +1112,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -1202,7 +1209,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -1214,18 +1221,18 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="5001" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>od_wastewater_structure</id>
-      <datasource>service='pg_qgep' key='obj_id' estimatedmetadata=true srid=21781 type=CurvePolygon table="qgep"."od_wastewater_structure" (detail_geometry_geometry) sql=</datasource>
+      <datasource>service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=CurvePolygon table="qgep"."od_wastewater_structure" (detail_geometry_geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
       <layername>od_wastewater_structure</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>1919</srsid>
-          <srid>21781</srid>
-          <authid>EPSG:21781</authid>
-          <description>CH1903 / LV03</description>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
           <projectionacronym>somerc</projectionacronym>
           <ellipsoidacronym>bessel</ellipsoidacronym>
           <geographicflag>false</geographicflag>
@@ -1266,6 +1273,7 @@ def my_form_open(dialog, layer, feature):
         <default field="_function_hierarchic" expression=""/>
         <default field="_label" expression=""/>
         <default field="fk_main_cover" expression=""/>
+        <default field="_depth" expression=""/>
       </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
@@ -1356,6 +1364,9 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="fk_main_cover">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_depth">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -1625,6 +1636,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="_function_hierarchic" index="26" name=""/>
         <alias field="_label" index="27" name=""/>
         <alias field="fk_main_cover" index="28" name=""/>
+        <alias field="_depth" index="29" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -1635,7 +1647,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -1694,7 +1706,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="1" Relation="re_maintenance_wasterwaterstructure_maintenance" ReadOnly="0" constraint="" MapIdentification="0" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="obj_id" index="0" name=""/>
         <alias field="fk_wastewater_structure" index="1" name=""/>
@@ -1711,10 +1723,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -1839,7 +1851,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -1925,7 +1937,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -1945,10 +1957,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2057,7 +2069,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2166,7 +2178,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2280,7 +2292,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2389,7 +2401,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2503,7 +2515,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2612,7 +2624,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2721,7 +2733,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2830,7 +2842,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2939,7 +2951,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3025,7 +3037,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3045,10 +3057,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3157,7 +3169,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3266,7 +3278,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3352,7 +3364,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3372,10 +3384,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3461,7 +3473,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3481,10 +3493,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="115674336">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3570,7 +3582,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3590,10 +3602,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="30">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3679,7 +3691,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3699,10 +3711,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="124971000">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3788,7 +3800,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3808,10 +3820,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="482295424">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3897,7 +3909,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3917,10 +3929,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="117415795">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4029,7 +4041,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4115,7 +4127,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -4135,10 +4147,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="4">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4224,7 +4236,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -4244,10 +4256,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="115828656">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4356,7 +4368,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4465,7 +4477,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4574,7 +4586,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4660,7 +4672,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -4680,10 +4692,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4769,7 +4781,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -4789,10 +4801,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4901,7 +4913,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5010,7 +5022,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5119,7 +5131,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5228,7 +5240,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5337,7 +5349,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5446,7 +5458,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5555,7 +5567,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5664,7 +5676,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5773,7 +5785,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5882,7 +5894,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5991,7 +6003,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6100,7 +6112,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6209,7 +6221,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6333,7 +6345,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -6458,7 +6470,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6567,7 +6579,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6676,7 +6688,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6785,7 +6797,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6894,7 +6906,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -7003,7 +7015,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -7117,7 +7129,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -7259,7 +7271,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -7389,7 +7401,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -7630,10 +7642,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="field" name="detail_geometry_3d_geometry"/>
         </columns>
       </attributetableconfig>
-      <editform>../../git/project/forms/channel.ui</editform>
+      <editform>../QGEP/project/forms/channel.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>uifilelayout</editorlayout>
@@ -7645,18 +7657,18 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1000" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>vw_cover___</id>
-      <datasource>service='pg_qgep' key='obj_id' estimatedmetadata=true srid=21781 type=Point table="qgep"."vw_cover" (situation_geometry) sql=</datasource>
+      <datasource>service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=Point table="qgep"."vw_cover" (situation_geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
       <layername>vw_cover</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>1919</srsid>
-          <srid>21781</srid>
-          <authid>EPSG:21781</authid>
-          <description>CH1903 / LV03</description>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
           <projectionacronym>somerc</projectionacronym>
           <ellipsoidacronym>bessel</ellipsoidacronym>
           <geographicflag>false</geographicflag>
@@ -7671,7 +7683,6 @@ def my_form_open(dialog, layer, feature):
         <default field="obj_id" expression=""/>
         <default field="brand" expression=""/>
         <default field="cover_shape" expression=""/>
-        <default field="depth" expression=""/>
         <default field="diameter" expression=""/>
         <default field="fastening" expression=""/>
         <default field="level" expression=""/>
@@ -7698,9 +7709,6 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="cover_shape">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="depth">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="diameter">
@@ -8016,21 +8024,20 @@ def my_form_open(dialog, layer, feature):
         <alias field="obj_id" index="0" name=""/>
         <alias field="brand" index="1" name=""/>
         <alias field="cover_shape" index="2" name=""/>
-        <alias field="depth" index="3" name=""/>
-        <alias field="diameter" index="4" name=""/>
-        <alias field="fastening" index="5" name=""/>
-        <alias field="level" index="6" name=""/>
-        <alias field="material" index="7" name=""/>
-        <alias field="positional_accuracy" index="8" name=""/>
-        <alias field="sludge_bucket" index="9" name=""/>
-        <alias field="venting" index="10" name=""/>
-        <alias field="identifier" index="11" name=""/>
-        <alias field="remark" index="12" name=""/>
-        <alias field="renovation_demand" index="13" name=""/>
-        <alias field="fk_dataowner" index="14" name=""/>
-        <alias field="fk_provider" index="15" name=""/>
-        <alias field="last_modification" index="16" name=""/>
-        <alias field="fk_wastewater_structure" index="17" name=""/>
+        <alias field="diameter" index="3" name=""/>
+        <alias field="fastening" index="4" name=""/>
+        <alias field="level" index="5" name=""/>
+        <alias field="material" index="6" name=""/>
+        <alias field="positional_accuracy" index="7" name=""/>
+        <alias field="sludge_bucket" index="8" name=""/>
+        <alias field="venting" index="9" name=""/>
+        <alias field="identifier" index="10" name=""/>
+        <alias field="remark" index="11" name=""/>
+        <alias field="renovation_demand" index="12" name=""/>
+        <alias field="fk_dataowner" index="13" name=""/>
+        <alias field="fk_provider" index="14" name=""/>
+        <alias field="last_modification" index="15" name=""/>
+        <alias field="fk_wastewater_structure" index="16" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -8061,7 +8068,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -8191,7 +8198,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -8321,7 +8328,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -8349,18 +8356,18 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>vw_network_node20150607120529398</id>
-      <datasource>service='pg_qgep' key='gid' estimatedmetadata=true srid=21781 type=Point table="qgep"."vw_network_node" (situation_geometry) sql=</datasource>
+      <datasource>service='pg_qgep' key='gid' estimatedmetadata=true srid=2056 type=Point table="qgep"."vw_network_node" (situation_geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
       <layername>vw_network_node</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>1919</srsid>
-          <srid>21781</srid>
-          <authid>EPSG:21781</authid>
-          <description>CH1903 / LV03</description>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
           <projectionacronym>somerc</projectionacronym>
           <ellipsoidacronym>bessel</ellipsoidacronym>
           <geographicflag>false</geographicflag>
@@ -8489,7 +8496,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="gid" index="0" name=""/>
         <alias field="obj_id" index="1" name=""/>
@@ -8504,14 +8511,14 @@ def my_form_open(dialog, layer, feature):
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="0"/>
+      <attributeactions default="-1"/>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -8523,18 +8530,18 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>vw_network_segment20150607120529381</id>
-      <datasource>service='pg_qgep' key='gid' estimatedmetadata=true srid=21781 type=CompoundCurve table="qgep"."vw_network_segment" (progression_geometry) sql=</datasource>
+      <datasource>service='pg_qgep' key='gid' estimatedmetadata=true srid=2056 type=CompoundCurve table="qgep"."vw_network_segment" (progression_geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
       <layername>vw_network_segment</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>1919</srsid>
-          <srid>21781</srid>
-          <authid>EPSG:21781</authid>
-          <description>CH1903 / LV03</description>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
           <projectionacronym>somerc</projectionacronym>
           <ellipsoidacronym>bessel</ellipsoidacronym>
           <geographicflag>false</geographicflag>
@@ -8684,7 +8691,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="gid" index="0" name=""/>
         <alias field="obj_id" index="1" name=""/>
@@ -8705,14 +8712,14 @@ def my_form_open(dialog, layer, feature):
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="0"/>
+      <attributeactions default="-1"/>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -8838,7 +8845,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_damage_channel_channel_damage_code" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="damage_type" index="0" name=""/>
         <alias field="obj_id" index="1" name=""/>
@@ -8889,10 +8896,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -9091,7 +9098,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="maintenance_type" index="0" name=""/>
         <alias field="obj_id" index="1" name=""/>
@@ -9158,10 +9165,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -9237,18 +9244,18 @@ def my_form_open(dialog, layer, feature):
         <ymax>266758.96299999998882413</ymax>
       </extent>
       <id>vw_qgep_reach</id>
-      <datasource>service='pg_qgep' key='obj_id' srid=21781 type=CompoundCurve table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
+      <datasource>service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurve table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
       <layername>tronçon</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>1919</srsid>
-          <srid>21781</srid>
-          <authid>EPSG:21781</authid>
-          <description>CH1903 / LV03</description>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
           <projectionacronym>somerc</projectionacronym>
           <ellipsoidacronym>bessel</ellipsoidacronym>
           <geographicflag>false</geographicflag>
@@ -10938,11 +10945,11 @@ def my_form_open(dialog, layer, feature):
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
-        <rules key="{efa81e53-ae9a-42b9-ba41-d384ffe8c25d}">
-          <rule filter="function_hierarchic IN (5068,5069,5070,5071) AND fk_owner = 'ch15z36dOG000025'" key="{dcfdd718-a614-4147-9c11-0936517d0d1f}" symbol="0" label="primaire"/>
-          <rule filter="function_hierarchic NOT IN (5068,5069,5070,5071) AN fk_owner = 'ch15z36dOG000025'" key="{471e8d8e-2527-43b4-b694-6769244c2374}" symbol="1" label="secondaire"/>
-          <rule filter="fk_owner != 'ch15z36dOG000025'" key="{84d75c4c-9cb1-4e5a-b672-e844c5137f30}" symbol="2" label="étranger"/>
-          <rule filter="ELSE" key="{cb892b95-2a25-4c81-88ac-2f1109b817d3}" symbol="3" label="données manquantes"/>
+        <rules key="{b3f3f0a1-c8d2-4416-8d68-3de95a17bc02}">
+          <rule filter="function_hierarchic IN (5068,5069,5070,5071) AND fk_owner = 'ch15z36dOG000025'" key="{19bcb1df-a7c2-428c-9cd0-190adedab045}" symbol="0" label="primaire"/>
+          <rule filter="function_hierarchic NOT IN (5068,5069,5070,5071) AN fk_owner = 'ch15z36dOG000025'" key="{ddc21d10-af1e-43c3-9e07-d6f09f281f30}" symbol="1" label="secondaire"/>
+          <rule filter="fk_owner != 'ch15z36dOG000025'" key="{d40870b1-2bee-4498-8f17-6f33ebcc57b0}" symbol="2" label="étranger"/>
+          <rule filter="ELSE" key="{4d2a5d8c-c208-49a1-b29a-a975cf6fc370}" symbol="3" label="données manquantes"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="line" name="0">
@@ -11070,6 +11077,14 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
         </symbols>
+        <effect enabled="0" type="effectStack">
+          <effect type="drawSource">
+            <prop k="blend_mode" v="0"/>
+            <prop k="draw_mode" v="2"/>
+            <prop k="enabled" v="1"/>
+            <prop k="transparency" v="0"/>
+          </effect>
+        </effect>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
@@ -11238,8 +11253,8 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames"/>
-        <property key="variableValues"/>
+        <property key="variableNames" value="_fields_"/>
+        <property key="variableValues" value=""/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -11466,10 +11481,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../../git/project/forms/reach.ui</editform>
+      <editform>../QGEP/project/forms/reach.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -11594,7 +11609,7 @@ def my_form_open(dialog, layer, feature):
           </attributeEditorContainer>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1" relation="re_maintenance_wasterwaterstructure_reach" showLabel="1" showUnlinkButton="1" name="re_maintenance_wasterwaterstructure_reach"/>
+          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="re_maintenance_wasterwaterstructure_reach"/>
         </attributeEditorContainer>
       </attributeEditorForm>
       <widgets>
@@ -11617,18 +11632,18 @@ def my_form_open(dialog, layer, feature):
         <ymax>266718.11300000001210719</ymax>
       </extent>
       <id>vw_qgep_wastewater_structure</id>
-      <datasource>service='pg_qgep' key='obj_id' estimatedmetadata=true srid=21781 type=MultiPoint table="qgep"."vw_qgep_wastewater_structure" (situation_geometry) sql=</datasource>
+      <datasource>service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table="qgep"."vw_qgep_wastewater_structure" (situation_geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
       <layername>chambre</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>1919</srsid>
-          <srid>21781</srid>
-          <authid>EPSG:21781</authid>
-          <description>CH1903 / LV03</description>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
           <projectionacronym>somerc</projectionacronym>
           <ellipsoidacronym>bessel</ellipsoidacronym>
           <geographicflag>false</geographicflag>
@@ -11679,7 +11694,7 @@ def my_form_open(dialog, layer, feature):
         <default field="fk_owner" expression=""/>
         <default field="fk_operator" expression=""/>
         <default field="_label" expression=""/>
-        <default field="depth" expression=""/>
+        <default field="_depth" expression=""/>
         <default field="dimension1" expression=""/>
         <default field="dimension2" expression=""/>
         <default field="upper_elevation" expression=""/>
@@ -11841,8 +11856,8 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="_label">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="Range" name="depth">
-          <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="5"/>
+        <edittype widgetv2type="TextEdit" name="_depth">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Range" name="dimension1">
           <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="4000" Suffix=" mm"/>
@@ -13360,8 +13375,8 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -13458,7 +13473,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="fk_owner" index="36" name=""/>
         <alias field="fk_operator" index="37" name=""/>
         <alias field="_label" index="38" name=""/>
-        <alias field="depth" index="39" name="epaisseur"/>
+        <alias field="_depth" index="39" name="depth"/>
         <alias field="dimension1" index="40" name="dimension1"/>
         <alias field="dimension2" index="41" name="dimension2"/>
         <alias field="upper_elevation" index="42" name="cote_plafond"/>
@@ -13545,7 +13560,6 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="fk_owner"/>
           <column width="-1" hidden="0" type="field" name="fk_operator"/>
           <column width="-1" hidden="0" type="field" name="_label"/>
-          <column width="-1" hidden="0" type="field" name="depth"/>
           <column width="-1" hidden="0" type="field" name="dimension1"/>
           <column width="-1" hidden="0" type="field" name="dimension2"/>
           <column width="-1" hidden="0" type="field" name="upper_elevation"/>
@@ -13578,12 +13592,13 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="wn_fk_dataowner"/>
           <column width="-1" hidden="0" type="field" name="wn_fk_provider"/>
           <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="_depth"/>
         </columns>
       </attributetableconfig>
       <editform>$HOME</editform>
       <editforminit>vw_cover_open</editforminit>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[from qgepplugin.ui.forms import vw_cover_open
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
@@ -13620,6 +13635,7 @@ def my_form_open(dialog, layer, feature):
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Ouvrage" groupBox="0" columnCount="0">
           <attributeEditorField showLabel="1" index="19" name="accessibility"/>
+          <attributeEditorField showLabel="1" index="39" name="_depth"/>
           <attributeEditorField showLabel="1" index="20" name="contract_section"/>
           <attributeEditorField showLabel="1" index="21" name="financing"/>
           <attributeEditorField showLabel="1" index="22" name="gross_costs"/>
@@ -13640,7 +13656,6 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="0" name="obj_id"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'manhole'" name="Chambre" groupBox="0" columnCount="1">
-          <attributeEditorField showLabel="1" index="39" name="depth"/>
           <attributeEditorField showLabel="1" index="40" name="dimension1"/>
           <attributeEditorField showLabel="1" index="41" name="dimension2"/>
           <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
@@ -13653,11 +13668,9 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="50" name="special_structure_function"/>
           <attributeEditorField showLabel="1" index="51" name="stormwater_tank_arrangement"/>
           <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
-          <attributeEditorField showLabel="1" index="39" name="depth"/>
           <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'discharge_point'" name="Exutoir" groupBox="0" columnCount="1">
-          <attributeEditorField showLabel="1" index="39" name="depth"/>
           <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
           <attributeEditorField showLabel="1" index="52" name="highwater_level"/>
           <attributeEditorField showLabel="1" index="53" name="relevance"/>
@@ -13690,14 +13703,14 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="-1" name="wn_provider"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Couvercles" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1" relation="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Elément douvrage" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1" relation="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-          <attributeEditorRelation showLinkButton="1" relation="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-          <attributeEditorRelation showLinkButton="1" relation="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-          <attributeEditorRelation showLinkButton="1" relation="vw_dryweather_flume_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_dryweather_flume_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-          <attributeEditorRelation showLinkButton="1" relation="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="vw_dryweather_flume_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="0" columnCount="0">
           <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="re_maintenance_event_wastewater_structure_fk_wastewater_structure_vw_qgep_wastewater_structure_ws_obj_id"/>
@@ -13706,7 +13719,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="wastewater_node-fk_wastewater-structure"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Fichiers" groupBox="0" columnCount="1">
-          <attributeEditorRelation showLinkButton="1" relation="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id"/>
         </attributeEditorContainer>
       </attributeEditorForm>
       <widgets>
@@ -13765,18 +13778,18 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>vw_wastewater_node20150607121012062</id>
-      <datasource>service='pg_qgep' key='obj_id' estimatedmetadata=true srid=21781 type=Point table="qgep"."vw_wastewater_node" (situation_geometry) sql=</datasource>
+      <datasource>service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=Point table="qgep"."vw_wastewater_node" (situation_geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
       <layername>vw_wastewater_node</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>1919</srsid>
-          <srid>21781</srid>
-          <authid>EPSG:21781</authid>
-          <description>CH1903 / LV03</description>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
           <projectionacronym>somerc</projectionacronym>
           <ellipsoidacronym>bessel</ellipsoidacronym>
           <geographicflag>false</geographicflag>
@@ -13901,7 +13914,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../../git/project</annotationform>
+      <annotationform>../QGEP/project</annotationform>
       <aliases>
         <alias field="obj_id" index="0" name=""/>
         <alias field="backflow_level" index="1" name=""/>
@@ -13919,10 +13932,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../../git/project</editform>
+      <editform>../QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../git/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -13958,12 +13971,6 @@ def my_form_open(dialog, layer, feature):
     </DefaultStyles>
     <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
     <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
-    <quickfinder_plugin>
-      <qftsfilepath type="QString">/home/drouzaud/Documents/QGEP/sige/qgis-project/qgep_sige.qfts</qftsfilepath>
-      <project type="bool">true</project>
-      <refreshDelay type="int">15</refreshDelay>
-      <refreshAuto type="bool">true</refreshAuto>
-    </quickfinder_plugin>
     <WMSContactMail type="QString"></WMSContactMail>
     <WMSImageQuality type="int">90</WMSImageQuality>
     <wincan2qgep_plugin>

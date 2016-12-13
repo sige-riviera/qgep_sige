@@ -27,9 +27,9 @@
 WITH netzlinien AS (
 SELECT 
   gid, 
-  ST_SetSRID(ST_Point(first(y1),first(x1)),21781) as from_point, 
-  ST_SetSRID(ST_Point(last(y1),last(x1)),21781) as to_point, 
-  St_SetSRID(ST_GeomFromText('LINESTRING('||string_agg(y1::varchar||' '||x1::varchar, ',' ORDER BY seq)||')'),21781) AS geometry 
+  ST_Fineltra(ST_SetSRID(ST_Point(first(y1),first(x1)),21781), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95') as from_point, 
+  ST_Fineltra(ST_SetSRID(ST_Point(last(y1),last(x1)),21781), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95') as to_point, 
+  ST_Fineltra(St_SetSRID(ST_GeomFromText('LINESTRING('||string_agg(y1::varchar||' '||x1::varchar, ',' ORDER BY seq)||')'),21781), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95') AS geometry 
 FROM sa.aw_netzlinie_geo 
 GROUP BY gid)
 
@@ -38,7 +38,7 @@ INSERT INTO qgep.vw_qgep_wastewater_structure
   ws_type,
   co_identifier,
   bottom_level,
-  depth,
+  --depth,
   year_of_construction,
   dimension1,
   dimension2,
@@ -58,10 +58,10 @@ SELECT
   'manhole',
   schacht.name2,
   unten_hoehe,
-  CASE  -- remove depth (apparently level was used instead)
-	WHEN tiefe < 100 THEN 1000*tiefe
-	ELSE NULL
-  END,
+  --CASE  -- remove depth (apparently level was used instead)
+--	WHEN tiefe < 100 THEN 1000*tiefe
+	--ELSE NULL
+--  END,
   baujahr,
   dn,
   breite,
@@ -69,7 +69,7 @@ SELECT
   ortsbezeichnung,
   deckel.bemerkung,
   substr(schacht.bemerkung, 1, 80),
-  ST_SetSRID(ST_Point( deckel_geo.y1, deckel_geo.x1 ), 21781 ),
+  ST_Fineltra( ST_SetSRID(ST_Point( deckel_geo.y1, deckel_geo.x1 ), 21781 ), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95'),
   Z1,
   CASE WHEN id_aeration=1 THEN 4533 ELSE mf.new END,
   st.new,

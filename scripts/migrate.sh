@@ -8,10 +8,11 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/..
 
 export PGSERVICE=pg_qgep_sige
 
+psql -c 'CREATE EXTENSION IF NOT EXISTS fineltra'
 psql -c 'DROP SCHEMA IF EXISTS qgep CASCADE'
 psql -c 'DROP SCHEMA IF EXISTS sige_assainissement CASCADE'
 psql -c 'DROP SCHEMA IF EXISTS sa CASCADE'
-${DIR}/datamodel/scripts/db_setup.sh
+${DIR}/datamodel/scripts/db_setup.sh -s 2056
 
 psql -c "UPDATE qgep.is_oid_prefixes SET active=TRUE WHERE prefix='${OIDPREFIX}'"
 psql -c "UPDATE qgep.is_oid_prefixes SET active=FALSE WHERE prefix<>'${OIDPREFIX}'"

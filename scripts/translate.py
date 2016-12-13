@@ -3,7 +3,7 @@
 
 
 import psycopg2, psycopg2.extras
-
+from qgis.PyQt.QtXml import QDomDocument
 
 pg_service = "pg_qgep"
 
@@ -63,6 +63,32 @@ def get_table_translation(table):
 		return trans[0].lower()
 
 
+# set SRID to 2056
+iface.mapCanvas().setDestinationCrs(QgsCoordinateReferenceSystem(2056)) # use QgsProject.instance().setCrs instead
+for layer in QgsMapLayerRegistry.instance().mapLayers().values():
+	
+	if layer.hasGeometryType():
+		layer.setCrs(QgsCoordinateReferenceSystem(2056))	
+		
+		source = layer.source().replace('21781','2056')
+		
+		document = QDomDocument("style")
+		map_layers_element = document.createElement("maplayers")
+		map_layer_element = document.createElement("maplayer")
+		layer.writeLayerXml(map_layer_element, document)
+
+		# modify DOM element with new layer reference
+		map_layer_element.firstChildElement("datasource").firstChild().setNodeValue(source)
+		map_layers_element.appendChild(map_layer_element)
+		document.appendChild(map_layers_element)
+
+		# reload layer definition
+		layer.readLayerXml(map_layer_element)
+		layer.reload()	
+		
+		
+		
+# translation
 for layer in QgsMapLayerRegistry.instance().mapLayers().values():
 	if layer.id() in layers.keys():
 		layer.setName(layers[layer.id()]['name'])
@@ -101,3 +127,10 @@ for layer in QgsMapLayerRegistry.instance().mapLayers().values():
 						cfg[trans] = cfg[key]
 						del cfg[key]
 				layer.editFormConfig().setWidgetConfig(idx, cfg)
+
+
+
+# # background layers
+# newGroup = QgsProject.instance().createEmbeddedGroup( "Cadastre", "../cadastre/cadastre_pg.qgs", None )
+# if newGroup:
+# 	QgsProject.instance().layerTreeRoot().addChildNode( newGroup )
