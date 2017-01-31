@@ -4,7 +4,7 @@
 import psycopg2, psycopg2.extras
 from qgis.PyQt.QtXml import QDomDocument
 from qgis.PyQt.QtCore import QCoreApplication
-from qgis.core import QgsProject, QgsCoordinateReferenceSystem, QgsMapLayerRegistry, QgsMapLayer
+from qgis.core import QgsProject, QgsCoordinateReferenceSystem, QgsMapLayerRegistry, QgsMapLayer, QgsPoint
 from qgis.utils import iface
 
 import qgis2compat.apicompat
@@ -64,28 +64,28 @@ def translate():
   conn = psycopg2.connect("service={0}".format(pg_service))
   cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
-  # set SRID to 2056
-  iface.mapCanvas().setDestinationCrs(QgsCoordinateReferenceSystem(2056)) # TODO QGIS3 use QgsProject.instance().setCrs instead
+  # remove raster layers
   for layer in QgsMapLayerRegistry.instance().mapLayers().values():
-
     if layer.type() != QgsMapLayer.VectorLayer:
       QgsMapLayerRegistry.instance().removeMapLayer(layer)
 
-    elif layer.hasGeometryType():
+  iface.mapCanvas().setCrsTransformEnabled(True) # todo QGIS3
+  iface.mapCanvas().setDestinationCrs(QgsCoordinateReferenceSystem(2056)) # TODO QGIS3 use QgsProject.instance().setCrs instead
+  QCoreApplication.processEvents()
+
+  # set SRID to 2056
+  for layer in QgsMapLayerRegistry.instance().mapLayers().values():
+    if layer.hasGeometryType():
       layer.setCrs(QgsCoordinateReferenceSystem(2056))
-
       source = layer.source().replace('21781','2056')
-
       document = QDomDocument("style")
       map_layers_element = document.createElement("maplayers")
       map_layer_element = document.createElement("maplayer")
       layer.writeLayerXml(map_layer_element, document)
-
       # modify DOM element with new layer reference
       map_layer_element.firstChildElement("datasource").firstChild().setNodeValue(source)
       map_layers_element.appendChild(map_layer_element)
       document.appendChild(map_layers_element)
-
       # reload layer definition
       layer.readLayerXml(map_layer_element)
       layer.reload()
@@ -112,14 +112,12 @@ def translate():
           layer.addAttributeAlias(idx, trans)
         else:
           print("Field {0} is not translated".format(field.name()))
-
         # update value relation value
         if layer.editFormConfig().widgetType(idx) == 'ValueRelation':
           cfg = layer.editFormConfig().widgetConfig(idx)
           if cfg["Value"] == "value_en":
             cfg["Value"] = "value_fr"
             layer.editFormConfig().setWidgetConfig(idx, cfg)
-
         # value maps
         if layer.editFormConfig().widgetType(idx) == 'ValueMap':
           cfg = layer.editFormConfig().widgetConfig(idx)
@@ -130,22 +128,29 @@ def translate():
               del cfg[key]
           layer.editFormConfig().setWidgetConfig(idx, cfg)
 
-  # remove group
+  # remove empty group
   tree_root = QgsProject.instance().layerTreeRoot()
   grp = tree_root.findGroup('Cadastral Data')
   if grp:
     tree_root.removeChildNode(grp)
 
   # background layers
-  newGroup = QgsProject.instance().createEmbeddedGroup( "Cadastre", "/home/drouzaud/Documents/QGEP/sige/cadastre/cadastre_pg.qgs", [] )
+  newGroup = QgsProject.instance().createEmbeddedGroup( "Fonds de plans", "/home/drouzaud/Documents/QGEP/sige/cadastre/cadastre_pg.qgs", [] )
   if newGroup:
     QgsProject.instance().layerTreeRoot().addChildNode( newGroup )
 
+  # disable otf
+  iface.mapCanvas().setDestinationCrs(QgsCoordinateReferenceSystem(2056))
+  QCoreApplication.processEvents()
+  iface.mapCanvas().setCrsTransformEnabled(False) # todo QGIS3
+  QCoreApplication.processEvents()
+
+  # set center
+  #iface.mapCanvas().setCenter(QgsPoint(6.9072,46.4380))
+  iface.mapCanvas().setCenter(QgsPoint(2559858,1144177))
 
   # save project
   QgsProject.instance().write(new_project)
-
-
 
 
 def get_field_translation(cursor, field):

@@ -2,4 +2,4 @@
 *.log
 *.ffs
 *.recover
-
+*.pyc

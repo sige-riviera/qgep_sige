@@ -266,10 +266,22 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Checked" name="Cadastre">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
       <customproperties>
         <property key="embedded" value="1"/>
-        <property key="embedded-invisible-layers"/>
+        <property key="embedded-invisible-layers">
+          <value>no_nomenclature20161124151011953</value>
+          <value>od_entree_batiment20161124100003328</value>
+          <value>bf_point_limite20161123141033694</value>
+          <value>pf_points_fixes20161123144654375</value>
+          <value>ab_rue20161122113837293</value>
+          <value>od_element_lineaire20161123134458480</value>
+          <value>bf_immeuble20161019163752305</value>
+          <value>od_element_surfacique20161123111234045</value>
+          <value>cs_couverture_sol20161117155047081</value>
+          <value>National_Map_1_25_00020161213094052164</value>
+          <value>SWISSIMAGE20161213094045281</value>
+        </property>
         <property key="embedded_project" value="../cadastre/cadastre_pg.qgs"/>
       </customproperties>
     </layer-tree-group>
@@ -357,13 +369,13 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2744377.7420029966160655</xmin>
-      <ymin>1258164.55737308226525784</ymin>
-      <xmax>2754205.42907191161066294</xmax>
-      <ymax>1266968.52703915350139141</ymax>
+      <xmin>2554944.15646554250270128</xmin>
+      <ymin>1139775.01516696438193321</ymin>
+      <xmax>2564771.84353445749729872</xmax>
+      <ymax>1148578.98483303561806679</ymax>
     </extent>
     <rotation>0</rotation>
-    <projections>1</projections>
+    <projections>0</projections>
     <destinationsrs>
       <spatialrefsys>
         <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
@@ -380,7 +392,7 @@
     <layer_coordinate_transform_info>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_wastewater_structure"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_wastewater_structure"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_CH190320170119205304994"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreeMap20170131085532398"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_cover___"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_reach"/>
     </layer_coordinate_transform_info>
@@ -463,6 +475,9 @@
       <item>bf_immeuble20161019163752305</item>
       <item>od_element_surfacique20161123111234045</item>
       <item>cs_couverture_sol20161117155047081</item>
+      <item>National_Map_1_25_00020161213094052164</item>
+      <item>SWISSIMAGE20161213094045281</item>
+      <item>OpenStreeMap20170131085532398</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -841,7 +856,7 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup embedded="1" open="false" checked="Qt::Checked" name="Cadastre" project="../cadastre/cadastre_pg.qgs"/>
+    <legendgroup embedded="1" open="true" checked="Qt::Unchecked" name="Fonds de plans" project="../cadastre/cadastre_pg.qgs"/>
   </legend>
   <projectlayers>
     <maplayer minimumScale="100000" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
@@ -14456,7 +14471,7 @@ def my_form_open(dialog, layer, feature):
       <ProjectCRSProj4String type="QString">+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</ProjectCRSProj4String>
       <ProjectCrs type="QString">EPSG:21781</ProjectCrs>
       <ProjectCRSID type="int">1919</ProjectCRSID>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+      <ProjectionsEnabled type="int">0</ProjectionsEnabled>
     </SpatialRefSys>
     <Measurement>
       <DistanceUnits type="QString">meters</DistanceUnits>
