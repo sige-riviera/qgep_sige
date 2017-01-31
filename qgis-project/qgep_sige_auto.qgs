@@ -11,12 +11,12 @@
     <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_reach" name="tronçon">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-group expanded="0" checked="Qt::Checked" name="Wastewater Structures">
+    <layer-tree-group expanded="0" checked="Qt::Checked" name="Ouvrages">
       <customproperties/>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_wastewater_structure" name="od_wastewater_structure">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Structure Parts">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="ElÃ©ment douvrage">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_access_aid" name="vw_access_aid">
           <customproperties/>
@@ -59,9 +59,9 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Checked" name="Value Lists">
+    <layer-tree-group expanded="0" checked="Qt::Checked" name="Liste de valeur">
       <customproperties/>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Discharge Point">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Exutoire au milieu rÃ©cepteur">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_discharge_point_relevance" name="Relevance">
           <customproperties/>
@@ -79,7 +79,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Manhole">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Chambre">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_manhole_material20151117174216343" name="MH Material">
           <customproperties/>
@@ -91,13 +91,13 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Structure Part">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="ElÃ©ment douvrage">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_structure_part_renovation_demand" name="vl_structure_part_renovation_demand">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Cover">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Regard">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_cover_positional_accuracy20151117153235900" name="C Positional Accuracy">
           <customproperties/>
@@ -130,7 +130,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Maintenance Event">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Maintenance">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_maintenance_event_kind" name="vl_maintenance_event_kind">
           <customproperties/>
@@ -139,7 +139,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Reach Point">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Point de tronÃ§on">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_point_elevation_accuracy" name="vl_reach_point_elevation_accuracy">
           <customproperties/>
@@ -148,7 +148,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Reach">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="TronÃ§on">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_elevation_determination" name="vl_reach_elevation_determination">
           <customproperties/>
@@ -193,7 +193,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Channel">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Canalisation">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_channel_bedding_encasement" name="vl_channel_bedding_encasement">
           <customproperties/>
@@ -214,7 +214,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Inspection">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Inspection">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_channel_channel_damage_code" name="vl_damage_channel_channel_damage_code">
           <customproperties/>
@@ -251,13 +251,13 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Hydraulic">
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Hydraulique">
       <customproperties/>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="vw_wastewater_node20150607121012062" name="vw_wastewater_node">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Topology">
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Topologie">
       <customproperties/>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="vw_network_segment20150607120529381" name="vw_network_segment">
         <customproperties/>
@@ -491,13 +491,13 @@
         <legendlayerfile isInOverview="0" layerid="vw_qgep_reach" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendgroup open="false" checked="Qt::Checked" name="Wastewater Structures">
+    <legendgroup open="false" checked="Qt::Checked" name="Ouvrages">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="od_wastewater_structure" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_wastewater_structure" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendgroup open="false" checked="Qt::Checked" name="Structure Parts">
+      <legendgroup open="false" checked="Qt::Checked" name="ElÃ©ment douvrage">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_access_aid" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_access_aid" visible="1"/>
@@ -562,8 +562,8 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Checked" name="Value Lists">
-      <legendgroup open="false" checked="Qt::Checked" name="Discharge Point">
+    <legendgroup open="false" checked="Qt::Checked" name="Liste de valeur">
+      <legendgroup open="false" checked="Qt::Checked" name="Exutoire au milieu rÃ©cepteur">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Relevance" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_discharge_point_relevance" visible="1"/>
@@ -587,7 +587,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="VL Manhole">
+      <legendgroup open="false" checked="Qt::Checked" name="Chambre">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="MH Material" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_manhole_material20151117174216343" visible="1"/>
@@ -604,14 +604,14 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="VL Structure Part">
+      <legendgroup open="false" checked="Qt::Checked" name="ElÃ©ment douvrage">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_structure_part_renovation_demand" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_structure_part_renovation_demand" visible="1"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="VL Cover">
+      <legendgroup open="false" checked="Qt::Checked" name="Regard">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="C Positional Accuracy" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_cover_positional_accuracy20151117153235900" visible="1"/>
@@ -657,7 +657,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="VL Maintenance Event">
+      <legendgroup open="false" checked="Qt::Checked" name="Maintenance">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_maintenance_event_kind" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_maintenance_event_kind" visible="1"/>
@@ -669,7 +669,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="VL Reach Point">
+      <legendgroup open="false" checked="Qt::Checked" name="Point de tronÃ§on">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_reach_point_elevation_accuracy" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_reach_point_elevation_accuracy" visible="1"/>
@@ -681,7 +681,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="VL Reach">
+      <legendgroup open="false" checked="Qt::Checked" name="TronÃ§on">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_reach_elevation_determination" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_reach_elevation_determination" visible="1"/>
@@ -750,7 +750,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="VL Channel">
+      <legendgroup open="false" checked="Qt::Checked" name="Canalisation">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_channel_bedding_encasement" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_channel_bedding_encasement" visible="1"/>
@@ -782,7 +782,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="VL Inspection">
+      <legendgroup open="false" checked="Qt::Checked" name="Inspection">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_damage_channel_channel_damage_code" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_damage_channel_channel_damage_code" visible="1"/>
@@ -837,14 +837,14 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Unchecked" name="Hydraulic">
+    <legendgroup open="false" checked="Qt::Unchecked" name="Hydraulique">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="vw_wastewater_node" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_wastewater_node20150607121012062" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Unchecked" name="Topology">
+    <legendgroup open="false" checked="Qt::Unchecked" name="Topologie">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="vw_network_segment" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_network_segment20150607120529381" visible="0"/>

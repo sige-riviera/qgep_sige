@@ -1,36 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import psycopg2, psycopg2.extras
-from qgis.PyQt.QtXml import QDomDocument
-from qgis.PyQt.QtCore import QCoreApplication
-from qgis.core import QgsProject, QgsCoordinateReferenceSystem, QgsMapLayerRegistry, QgsMapLayer, QgsPoint
-from qgis.utils import iface
-
-import qgis2compat.apicompat
+pg_service = "pg_qgep"
 
 original_project = '/home/drouzaud/Documents/QGEP/sige/QGEP/project/qgep_en.qgs'
 new_project = '/home/drouzaud/Documents/QGEP/sige/qgis-project/qgep_sige_auto.qgs'
 
-
-def translate():
-  # open original QGEP project
-  QgsProject.instance().read(original_project)
-  QCoreApplication.processEvents()
-  QgsProject.instance().setFileName(original_project)
-
-
-  # make copy of the project
-
-  QgsProject.instance().write(new_project)
-  QCoreApplication.processEvents()
-  QgsProject.instance().setFileName(new_project)
-
-  pg_service = "pg_qgep"
-
-
-  layers = {
-    'vw_qgep_wastewater_structure':
+layers = {
+  'vw_qgep_wastewater_structure':
     {'name': 'chambre',
      'tabs': {'General': u'Général',
         'Cover': 'Couvercle',
@@ -59,6 +36,49 @@ def translate():
      'additional_translations': {}
     }
   }
+
+groups = {
+  'Wastewater Structures': 'Ouvrages',
+  'Structure Parts': 'Elément d''ouvrage',
+  'Discharge Point': 'Exutoire au milieu récepteur',
+  'Special Structure': 'Ouvrage spécial',
+  'VL Manhole': 'Chambre',
+  'VL Structure Part': 'Elément d''ouvrage',
+  'VL Cover': 'Regard',
+  'VL Backflow Prevention': 'Protection contre le refoulement',
+  'VL Access aid': 'Dispositif d''accès',
+  'VL Maintenance Event': 'Maintenance',
+  'VL Reach Point': 'Point de tronçon',
+  'VL Reach': 'Tronçon',
+  'VL Wastewater Structure': 'Ouvrage',
+  'VL Channel': 'Canalisation',
+  'VL Inspection': 'Inspection',
+  'Value Lists': 'Liste de valeur',
+  'Hydraulic': 'Hydraulique',
+  'Topology': 'Topologie'
+  }
+
+
+
+# imports
+import psycopg2, psycopg2.extras
+from qgis.PyQt.QtXml import QDomDocument
+from qgis.PyQt.QtCore import QCoreApplication
+from qgis.core import QgsProject, QgsCoordinateReferenceSystem, QgsMapLayerRegistry, QgsMapLayer, QgsPoint, QgsLayerTreeGroup
+from qgis.utils import iface
+import qgis2compat.apicompat
+
+
+def translate():
+  # open original QGEP project
+  QgsProject.instance().read(original_project)
+  QCoreApplication.processEvents()
+  QgsProject.instance().setFileName(original_project)
+
+  # make copy of the project
+  QgsProject.instance().write(new_project)
+  QCoreApplication.processEvents()
+  QgsProject.instance().setFileName(new_project)
 
   # connect to db
   conn = psycopg2.connect("service={0}".format(pg_service))
@@ -134,6 +154,10 @@ def translate():
   if grp:
     tree_root.removeChildNode(grp)
 
+  # translate groups
+  translate_node(QgsProject.instance().layerTreeRoot())
+
+
   # background layers
   newGroup = QgsProject.instance().createEmbeddedGroup( "Fonds de plans", "/home/drouzaud/Documents/QGEP/sige/cadastre/cadastre_pg.qgs", [] )
   if newGroup:
@@ -168,3 +192,10 @@ def get_table_translation(cursor, table):
       return None
   else:
       return trans[0].lower()
+
+def translate_node(node):
+    for child in node.children():
+      if type(child) == QgsLayerTreeGroup:
+        translate_node(child)
+    if type(node) == QgsLayerTreeGroup and node.name() in groups:
+      node.setName(groups[node.name()])
