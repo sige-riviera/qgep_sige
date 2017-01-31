@@ -69,7 +69,7 @@ SELECT
   ortsbezeichnung,
   deckel.bemerkung,
   substr(schacht.bemerkung, 1, 80),
-  ST_Fineltra( ST_SetSRID(ST_Point( deckel_geo.y1, deckel_geo.x1 ), 21781 ), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95'),
+  ST_Force3d(ST_Fineltra( ST_SetSRID(ST_Point( deckel_geo.y1, deckel_geo.x1 ), 21781 ), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95')),
   Z1,
   CASE WHEN id_aeration=1 THEN 4533 ELSE mf.new END,
   st.new,

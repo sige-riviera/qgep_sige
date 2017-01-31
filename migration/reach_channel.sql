@@ -34,7 +34,7 @@ SELECT
   ((rp_from_level-rp_to_level)^2+(ST_Length(geometry))^2)^.5,
   baujahr,
   gefaelle,
-  ST_ForceCurve(geometry),
+  ST_Force3d(ST_ForceCurve(geometry)),
   fh.new,
   COALESCE(hp.new, 5379),
   NULLIF(COALESCE(profil_hoehe, profil_breite), 0),

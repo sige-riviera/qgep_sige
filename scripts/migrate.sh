@@ -6,7 +6,7 @@ set -e
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/..
 
-export PGSERVICE=pg_qgep_sige
+export PGSERVICE=pg_qgep
 
 psql -c 'CREATE EXTENSION IF NOT EXISTS fineltra'
 psql -c 'DROP SCHEMA IF EXISTS qgep CASCADE'
@@ -38,6 +38,7 @@ psql -v ON_ERROR_STOP=on -f ${DIR}/migration/profiles.sql
 psql -v ON_ERROR_STOP=on -f ${DIR}/migration/reach_channel.sql
 psql -v ON_ERROR_STOP=on -f ${DIR}/migration/prank_weir.sql
 
+psql -v ON_ERROR_STOP=1  -f ${DIR}/datamodel/07_views_for_network_tracking.sql # not sure why we need to rerun this one
 psql -v ON_ERROR_STOP=on -f ${DIR}/migration/90_create_topology.sql
 
 OWNER=qgep SCHEMA=qgep DATABASE=qgep_sige ${DIR}/datamodel/scripts/change_owner.sh
