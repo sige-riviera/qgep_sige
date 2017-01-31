@@ -22,34 +22,35 @@ layers = {
         'Maintenance': 'Maintenance',
         'Wastewater Nodes': 'Noeuds',
         'Files': 'Fichiers'},
-     'additional_translations': {'manhole_function': 'fonction'}
+     'additional_translations': {'manhole_function': 'fonction', '_depth': 'profondeur'}
     },
     'vw_qgep_reach':
     {'name': u'tronçon',
-     'tabs': {'General': 'Général',
-        'Reach': 'Tronçon',
+     'tabs': {'General': u'Général',
+        'Reach': u'Tronçon',
         'Wastewater Networkelement': u'Element du réseau',
         'Channel': 'Canalisation',
         'Wastewater Structure': 'Ouvrage',
-        'Reach Points': 'Point de tronçon',
-        'Maintenance': 'Maintenance'},
+        'Reach Points': u'Point de tronçon',
+        'Maintenance': 'Maintenance',
+        'Files': 'Fichiers'},
      'additional_translations': {}
     }
   }
 
 groups = {
   'Wastewater Structures': 'Ouvrages',
-  'Structure Parts': 'Elément d''ouvrage',
-  'Discharge Point': 'Exutoire au milieu récepteur',
-  'Special Structure': 'Ouvrage spécial',
+  'Structure Parts': u'Elément d''ouvrage',
+  'Discharge Point': u'Exutoire au milieu récepteur',
+  'Special Structure': u'Ouvrage spécial',
   'VL Manhole': 'Chambre',
-  'VL Structure Part': 'Elément d''ouvrage',
+  'VL Structure Part': u'Elément d''ouvrage',
   'VL Cover': 'Regard',
   'VL Backflow Prevention': 'Protection contre le refoulement',
-  'VL Access aid': 'Dispositif d''accès',
+  'VL Access Aid': u'Dispositif d\'accès',
   'VL Maintenance Event': 'Maintenance',
-  'VL Reach Point': 'Point de tronçon',
-  'VL Reach': 'Tronçon',
+  'VL Reach Point': u'Point de tronçon',
+  'VL Reach': u'Tronçon',
   'VL Wastewater Structure': 'Ouvrage',
   'VL Channel': 'Canalisation',
   'VL Inspection': 'Inspection',

@@ -16,7 +16,7 @@
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_wastewater_structure" name="od_wastewater_structure">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="ElÃ©ment douvrage">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Elément douvrage">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_access_aid" name="vw_access_aid">
           <customproperties/>
@@ -61,7 +61,7 @@
     </layer-tree-group>
     <layer-tree-group expanded="0" checked="Qt::Checked" name="Liste de valeur">
       <customproperties/>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Exutoire au milieu rÃ©cepteur">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Exutoire au milieu récepteur">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_discharge_point_relevance" name="Relevance">
           <customproperties/>
@@ -91,7 +91,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="ElÃ©ment douvrage">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Elément douvrage">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_structure_part_renovation_demand" name="vl_structure_part_renovation_demand">
           <customproperties/>
@@ -118,7 +118,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Backflow Prevention">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Protection contre le refoulement">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_backflow_prevention_kind" name="vl_backflow_prevention_kind">
           <customproperties/>
@@ -139,7 +139,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Point de tronÃ§on">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Point de tronçon">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_point_elevation_accuracy" name="vl_reach_point_elevation_accuracy">
           <customproperties/>
@@ -172,7 +172,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Wastewater Structure">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Ouvrage">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_wastewater_structure_accessibility" name="vl_wastewater_structure_accessibility">
           <customproperties/>
@@ -497,7 +497,7 @@
           <legendlayerfile isInOverview="0" layerid="od_wastewater_structure" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendgroup open="false" checked="Qt::Checked" name="ElÃ©ment douvrage">
+      <legendgroup open="false" checked="Qt::Checked" name="Elément douvrage">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_access_aid" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_access_aid" visible="1"/>
@@ -563,7 +563,7 @@
       </legendlayer>
     </legendgroup>
     <legendgroup open="false" checked="Qt::Checked" name="Liste de valeur">
-      <legendgroup open="false" checked="Qt::Checked" name="Exutoire au milieu rÃ©cepteur">
+      <legendgroup open="false" checked="Qt::Checked" name="Exutoire au milieu récepteur">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Relevance" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_discharge_point_relevance" visible="1"/>
@@ -604,7 +604,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="ElÃ©ment douvrage">
+      <legendgroup open="false" checked="Qt::Checked" name="Elément douvrage">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_structure_part_renovation_demand" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_structure_part_renovation_demand" visible="1"/>
@@ -643,7 +643,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="VL Backflow Prevention">
+      <legendgroup open="false" checked="Qt::Checked" name="Protection contre le refoulement">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_backflow_prevention_kind" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_backflow_prevention_kind" visible="1"/>
@@ -669,7 +669,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="Point de tronÃ§on">
+      <legendgroup open="false" checked="Qt::Checked" name="Point de tronçon">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_reach_point_elevation_accuracy" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_reach_point_elevation_accuracy" visible="1"/>
@@ -718,7 +718,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="VL Wastewater Structure">
+      <legendgroup open="false" checked="Qt::Checked" name="Ouvrage">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_wastewater_structure_accessibility" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_accessibility" visible="1"/>
