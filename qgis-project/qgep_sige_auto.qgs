@@ -124,7 +124,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="VL Access Aid">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Dispositif d'accès">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_access_aid_kind" name="vl_access_aid_kind">
           <customproperties/>
@@ -148,7 +148,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="TronÃ§on">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Tronçon">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_elevation_determination" name="vl_reach_elevation_determination">
           <customproperties/>
@@ -369,10 +369,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2554944.15646554250270128</xmin>
-      <ymin>1139775.01516696438193321</ymin>
-      <xmax>2564771.84353445749729872</xmax>
-      <ymax>1148578.98483303561806679</ymax>
+      <xmin>2554973.1265287734568119</xmin>
+      <ymin>1139775.01516696647740901</ymin>
+      <xmax>2564742.8734712265431881</xmax>
+      <ymax>1148578.98483303352259099</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -650,7 +650,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="VL Access Aid">
+      <legendgroup open="false" checked="Qt::Checked" name="Dispositif d'accès">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_access_aid_kind" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_access_aid_kind" visible="1"/>
@@ -681,7 +681,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="TronÃ§on">
+      <legendgroup open="false" checked="Qt::Checked" name="Tronçon">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_reach_elevation_determination" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_reach_elevation_determination" visible="1"/>
@@ -11940,7 +11940,7 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="GÃ©nÃ©ral" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="0">
           <attributeEditorField showLabel="1" index="1" name="clear_height"/>
           <attributeEditorField showLabel="1" index="7" name="length_effective"/>
           <attributeEditorField showLabel="1" index="9" name="material"/>
@@ -11957,7 +11957,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="41" name="year_of_construction"/>
           <attributeEditorField showLabel="1" index="46" name="remark"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="TronÃ§on" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Tronçon" groupBox="0" columnCount="0">
           <attributeEditorField showLabel="1" index="0" name="obj_id"/>
           <attributeEditorField showLabel="1" index="1" name="clear_height"/>
           <attributeEditorField showLabel="1" index="2" name="width"/>
@@ -12015,7 +12015,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="43" name="fk_owner"/>
           <attributeEditorField showLabel="1" index="44" name="fk_operator"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Point de tronÃ§on" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Point de tronçon" groupBox="0" columnCount="0">
           <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="From" groupBox="1" columnCount="0">
             <attributeEditorField showLabel="1" index="51" name="rp_from_obj_id"/>
             <attributeEditorField showLabel="1" index="52" name="rp_from_elevation_accuracy"/>
@@ -12046,7 +12046,7 @@ def my_form_open(dialog, layer, feature):
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="0" columnCount="0">
           <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="re_maintenance_wasterwaterstructure_reach"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Files" groupBox="0" columnCount="1">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Fichiers" groupBox="0" columnCount="1">
           <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id"/>
         </attributeEditorContainer>
       </attributeEditorForm>
@@ -13916,7 +13916,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="fk_owner" index="36" name=""/>
         <alias field="fk_operator" index="37" name=""/>
         <alias field="_label" index="38" name=""/>
-        <alias field="_depth" index="39" name=""/>
+        <alias field="_depth" index="39" name="profondeur"/>
         <alias field="dimension1" index="40" name="dimension1"/>
         <alias field="dimension2" index="41" name="dimension2"/>
         <alias field="upper_elevation" index="42" name="cote_plafond"/>

@@ -63,7 +63,7 @@ groups = {
 
 # imports
 import psycopg2, psycopg2.extras
-from qgis.PyQt.QtXml import QDomDocument
+from qgis.PyQt.QtXml import QDomDocument, QDomNode
 from qgis.PyQt.QtCore import QCoreApplication
 from qgis.core import QgsProject, QgsCoordinateReferenceSystem, QgsMapLayerRegistry, QgsMapLayer, QgsPoint, QgsLayerTreeGroup
 from qgis.utils import iface
@@ -80,6 +80,11 @@ def translate():
   QgsProject.instance().write(new_project)
   QCoreApplication.processEvents()
   QgsProject.instance().setFileName(new_project)
+
+  # apply custom style
+  # layer = QgsMapLayerRegistry.instance().mapLayer('vw_qgep_reach')
+  # layer.readStyle( node, errorMsg )
+  # QCoreApplication.processEvents()
 
   # connect to db
   conn = psycopg2.connect("service={0}".format(pg_service))
