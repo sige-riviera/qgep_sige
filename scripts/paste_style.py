@@ -1,14 +1,11 @@
 style_file = "styles/qgep.style"
 layer_ids = ['vw_qgep_reach', 'vw_qgep_wastewater_structure']
 
-
 from qgis.PyQt.QtXml import QDomDocument
 from qgis.PyQt.QtCore import QFile, QTextStream
 from qgis.PyQt.QtGui import QApplication
 
 errMsg = ''
-
-layer = QgsMapLayerRegistry.instance().mapLayer(layer_id)
 path = QgsProject.instance().homePath() + '/' + style_file
 file = QFile(path)
 file.open(QFile.ReadOnly | QFile.Text)

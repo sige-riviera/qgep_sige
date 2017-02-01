@@ -8,7 +8,7 @@
     <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_wastewater_structure" name="chambre">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_reach" name="tronçon">
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_reach" name="tronçon">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-group expanded="0" checked="Qt::Checked" name="Wastewater Structures">
@@ -369,10 +369,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2558967.8966254536062479</xmin>
-      <ymin>1143042.93828996876254678</ymin>
-      <xmax>2559199.55662590824067593</xmax>
-      <ymax>1143252.93829035991802812</ymax>
+      <xmin>2558788.05438866233453155</xmin>
+      <ymin>1142674.26416787621565163</ymin>
+      <xmax>2559714.69439048087224364</xmax>
+      <ymax>1143514.26416944083757699</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -497,8 +497,8 @@
         <legendlayerfile isInOverview="0" layerid="vw_qgep_wastewater_structure" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="tronçon" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="tronçon" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="vw_qgep_reach" visible="1"/>
       </filegroup>
     </legendlayer>

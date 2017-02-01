@@ -5,6 +5,8 @@ pg_service = "pg_qgep"
 
 original_project = '/home/drouzaud/Documents/QGEP/sige/QGEP/project/qgep_en.qgs'
 new_project = '/home/drouzaud/Documents/QGEP/sige/qgis-project/qgep_sige_auto.qgs'
+style_file = "/home/drouzaud/Documents/QGEP/sige/qgis-project/styles/qgep.style"
+style_layer_ids = ['vw_qgep_reach', 'vw_qgep_wastewater_structure']
 
 layers = {
   'vw_qgep_wastewater_structure':
@@ -59,7 +61,10 @@ groups = {
   'Topology': 'Topologie'
   }
 
-
+# style imports
+from qgis.PyQt.QtXml import QDomDocument
+from qgis.PyQt.QtCore import QFile, QTextStream
+from qgis.PyQt.QtGui import QApplication
 
 # imports
 import psycopg2, psycopg2.extras
@@ -154,6 +159,35 @@ def translate():
               del cfg[key]
           layer.editFormConfig().setWidgetConfig(idx, cfg)
 
+  # update styles from other project
+  errMsg = ''
+  file = QFile(style_file)
+  file.open(QFile.ReadOnly | QFile.Text)
+  doc = QDomDocument()
+  doc.setContent(file)
+  root = doc.elementsByTagName('qgis.custom.style')
+  nodes = root.at(0).childNodes()
+  for i in range(0,nodes.count()):
+    elem = nodes.at(i).toElement()
+    if elem.tagName() != 'layer' or not elem.hasAttribute('id'):
+        continue
+    layer_id = elem.attribute('id')
+    if layer_id not in style_layer_ids:
+        print 'skipping ', layer_id
+    layer = QgsMapLayerRegistry.instance().mapLayer(layer_id)
+    if not layer:
+        print 'layer not found', layer_id
+        continue
+    print 'loading', layer_id
+    style = elem.firstChild()
+    style.removeChild(style.firstChildElement('edittypes'))
+    layer.readStyle(style, errMsg)
+
+  # quickfinder settings
+  QgsProject.instance().writeEntryBool('quickfinder_plugin', 'project', True)
+  QgsProject.instance().writeEntry('quickfinder_plugin', 'qftsfilepath', './qgep_sige.qfts')
+
+
   # remove empty group
   tree_root = QgsProject.instance().layerTreeRoot()
   grp = tree_root.findGroup('Cadastral Data')
@@ -162,7 +196,6 @@ def translate():
 
   # translate groups
   translate_node(QgsProject.instance().layerTreeRoot())
-
 
   # background layers
   newGroup = QgsProject.instance().createEmbeddedGroup( "Fonds de plans", "/home/drouzaud/Documents/QGEP/sige/cadastre/cadastre_pg.qgs", [] )
