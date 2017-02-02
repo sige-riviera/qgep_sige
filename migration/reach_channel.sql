@@ -4,7 +4,7 @@ SELECT
   gid, 
   first(z1) as rp_from_level, 
   last(z1) as rp_to_level, 
-  ST_Fineltra(St_SetSRID(ST_GeomFromText('LINESTRING('||string_agg(y1::varchar||' '||x1::varchar, ',' ORDER BY seq)||')'),21781), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95')::Geometry(Linestring,2056) AS geometry 
+  ST_Fineltra(St_SetSRID(ST_GeomFromText('LINESTRINGZ('||string_agg(y1::varchar||' '||x1::varchar||' '||coalesce(z1,0)::varchar, ',' ORDER BY seq)||')'),21781), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95')::Geometry(LinestringZ,2056) AS geometry 
 FROM sa.aw_haltung_geo 
 GROUP BY gid)
 
@@ -31,10 +31,10 @@ INSERT INTO qgep.vw_qgep_reach(
 SELECT
   haltung.name,
   bemerkung,
-  ((rp_from_level-rp_to_level)^2+(ST_Length(geometry))^2)^.5,
+  ST_3dLength(geometry),
   baujahr,
   gefaelle,
-  ST_Force3d(ST_ForceCurve(geometry)),
+  ST_ForceCurve(geometry),
   fh.new,
   COALESCE(hp.new, 5379),
   NULLIF(COALESCE(profil_hoehe, profil_breite), 0),
