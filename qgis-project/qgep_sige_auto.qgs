@@ -11133,8 +11133,8 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -11289,7 +11289,6 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="length_effective"/>
           <column width="-1" hidden="0" type="field" name="slope_per_mill"/>
           <column width="-1" hidden="0" type="field" name="material"/>
-          <column width="-1" hidden="0" type="field" name="progression3d_geometry"/>
           <column width="-1" hidden="0" type="field" name="reliner_material"/>
           <column width="-1" hidden="0" type="field" name="reliner_nominal_size"/>
           <column width="-1" hidden="0" type="field" name="relining_construction"/>
@@ -11488,13 +11487,16 @@ def my_form_open(dialog, layer, feature):
           </attributeEditorContainer>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="re_maintenance_wasterwaterstructure_reach"/>
+          <attributeEditorRelation showLinkButton="1" relation="re_maintenance_wasterwaterstructure_reach" showLabel="1" showUnlinkButton="1" name="re_maintenance_wasterwaterstructure_reach"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Fichiers" groupBox="0" columnCount="1">
-          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id"/>
         </attributeEditorContainer>
       </attributeEditorForm>
       <widgets>
+        <widget name="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id">
+          <config/>
+        </widget>
         <widget name="re_maintenance_wasterwaterstructure_reach">
           <config>
             <option key="nm-rel" value="re_maintenance_wasterwaterstructure_maintenance"/>
