@@ -369,10 +369,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2554973.1265287734568119</xmin>
-      <ymin>1139775.01516696647740901</ymin>
-      <xmax>2564742.8734712265431881</xmax>
-      <ymax>1148578.98483303352259099</ymax>
+      <xmin>2554944.15646554250270128</xmin>
+      <ymin>1139775.01516696438193321</ymin>
+      <xmax>2564771.84353445749729872</xmax>
+      <ymax>1148578.98483303561806679</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -9209,7 +9209,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>266758.96299999998882413</ymax>
       </extent>
       <id>vw_qgep_reach</id>
-      <datasource>service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurve table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
+      <datasource>service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
