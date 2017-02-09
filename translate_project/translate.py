@@ -26,7 +26,7 @@ layers = {
         'Files': 'Fichiers'},
      'additional_translations': {'manhole_function': 'fonction', '_depth': 'profondeur'}
     },
-    'vw_qgep_reach':
+  'vw_qgep_reach':
     {'name': u'tronçon',
      'tabs': {'General': u'Général',
         'Reach': u'Tronçon',
@@ -37,6 +37,12 @@ layers = {
         'Maintenance': 'Maintenance',
         'Files': 'Fichiers'},
      'additional_translations': {}
+    },
+  'vw_qgep_maintenance':
+    {'name': 'Maintenance'
+    },
+  'vw_qgep_damage':
+    {'name': u'Dégâts'
     }
   }
 
@@ -125,19 +131,19 @@ def translate():
   for layer in QgsMapLayerRegistry.instance().mapLayers().values():
     if layer.id() in layers.keys():
       layer.setName(layers[layer.id()]['name'])
-      tabs = layer.editFormConfig().tabs()
       # tabs
-      for tab in layer.editFormConfig().tabs():
-        if tab.name() in layers[layer.id()]['tabs']:
-          tab.setName(layers[layer.id()]['tabs'][tab.name()])
-        else:
-          print("Tab {0} not translated".format(tab.name()))
+      if layers[layer.id()].has_key('tabs'):
+          for tab in layer.editFormConfig().tabs():
+            if tab.name() in layers[layer.id()]['tabs']:
+              tab.setName(layers[layer.id()]['tabs'][tab.name()])
+            else:
+              print("Tab {0} not translated".format(tab.name()))
       # fields
       for idx,field in enumerate(layer.fields()):
         #print(layer.name(),idx,field.name())
         # translation
         trans = get_field_translation(cur, field.name())
-        if field.name() in layers[layer.id()]['additional_translations']:
+        if layers[layer.id()].has_key('additional_translations') and field.name() in layers[layer.id()]['additional_translations']:
           layer.addAttributeAlias(idx, layers[layer.id()]['additional_translations'][field.name()])
         elif trans is not None:
           layer.addAttributeAlias(idx, trans)
