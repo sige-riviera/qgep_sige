@@ -69,14 +69,14 @@ groups = {
 
 # style imports
 from qgis.PyQt.QtXml import QDomDocument
-from qgis.PyQt.QtCore import QFile, QTextStream
+from qgis.PyQt.QtCore import QFile, QTextStream, QVariant
 from qgis.PyQt.QtGui import QApplication
 
 # imports
 import psycopg2, psycopg2.extras
 from qgis.PyQt.QtXml import QDomDocument, QDomNode
 from qgis.PyQt.QtCore import QCoreApplication
-from qgis.core import QgsProject, QgsCoordinateReferenceSystem, QgsMapLayerRegistry, QgsMapLayer, QgsPoint, QgsLayerTreeGroup
+from qgis.core import QgsProject, QgsCoordinateReferenceSystem, QgsMapLayerRegistry, QgsMapLayer, QgsPoint, QgsLayerTreeGroup, QgsApplication, QgsField
 from qgis.utils import iface
 import qgis2compat.apicompat
 
@@ -96,6 +96,10 @@ def translate():
   # layer = QgsMapLayerRegistry.instance().mapLayer('vw_qgep_reach')
   # layer.readStyle( node, errorMsg )
   # QCoreApplication.processEvents()
+
+  # add full_path to od_file
+  vl = QgsMapLayerRegistry.instance().mapLayer("od_file20160921105557083")
+  vl.addExpressionField( " \"path_relative\" || '/'|| \"identifier\"", QgsField( "full_path", QVariant.String, 'String', -1, -1))
 
   # connect to db
   conn = psycopg2.connect("service={0}".format(pg_service))
@@ -193,7 +197,6 @@ def translate():
   QgsProject.instance().writeEntryBool('quickfinder_plugin', 'project', True)
   QgsProject.instance().writeEntry('quickfinder_plugin', 'qftsfilepath', './qgep_sige.qfts')
 
-
   # remove empty group
   tree_root = QgsProject.instance().layerTreeRoot()
   grp = tree_root.findGroup('Cadastral Data')
@@ -209,10 +212,10 @@ def translate():
     QgsProject.instance().layerTreeRoot().addChildNode( newGroup )
 
   # disable otf
-  iface.mapCanvas().setDestinationCrs(QgsCoordinateReferenceSystem(2056))
-  QCoreApplication.processEvents()
-  iface.mapCanvas().setCrsTransformEnabled(False) # todo QGIS3
-  QCoreApplication.processEvents()
+  #iface.mapCanvas().setDestinationCrs(QgsCoordinateReferenceSystem(2056))
+  #QCoreApplication.processEvents()
+  #iface.mapCanvas().setCrsTransformEnabled(False) # todo QGIS3
+  #QCoreApplication.processEvents()
 
   # set center
   #iface.mapCanvas().setCenter(QgsPoint(6.9072,46.4380))
@@ -220,6 +223,9 @@ def translate():
 
   # save project
   QgsProject.instance().write(new_project)
+
+  # exit
+  QgsApplication.quit()
 
 
 def get_field_translation(cursor, field):

@@ -1,5 +1,4 @@
 #!/bin/bash
-
 OIDPREFIX="ch15z36d"
 
 set -e
