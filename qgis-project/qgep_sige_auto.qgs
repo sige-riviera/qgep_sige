@@ -885,7 +885,7 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields>
-        <field typeName="String" precision="-1" expression=" &quot;relative_path&quot; || '/'|| &quot;identifier&quot;" length="-1" type="10" comment="" name="full_path"/>
+        <field typeName="String" precision="-1" expression=" &quot;path_relative&quot; || '/'|| &quot;identifier&quot;" length="-1" type="10" comment="" name="full_path"/>
       </expressionfields>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
@@ -921,8 +921,8 @@
         <edittype widgetv2type="TextEdit" name="fk_provider">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="full_path">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="ExternalResource" name="full_path">
+          <widgetv2config fieldEditable="0" DocumentViewer="1" FileWidgetButton="1" UseLink="1" constraint="" FileWidget="1" StorageMode="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
       <annotationform>../QGEP/project</annotationform>
