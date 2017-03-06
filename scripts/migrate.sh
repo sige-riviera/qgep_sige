@@ -9,7 +9,7 @@ PGSERVICE=qgep_demo
 
 while getopts ":p:" opt; do
   case $opt in
-    s)
+    p)
       PGSERVICE=$OPTARG
       echo "-p was triggered, PGSERVICE: $PGSERVICE" >&2
       ;;
@@ -18,7 +18,6 @@ while getopts ":p:" opt; do
       ;;
   esac
 done
-
 
 psql "service=${PGSERVICE}" -c 'CREATE EXTENSION IF NOT EXISTS fineltra'
 psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS qgep CASCADE'

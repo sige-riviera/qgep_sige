@@ -100,7 +100,7 @@ def translate():
 
   # add full_path to od_file
   vl = QgsMapLayerRegistry.instance().mapLayer("od_file20160921105557083")
-  vl.addExpressionField( " \"path_relative\" || '/'|| \"identifier\"", QgsField( "full_path", QVariant.String, 'String', -1, -1))
+  vl.addExpressionField( " \"path_relative\" || '\\\\'|| \"identifier\"", QgsField( "full_path", QVariant.String, 'String', -1, -1))
   idx = vl.fieldNameIndex("full_path")
   vl.editFormConfig().setWidgetType(idx, "ExternalResource")
   vl.editFormConfig().setWidgetConfig(idx, { 'UseLink': '1', 'DocumentViewer': QgsExternalResourceWidget.Image})

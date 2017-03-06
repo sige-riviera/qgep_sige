@@ -885,7 +885,7 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields>
-        <field typeName="String" precision="-1" expression=" &quot;path_relative&quot; || '/'|| &quot;identifier&quot;" length="-1" type="10" comment="" name="full_path"/>
+        <field typeName="String" precision="-1" expression=" &quot;path_relative&quot; || '\\'|| &quot;identifier&quot;" length="-1" type="10" comment="" name="full_path"/>
       </expressionfields>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
