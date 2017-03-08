@@ -373,9 +373,9 @@
     <units>meters</units>
     <extent>
       <xmin>2554992.83443361893296242</xmin>
-      <ymin>1139775.0151669648475945</ymin>
+      <ymin>1139775.01516696694307029</ymin>
       <xmax>2564723.16556638106703758</xmax>
-      <ymax>1148578.9848330351524055</ymax>
+      <ymax>1148578.98483303305692971</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -9203,6 +9203,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="12" name="status"/>
           <attributeEditorField showLabel="1" index="13" name="time_point"/>
           <attributeEditorField showLabel="1" index="-1" name="fk_operator_company"/>
+          <attributeEditorField showLabel="1" index="2" name="base_data"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Inspection" groupBox="1" columnCount="2">
           <attributeEditorField showLabel="1" index="21" name="inspected_length"/>
