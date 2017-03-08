@@ -105,6 +105,12 @@ def translate():
   vl.editFormConfig().setWidgetType(idx, "ExternalResource")
   vl.editFormConfig().setWidgetConfig(idx, { 'UseLink': '1', 'DocumentViewer': QgsExternalResourceWidget.Image})
 
+  # pdf link for maintenance events
+  vl = QgsMapLayerRegistry.instance().mapLayer("vw_qgep_maintenance")
+  idx = vl.fieldNameIndex("base_data")
+  vl.editFormConfig().setWidgetType(idx, "ExternalResource")
+  vl.editFormConfig().setWidgetConfig(idx, { 'UseLink': '1', 'DocumentViewer': QgsExternalResourceWidget.NoContent})
+
   # connect to db
   conn = psycopg2.connect("service={0}".format(pg_service))
   cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)

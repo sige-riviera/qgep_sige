@@ -44,7 +44,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Checked" name="Inspection">
+    <layer-tree-group expanded="0" checked="Qt::Checked" name="Inspection">
       <customproperties/>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="re_maintenance_event_wastewater_structure" name="re_maintenance_event_wastewater_structure">
         <customproperties/>
@@ -373,9 +373,9 @@
     <units>meters</units>
     <extent>
       <xmin>2554992.83443361893296242</xmin>
-      <ymin>1139775.01516696577891707</ymin>
+      <ymin>1139775.0151669648475945</ymin>
       <xmax>2564723.16556638106703758</xmax>
-      <ymax>1148578.98483303422108293</ymax>
+      <ymax>1148578.9848330351524055</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -541,7 +541,7 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Checked" name="Inspection">
+    <legendgroup open="false" checked="Qt::Checked" name="Inspection">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="re_maintenance_event_wastewater_structure" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="re_maintenance_event_wastewater_structure" visible="1"/>
@@ -9002,8 +9002,8 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="obj_id">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="base_data">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="ExternalResource" name="base_data">
+          <widgetv2config fieldEditable="1" DocumentViewer="0" FileWidgetButton="1" UseLink="1" constraint="" FileWidget="1" StorageMode="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="cost">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
