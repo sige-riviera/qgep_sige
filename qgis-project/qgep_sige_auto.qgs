@@ -279,8 +279,9 @@
           <value>bf_immeuble20161019163752305</value>
           <value>od_element_surfacique20161123111234045</value>
           <value>cs_couverture_sol20161117155047081</value>
-          <value>National_Map_1_25_00020161213094052164</value>
-          <value>SWISSIMAGE20161213094045281</value>
+          <value>National_Map_1_25_00020170314120154767</value>
+          <value>National_Maps__color_20170314120148938</value>
+          <value>SWISSIMAGE20170314120137660</value>
         </property>
         <property key="embedded_project" value="../cadastre/cadastre_pg.qgs"/>
       </customproperties>
@@ -476,8 +477,9 @@
       <item>bf_immeuble20161019163752305</item>
       <item>od_element_surfacique20161123111234045</item>
       <item>cs_couverture_sol20161117155047081</item>
-      <item>National_Map_1_25_00020161213094052164</item>
-      <item>SWISSIMAGE20161213094045281</item>
+      <item>National_Map_1_25_00020170314120154767</item>
+      <item>National_Maps__color_20170314120148938</item>
+      <item>SWISSIMAGE20170314120137660</item>
       <item>OpenStreeMap20170131085532398</item>
     </custom-order>
   </layer-tree-canvas>
