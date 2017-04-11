@@ -1,61 +1,61 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.3">
+<qgis projectname="" version="2.18.5">
   <title></title>
   <autotransaction active="1"/>
   <evaluateDefaultValues active="1"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_wastewater_structure" name="chambre">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="vw_qgep_wastewater_structure" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table=&quot;qgep&quot;.&quot;vw_qgep_wastewater_structure&quot; (situation_geometry) sql=" name="chambre">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="vw_qgep_reach" name="tronçon">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="vw_qgep_reach" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="tronçon">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Ouvrages">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_wastewater_structure" name="od_wastewater_structure">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="od_wastewater_structure" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=CurvePolygonZ table=&quot;qgep&quot;.&quot;od_wastewater_structure&quot; (detail_geometry_geometry) sql=" name="od_wastewater_structure">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Elément douvrage">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_access_aid" name="vw_access_aid">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vw_access_aid" source="service='pg_qgep' key='obj_id' estimatedmetadata=true table=&quot;qgep&quot;.&quot;vw_access_aid&quot; sql=" name="vw_access_aid">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_backflow_prevention" name="vw_backflow_prevention">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vw_backflow_prevention" source="service='pg_qgep' key='obj_id' estimatedmetadata=true table=&quot;qgep&quot;.&quot;vw_backflow_prevention&quot; sql=" name="vw_backflow_prevention">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_benching" name="vw_benching">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vw_benching" source="service='pg_qgep' key='obj_id' estimatedmetadata=true table=&quot;qgep&quot;.&quot;vw_benching&quot; sql=" name="vw_benching">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="vw_cover___" name="vw_cover">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_cover___" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=Point table=&quot;qgep&quot;.&quot;vw_cover&quot; (situation_geometry) sql=" name="vw_cover">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_dryweather_downspout" name="vw_dryweather_downspout">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vw_dryweather_downspout" source="service='pg_qgep' key='obj_id' estimatedmetadata=true table=&quot;qgep&quot;.&quot;vw_dryweather_downspout&quot; sql=" name="vw_dryweather_downspout">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_dryweather_flume" name="vw_dryweather_flume">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vw_dryweather_flume" source="service='pg_qgep' key='obj_id' estimatedmetadata=true table=&quot;qgep&quot;.&quot;vw_dryweather_flume&quot; sql=" name="vw_dryweather_flume">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_channel_" name="vw_channel">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vw_channel_" source="service='pg_qgep' key='obj_id' table=&quot;qgep&quot;.&quot;vw_channel&quot; sql=" name="vw_channel">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_organisation20160212172933583" name="od_organisation">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="od_organisation20160212172933583" source="service='pg_qgep' key='obj_id' table=&quot;qgep&quot;.&quot;od_organisation&quot; sql=" name="od_organisation">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
     <layer-tree-group expanded="0" checked="Qt::Checked" name="Inspection">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="re_maintenance_event_wastewater_structure" name="re_maintenance_event_wastewater_structure">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="re_maintenance_event_wastewater_structure" source="service='pg_qgep' key='obj_id' table=&quot;qgep&quot;.&quot;re_maintenance_event_wastewater_structure&quot; sql=" name="re_maintenance_event_wastewater_structure">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_file20160921105557083" name="od_file">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="od_file20160921105557083" source="service='pg_qgep' key='obj_id' table=&quot;qgep&quot;.&quot;od_file&quot; sql=" name="od_file">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_maintenance" name="Maintenance">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vw_qgep_maintenance" source="service='pg_qgep' key='obj_id' table=&quot;qgep&quot;.&quot;vw_qgep_maintenance&quot; sql=" name="Maintenance">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="vw_qgep_damage" name="Dégâts">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vw_qgep_damage" source="service='pg_qgep' key='obj_id' table=&quot;qgep&quot;.&quot;vw_qgep_damage&quot; sql=" name="Dégâts">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -63,206 +63,206 @@
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Exutoire au milieu récepteur">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_discharge_point_relevance" name="Relevance">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_discharge_point_relevance" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_discharge_point_relevance&quot; sql=" name="Relevance">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="special structure">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_special_structure_bypass" name="Bypass">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_special_structure_bypass" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_special_structure_bypass&quot; sql=" name="Bypass">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_special_structure_function" name="Function">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_special_structure_function" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_special_structure_function&quot; sql=" name="Function">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_special_structure_stormwater_tank_arrangement" name="Stormwater Tank Arrangement">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_special_structure_stormwater_tank_arrangement" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_special_structure_stormwater_tank_arrangement&quot; sql=" name="Stormwater Tank Arrangement">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Chambre">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_manhole_material20151117174216343" name="MH Material">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_manhole_material20151117174216343" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_manhole_material&quot; sql=" name="MH Material">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_manhole_surface_inflow20151117174216393" name="MH Surface Inflow">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_manhole_surface_inflow20151117174216393" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_manhole_surface_inflow&quot; sql=" name="MH Surface Inflow">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_manhole_function" name="MH Function">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_manhole_function" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_manhole_function&quot; sql=" name="MH Function">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Elément douvrage">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_structure_part_renovation_demand" name="vl_structure_part_renovation_demand">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_structure_part_renovation_demand" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_structure_part_renovation_demand&quot; sql=" name="vl_structure_part_renovation_demand">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Regard">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_cover_positional_accuracy20151117153235900" name="C Positional Accuracy">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_cover_positional_accuracy20151117153235900" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_cover_positional_accuracy&quot; sql=" name="C Positional Accuracy">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_cover_cover_shape" name="Shape">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_cover_cover_shape" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_cover_cover_shape&quot; sql=" name="Shape">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_cover_fastening" name="Fastening">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_cover_fastening" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_cover_fastening&quot; sql=" name="Fastening">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_cover_sludge_bucket" name="Sludge Bucket">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_cover_sludge_bucket" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_cover_sludge_bucket&quot; sql=" name="Sludge Bucket">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_cover_venting" name="Venting">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_cover_venting" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_cover_venting&quot; sql=" name="Venting">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_cover_material" name="C Material">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_cover_material" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_cover_material&quot; sql=" name="C Material">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Protection contre le refoulement">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_backflow_prevention_kind" name="vl_backflow_prevention_kind">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_backflow_prevention_kind" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_backflow_prevention_kind&quot; sql=" name="vl_backflow_prevention_kind">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Dispositif d'accès">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_access_aid_kind" name="vl_access_aid_kind">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_access_aid_kind" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_access_aid_kind&quot; sql=" name="vl_access_aid_kind">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Maintenance">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_maintenance_event_kind" name="vl_maintenance_event_kind">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_maintenance_event_kind" source="service='pg_qgep' key='code' estimatedmetadata=true table=&quot;qgep&quot;.&quot;vl_maintenance_event_kind&quot; sql=" name="vl_maintenance_event_kind">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_maintenance_event_status" name="vl_maintenance_event_status">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_maintenance_event_status" source="service='pg_qgep' key='code' estimatedmetadata=true table=&quot;qgep&quot;.&quot;vl_maintenance_event_status&quot; sql=" name="vl_maintenance_event_status">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Point de tronçon">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_point_elevation_accuracy" name="vl_reach_point_elevation_accuracy">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_reach_point_elevation_accuracy" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_reach_point_elevation_accuracy&quot; sql=" name="vl_reach_point_elevation_accuracy">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_point_outlet_shape" name="vl_reach_point_outlet_shape">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_reach_point_outlet_shape" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_reach_point_outlet_shape&quot; sql=" name="vl_reach_point_outlet_shape">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Tronçon">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_elevation_determination" name="vl_reach_elevation_determination">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_reach_elevation_determination" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_reach_elevation_determination&quot; sql=" name="vl_reach_elevation_determination">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_horizontal_positioning" name="vl_reach_horizontal_positioning">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_reach_horizontal_positioning" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_reach_horizontal_positioning&quot; sql=" name="vl_reach_horizontal_positioning">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_inside_coating" name="vl_reach_inside_coating">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_reach_inside_coating" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_reach_inside_coating&quot; sql=" name="vl_reach_inside_coating">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_material" name="vl_reach_material">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_reach_material" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_reach_material&quot; sql=" name="vl_reach_material">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_reliner_material" name="vl_reach_reliner_material">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_reach_reliner_material" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_reach_reliner_material&quot; sql=" name="vl_reach_reliner_material">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_relining_construction" name="vl_reach_relining_construction">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_reach_relining_construction" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_reach_relining_construction&quot; sql=" name="vl_reach_relining_construction">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_reach_relining_kind" name="vl_reach_relining_kind">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_reach_relining_kind" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_reach_relining_kind&quot; sql=" name="vl_reach_relining_kind">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Ouvrage">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_wastewater_structure_accessibility" name="vl_wastewater_structure_accessibility">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_wastewater_structure_accessibility" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_wastewater_structure_accessibility&quot; sql=" name="vl_wastewater_structure_accessibility">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_wastewater_structure_financing" name="vl_wastewater_structure_financing">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_wastewater_structure_financing" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_wastewater_structure_financing&quot; sql=" name="vl_wastewater_structure_financing">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_wastewater_structure_renovation_necessity" name="vl_wastewater_structure_renovation_necessity">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_wastewater_structure_renovation_necessity" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_wastewater_structure_renovation_necessity&quot; sql=" name="vl_wastewater_structure_renovation_necessity">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_wastewater_structure_rv_construction_type" name="vl_wastewater_structure_rv_construction_type">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_wastewater_structure_rv_construction_type" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_wastewater_structure_rv_construction_type&quot; sql=" name="vl_wastewater_structure_rv_construction_type">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_wastewater_structure_status" name="vl_wastewater_structure_status">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_wastewater_structure_status" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_wastewater_structure_status&quot; sql=" name="vl_wastewater_structure_status">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_wastewater_structure_structure_condition" name="vl_wastewater_structure_structure_condition">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_wastewater_structure_structure_condition" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_wastewater_structure_structure_condition&quot; sql=" name="vl_wastewater_structure_structure_condition">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Canalisation">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_channel_bedding_encasement" name="vl_channel_bedding_encasement">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_channel_bedding_encasement" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_channel_bedding_encasement&quot; sql=" name="vl_channel_bedding_encasement">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_channel_connection_type" name="vl_channel_connection_type">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_channel_connection_type" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_channel_connection_type&quot; sql=" name="vl_channel_connection_type">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_channel_function_hierarchic" name="vl_channel_function_hierarchic">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_channel_function_hierarchic" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_channel_function_hierarchic&quot; sql=" name="vl_channel_function_hierarchic">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_channel_function_hydraulic" name="vl_channel_function_hydraulic">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_channel_function_hydraulic" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_channel_function_hydraulic&quot; sql=" name="vl_channel_function_hydraulic">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_channel_usage_current" name="vl_channel_usage_current">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_channel_usage_current" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_channel_usage_current&quot; sql=" name="vl_channel_usage_current">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_channel_usage_planned" name="vl_channel_usage_planned">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_channel_usage_planned" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_channel_usage_planned&quot; sql=" name="vl_channel_usage_planned">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Inspection">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_channel_channel_damage_code" name="vl_damage_channel_channel_damage_code">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_damage_channel_channel_damage_code" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_damage_channel_channel_damage_code&quot; sql=" name="vl_damage_channel_channel_damage_code">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_connection" name="vl_damage_connection">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_damage_connection" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_damage_connection&quot; sql=" name="vl_damage_connection">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_manhole_manhole_damage_code" name="vl_damage_manhole_manhole_damage_code">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_damage_manhole_manhole_damage_code" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_damage_manhole_manhole_damage_code&quot; sql=" name="vl_damage_manhole_manhole_damage_code">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_manhole_manhole_shaft_area" name="vl_damage_manhole_manhole_shaft_area">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_damage_manhole_manhole_shaft_area" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_damage_manhole_manhole_shaft_area&quot; sql=" name="vl_damage_manhole_manhole_shaft_area">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_damage_single_damage_class" name="vl_damage_single_damage_class">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_damage_single_damage_class" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_damage_single_damage_class&quot; sql=" name="vl_damage_single_damage_class">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_data_media_kind" name="vl_data_media_kind">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_data_media_kind" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_data_media_kind&quot; sql=" name="vl_data_media_kind">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_file_class" name="vl_file_class">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_file_class" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_file_class&quot; sql=" name="vl_file_class">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_file_kind" name="vl_file_kind">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_file_kind" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_file_kind&quot; sql=" name="vl_file_kind">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Checked" name="Pipe Profile">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vl_pipe_profile_profile_type" name="vl_pipe_profile_profile_type">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_pipe_profile_profile_type" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_pipe_profile_profile_type&quot; sql=" name="vl_pipe_profile_profile_type">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="od_pipe_profile" name="od_pipe_profile">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="od_pipe_profile" source="service='pg_qgep' key='obj_id' table=&quot;qgep&quot;.&quot;od_pipe_profile&quot; sql=" name="od_pipe_profile">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
     <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Hydraulique">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="vw_wastewater_node20150607121012062" name="vw_wastewater_node">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_wastewater_node20150607121012062" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=Point table=&quot;qgep&quot;.&quot;vw_wastewater_node&quot; (situation_geometry) sql=" name="vw_wastewater_node">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
     <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Topologie">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="vw_network_segment20150607120529381" name="vw_network_segment">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_network_segment20150607120529381" source="service='pg_qgep' key='gid' estimatedmetadata=true srid=2056 type=CompoundCurve table=&quot;qgep&quot;.&quot;vw_network_segment&quot; (progression_geometry) sql=" name="vw_network_segment">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="vw_network_node20150607120529398" name="vw_network_node">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_network_node20150607120529398" source="service='pg_qgep' key='gid' estimatedmetadata=true srid=2056 type=Point table=&quot;qgep&quot;.&quot;vw_network_node&quot; (situation_geometry) sql=" name="vw_network_node">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -373,10 +373,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2554992.83443361893296242</xmin>
-      <ymin>1139775.01516696694307029</ymin>
-      <xmax>2564723.16556638106703758</xmax>
-      <ymax>1148578.98483303305692971</ymax>
+      <xmin>2555016.53727703355252743</xmin>
+      <ymin>1139796.4614170053973794</ymin>
+      <xmax>2564699.46272296644747257</xmax>
+      <ymax>1148557.5385829946026206</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -9196,7 +9196,6 @@ def my_form_open(dialog, layer, feature):
       <attributeEditorForm>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="1" columnCount="2">
           <attributeEditorField showLabel="1" index="1" name="obj_id"/>
-          <attributeEditorField showLabel="1" index="0" name="maintenance_type"/>
           <attributeEditorField showLabel="1" index="7" name="kind"/>
           <attributeEditorField showLabel="1" index="8" name="operator"/>
           <attributeEditorField showLabel="1" index="9" name="reason"/>
@@ -9207,7 +9206,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="-1" name="fk_operator_company"/>
           <attributeEditorField showLabel="1" index="2" name="base_data"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Inspection" groupBox="1" columnCount="2">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression=" &quot;kind&quot; = 4564" name="Inspection" groupBox="1" columnCount="2">
           <attributeEditorField showLabel="1" index="21" name="inspected_length"/>
           <attributeEditorField showLabel="1" index="25" name="videonumber"/>
           <attributeEditorField showLabel="1" index="-1" name="fs_reach_point"/>
@@ -9215,7 +9214,7 @@ def my_form_open(dialog, layer, feature):
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Video" groupBox="1" columnCount="2">
           <attributeEditorRelation showLinkButton="1" relation="file_object_maintenance_obj_id" showLabel="1" showUnlinkButton="1" name="file_object_maintenance_obj_id"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Damages" groupBox="1" columnCount="2">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;kind&quot; = 4564" name="Damages" groupBox="1" columnCount="2">
           <attributeEditorRelation showLinkButton="1" relation="damage_maintenance_event" showLabel="1" showUnlinkButton="1" name="damage_maintenance_event"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Reaches" groupBox="1" columnCount="2">
@@ -10668,13 +10667,13 @@ def my_form_open(dialog, layer, feature):
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="obj_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Range" name="clear_height">
           <widgetv2config AllowNull="1" fieldEditable="1" Step="100" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="99999" Suffix=" mm"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="width">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Range" name="coefficient_of_friction">
           <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="999" Suffix=" m^(1/3)/s"/>
@@ -10746,7 +10745,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_channel_usage_planned" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ws_obj_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="accessibility">
           <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_accessibility" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
@@ -10806,7 +10805,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="remark">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="DateTime" name="last_modification">
           <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="0" display_format="yyyy-MM-dd" field_format="yyyy-MM-dd" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -10821,7 +10820,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="1" Relation="reach-fk_wastewater_structure-channel" ReadOnly="0" constraint="" MapIdentification="0" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="0"/>
         </edittype>
         <edittype widgetv2type="Hidden" name="rp_from_obj_id">
-          <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config fieldEditable="0" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="rp_from_elevation_accuracy">
           <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_point_elevation_accuracy" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
@@ -10835,11 +10834,11 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="ValueRelation" name="rp_from_outlet_shape">
           <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_point_outlet_shape" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="rp_from_position_of_connection">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="Range" name="rp_from_position_of_connection">
+          <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="12"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="rp_from_remark">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="DateTime" name="rp_from_last_modification">
           <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="1" display_format="yyyy-MM-dd" field_format="yyyy-MM-dd" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -10854,7 +10853,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Hidden" name="rp_to_obj_id">
-          <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config fieldEditable="0" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="rp_to_elevation_accuracy">
           <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_point_elevation_accuracy" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
@@ -10868,11 +10867,11 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="ValueRelation" name="rp_to_outlet_shape">
           <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_reach_point_outlet_shape" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="rp_to_position_of_connection">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="Range" name="rp_to_position_of_connection">
+          <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="12"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="rp_to_remark">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="DateTime" name="rp_to_last_modification">
           <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="1" display_format="yyyy-MM-dd" field_format="yyyy-MM-dd" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -11214,8 +11213,8 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -11370,7 +11369,6 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="length_effective"/>
           <column width="-1" hidden="0" type="field" name="slope_per_mill"/>
           <column width="-1" hidden="0" type="field" name="material"/>
-          <column width="-1" hidden="0" type="field" name="progression3d_geometry"/>
           <column width="-1" hidden="0" type="field" name="reliner_material"/>
           <column width="-1" hidden="0" type="field" name="reliner_nominal_size"/>
           <column width="-1" hidden="0" type="field" name="relining_construction"/>
@@ -11465,87 +11463,93 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="2">
+          <attributeEditorField showLabel="1" index="0" name="obj_id"/>
+          <attributeEditorField showLabel="1" index="45" name="identifier"/>
           <attributeEditorField showLabel="1" index="1" name="clear_height"/>
-          <attributeEditorField showLabel="1" index="7" name="length_effective"/>
           <attributeEditorField showLabel="1" index="9" name="material"/>
-          <attributeEditorField showLabel="1" index="6" name="inside_coating"/>
-          <attributeEditorField showLabel="1" index="17" name="fk_pipe_profile"/>
-          <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
-          <attributeEditorField showLabel="1" index="54" name="rp_from_level"/>
-          <attributeEditorField showLabel="1" index="65" name="rp_to_level"/>
+          <attributeEditorField showLabel="1" index="24" name="usage_current"/>
           <attributeEditorField showLabel="1" index="5" name="horizontal_positioning"/>
           <attributeEditorField showLabel="1" index="19" name="function_hierarchic"/>
           <attributeEditorField showLabel="1" index="21" name="function_hydraulic"/>
-          <attributeEditorField showLabel="1" index="24" name="usage_current"/>
           <attributeEditorField showLabel="1" index="38" name="status"/>
           <attributeEditorField showLabel="1" index="41" name="year_of_construction"/>
+          <attributeEditorField showLabel="1" index="43" name="fk_owner"/>
+          <attributeEditorField showLabel="1" index="44" name="fk_operator"/>
+          <attributeEditorField showLabel="1" index="54" name="rp_from_level"/>
+          <attributeEditorField showLabel="1" index="65" name="rp_to_level"/>
+          <attributeEditorField showLabel="1" index="6" name="inside_coating"/>
+          <attributeEditorField showLabel="1" index="17" name="fk_pipe_profile"/>
+          <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
           <attributeEditorField showLabel="1" index="46" name="remark"/>
+          <attributeEditorField showLabel="1" index="7" name="length_effective"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Tronçon" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Tronçon" groupBox="0" columnCount="2">
           <attributeEditorField showLabel="1" index="0" name="obj_id"/>
+          <attributeEditorField showLabel="1" index="45" name="identifier"/>
           <attributeEditorField showLabel="1" index="1" name="clear_height"/>
+          <attributeEditorField showLabel="1" index="9" name="material"/>
+          <attributeEditorField showLabel="1" index="17" name="fk_pipe_profile"/>
           <attributeEditorField showLabel="1" index="2" name="width"/>
-          <attributeEditorField showLabel="1" index="3" name="coefficient_of_friction"/>
-          <attributeEditorField showLabel="1" index="4" name="elevation_determination"/>
           <attributeEditorField showLabel="1" index="5" name="horizontal_positioning"/>
+          <attributeEditorField showLabel="1" index="4" name="elevation_determination"/>
+          <attributeEditorField showLabel="1" index="3" name="coefficient_of_friction"/>
+          <attributeEditorField showLabel="1" index="16" name="wall_roughness"/>
           <attributeEditorField showLabel="1" index="6" name="inside_coating"/>
           <attributeEditorField showLabel="1" index="7" name="length_effective"/>
           <attributeEditorField showLabel="1" index="8" name="slope_per_mill"/>
-          <attributeEditorField showLabel="1" index="9" name="material"/>
-          <attributeEditorField showLabel="1" index="-1" name="progression_3d_geometry"/>
+          <attributeEditorField showLabel="1" index="15" name="slope_building_plan"/>
           <attributeEditorField showLabel="1" index="10" name="reliner_material"/>
           <attributeEditorField showLabel="1" index="11" name="reliner_nominal_size"/>
           <attributeEditorField showLabel="1" index="12" name="relining_construction"/>
           <attributeEditorField showLabel="1" index="13" name="relining_kind"/>
+          <attributeEditorField showLabel="1" index="46" name="remark"/>
           <attributeEditorField showLabel="1" index="14" name="ring_stiffness"/>
-          <attributeEditorField showLabel="1" index="15" name="slope_building_plan"/>
-          <attributeEditorField showLabel="1" index="16" name="wall_roughness"/>
-          <attributeEditorField showLabel="1" index="17" name="fk_pipe_profile"/>
+          <attributeEditorField showLabel="1" index="-1" name="progression_3d_geometry"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Element du réseau" groupBox="0" columnCount="0">
-          <attributeEditorField showLabel="1" index="45" name="identifier"/>
-          <attributeEditorField showLabel="1" index="46" name="remark"/>
           <attributeEditorField showLabel="1" index="47" name="last_modification"/>
           <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
           <attributeEditorField showLabel="1" index="-1" name="provider"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Canalisation" groupBox="0" columnCount="0">
-          <attributeEditorField showLabel="1" index="19" name="function_hierarchic"/>
-          <attributeEditorField showLabel="1" index="20" name="connection_type"/>
-          <attributeEditorField showLabel="1" index="21" name="function_hydraulic"/>
-          <attributeEditorField showLabel="1" index="22" name="jetting_interval"/>
-          <attributeEditorField showLabel="1" index="23" name="pipe_length"/>
           <attributeEditorField showLabel="1" index="24" name="usage_current"/>
           <attributeEditorField showLabel="1" index="25" name="usage_planned"/>
+          <attributeEditorField showLabel="1" index="19" name="function_hierarchic"/>
+          <attributeEditorField showLabel="1" index="21" name="function_hydraulic"/>
+          <attributeEditorField showLabel="1" index="20" name="connection_type"/>
+          <attributeEditorField showLabel="1" index="22" name="jetting_interval"/>
+          <attributeEditorField showLabel="1" index="23" name="pipe_length"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Ouvrage" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Ouvrage" groupBox="0" columnCount="2">
           <attributeEditorField showLabel="1" index="26" name="ws_obj_id"/>
+          <attributeEditorField showLabel="1" index="45" name="identifier"/>
           <attributeEditorField showLabel="1" index="27" name="accessibility"/>
-          <attributeEditorField showLabel="1" index="28" name="contract_section"/>
-          <attributeEditorField showLabel="1" index="29" name="financing"/>
-          <attributeEditorField showLabel="1" index="30" name="gross_costs"/>
-          <attributeEditorField showLabel="1" index="31" name="inspection_interval"/>
           <attributeEditorField showLabel="1" index="32" name="location_name"/>
-          <attributeEditorField showLabel="1" index="33" name="records"/>
-          <attributeEditorField showLabel="1" index="34" name="renovation_necessity"/>
-          <attributeEditorField showLabel="1" index="35" name="replacement_value"/>
-          <attributeEditorField showLabel="1" index="36" name="rv_base_year"/>
-          <attributeEditorField showLabel="1" index="37" name="rv_construction_type"/>
-          <attributeEditorField showLabel="1" index="38" name="status"/>
-          <attributeEditorField showLabel="1" index="39" name="structure_condition"/>
-          <attributeEditorField showLabel="1" index="40" name="subsidies"/>
           <attributeEditorField showLabel="1" index="41" name="year_of_construction"/>
+          <attributeEditorField showLabel="1" index="38" name="status"/>
+          <attributeEditorField showLabel="1" index="34" name="renovation_necessity"/>
+          <attributeEditorField showLabel="1" index="39" name="structure_condition"/>
           <attributeEditorField showLabel="1" index="42" name="year_of_replacement"/>
           <attributeEditorField showLabel="1" index="43" name="fk_owner"/>
           <attributeEditorField showLabel="1" index="44" name="fk_operator"/>
+          <attributeEditorField showLabel="1" index="31" name="inspection_interval"/>
+          <attributeEditorField showLabel="1" index="46" name="remark"/>
+          <attributeEditorField showLabel="1" index="28" name="contract_section"/>
+          <attributeEditorField showLabel="1" index="33" name="records"/>
+          <attributeEditorField showLabel="1" index="29" name="financing"/>
+          <attributeEditorField showLabel="1" index="30" name="gross_costs"/>
+          <attributeEditorField showLabel="1" index="35" name="replacement_value"/>
+          <attributeEditorField showLabel="1" index="40" name="subsidies"/>
+          <attributeEditorField showLabel="1" index="36" name="rv_base_year"/>
+          <attributeEditorField showLabel="1" index="37" name="rv_construction_type"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Point de tronçon" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Point de tronçon" groupBox="0" columnCount="2">
           <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="From" groupBox="1" columnCount="0">
             <attributeEditorField showLabel="1" index="51" name="rp_from_obj_id"/>
-            <attributeEditorField showLabel="1" index="52" name="rp_from_elevation_accuracy"/>
             <attributeEditorField showLabel="1" index="53" name="rp_from_identifier"/>
             <attributeEditorField showLabel="1" index="54" name="rp_from_level"/>
+            <attributeEditorField showLabel="1" index="52" name="rp_from_elevation_accuracy"/>
             <attributeEditorField showLabel="1" index="55" name="rp_from_outlet_shape"/>
             <attributeEditorField showLabel="1" index="56" name="rp_from_position_of_connection"/>
             <attributeEditorField showLabel="1" index="57" name="rp_from_remark"/>
@@ -11556,9 +11560,9 @@ def my_form_open(dialog, layer, feature):
           </attributeEditorContainer>
           <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="To" groupBox="1" columnCount="0">
             <attributeEditorField showLabel="1" index="62" name="rp_to_obj_id"/>
-            <attributeEditorField showLabel="1" index="63" name="rp_to_elevation_accuracy"/>
             <attributeEditorField showLabel="1" index="64" name="rp_to_identifier"/>
             <attributeEditorField showLabel="1" index="65" name="rp_to_level"/>
+            <attributeEditorField showLabel="1" index="63" name="rp_to_elevation_accuracy"/>
             <attributeEditorField showLabel="1" index="66" name="rp_to_outlet_shape"/>
             <attributeEditorField showLabel="1" index="67" name="rp_to_position_of_connection"/>
             <attributeEditorField showLabel="1" index="68" name="rp_to_remark"/>
@@ -11576,6 +11580,9 @@ def my_form_open(dialog, layer, feature):
         </attributeEditorContainer>
       </attributeEditorForm>
       <widgets>
+        <widget name="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id">
+          <config/>
+        </widget>
         <widget name="re_maintenance_wasterwaterstructure_reach">
           <config>
             <option key="nm-rel" value="re_maintenance_wasterwaterstructure_maintenance"/>
@@ -11736,7 +11743,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="remark">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="renovation_demand">
           <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_structure_part_renovation_demand" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
@@ -11786,7 +11793,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ws_remark">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="renovation_necessity">
           <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_renovation_necessity" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
@@ -11822,7 +11829,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="vw_qgep_wastewater_structure_fk_operator_od_organisation20160212172933583_obj_id" ReadOnly="0" constraint="" MapIdentification="0" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="_label">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="1" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="1" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="_depth">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -11906,7 +11913,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="wn_obj_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="backflow_level">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -11918,7 +11925,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="wn_remark">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="wn_last_modification">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -13211,7 +13218,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="CASE WHEN $scale &lt;= 500 THEN _label ELSE  ws_identifier END"/>
+        <property key="labeling/fieldName" value="CASE WHEN  @map_scale &lt;= 500 THEN _label ELSE co_identifier END"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
@@ -13267,7 +13274,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/repeatDistanceUnit" value="1"/>
         <property key="labeling/reverseDirectionSymbol" value="false"/>
         <property key="labeling/rightDirectionSymbol" value=">"/>
-        <property key="labeling/scaleMax" value="1501"/>
+        <property key="labeling/scaleMax" value="3001"/>
         <property key="labeling/scaleMin" value="1"/>
         <property key="labeling/scaleVisibility" value="true"/>
         <property key="labeling/shadowBlendMode" value="6"/>
@@ -13575,96 +13582,109 @@ def my_form_open(dialog, layer, feature):
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="2">
           <attributeEditorField showLabel="1" index="18" name="identifier"/>
           <attributeEditorField showLabel="1" index="16" name="ws_type"/>
-          <attributeEditorField showLabel="1" index="24" name="location_name"/>
-          <attributeEditorField showLabel="1" index="34" name="year_of_construction"/>
           <attributeEditorField showLabel="1" index="43" name="manhole_function"/>
           <attributeEditorField showLabel="1" index="50" name="special_structure_function"/>
-          <attributeEditorField showLabel="1" index="27" name="renovation_necessity"/>
-          <attributeEditorField showLabel="1" index="5" name="level"/>
-          <attributeEditorField showLabel="1" index="7" name="positional_accuracy"/>
-          <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
-          <attributeEditorField showLabel="1" index="31" name="status"/>
-          <attributeEditorField showLabel="1" index="9" name="venting"/>
-          <attributeEditorField showLabel="1" index="4" name="fastening"/>
           <attributeEditorField showLabel="1" index="40" name="dimension1"/>
           <attributeEditorField showLabel="1" index="41" name="dimension2"/>
+          <attributeEditorField showLabel="1" index="5" name="level"/>
+          <attributeEditorField showLabel="1" index="7" name="positional_accuracy"/>
+          <attributeEditorField showLabel="1" index="31" name="status"/>
+          <attributeEditorField showLabel="1" index="36" name="fk_owner"/>
+          <attributeEditorField showLabel="1" index="24" name="location_name"/>
+          <attributeEditorField showLabel="1" index="34" name="year_of_construction"/>
+          <attributeEditorField showLabel="1" index="27" name="renovation_necessity"/>
+          <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
+          <attributeEditorField showLabel="1" index="9" name="venting"/>
+          <attributeEditorField showLabel="1" index="4" name="fastening"/>
+          <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
+          <attributeEditorField showLabel="1" index="38" name="_label"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Couvercle" groupBox="0" columnCount="0">
-          <attributeEditorField showLabel="1" index="1" name="brand"/>
-          <attributeEditorField showLabel="1" index="2" name="cover_shape"/>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Couvercle" groupBox="0" columnCount="2">
+          <attributeEditorField showLabel="1" index="17" name="co_obj_id"/>
+          <attributeEditorField showLabel="1" index="10" name="co_identifier"/>
           <attributeEditorField showLabel="1" index="3" name="diameter"/>
           <attributeEditorField showLabel="1" index="6" name="cover_material"/>
+          <attributeEditorField showLabel="1" index="5" name="level"/>
+          <attributeEditorField showLabel="1" index="7" name="positional_accuracy"/>
+          <attributeEditorField showLabel="1" index="9" name="venting"/>
+          <attributeEditorField showLabel="1" index="4" name="fastening"/>
           <attributeEditorField showLabel="1" index="8" name="sludge_bucket"/>
-          <attributeEditorField showLabel="1" index="11" name="remark"/>
-          <attributeEditorField showLabel="1" index="12" name="renovation_demand"/>
           <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
           <attributeEditorField showLabel="1" index="-1" name="provider"/>
-          <attributeEditorField showLabel="1" index="17" name="co_obj_id"/>
+          <attributeEditorField showLabel="1" index="12" name="renovation_demand"/>
+          <attributeEditorField showLabel="1" index="11" name="remark"/>
+          <attributeEditorField showLabel="1" index="2" name="cover_shape"/>
+          <attributeEditorField showLabel="1" index="1" name="brand"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Ouvrage" groupBox="0" columnCount="0">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Ouvrage" groupBox="0" columnCount="2">
+          <attributeEditorField showLabel="1" index="0" name="obj_id"/>
+          <attributeEditorField showLabel="1" index="18" name="identifier"/>
           <attributeEditorField showLabel="1" index="19" name="accessibility"/>
-          <attributeEditorField showLabel="1" index="39" name="_depth"/>
-          <attributeEditorField showLabel="1" index="20" name="contract_section"/>
-          <attributeEditorField showLabel="1" index="21" name="financing"/>
-          <attributeEditorField showLabel="1" index="22" name="gross_costs"/>
-          <attributeEditorField showLabel="1" index="23" name="inspection_interval"/>
           <attributeEditorField showLabel="1" index="24" name="location_name"/>
-          <attributeEditorField showLabel="1" index="25" name="records"/>
-          <attributeEditorField showLabel="1" index="27" name="renovation_necessity"/>
-          <attributeEditorField showLabel="1" index="28" name="replacement_value"/>
-          <attributeEditorField showLabel="1" index="29" name="rv_base_year"/>
-          <attributeEditorField showLabel="1" index="30" name="rv_construction_type"/>
-          <attributeEditorField showLabel="1" index="31" name="status"/>
-          <attributeEditorField showLabel="1" index="32" name="structure_condition"/>
-          <attributeEditorField showLabel="1" index="33" name="subsidies"/>
           <attributeEditorField showLabel="1" index="34" name="year_of_construction"/>
+          <attributeEditorField showLabel="1" index="31" name="status"/>
+          <attributeEditorField showLabel="1" index="27" name="renovation_necessity"/>
+          <attributeEditorField showLabel="1" index="32" name="structure_condition"/>
           <attributeEditorField showLabel="1" index="35" name="year_of_replacement"/>
           <attributeEditorField showLabel="1" index="36" name="fk_owner"/>
           <attributeEditorField showLabel="1" index="37" name="fk_operator"/>
-          <attributeEditorField showLabel="1" index="0" name="obj_id"/>
+          <attributeEditorField showLabel="1" index="23" name="inspection_interval"/>
+          <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
+          <attributeEditorField showLabel="1" index="20" name="contract_section"/>
+          <attributeEditorField showLabel="1" index="25" name="records"/>
+          <attributeEditorField showLabel="1" index="21" name="financing"/>
+          <attributeEditorField showLabel="1" index="22" name="gross_costs"/>
+          <attributeEditorField showLabel="1" index="28" name="replacement_value"/>
+          <attributeEditorField showLabel="1" index="33" name="subsidies"/>
+          <attributeEditorField showLabel="1" index="29" name="rv_base_year"/>
+          <attributeEditorField showLabel="1" index="30" name="rv_construction_type"/>
+          <attributeEditorField showLabel="1" index="39" name="_depth"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'manhole'" name="Chambre" groupBox="0" columnCount="1">
+          <attributeEditorField showLabel="1" index="43" name="manhole_function"/>
           <attributeEditorField showLabel="1" index="40" name="dimension1"/>
           <attributeEditorField showLabel="1" index="41" name="dimension2"/>
-          <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
-          <attributeEditorField showLabel="1" index="43" name="manhole_function"/>
           <attributeEditorField showLabel="1" index="44" name="material"/>
           <attributeEditorField showLabel="1" index="45" name="surface_inflow"/>
+          <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
+          <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'special_structure'" name="Ouvrage spécial" groupBox="0" columnCount="1">
-          <attributeEditorField showLabel="1" index="49" name="bypass"/>
           <attributeEditorField showLabel="1" index="50" name="special_structure_function"/>
-          <attributeEditorField showLabel="1" index="51" name="stormwater_tank_arrangement"/>
-          <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
+          <attributeEditorField showLabel="1" index="49" name="bypass"/>
           <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
+          <attributeEditorField showLabel="1" index="51" name="stormwater_tank_arrangement"/>
+          <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
+          <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'discharge_point'" name="Exutoir" groupBox="0" columnCount="1">
-          <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
-          <attributeEditorField showLabel="1" index="52" name="highwater_level"/>
-          <attributeEditorField showLabel="1" index="53" name="relevance"/>
           <attributeEditorField showLabel="1" index="54" name="terrain_level"/>
-          <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
+          <attributeEditorField showLabel="1" index="52" name="highwater_level"/>
           <attributeEditorField showLabel="1" index="55" name="waterlevel_hydraulic"/>
+          <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
+          <attributeEditorField showLabel="1" index="53" name="relevance"/>
+          <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'infiltration_installation'" name="Installation dinfiltration" groupBox="0" columnCount="1">
-          <attributeEditorField showLabel="1" index="57" name="defects"/>
+          <attributeEditorField showLabel="1" index="61" name="kind"/>
+          <attributeEditorField showLabel="1" index="40" name="dimension1"/>
+          <attributeEditorField showLabel="1" index="41" name="dimension2"/>
+          <attributeEditorField showLabel="1" index="62" name="labeling"/>
+          <attributeEditorField showLabel="1" index="65" name="watertightness"/>
+          <attributeEditorField showLabel="1" index="64" name="vehicle_access"/>
           <attributeEditorField showLabel="1" index="58" name="distance_to_aquifer"/>
           <attributeEditorField showLabel="1" index="59" name="effective_area"/>
           <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
-          <attributeEditorField showLabel="1" index="61" name="kind"/>
-          <attributeEditorField showLabel="1" index="62" name="labeling"/>
           <attributeEditorField showLabel="1" index="63" name="seepage_utilization"/>
-          <attributeEditorField showLabel="1" index="64" name="vehicle_access"/>
-          <attributeEditorField showLabel="1" index="65" name="watertightness"/>
-          <attributeEditorField showLabel="1" index="40" name="dimension1"/>
-          <attributeEditorField showLabel="1" index="41" name="dimension2"/>
+          <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
+          <attributeEditorField showLabel="1" index="57" name="defects"/>
           <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Noeud" groupBox="0" columnCount="0">
           <attributeEditorField showLabel="1" index="66" name="wn_obj_id"/>
-          <attributeEditorField showLabel="1" index="67" name="backflow_level"/>
-          <attributeEditorField showLabel="1" index="68" name="bottom_level"/>
           <attributeEditorField showLabel="1" index="69" name="wn_identifier"/>
+          <attributeEditorField showLabel="1" index="68" name="bottom_level"/>
+          <attributeEditorField showLabel="1" index="67" name="backflow_level"/>
           <attributeEditorField showLabel="1" index="70" name="wn_remark"/>
           <attributeEditorField showLabel="1" index="71" name="wn_last_modification"/>
           <attributeEditorField showLabel="1" index="-1" name="wn_dataowner"/>
@@ -13760,7 +13780,7 @@ def my_form_open(dialog, layer, feature):
         <default field="last_modification" expression=""/>
         <default field="fk_dataowner" expression=""/>
         <default field="fk_provider" expression=""/>
-        <default field="ws_type" expression=""/>
+        <default field="ws_type" expression="'manhole'"/>
         <default field="co_obj_id" expression=""/>
         <default field="identifier" expression=""/>
         <default field="accessibility" expression=""/>
@@ -14117,8 +14137,8 @@ def my_form_open(dialog, layer, feature):
     <WMSContactPosition type="QString"></WMSContactPosition>
     <PositionPrecision>
       <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-      <DegreeFormat type="QString">D</DegreeFormat>
+      <Automatic type="bool">false</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
     </PositionPrecision>
     <Gui>
       <SelectionColorBluePart type="int">0</SelectionColorBluePart>
