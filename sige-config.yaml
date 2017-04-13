@@ -1,9 +1,9 @@
 # QGEP customization template file
 
-qgis_bin: ${HOME}/opt/QGIS2/build/output/bin/qgis
-output_project: ${HOME}/Documents/QGEP/sige/qgis-project/qgep_sige_auto.qgs
+qgis_bin: /home/drouzaud/opt/QGIS2/build/output/bin/qgis
+output_project: /home/drouzaud/Documents/QGEP/sige/qgis-project/qgep_sige_auto.qgs
 
-style_file: ${HOME}/Documents/QGEP/sige/qgis-project/styles/qgep.style
+style_file: /home/drouzaud/Documents/QGEP/sige/qgis-project/styles/qgep.style
 
 srid: 2056
 

@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.5">
+<qgis projectname="" version="2.18.6">
   <title></title>
   <autotransaction active="1"/>
   <evaluateDefaultValues active="1"/>
@@ -124,7 +124,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Dispositif d'accès">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="uDispositif d'accès">
         <customproperties/>
         <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vl_access_aid_kind" source="service='pg_qgep' key='code' table=&quot;qgep&quot;.&quot;vl_access_aid_kind&quot; sql=" name="vl_access_aid_kind">
           <customproperties/>
@@ -373,10 +373,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2555016.53727703355252743</xmin>
-      <ymin>1139796.4614170053973794</ymin>
-      <xmax>2564699.46272296644747257</xmax>
-      <ymax>1148557.5385829946026206</ymax>
+      <xmin>2550901.65365537069737911</xmin>
+      <ymin>1139796.46141674648970366</ymin>
+      <xmax>2568814.34634462930262089</xmax>
+      <ymax>1148557.53858325351029634</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -396,6 +396,7 @@
     <layer_coordinate_transform_info>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_wastewater_structure"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_wastewater_structure"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreeMap20170131085532398"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_reach"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
@@ -653,7 +654,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="Dispositif d'accès">
+      <legendgroup open="false" checked="Qt::Checked" name="uDispositif d'accès">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vl_access_aid_kind" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vl_access_aid_kind" visible="1"/>
@@ -930,7 +931,7 @@
           <widgetv2config fieldEditable="0" DocumentViewer="1" FileWidgetButton="1" UseLink="1" constraint="" FileWidget="1" StorageMode="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="obj_id" index="0" name=""/>
         <alias field="class" index="1" name=""/>
@@ -962,10 +963,10 @@
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -1059,7 +1060,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="obj_id" index="0" name=""/>
         <alias field="identifier" index="1" name=""/>
@@ -1086,10 +1087,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -1183,7 +1184,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -1595,7 +1596,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -1680,7 +1681,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="1" Relation="re_maintenance_wasterwaterstructure_maintenance" ReadOnly="0" constraint="" MapIdentification="0" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="obj_id" index="0" name=""/>
         <alias field="fk_wastewater_structure" index="1" name=""/>
@@ -1697,10 +1698,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -1817,7 +1818,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -1903,7 +1904,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -1923,10 +1924,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2035,7 +2036,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2144,7 +2145,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2257,7 +2258,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2367,7 +2368,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2480,7 +2481,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2590,7 +2591,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2699,7 +2700,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2808,7 +2809,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2917,7 +2918,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3003,7 +3004,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3023,10 +3024,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3135,7 +3136,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3244,7 +3245,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3330,7 +3331,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3350,10 +3351,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3439,7 +3440,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3459,10 +3460,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="115674336">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3548,7 +3549,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3568,10 +3569,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="30">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3657,7 +3658,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3677,10 +3678,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="124971000">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3766,7 +3767,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3786,10 +3787,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="482295424">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3875,7 +3876,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -3895,10 +3896,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="117415795">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4007,7 +4008,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4093,7 +4094,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -4113,10 +4114,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="4">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4202,7 +4203,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -4222,10 +4223,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="115828656">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4334,7 +4335,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4443,7 +4444,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4552,7 +4553,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4638,7 +4639,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -4658,10 +4659,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4747,7 +4748,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="vsacode" index="1" name=""/>
@@ -4767,10 +4768,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4879,7 +4880,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4988,7 +4989,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5097,7 +5098,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5206,7 +5207,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5315,7 +5316,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5424,7 +5425,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5533,7 +5534,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5642,7 +5643,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5751,7 +5752,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5860,7 +5861,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -5969,7 +5970,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6078,7 +6079,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6187,7 +6188,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6311,7 +6312,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -6436,7 +6437,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6545,7 +6546,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6654,7 +6655,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6763,7 +6764,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6872,7 +6873,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6981,7 +6982,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -7097,7 +7098,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -7237,7 +7238,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -7369,7 +7370,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -7581,10 +7582,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="field" name="detail_geometry_3d_geometry"/>
         </columns>
       </attributetableconfig>
-      <editform>../QGEP/project/forms/channel.ui</editform>
+      <editform>../QGEP-customizer/QGEP/project/forms/channel.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>uifilelayout</editorlayout>
@@ -8023,7 +8024,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -8161,7 +8162,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -8291,7 +8292,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -8458,7 +8459,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="gid" index="0" name=""/>
         <alias field="obj_id" index="1" name=""/>
@@ -8477,10 +8478,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -8647,7 +8648,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="gid" index="0" name=""/>
         <alias field="obj_id" index="1" name=""/>
@@ -8672,10 +8673,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -8818,7 +8819,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="damage_type" index="0" name=""/>
         <alias field="obj_id" index="1" name=""/>
@@ -8875,10 +8876,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="vl_damage_single_damage_class_value_en"/>
         </columns>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -9095,7 +9096,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="maintenance_type" index="0" name=""/>
         <alias field="obj_id" index="1" name=""/>
@@ -9170,10 +9171,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="vl_maintenance_event_kind_value_fr"/>
         </columns>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -11439,10 +11440,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../QGEP/project/forms/reach.ui</editform>
+      <editform>../QGEP-customizer/QGEP/project/forms/reach.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -13448,11 +13449,11 @@ def my_form_open(dialog, layer, feature):
         <alias field="fk_owner" index="36" name=""/>
         <alias field="fk_operator" index="37" name=""/>
         <alias field="_label" index="38" name=""/>
-        <alias field="_depth" index="39" name="profondeur"/>
+        <alias field="_depth" index="39" name=""/>
         <alias field="dimension1" index="40" name="dimension1"/>
         <alias field="dimension2" index="41" name="dimension2"/>
         <alias field="upper_elevation" index="42" name="cote_plafond"/>
-        <alias field="manhole_function" index="43" name="fonction"/>
+        <alias field="manhole_function" index="43" name=""/>
         <alias field="material" index="44" name="materiau"/>
         <alias field="surface_inflow" index="45" name="arrivee_eaux_sup"/>
         <alias field="channel_usage_current" index="46" name=""/>
@@ -13573,7 +13574,7 @@ def my_form_open(dialog, layer, feature):
       <editform>$HOME</editform>
       <editforminit>vw_cover_open</editforminit>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[from qgepplugin.ui.forms import vw_cover_open
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
@@ -13967,7 +13968,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../QGEP/project</annotationform>
+      <annotationform>../QGEP-customizer/QGEP/project</annotationform>
       <aliases>
         <alias field="obj_id" index="0" name=""/>
         <alias field="backflow_level" index="1" name=""/>
@@ -13985,10 +13986,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../QGEP/project</editform>
+      <editform>../QGEP-customizer/QGEP/project</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../QGEP/project</editforminitfilepath>
+      <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -14058,7 +14059,55 @@ def my_form_open(dialog, layer, feature):
     <WMSRestrictedLayers type="QStringList"/>
     <WMSFees type="QString">conditions unknown</WMSFees>
     <Macros>
-      <pythonCode type="QString"></pythonCode>
+      <pythonCode type="QString">from qgis.core import QgsProject
+from qgis.utils import iface
+import qgis2compat.apicompat
+
+from qgis.PyQt.QtXml import QDomNode, QDomDocument
+from qgis.PyQt.QtCore import QFile, QTextStream
+from qgis.PyQt.QtGui import QApplication, QClipboard
+
+actions = []
+style_file = '/home/drouzaud/Documents/QGEP/sige/qgis-project/styles/qgep.style'
+
+def openProject():
+    actions.append(iface.projectMenu().addAction(u"Sauver la symbologie pour QGEP"))
+    actions[0].triggered.connect(copy_style)
+
+def saveProject():
+    pass
+
+def closeProject():
+    iface.projectMenu().removeAction(actions[0])
+
+def copy_style():
+    layer_ids = ['vw_qgep_reach', 'vw_qgep_wastewater_structure']
+
+    doc = QDomDocument('qgis.custom.style')
+    root_node = doc.createElement('qgis.custom.style')
+    doc.appendChild(root_node)
+
+    for layer_id in layer_ids:
+        layer = QgsProject.instance().mapLayer(layer_id)
+
+        layer_node = doc.createElement('layer')
+        layer_node.setAttribute('id', layer.id())
+        root_node.appendChild(layer_node)
+        style_node = doc.createElement('style')
+        errorMsg = ""
+        print layer.writeStyle( style_node, doc, errorMsg )
+        style_node.removeChild(style_node.firstChildElement('edittypes'))
+        layer_node.appendChild(style_node)
+
+    out_file = QFile( style_file )
+    if out_file.open(QFile.WriteOnly):
+      stream = QTextStream( out_file )
+      stream &lt;&lt; doc.toString()
+      out_file.close()
+      print('style file written to {0}'.format(style_file))
+    else:
+      print('error: could not write style file {0}'.format(style_file))
+</pythonCode>
     </Macros>
     <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
     <WCSUrl type="QString"></WCSUrl>
