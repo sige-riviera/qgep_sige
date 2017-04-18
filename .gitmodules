@@ -1,9 +1,9 @@
 [submodule "datamodel"]
 	path = datamodel
 	url = https://github.com/QGEP/datamodel.git
-[submodule "QGEP"]
-	path = QGEP
-	url = https://github.com/QGEP/QGEP.git
 [submodule "cadastre"]
 	path = cadastre
 	url =https://github.com/sige-riviera/cadastre.git
+[submodule "QGEP-customizer"]
+	path = QGEP-customizer
+	url = git@github.com:qwat/QGEP-customizer.git
