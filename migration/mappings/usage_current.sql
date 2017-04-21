@@ -24,6 +24,8 @@ SET default_with_oids = false;
 -- Name: map_usage_current; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
 --
 
+DROP TABLE IF EXISTS map_usage_current;
+
 CREATE TABLE map_usage_current (
     old integer NOT NULL,
     new integer NOT NULL
@@ -38,16 +40,17 @@ ALTER TABLE sa.map_usage_current OWNER TO postgres;
 -- Data for Name: map_usage_current; Type: TABLE DATA; Schema: sa; Owner: postgres
 --
 
-COPY map_usage_current (old, new) FROM stdin;
-1	4524
-4	4522
-5	4514
-6	4526
-7	4571
-10	5322
-11	4571
-12	5322
-\.
+INSERT INTO map_usage_current (old, new) VALUES
+(1,	4524), -- Eaux industrielles -> industrial wastewater
+(2,	4571), -- conduite de drainage -> inconnu / ajouter channel_function hydraulic seepage waterdrain	
+(4,	4522), -- Eaux mixtes -> combined wastewater
+(5,	4520), -- Eaux pluviales -> rain_wastewater
+(6,	4526), -- Eaux usées -> wastewater
+(7,	4571), -- inconnu -> unknown
+(10,	5322), -- tout a l'égout -> combined wastewater
+(11,	4514), -- Eaux claires -> clean wastewater
+(12,	5322) -- inconnu au bataillon -> DOC SIGE?
+;
 
 
 --

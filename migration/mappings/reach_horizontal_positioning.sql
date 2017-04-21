@@ -24,6 +24,8 @@ SET default_with_oids = false;
 -- Name: map_horizontal_positioning; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
 --
 
+DROP TABLE IF EXISTS map_horizontal_positioning;
+
 CREATE TABLE map_horizontal_positioning (
     old integer NOT NULL,
     new integer NOT NULL
@@ -38,12 +40,12 @@ ALTER TABLE sa.map_horizontal_positioning OWNER TO postgres;
 -- Data for Name: map_horizontal_positioning; Type: TABLE DATA; Schema: sa; Owner: postgres
 --
 
-COPY map_horizontal_positioning (old, new) FROM stdin;
-4	5379
-3	5380
-2	5378
-1	5378
-\.
+INSERT INTO map_horizontal_positioning (old, new) VALUES
+(4,	5379), -- unknown
+(3,	5380), -- inaccurate
+(2,	5378), -- accurate 
+(1,	5378) -- accurate
+;
 
 
 --

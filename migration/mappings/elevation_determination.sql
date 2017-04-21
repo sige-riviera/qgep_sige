@@ -24,6 +24,8 @@ SET default_with_oids = false;
 -- Name: map_elevation_determination; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
 --
 
+DROP TABLE IF EXISTS map_elevation_determination;
+
 CREATE TABLE map_elevation_determination (
     old integer NOT NULL,
     new integer

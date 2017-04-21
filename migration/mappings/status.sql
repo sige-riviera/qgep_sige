@@ -24,6 +24,8 @@ SET default_with_oids = false;
 -- Name: map_status; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
 --
 
+DROP TABLE IF EXISTS map_status;
+
 CREATE TABLE map_status (
     old integer NOT NULL,
     new integer NOT NULL
@@ -38,13 +40,22 @@ ALTER TABLE sa.map_status OWNER TO postgres;
 -- Data for Name: map_status; Type: TABLE DATA; Schema: sa; Owner: postgres
 --
 
-COPY map_status (old, new) FROM stdin;
-1	8493
-3	6526
-4	3633
-6	6530
-7	3027
-\.
+INSERT INTO map_status (old, new) VALUES
+(1,	8493), -- existant -> operationnal
+(2,	7959), -- planifie -> planned
+(3,	6526), -- fictif -> calculation alternative
+(4,	3633), -- hors service -> inoperative
+(5,	6532), -- condamne -> abandonned filled
+(6,	6530), -- changement de fonction -> operationnal tentative
+(7,	3027), -- abandonne -> unknown
+(8,	6533), -- a remplacer -> will be suspended
+(9,	3633), -- aboli -> inoperative
+(10,	6530), -- provisoire -> operationnal tentative
+(11,	3027), -- inconnu -> unknown
+(12,	3027), -- autre -> unknown
+(100,	8493), -- en service -> operationnal
+(101,	6530) -- en reserve -> operationnal tentative
+;
 
 
 --

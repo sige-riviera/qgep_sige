@@ -1,10 +1,4 @@
 --
--- PostgreSQL database dump
---
-
--- Dumped from database version 9.3.6
--- Dumped by pg_dump version 9.3.6
--- Started on 2015-06-02 18:12:52 CEST
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -20,50 +14,52 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- TOC entry 584 (class 1259 OID 484607)
--- Name: map_manhole_function; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
---
 
-CREATE TABLE map_manhole_function (
+DROP TABLE IF EXISTS map_structure_type;
+
+CREATE TABLE map_structure_type (
     old integer NOT NULL,
-    new integer
+    new text
 );
 
 
-ALTER TABLE sa.map_manhole_function OWNER TO postgres;
+ALTER TABLE sa.map_structure_type OWNER TO postgres;
 
---
--- TOC entry 5386 (class 0 OID 484607)
--- Dependencies: 584
--- Data for Name: map_manhole_function; Type: TABLE DATA; Schema: sa; Owner: postgres
---
+--'manhole'
 
-COPY map_manhole_function (old, new) FROM stdin;
-10005	204
-10006	204
-10003	204
-10002	4536
-3	4532
-14	204
-24	4536
-26	5346
-36	\N
-38	5345
-\.
+INSERT INTO map_structure_type (old, new) VALUES
+(10005	,'manhole'), --SIGE
+(10006	,'manhole'), --SIGE
+(10003	,'manhole'), --SIGE
+(10002	,'manhole'), --SIGE
+(3	,'manhole'), -- drop_structure
+(4	,'manhole'), -- separateur d'hydro  -> Oil separator
+(8	,'manhole'), -- sparateur de graisses -> Oil separator
+(10	,'manhole'), -- évacuation des voies ferroviaires -> rail_track_gully
+(13	,'manhole'), --début du canal -> manhole
+(14	,'manhole'),  -- ouverture de chambre
+(18	,'manhole'), -- chambre de contrôle -> manhole
+(22	,'manhole'), -- chambre avec pompe -> manhole
+(24	,'manhole'), -- station de pompage -> pumpstation
+(26	,'manhole'), -- deversoir d'orage -> stomwater_tank
+(27	,'manhole'), -- recolte des eaux de toiture -> rain_water_manhole
+(28	,'manhole'), -- regard de visite -> manhole
+(32	,'manhole'), -- depotoir -> slurry collector
+(33	,'manhole'), -- chambre avec deversoir de secours -> manhole /define overflow object + overflow function
+(34	,'manhole'), -- regard de nettoyage -> manhole (pas d'équivalence)
+(35	,'manhole'), -- regard de rincage -> manhole (pas d'équivalence)
+(37	,'manhole'), -- tuyau de chute par temps sec -> manhole + dryweather flum 
+(38	,'manhole'), -- inconnu -> unknown:w
+(1	,'special_structure'),
+(2	,'special_structure'),
+(15	,'special_structure'),
+(29	,'special_structure'),
+(36	,'special_structure'),
+(43	,'special_structure'),
+(41	,'infiltration_installation')
+;
 
 
---
--- TOC entry 5228 (class 2606 OID 484611)
--- Name: map_manhole_function_pkey; Type: CONSTRAINT; Schema: sa; Owner: postgres; Tablespace: 
---
-
-ALTER TABLE ONLY map_manhole_function
-    ADD CONSTRAINT map_manhole_function_pkey PRIMARY KEY (old);
-
-
--- Completed on 2015-06-02 18:12:52 CEST
-
---
--- PostgreSQL database dump complete
---
+ALTER TABLE ONLY map_structure_type
+    ADD CONSTRAINT map_structure_type_pkey PRIMARY KEY (old);
 

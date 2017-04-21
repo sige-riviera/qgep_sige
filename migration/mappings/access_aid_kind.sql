@@ -24,6 +24,8 @@ SET default_with_oids = false;
 -- Name: map_access_aid_kind; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
 --
 
+DROP TABLE IF EXISTS map_access_aid_kind;
+
 CREATE TABLE map_access_aid_kind (
     old integer NOT NULL,
     new integer NOT NULL

@@ -24,6 +24,8 @@ SET default_with_oids = false;
 -- Name: map_function_hydraulic; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
 --
 
+DROP TABLE IF EXISTS map_function_hydraulic;
+
 CREATE TABLE map_function_hydraulic (
     old integer NOT NULL,
     new integer NOT NULL
