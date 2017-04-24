@@ -61,11 +61,12 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/organisation
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/wastewater_structure_cover.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/profiles.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/reach_channel.sql
+psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/reach_channel_leitungen.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/prank_weir.sql
 
 # Recreate views
-psql "service=${PGSERVICE}" -v ON_ERROR_STOP=1  -f ${DIR}/datamodel/07_views_for_network_tracking.sql # not sure why we need to rerun this one
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/90_create_topology.sql
+psql "service=${PGSERVICE}" -v ON_ERROR_STOP=1  -f ${DIR}/datamodel/07_views_for_network_tracking.sql # not sure why we need to rerun this one
 
 # Change owner
 PGSERVICE=${PGSERVICE} OWNER=qgep SCHEMA=qgep DATABASE=${PGSERVICE} ${DIR}/datamodel/scripts/change_owner.sh

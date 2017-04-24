@@ -26,7 +26,7 @@ SET default_with_oids = false;
 DROP TABLE IF EXISTS map_function_hierarchic;
 
 CREATE TABLE map_function_hierarchic (
-    old integer NOT NULL,
+    old integer,
     new integer NOT NULL
 );
 
@@ -51,8 +51,8 @@ INSERT INTO map_function_hierarchic (old, new) VALUES
 -- Name: map_function_hierarchic_pkey; Type: CONSTRAINT; Schema: sa; Owner: postgres; Tablespace: 
 --
 
-ALTER TABLE ONLY map_function_hierarchic
-    ADD CONSTRAINT map_function_hierarchic_pkey PRIMARY KEY (old, new);
+--ALTER TABLE ONLY map_function_hierarchic
+--    ADD CONSTRAINT map_function_hierarchic_pkey PRIMARY KEY (old, new);
 
 
 -- Completed on 2015-06-02 18:12:52 CEST
