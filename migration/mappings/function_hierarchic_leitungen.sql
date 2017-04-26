@@ -1,10 +1,5 @@
 --
--- PostgreSQL database dump
---
-
--- Dumped from database version 9.3.6
--- Dumped by pg_dump version 9.3.6
--- Started on 2015-06-02 18:12:52 CEST
+-- Migration mapping script 
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -19,10 +14,6 @@ SET default_tablespace = '';
 
 SET default_with_oids = false;
 
---
--- TOC entry 584 (class 1259 OID 484607)
--- Name: map_function_hierarchic; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
---
 DROP TABLE IF EXISTS map_function_hierarchic_leitungen;
 
 CREATE TABLE map_function_hierarchic_leitungen (
@@ -30,34 +21,13 @@ CREATE TABLE map_function_hierarchic_leitungen (
     new integer NOT NULL
 );
 
-
 ALTER TABLE sa.map_function_hierarchic_leitungen OWNER TO postgres;
 
---
--- TOC entry 5386 (class 0 OID 484607)
--- Dependencies: 584
--- Data for Name: map_function_hierarchic; Type: TABLE DATA; Schema: sa; Owner: postgres
---
-
 INSERT INTO map_function_hierarchic_leitungen (old, new) VALUES 
-(3,	5069),
-(8,	5069), --Has to have transport as hydraulic function
-(9,	5074), --Does it need to be princ/sec distinct? how with actual data?
-(101,	5075), --Clarify with exploitation road / renovation conduction / residential
+(1,	5065), -- évacuation des eaux de bâtiments -> swwf.residential_drainage
+(2,	5065), -- évacuation des eaux de bien fonds -> swwf.residential_drainage
+(3,	5069), -- conduite de transport -> swwf.main_drain // la notion de transport est reprise dans vl_channel_function
+(100,	5069), -- primaire -> pwwf.main_drain
+(101,	5075), -- Clarify with exploitation road / renovation conduction / residential
 (NULL,	5075) -- null -> unkown secondary
 ;
---
--- TOC entry 5228 (class 2606 OID 484611)
--- Name: map_function_hierarchic_pkey; Type: CONSTRAINT; Schema: sa; Owner: postgres; Tablespace: 
---
-
---ALTER TABLE ONLY map_function_hierarchic_leitungen
---    ADD CONSTRAINT map_function_hierarchic_leitungen_pkey PRIMARY KEY (old, new);
-
-
--- Completed on 2015-06-02 18:12:52 CEST
-
---
--- PostgreSQL database dump complete
---
-
