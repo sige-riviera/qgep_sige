@@ -17,8 +17,8 @@ SET default_with_oids = false;
 DROP TABLE IF EXISTS map_structure_type;
 
 CREATE TABLE map_structure_type (
-    old integer NOT NULL,
-    new text
+    old integer,
+    new text not NULL
 );
 
 ALTER TABLE sa.map_structure_type OWNER TO postgres;

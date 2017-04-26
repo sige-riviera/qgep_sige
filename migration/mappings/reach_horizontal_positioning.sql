@@ -28,5 +28,5 @@ INSERT INTO map_horizontal_positioning (old, new) VALUES
 (3,	5380), -- imprécis -> inaccurate
 (2,	5378), -- précis -> accurate
 (1,	5380), -- digitalise -> inaccurate
-(NULL,	5379), -- NULL -> unknown
+(NULL,	5379) -- NULL -> unknown
 ;

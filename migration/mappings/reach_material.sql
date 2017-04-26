@@ -21,7 +21,6 @@ CREATE TABLE map_reach_material (
     new integer NOT NULL
 );
 
-
 ALTER TABLE sa.map_reach_material OWNER TO postgres;
 
 INSERT INTO map_reach_material (old, new) VALUES
@@ -71,9 +70,9 @@ INSERT INTO map_reach_material (old, new) VALUES
 --(10003,	NULL), -- SIGE
 --(10004,	NULL), -- SIGE
 (10006,	5081), -- SIGE
-(10005,	2754) -- SIGE
+(10005,	2754), -- SIGE
 --(10007,	NULL), -- SIGE
 (10008,	5080), -- SIGE
 --(10009,	NULL) -- SIGE
-(NULL,	3016), -- NULL -> Unknown
+(NULL,	3016) -- NULL -> Unknown
 ;
