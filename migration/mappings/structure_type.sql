@@ -1,4 +1,5 @@
 --
+-- Migration mapping script for manhole functions
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -13,19 +14,14 @@ SET default_tablespace = '';
 
 SET default_with_oids = false;
 
---
-
 DROP TABLE IF EXISTS map_manhole_function;
 
 CREATE TABLE map_manhole_function (
-    old integer NOT NULL,
-    new integer
+    old integer,
+    new integer NOT NULL
 );
 
-
 ALTER TABLE sa.map_manhole_function OWNER TO postgres;
-
---
 
 INSERT INTO map_manhole_function (old, new) VALUES
 (10005,	204), --SIGE
@@ -49,10 +45,6 @@ INSERT INTO map_manhole_function (old, new) VALUES
 (34,	204), -- regard de nettoyage -> manhole (pas d'équivalence)
 (35,	204), -- regard de rincage -> manhole (pas d'équivalence)
 (37,	204), -- tuyau de chute par temps sec -> manhole + dryweather flum 
-(38,	5345) -- inconnu -> unknown:w
+(38,	5345), -- inconnu -> unknown
+(NULL,	5345) -- NULL -> unknown
 ;
-
-
-ALTER TABLE ONLY map_manhole_function
-    ADD CONSTRAINT map_manhole_function_pkey PRIMARY KEY (old);
-

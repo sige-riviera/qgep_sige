@@ -1,10 +1,5 @@
 --
--- PostgreSQL database dump
---
-
--- Dumped from database version 9.3.6
--- Dumped by pg_dump version 9.3.6
--- Started on 2015-06-02 18:12:52 CEST
+-- Migration mapping script for status
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -19,26 +14,14 @@ SET default_tablespace = '';
 
 SET default_with_oids = false;
 
---
--- TOC entry 584 (class 1259 OID 484607)
--- Name: map_status; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
---
-
 DROP TABLE IF EXISTS map_status;
 
 CREATE TABLE map_status (
-    old integer NOT NULL,
+    old integer,
     new integer NOT NULL
 );
 
-
 ALTER TABLE sa.map_status OWNER TO postgres;
-
---
--- TOC entry 5386 (class 0 OID 484607)
--- Dependencies: 584
--- Data for Name: map_status; Type: TABLE DATA; Schema: sa; Owner: postgres
---
 
 INSERT INTO map_status (old, new) VALUES
 (1,	8493), -- existant -> operationnal
@@ -54,22 +37,6 @@ INSERT INTO map_status (old, new) VALUES
 (11,	3027), -- inconnu -> unknown
 (12,	3027), -- autre -> unknown
 (100,	8493), -- en service -> operationnal
-(101,	6530) -- en reserve -> operationnal tentative
+(101,	6530), -- en reserve -> operationnal tentative
+(NULL,	3027) -- NULL -> unknown
 ;
-
-
---
--- TOC entry 5228 (class 2606 OID 484611)
--- Name: map_status_pkey; Type: CONSTRAINT; Schema: sa; Owner: postgres; Tablespace: 
---
-
-ALTER TABLE ONLY map_status
-    ADD CONSTRAINT map_status_pkey PRIMARY KEY (old, new);
-
-
--- Completed on 2015-06-02 18:12:52 CEST
-
---
--- PostgreSQL database dump complete
---
-
