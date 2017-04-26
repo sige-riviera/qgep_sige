@@ -1,4 +1,5 @@
 --
+-- Migration mapping script for structure type
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -13,8 +14,6 @@ SET default_tablespace = '';
 
 SET default_with_oids = false;
 
---
-
 DROP TABLE IF EXISTS map_structure_type;
 
 CREATE TABLE map_structure_type (
@@ -22,10 +21,7 @@ CREATE TABLE map_structure_type (
     new text
 );
 
-
 ALTER TABLE sa.map_structure_type OWNER TO postgres;
-
---'manhole'
 
 INSERT INTO map_structure_type (old, new) VALUES
 (10005	,'manhole'), --SIGE
@@ -56,10 +52,6 @@ INSERT INTO map_structure_type (old, new) VALUES
 (29	,'special_structure'),
 (36	,'special_structure'),
 (43	,'special_structure'),
-(41	,'infiltration_installation')
+(41	,'infiltration_installation'),
+(NULL   ,'manhole') -- NULL -> manhole
 ;
-
-
-ALTER TABLE ONLY map_structure_type
-    ADD CONSTRAINT map_structure_type_pkey PRIMARY KEY (old);
-

@@ -25,24 +25,16 @@ CREATE TABLE map_function_hierarchic (
 ALTER TABLE sa.map_function_hierarchic OWNER TO postgres;
 
 INSERT INTO map_function_hierarchic (old, new) VALUES 
-(1,	5069), -- Cunette -> main drain
-(2,	5069), -- Conduite de refoulement -> main drain
-(3,	5069), -- Conduite de retrecissement -> main drain
-(4,	5069), -- Syphon inversé -> main drain
-(5,	5069), -- Conduite a ecoulement libre -> main drain
-(6,	5069), -- conduite d'infiltration ou de drainage -> main drain
-(7,	5069), -- conduite d'accumulation -> main drain
-(8,	5069), -- Conduite de transport -> main_drain
-(9,	5069), -- Conduite de rincage -> 
-(10,	5074), -- inconnu -> unknown primary
-(11,	5069), -- exutoire -> main drain
-(12,	5069), -- conduite d'accumulation
-(13,	5066), -- autre -> pwwf.other
-(14,	5072), -- Evacuation des eaux de routes -> pwwf.road_drainage
-(15,	5064), -- Evacuation des eaux de bâtiments -> pwwf.residential_drainage
-(16,	5072), -- Evacuation des eaux de routes et de bâtiments -> pwwf.road_drainage
-(17,	5064), -- Evacuation des eaux de bien-fonds -> pwwf.residential_drainage
-(18,	5069), -- Evacuation des eaux traitées à la STEP -> main_drain
-(19,	5064), -- Evacuation eau potable -> pwwf.main_drain
+(1,	5064), -- Evacuation des eaux de bien-fonds -> pwwf.residential_drainage
+(2,	5072), -- Evacuation des eaux de voies ferrees -> pwwf.road_drainage
+(3,	5069), -- Collecteur principal -> main_drain
+(4,	5068), -- Eaux publiques -> pwwf.water_bodies
+(5,	5069), -- Collecteur d'accumulation -> main_drain
+(6,	5062), -- Conduite d'assainissement -> pwwf.renovation_conduction
+(7,	5072), -- Evacuation des eaux de routes -> pwwf.road_drainage 
+(8,	5069), -- Conduite de transport -> main_drainage
+(9,	5074), -- inconnu -> unknown primary
+(100,	5064), -- prive -> pwwf.residential_drainage
+(101,	5075), -- collecteur secondaire -> secondary unknown
 (NULL,	5074) -- null -> unkown primary
 ;
