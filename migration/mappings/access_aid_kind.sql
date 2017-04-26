@@ -26,7 +26,7 @@ CREATE TABLE map_access_aid_kind (
 ALTER TABLE sa.map_access_aid_kind OWNER TO postgres;
 
 INSERT INTO map_access_aid_kind (old, new) VALUES
-(1,	240), -- échelle -> ladder 
+(1,	240), -- échelle -> ladder
 (2,	91), -- niche, marchepieds -> footsteps_niches
 (3,	92), -- sans entrée -> none
 (4,	241), -- échelons -> step_iron
