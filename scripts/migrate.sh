@@ -69,4 +69,4 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/90_create_to
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=1  -f ${DIR}/datamodel/07_views_for_network_tracking.sql # not sure why we need to rerun this one
 
 # Change owner
-PGSERVICE=${PGSERVICE} OWNER=qgep SCHEMA=qgep DATABASE=${PGSERVICE} ${DIR}/datamodel/scripts/change_owner.sh
+PGSERVICE=${PGSERVICE} OWNER=qgep SCHEMA=qgep DATABASE=qgep ${DIR}/datamodel/scripts/change_owner.sh
