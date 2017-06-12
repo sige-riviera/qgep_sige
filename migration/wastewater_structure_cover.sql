@@ -42,7 +42,7 @@ INSERT INTO qgep.vw_qgep_wastewater_structure
   ws_type,
   co_identifier,
   bottom_level,
-  --depth,
+  _depth,
   year_of_construction,
   dimension1,
   dimension2,
@@ -62,21 +62,22 @@ INSERT INTO qgep.vw_qgep_wastewater_structure
 SELECT
   COALESCE(st_type.new,'manhole'),
   schacht.name2,
-  unten_hoehe,
+  schacht.unten_hoehe,
+  tiefe,
   --CASE  -- remove depth (apparently level was used instead)
   --    WHEN tiefe < 100 THEN 1000*tiefe
         --ELSE NULL
   --END,
-  baujahr,
-  dn,
-  breite,
+  schacht.baujahr, -- construction year
+  schacht.dn, -- diameter nominal
+  schacht.breite, -- width
   --EXTRACT(YEAR FROM date_rehabil),
-  ortsbezeichnung,
-  substr(deckel.bemerkung, 1, 80),
-  substr(schacht.bemerkung, 1, 80),
+  schacht.ortsbezeichnung, -- location name
+  substr(deckel.bemerkung, 1, 80), -- remark on cover
+  substr(schacht.bemerkung, 1, 80), -- remark on structure
   --ST_Force2d(ST_Fineltra( ST_SetSRID(ST_MakePoint( deckel_geo.y1, deckel_geo.x1, deckel_geo.z1 ), 21781 ), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95')),
-  ST_Multi(ST_SetSRID(ST_MakePoint( deckel_geo.y1, deckel_geo.x1),21781))::geometry(MultiPoint, 21781),
-  Z1,
+  ST_Multi(ST_SetSRID(ST_MakePoint( schacht_geo.y1, schacht_geo.x1),21781))::geometry(MultiPoint, 21781),
+  schacht_geo.z1,
   --CASE WHEN id_aeration=1 THEN 4533 ELSE mf.new END,
   mf.new,
   stf.new,
@@ -84,15 +85,27 @@ SELECT
   schacht.fid,
   org.obj_id
   
-FROM sa.aw_schacht_deckel deckel
-LEFT JOIN sa.aw_schacht schacht ON deckel.fid_schacht = schacht.fid
+FROM sa.aw_schacht schacht -- Manhole
+LEFT JOIN sa.aw_schacht_geo schacht_geo ON schacht_geo.gid = schacht.gid -- Manhole Geom
+-- Cover / geom
+LEFT JOIN sa.aw_schacht_deckel deckel ON schacht.fid = deckel.fid_schacht
 LEFT JOIN sa.aw_schacht_deckel_geo deckel_geo ON deckel_geo.gid = deckel.gid
+--Bottom / geom
+LEFT JOIN sa.aw_schacht_sohle sohle ON schacht.fid = sohle.fid_schacht
+LEFT JOIN sa.aw_schacht_sohle_geo sohle_geo ON sohle_geo.gid = sohle.gid
+-- Manhole function
 LEFT JOIN sa.map_manhole_function mf ON schacht.id_schachtart = mf.old
+-- Special structure function
 LEFT JOIN sa.map_special_structure_function stf ON schacht.id_schachtart = stf.old
+-- Status
 LEFT JOIN sa.map_status st ON schacht.id_status = st.old
+-- ??
 LEFT JOIN sa.ba_eigentumsverhaeltnis_tbd ev ON ev.id = schacht.id_eigentumsverhaeltnis
+-- Organisation
 LEFT JOIN qgep.od_organisation org ON org.identifier = ev.value
+-- Type
 LEFT JOIN sa.map_structure_type st_type ON schacht.id_schachtart = st_type.old
+-- Filter deleted items
 WHERE COALESCE(deckel.deleted, 0) = 0 AND COALESCE(schacht.deleted, 0) = 0;
 
 -------------------------
@@ -122,6 +135,11 @@ WHERE id_schachtart = 10006;
 
 -------------------------
 -- overflows
+-------------------------
+
+
+-------------------------
+-- Surfacic wastewaterstructure
 -------------------------
 
 

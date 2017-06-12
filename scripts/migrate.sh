@@ -7,7 +7,7 @@ set -e
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/..
 
 # Service to be defined in PG_SERVICE.conf file
-PGSERVICE=pg_qgep
+PGSERVICE=pg_qgep_poc
 
 while getopts ":p:" opt; do
   case $opt in
@@ -68,8 +68,8 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/reach_channe
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/prank_weir.sql
 
 # Recreate views
-psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/90_create_topology.sql
-psql "service=${PGSERVICE}" -v ON_ERROR_STOP=1  -f ${DIR}/datamodel/07_views_for_network_tracking.sql # not sure why we need to rerun this one
+#psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/90_create_topology.sql
+#psql "service=${PGSERVICE}" -v ON_ERROR_STOP=1  -f ${DIR}/datamodel/07_views_for_network_tracking.sql # not sure why we need to rerun this one
 
 # Change owner
-PGSERVICE=${PGSERVICE} OWNER=qgep SCHEMA=qgep DATABASE=qgep ${DIR}/datamodel/scripts/change_owner.sh
+PGSERVICE=${PGSERVICE} OWNER=qgep SCHEMA=qgep DATABASE=qgep_poc ${DIR}/datamodel/scripts/change_owner.sh
