@@ -64,10 +64,6 @@ SELECT
   schacht.name2,
   schacht.unten_hoehe,
   tiefe,
-  --CASE  -- remove depth (apparently level was used instead)
-  --    WHEN tiefe < 100 THEN 1000*tiefe
-        --ELSE NULL
-  --END,
   schacht.baujahr, -- construction year
   schacht.dn, -- diameter nominal
   schacht.breite, -- width
@@ -107,6 +103,17 @@ LEFT JOIN qgep.od_organisation org ON org.identifier = ev.value
 LEFT JOIN sa.map_structure_type st_type ON schacht.id_schachtart = st_type.old
 -- Filter deleted items
 WHERE COALESCE(deckel.deleted, 0) = 0 AND COALESCE(schacht.deleted, 0) = 0;
+
+-------------------------
+-- Update COVERS
+-------------------------
+
+--Update covers geometries
+
+UPDATE qgep.od_wastewater_structure AS ws
+SET identifier = schacht.name2
+FROM sa.aw_schacht AS schacht
+WHERE ws.identifier = schacht.fid::text;
 
 -------------------------
 -- ACCESS AID
