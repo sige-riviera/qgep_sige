@@ -1,10 +1,6 @@
 --
--- PostgreSQL database dump
+-- Migration mapping script for hydraulic functions
 --
-
--- Dumped from database version 9.3.6
--- Dumped by pg_dump version 9.3.6
--- Started on 2015-06-02 18:12:52 CEST
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -19,44 +15,35 @@ SET default_tablespace = '';
 
 SET default_with_oids = false;
 
---
--- TOC entry 584 (class 1259 OID 484607)
--- Name: map_function_hydraulic; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
---
+DROP TABLE IF EXISTS map_function_hydraulic;
 
 CREATE TABLE map_function_hydraulic (
-    old integer NOT NULL,
+    old integer,
     new integer NOT NULL
 );
 
-
 ALTER TABLE sa.map_function_hydraulic OWNER TO postgres;
 
---
--- TOC entry 5386 (class 0 OID 484607)
--- Dependencies: 584
--- Data for Name: map_function_hydraulic; Type: TABLE DATA; Schema: sa; Owner: postgres
---
-
-COPY map_function_hydraulic (old, new) FROM stdin;
-2	23
-5	367
-10	5321
-\.
-
-
---
--- TOC entry 5228 (class 2606 OID 484611)
--- Name: map_function_hydraulic_pkey; Type: CONSTRAINT; Schema: sa; Owner: postgres; Tablespace: 
---
-
-ALTER TABLE ONLY map_function_hydraulic
-    ADD CONSTRAINT map_function_hydraulic_pkey PRIMARY KEY (old, new);
-
-
--- Completed on 2015-06-02 18:12:52 CEST
-
---
--- PostgreSQL database dump complete
---
-
+INSERT INTO map_function_hydraulic (old, new) VALUES
+(1,     5320), -- Cunette -> other
+(2,     23), -- Conduite de refoulement -> pump_pressure_pipe
+(3,     22), -- Conduite de retrecissement -> restriction pipe
+(4,     3610), -- Syphon inversé -> inverted syphon
+(5,     367), -- Conduite a ecoulement libre -> gravity_pipe
+(6,	367), -- Conduite d'assainissement -> gravity_pipe
+(6,     5320), -- conduite d'infiltration ou de drainage -> other
+(7,     21), -- conduite d'accumulation -> retention_pipe
+(8,     2546), -- Conduite de transport -> drainage_transportation_pipe
+(9,     144), -- Conduite de rincage -> jetting_pipe
+(10,    5321), -- inconnu -> unknown
+(11,    5320), -- exutoire -> other
+(12,    21), -- conduite d'accumulation -> retention_pipe
+(13,    5320), -- autre -> other
+(14,    367), -- Evacuation des eaux de routes -> gravity_pipe
+(15,    367), -- Evacuation des eaux de bâtiments -> gravity_pipe
+(16,    367), -- Evacuation des eaux de routes et de bâtiments -> gravity_pipe
+(17,    367), -- Evacuation des eaux de bien-fonds -> gravity_pipe
+(18,    367), -- Evacuation des eaux traitées à la STEP -> gravity_pipe
+(19,    367), -- Evacuation eau potable -> gravity_pipe
+(NULL,  5321) -- null -> unkown
+;

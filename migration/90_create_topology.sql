@@ -1,7 +1,7 @@
 ﻿-- connect reaches to wastewater nodes
 UPDATE qgep.od_reach_point rp
 SET fk_wastewater_networkelement = no.obj_id 
-FROM qgep.od_wastewater_node no WHERE no.situation_geometry = rp.situation_geometry;
+FROM qgep.od_wastewater_node no WHERE st_buffer(no.situation_geometry, 0.1) && rp.situation_geometry;
 
 -- create node where missing 
 INSERT INTO qgep.vw_wastewater_node ( situation_geometry ) 

@@ -1,10 +1,7 @@
 --
--- PostgreSQL database dump
+-- Migration script for elevation determination
 --
-
--- Dumped from database version 9.3.6
--- Dumped by pg_dump version 9.3.6
--- Started on 2015-06-02 18:12:52 CEST
+-- Sets a mapping table for elevation determination
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -19,44 +16,18 @@ SET default_tablespace = '';
 
 SET default_with_oids = false;
 
---
--- TOC entry 584 (class 1259 OID 484607)
--- Name: map_elevation_determination; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
---
+DROP TABLE IF EXISTS map_elevation_determination;
 
 CREATE TABLE map_elevation_determination (
-    old integer NOT NULL,
-    new integer
+    old integer,
+    new integer NOT NULL
 );
-
 
 ALTER TABLE sa.map_elevation_determination OWNER TO postgres;
 
---
--- TOC entry 5386 (class 0 OID 484607)
--- Dependencies: 584
--- Data for Name: map_elevation_determination; Type: TABLE DATA; Schema: sa; Owner: postgres
---
-
-COPY map_elevation_determination (old, new) FROM stdin;
-1	4780
-2	4779
-3	4778
-\.
-
-
---
--- TOC entry 5228 (class 2606 OID 484611)
--- Name: map_elevation_determination_pkey; Type: CONSTRAINT; Schema: sa; Owner: postgres; Tablespace: 
---
-
-ALTER TABLE ONLY map_elevation_determination
-    ADD CONSTRAINT map_elevation_determination_pkey PRIMARY KEY (old);
-
-
--- Completed on 2015-06-02 18:12:52 CEST
-
---
--- PostgreSQL database dump complete
---
-
+INSERT INTO map_elevation_determination (old, new) VALUES
+(1,	4780), -- précis -> accurate
+(2,	4779), -- imprécis -> inaccurate
+(3,	4778), -- inconnu -> unkown
+(NULL,	4788)  -- NULL -> unkown
+;

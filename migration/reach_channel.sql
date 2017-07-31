@@ -4,7 +4,8 @@ SELECT
   gid, 
   first(z1) as rp_from_level, 
   last(z1) as rp_to_level, 
-  ST_Fineltra(St_SetSRID(ST_GeomFromText('LINESTRINGZ('||string_agg(y1::varchar||' '||x1::varchar||' '||coalesce(z1,0)::varchar, ',' ORDER BY seq)||')'),21781), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95')::Geometry(LinestringZ,2056) AS geometry 
+--  ST_Fineltra(St_SetSRID(ST_GeomFromText('LINESTRINGZ('||string_agg(y1::varchar||' '||x1::varchar||' '||coalesce(z1,0)::varchar, ',' ORDER BY seq)||')'),21781), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95')::Geometry(LinestringZ,2056) AS geometry 
+  ST_SetSRID(ST_GeomFromText('LINESTRINGZ('||string_agg(y1::varchar||' '||x1::varchar||' '||coalesce(z1,0)::varchar, ',' ORDER BY seq)||')'), 21781) AS geometry
 FROM sa.aw_haltung_geo 
 GROUP BY gid)
 
@@ -30,7 +31,7 @@ INSERT INTO qgep.vw_qgep_reach(
 )
 SELECT
   haltung.name,
-  bemerkung,
+  substr(bemerkung, 1, 80),
   ST_3dLength(geometry),
   baujahr,
   gefaelle,
@@ -50,7 +51,7 @@ SELECT
   
 FROM sa.aw_haltung haltung
 LEFT JOIN haltung_geo geom on geom.gid = haltung.gid
-LEFT JOIN sa.map_function_hierarchic fh ON haltung.id_funktion_hierarch = fh.old
+LEFT JOIN sa.map_function_hierarchic fh ON haltung.id_funktion_hierarch = fh.old --OR (fh.old IS NULL AND haltung.id_funktion_hierarch IS NULL)
 LEFT JOIN sa.map_horizontal_positioning hp ON haltung.id_lagegenauigkeit = hp.old
 LEFT JOIN sa.map_usage_current uc ON haltung.id_nutzungs_art = uc.old
 LEFT JOIN sa.aw_profilart_tbd pa ON pa.id = haltung.id_profilart

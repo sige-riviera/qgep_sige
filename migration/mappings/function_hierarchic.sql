@@ -1,10 +1,5 @@
 --
--- PostgreSQL database dump
---
-
--- Dumped from database version 9.3.6
--- Dumped by pg_dump version 9.3.6
--- Started on 2015-06-02 18:12:52 CEST
+-- Migration Mapping script for collectors
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -19,45 +14,27 @@ SET default_tablespace = '';
 
 SET default_with_oids = false;
 
---
--- TOC entry 584 (class 1259 OID 484607)
--- Name: map_function_hierarchic; Type: TABLE; Schema: sa; Owner: postgres; Tablespace: 
---
+DROP TABLE IF EXISTS map_function_hierarchic;
 
 CREATE TABLE map_function_hierarchic (
-    old integer NOT NULL,
+    old integer,
     new integer NOT NULL
 );
 
 
 ALTER TABLE sa.map_function_hierarchic OWNER TO postgres;
 
---
--- TOC entry 5386 (class 0 OID 484607)
--- Dependencies: 584
--- Data for Name: map_function_hierarchic; Type: TABLE DATA; Schema: sa; Owner: postgres
---
-
-COPY map_function_hierarchic (old, new) FROM stdin;
-3	5069
-4	5071
-10	5074
-11	5074
-\.
-
-
---
--- TOC entry 5228 (class 2606 OID 484611)
--- Name: map_function_hierarchic_pkey; Type: CONSTRAINT; Schema: sa; Owner: postgres; Tablespace: 
---
-
-ALTER TABLE ONLY map_function_hierarchic
-    ADD CONSTRAINT map_function_hierarchic_pkey PRIMARY KEY (old, new);
-
-
--- Completed on 2015-06-02 18:12:52 CEST
-
---
--- PostgreSQL database dump complete
---
-
+INSERT INTO map_function_hierarchic (old, new) VALUES 
+(1,	5064), -- Evacuation des eaux de bien-fonds -> pwwf.residential_drainage
+(2,	5072), -- Evacuation des eaux de voies ferrees -> pwwf.road_drainage
+(3,	5069), -- Collecteur principal -> main_drain
+(4,	5068), -- Eaux publiques -> pwwf.water_bodies
+(5,	5069), -- Collecteur d'accumulation -> main_drain
+(6,	5062), -- Conduite d'assainissement -> pwwf.renovation_conduction
+(7,	5072), -- Evacuation des eaux de routes -> pwwf.road_drainage 
+(8,	5069), -- Conduite de transport -> main_drainage
+(9,	5074), -- inconnu -> unknown primary
+(100,	5064), -- prive -> pwwf.residential_drainage
+(101,	5075), -- collecteur secondaire -> secondary unknown
+(NULL,	5074) -- null -> unkown primary
+;
