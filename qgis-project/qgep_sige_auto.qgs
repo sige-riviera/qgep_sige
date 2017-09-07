@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.7">
+<qgis projectname="" version="2.18.12">
   <title></title>
   <autotransaction active="1"/>
   <evaluateDefaultValues active="1"/>
@@ -373,10 +373,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2550901.65365537069737911</xmin>
-      <ymin>1139796.46141674648970366</ymin>
-      <xmax>2568814.34634462930262089</xmax>
-      <ymax>1148557.53858325351029634</ymax>
+      <xmin>2555672.74724272871389985</xmin>
+      <ymin>1139775.01516723004169762</ymin>
+      <xmax>2564043.25275727128610015</xmax>
+      <ymax>1148578.98483276995830238</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -394,10 +394,63 @@
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_wastewater_structure"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_wastewater_structure"/>
-      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreeMap20170131085532398"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_network_segment20140827212359527"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20150415105100407"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__realestate20150211112947342"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_reach"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__realestate_posnumber"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_cover___"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wastewater_node20141111091100662"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="single_objects__linear_element"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_cover20140822215511882"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wizard_cover_manhole20141025170618565"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="single_objects__linear_element20150211112947351"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__boundary_point"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_wastewater_structure20140728163138856"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_special_structure20141013203257795"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach_point20140728163138843"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="building_addresses__building_entrance_pos20150211112947254"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_cover20140414160716920"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_network_node20140827212753645"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="Landeskarte_1_25_000_1_1_Mio__farbe20150401143000299"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="single_objects__surface_element"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="building_addresses__street_name_pos"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach20140822215411222"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="land_cover__lcsurface"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach20150415105009524"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__realestate"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="single_objects__surface_element20150211113252990"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wizard_reach_channel20141025180143924"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20141025180235004"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20140925140846596"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20141013202956655"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__realestate_posnumber20150211112947328"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_CH190320170119205304994"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM20170119204530981"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach_point20140822215511891"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="territorial_boundaries__municipal_boundary20150211112947357"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_manhole20141013203257827"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_qgep_wastewater_structure"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wastewater_node20150607121012062"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_reach20141025180333308"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_channel20141024144506339"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_catchment_area20140827102410654"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_wastewater_structure20140822215511905"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_wastewater_structure"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="land_cover__lcsurface_postext20150211112947362"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_cover20140728163138882"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_network_node20140827212404914"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach20140822194040121"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ownership__boundary_point20150211112947336"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_network_segment20140827212755598"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_cover20141013203237315"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="land_cover__lcsurface20150211102116489"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="land_cover__lcsurface_postext"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="building_addresses__street_name_pos20150211112947319"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="building_addresses__building_entrance_pos"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="od_reach20140728162912956"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="territorial_boundaries__municipal_boundary"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vw_wizard_cover_special_structure20150129140416706"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
@@ -3457,7 +3510,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="115674336">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../QGEP-customizer/QGEP/project</editform>
@@ -3566,7 +3619,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="30">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../QGEP-customizer/QGEP/project</editform>
@@ -3675,7 +3728,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="124971000">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../QGEP-customizer/QGEP/project</editform>
@@ -3784,7 +3837,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="482295424">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../QGEP-customizer/QGEP/project</editform>
@@ -3893,7 +3946,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="117415795">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../QGEP-customizer/QGEP/project</editform>
@@ -4111,7 +4164,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="4">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../QGEP-customizer/QGEP/project</editform>
@@ -4220,7 +4273,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="115828656">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <editform>../QGEP-customizer/QGEP/project</editform>
@@ -11574,10 +11627,10 @@ def my_form_open(dialog, layer, feature):
           </attributeEditorContainer>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1"  relation="re_maintenance_wasterwaterstructure_reach" showLabel="1" showUnlinkButton="1" name="re_maintenance_wasterwaterstructure_reach"/>
+          <attributeEditorRelation showLinkButton="1" relation="re_maintenance_wasterwaterstructure_reach" showLabel="1" showUnlinkButton="1" name="re_maintenance_wasterwaterstructure_reach"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Fichiers" groupBox="0" columnCount="1">
-          <attributeEditorRelation showLinkButton="1"  relation="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id"/>
         </attributeEditorContainer>
       </attributeEditorForm>
       <widgets>
@@ -13692,14 +13745,14 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="-1" name="wn_provider"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Couvercles" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1"  relation="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Elément douvrage" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1"  relation="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-          <attributeEditorRelation showLinkButton="1"  relation="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-          <attributeEditorRelation showLinkButton="1"  relation="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-          <attributeEditorRelation showLinkButton="1"  relation="vw_dryweather_flume_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_dryweather_flume_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-          <attributeEditorRelation showLinkButton="1"  relation="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="vw_dryweather_flume_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_dryweather_flume_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="0" columnCount="0">
           <attributeEditorRelation showLinkButton="1"  relation="re_maintenance_event_wastewater_structure_fk_wastewater_structure_vw_qgep_wastewater_structure_ws_obj_id" showLabel="1" showUnlinkButton="1" name="re_maintenance_event_wastewater_structure_fk_wastewater_structure_vw_qgep_wastewater_structure_ws_obj_id"/>
@@ -13708,7 +13761,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorRelation showLinkButton="1"  relation="wastewater_node-fk_wastewater-structure" showLabel="1" showUnlinkButton="1" name="wastewater_node-fk_wastewater-structure"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Fichiers" groupBox="0" columnCount="1">
-          <attributeEditorRelation showLinkButton="1"  relation="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id"/>
         </attributeEditorContainer>
       </attributeEditorForm>
       <widgets>
@@ -14016,7 +14069,7 @@ def my_form_open(dialog, layer, feature):
     <WMSUrl type="QString"></WMSUrl>
     <SpatialRefSys>
       <ProjectCRSProj4String type="QString">+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</ProjectCRSProj4String>
-      <ProjectCrs type="QString">EPSG:21781</ProjectCrs>
+      <ProjectCrs type="QString">EPSG:2056</ProjectCrs>
       <ProjectCRSID type="int">1919</ProjectCRSID>
       <ProjectionsEnabled type="int">1</ProjectionsEnabled>
     </SpatialRefSys>
@@ -14050,6 +14103,18 @@ def my_form_open(dialog, layer, feature):
     <WMSRootName type="QString"></WMSRootName>
     <WMSServiceTitle type="QString"></WMSServiceTitle>
     <WMSContactPhone type="QString"></WMSContactPhone>
+    <PAL>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingShadowRects type="bool">false</ShowingShadowRects>
+      <CandidatesPolygon type="int">10</CandidatesPolygon>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <CandidatesLine type="int">10</CandidatesLine>
+      <CandidatesPoint type="int">13</CandidatesPoint>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+    </PAL>
     <WFSTLayers>
       <Insert type="QStringList"/>
       <Update type="QStringList"/>
@@ -14068,7 +14133,7 @@ from qgis.PyQt.QtCore import QFile, QTextStream
 from qgis.PyQt.QtGui import QApplication, QClipboard
 
 actions = []
-style_file = '/home/drouzaud/Documents/QGEP/sige/qgis-project/styles/qgep.style'
+style_file = '/home/rouzaudd/Documents/qgis/qgep_sige/qgis-project/styles/qgep.style'
 
 def openProject():
     actions.append(iface.projectMenu().addAction(u"Sauver la symbologie pour QGEP"))
@@ -14114,10 +14179,10 @@ def copy_style():
     <WMSOnlineResource type="QString"></WMSOnlineResource>
     <WMSPrecision type="QString">8</WMSPrecision>
     <WMSCrsList type="QStringList">
-      <value>EPSG:21781</value>
+      <value>EPSG:2056</value>
     </WMSCrsList>
     <Digitizing>
-      <DefaultSnapToleranceUnit type="int">1</DefaultSnapToleranceUnit>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
         <value>od_wastewater_structure</value>
         <value>vw_cover___</value>
@@ -14156,8 +14221,8 @@ def copy_style():
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
       </LayerSnapToList>
-      <DefaultSnapType type="QString">to vertex</DefaultSnapType>
-      <DefaultSnapTolerance type="double">10</DefaultSnapTolerance>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
         <value>0.000000</value>
         <value>0.000000</value>

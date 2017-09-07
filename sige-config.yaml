@@ -1,18 +1,18 @@
 # QGEP customization template file
 
-qgis_bin: /home/drouzaud/opt/QGIS2/build/output/bin/qgis
-output_project: /home/drouzaud/Documents/QGEP/sige/qgis-project/qgep_sige_auto.qgs
+qgis_bin: /home/rouzaudd/opt/QGIS2/build/output/bin/qgis
+output_project: /home/rouzaudd/Documents/qgis/qgep_sige/qgis-project/qgep_sige_auto.qgs
 
-style_file: /home/drouzaud/Documents/QGEP/sige/qgis-project/styles/qgep.style
+style_file: /home/rouzaudd/Documents/qgis/qgep_sige/qgis-project/styles/qgep.style
 
-srid: 2056
+#srid: 2056
 
 map_center:
   x: 2559858
   y: 1144177
 
 background_layers:
-  - file: /home/drouzaud/Documents/QGEP/sige/cadastre/cadastre_pg.qgs
+  - file: /home/rouzaudd/Documents/qgis/qgep_sige/cadastre/cadastre_pg.qgs
     group: Fonds de plans
 
 quickfinder: ./qgep_sige.qfts
