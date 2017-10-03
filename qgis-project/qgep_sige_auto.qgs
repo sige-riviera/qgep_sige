@@ -266,7 +266,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="0">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="-1">
       <customproperties>
         <property key="embedded" value="1"/>
         <property key="embedded-invisible-layers">
@@ -282,6 +282,7 @@
           <value>National_Map_1_25_00020170314120154767</value>
           <value>National_Maps__color_20170314120148938</value>
           <value>SWISSIMAGE20170314120137660</value>
+          <value>OpenStreeMap20170131085532398</value>
         </property>
         <property key="embedded_project" value="../cadastre/cadastre_pg.qgs"/>
       </customproperties>
@@ -373,10 +374,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2555672.74724272871389985</xmin>
-      <ymin>1139775.01516723004169762</ymin>
-      <xmax>2564043.25275727128610015</xmax>
-      <ymax>1148578.98483276995830238</ymax>
+      <xmin>2556553.22891228133812547</xmin>
+      <ymin>1143555.32577476277947426</ymin>
+      <xmax>2557076.38550694519653916</xmax>
+      <ymax>1144105.57387885823845863</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -10707,7 +10708,7 @@ def my_form_open(dialog, layer, feature):
                 </attributeEditorContainer>
               </attributeEditorContainer>
               <attributeEditorContainer name="Maintenance" columnCount="0">
-                <attributeEditorRelation  relation="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_reach20141013202956655_ws_obj_id" name="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_reach20141013202956655_ws_obj_id"/>
+                <attributeEditorRelation relation="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_reach20141013202956655_ws_obj_id" name="od_maintenance_event20150530130856307_fk_wastewater_structure_vw_reach20141013202956655_ws_obj_id"/>
               </attributeEditorContainer>
             </attributeEditorForm>
             <widgets/>
@@ -13272,7 +13273,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="CASE WHEN  @map_scale &lt;= 500 THEN _label || COALESCE('Pr='||&quot;_depth&quot; || ' m.','')  ELSE co_identifier END"/>
+        <property key="labeling/fieldName" value="CASE WHEN  @map_scale &lt;= 500 THEN &#xa; regexp_replace(regexp_replace( _label, 'I([0-9]+=)', 'E\\1'), 'O([0-9]+=)', 'S\\1')&#xa;|| COALESCE('\nPr='||&quot;_depth&quot; || ' m.','')  ELSE co_identifier END"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
@@ -13755,10 +13756,10 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorRelation showLinkButton="1" relation="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1"  relation="re_maintenance_event_wastewater_structure_fk_wastewater_structure_vw_qgep_wastewater_structure_ws_obj_id" showLabel="1" showUnlinkButton="1" name="re_maintenance_event_wastewater_structure_fk_wastewater_structure_vw_qgep_wastewater_structure_ws_obj_id"/>
+          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="re_maintenance_event_wastewater_structure_fk_wastewater_structure_vw_qgep_wastewater_structure_ws_obj_id"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Noeuds" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1"  relation="wastewater_node-fk_wastewater-structure" showLabel="1" showUnlinkButton="1" name="wastewater_node-fk_wastewater-structure"/>
+          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="wastewater_node-fk_wastewater-structure"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Fichiers" groupBox="0" columnCount="1">
           <attributeEditorRelation showLinkButton="1" relation="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id"/>

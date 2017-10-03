@@ -1653,7 +1653,7 @@
     <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
     <property key="labeling/drawLabels" value="true"/>
     <property key="labeling/enabled" value="true"/>
-    <property key="labeling/fieldName" value="CASE WHEN  @map_scale &lt;= 500 THEN _label || COALESCE('Pr='||&quot;_depth&quot; || ' m.','')  ELSE co_identifier END"/>
+    <property key="labeling/fieldName" value="CASE WHEN  @map_scale &lt;= 500 THEN &#xa; regexp_replace(regexp_replace( _label, 'I([0-9]+=)', 'E\\1'), 'O([0-9]+=)', 'S\\1')&#xa;|| COALESCE('\nPr='||&quot;_depth&quot; || ' m.','')  ELSE co_identifier END"/>
     <property key="labeling/fitInPolygonOnly" value="false"/>
     <property key="labeling/fontBold" value="false"/>
     <property key="labeling/fontCapitals" value="0"/>
