@@ -46,7 +46,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Checked" name="Inspection">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="Inspection">
       <customproperties/>
       <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vw_last_inspection20171004071835261" source="service='pg_qgep' sslmode=disable key='fk_wastewater_structure' table=&quot;qgep_sige&quot;.&quot;vw_last_inspection&quot; sql=" name="vw_last_inspection">
         <customproperties/>
@@ -379,10 +379,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2551798.59825161704793572</xmin>
-      <ymin>1145267.2146249795332551</ymin>
-      <xmax>2555983.85100773582234979</xmax>
-      <ymax>1149669.1994577432051301</ymax>
+      <xmin>2549370.3226892645470798</xmin>
+      <ymin>1133664.13713722210377455</ymin>
+      <xmax>2566111.33371373964473605</xmax>
+      <ymax>1151272.07646827679127455</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -604,7 +604,7 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Checked" name="Inspection">
+    <legendgroup open="true" checked="Qt::Checked" name="Inspection">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vw_last_inspection" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_last_inspection20171004071835261" visible="1"/>
@@ -1013,13 +1013,13 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;object&quot;" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="obj_id"/>
           <column width="179" hidden="0" type="field" name="class"/>
-          <column width="-1" hidden="0" type="field" name="identifier"/>
+          <column width="149" hidden="0" type="field" name="identifier"/>
           <column width="117" hidden="0" type="field" name="kind"/>
-          <column width="-1" hidden="0" type="field" name="object"/>
+          <column width="269" hidden="0" type="field" name="object"/>
           <column width="-1" hidden="0" type="field" name="path_relative"/>
           <column width="-1" hidden="0" type="field" name="remark"/>
           <column width="-1" hidden="0" type="field" name="last_modification"/>
@@ -8993,7 +8993,7 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="single_damage_class"/>
           <column width="-1" hidden="0" type="field" name="video_counter"/>
           <column width="-1" hidden="0" type="field" name="view_parameters"/>
-          <column width="-1" hidden="0" type="field" name="last_modification"/>
+          <column width="119" hidden="0" type="field" name="last_modification"/>
           <column width="-1" hidden="0" type="field" name="fk_dataowner"/>
           <column width="-1" hidden="0" type="field" name="fk_provider"/>
           <column width="-1" hidden="0" type="field" name="fk_examination"/>
@@ -12351,8 +12351,8 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="material_abbr_fr">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="vw_last_inspection_last_inspection">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="Range" name="vw_last_inspection_last_inspection">
+          <widgetv2config AllowNull="1" fieldEditable="0" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="1990" notNull="0" Max="2030"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
@@ -12802,12 +12802,12 @@ def my_form_open(dialog, layer, feature):
         <alias field="material_abbr_en" index="76" name=""/>
         <alias field="material_abbr_de" index="77" name=""/>
         <alias field="material_abbr_fr" index="78" name=""/>
-        <alias field="vw_last_inspection_last_inspection" index="79" name=""/>
+        <alias field="vw_last_inspection_last_inspection" index="79" name="Dernière inspection"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;length_effective&quot;" sortOrder="1">
         <columns>
           <column width="-1" hidden="1" type="field" name="rp_from_obj_id"/>
           <column width="-1" hidden="1" type="field" name="rp_to_obj_id"/>
@@ -12815,9 +12815,9 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="clear_height"/>
           <column width="-1" hidden="0" type="field" name="width"/>
           <column width="-1" hidden="0" type="field" name="coefficient_of_friction"/>
-          <column width="-1" hidden="0" type="field" name="elevation_determination"/>
-          <column width="-1" hidden="0" type="field" name="horizontal_positioning"/>
-          <column width="-1" hidden="0" type="field" name="inside_coating"/>
+          <column width="267" hidden="1" type="field" name="elevation_determination"/>
+          <column width="-1" hidden="1" type="field" name="horizontal_positioning"/>
+          <column width="100" hidden="0" type="field" name="inside_coating"/>
           <column width="-1" hidden="0" type="field" name="length_effective"/>
           <column width="-1" hidden="0" type="field" name="slope_per_mill"/>
           <column width="-1" hidden="0" type="field" name="material"/>
@@ -12825,9 +12825,9 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="reliner_nominal_size"/>
           <column width="-1" hidden="0" type="field" name="relining_construction"/>
           <column width="-1" hidden="0" type="field" name="relining_kind"/>
-          <column width="-1" hidden="0" type="field" name="ring_stiffness"/>
-          <column width="-1" hidden="0" type="field" name="slope_building_plan"/>
-          <column width="-1" hidden="0" type="field" name="wall_roughness"/>
+          <column width="137" hidden="1" type="field" name="ring_stiffness"/>
+          <column width="-1" hidden="1" type="field" name="slope_building_plan"/>
+          <column width="-1" hidden="1" type="field" name="wall_roughness"/>
           <column width="-1" hidden="0" type="field" name="fk_pipe_profile"/>
           <column width="-1" hidden="0" type="field" name="bedding_encasement"/>
           <column width="-1" hidden="0" type="field" name="function_hierarchic"/>
@@ -12839,55 +12839,55 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="usage_planned"/>
           <column width="-1" hidden="0" type="field" name="ws_obj_id"/>
           <column width="-1" hidden="0" type="field" name="accessibility"/>
-          <column width="-1" hidden="0" type="field" name="contract_section"/>
-          <column width="-1" hidden="0" type="field" name="financing"/>
-          <column width="-1" hidden="0" type="field" name="gross_costs"/>
+          <column width="-1" hidden="1" type="field" name="contract_section"/>
+          <column width="-1" hidden="1" type="field" name="financing"/>
+          <column width="-1" hidden="1" type="field" name="gross_costs"/>
           <column width="-1" hidden="0" type="field" name="inspection_interval"/>
           <column width="-1" hidden="0" type="field" name="location_name"/>
           <column width="-1" hidden="0" type="field" name="records"/>
           <column width="-1" hidden="0" type="field" name="renovation_necessity"/>
           <column width="-1" hidden="0" type="field" name="replacement_value"/>
           <column width="-1" hidden="0" type="field" name="rv_base_year"/>
-          <column width="-1" hidden="0" type="field" name="rv_construction_type"/>
+          <column width="-1" hidden="1" type="field" name="rv_construction_type"/>
           <column width="-1" hidden="0" type="field" name="status"/>
           <column width="-1" hidden="0" type="field" name="structure_condition"/>
-          <column width="-1" hidden="0" type="field" name="subsidies"/>
+          <column width="-1" hidden="1" type="field" name="subsidies"/>
           <column width="-1" hidden="0" type="field" name="year_of_construction"/>
           <column width="-1" hidden="0" type="field" name="year_of_replacement"/>
-          <column width="-1" hidden="0" type="field" name="fk_owner"/>
-          <column width="-1" hidden="0" type="field" name="fk_operator"/>
+          <column width="-1" hidden="1" type="field" name="fk_owner"/>
+          <column width="-1" hidden="1" type="field" name="fk_operator"/>
           <column width="-1" hidden="0" type="field" name="identifier"/>
           <column width="-1" hidden="0" type="field" name="remark"/>
           <column width="-1" hidden="0" type="field" name="last_modification"/>
-          <column width="-1" hidden="0" type="field" name="fk_dataowner"/>
+          <column width="-1" hidden="1" type="field" name="fk_dataowner"/>
           <column width="-1" hidden="0" type="field" name="fk_provider"/>
           <column width="-1" hidden="0" type="field" name="fk_wastewater_structure"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_elevation_accuracy"/>
+          <column width="-1" hidden="1" type="field" name="rp_from_elevation_accuracy"/>
           <column width="-1" hidden="0" type="field" name="rp_from_identifier"/>
           <column width="-1" hidden="0" type="field" name="rp_from_level"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_outlet_shape"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_position_of_connection"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_remark"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_last_modification"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_fk_dataowner"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_fk_provider"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_fk_wastewater_networkelement"/>
-          <column width="-1" hidden="0" type="field" name="rp_to_elevation_accuracy"/>
+          <column width="-1" hidden="1" type="field" name="rp_from_outlet_shape"/>
+          <column width="-1" hidden="1" type="field" name="rp_from_position_of_connection"/>
+          <column width="-1" hidden="1" type="field" name="rp_from_remark"/>
+          <column width="-1" hidden="1" type="field" name="rp_from_last_modification"/>
+          <column width="-1" hidden="1" type="field" name="rp_from_fk_dataowner"/>
+          <column width="-1" hidden="1" type="field" name="rp_from_fk_provider"/>
+          <column width="-1" hidden="1" type="field" name="rp_from_fk_wastewater_networkelement"/>
+          <column width="-1" hidden="1" type="field" name="rp_to_elevation_accuracy"/>
           <column width="-1" hidden="0" type="field" name="rp_to_identifier"/>
           <column width="-1" hidden="0" type="field" name="rp_to_level"/>
-          <column width="-1" hidden="0" type="field" name="rp_to_outlet_shape"/>
-          <column width="-1" hidden="0" type="field" name="rp_to_position_of_connection"/>
-          <column width="-1" hidden="0" type="field" name="rp_to_remark"/>
-          <column width="-1" hidden="0" type="field" name="rp_to_last_modification"/>
-          <column width="-1" hidden="0" type="field" name="rp_to_fk_dataowner"/>
-          <column width="-1" hidden="0" type="field" name="rp_to_fk_provider"/>
-          <column width="-1" hidden="0" type="field" name="rp_to_fk_wastewater_networkelement"/>
-          <column width="-1" hidden="0" type="field" name="me_obj_id"/>
-          <column width="-1" hidden="0" type="field" name="me_active_zone"/>
-          <column width="-1" hidden="0" type="field" name="me_identifier"/>
-          <column width="-1" hidden="0" type="field" name="material_abbr_en"/>
-          <column width="-1" hidden="0" type="field" name="material_abbr_de"/>
-          <column width="-1" hidden="0" type="field" name="material_abbr_fr"/>
+          <column width="-1" hidden="1" type="field" name="rp_to_outlet_shape"/>
+          <column width="-1" hidden="1" type="field" name="rp_to_position_of_connection"/>
+          <column width="-1" hidden="1" type="field" name="rp_to_remark"/>
+          <column width="-1" hidden="1" type="field" name="rp_to_last_modification"/>
+          <column width="-1" hidden="1" type="field" name="rp_to_fk_dataowner"/>
+          <column width="-1" hidden="1" type="field" name="rp_to_fk_provider"/>
+          <column width="-1" hidden="1" type="field" name="rp_to_fk_wastewater_networkelement"/>
+          <column width="-1" hidden="1" type="field" name="me_obj_id"/>
+          <column width="-1" hidden="1" type="field" name="me_active_zone"/>
+          <column width="-1" hidden="1" type="field" name="me_identifier"/>
+          <column width="-1" hidden="1" type="field" name="material_abbr_en"/>
+          <column width="-1" hidden="1" type="field" name="material_abbr_de"/>
+          <column width="-1" hidden="1" type="field" name="material_abbr_fr"/>
           <column width="-1" hidden="1" type="actions"/>
           <column width="-1" hidden="0" type="field" name="vw_last_inspection_last_inspection"/>
         </columns>
@@ -12936,6 +12936,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
           <attributeEditorField showLabel="1" index="46" name="remark"/>
           <attributeEditorField showLabel="1" index="7" name="length_effective"/>
+          <attributeEditorField showLabel="1" index="79" name="vw_last_inspection_last_inspection"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Tronçon" groupBox="0" columnCount="2">
           <attributeEditorField showLabel="1" index="0" name="obj_id"/>
