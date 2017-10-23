@@ -6,4 +6,4 @@
 	url =https://github.com/sige-riviera/cadastre.git
 [submodule "QGEP-customizer"]
 	path = QGEP-customizer
-	url = git@github.com:qwat/QGEP-customizer.git
+	url = https://github.com/QGEP/QGEP-customizer.git
