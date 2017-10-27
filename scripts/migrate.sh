@@ -28,7 +28,7 @@ psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS qgep CASCADE'
 #psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS sa CASCADE'
 
 # Initialize datamodel
-${DIR}/datamodel/scripts/db_setup.sh -p $PGSERVICE
+${DIR}/datamodel/scripts/db_setup.sh -s 21781 -p $PGSERVICE
 
 # Organisation prefix activation
 #Ajout de sigip

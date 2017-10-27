@@ -30,7 +30,7 @@ INSERT INTO qgep.vw_qgep_reach(
   structure_condition
 )
 SELECT
-  haltung.name,
+  substr(haltung.name, 1, 20),
   substr(bemerkung, 1, 80),
   ST_3dLength(geometry),
   baujahr,

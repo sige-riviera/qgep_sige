@@ -23,8 +23,6 @@
  * At the end of the script the old fid is replaced with the real identifier.
  */
 
--- compute netzlinien
-
 WITH netzlinien AS (
 SELECT
   gid,
@@ -80,7 +78,7 @@ SELECT
   st.new,
   schacht.fid,
   org.obj_id
-  
+
 FROM sa.aw_schacht schacht -- Manhole
 LEFT JOIN sa.aw_schacht_geo schacht_geo ON schacht_geo.gid = schacht.gid -- Manhole Geom
 -- Cover / geom
