@@ -37,47 +37,65 @@ GROUP BY gid)
 
 INSERT INTO qgep.vw_qgep_wastewater_structure
  (
-  ws_type,
-  co_identifier,
-  bottom_level,
-  _depth,
+  -- wastewater structure
+  accessibility,
+  identifier,
+  remark,
+  status,
+  structure_condition,
   year_of_construction,
+  fk_owner,
+  ws_type,
+  -- cover
+  cover_shape,
+  diameter,
+  fastening,
+  level,
+  cover_material,
+--  positional_accuracy,
+  co_identifier,
+  co_remark,
+  --node
+  bottom_level,
+  --manhole
   dimension1,
   dimension2,
-  --year_of_replacement,
-  location_name,
-  remark,
-  ws_remark,
+  -- year_of_replacement,
   situation_geometry,
-  level,
   manhole_function,
-  special_structure_function,
-  status,
-  identifier,
-  fk_owner
+  special_structure_function
 )
 
 SELECT
-  COALESCE(st_type.new,'manhole'),
-  schacht.name2,
-  schacht.unten_hoehe,
-  tiefe,
+  -- wastewater structure
+  acc.new, -- accessibility
+  substr(schacht.name,1,20), -- identifier
+  substr(schacht.bemerkung, 1, 80), -- remark on structure
+  st.new, -- status
+  stc.new, -- structure condition
   schacht.baujahr, -- construction year
+  org.obj_id, -- owner
+  COALESCE(st_type.new,'manhole'),
+  --cover
+  co_s.new,  -- shape
+  deckel.deckel_dn, -- diameter
+  co_f.new, -- fastening
+  deckel_geo.z1, -- level
+  co_m.new, -- material
+--  hp.new, -- horizontal positionning
+  deckel.name, --identifier
+  substr(deckel.bemerkung, 1, 80), -- remark on cover
+  --node
+  schacht.unten_hoehe,
+  --manhole
   schacht.dn, -- diameter nominal
   schacht.breite, -- width
   --EXTRACT(YEAR FROM date_rehabil),
-  schacht.ortsbezeichnung, -- location name
-  substr(deckel.bemerkung, 1, 80), -- remark on cover
-  substr(schacht.bemerkung, 1, 80), -- remark on structure
   --ST_Force2d(ST_Fineltra( ST_SetSRID(ST_MakePoint( deckel_geo.y1, deckel_geo.x1, deckel_geo.z1 ), 21781 ), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95')),
   ST_Multi(ST_SetSRID(ST_MakePoint( schacht_geo.y1, schacht_geo.x1),21781))::geometry(MultiPoint, 21781),
-  schacht_geo.z1,
   --CASE WHEN id_aeration=1 THEN 4533 ELSE mf.new END,
   mf.new,
-  stf.new,
-  st.new,
-  schacht.fid,
-  org.obj_id
+  stf.new
 
 FROM sa.aw_schacht schacht -- Manhole
 LEFT JOIN sa.aw_schacht_geo schacht_geo ON schacht_geo.gid = schacht.gid -- Manhole Geom
@@ -87,12 +105,25 @@ LEFT JOIN sa.aw_schacht_deckel_geo deckel_geo ON deckel_geo.gid = deckel.gid
 --Bottom / geom
 LEFT JOIN sa.aw_schacht_sohle sohle ON schacht.fid = sohle.fid_schacht
 LEFT JOIN sa.aw_schacht_sohle_geo sohle_geo ON sohle_geo.gid = sohle.gid
+-- Wastewater structure
+-- Accessibility
+LEFT JOIN sa.map_accessibility acc ON schacht.id_zugaenglichkeit = acc.old
 -- Manhole function
 LEFT JOIN sa.map_manhole_function mf ON schacht.id_schachtart = mf.old
 -- Special structure function
 LEFT JOIN sa.map_special_structure_function stf ON schacht.id_schachtart = stf.old
 -- Status
 LEFT JOIN sa.map_status st ON schacht.id_status = st.old
+-- Structure condition (old default)
+LEFT JOIN sa.map_structure_condition stc ON schacht.id_defaut = stc.old
+-- Cover shape
+LEFT JOIN sa.map_cover_shape co_s ON deckel.id_deckel_form = co_s.old
+-- Cover fastening
+LEFT JOIN sa.map_cover_fastening co_f ON deckel.id_deckel_form = co_f.old
+-- Cover material
+LEFT JOIN sa.map_cover_material co_m ON deckel.id_material = co_m.old
+-- Cover horizontal positioning
+--LEFT JOIN sa.map_horizontal_positioning hp ON deckel.id_lagegenauigkeit = hp.old
 -- ??
 LEFT JOIN sa.ba_eigentumsverhaeltnis_tbd ev ON ev.id = schacht.id_eigentumsverhaeltnis
 -- Organisation
