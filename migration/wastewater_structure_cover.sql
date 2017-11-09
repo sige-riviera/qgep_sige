@@ -2,11 +2,15 @@
     TopoBase2 to QGEP migration script for
      * Covers
      * Manholes
-     * Access Aids
+     * Special Structures
+     * Discharge points
+     * Infiltration Installations
      --------------------------------------
     Date                 : 1.6.2015
     Copyright            : (C) 2015 Matthias Kuhn
     Email                : matthias at opengis dot ch
+     -------------------------------------
+    Pimped by Arnaud Poncet-Montanges 2017
  ***************************************************************************
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -57,13 +61,17 @@ INSERT INTO qgep.vw_qgep_wastewater_structure
   co_remark,
   --node
   bottom_level,
+  wn_identifier,
   --manhole
   dimension1,
   dimension2,
-  -- year_of_replacement,
-  situation_geometry,
   manhole_function,
-  special_structure_function
+  material,
+  --special_structure
+  special_structure_function,
+  --discharge_point
+  --infiltration_installation
+  situation_geometry
 )
 
 SELECT
@@ -86,16 +94,18 @@ SELECT
   deckel.name, --identifier
   substr(deckel.bemerkung, 1, 80), -- remark on cover
   --node
-  schacht.unten_hoehe,
+  sohle_geo.z1,
+  schacht.fid,
   --manhole
   schacht.dn, -- diameter nominal
   schacht.breite, -- width
-  --EXTRACT(YEAR FROM date_rehabil),
-  --ST_Force2d(ST_Fineltra( ST_SetSRID(ST_MakePoint( deckel_geo.y1, deckel_geo.x1, deckel_geo.z1 ), 21781 ), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95')),
-  ST_Multi(ST_SetSRID(ST_MakePoint( schacht_geo.y1, schacht_geo.x1),21781))::geometry(MultiPoint, 21781),
-  --CASE WHEN id_aeration=1 THEN 4533 ELSE mf.new END,
-  mf.new,
-  stf.new
+  mf.new, --function
+  mm.new, --material
+  --special structure
+  sf.new, --function
+  --discharge point
+  --infiltration installation
+  ST_Multi(ST_SetSRID(ST_MakePoint( schacht_geo.y1, schacht_geo.x1),21781))::geometry(MultiPoint, 21781)
 
 FROM sa.aw_schacht schacht -- Manhole
 LEFT JOIN sa.aw_schacht_geo schacht_geo ON schacht_geo.gid = schacht.gid -- Manhole Geom
@@ -116,15 +126,21 @@ LEFT JOIN sa.map_special_structure_function stf ON schacht.id_schachtart = stf.o
 LEFT JOIN sa.map_status st ON schacht.id_status = st.old
 -- Structure condition (old default)
 LEFT JOIN sa.map_structure_condition stc ON schacht.id_defaut = stc.old
--- Cover shape
+-- Cover
+-- Shape
 LEFT JOIN sa.map_cover_shape co_s ON deckel.id_deckel_form = co_s.old
--- Cover fastening
+-- Fastening
 LEFT JOIN sa.map_cover_fastening co_f ON deckel.id_deckel_form = co_f.old
--- Cover material
+-- Material
 LEFT JOIN sa.map_cover_material co_m ON deckel.id_material = co_m.old
--- Cover horizontal positioning
+-- Horizontal positioning
 --LEFT JOIN sa.map_horizontal_positioning hp ON deckel.id_lagegenauigkeit = hp.old
--- ??
+-- Manhole
+-- Material
+LEFT JOIN sa.map_manhole_material mm ON schacht.id_material = mm.old
+-- Special structure
+LEFT JOIN sa.map_special_structure_function sf ON schacht.id_schachtart = sf.old
+-- Owner
 LEFT JOIN sa.ba_eigentumsverhaeltnis_tbd ev ON ev.id = schacht.id_eigentumsverhaeltnis
 -- Organisation
 LEFT JOIN qgep.od_organisation org ON org.identifier = ev.value
@@ -132,17 +148,6 @@ LEFT JOIN qgep.od_organisation org ON org.identifier = ev.value
 LEFT JOIN sa.map_structure_type st_type ON schacht.id_schachtart = st_type.old
 -- Filter deleted items
 WHERE COALESCE(deckel.deleted, 0) = 0 AND COALESCE(schacht.deleted, 0) = 0;
-
--------------------------
--- Update COVERS
--------------------------
-
---Update covers geometries
-
-UPDATE qgep.od_wastewater_structure AS ws
-SET identifier = schacht.name2
-FROM sa.aw_schacht AS schacht
-WHERE ws.identifier = schacht.fid::text;
 
 -------------------------
 -- ACCESS AID
@@ -178,13 +183,3 @@ WHERE id_schachtart = 10006;
 -- Surfacic wastewaterstructure
 -------------------------
 
-
-
--------------------------
--- FIX ws.identifier
--------------------------
-
-UPDATE qgep.od_wastewater_structure AS ws
-SET identifier = schacht.name2
-FROM sa.aw_schacht AS schacht
-WHERE ws.identifier = schacht.fid::text;

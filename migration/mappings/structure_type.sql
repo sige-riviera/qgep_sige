@@ -1,5 +1,5 @@
 --
--- Migration mapping script for manhole functions
+-- Migration mapping script for structure type
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -14,37 +14,44 @@ SET default_tablespace = '';
 
 SET default_with_oids = false;
 
-DROP TABLE IF EXISTS map_manhole_function;
+DROP TABLE IF EXISTS map_structure_type;
 
-CREATE TABLE map_manhole_function (
+CREATE TABLE map_structure_type (
     old integer,
-    new integer NOT NULL
+    new text not NULL
 );
 
-ALTER TABLE sa.map_manhole_function OWNER TO postgres;
+ALTER TABLE sa.map_structure_type OWNER TO postgres;
 
-INSERT INTO map_manhole_function (old, new) VALUES
-(10005,	204), --SIGE
-(10006,	204), --SIGE
-(10003,	204), --SIGE
-(10002,	4536), --SIGE
-(3,	4532), -- drop_structure
-(4,	1008), -- separateur d'hydro  -> Oil separator
-(8,	1008), -- sparateur de graisses -> Oil separator
-(10,	228), -- évacuation des voies ferroviaires -> rail_track_gully
-(13,	204), --début du canal -> manhole
-(14,	204),  -- ouverture de chambre
-(18,	204), -- chambre de contrôle -> manhole
-(22,	204), -- chambre avec pompe -> manhole
-(24,	4536), -- station de pompage -> pumpstation
-(26,	5346), -- deversoir d'orage -> stomwater_tank
-(27,	3267), -- recolte des eaux de toiture -> rain_water_manhole
-(28,	204), -- regard de visite -> manhole
-(32,	2742), -- depotoir -> slurry collector
-(33,	204), -- chambre avec deversoir de secours -> manhole /define overflow object + overflow function
-(34,	204), -- regard de nettoyage -> manhole (pas d'équivalence)
-(35,	204), -- regard de rincage -> manhole (pas d'équivalence)
-(37,	204), -- tuyau de chute par temps sec -> manhole + dryweather flum 
-(38,	5345), -- inconnu -> unknown
-(NULL,	5345) -- NULL -> unknown
+INSERT INTO map_structure_type (old, new) VALUES
+(10005	,'manhole'), --SIGE
+(10006	,'manhole'), --SIGE
+(10003	,'manhole'), --SIGE
+(10002	,'manhole'), --SIGE
+(3	,'manhole'), -- drop_structure
+(4	,'manhole'), -- separateur d'hydro  -> Oil separator
+(8	,'manhole'), -- sparateur de graisses -> Oil separator
+(10	,'manhole'), -- évacuation des voies ferroviaires -> rail_track_gully
+(13	,'manhole'), --début du canal -> manhole
+(14	,'manhole'),  -- ouverture de chambre
+(18	,'manhole'), -- chambre de contrôle -> manhole
+(22	,'manhole'), -- chambre avec pompe -> manhole
+(24	,'manhole'), -- station de pompage -> pumpstation
+(26	,'manhole'), -- deversoir d'orage -> stomwater_tank
+(27	,'manhole'), -- recolte des eaux de toiture -> rain_water_manhole
+(28	,'manhole'), -- regard de visite -> manhole
+(32	,'manhole'), -- depotoir -> slurry collector
+(33	,'manhole'), -- chambre avec deversoir de secours -> manhole /define overflow object + overflow function
+(34	,'manhole'), -- regard de nettoyage -> manhole (pas d'équivalence)
+(35	,'manhole'), -- regard de rincage -> manhole (pas d'équivalence)
+(37	,'manhole'), -- tuyau de chute par temps sec -> manhole + dryweather flum 
+(38	,'manhole'), -- inconnu -> unknown:w
+(1	,'special_structure'),
+(2	,'special_structure'),
+(15	,'special_structure'),
+(29	,'special_structure'),
+(36	,'special_structure'),
+(43	,'special_structure'),
+(41	,'infiltration_installation'),
+(NULL   ,'manhole') -- NULL -> manhole
 ;
