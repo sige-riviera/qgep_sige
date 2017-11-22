@@ -77,7 +77,7 @@ INSERT INTO qgep.vw_qgep_wastewater_structure
 SELECT
   -- wastewater structure
   acc.new, -- accessibility
-  substr(schacht.name,1,20), -- identifier
+  schacht.fid, -- identifier
   substr(schacht.bemerkung, 1, 80), -- remark on structure
   st.new, -- status
   stc.new, -- structure condition
@@ -182,4 +182,30 @@ WHERE id_schachtart = 10006;
 -------------------------
 -- Surfacic wastewaterstructure
 -------------------------
+/* Remplacé par FME
+With schachtdetail_geo AS (
+SELECT
+  detail.gid,
+  detail.fid_schacht,
+  ST_MakePolygon(ST_SetSRID(ST_GeomFromText('LINESTRINGZ('||string_agg(geo.y1::varchar||' '||geo.x1::varchar||' '||coalesce(geo.z1,0)::varchar, ',' ORDER BY seq)||')'), 21781)) AS geometry
+FROM sa.aw_schachtdetail detail
+LEFT JOIN sa.aw_schachtdetail_geo geo ON detail.gid = geo.gid
+GROUP BY detail.gid,detail.fid_schacht
+HAVING count(z1)>3 AND ST_IsClosed(ST_SetSRID(ST_GeomFromText('LINESTRINGZ('||string_agg(geo.y1::varchar||' '||geo.x1::varchar||' '||coalesce(geo.z1,0)::varchar, ',' ORDER BY seq)||')'), 21781)) = True
+)
+UPDATE qgep.od_wastewater_structure AS ws
+SET detail_geometry_geometry = schachtdetail_geo.geometry
+FROM schachtdetail_geo
+WHERE ws.identifier = schachtdetail_geo.fid_schacht::text;
+*/
+------------------------
+-- Update wastewaterstructure_identifier
+------------------------
 
+/*
+To uncomment and run for final migration
+UPDATE qgep.od_wastewater_structure AS ws
+SET identifier = schacht.name
+FROM sa.aw_schacht AS schacht
+WHERE ws.identifier = schacht.fid::text;
+*/
