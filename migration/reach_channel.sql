@@ -29,8 +29,8 @@ INSERT INTO qgep.vw_qgep_reach(
   status,
   year_of_construction,
   fk_owner,
-  identifier,
-  remark,
+  ws_identifier,
+  ws_remark,
   --Network element
   --Reach point from
   rp_from_identifier,
@@ -61,7 +61,7 @@ SELECT
   baujahr, -- year_of_construction
   org.obj_id, -- fk_owner
   substr(haltung.name, 1, 20),--identifier
-  substr(bemerkung, 1, 80),--remark
+  bemerkung,--substr(bemerkung, 1, 80),--remark
   --Network element
   --(Automatic)
   --Reach point from

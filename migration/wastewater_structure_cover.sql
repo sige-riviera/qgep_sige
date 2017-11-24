@@ -27,6 +27,7 @@
  * At the end of the script the old fid is replaced with the real identifier.
  */
 
+/*
 WITH netzlinien AS (
 SELECT
   gid,
@@ -38,6 +39,7 @@ SELECT
   ST_SetSRID(ST_GeomFromText('LINESTRINGZ('||string_agg(y1::varchar||' '||x1::varchar||' '||coalesce(z1,0)::varchar, ',' ORDER BY seq)||')'),21781) as geometry
 FROM sa.aw_netzlinie_geo
 GROUP BY gid)
+*/
 
 INSERT INTO qgep.vw_qgep_wastewater_structure
  (
@@ -78,7 +80,7 @@ SELECT
   -- wastewater structure
   acc.new, -- accessibility
   schacht.fid, -- identifier
-  substr(schacht.bemerkung, 1, 80), -- remark on structure
+  schacht.bemerkung, --substr(schacht.bemerkung, 1, 80), -- remark on structure
   st.new, -- status
   stc.new, -- structure condition
   schacht.baujahr, -- construction year
@@ -92,7 +94,7 @@ SELECT
   co_m.new, -- material
 --  hp.new, -- horizontal positionning
   deckel.name, --identifier
-  substr(deckel.bemerkung, 1, 80), -- remark on cover
+  deckel.bemerkung, --substr(deckel.bemerkung, 1, 80), -- remark on cover
   --node
   sohle_geo.z1,
   schacht.fid,
