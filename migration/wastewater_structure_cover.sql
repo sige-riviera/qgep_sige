@@ -184,6 +184,14 @@ WHERE id_schachtart = 10006;
 -------------------------
 -- Surfacic wastewaterstructure
 -------------------------
+
+UPDATE qgep.od_wastewater_structure ws
+SET detail_geometry_geometry = (SELECT st_force3d(st_forcecurve(the_geom))::geometry(curvepolygonz,21781))
+FROM sas.aw_schachtdetail
+WHERE aw_schachtdetail.fid_schacht::text = ws.identifier
+AND st_geometrytype(the_geom)::text = 'ST_Polygon'
+AND deleted = 0
+
 /* Remplacé par FME
 With schachtdetail_geo AS (
 SELECT
