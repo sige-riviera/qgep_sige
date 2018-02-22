@@ -12532,7 +12532,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="CONCAT(&#xa;COALESCE(&quot;material_abbr_en&quot;|| ' ',''),&#xa;COALESCE(&quot;width&quot;||' ', ''),&#xa;COALESCE(&quot;length_effective&quot;|| 'm ', ''),&#xa;COALESCE(&quot;slope_per_mill&quot;||'‰','' )&#xa;)"/>
+        <property key="labeling/fieldName" value="CONCAT(&#xa;COALESCE(&quot;material_abbr_en&quot;|| ' ',''),&#xa;COALESCE(&quot;width&quot;||' ', ''),&#xa;COALESCE( &quot;remark&quot;|| ' ',''),&#xa; '\n' ,&#xa;COALESCE(&quot;length_effective&quot;|| 'm ', ''),&#xa; '\n' ,&#xa;COALESCE(&quot;slope_per_mill&quot;||'‰' || '  ','' ),&#xa;COALESCE(&quot;year_of_construction&quot;|| ' ','')&#xa;)&#xa;"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
@@ -13764,7 +13764,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="CASE WHEN  @map_scale &lt;= 500 THEN &#xa; regexp_replace(regexp_replace( _label, 'I([0-9]+=)', 'E\\1'), 'O([0-9]+=)', 'S\\1')&#xa;|| COALESCE('\nPr='||&quot;_depth&quot; || ' m.','')  ELSE co_identifier END"/>
+        <property key="labeling/fieldName" value="co_identifier ||  '\n'  || COALESCE('Pr='||&quot;_depth&quot; || ' m.','')"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
