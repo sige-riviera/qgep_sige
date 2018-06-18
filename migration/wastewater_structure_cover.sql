@@ -41,7 +41,7 @@ FROM sa.aw_netzlinie_geo
 GROUP BY gid)
 */
 
-INSERT INTO qgep.vw_qgep_wastewater_structure
+INSERT INTO qgep_od.vw_qgep_wastewater_structure
  (
   -- wastewater structure
   accessibility,
@@ -53,24 +53,24 @@ INSERT INTO qgep.vw_qgep_wastewater_structure
   fk_owner,
   ws_type,
   -- cover
-  cover_shape,
-  diameter,
-  fastening,
-  level,
-  cover_material,
+  co_shape,
+  co_diameter,
+  co_fastening,
+  co_level,
+  co_material,
 --  positional_accuracy,
   co_identifier,
   co_remark,
   --node
-  bottom_level,
+  wn_bottom_level,
   wn_identifier,
   --manhole
-  dimension1,
-  dimension2,
-  manhole_function,
-  material,
+  ma_dimension1,
+  ma_dimension2,
+  ma_function,
+  ma_material,
   --special_structure
-  special_structure_function,
+  ss_function,
   --discharge_point
   --infiltration_installation
   situation_geometry
@@ -109,71 +109,71 @@ SELECT
   --infiltration installation
   ST_Multi(ST_SetSRID(ST_MakePoint( schacht_geo.y1, schacht_geo.x1),21781))::geometry(MultiPoint, 21781)
 
-FROM sa.aw_schacht schacht -- Manhole
-LEFT JOIN sa.aw_schacht_geo schacht_geo ON schacht_geo.gid = schacht.gid -- Manhole Geom
+FROM migration.schacht schacht -- Manhole
+LEFT JOIN migration.schacht_geo schacht_geo ON schacht_geo.gid = schacht.gid -- Manhole Geom
 -- Cover / geom
-LEFT JOIN sa.aw_schacht_deckel deckel ON schacht.fid = deckel.fid_schacht
-LEFT JOIN sa.aw_schacht_deckel_geo deckel_geo ON deckel_geo.gid = deckel.gid
+LEFT JOIN migration.schacht_deckel deckel ON schacht.fid = deckel.fid_schacht
+LEFT JOIN migration.schacht_deckel_geo deckel_geo ON deckel_geo.gid = deckel.gid
 --Bottom / geom
-LEFT JOIN sa.aw_schacht_sohle sohle ON schacht.fid = sohle.fid_schacht
-LEFT JOIN sa.aw_schacht_sohle_geo sohle_geo ON sohle_geo.gid = sohle.gid
+LEFT JOIN migration.schacht_sohle sohle ON schacht.fid = sohle.fid_schacht
+LEFT JOIN migration.schacht_sohle_geo sohle_geo ON sohle_geo.gid = sohle.gid
 -- Wastewater structure
 -- Accessibility
-LEFT JOIN sa.map_accessibility acc ON schacht.id_zugaenglichkeit = acc.old
+LEFT JOIN migration.map_accessibility acc ON schacht.id_zugaenglichkeit = acc.old
 -- Manhole function
-LEFT JOIN sa.map_manhole_function mf ON schacht.id_schachtart = mf.old
+LEFT JOIN migration.map_manhole_function mf ON schacht.id_schachtart = mf.old
 -- Special structure function
-LEFT JOIN sa.map_special_structure_function stf ON schacht.id_schachtart = stf.old
+LEFT JOIN migration.map_special_structure_function stf ON schacht.id_schachtart = stf.old
 -- Status
-LEFT JOIN sa.map_status st ON schacht.id_status = st.old
+LEFT JOIN migration.map_status st ON schacht.id_status = st.old
 -- Structure condition (old default)
-LEFT JOIN sa.map_structure_condition stc ON schacht.id_defaut = stc.old
+LEFT JOIN migration.map_structure_condition stc ON schacht.id_defaut = stc.old
 -- Cover
 -- Shape
-LEFT JOIN sa.map_cover_shape co_s ON deckel.id_deckel_form = co_s.old
+LEFT JOIN migration.map_cover_shape co_s ON deckel.id_deckel_form = co_s.old
 -- Fastening
-LEFT JOIN sa.map_cover_fastening co_f ON deckel.id_deckel_form = co_f.old
+LEFT JOIN migration.map_cover_fastening co_f ON deckel.id_deckel_form = co_f.old
 -- Material
-LEFT JOIN sa.map_cover_material co_m ON deckel.id_material = co_m.old
+LEFT JOIN migration.map_cover_material co_m ON deckel.id_material = co_m.old
 -- Horizontal positioning
 --LEFT JOIN sa.map_horizontal_positioning hp ON deckel.id_lagegenauigkeit = hp.old
 -- Manhole
 -- Material
-LEFT JOIN sa.map_manhole_material mm ON schacht.id_material = mm.old
+LEFT JOIN migration.map_manhole_material mm ON schacht.id_material = mm.old
 -- Special structure
-LEFT JOIN sa.map_special_structure_function sf ON schacht.id_schachtart = sf.old
+LEFT JOIN migration.map_special_structure_function sf ON schacht.id_schachtart = sf.old
 -- Owner
-LEFT JOIN sa.ba_eigentumsverhaeltnis_tbd ev ON ev.id = schacht.id_eigentumsverhaeltnis
+LEFT JOIN belmont_ass.ba_eigentumsverhaeltnis_tbd ev ON ev.id = schacht.id_eigentumsverhaeltnis
 -- Organisation
-LEFT JOIN qgep.od_organisation org ON org.identifier = ev.value
+LEFT JOIN qgep_od.organisation org ON org.identifier = ev.value
 -- Type
-LEFT JOIN sa.map_structure_type st_type ON schacht.id_schachtart = st_type.old
--- Filter deleted items
-WHERE COALESCE(deckel.deleted, 0) = 0 AND COALESCE(schacht.deleted, 0) = 0;
+LEFT JOIN migration.map_structure_type st_type ON schacht.id_schachtart = st_type.old;
+-- Filter deleted items has been done earlier with FME
+--WHERE COALESCE(deckel.deleted, 0) = 0 AND COALESCE(schacht.deleted, 0) = 0;
 
 -------------------------
 -- ACCESS AID
 -------------------------
-INSERT INTO qgep.vw_access_aid(
+INSERT INTO qgep_od.vw_access_aid(
   kind,
   fk_wastewater_structure
 )
 SELECT ak.new, ws.obj_id
-FROM sa.aw_schacht schacht
-LEFT JOIN sa.map_access_aid_kind ak ON ak.old = schacht.id_einstieghilfe
-LEFT JOIN qgep.od_wastewater_structure ws ON schacht.fid::text = ws.identifier
+FROM migration.schacht schacht
+LEFT JOIN migration.map_access_aid_kind ak ON ak.old = schacht.id_einstieghilfe
+LEFT JOIN qgep_od.wastewater_structure ws ON schacht.fid::text = ws.identifier
 WHERE id_einstieghilfe IS NOT NULL;
 
 -------------------------
 -- BACKFLOW PREVENTION
 -------------------------
-INSERT INTO qgep.vw_backflow_prevention(
+INSERT INTO qgep_od.vw_backflow_prevention(
   kind,
   fk_wastewater_structure
 )
 SELECT 5757, ws.obj_id -- 5757: backflow_flap
-FROM sa.aw_schacht schacht
-LEFT JOIN qgep.od_wastewater_structure ws ON schacht.fid::text = ws.identifier
+FROM migration.schacht schacht
+LEFT JOIN qgep_od.wastewater_structure ws ON schacht.fid::text = ws.identifier
 WHERE id_schachtart = 10006;
 
 -------------------------
@@ -184,14 +184,14 @@ WHERE id_schachtart = 10006;
 -------------------------
 -- Surfacic wastewaterstructure
 -------------------------
-
-UPDATE qgep.od_wastewater_structure ws
+/*
+UPDATE qgep_od.wastewater_structure ws
 SET detail_geometry_geometry = (SELECT st_force3d(st_forcecurve(the_geom))::geometry(curvepolygonz,21781))
-FROM sas.aw_schachtdetail
+FROM pully_ass_spatial.aw_schachtdetail
 WHERE aw_schachtdetail.fid_schacht::text = ws.identifier
 AND st_geometrytype(the_geom)::text = 'ST_Polygon'
 AND deleted = 0
-
+*/
 /* Remplacé par FME
 With schachtdetail_geo AS (
 SELECT

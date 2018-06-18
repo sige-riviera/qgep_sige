@@ -8,23 +8,20 @@ SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SET check_function_bodies = false;
 SET client_min_messages = warning;
-
-SET search_path = sa, pg_catalog;
-
+SET search_path = migration, pg_catalog;
 SET default_tablespace = '';
-
 SET default_with_oids = false;
 
-DROP TABLE IF EXISTS map_function_hydraulic_leitungen;
+DROP TABLE IF EXISTS migration.map_function_hydraulic_leitungen;
 
-CREATE TABLE map_function_hydraulic_leitungen (
+CREATE TABLE migration.map_function_hydraulic_leitungen (
     old integer,
     new integer NOT NULL
 );
 
-ALTER TABLE sa.map_function_hydraulic_leitungen OWNER TO postgres;
+ALTER TABLE migration.map_function_hydraulic_leitungen OWNER TO postgres;
 
-INSERT INTO map_function_hydraulic_leitungen (old, new) VALUES
+INSERT INTO migration.map_function_hydraulic_leitungen (old, new) VALUES
 (1,     5320), -- Cunette -> other
 (2,     5320), -- conduite d'infiltration ou de drainage -> other
 (3,    	367), -- Evacuation des eaux de routes -> gravity_pipe

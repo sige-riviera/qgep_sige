@@ -23,18 +23,20 @@ done
 
 # Reframe option to get to MN95 srs. ! Does not work on windows yet!
 #psql "service=${PGSERVICE}" -c 'CREATE EXTENSION IF NOT EXISTS fineltra'
-psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS qgep CASCADE'
+psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS qgep_od CASCADE'
+psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS qgep_sys CASCADE'
+psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS qgep_vl CASCADE'
 #psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS sige_assainissement CASCADE'
 #psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS sa CASCADE'
 
 # Initialize datamodel
-${DIR}/datamodel/scripts/db_setup.sh -s 21781 -p $PGSERVICE
+${DIR}/datamodel/scripts/db_setup.sh -s 21781 -p $PGSERVICE -r
 
 # Organisation prefix activation
 #Ajout de sigip
-psql "service=${PGSERVICE}" -c "INSERT INTO qgep.is_oid_prefixes (prefix,organization,active) VALUES ('ch176dc9','Sigip',FALSE);"
-psql "service=${PGSERVICE}" -c "UPDATE qgep.is_oid_prefixes SET active=TRUE WHERE prefix='${OIDPREFIX}'"
-psql "service=${PGSERVICE}" -c "UPDATE qgep.is_oid_prefixes SET active=FALSE WHERE prefix<>'${OIDPREFIX}'"
+psql "service=${PGSERVICE}" -c "INSERT INTO qgep_sys.oid_prefixes (prefix,organization,active) VALUES ('ch176dc9','Sigip',FALSE);"
+psql "service=${PGSERVICE}" -c "UPDATE qgep_sys.oid_prefixes SET active=TRUE WHERE prefix='${OIDPREFIX}'"
+psql "service=${PGSERVICE}" -c "UPDATE qgep_sys.oid_prefixes SET active=FALSE WHERE prefix<>'${OIDPREFIX}'"
 
 # Option to restore from backup.
 #PGSERVICE=${PGSERVICE} pg_restore --no-owner -d ${PGSERVICE} ${DIR}/migration/dump_topobase_95.backup
@@ -78,4 +80,4 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/prank_weir.s
 #psql "service=${PGSERVICE}" -v ON_ERROR_STOP=1  -f ${DIR}/datamodel/07_views_for_network_tracking.sql # not sure why we need to rerun this one
 
 # Change owner
-PGSERVICE=${PGSERVICE} OWNER=qgep SCHEMA=qgep DATABASE=qgep_poc ${DIR}/datamodel/scripts/change_owner.sh
+PGSERVICE=${PGSERVICE} OWNER=qgep SCHEMA=qgep_od DATABASE=qgep_poc ${DIR}/datamodel/scripts/change_owner.sh

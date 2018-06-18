@@ -7,23 +7,20 @@ SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SET check_function_bodies = false;
 SET client_min_messages = warning;
-
-SET search_path = sa, pg_catalog;
-
+SET search_path = migration, pg_catalog;
 SET default_tablespace = '';
-
 SET default_with_oids = false;
 
-DROP TABLE IF EXISTS map_manhole_material;
+DROP TABLE IF EXISTS migration.map_manhole_material;
 
-CREATE TABLE map_manhole_material (
+CREATE TABLE migration.map_manhole_material (
     old integer,
     new integer NOT NULL
 );
 
-ALTER TABLE sa.map_manhole_material OWNER TO postgres;
+ALTER TABLE migration.map_manhole_material OWNER TO postgres;
 
-INSERT INTO map_manhole_material (old, new) VALUES
+INSERT INTO migration.map_manhole_material (old, new) VALUES
 (1, 	4541), -- amiante / ciment -> concrete
 (2,	4541), -- beton arme -> concrete
 (3, 	4541), -- element en beton préfabrique -> concrete

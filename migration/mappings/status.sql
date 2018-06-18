@@ -7,23 +7,20 @@ SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SET check_function_bodies = false;
 SET client_min_messages = warning;
-
-SET search_path = sa, pg_catalog;
-
+SET search_path = migration, pg_catalog;
 SET default_tablespace = '';
-
 SET default_with_oids = false;
 
-DROP TABLE IF EXISTS map_status;
+DROP TABLE IF EXISTS migration.map_status;
 
-CREATE TABLE map_status (
+CREATE TABLE migration.map_status (
     old integer,
     new integer NOT NULL
 );
 
-ALTER TABLE sa.map_status OWNER TO postgres;
+ALTER TABLE migration.map_status OWNER TO postgres;
 
-INSERT INTO map_status (old, new) VALUES
+INSERT INTO migration.map_status (old, new) VALUES
 (1,	8493), -- existant -> operationnal
 (2,	7959), -- planifie -> planned
 (3,	6526), -- fictif -> calculation alternative

@@ -7,23 +7,20 @@ SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SET check_function_bodies = false;
 SET client_min_messages = warning;
-
-SET search_path = sa, pg_catalog;
-
+SET search_path = migration, pg_catalog;
 SET default_tablespace = '';
-
 SET default_with_oids = false;
 
-DROP TABLE IF EXISTS map_structure_type;
+DROP TABLE IF EXISTS migration.map_structure_type;
 
-CREATE TABLE map_structure_type (
+CREATE TABLE migration.map_structure_type (
     old integer,
     new text not NULL
 );
 
-ALTER TABLE sa.map_structure_type OWNER TO postgres;
+ALTER TABLE migration.map_structure_type OWNER TO postgres;
 
-INSERT INTO map_structure_type (old, new) VALUES
+INSERT INTO migration.map_structure_type (old, new) VALUES
 (10005	,'manhole'), --SIGE
 (10006	,'manhole'), --SIGE
 (10003	,'manhole'), --SIGE

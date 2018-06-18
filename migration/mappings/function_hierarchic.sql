@@ -7,24 +7,21 @@ SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SET check_function_bodies = false;
 SET client_min_messages = warning;
-
-SET search_path = sa, pg_catalog;
-
+SET search_path = migration, pg_catalog;
 SET default_tablespace = '';
-
 SET default_with_oids = false;
 
-DROP TABLE IF EXISTS sa.map_function_hierarchic;
+DROP TABLE IF EXISTS migration.map_function_hierarchic;
 
-CREATE TABLE sa.map_function_hierarchic (
+CREATE TABLE migration.map_function_hierarchic (
     old integer,
     new integer NOT NULL
 );
 
 
-ALTER TABLE sa.map_function_hierarchic OWNER TO postgres;
+ALTER TABLE migration.map_function_hierarchic OWNER TO postgres;
 
-INSERT INTO sa.map_function_hierarchic (old, new) VALUES 
+INSERT INTO migration.map_function_hierarchic (old, new) VALUES 
 (1,	5064), -- Evacuation des eaux de bien-fonds -> pwwf.residential_drainage
 (2,	5072), -- Evacuation des eaux de voies ferrees -> pwwf.road_drainage
 (3,	5069), -- Collecteur principal -> main_drain
