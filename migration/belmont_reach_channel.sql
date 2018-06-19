@@ -1,4 +1,4 @@
-﻿-- compute geometry from aw_haltung_geo
+﻿-- compute geometry from pully_ass.aw_haltung_geo
 WITH haltungen_geo AS (
 SELECT 
   gid, 
@@ -6,7 +6,7 @@ SELECT
   last(z1) as rp_to_level, 
 --  ST_Fineltra(St_SetSRID(ST_GeomFromText('LINESTRINGZ('||string_agg(y1::varchar||' '||x1::varchar||' '||coalesce(z1,0)::varchar, ',' ORDER BY seq)||')'),21781), 'chenyx06.chenyx06_triangles', 'the_geom_lv03', 'the_geom_lv95')::Geometry(LinestringZ,2056) AS geometry 
   ST_SetSRID(ST_GeomFromText('LINESTRINGZ('||string_agg(y1::varchar||' '||x1::varchar||' '||coalesce(z1,0)::varchar, ',' ORDER BY seq)||')'), 21781) AS geometry
-FROM migration.haltung_geo 
+FROM belmont_ass.aw_haltung_geo 
 GROUP BY gid)
 
 INSERT INTO qgep_od.vw_qgep_reach(
@@ -47,7 +47,7 @@ SELECT
   rm.new, -- material
   ST_3dLength(geometry), -- length_effective
   gefaelle, --slope per mill
-  ST_ForceCurve(geometry), -- progression_geometry
+  geometry, -- progression_geometry
   ed.new,
   COALESCE(hp.new, 5379),
   pp.obj_id,
@@ -71,7 +71,7 @@ SELECT
   fid_bs,
   rp_to_level
 
-FROM migration.haltung haltung
+FROM belmont_ass.aw_haltung haltung
 LEFT JOIN haltungen_geo geom on geom.gid = haltung.gid
 LEFT JOIN migration.map_function_hierarchic fh ON haltung.id_funktion_hierarch = fh.old --OR (fh.old IS NULL AND haltung.id_funktion_hierarch IS NULL)
 LEFT JOIN migration.map_horizontal_positioning hp ON haltung.id_lagegenauigkeit = hp.old

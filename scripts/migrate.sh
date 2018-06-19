@@ -40,7 +40,9 @@ psql "service=${PGSERVICE}" -c "UPDATE qgep_sys.oid_prefixes SET active=FALSE WH
 
 # Option to restore from backup.
 #PGSERVICE=${PGSERVICE} pg_restore --no-owner -d ${PGSERVICE} ${DIR}/migration/dump_topobase_95.backup
-#psql "service=${PGSERVICE}" -c 'ALTER SCHEMA sige_assainissement RENAME TO sa'
+
+# Ajout des personnalisations de Pully
+
 
 # Function first last
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/aggregates_first_last.sql
@@ -71,8 +73,10 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/mappings/str
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/organisations.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/wastewater_structure_cover.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/profiles.sql
-psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/reach_channel.sql
-psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/reach_channel_leitungen.sql
+psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/pully_reach_channel.sql
+psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/belmont_reach_channel.sql
+psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/pully_reach_channel_leitungen.sql
+psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/belmont_reach_channel_leitungen.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/prank_weir.sql
 
 # Recreate views
