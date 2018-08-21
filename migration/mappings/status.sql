@@ -26,9 +26,9 @@ INSERT INTO migration.map_status (old, new) VALUES
 (3,	6526), -- fictif -> calculation alternative
 (4,	3633), -- hors service -> inoperative
 (5,	6532), -- condamne -> abandonned filled
-(6,	6530), -- changement de fonction -> operationnal tentative
-(7,	3027), -- abandonne -> unknown
-(8,	6533), -- a remplacer -> will be suspended
+(6,	8493), -- changement de fonction -> operationnal
+(7,	6532), -- abandonne -> 
+(8,	8493), -- a remplacer -> operationnal
 (9,	3633), -- aboli -> inoperative
 (10,	6530), -- provisoire -> operationnal tentative
 (11,	3027), -- inconnu -> unknown

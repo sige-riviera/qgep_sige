@@ -21,7 +21,7 @@ CREATE TABLE migration.map_manhole_material (
 ALTER TABLE migration.map_manhole_material OWNER TO postgres;
 
 INSERT INTO migration.map_manhole_material (old, new) VALUES
-(1, 	4541), -- amiante / ciment -> concrete
+(1, 	4540), -- amiante / ciment -> other
 (2,	4541), -- beton arme -> concrete
 (3, 	4541), -- element en beton préfabrique -> concrete
 (4, 	4541), -- beton non arme -> concrete
@@ -30,12 +30,12 @@ INSERT INTO migration.map_manhole_material (old, new) VALUES
 (7, 	4540), -- fonte ductile -> other
 (8, 	4540), -- fibre de verre rencforcée -> other
 (9,	4540), -- fonte grise -> other
-(10,  	4540), -- Element en GUP préfabriqué -> other
-(11, 	4540), -- Maconnerie -> other
+(10,  	4542), -- Element en GUP préfabriqué -> plastic
+(11, 	4541), -- Maconnerie -> beton
 (12,	4541), -- beton coulé sur place -> concrete
 (13, 	4541), -- beton polymere -> concrete
 (14,	4542), -- polyethylene HD -> plastic
-(15,  	4542), -- beton polyester dur -> plastic
+(15,  	4541), -- beton polyester dur -> concrete
 (16, 	4542), -- polypropylene -> plastic
 (17,  	4542), -- chlorure de polyvinyle PVC -> plastic
 (18,	4541), -- beton acier -> concrete

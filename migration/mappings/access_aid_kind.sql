@@ -31,5 +31,5 @@ INSERT INTO migration.map_access_aid_kind (old, new) VALUES
 (6,	3048), -- inconnu -> unknown
 (7,	92), -- pas d'équipement -> none
 (10,	5357), -- autre -> other
-(NULL,	3048) -- NULL -> inconnu
+(NULL,	92) -- NULL -> none
 ;
