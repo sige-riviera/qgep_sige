@@ -504,10 +504,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2551252.38853107579052448</xmin>
-      <ymin>1143024.81094846525229514</ymin>
-      <xmax>2564155.0250991452485323</xmax>
-      <ymax>1149475.98184356489218771</ymax>
+      <xmin>2552058.80331658106297255</xmin>
+      <ymin>1142218.39616296044550836</ymin>
+      <xmax>2564961.43988465052098036</xmax>
+      <ymax>1148669.56705806008540094</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -1597,7 +1597,7 @@
               <prop k="joinstyle" v="bevel"/>
               <prop k="line_color" v="178,223,138,255"/>
               <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.6"/>
+              <prop k="line_width" v="0.8"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1616,7 +1616,7 @@
               <prop k="joinstyle" v="bevel"/>
               <prop k="line_color" v="51,160,44,255"/>
               <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.6"/>
+              <prop k="line_width" v="0.8"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1635,7 +1635,7 @@
               <prop k="joinstyle" v="bevel"/>
               <prop k="line_color" v="253,191,111,255"/>
               <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.6"/>
+              <prop k="line_width" v="0.8"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1654,7 +1654,7 @@
               <prop k="joinstyle" v="bevel"/>
               <prop k="line_color" v="255,127,0,255"/>
               <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.6"/>
+              <prop k="line_width" v="0.8"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1673,7 +1673,7 @@
               <prop k="joinstyle" v="bevel"/>
               <prop k="line_color" v="251,154,153,255"/>
               <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.6"/>
+              <prop k="line_width" v="0.8"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1692,7 +1692,7 @@
               <prop k="joinstyle" v="bevel"/>
               <prop k="line_color" v="227,26,28,255"/>
               <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.6"/>
+              <prop k="line_width" v="0.8"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1711,7 +1711,7 @@
               <prop k="joinstyle" v="bevel"/>
               <prop k="line_color" v="179,179,179,255"/>
               <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.6"/>
+              <prop k="line_width" v="0.8"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
