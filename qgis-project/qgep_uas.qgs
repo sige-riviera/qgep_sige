@@ -5,7 +5,170 @@
   <evaluateDefaultValues active="1"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="QGEP Origine">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Unité assainissement - exploitation">
+      <customproperties/>
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçon_test_copier20180724170659439" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="Tronçons par numéro">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Tronçons par numéro">
+        <customproperties/>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier20180824132632463" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="2001">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824133119186" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3001">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824133052477" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3002">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133119467" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3003">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824133045648" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3004">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133119742" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3005">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133052774" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3006">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133120029" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3007">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824132913433" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3008">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133120295" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3009">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133053039" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3010">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133120570" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3011">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133045945" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3012">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133120851" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3013">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133053321" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3014">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824132911680" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="4001">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133053586" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="4003">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133046226" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="4005">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133053836" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="4006">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824132909477" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5001">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133054102" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5002">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133046492" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5003">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133054383" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5004">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824132907430" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5005">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133054617" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5006">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133046759" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5007">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133054820" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5008">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824132902259" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5010">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133055008" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5011">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133047040" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="autres">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="Tronçon_copier20180724163126100" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=function_hierarchic IN (5068,5069,5070,5071) AND fk_owner = 'ch15z36dOG000025'" name="Tronçons - date et âge de dernière inspection">
+        <customproperties>
+          <property key="expandedLegendNodes"/>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons___date_et_âge_de_dernière_inspection_copier20181011180906702" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=function_hierarchic IN (5068,5069,5070,5071) AND fk_owner = 'ch15z36dOG000025'" name="Tronçons - date et âge de dernier curage">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="chambre_copier_copier20180726102643036" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table=&quot;qgep&quot;.&quot;vw_qgep_wastewater_structure&quot; (situation_geometry) sql=" name="Chambres">
+        <customproperties>
+          <property key="expandedLegendNodes"/>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Fonds de plans">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded-invisible-layers">
+            <value>no_nomenclature20161124151011953</value>
+            <value>od_entree_batiment20161124100003328</value>
+            <value>bf_point_limite20161123141033694</value>
+            <value>pf_points_fixes20161123144654375</value>
+            <value>ab_rue20161122113837293</value>
+            <value>lc_limites_commune20180525110719694</value>
+            <value>od_element_lineaire20161123134458480</value>
+            <value>bf_immeuble20161019163752305</value>
+            <value>od_element_surfacique20161123111234045</value>
+            <value>cs_couverture_sol20161117155047081</value>
+            <value>National_Map_1_25_00020170314120154767</value>
+            <value>National_Maps__color_20170314120148938</value>
+            <value>OpenStreeMap20170131085532398</value>
+            <value>Fond_ASIT_VD___cadastral20180322144711527</value>
+            <value>Fond_ASIT_VD___couleur20180322144715694</value>
+            <value>Fond_ASIT_VD___niveaux_de_gris20180322144719023</value>
+            <value>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</value>
+            <value>cn124420180821142505088</value>
+            <value>cn126420180821142456803</value>
+          </property>
+          <property key="embedded_project" value="../cadastre/cadastre_pg.qgs"/>
+        </customproperties>
+      </layer-tree-group>
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Utilitaire">
+        <customproperties/>
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_last_inspection_copier20181011170745103" source="service='pg_qgep' sslmode=disable key='fk_wastewater_structure' table=&quot;qgep_sige&quot;.&quot;vw_last_inspection&quot; sql=" name="vw_last_inspection">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_last_inspection_copier_copier20181011170759603" source="service='pg_qgep' sslmode=disable key='fk_wastewater_structure' table=&quot;qgep_sige&quot;.&quot;vw_last_cleaning&quot; sql=" name="vw_last_cleaning">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
+    </layer-tree-group>
+    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="DEV">
+      <customproperties/>
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="chambre_copier20180824080214454" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table=&quot;qgep&quot;.&quot;vw_qgep_wastewater_structure&quot; (situation_geometry) sql=" name="chambre">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="chambre___dev_copier20180824080304856" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table=&quot;qgep&quot;.&quot;vw_qgep_wastewater_structure&quot; (situation_geometry) sql=" name="chambre - dev">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="tronçon_copier20180724155831290" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="Tronçon">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçon_copier20180824165948550" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="Tronçon - dev">
+        <customproperties/>
+      </layer-tree-layer>
+    </layer-tree-group>
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="QGEP Origine">
       <customproperties/>
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_qgep_wastewater_structure" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table=&quot;qgep&quot;.&quot;vw_qgep_wastewater_structure&quot; (situation_geometry) sql=" name="chambre">
         <customproperties>
@@ -273,172 +436,6 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Fonds de plans">
-        <customproperties>
-          <property key="embedded" value="1"/>
-          <property key="embedded-invisible-layers">
-            <value>no_nomenclature20161124151011953</value>
-            <value>od_entree_batiment20161124100003328</value>
-            <value>bf_point_limite20161123141033694</value>
-            <value>pf_points_fixes20161123144654375</value>
-            <value>ab_rue20161122113837293</value>
-            <value>lc_limites_commune20180525110719694</value>
-            <value>od_element_lineaire20161123134458480</value>
-            <value>bf_immeuble20161019163752305</value>
-            <value>od_element_surfacique20161123111234045</value>
-            <value>cs_couverture_sol20161117155047081</value>
-            <value>National_Map_1_25_00020170314120154767</value>
-            <value>National_Maps__color_20170314120148938</value>
-            <value>SWISSIMAGE20170314120137660</value>
-            <value>OpenStreeMap20170131085532398</value>
-            <value>Fond_ASIT_VD___cadastral20180322144711527</value>
-            <value>Fond_ASIT_VD___couleur20180322144715694</value>
-            <value>Fond_ASIT_VD___niveaux_de_gris20180322144719023</value>
-            <value>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</value>
-            <value>cn124420180821142505088</value>
-            <value>cn126420180821142456803</value>
-          </property>
-          <property key="embedded_project" value="../cadastre/cadastre_pg.qgs"/>
-        </customproperties>
-      </layer-tree-group>
-    </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="UAS">
-      <customproperties/>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçon_test_copier20180724170659439" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="Tronçons par numéro">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Tronçons par numéro">
-        <customproperties/>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier20180824132632463" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="2001">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824133119186" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3001">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824133052477" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3002">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133119467" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3003">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824133045648" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3004">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133119742" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3005">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133052774" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3006">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133120029" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3007">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824132913433" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3008">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133120295" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3009">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133053039" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3010">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133120570" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3011">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133045945" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3012">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133120851" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3013">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133053321" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="3014">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824132911680" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="4001">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133053586" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="4003">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133046226" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="4005">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133053836" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="4006">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824132909477" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5001">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133054102" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5002">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133046492" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5003">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133054383" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5004">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824132907430" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5005">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133054617" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5006">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133046759" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5007">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier_copier20180824133054820" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5008">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier20180824132902259" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5010">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133055008" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="5011">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons_par_numéro_copier_copier_copier20180824133047040" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="autres">
-          <customproperties/>
-        </layer-tree-layer>
-      </layer-tree-group>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="Tronçon_copier20180724163126100" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="Tronçons - date et âge de dernière inspection">
-        <customproperties>
-          <property key="expandedLegendNodes" value="{19bcb1df-a7c2-428c-9cd0-190adedab045}"/>
-        </customproperties>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons___date_et_âge_de_dernière_inspection__nouveau__copier20181011170345546" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="Tronçons - date et âge de dernièr curage (nouveau)">
-        <customproperties>
-          <property key="expandedLegendNodes"/>
-        </customproperties>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="chambre_copier_copier20180726102643036" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table=&quot;qgep&quot;.&quot;vw_qgep_wastewater_structure&quot; (situation_geometry) sql=" name="Chambres">
-        <customproperties>
-          <property key="expandedLegendNodes"/>
-        </customproperties>
-      </layer-tree-layer>
-      <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Techniques">
-        <customproperties/>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_last_inspection_copier20181011170745103" source="service='pg_qgep' sslmode=disable key='fk_wastewater_structure' table=&quot;qgep_sige&quot;.&quot;vw_last_inspection&quot; sql=" name="vw_last_inspection">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_last_inspection_copier_copier20181011170759603" source="service='pg_qgep' sslmode=disable key='fk_wastewater_structure' table=&quot;qgep_sige&quot;.&quot;vw_last_cleaning&quot; sql=" name="vw_last_cleaning">
-          <customproperties/>
-        </layer-tree-layer>
-      </layer-tree-group>
-    </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="DEV">
-      <customproperties/>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="chambre_copier20180824080214454" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table=&quot;qgep&quot;.&quot;vw_qgep_wastewater_structure&quot; (situation_geometry) sql=" name="chambre">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="chambre___dev_copier20180824080304856" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table=&quot;qgep&quot;.&quot;vw_qgep_wastewater_structure&quot; (situation_geometry) sql=" name="chambre - dev">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="tronçon_copier20180724155831290" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="Tronçon">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçon_copier20180824165948550" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="Tronçon - dev">
-        <customproperties/>
-      </layer-tree-layer>
     </layer-tree-group>
   </layer-tree-group>
   <relations>
@@ -527,10 +524,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2551696.7050508726388216</xmin>
-      <ymin>1143518.91102043003775179</ymin>
-      <xmax>2564599.34161894209682941</xmax>
-      <ymax>1149970.08191552967764437</ymax>
+      <xmin>2546321.38214708538725972</xmin>
+      <ymin>1136245.22935398016124964</ymin>
+      <xmax>2572126.65528322430327535</xmax>
+      <ymax>1153500.30844830069690943</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -736,13 +733,222 @@
       <item>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</item>
       <item>cn124420180821142505088</item>
       <item>cn126420180821142456803</item>
-      <item>Tronçons___date_et_âge_de_dernière_inspection__nouveau__copier20181011170345546</item>
       <item>vw_last_inspection_copier20181011170745103</item>
       <item>vw_last_inspection_copier_copier20181011170759603</item>
+      <item>Tronçons___date_et_âge_de_dernière_inspection_copier20181011180906702</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::Unchecked" name="QGEP Origine">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Unité assainissement - exploitation">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tronçons par numéro" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Tronçon_test_copier20180724170659439" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendgroup open="false" checked="Qt::Unchecked" name="Tronçons par numéro">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="2001" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier20180824132632463" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3001" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133119186" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3002" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133052477" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3003" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133119467" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3004" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133045648" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3005" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133119742" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3006" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133052774" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3007" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120029" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3008" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132913433" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3009" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133120295" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3010" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133053039" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3011" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120570" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3012" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133045945" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3013" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120851" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3014" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133053321" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="4001" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132911680" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="4003" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133053586" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="4005" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046226" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="4006" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133053836" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5001" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132909477" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5002" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133054102" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5003" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046492" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5004" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133054383" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5005" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132907430" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5006" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133054617" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5007" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046759" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5008" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133054820" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5010" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132902259" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5011" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133055008" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="autres" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133047040" visible="0"/>
+          </filegroup>
+        </legendlayer>
+      </legendgroup>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Tronçons - date et âge de dernière inspection" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Tronçon_copier20180724163126100" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernier curage" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Tronçons___date_et_âge_de_dernière_inspection_copier20181011180906702" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Chambres" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="chambre_copier_copier20180726102643036" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendgroup embedded="1" open="true" checked="Qt::PartiallyChecked" name="Fonds de plans" project="../cadastre/cadastre_pg.qgs"/>
+      <legendgroup open="false" checked="Qt::Unchecked" name="Utilitaire">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="vw_last_inspection" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="vw_last_inspection_copier20181011170745103" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="vw_last_cleaning" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="vw_last_inspection_copier_copier20181011170759603" visible="0"/>
+          </filegroup>
+        </legendlayer>
+      </legendgroup>
+    </legendgroup>
+    <legendgroup open="false" checked="Qt::PartiallyChecked" name="DEV">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="chambre" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="chambre_copier20180824080214454" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="chambre - dev" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="chambre___dev_copier20180824080304856" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tronçon" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="tronçon_copier20180724155831290" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tronçon - dev" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Tronçon_copier20180824165948550" visible="0"/>
+        </filegroup>
+      </legendlayer>
+    </legendgroup>
+    <legendgroup open="false" checked="Qt::Unchecked" name="QGEP Origine">
       <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="chambre" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_qgep_wastewater_structure" visible="0"/>
@@ -1123,227 +1329,20 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="Fonds de plans" project="../cadastre/cadastre_pg.qgs"/>
-    </legendgroup>
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="UAS">
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tronçons par numéro" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Tronçon_test_copier20180724170659439" visible="0"/>
-        </filegroup>
-      </legendlayer>
-      <legendgroup open="false" checked="Qt::Unchecked" name="Tronçons par numéro">
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="2001" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier20180824132632463" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3001" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133119186" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3002" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133052477" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3003" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133119467" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3004" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133045648" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3005" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133119742" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3006" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133052774" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3007" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120029" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3008" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132913433" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3009" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133120295" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3010" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133053039" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3011" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120570" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3012" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133045945" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3013" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120851" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3014" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133053321" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="4001" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132911680" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="4003" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133053586" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="4005" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046226" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="4006" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133053836" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5001" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132909477" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5002" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133054102" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5003" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046492" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5004" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133054383" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5005" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132907430" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5006" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133054617" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5007" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046759" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5008" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133054820" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5010" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132902259" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="5011" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133055008" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="autres" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133047040" visible="0"/>
-          </filegroup>
-        </legendlayer>
-      </legendgroup>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Tronçons - date et âge de dernière inspection" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Tronçon_copier20180724163126100" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Tronçons - date et âge de dernièr curage (nouveau)" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Tronçons___date_et_âge_de_dernière_inspection__nouveau__copier20181011170345546" visible="0"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Chambres" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="chambre_copier_copier20180726102643036" visible="0"/>
-        </filegroup>
-      </legendlayer>
-      <legendgroup open="true" checked="Qt::Unchecked" name="Techniques">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="vw_last_inspection" showFeatureCount="0">
-          <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="vw_last_inspection_copier20181011170745103" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="vw_last_cleaning" showFeatureCount="0">
-          <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="vw_last_inspection_copier_copier20181011170759603" visible="0"/>
-          </filegroup>
-        </legendlayer>
-      </legendgroup>
-    </legendgroup>
-    <legendgroup open="true" checked="Qt::Unchecked" name="DEV">
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="chambre" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="chambre_copier20180824080214454" visible="0"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="chambre - dev" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="chambre___dev_copier20180824080304856" visible="0"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tronçon" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="tronçon_copier20180724155831290" visible="0"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tronçon - dev" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Tronçon_copier20180824165948550" visible="0"/>
-        </filegroup>
-      </legendlayer>
     </legendgroup>
   </legend>
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
-        <xmin>2549846.7734358599409461</xmin>
-        <ymin>1133639.21541166002862155</ymin>
-        <xmax>2563274.73745347978547215</xmax>
-        <ymax>1152651.50683241011574864</ymax>
+        <xmin>2550816.2961514201015234</xmin>
+        <ymin>1139785.92620071000419557</ymin>
+        <xmax>2562139.66806825995445251</xmax>
+        <ymax>1152246.40395005000755191</ymax>
       </extent>
       <id>Tronçon_copier20180724163126100</id>
-      <datasource>service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
+      <datasource>service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table="qgep"."vw_qgep_reach" (progression_geometry) sql=function_hierarchic IN (5068,5069,5070,5071) AND fk_owner = 'ch15z36dOG000025'</datasource>
+      <title>Tronçons - date et âge de dernière inspection</title>
+      <abstract>Tronçons primaires SIGE pour visualiser la date et l'âge de dernière inspection</abstract>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1374,6 +1373,7 @@
       <layerDependencies/>
       <expressionfields>
         <field typeName="int2" precision="0" expression="CASE&#xd;&#xa;&#x9;WHEN function_hierarchic IN (5068,5069,5070,5071) AND fk_owner = 'ch15z36dOG000025' THEN&#xd;&#xa;&#x9;&#x9;CASE &#xd;&#xa;&#x9;&#x9;&#x9;WHEN to_int( left(&quot;rp_from_identifier&quot;, 4)) THEN to_int( left(&quot;rp_from_identifier&quot;, 4))&#xd;&#xa;&#x9;&#x9;&#x9;WHEN to_int( left(&quot;rp_to_identifier&quot;, 4)) THEN to_int( left(&quot;rp_to_identifier&quot;, 4))&#xd;&#xa;&#x9;&#x9;&#x9;ELSE 2&#xd;&#xa;&#x9;&#x9;END&#xd;&#xa;&#x9;ELSE 1&#xd;&#xa;END" length="-1" type="2" comment="" name="vf_reach_num"/>
+        <field typeName="numeric" precision="1" expression="- &quot;slope_per_mill&quot;" length="1" type="6" comment="" name="Pente (positive)"/>
       </expressionfields>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
@@ -1622,23 +1622,21 @@
         <edittype widgetv2type="TextEdit" name="vf_reach_num">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="Pente (positive)">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{b3f3f0a1-c8d2-4416-8d68-3de95a17bc02}">
-          <rule filter="function_hierarchic IN (5068,5069,5070,5071) AND fk_owner = 'ch15z36dOG000025'" key="{19bcb1df-a7c2-428c-9cd0-190adedab045}" label="primaire">
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) &lt; 1" key="{e1ab0a9d-a05a-4bd3-85df-08795e1985ef}" symbol="0" label="&lt;= 1 an"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 1" key="{f3b2df9c-728c-4c33-90e2-7e721518fa51}" symbol="1" label="1 an"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 2" key="{69fdc5d3-c65a-4332-9f45-b569efdcf7b5}" symbol="2" label="2 ans"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 3" key="{dec5aa09-4e7d-4483-a617-d235f5fed9ec}" symbol="3" label="3 ans"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 4" key="{b29afc8d-b6b5-4997-b273-c9e8b1828400}" symbol="4" label="4 ans"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 5" key="{06af7cc3-8f98-4895-b3cb-22ddac4402c7}" symbol="5" label="5 ans"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) >=  5 AND (to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) &lt; 10" key="{659fbf0a-57d2-4848-b0a5-daaaea4a3366}" symbol="6" label="entre 5 et 10 ans"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) >=  10" key="{443405f1-0873-4efc-95d7-1838dc954f80}" symbol="7" label=">= 10 ans"/>
-            <rule filter="ELSE" key="{5afc04aa-393f-4942-8e2d-41add9680cff}" symbol="8" label="pas de données"/>
-          </rule>
-          <rule filter="function_hierarchic NOT IN (5068,5069,5070,5071) AN fk_owner = 'ch15z36dOG000025'" key="{ddc21d10-af1e-43c3-9e07-d6f09f281f30}" symbol="9" label="secondaire"/>
-          <rule filter="fk_owner != 'ch15z36dOG000025'" key="{d40870b1-2bee-4498-8f17-6f33ebcc57b0}" symbol="10" label="étranger"/>
-          <rule filter="ELSE" key="{4d2a5d8c-c208-49a1-b29a-a975cf6fc370}" symbol="11" label="données manquantes"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) &lt; 1" key="{fb5c52fd-6a2b-479d-8760-9a40ff5c4c6a}" symbol="0" label="&lt;= 1 an"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 1" key="{dadc3274-135d-4e0f-b206-5450e624fc0c}" symbol="1" label="1 an"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 2" key="{051d55eb-31a3-40fb-9432-cc0314581a5d}" symbol="2" label="2 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 3" key="{2b93a3e5-adde-41d9-977e-253e1ca9cdf0}" symbol="3" label="3 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 4" key="{b17f5065-958d-4df1-a6bc-1b328114129e}" symbol="4" label="4 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 5" key="{9a409b3d-7b08-48e0-bf23-240043b710fe}" symbol="5" label="5 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) >=  5 AND (to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) &lt; 10" key="{e43ca7f6-f482-494d-9b5b-6afd52dc86e0}" symbol="6" label="entre 5 et 10 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) >=  10" key="{fa740491-5270-4664-ac48-a5fa706dd2a9}" symbol="7" label=">= 10 ans"/>
+          <rule filter="ELSE" key="{fa7fb5e6-1cb1-4507-af80-d7f3845e234e}" symbol="8" label="pas de données"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="line" name="0">
@@ -1671,60 +1669,6 @@
               <prop k="line_color" v="175,233,142,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.8"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="10">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="0"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_dd_active" v="1"/>
-              <prop k="customdash_dd_expression" v="CASE WHEN horizontal_positioning = 5378 THEN '1;0' ELSE '4;2' END"/>
-              <prop k="customdash_dd_field" v=""/>
-              <prop k="customdash_dd_useexpr" v="1"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="11">
-            <layer pass="5" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="round"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="round"/>
-              <prop k="line_color" v="243,69,255,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="1"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1855,50 +1799,15 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="179,179,179,255"/>
+              <prop k="line_color" v="77,77,77,255"/>
               <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.8"/>
+              <prop k="line_width" v="0.6"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="0"/>
               <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="9">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_dd_active" v="1"/>
-              <prop k="customdash_dd_expression" v="CASE WHEN horizontal_positioning = 5378 THEN '1;0' ELSE '4;2' END"/>
-              <prop k="customdash_dd_field" v=""/>
-              <prop k="customdash_dd_useexpr" v="1"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
             </layer>
           </symbol>
         </symbols>
@@ -2084,7 +1993,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>obj_id</displayfield>
+      <displayfield>location_name</displayfield>
       <label>0</label>
       <labelattributes>
         <label fieldname="" text="Label"/>
@@ -2139,14 +2048,14 @@
       <aliases>
         <alias field="obj_id" index="0" name="Identifiant"/>
         <alias field="clear_height" index="1" name="hauteur_max_profil"/>
-        <alias field="width" index="2" name="largeur"/>
+        <alias field="width" index="2" name="Largeur"/>
         <alias field="coefficient_of_friction" index="3" name="K"/>
         <alias field="elevation_determination" index="4" name="determination_altimetrique"/>
         <alias field="horizontal_positioning" index="5" name="determination_planimetrique"/>
         <alias field="inside_coating" index="6" name="protection_interieure"/>
-        <alias field="length_effective" index="7" name="l_effective"/>
-        <alias field="slope_per_mill" index="8" name=""/>
-        <alias field="material" index="9" name="materiau"/>
+        <alias field="length_effective" index="7" name="Longueur réelle"/>
+        <alias field="slope_per_mill" index="8" name="Pente"/>
+        <alias field="material" index="9" name="Matériau"/>
         <alias field="reliner_material" index="10" name="relining_materiaux"/>
         <alias field="reliner_nominal_size" index="11" name="reliner_diametre_nominale"/>
         <alias field="relining_construction" index="12" name="relining_technique"/>
@@ -2175,15 +2084,15 @@
         <alias field="replacement_value" index="35" name="valeur_remplacement"/>
         <alias field="rv_base_year" index="36" name="vr_annee_reference"/>
         <alias field="rv_construction_type" index="37" name="vr_type_construction"/>
-        <alias field="status" index="38" name="etat"/>
-        <alias field="structure_condition" index="39" name="etat_constructif"/>
+        <alias field="status" index="38" name="Statut"/>
+        <alias field="structure_condition" index="39" name="Etat constructif"/>
         <alias field="subsidies" index="40" name="subventions"/>
         <alias field="year_of_construction" index="41" name="annee_de_construction"/>
         <alias field="year_of_replacement" index="42" name="annee_de_remplacement"/>
         <alias field="fk_owner" index="43" name=""/>
         <alias field="fk_operator" index="44" name=""/>
         <alias field="identifier" index="45" name="designation"/>
-        <alias field="remark" index="46" name="remarque"/>
+        <alias field="remark" index="46" name="Remarque"/>
         <alias field="last_modification" index="47" name="derniere_modification"/>
         <alias field="fk_dataowner" index="48" name=""/>
         <alias field="fk_provider" index="49" name=""/>
@@ -2217,28 +2126,32 @@
         <alias field="material_abbr_de" index="77" name=""/>
         <alias field="material_abbr_fr" index="78" name=""/>
         <alias field="vw_last_inspection_last_inspection" index="79" name="Dernière inspection"/>
-        <alias field="vf_reach_num" index="80" name=""/>
+        <alias field="vf_reach_num" index="80" name="Numéro de collecteur"/>
+        <alias field="Pente (positive)" index="81" name="Pente"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;vw_last_inspection_last_inspection&quot;" sortOrder="1">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;remark&quot;" sortOrder="1">
         <columns>
+          <column width="-1" hidden="1" type="field" name="obj_id"/>
+          <column width="-1" hidden="0" type="field" name="vf_reach_num"/>
+          <column width="-1" hidden="0" type="field" name="vw_last_inspection_last_inspection"/>
+          <column width="198" hidden="1" type="field" name="material"/>
+          <column width="-1" hidden="1" type="field" name="width"/>
+          <column width="100" hidden="0" type="field" name="length_effective"/>
+          <column width="-1" hidden="0" type="field" name="Pente (positive)"/>
+          <column width="100" hidden="1" type="field" name="slope_per_mill"/>
+          <column width="212" hidden="1" type="field" name="relining_construction"/>
           <column width="-1" hidden="1" type="field" name="rp_from_obj_id"/>
           <column width="-1" hidden="1" type="field" name="rp_to_obj_id"/>
-          <column width="-1" hidden="0" type="field" name="obj_id"/>
           <column width="-1" hidden="1" type="field" name="clear_height"/>
-          <column width="-1" hidden="0" type="field" name="width"/>
           <column width="-1" hidden="1" type="field" name="coefficient_of_friction"/>
           <column width="267" hidden="1" type="field" name="elevation_determination"/>
           <column width="-1" hidden="1" type="field" name="horizontal_positioning"/>
           <column width="100" hidden="1" type="field" name="inside_coating"/>
-          <column width="-1" hidden="0" type="field" name="length_effective"/>
-          <column width="-1" hidden="0" type="field" name="slope_per_mill"/>
-          <column width="198" hidden="0" type="field" name="material"/>
           <column width="-1" hidden="1" type="field" name="reliner_material"/>
           <column width="191" hidden="1" type="field" name="reliner_nominal_size"/>
-          <column width="-1" hidden="0" type="field" name="relining_construction"/>
           <column width="-1" hidden="1" type="field" name="relining_kind"/>
           <column width="137" hidden="1" type="field" name="ring_stiffness"/>
           <column width="-1" hidden="1" type="field" name="slope_building_plan"/>
@@ -2247,13 +2160,14 @@
           <column width="-1" hidden="1" type="field" name="bedding_encasement"/>
           <column width="-1" hidden="1" type="field" name="function_hierarchic"/>
           <column width="-1" hidden="1" type="field" name="connection_type"/>
-          <column width="196" hidden="0" type="field" name="function_hydraulic"/>
+          <column width="196" hidden="1" type="field" name="function_hydraulic"/>
           <column width="-1" hidden="1" type="field" name="jetting_interval"/>
           <column width="-1" hidden="1" type="field" name="pipe_length"/>
-          <column width="153" hidden="0" type="field" name="usage_current"/>
+          <column width="153" hidden="1" type="field" name="usage_current"/>
           <column width="153" hidden="1" type="field" name="usage_planned"/>
           <column width="-1" hidden="1" type="field" name="ws_obj_id"/>
           <column width="-1" hidden="1" type="field" name="accessibility"/>
+          <column width="122" hidden="0" type="field" name="status"/>
           <column width="-1" hidden="1" type="field" name="contract_section"/>
           <column width="-1" hidden="1" type="field" name="financing"/>
           <column width="-1" hidden="1" type="field" name="gross_costs"/>
@@ -2264,22 +2178,21 @@
           <column width="-1" hidden="1" type="field" name="replacement_value"/>
           <column width="152" hidden="1" type="field" name="rv_base_year"/>
           <column width="-1" hidden="1" type="field" name="rv_construction_type"/>
-          <column width="-1" hidden="0" type="field" name="status"/>
-          <column width="-1" hidden="0" type="field" name="structure_condition"/>
+          <column width="100" hidden="0" type="field" name="structure_condition"/>
           <column width="-1" hidden="1" type="field" name="subsidies"/>
-          <column width="-1" hidden="0" type="field" name="year_of_construction"/>
-          <column width="-1" hidden="0" type="field" name="year_of_replacement"/>
+          <column width="-1" hidden="1" type="field" name="year_of_construction"/>
+          <column width="-1" hidden="1" type="field" name="year_of_replacement"/>
           <column width="-1" hidden="1" type="field" name="fk_owner"/>
           <column width="-1" hidden="1" type="field" name="fk_operator"/>
-          <column width="-1" hidden="0" type="field" name="identifier"/>
-          <column width="-1" hidden="0" type="field" name="remark"/>
+          <column width="-1" hidden="1" type="field" name="identifier"/>
+          <column width="205" hidden="1" type="field" name="remark"/>
           <column width="-1" hidden="1" type="field" name="last_modification"/>
           <column width="-1" hidden="1" type="field" name="fk_dataowner"/>
           <column width="-1" hidden="1" type="field" name="fk_provider"/>
           <column width="-1" hidden="1" type="field" name="fk_wastewater_structure"/>
           <column width="-1" hidden="1" type="field" name="rp_from_elevation_accuracy"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_identifier"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_level"/>
+          <column width="-1" hidden="1" type="field" name="rp_from_identifier"/>
+          <column width="-1" hidden="1" type="field" name="rp_from_level"/>
           <column width="-1" hidden="1" type="field" name="rp_from_outlet_shape"/>
           <column width="-1" hidden="1" type="field" name="rp_from_position_of_connection"/>
           <column width="-1" hidden="1" type="field" name="rp_from_remark"/>
@@ -2288,8 +2201,8 @@
           <column width="-1" hidden="1" type="field" name="rp_from_fk_provider"/>
           <column width="-1" hidden="1" type="field" name="rp_from_fk_wastewater_networkelement"/>
           <column width="-1" hidden="1" type="field" name="rp_to_elevation_accuracy"/>
-          <column width="-1" hidden="0" type="field" name="rp_to_identifier"/>
-          <column width="-1" hidden="0" type="field" name="rp_to_level"/>
+          <column width="-1" hidden="1" type="field" name="rp_to_identifier"/>
+          <column width="-1" hidden="1" type="field" name="rp_to_level"/>
           <column width="-1" hidden="1" type="field" name="rp_to_outlet_shape"/>
           <column width="-1" hidden="1" type="field" name="rp_to_position_of_connection"/>
           <column width="-1" hidden="1" type="field" name="rp_to_remark"/>
@@ -2304,8 +2217,6 @@
           <column width="-1" hidden="1" type="field" name="material_abbr_de"/>
           <column width="-1" hidden="1" type="field" name="material_abbr_fr"/>
           <column width="-1" hidden="1" type="actions"/>
-          <column width="-1" hidden="0" type="field" name="vw_last_inspection_last_inspection"/>
-          <column width="-1" hidden="0" type="field" name="vf_reach_num"/>
         </columns>
       </attributetableconfig>
       <editform>../QGEP-customizer/QGEP/project/forms/reach.ui</editform>
@@ -2331,125 +2242,10 @@ def my_form_open(dialog, layer, feature):
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
-      <attributeEditorForm>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="2">
-          <attributeEditorField showLabel="1" index="0" name="obj_id"/>
-          <attributeEditorField showLabel="1" index="45" name="identifier"/>
-          <attributeEditorField showLabel="1" index="1" name="clear_height"/>
-          <attributeEditorField showLabel="1" index="9" name="material"/>
-          <attributeEditorField showLabel="1" index="24" name="usage_current"/>
-          <attributeEditorField showLabel="1" index="5" name="horizontal_positioning"/>
-          <attributeEditorField showLabel="1" index="19" name="function_hierarchic"/>
-          <attributeEditorField showLabel="1" index="21" name="function_hydraulic"/>
-          <attributeEditorField showLabel="1" index="38" name="status"/>
-          <attributeEditorField showLabel="1" index="41" name="year_of_construction"/>
-          <attributeEditorField showLabel="1" index="43" name="fk_owner"/>
-          <attributeEditorField showLabel="1" index="44" name="fk_operator"/>
-          <attributeEditorField showLabel="1" index="54" name="rp_from_level"/>
-          <attributeEditorField showLabel="1" index="65" name="rp_to_level"/>
-          <attributeEditorField showLabel="1" index="6" name="inside_coating"/>
-          <attributeEditorField showLabel="1" index="17" name="fk_pipe_profile"/>
-          <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
-          <attributeEditorField showLabel="1" index="46" name="remark"/>
-          <attributeEditorField showLabel="1" index="7" name="length_effective"/>
-          <attributeEditorField showLabel="1" index="-1" name="vw_last_inspection_last_inspection"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Tronçon" groupBox="0" columnCount="2">
-          <attributeEditorField showLabel="1" index="0" name="obj_id"/>
-          <attributeEditorField showLabel="1" index="45" name="identifier"/>
-          <attributeEditorField showLabel="1" index="1" name="clear_height"/>
-          <attributeEditorField showLabel="1" index="9" name="material"/>
-          <attributeEditorField showLabel="1" index="17" name="fk_pipe_profile"/>
-          <attributeEditorField showLabel="1" index="2" name="width"/>
-          <attributeEditorField showLabel="1" index="5" name="horizontal_positioning"/>
-          <attributeEditorField showLabel="1" index="4" name="elevation_determination"/>
-          <attributeEditorField showLabel="1" index="3" name="coefficient_of_friction"/>
-          <attributeEditorField showLabel="1" index="16" name="wall_roughness"/>
-          <attributeEditorField showLabel="1" index="6" name="inside_coating"/>
-          <attributeEditorField showLabel="1" index="7" name="length_effective"/>
-          <attributeEditorField showLabel="1" index="8" name="slope_per_mill"/>
-          <attributeEditorField showLabel="1" index="15" name="slope_building_plan"/>
-          <attributeEditorField showLabel="1" index="10" name="reliner_material"/>
-          <attributeEditorField showLabel="1" index="11" name="reliner_nominal_size"/>
-          <attributeEditorField showLabel="1" index="12" name="relining_construction"/>
-          <attributeEditorField showLabel="1" index="13" name="relining_kind"/>
-          <attributeEditorField showLabel="1" index="46" name="remark"/>
-          <attributeEditorField showLabel="1" index="14" name="ring_stiffness"/>
-          <attributeEditorField showLabel="1" index="-1" name="progression_3d_geometry"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Element du réseau" groupBox="0" columnCount="0">
-          <attributeEditorField showLabel="1" index="47" name="last_modification"/>
-          <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
-          <attributeEditorField showLabel="1" index="-1" name="provider"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Canalisation" groupBox="0" columnCount="0">
-          <attributeEditorField showLabel="1" index="24" name="usage_current"/>
-          <attributeEditorField showLabel="1" index="25" name="usage_planned"/>
-          <attributeEditorField showLabel="1" index="19" name="function_hierarchic"/>
-          <attributeEditorField showLabel="1" index="21" name="function_hydraulic"/>
-          <attributeEditorField showLabel="1" index="20" name="connection_type"/>
-          <attributeEditorField showLabel="1" index="22" name="jetting_interval"/>
-          <attributeEditorField showLabel="1" index="23" name="pipe_length"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Ouvrage" groupBox="0" columnCount="2">
-          <attributeEditorField showLabel="1" index="26" name="ws_obj_id"/>
-          <attributeEditorField showLabel="1" index="45" name="identifier"/>
-          <attributeEditorField showLabel="1" index="27" name="accessibility"/>
-          <attributeEditorField showLabel="1" index="32" name="location_name"/>
-          <attributeEditorField showLabel="1" index="41" name="year_of_construction"/>
-          <attributeEditorField showLabel="1" index="38" name="status"/>
-          <attributeEditorField showLabel="1" index="34" name="renovation_necessity"/>
-          <attributeEditorField showLabel="1" index="39" name="structure_condition"/>
-          <attributeEditorField showLabel="1" index="42" name="year_of_replacement"/>
-          <attributeEditorField showLabel="1" index="43" name="fk_owner"/>
-          <attributeEditorField showLabel="1" index="44" name="fk_operator"/>
-          <attributeEditorField showLabel="1" index="31" name="inspection_interval"/>
-          <attributeEditorField showLabel="1" index="46" name="remark"/>
-          <attributeEditorField showLabel="1" index="28" name="contract_section"/>
-          <attributeEditorField showLabel="1" index="33" name="records"/>
-          <attributeEditorField showLabel="1" index="29" name="financing"/>
-          <attributeEditorField showLabel="1" index="30" name="gross_costs"/>
-          <attributeEditorField showLabel="1" index="35" name="replacement_value"/>
-          <attributeEditorField showLabel="1" index="40" name="subsidies"/>
-          <attributeEditorField showLabel="1" index="36" name="rv_base_year"/>
-          <attributeEditorField showLabel="1" index="37" name="rv_construction_type"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Point de tronçon" groupBox="0" columnCount="2">
-          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="From" groupBox="1" columnCount="0">
-            <attributeEditorField showLabel="1" index="51" name="rp_from_obj_id"/>
-            <attributeEditorField showLabel="1" index="53" name="rp_from_identifier"/>
-            <attributeEditorField showLabel="1" index="54" name="rp_from_level"/>
-            <attributeEditorField showLabel="1" index="52" name="rp_from_elevation_accuracy"/>
-            <attributeEditorField showLabel="1" index="55" name="rp_from_outlet_shape"/>
-            <attributeEditorField showLabel="1" index="56" name="rp_from_position_of_connection"/>
-            <attributeEditorField showLabel="1" index="57" name="rp_from_remark"/>
-            <attributeEditorField showLabel="1" index="58" name="rp_from_last_modification"/>
-            <attributeEditorField showLabel="1" index="-1" name="rp_from_dataowner"/>
-            <attributeEditorField showLabel="1" index="-1" name="rp_from_provider"/>
-            <attributeEditorField showLabel="1" index="61" name="rp_from_fk_wastewater_networkelement"/>
-          </attributeEditorContainer>
-          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="To" groupBox="1" columnCount="0">
-            <attributeEditorField showLabel="1" index="62" name="rp_to_obj_id"/>
-            <attributeEditorField showLabel="1" index="64" name="rp_to_identifier"/>
-            <attributeEditorField showLabel="1" index="65" name="rp_to_level"/>
-            <attributeEditorField showLabel="1" index="63" name="rp_to_elevation_accuracy"/>
-            <attributeEditorField showLabel="1" index="66" name="rp_to_outlet_shape"/>
-            <attributeEditorField showLabel="1" index="67" name="rp_to_position_of_connection"/>
-            <attributeEditorField showLabel="1" index="68" name="rp_to_remark"/>
-            <attributeEditorField showLabel="1" index="69" name="rp_to_last_modification"/>
-            <attributeEditorField showLabel="1" index="-1" name="rp_to_dataowner"/>
-            <attributeEditorField showLabel="1" index="-1" name="rp_to_provider"/>
-            <attributeEditorField showLabel="1" index="72" name="rp_to_fk_wastewater_networkelement"/>
-          </attributeEditorContainer>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1" relation="re_maintenance_wasterwaterstructure_reach" showLabel="1" showUnlinkButton="1" name="re_maintenance_wasterwaterstructure_reach"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Fichiers" groupBox="0" columnCount="1">
-          <attributeEditorRelation showLinkButton="1" relation="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id"/>
-        </attributeEditorContainer>
-      </attributeEditorForm>
       <widgets>
+        <widget name="Pente">
+          <config/>
+        </widget>
         <widget name="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id">
           <config/>
         </widget>
@@ -2545,6 +2341,7 @@ def my_form_open(dialog, layer, feature):
         <default field="material_abbr_fr" expression=""/>
         <default field="vw_last_inspection_last_inspection" expression=""/>
         <default field="vf_reach_num" expression=""/>
+        <default field="Pente (positive)" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "obj_id", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -4931,7 +4728,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;structure_condition&quot;" sortOrder="1">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;rp_from_level&quot;" sortOrder="0">
         <columns>
           <column width="-1" hidden="1" type="field" name="rp_from_obj_id"/>
           <column width="-1" hidden="1" type="field" name="rp_to_obj_id"/>
@@ -4981,13 +4778,13 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="field" name="fk_owner"/>
           <column width="-1" hidden="1" type="field" name="fk_operator"/>
           <column width="-1" hidden="0" type="field" name="identifier"/>
-          <column width="-1" hidden="0" type="field" name="remark"/>
+          <column width="49" hidden="0" type="field" name="remark"/>
           <column width="-1" hidden="1" type="field" name="last_modification"/>
           <column width="-1" hidden="1" type="field" name="fk_dataowner"/>
           <column width="-1" hidden="1" type="field" name="fk_provider"/>
           <column width="-1" hidden="1" type="field" name="fk_wastewater_structure"/>
           <column width="-1" hidden="1" type="field" name="rp_from_elevation_accuracy"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_identifier"/>
+          <column width="210" hidden="0" type="field" name="rp_from_identifier"/>
           <column width="-1" hidden="0" type="field" name="rp_from_level"/>
           <column width="-1" hidden="1" type="field" name="rp_from_outlet_shape"/>
           <column width="-1" hidden="1" type="field" name="rp_from_position_of_connection"/>
@@ -5258,12 +5055,18 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "obj_id", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>Tronçons___date_et_âge_de_dernière_inspection__nouveau__copier20181011170345546</id>
-      <datasource>service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table="qgep"."vw_qgep_reach" (progression_geometry) sql=</datasource>
+      <extent>
+        <xmin>2550816.2961514201015234</xmin>
+        <ymin>1139785.92620071000419557</ymin>
+        <xmax>2562139.66806825995445251</xmax>
+        <ymax>1152246.40395005000755191</ymax>
+      </extent>
+      <id>Tronçons___date_et_âge_de_dernière_inspection_copier20181011180906702</id>
+      <datasource>service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table="qgep"."vw_qgep_reach" (progression_geometry) sql=function_hierarchic IN (5068,5069,5070,5071) AND fk_owner = 'ch15z36dOG000025'</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>Tronçons - date et âge de dernièr curage (nouveau)</layername>
+      <layername>Tronçons - date et âge de dernier curage</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
@@ -5290,6 +5093,7 @@ def my_form_open(dialog, layer, feature):
       <layerDependencies/>
       <expressionfields>
         <field typeName="int2" precision="0" expression="CASE&#xd;&#xa;&#x9;WHEN function_hierarchic IN (5068,5069,5070,5071) AND fk_owner = 'ch15z36dOG000025' THEN&#xd;&#xa;&#x9;&#x9;CASE &#xd;&#xa;&#x9;&#x9;&#x9;WHEN to_int( left(&quot;rp_from_identifier&quot;, 4)) THEN to_int( left(&quot;rp_from_identifier&quot;, 4))&#xd;&#xa;&#x9;&#x9;&#x9;WHEN to_int( left(&quot;rp_to_identifier&quot;, 4)) THEN to_int( left(&quot;rp_to_identifier&quot;, 4))&#xd;&#xa;&#x9;&#x9;&#x9;ELSE 2&#xd;&#xa;&#x9;&#x9;END&#xd;&#xa;&#x9;ELSE 1&#xd;&#xa;END" length="-1" type="2" comment="" name="vf_reach_num"/>
+        <field typeName="numeric" precision="1" expression="- &quot;slope_per_mill&quot;" length="1" type="6" comment="" name="Pente (positive)"/>
       </expressionfields>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
@@ -5538,23 +5342,21 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="vf_reach_num">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="Pente (positive)">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{b3f3f0a1-c8d2-4416-8d68-3de95a17bc02}">
-          <rule filter="function_hierarchic IN (5068,5069,5070,5071) AND fk_owner = 'ch15z36dOG000025'" key="{19bcb1df-a7c2-428c-9cd0-190adedab045}" label="primaire">
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) &lt; 1" key="{e1ab0a9d-a05a-4bd3-85df-08795e1985ef}" symbol="0" label="&lt;= 1 an"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 1" key="{f3b2df9c-728c-4c33-90e2-7e721518fa51}" symbol="1" label="1 an"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 2" key="{69fdc5d3-c65a-4332-9f45-b569efdcf7b5}" symbol="2" label="2 ans"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 3" key="{dec5aa09-4e7d-4483-a617-d235f5fed9ec}" symbol="3" label="3 ans"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 4" key="{b29afc8d-b6b5-4997-b273-c9e8b1828400}" symbol="4" label="4 ans"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) = 5" key="{06af7cc3-8f98-4895-b3cb-22ddac4402c7}" symbol="5" label="5 ans"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) >=  5 AND (to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) &lt; 10" key="{659fbf0a-57d2-4848-b0a5-daaaea4a3366}" symbol="6" label="entre 5 et 10 ans"/>
-            <rule filter="(to_int(substr(now(),1,4)) - vw_last_inspection_last_inspection) >=  10" key="{443405f1-0873-4efc-95d7-1838dc954f80}" symbol="7" label=">= 10 ans"/>
-            <rule filter="ELSE" key="{5afc04aa-393f-4942-8e2d-41add9680cff}" symbol="8" label="pas de données"/>
-          </rule>
-          <rule filter="function_hierarchic NOT IN (5068,5069,5070,5071) AN fk_owner = 'ch15z36dOG000025'" key="{ddc21d10-af1e-43c3-9e07-d6f09f281f30}" symbol="9" label="secondaire"/>
-          <rule filter="fk_owner != 'ch15z36dOG000025'" key="{d40870b1-2bee-4498-8f17-6f33ebcc57b0}" symbol="10" label="étranger"/>
-          <rule filter="ELSE" key="{4d2a5d8c-c208-49a1-b29a-a975cf6fc370}" symbol="11" label="données manquantes"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_cleaning_last_cleaning) &lt; 1" key="{fb5c52fd-6a2b-479d-8760-9a40ff5c4c6a}" symbol="0" label="&lt;= 1 an"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_cleaning_last_cleaning) = 1" key="{dadc3274-135d-4e0f-b206-5450e624fc0c}" symbol="1" label="1 an"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_cleaning_last_cleaning) = 2" key="{051d55eb-31a3-40fb-9432-cc0314581a5d}" symbol="2" label="2 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_cleaning_last_cleaning) = 3" key="{2b93a3e5-adde-41d9-977e-253e1ca9cdf0}" symbol="3" label="3 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_cleaning_last_cleaning) = 4" key="{b17f5065-958d-4df1-a6bc-1b328114129e}" symbol="4" label="4 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_cleaning_last_cleaning) = 5" key="{9a409b3d-7b08-48e0-bf23-240043b710fe}" symbol="5" label="5 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_cleaning_last_cleaning) >=  5 AND (to_int(substr(now(),1,4)) - vw_last_cleaning_last_cleaning) &lt; 10" key="{e43ca7f6-f482-494d-9b5b-6afd52dc86e0}" symbol="6" label="entre 5 et 10 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - vw_last_cleaning_last_cleaning) >=  10" key="{fa740491-5270-4664-ac48-a5fa706dd2a9}" symbol="7" label=">= 10 ans"/>
+          <rule filter="ELSE" key="{fa7fb5e6-1cb1-4507-af80-d7f3845e234e}" symbol="8" label="pas de données"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="line" name="0">
@@ -5587,60 +5389,6 @@ def my_form_open(dialog, layer, feature):
               <prop k="line_color" v="175,233,142,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.8"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="10">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="0"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_dd_active" v="1"/>
-              <prop k="customdash_dd_expression" v="CASE WHEN horizontal_positioning = 5378 THEN '1;0' ELSE '4;2' END"/>
-              <prop k="customdash_dd_field" v=""/>
-              <prop k="customdash_dd_useexpr" v="1"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="11">
-            <layer pass="5" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="round"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="round"/>
-              <prop k="line_color" v="243,69,255,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="1"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -5771,50 +5519,15 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="179,179,179,255"/>
+              <prop k="line_color" v="77,77,77,255"/>
               <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.8"/>
+              <prop k="line_width" v="0.6"/>
               <prop k="line_width_unit" v="MM"/>
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="use_custom_dash" v="0"/>
               <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="9">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="flat"/>
-              <prop k="color_dd_active" v="1"/>
-              <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
-              <prop k="color_dd_field" v=""/>
-              <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_dd_active" v="1"/>
-              <prop k="customdash_dd_expression" v="CASE WHEN horizontal_positioning = 5378 THEN '1;0' ELSE '4;2' END"/>
-              <prop k="customdash_dd_field" v=""/>
-              <prop k="customdash_dd_useexpr" v="1"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="0,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.3"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
             </layer>
           </symbol>
         </symbols>
@@ -5862,7 +5575,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="CASE&#xd;&#xa;WHEN  vw_last_inspection_last_inspection  IS NOT NULL THEN 'Inspect.\n' || vw_last_inspection_last_inspection&#xd;&#xa;ELSE 'ND'&#xd;&#xa;END"/>
+        <property key="labeling/fieldName" value="CASE&#xd;&#xa;WHEN  vw_last_cleaning_last_cleaning IS NOT NULL THEN 'Curage\n' || vw_last_cleaning_last_cleaning&#xd;&#xa;ELSE 'ND'&#xd;&#xa;END"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
@@ -6055,14 +5768,14 @@ def my_form_open(dialog, layer, feature):
       <aliases>
         <alias field="obj_id" index="0" name="Identifiant"/>
         <alias field="clear_height" index="1" name="hauteur_max_profil"/>
-        <alias field="width" index="2" name="largeur"/>
+        <alias field="width" index="2" name="Largeur"/>
         <alias field="coefficient_of_friction" index="3" name="K"/>
         <alias field="elevation_determination" index="4" name="determination_altimetrique"/>
         <alias field="horizontal_positioning" index="5" name="determination_planimetrique"/>
         <alias field="inside_coating" index="6" name="protection_interieure"/>
-        <alias field="length_effective" index="7" name="l_effective"/>
-        <alias field="slope_per_mill" index="8" name=""/>
-        <alias field="material" index="9" name="materiau"/>
+        <alias field="length_effective" index="7" name="Longueur réelle"/>
+        <alias field="slope_per_mill" index="8" name="Pente"/>
+        <alias field="material" index="9" name="Matériau"/>
         <alias field="reliner_material" index="10" name="relining_materiaux"/>
         <alias field="reliner_nominal_size" index="11" name="reliner_diametre_nominale"/>
         <alias field="relining_construction" index="12" name="relining_technique"/>
@@ -6091,15 +5804,15 @@ def my_form_open(dialog, layer, feature):
         <alias field="replacement_value" index="35" name="valeur_remplacement"/>
         <alias field="rv_base_year" index="36" name="vr_annee_reference"/>
         <alias field="rv_construction_type" index="37" name="vr_type_construction"/>
-        <alias field="status" index="38" name="etat"/>
-        <alias field="structure_condition" index="39" name="etat_constructif"/>
+        <alias field="status" index="38" name="Statut"/>
+        <alias field="structure_condition" index="39" name="Etat constructif"/>
         <alias field="subsidies" index="40" name="subventions"/>
         <alias field="year_of_construction" index="41" name="annee_de_construction"/>
         <alias field="year_of_replacement" index="42" name="annee_de_remplacement"/>
         <alias field="fk_owner" index="43" name=""/>
         <alias field="fk_operator" index="44" name=""/>
         <alias field="identifier" index="45" name="designation"/>
-        <alias field="remark" index="46" name="remarque"/>
+        <alias field="remark" index="46" name="Remarque"/>
         <alias field="last_modification" index="47" name="derniere_modification"/>
         <alias field="fk_dataowner" index="48" name=""/>
         <alias field="fk_provider" index="49" name=""/>
@@ -6132,29 +5845,33 @@ def my_form_open(dialog, layer, feature):
         <alias field="material_abbr_en" index="76" name=""/>
         <alias field="material_abbr_de" index="77" name=""/>
         <alias field="material_abbr_fr" index="78" name=""/>
-        <alias field="vw_last_cleaning_last_cleaning" index="79" name=""/>
-        <alias field="vf_reach_num" index="80" name=""/>
+        <alias field="vw_last_cleaning_last_cleaning" index="79" name="Dernier curage"/>
+        <alias field="vf_reach_num" index="80" name="Numéro de collecteur"/>
+        <alias field="Pente (positive)" index="81" name="Pente"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;vw_last_inspection_last_inspection&quot;" sortOrder="1">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;vf_reach_num&quot;" sortOrder="1">
         <columns>
+          <column width="-1" hidden="1" type="field" name="obj_id"/>
+          <column width="128" hidden="0" type="field" name="vf_reach_num"/>
+          <column width="-1" hidden="0" type="field" name="vw_last_cleaning_last_cleaning"/>
+          <column width="198" hidden="1" type="field" name="material"/>
+          <column width="-1" hidden="1" type="field" name="width"/>
+          <column width="100" hidden="0" type="field" name="length_effective"/>
+          <column width="100" hidden="0" type="field" name="Pente (positive)"/>
+          <column width="100" hidden="1" type="field" name="slope_per_mill"/>
+          <column width="212" hidden="1" type="field" name="relining_construction"/>
           <column width="-1" hidden="1" type="field" name="rp_from_obj_id"/>
           <column width="-1" hidden="1" type="field" name="rp_to_obj_id"/>
-          <column width="-1" hidden="0" type="field" name="obj_id"/>
           <column width="-1" hidden="1" type="field" name="clear_height"/>
-          <column width="-1" hidden="0" type="field" name="width"/>
           <column width="-1" hidden="1" type="field" name="coefficient_of_friction"/>
           <column width="267" hidden="1" type="field" name="elevation_determination"/>
           <column width="-1" hidden="1" type="field" name="horizontal_positioning"/>
           <column width="100" hidden="1" type="field" name="inside_coating"/>
-          <column width="-1" hidden="0" type="field" name="length_effective"/>
-          <column width="-1" hidden="0" type="field" name="slope_per_mill"/>
-          <column width="198" hidden="0" type="field" name="material"/>
           <column width="-1" hidden="1" type="field" name="reliner_material"/>
           <column width="191" hidden="1" type="field" name="reliner_nominal_size"/>
-          <column width="-1" hidden="0" type="field" name="relining_construction"/>
           <column width="-1" hidden="1" type="field" name="relining_kind"/>
           <column width="137" hidden="1" type="field" name="ring_stiffness"/>
           <column width="-1" hidden="1" type="field" name="slope_building_plan"/>
@@ -6163,13 +5880,14 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="field" name="bedding_encasement"/>
           <column width="-1" hidden="1" type="field" name="function_hierarchic"/>
           <column width="-1" hidden="1" type="field" name="connection_type"/>
-          <column width="196" hidden="0" type="field" name="function_hydraulic"/>
+          <column width="196" hidden="1" type="field" name="function_hydraulic"/>
           <column width="-1" hidden="1" type="field" name="jetting_interval"/>
           <column width="-1" hidden="1" type="field" name="pipe_length"/>
-          <column width="153" hidden="0" type="field" name="usage_current"/>
+          <column width="153" hidden="1" type="field" name="usage_current"/>
           <column width="153" hidden="1" type="field" name="usage_planned"/>
           <column width="-1" hidden="1" type="field" name="ws_obj_id"/>
           <column width="-1" hidden="1" type="field" name="accessibility"/>
+          <column width="44" hidden="0" type="field" name="status"/>
           <column width="-1" hidden="1" type="field" name="contract_section"/>
           <column width="-1" hidden="1" type="field" name="financing"/>
           <column width="-1" hidden="1" type="field" name="gross_costs"/>
@@ -6180,22 +5898,21 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="field" name="replacement_value"/>
           <column width="152" hidden="1" type="field" name="rv_base_year"/>
           <column width="-1" hidden="1" type="field" name="rv_construction_type"/>
-          <column width="-1" hidden="0" type="field" name="status"/>
-          <column width="-1" hidden="0" type="field" name="structure_condition"/>
+          <column width="100" hidden="0" type="field" name="structure_condition"/>
           <column width="-1" hidden="1" type="field" name="subsidies"/>
-          <column width="-1" hidden="0" type="field" name="year_of_construction"/>
-          <column width="-1" hidden="0" type="field" name="year_of_replacement"/>
+          <column width="-1" hidden="1" type="field" name="year_of_construction"/>
+          <column width="-1" hidden="1" type="field" name="year_of_replacement"/>
           <column width="-1" hidden="1" type="field" name="fk_owner"/>
           <column width="-1" hidden="1" type="field" name="fk_operator"/>
-          <column width="-1" hidden="0" type="field" name="identifier"/>
-          <column width="-1" hidden="0" type="field" name="remark"/>
+          <column width="-1" hidden="1" type="field" name="identifier"/>
+          <column width="205" hidden="1" type="field" name="remark"/>
           <column width="-1" hidden="1" type="field" name="last_modification"/>
           <column width="-1" hidden="1" type="field" name="fk_dataowner"/>
           <column width="-1" hidden="1" type="field" name="fk_provider"/>
           <column width="-1" hidden="1" type="field" name="fk_wastewater_structure"/>
           <column width="-1" hidden="1" type="field" name="rp_from_elevation_accuracy"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_identifier"/>
-          <column width="-1" hidden="0" type="field" name="rp_from_level"/>
+          <column width="-1" hidden="1" type="field" name="rp_from_identifier"/>
+          <column width="-1" hidden="1" type="field" name="rp_from_level"/>
           <column width="-1" hidden="1" type="field" name="rp_from_outlet_shape"/>
           <column width="-1" hidden="1" type="field" name="rp_from_position_of_connection"/>
           <column width="-1" hidden="1" type="field" name="rp_from_remark"/>
@@ -6204,8 +5921,8 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="field" name="rp_from_fk_provider"/>
           <column width="-1" hidden="1" type="field" name="rp_from_fk_wastewater_networkelement"/>
           <column width="-1" hidden="1" type="field" name="rp_to_elevation_accuracy"/>
-          <column width="-1" hidden="0" type="field" name="rp_to_identifier"/>
-          <column width="-1" hidden="0" type="field" name="rp_to_level"/>
+          <column width="-1" hidden="1" type="field" name="rp_to_identifier"/>
+          <column width="-1" hidden="1" type="field" name="rp_to_level"/>
           <column width="-1" hidden="1" type="field" name="rp_to_outlet_shape"/>
           <column width="-1" hidden="1" type="field" name="rp_to_position_of_connection"/>
           <column width="-1" hidden="1" type="field" name="rp_to_remark"/>
@@ -6220,8 +5937,6 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="field" name="material_abbr_de"/>
           <column width="-1" hidden="1" type="field" name="material_abbr_fr"/>
           <column width="-1" hidden="1" type="actions"/>
-          <column width="-1" hidden="0" type="field" name="vf_reach_num"/>
-          <column width="-1" hidden="0" type="field" name="vw_last_cleaning_last_cleaning"/>
         </columns>
       </attributetableconfig>
       <editform>../QGEP-customizer/QGEP/project/forms/reach.ui</editform>
@@ -6247,125 +5962,13 @@ def my_form_open(dialog, layer, feature):
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>tablayout</editorlayout>
-      <attributeEditorForm>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="2">
-          <attributeEditorField showLabel="1" index="0" name="obj_id"/>
-          <attributeEditorField showLabel="1" index="45" name="identifier"/>
-          <attributeEditorField showLabel="1" index="1" name="clear_height"/>
-          <attributeEditorField showLabel="1" index="9" name="material"/>
-          <attributeEditorField showLabel="1" index="24" name="usage_current"/>
-          <attributeEditorField showLabel="1" index="5" name="horizontal_positioning"/>
-          <attributeEditorField showLabel="1" index="19" name="function_hierarchic"/>
-          <attributeEditorField showLabel="1" index="21" name="function_hydraulic"/>
-          <attributeEditorField showLabel="1" index="38" name="status"/>
-          <attributeEditorField showLabel="1" index="41" name="year_of_construction"/>
-          <attributeEditorField showLabel="1" index="43" name="fk_owner"/>
-          <attributeEditorField showLabel="1" index="44" name="fk_operator"/>
-          <attributeEditorField showLabel="1" index="54" name="rp_from_level"/>
-          <attributeEditorField showLabel="1" index="65" name="rp_to_level"/>
-          <attributeEditorField showLabel="1" index="6" name="inside_coating"/>
-          <attributeEditorField showLabel="1" index="17" name="fk_pipe_profile"/>
-          <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
-          <attributeEditorField showLabel="1" index="46" name="remark"/>
-          <attributeEditorField showLabel="1" index="7" name="length_effective"/>
-          <attributeEditorField showLabel="1" index="-1" name="vw_last_inspection_last_inspection"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Tronçon" groupBox="0" columnCount="2">
-          <attributeEditorField showLabel="1" index="0" name="obj_id"/>
-          <attributeEditorField showLabel="1" index="45" name="identifier"/>
-          <attributeEditorField showLabel="1" index="1" name="clear_height"/>
-          <attributeEditorField showLabel="1" index="9" name="material"/>
-          <attributeEditorField showLabel="1" index="17" name="fk_pipe_profile"/>
-          <attributeEditorField showLabel="1" index="2" name="width"/>
-          <attributeEditorField showLabel="1" index="5" name="horizontal_positioning"/>
-          <attributeEditorField showLabel="1" index="4" name="elevation_determination"/>
-          <attributeEditorField showLabel="1" index="3" name="coefficient_of_friction"/>
-          <attributeEditorField showLabel="1" index="16" name="wall_roughness"/>
-          <attributeEditorField showLabel="1" index="6" name="inside_coating"/>
-          <attributeEditorField showLabel="1" index="7" name="length_effective"/>
-          <attributeEditorField showLabel="1" index="8" name="slope_per_mill"/>
-          <attributeEditorField showLabel="1" index="15" name="slope_building_plan"/>
-          <attributeEditorField showLabel="1" index="10" name="reliner_material"/>
-          <attributeEditorField showLabel="1" index="11" name="reliner_nominal_size"/>
-          <attributeEditorField showLabel="1" index="12" name="relining_construction"/>
-          <attributeEditorField showLabel="1" index="13" name="relining_kind"/>
-          <attributeEditorField showLabel="1" index="46" name="remark"/>
-          <attributeEditorField showLabel="1" index="14" name="ring_stiffness"/>
-          <attributeEditorField showLabel="1" index="-1" name="progression_3d_geometry"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Element du réseau" groupBox="0" columnCount="0">
-          <attributeEditorField showLabel="1" index="47" name="last_modification"/>
-          <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
-          <attributeEditorField showLabel="1" index="-1" name="provider"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Canalisation" groupBox="0" columnCount="0">
-          <attributeEditorField showLabel="1" index="24" name="usage_current"/>
-          <attributeEditorField showLabel="1" index="25" name="usage_planned"/>
-          <attributeEditorField showLabel="1" index="19" name="function_hierarchic"/>
-          <attributeEditorField showLabel="1" index="21" name="function_hydraulic"/>
-          <attributeEditorField showLabel="1" index="20" name="connection_type"/>
-          <attributeEditorField showLabel="1" index="22" name="jetting_interval"/>
-          <attributeEditorField showLabel="1" index="23" name="pipe_length"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Ouvrage" groupBox="0" columnCount="2">
-          <attributeEditorField showLabel="1" index="26" name="ws_obj_id"/>
-          <attributeEditorField showLabel="1" index="45" name="identifier"/>
-          <attributeEditorField showLabel="1" index="27" name="accessibility"/>
-          <attributeEditorField showLabel="1" index="32" name="location_name"/>
-          <attributeEditorField showLabel="1" index="41" name="year_of_construction"/>
-          <attributeEditorField showLabel="1" index="38" name="status"/>
-          <attributeEditorField showLabel="1" index="34" name="renovation_necessity"/>
-          <attributeEditorField showLabel="1" index="39" name="structure_condition"/>
-          <attributeEditorField showLabel="1" index="42" name="year_of_replacement"/>
-          <attributeEditorField showLabel="1" index="43" name="fk_owner"/>
-          <attributeEditorField showLabel="1" index="44" name="fk_operator"/>
-          <attributeEditorField showLabel="1" index="31" name="inspection_interval"/>
-          <attributeEditorField showLabel="1" index="46" name="remark"/>
-          <attributeEditorField showLabel="1" index="28" name="contract_section"/>
-          <attributeEditorField showLabel="1" index="33" name="records"/>
-          <attributeEditorField showLabel="1" index="29" name="financing"/>
-          <attributeEditorField showLabel="1" index="30" name="gross_costs"/>
-          <attributeEditorField showLabel="1" index="35" name="replacement_value"/>
-          <attributeEditorField showLabel="1" index="40" name="subsidies"/>
-          <attributeEditorField showLabel="1" index="36" name="rv_base_year"/>
-          <attributeEditorField showLabel="1" index="37" name="rv_construction_type"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Point de tronçon" groupBox="0" columnCount="2">
-          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="From" groupBox="1" columnCount="0">
-            <attributeEditorField showLabel="1" index="51" name="rp_from_obj_id"/>
-            <attributeEditorField showLabel="1" index="53" name="rp_from_identifier"/>
-            <attributeEditorField showLabel="1" index="54" name="rp_from_level"/>
-            <attributeEditorField showLabel="1" index="52" name="rp_from_elevation_accuracy"/>
-            <attributeEditorField showLabel="1" index="55" name="rp_from_outlet_shape"/>
-            <attributeEditorField showLabel="1" index="56" name="rp_from_position_of_connection"/>
-            <attributeEditorField showLabel="1" index="57" name="rp_from_remark"/>
-            <attributeEditorField showLabel="1" index="58" name="rp_from_last_modification"/>
-            <attributeEditorField showLabel="1" index="-1" name="rp_from_dataowner"/>
-            <attributeEditorField showLabel="1" index="-1" name="rp_from_provider"/>
-            <attributeEditorField showLabel="1" index="61" name="rp_from_fk_wastewater_networkelement"/>
-          </attributeEditorContainer>
-          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="To" groupBox="1" columnCount="0">
-            <attributeEditorField showLabel="1" index="62" name="rp_to_obj_id"/>
-            <attributeEditorField showLabel="1" index="64" name="rp_to_identifier"/>
-            <attributeEditorField showLabel="1" index="65" name="rp_to_level"/>
-            <attributeEditorField showLabel="1" index="63" name="rp_to_elevation_accuracy"/>
-            <attributeEditorField showLabel="1" index="66" name="rp_to_outlet_shape"/>
-            <attributeEditorField showLabel="1" index="67" name="rp_to_position_of_connection"/>
-            <attributeEditorField showLabel="1" index="68" name="rp_to_remark"/>
-            <attributeEditorField showLabel="1" index="69" name="rp_to_last_modification"/>
-            <attributeEditorField showLabel="1" index="-1" name="rp_to_dataowner"/>
-            <attributeEditorField showLabel="1" index="-1" name="rp_to_provider"/>
-            <attributeEditorField showLabel="1" index="72" name="rp_to_fk_wastewater_networkelement"/>
-          </attributeEditorContainer>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1" relation="re_maintenance_wasterwaterstructure_reach" showLabel="1" showUnlinkButton="1" name="re_maintenance_wasterwaterstructure_reach"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Fichiers" groupBox="0" columnCount="1">
-          <attributeEditorRelation showLinkButton="1" relation="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id"/>
-        </attributeEditorContainer>
-      </attributeEditorForm>
       <widgets>
+        <widget name="Pente">
+          <config>
+            <option key="IsMultiline" value="false"/>
+            <option key="UseHtml" value="false"/>
+          </config>
+        </widget>
         <widget name="od_file20160921105557083_object_vw_qgep_reach_ws_obj_id">
           <config/>
         </widget>
@@ -6470,6 +6073,7 @@ def my_form_open(dialog, layer, feature):
         <default field="material_abbr_fr" expression=""/>
         <default field="vw_last_cleaning_last_cleaning" expression=""/>
         <default field="vf_reach_num" expression=""/>
+        <default field="Pente (positive)" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "obj_id", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -37017,6 +36621,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "identifier", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="1" maximumScale="5000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2549799.64914386998862028</xmin>
+        <ymin>1133680.2504769500810653</ymin>
+        <xmax>2562139.66806825995445251</xmax>
+        <ymax>1152246.40395005000755191</ymax>
+      </extent>
       <id>chambre_copier20180824080214454</id>
       <datasource>service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table="qgep"."vw_qgep_wastewater_structure" (situation_geometry) sql=</datasource>
       <keywordList>
@@ -37915,7 +37525,7 @@ def my_form_open(dialog, layer, feature):
         <actionsetting showInAttributeTable="1" action="from qgepplugin.ui import forms&#xa;&#xa;import qgepplugin&#xa;&#xa;feature = QgsMapLayerRegistry.instance().mapLayer('od_wastewater_structure').getFeatures( QgsFeatureRequest().setFilterExpression( 'obj_id = \'{}\''.format( '[% &quot;obj_id&quot; %]' ) ) ).next()&#xa;qgepplugin.ui.forms.digitizeDrainageChannel(feature.id(), 'od_wastewater_structure')" icon="" capture="0" type="1" name="Digitize Drainage Channel" shortTitle=""/>
         <actionsetting showInAttributeTable="1" action="ws_lyr = QgsMapLayerRegistry.instance().mapLayer('od_wastewater_structure')&#xa;feature = ws_lyr.getFeatures( QgsFeatureRequest().setFilterExpression( 'obj_id = \'{}\''.format( '[% &quot;obj_id&quot; %]' ) ) ).next()&#xa;ws_lyr.startEditing()&#xa;ws_lyr.setSelectedFeatures([feature.id()])&#xa;qgis.utils.iface.setActiveLayer(ws_lyr)&#xa;qgis.utils.iface.actionAddPart().trigger()" icon="" capture="0" type="1" name="Digitize" shortTitle=""/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;co_identifier&quot;" sortOrder="1">
         <columns>
           <column width="-1" hidden="1" type="field" name="channel_usage_current"/>
           <column width="-1" hidden="1" type="field" name="channel_function_hierarchic"/>
