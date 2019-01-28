@@ -26,6 +26,7 @@ done
 psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS qgep_od CASCADE'
 psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS qgep_sys CASCADE'
 psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS qgep_vl CASCADE'
+psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS qgep_import CASCADE'
 #psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS sige_assainissement CASCADE'
 #psql "service=${PGSERVICE}" -c 'DROP SCHEMA IF EXISTS sa CASCADE'
 
