@@ -7,7 +7,7 @@ set -e
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/..
 
 # Service to be defined in PG_SERVICE.conf file
-PGSERVICE=pg_qgep_poc
+PGSERVICE=qgep_poc
 
 while getopts ":p:" opt; do
   case $opt in

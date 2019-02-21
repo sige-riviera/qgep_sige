@@ -107,7 +107,7 @@ SELECT
   sf.new, --function
   --discharge point
   --infiltration installation
-  ST_Multi(ST_SetSRID(ST_MakePoint( schacht_geo.y1, schacht_geo.x1),21781))::geometry(MultiPoint, 21781)
+  ST_Multi(ST_SetSRID(ST_MakePoint( schacht_geo.y1, schacht_geo.x1, schacht_geo.z1),21781))::geometry(MultiPointZ, 21781)
 
 FROM migration.schacht schacht -- Manhole
 LEFT JOIN migration.schacht_geo schacht_geo ON schacht_geo.gid = schacht.gid -- Manhole Geom
