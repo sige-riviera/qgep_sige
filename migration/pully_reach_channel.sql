@@ -59,7 +59,7 @@ SELECT
   --Wastewater Structure
   st.new, -- status
   baujahr, -- year_of_construction
-  org.obj_id, -- fk_owner
+  haltung.id_eigentumsverhaeltnis, -- fk_owner
   substr(haltung.name, 1, 20),--identifier
   bemerkung,--substr(bemerkung, 1, 80),--remark
   --Network element
@@ -93,9 +93,7 @@ LEFT JOIN qgep_od.pipe_profile pp ON pp.profile_type =
 LEFT JOIN migration.map_reach_material rm ON haltung.id_material = rm.old
 LEFT JOIN migration.map_function_hydraulic fhy ON haltung.id_funktion_hydrau = fhy.old
 LEFT JOIN migration.map_elevation_determination ed ON haltung.id_hoehengenauigkeit = ed.old
-LEFT JOIN migration.map_status st ON haltung.id_status = st.old
-LEFT JOIN belmont_ass.ba_eigentumsverhaeltnis_tbd ev ON ev.id = haltung.id_eigentumsverhaeltnis
-LEFT JOIN qgep_od.organisation org ON org.identifier = ev.value;
+LEFT JOIN migration.map_status st ON haltung.id_status = st.old;
 
 /* Deleted items have been filtered at export
 WHERE COALESCE(haltung.deleted, 0) = 0;*/

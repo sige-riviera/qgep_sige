@@ -84,7 +84,7 @@ SELECT
   st.new, -- status
   stc.new, -- structure condition
   schacht.baujahr, -- construction year
-  org.obj_id, -- owner
+  schacht.id_eigentumsverhaeltnis, -- owner
   COALESCE(st_type.new,'manhole'),
   --cover
   co_s.new,  -- shape
@@ -142,10 +142,6 @@ LEFT JOIN migration.map_cover_material co_m ON deckel.id_material = co_m.old
 LEFT JOIN migration.map_manhole_material mm ON schacht.id_material = mm.old
 -- Special structure
 LEFT JOIN migration.map_special_structure_function sf ON schacht.id_schachtart = sf.old
--- Owner
-LEFT JOIN belmont_ass.ba_eigentumsverhaeltnis_tbd ev ON ev.id = schacht.id_eigentumsverhaeltnis
--- Organisation
-LEFT JOIN qgep_od.organisation org ON org.identifier = ev.value
 -- Type
 LEFT JOIN migration.map_structure_type st_type ON schacht.id_schachtart = st_type.old;
 -- Filter deleted items has been done earlier with FME
