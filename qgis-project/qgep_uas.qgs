@@ -13,10 +13,13 @@
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_batch_cleaning_agg20181217105104787" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='row_number' srid=2056 type=MultiCurve table=&quot;qgep_sige&quot;.&quot;vw_batch_cleaning_agg&quot; (batch_cleaning_geom) sql=" name="02 Lots de curages">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="refoulement20181211133622815" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;refoulement&quot; (progression_geometry) sql=" name="03 Refoulements primaires">
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_batch_inspection_agg20190306075530728" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='row_number' srid=2056 type=MultiCurve table=&quot;qgep_sige&quot;.&quot;vw_batch_inspection_agg&quot; (batch_inspection_geom) sql=" name="03 Lots d'inspection">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="tronçon_copier20190130112017326" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="04 Tronçons">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="refoulement20181211133622815" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;refoulement&quot; (progression_geometry) sql=" name="04 Refoulements primaires">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="tronçon_copier20190130112017326" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="05 Tronçons">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="chambre_copier_copier20180726102643036" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table=&quot;qgep&quot;.&quot;vw_qgep_wastewater_structure&quot; (situation_geometry) sql=" name="05 Chambres">
@@ -24,7 +27,7 @@
           <property key="expandedLegendNodes"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Edition">
+      <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Edition géométrique">
         <customproperties/>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_edit_main_pipe_name20181015145410733" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="Edition des noms de collecteurs">
           <customproperties/>
@@ -36,9 +39,12 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Technique - informatique">
+      <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Technique - informatique">
         <customproperties/>
         <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="batch_cleaning20181217105104951" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;batch_cleaning&quot; sql=" name="batch_cleaning">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="batch_inspection20190306075313406" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;batch_inspection&quot; sql=" name="batch_inspection">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="collecting_pipe20181217103527350" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;collecting_pipe&quot; sql=" name="collecting_pipe">
@@ -59,7 +65,7 @@
       </layer-tree-group>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Develop">
         <customproperties/>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="tronçon_copier20190130090129621" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="troncon - uas - test">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="tronçon_copier20190130090129621" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="troncon - uas - test">
           <customproperties>
             <property key="expandedLegendNodes">
               <value>{218d58f8-9767-4964-9bf1-e5c3b4900878}</value>
@@ -200,7 +206,6 @@
           <value>bf_point_limite20161123141033694</value>
           <value>pf_points_fixes20161123144654375</value>
           <value>ab_rue20161122113837293</value>
-          <value>lc_limites_commune20180525110719694</value>
           <value>bf_immeuble20161019163752305</value>
           <value>od_element_lineaire20161123134458480</value>
           <value>od_element_surfacique20161123111234045</value>
@@ -574,10 +579,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2556649.13264931738376617</xmin>
-      <ymin>1139746.99991963687352836</ymin>
-      <xmax>2562312.28256593644618988</xmax>
-      <ymax>1152518.81776597979478538</ymax>
+      <xmin>2556092.41851324681192636</xmin>
+      <ymin>1142536.60642560268752277</ymin>
+      <xmax>2558923.99347155634313822</xmax>
+      <ymax>1148922.51534877414815128</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -660,6 +665,7 @@
     <custom-order enabled="1">
       <item>refoulement20181211133622815</item>
       <item>vw_batch_cleaning_agg20181217105104787</item>
+      <item>vw_batch_inspection_agg20190306075530728</item>
       <item>vw_collecting_pipe_agg20181217110633180</item>
       <item>tronçon_copier20190130112017326</item>
       <item>vw_qgep_reach20181211104448297</item>
@@ -805,11 +811,12 @@
       <item>Edition_des_lot_de_curages_copier20190110093354404</item>
       <item>tronçon_copier20190130090129621</item>
       <item>chambre_copier20190130090215392</item>
+      <item>batch_inspection20190306075313406</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="false">
     <legendgroup open="true" checked="Qt::PartiallyChecked" name="Unité assainissement">
-      <legendlayer drawingOrder="2" open="false" checked="Qt::Checked" name="01 Collecteurs primaires" showFeatureCount="0">
+      <legendlayer drawingOrder="3" open="false" checked="Qt::Checked" name="01 Collecteurs primaires" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_collecting_pipe_agg20181217110633180" visible="1"/>
         </filegroup>
@@ -819,246 +826,256 @@
           <legendlayerfile isInOverview="0" layerid="vw_batch_cleaning_agg20181217105104787" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="0" open="true" checked="Qt::Unchecked" name="03 Refoulements primaires" showFeatureCount="0">
+      <legendlayer drawingOrder="2" open="false" checked="Qt::Unchecked" name="03 Lots d'inspection" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="vw_batch_inspection_agg20190306075530728" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="0" open="true" checked="Qt::Unchecked" name="04 Refoulements primaires" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="refoulement20181211133622815" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="3" open="false" checked="Qt::Unchecked" name="04 Tronçons" showFeatureCount="0">
+      <legendlayer drawingOrder="4" open="false" checked="Qt::Unchecked" name="05 Tronçons" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="tronçon_copier20190130112017326" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="40" open="false" checked="Qt::Unchecked" name="05 Chambres" showFeatureCount="0">
+      <legendlayer drawingOrder="41" open="false" checked="Qt::Unchecked" name="05 Chambres" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="chambre_copier_copier20180726102643036" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendgroup open="false" checked="Qt::Unchecked" name="Edition">
-        <legendlayer drawingOrder="6" open="false" checked="Qt::Unchecked" name="Edition des noms de collecteurs" showFeatureCount="0">
+      <legendgroup open="true" checked="Qt::Unchecked" name="Edition géométrique">
+        <legendlayer drawingOrder="7" open="false" checked="Qt::Unchecked" name="Edition des noms de collecteurs" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_edit_main_pipe_name20181015145410733" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="141" open="false" checked="Qt::Unchecked" name="Edition des lot de curages" showFeatureCount="0">
+        <legendlayer drawingOrder="142" open="false" checked="Qt::Unchecked" name="Edition des lot de curages" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçons___édition_des_noms_de_collecteurs_copier20181213135910977" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="144" open="false" checked="Qt::Unchecked" name="Edition des lot d'inspections" showFeatureCount="0">
+        <legendlayer drawingOrder="145" open="false" checked="Qt::Unchecked" name="Edition des lot d'inspections" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Edition_des_lot_de_curages_copier20190110093354404" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Unchecked" name="Technique - informatique">
-        <legendlayer drawingOrder="143" open="true" checked="Qt::Unchecked" name="batch_cleaning" showFeatureCount="0">
+      <legendgroup open="false" checked="Qt::PartiallyChecked" name="Technique - informatique">
+        <legendlayer drawingOrder="144" open="true" checked="Qt::Unchecked" name="batch_cleaning" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="batch_cleaning20181217105104951" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="142" open="true" checked="Qt::Unchecked" name="collecting_pipe" showFeatureCount="0">
+        <legendlayer drawingOrder="148" open="true" checked="Qt::Checked" name="batch_inspection" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="batch_inspection20190306075313406" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="143" open="true" checked="Qt::Unchecked" name="collecting_pipe" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="collecting_pipe20181217103527350" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="41" open="true" checked="Qt::Unchecked" name="vw_last_inspection" showFeatureCount="0">
+        <legendlayer drawingOrder="42" open="true" checked="Qt::Unchecked" name="vw_last_inspection" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_last_inspection_copier20181011170745103" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="42" open="true" checked="Qt::Unchecked" name="vw_last_cleaning" showFeatureCount="0">
+        <legendlayer drawingOrder="43" open="true" checked="Qt::Unchecked" name="vw_last_cleaning" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_last_inspection_copier_copier20181011170759603" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="4" open="true" checked="Qt::Unchecked" name="Refoulements (tous)" showFeatureCount="0">
+        <legendlayer drawingOrder="5" open="true" checked="Qt::Unchecked" name="Refoulements (tous)" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_qgep_reach20181211104448297" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="5" open="false" checked="Qt::Unchecked" name="Tronçons avec noms de collecteurs" showFeatureCount="0">
+        <legendlayer drawingOrder="6" open="false" checked="Qt::Unchecked" name="Tronçons avec noms de collecteurs" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçons___édition_des_noms_de_collecteurs_copier20181113113119692" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="Develop">
-        <legendlayer drawingOrder="145" open="false" checked="Qt::Unchecked" name="troncon - uas - test" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
+        <legendlayer drawingOrder="146" open="true" checked="Qt::Unchecked" name="troncon - uas - test" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="tronçon_copier20190130090129621" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="146" open="false" checked="Qt::Unchecked" name="chambre - uas - test" showFeatureCount="0">
+        <legendlayer drawingOrder="147" open="false" checked="Qt::Unchecked" name="chambre - uas - test" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="chambre_copier20190130090215392" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="OLD">
-        <legendlayer drawingOrder="7" open="false" checked="Qt::Unchecked" name="Tronçons par numéro" showFeatureCount="0">
+        <legendlayer drawingOrder="8" open="false" checked="Qt::Unchecked" name="Tronçons par numéro" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçon_test_copier20180724170659439" visible="0"/>
           </filegroup>
         </legendlayer>
         <legendgroup open="false" checked="Qt::Unchecked" name="Tronçons par numéro">
-          <legendlayer drawingOrder="8" open="false" checked="Qt::Unchecked" name="2001" showFeatureCount="0">
+          <legendlayer drawingOrder="9" open="false" checked="Qt::Unchecked" name="2001" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier20180824132632463" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="9" open="false" checked="Qt::Unchecked" name="3001" showFeatureCount="0">
+          <legendlayer drawingOrder="10" open="false" checked="Qt::Unchecked" name="3001" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133119186" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="10" open="false" checked="Qt::Unchecked" name="3002" showFeatureCount="0">
+          <legendlayer drawingOrder="11" open="false" checked="Qt::Unchecked" name="3002" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133052477" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="11" open="false" checked="Qt::Unchecked" name="3003" showFeatureCount="0">
+          <legendlayer drawingOrder="12" open="false" checked="Qt::Unchecked" name="3003" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133119467" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="12" open="false" checked="Qt::Unchecked" name="3004" showFeatureCount="0">
+          <legendlayer drawingOrder="13" open="false" checked="Qt::Unchecked" name="3004" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133045648" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="13" open="false" checked="Qt::Unchecked" name="3005" showFeatureCount="0">
+          <legendlayer drawingOrder="14" open="false" checked="Qt::Unchecked" name="3005" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133119742" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="14" open="false" checked="Qt::Unchecked" name="3006" showFeatureCount="0">
+          <legendlayer drawingOrder="15" open="false" checked="Qt::Unchecked" name="3006" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133052774" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="15" open="false" checked="Qt::Unchecked" name="3007" showFeatureCount="0">
+          <legendlayer drawingOrder="16" open="false" checked="Qt::Unchecked" name="3007" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120029" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="16" open="false" checked="Qt::Unchecked" name="3008" showFeatureCount="0">
+          <legendlayer drawingOrder="17" open="false" checked="Qt::Unchecked" name="3008" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132913433" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="17" open="false" checked="Qt::Unchecked" name="3009" showFeatureCount="0">
+          <legendlayer drawingOrder="18" open="false" checked="Qt::Unchecked" name="3009" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133120295" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="18" open="false" checked="Qt::Unchecked" name="3010" showFeatureCount="0">
+          <legendlayer drawingOrder="19" open="false" checked="Qt::Unchecked" name="3010" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133053039" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="19" open="false" checked="Qt::Unchecked" name="3011" showFeatureCount="0">
+          <legendlayer drawingOrder="20" open="false" checked="Qt::Unchecked" name="3011" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120570" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="20" open="false" checked="Qt::Unchecked" name="3012" showFeatureCount="0">
+          <legendlayer drawingOrder="21" open="false" checked="Qt::Unchecked" name="3012" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133045945" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="21" open="false" checked="Qt::Unchecked" name="3013" showFeatureCount="0">
+          <legendlayer drawingOrder="22" open="false" checked="Qt::Unchecked" name="3013" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120851" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="22" open="false" checked="Qt::Unchecked" name="3014" showFeatureCount="0">
+          <legendlayer drawingOrder="23" open="false" checked="Qt::Unchecked" name="3014" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133053321" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="23" open="false" checked="Qt::Unchecked" name="4001" showFeatureCount="0">
+          <legendlayer drawingOrder="24" open="false" checked="Qt::Unchecked" name="4001" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132911680" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="24" open="false" checked="Qt::Unchecked" name="4003" showFeatureCount="0">
+          <legendlayer drawingOrder="25" open="false" checked="Qt::Unchecked" name="4003" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133053586" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="25" open="false" checked="Qt::Unchecked" name="4005" showFeatureCount="0">
+          <legendlayer drawingOrder="26" open="false" checked="Qt::Unchecked" name="4005" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046226" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="26" open="false" checked="Qt::Unchecked" name="4006" showFeatureCount="0">
+          <legendlayer drawingOrder="27" open="false" checked="Qt::Unchecked" name="4006" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133053836" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="27" open="false" checked="Qt::Unchecked" name="5001" showFeatureCount="0">
+          <legendlayer drawingOrder="28" open="false" checked="Qt::Unchecked" name="5001" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132909477" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="28" open="false" checked="Qt::Unchecked" name="5002" showFeatureCount="0">
+          <legendlayer drawingOrder="29" open="false" checked="Qt::Unchecked" name="5002" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133054102" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="29" open="false" checked="Qt::Unchecked" name="5003" showFeatureCount="0">
+          <legendlayer drawingOrder="30" open="false" checked="Qt::Unchecked" name="5003" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046492" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="30" open="false" checked="Qt::Unchecked" name="5004" showFeatureCount="0">
+          <legendlayer drawingOrder="31" open="false" checked="Qt::Unchecked" name="5004" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133054383" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="31" open="false" checked="Qt::Unchecked" name="5005" showFeatureCount="0">
+          <legendlayer drawingOrder="32" open="false" checked="Qt::Unchecked" name="5005" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132907430" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="32" open="false" checked="Qt::Unchecked" name="5006" showFeatureCount="0">
+          <legendlayer drawingOrder="33" open="false" checked="Qt::Unchecked" name="5006" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133054617" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="33" open="false" checked="Qt::Unchecked" name="5007" showFeatureCount="0">
+          <legendlayer drawingOrder="34" open="false" checked="Qt::Unchecked" name="5007" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046759" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="34" open="false" checked="Qt::Unchecked" name="5008" showFeatureCount="0">
+          <legendlayer drawingOrder="35" open="false" checked="Qt::Unchecked" name="5008" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133054820" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="35" open="false" checked="Qt::Unchecked" name="5010" showFeatureCount="0">
+          <legendlayer drawingOrder="36" open="false" checked="Qt::Unchecked" name="5010" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132902259" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="36" open="false" checked="Qt::Unchecked" name="5011" showFeatureCount="0">
+          <legendlayer drawingOrder="37" open="false" checked="Qt::Unchecked" name="5011" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133055008" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="37" open="false" checked="Qt::Unchecked" name="autres" showFeatureCount="0">
+          <legendlayer drawingOrder="38" open="false" checked="Qt::Unchecked" name="autres" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133047040" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
-        <legendlayer drawingOrder="38" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernière inspection" showFeatureCount="0">
+        <legendlayer drawingOrder="39" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernière inspection" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçon_copier20180724163126100" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="39" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernier curage" showFeatureCount="0">
+        <legendlayer drawingOrder="40" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernier curage" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçons___date_et_âge_de_dernière_inspection_copier20181011180906702" visible="0"/>
           </filegroup>
@@ -1067,87 +1084,87 @@
     </legendgroup>
     <legendgroup embedded="1" open="true" checked="Qt::PartiallyChecked" name="Fonds de plans" project="../cadastre/cadastre_pg.qgs"/>
     <legendgroup open="false" checked="Qt::Unchecked" name="QGEP Origine">
-      <legendlayer drawingOrder="43" open="false" checked="Qt::Unchecked" name="chambre" showFeatureCount="0">
+      <legendlayer drawingOrder="44" open="false" checked="Qt::Unchecked" name="chambre" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_qgep_wastewater_structure" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="44" open="false" checked="Qt::Unchecked" name="tronçon" showFeatureCount="0">
+      <legendlayer drawingOrder="45" open="false" checked="Qt::Unchecked" name="tronçon" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_qgep_reach" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendgroup open="false" checked="Qt::Unchecked" name="Ouvrages">
-        <legendlayer drawingOrder="45" open="true" checked="Qt::Unchecked" name="od_wastewater_structure" showFeatureCount="0">
+        <legendlayer drawingOrder="46" open="true" checked="Qt::Unchecked" name="od_wastewater_structure" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_wastewater_structure" visible="0"/>
           </filegroup>
         </legendlayer>
         <legendgroup open="false" checked="Qt::Unchecked" name="Elément douvrage">
-          <legendlayer drawingOrder="46" open="true" checked="Qt::Unchecked" name="vw_access_aid" showFeatureCount="0">
+          <legendlayer drawingOrder="47" open="true" checked="Qt::Unchecked" name="vw_access_aid" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vw_access_aid" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="47" open="true" checked="Qt::Unchecked" name="vw_backflow_prevention" showFeatureCount="0">
+          <legendlayer drawingOrder="48" open="true" checked="Qt::Unchecked" name="vw_backflow_prevention" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vw_backflow_prevention" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="48" open="true" checked="Qt::Unchecked" name="vw_benching" showFeatureCount="0">
+          <legendlayer drawingOrder="49" open="true" checked="Qt::Unchecked" name="vw_benching" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vw_benching" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="49" open="true" checked="Qt::Unchecked" name="vw_cover" showFeatureCount="0">
+          <legendlayer drawingOrder="50" open="true" checked="Qt::Unchecked" name="vw_cover" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vw_cover___" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="50" open="true" checked="Qt::Unchecked" name="vw_dryweather_downspout" showFeatureCount="0">
+          <legendlayer drawingOrder="51" open="true" checked="Qt::Unchecked" name="vw_dryweather_downspout" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vw_dryweather_downspout" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="51" open="true" checked="Qt::Unchecked" name="vw_dryweather_flume" showFeatureCount="0">
+          <legendlayer drawingOrder="52" open="true" checked="Qt::Unchecked" name="vw_dryweather_flume" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vw_dryweather_flume" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
-        <legendlayer drawingOrder="52" open="true" checked="Qt::Unchecked" name="vw_channel" showFeatureCount="0">
+        <legendlayer drawingOrder="53" open="true" checked="Qt::Unchecked" name="vw_channel" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_channel_" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="53" open="true" checked="Qt::Unchecked" name="od_organisation" showFeatureCount="0">
+        <legendlayer drawingOrder="54" open="true" checked="Qt::Unchecked" name="od_organisation" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_organisation20160212172933583" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="Inspection">
-        <legendlayer drawingOrder="54" open="true" checked="Qt::Unchecked" name="vw_last_inspection" showFeatureCount="0">
+        <legendlayer drawingOrder="55" open="true" checked="Qt::Unchecked" name="vw_last_inspection" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_last_inspection20171004071835261" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="55" open="true" checked="Qt::Unchecked" name="re_maintenance_event_wastewater_structure" showFeatureCount="0">
+        <legendlayer drawingOrder="56" open="true" checked="Qt::Unchecked" name="re_maintenance_event_wastewater_structure" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="re_maintenance_event_wastewater_structure" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="56" open="true" checked="Qt::Unchecked" name="od_file" showFeatureCount="0">
+        <legendlayer drawingOrder="57" open="true" checked="Qt::Unchecked" name="od_file" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_file20160921105557083" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="57" open="true" checked="Qt::Unchecked" name="Maintenance" showFeatureCount="0">
+        <legendlayer drawingOrder="58" open="true" checked="Qt::Unchecked" name="Maintenance" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_qgep_maintenance" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="58" open="true" checked="Qt::Unchecked" name="Dégâts" showFeatureCount="0">
+        <legendlayer drawingOrder="59" open="true" checked="Qt::Unchecked" name="Dégâts" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_qgep_damage" visible="0"/>
           </filegroup>
@@ -1155,293 +1172,293 @@
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="Liste de valeur">
         <legendgroup open="false" checked="Qt::Unchecked" name="Exutoire au milieu récepteur">
-          <legendlayer drawingOrder="59" open="true" checked="Qt::Unchecked" name="Relevance" showFeatureCount="0">
+          <legendlayer drawingOrder="60" open="true" checked="Qt::Unchecked" name="Relevance" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_discharge_point_relevance" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="special structure">
-          <legendlayer drawingOrder="60" open="true" checked="Qt::Unchecked" name="Bypass" showFeatureCount="0">
+          <legendlayer drawingOrder="61" open="true" checked="Qt::Unchecked" name="Bypass" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_special_structure_bypass" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="61" open="true" checked="Qt::Unchecked" name="Function" showFeatureCount="0">
+          <legendlayer drawingOrder="62" open="true" checked="Qt::Unchecked" name="Function" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_special_structure_function" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="62" open="true" checked="Qt::Unchecked" name="Stormwater Tank Arrangement" showFeatureCount="0">
+          <legendlayer drawingOrder="63" open="true" checked="Qt::Unchecked" name="Stormwater Tank Arrangement" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_special_structure_stormwater_tank_arrangement" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Chambre">
-          <legendlayer drawingOrder="63" open="true" checked="Qt::Unchecked" name="MH Material" showFeatureCount="0">
+          <legendlayer drawingOrder="64" open="true" checked="Qt::Unchecked" name="MH Material" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_manhole_material20151117174216343" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="64" open="true" checked="Qt::Unchecked" name="MH Surface Inflow" showFeatureCount="0">
+          <legendlayer drawingOrder="65" open="true" checked="Qt::Unchecked" name="MH Surface Inflow" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_manhole_surface_inflow20151117174216393" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="65" open="true" checked="Qt::Unchecked" name="MH Function" showFeatureCount="0">
+          <legendlayer drawingOrder="66" open="true" checked="Qt::Unchecked" name="MH Function" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_manhole_function" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Elément douvrage">
-          <legendlayer drawingOrder="66" open="true" checked="Qt::Unchecked" name="vl_structure_part_renovation_demand" showFeatureCount="0">
+          <legendlayer drawingOrder="67" open="true" checked="Qt::Unchecked" name="vl_structure_part_renovation_demand" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_structure_part_renovation_demand" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Regard">
-          <legendlayer drawingOrder="67" open="true" checked="Qt::Unchecked" name="C Positional Accuracy" showFeatureCount="0">
+          <legendlayer drawingOrder="68" open="true" checked="Qt::Unchecked" name="C Positional Accuracy" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_cover_positional_accuracy20151117153235900" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="68" open="true" checked="Qt::Unchecked" name="Shape" showFeatureCount="0">
+          <legendlayer drawingOrder="69" open="true" checked="Qt::Unchecked" name="Shape" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_cover_cover_shape" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="69" open="true" checked="Qt::Unchecked" name="Fastening" showFeatureCount="0">
+          <legendlayer drawingOrder="70" open="true" checked="Qt::Unchecked" name="Fastening" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_cover_fastening" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="70" open="true" checked="Qt::Unchecked" name="Sludge Bucket" showFeatureCount="0">
+          <legendlayer drawingOrder="71" open="true" checked="Qt::Unchecked" name="Sludge Bucket" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_cover_sludge_bucket" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="71" open="true" checked="Qt::Unchecked" name="Venting" showFeatureCount="0">
+          <legendlayer drawingOrder="72" open="true" checked="Qt::Unchecked" name="Venting" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_cover_venting" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="72" open="true" checked="Qt::Unchecked" name="C Material" showFeatureCount="0">
+          <legendlayer drawingOrder="73" open="true" checked="Qt::Unchecked" name="C Material" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_cover_material" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Protection contre le refoulement">
-          <legendlayer drawingOrder="73" open="true" checked="Qt::Unchecked" name="vl_backflow_prevention_kind" showFeatureCount="0">
+          <legendlayer drawingOrder="74" open="true" checked="Qt::Unchecked" name="vl_backflow_prevention_kind" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_backflow_prevention_kind" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="uDispositif d'accès">
-          <legendlayer drawingOrder="74" open="true" checked="Qt::Unchecked" name="vl_access_aid_kind" showFeatureCount="0">
+          <legendlayer drawingOrder="75" open="true" checked="Qt::Unchecked" name="vl_access_aid_kind" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_access_aid_kind" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Maintenance">
-          <legendlayer drawingOrder="75" open="true" checked="Qt::Unchecked" name="vl_maintenance_event_kind" showFeatureCount="0">
+          <legendlayer drawingOrder="76" open="true" checked="Qt::Unchecked" name="vl_maintenance_event_kind" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_maintenance_event_kind" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="76" open="true" checked="Qt::Unchecked" name="vl_maintenance_event_status" showFeatureCount="0">
+          <legendlayer drawingOrder="77" open="true" checked="Qt::Unchecked" name="vl_maintenance_event_status" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_maintenance_event_status" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Point de tronçon">
-          <legendlayer drawingOrder="77" open="true" checked="Qt::Unchecked" name="vl_reach_point_elevation_accuracy" showFeatureCount="0">
+          <legendlayer drawingOrder="78" open="true" checked="Qt::Unchecked" name="vl_reach_point_elevation_accuracy" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_point_elevation_accuracy" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="78" open="true" checked="Qt::Unchecked" name="vl_reach_point_outlet_shape" showFeatureCount="0">
+          <legendlayer drawingOrder="79" open="true" checked="Qt::Unchecked" name="vl_reach_point_outlet_shape" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_point_outlet_shape" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Tronçon">
-          <legendlayer drawingOrder="79" open="true" checked="Qt::Unchecked" name="vl_reach_elevation_determination" showFeatureCount="0">
+          <legendlayer drawingOrder="80" open="true" checked="Qt::Unchecked" name="vl_reach_elevation_determination" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_elevation_determination" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="80" open="true" checked="Qt::Unchecked" name="vl_reach_horizontal_positioning" showFeatureCount="0">
+          <legendlayer drawingOrder="81" open="true" checked="Qt::Unchecked" name="vl_reach_horizontal_positioning" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_horizontal_positioning" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="81" open="true" checked="Qt::Unchecked" name="vl_reach_inside_coating" showFeatureCount="0">
+          <legendlayer drawingOrder="82" open="true" checked="Qt::Unchecked" name="vl_reach_inside_coating" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_inside_coating" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="82" open="true" checked="Qt::Unchecked" name="vl_reach_material" showFeatureCount="0">
+          <legendlayer drawingOrder="83" open="true" checked="Qt::Unchecked" name="vl_reach_material" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_material" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="83" open="true" checked="Qt::Unchecked" name="vl_reach_reliner_material" showFeatureCount="0">
+          <legendlayer drawingOrder="84" open="true" checked="Qt::Unchecked" name="vl_reach_reliner_material" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_reliner_material" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="84" open="true" checked="Qt::Unchecked" name="vl_reach_relining_construction" showFeatureCount="0">
+          <legendlayer drawingOrder="85" open="true" checked="Qt::Unchecked" name="vl_reach_relining_construction" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_relining_construction" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="85" open="true" checked="Qt::Unchecked" name="vl_reach_relining_kind" showFeatureCount="0">
+          <legendlayer drawingOrder="86" open="true" checked="Qt::Unchecked" name="vl_reach_relining_kind" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_relining_kind" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Ouvrage">
-          <legendlayer drawingOrder="86" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_accessibility" showFeatureCount="0">
+          <legendlayer drawingOrder="87" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_accessibility" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_accessibility" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="87" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_financing" showFeatureCount="0">
+          <legendlayer drawingOrder="88" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_financing" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_financing" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="88" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_renovation_necessity" showFeatureCount="0">
+          <legendlayer drawingOrder="89" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_renovation_necessity" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_renovation_necessity" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="89" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_rv_construction_type" showFeatureCount="0">
+          <legendlayer drawingOrder="90" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_rv_construction_type" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_rv_construction_type" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="90" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_status" showFeatureCount="0">
+          <legendlayer drawingOrder="91" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_status" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_status" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="91" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_structure_condition" showFeatureCount="0">
+          <legendlayer drawingOrder="92" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_structure_condition" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_structure_condition" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Canalisation">
-          <legendlayer drawingOrder="92" open="true" checked="Qt::Unchecked" name="vl_channel_bedding_encasement" showFeatureCount="0">
+          <legendlayer drawingOrder="93" open="true" checked="Qt::Unchecked" name="vl_channel_bedding_encasement" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_channel_bedding_encasement" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="93" open="true" checked="Qt::Unchecked" name="vl_channel_connection_type" showFeatureCount="0">
+          <legendlayer drawingOrder="94" open="true" checked="Qt::Unchecked" name="vl_channel_connection_type" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_channel_connection_type" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="94" open="true" checked="Qt::Unchecked" name="vl_channel_function_hierarchic" showFeatureCount="0">
+          <legendlayer drawingOrder="95" open="true" checked="Qt::Unchecked" name="vl_channel_function_hierarchic" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_channel_function_hierarchic" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="95" open="true" checked="Qt::Unchecked" name="vl_channel_function_hydraulic" showFeatureCount="0">
+          <legendlayer drawingOrder="96" open="true" checked="Qt::Unchecked" name="vl_channel_function_hydraulic" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_channel_function_hydraulic" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="96" open="true" checked="Qt::Unchecked" name="vl_channel_usage_current" showFeatureCount="0">
+          <legendlayer drawingOrder="97" open="true" checked="Qt::Unchecked" name="vl_channel_usage_current" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_channel_usage_current" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="97" open="true" checked="Qt::Unchecked" name="vl_channel_usage_planned" showFeatureCount="0">
+          <legendlayer drawingOrder="98" open="true" checked="Qt::Unchecked" name="vl_channel_usage_planned" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_channel_usage_planned" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Inspection">
-          <legendlayer drawingOrder="98" open="true" checked="Qt::Unchecked" name="vl_damage_channel_channel_damage_code" showFeatureCount="0">
+          <legendlayer drawingOrder="99" open="true" checked="Qt::Unchecked" name="vl_damage_channel_channel_damage_code" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_damage_channel_channel_damage_code" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="99" open="true" checked="Qt::Unchecked" name="vl_damage_connection" showFeatureCount="0">
+          <legendlayer drawingOrder="100" open="true" checked="Qt::Unchecked" name="vl_damage_connection" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_damage_connection" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="100" open="true" checked="Qt::Unchecked" name="vl_damage_manhole_manhole_damage_code" showFeatureCount="0">
+          <legendlayer drawingOrder="101" open="true" checked="Qt::Unchecked" name="vl_damage_manhole_manhole_damage_code" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_damage_manhole_manhole_damage_code" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="101" open="true" checked="Qt::Unchecked" name="vl_damage_manhole_manhole_shaft_area" showFeatureCount="0">
+          <legendlayer drawingOrder="102" open="true" checked="Qt::Unchecked" name="vl_damage_manhole_manhole_shaft_area" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_damage_manhole_manhole_shaft_area" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="102" open="true" checked="Qt::Unchecked" name="vl_damage_single_damage_class" showFeatureCount="0">
+          <legendlayer drawingOrder="103" open="true" checked="Qt::Unchecked" name="vl_damage_single_damage_class" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_damage_single_damage_class" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="103" open="true" checked="Qt::Unchecked" name="vl_data_media_kind" showFeatureCount="0">
+          <legendlayer drawingOrder="104" open="true" checked="Qt::Unchecked" name="vl_data_media_kind" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_data_media_kind" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="104" open="true" checked="Qt::Unchecked" name="vl_file_class" showFeatureCount="0">
+          <legendlayer drawingOrder="105" open="true" checked="Qt::Unchecked" name="vl_file_class" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_file_class" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="105" open="true" checked="Qt::Unchecked" name="vl_file_kind" showFeatureCount="0">
+          <legendlayer drawingOrder="106" open="true" checked="Qt::Unchecked" name="vl_file_kind" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_file_kind" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Pipe Profile">
-          <legendlayer drawingOrder="106" open="true" checked="Qt::Unchecked" name="vl_pipe_profile_profile_type" showFeatureCount="0">
+          <legendlayer drawingOrder="107" open="true" checked="Qt::Unchecked" name="vl_pipe_profile_profile_type" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_pipe_profile_profile_type" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
-        <legendlayer drawingOrder="107" open="true" checked="Qt::Unchecked" name="od_pipe_profile" showFeatureCount="0">
+        <legendlayer drawingOrder="108" open="true" checked="Qt::Unchecked" name="od_pipe_profile" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_pipe_profile" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="Hydraulique">
-        <legendlayer drawingOrder="108" open="true" checked="Qt::Unchecked" name="vw_wastewater_node" showFeatureCount="0">
+        <legendlayer drawingOrder="109" open="true" checked="Qt::Unchecked" name="vw_wastewater_node" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_wastewater_node20150607121012062" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="Topologie">
-        <legendlayer drawingOrder="109" open="true" checked="Qt::Unchecked" name="vw_network_segment" showFeatureCount="0">
+        <legendlayer drawingOrder="110" open="true" checked="Qt::Unchecked" name="vw_network_segment" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_network_segment20150607120529381" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="110" open="true" checked="Qt::Unchecked" name="vw_network_node" showFeatureCount="0">
+        <legendlayer drawingOrder="111" open="true" checked="Qt::Unchecked" name="vw_network_node" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_network_node20150607120529398" visible="0"/>
           </filegroup>
@@ -1784,7 +1801,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="left(&quot;rp_from_identifier&quot;, 7) = '5004sup' OR left(&quot;rp_to_identifier&quot;, 7) = '5004sup'" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;sige_batch_inspection_id&quot;" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="obj_id"/>
           <column width="-1" hidden="0" type="field" name="sige_collecting_pipe_id"/>
@@ -36473,6 +36490,120 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+      <id>batch_inspection20190306075313406</id>
+      <datasource>dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table="qgep_sige"."batch_inspection" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>batch_inspection</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties/>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="situation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="main_pipe_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="inspection_interval">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="last_inspection">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="min_chamber_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="max_chamber_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="area">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="network_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="remark">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="date">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="code" index="0" name=""/>
+        <alias field="situation" index="1" name=""/>
+        <alias field="main_pipe_code" index="2" name=""/>
+        <alias field="name" index="3" name=""/>
+        <alias field="inspection_interval" index="4" name=""/>
+        <alias field="last_inspection" index="5" name=""/>
+        <alias field="min_chamber_name" index="6" name=""/>
+        <alias field="max_chamber_name" index="7" name=""/>
+        <alias field="area" index="8" name=""/>
+        <alias field="network_name" index="9" name=""/>
+        <alias field="remark" index="10" name=""/>
+        <alias field="date" index="11" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="804789968">
+        <columns/>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="code" expression=""/>
+        <default field="situation" expression=""/>
+        <default field="main_pipe_code" expression=""/>
+        <default field="name" expression=""/>
+        <default field="inspection_interval" expression=""/>
+        <default field="last_inspection" expression=""/>
+        <default field="min_chamber_name" expression=""/>
+        <default field="max_chamber_name" expression=""/>
+        <default field="area" expression=""/>
+        <default field="network_name" expression=""/>
+        <default field="remark" expression=""/>
+        <default field="date" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="1" maximumScale="5000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>chambre_copier20190130090215392</id>
       <datasource>service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table="qgep"."vw_qgep_wastewater_structure" (situation_geometry) sql=</datasource>
@@ -38024,7 +38155,7 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression>COALESCE( "identifier", '&lt;NULL>' )</previewExpression>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="1" maximumScale="5000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="1" maximumScale="5000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>2549799.64914386998862028</xmin>
         <ymin>1133680.2504769500810653</ymin>
@@ -40236,7 +40367,7 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression>COALESCE("obj_id", '&lt;NULL>')</previewExpression>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>2550816.2961514201015234</xmin>
         <ymin>1140017.37780900998041034</ymin>
@@ -40248,7 +40379,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>03 Refoulements primaires</layername>
+      <layername>04 Refoulements primaires</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
@@ -42000,7 +42131,7 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression>COALESCE( "obj_id", '&lt;NULL>' )</previewExpression>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>2549846.7734358599409461</xmin>
         <ymin>1133639.21541166002862155</ymin>
@@ -42012,7 +42143,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>04 Tronçons</layername>
+      <layername>05 Tronçons</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
@@ -48726,7 +48857,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="UTF-8">postgres</provider>
       <vectorjoins>
-        <join joinFieldName="code" targetFieldName="sige_batch_cleaning_id" memoryCache="1" joinLayerId="batch_cleaning20181217105104951">
+        <join joinFieldName="code" targetFieldName="sige_batch_cleaning_id" memoryCache="0" joinLayerId="batch_cleaning20181217105104951">
           <joinFieldsSubset>
             <field name="code"/>
             <field name="situation"/>
@@ -48749,8 +48880,8 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="row_number">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="Hidden" name="row_number">
+          <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="sige_batch_cleaning_id">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -48761,23 +48892,23 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="collecting_pipe_length">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="batch_cleaning_code">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="Hidden" name="batch_cleaning_code">
+          <widgetv2config fieldEditable="0" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="batch_cleaning_situation">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="batch_cleaning_main_pipe_code">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="Hidden" name="batch_cleaning_main_pipe_code">
+          <widgetv2config fieldEditable="0" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="batch_cleaning_name">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="Hidden" name="batch_cleaning_name">
+          <widgetv2config fieldEditable="0" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="batch_cleaning_jetting_interval">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="batch_cleaning_last_cleaning">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="Hidden" name="batch_cleaning_last_cleaning">
+          <widgetv2config fieldEditable="0" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="batch_cleaning_min_chamber_name">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -48806,8 +48937,8 @@ def my_form_open(dialog, layer, feature):
           <rule filter="to_int(substr(now(),1,4)) - &quot;batch_cleaning_date&quot; -  &quot;batch_cleaning_jetting_interval&quot; = 3" key="{2b93a3e5-adde-41d9-977e-253e1ca9cdf0}" symbol="3" label="A curer dans 3 ans"/>
           <rule filter="to_int(substr(now(),1,4)) - &quot;batch_cleaning_date&quot; -  &quot;batch_cleaning_jetting_interval&quot; = 4" key="{b17f5065-958d-4df1-a6bc-1b328114129e}" symbol="4" label="A curer dans 4 ans"/>
           <rule filter="to_int(substr(now(),1,4)) - &quot;batch_cleaning_date&quot; -  &quot;batch_cleaning_jetting_interval&quot; = 5" key="{9a409b3d-7b08-48e0-bf23-240043b710fe}" symbol="5" label="A curer dans 5 ans"/>
-          <rule filter="(to_int(substr(now(),1,4)) - vw_last_cleaning_last_cleaning) >=  5 AND (to_int(substr(now(),1,4)) - vw_last_cleaning_last_cleaning) &lt; 10" key="{e43ca7f6-f482-494d-9b5b-6afd52dc86e0}" symbol="6" label="A curer dans 5 a 10 ans"/>
-          <rule filter="(to_int(substr(now(),1,4)) - vw_last_cleaning_last_cleaning) >=  10" key="{fa740491-5270-4664-ac48-a5fa706dd2a9}" symbol="7" label="A curer dans plus de 10 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - &quot;batch_cleaning_date&quot; -  &quot;batch_cleaning_jetting_interval&quot;) >=  5 AND (to_int(substr(now(),1,4)) - &quot;batch_cleaning_date&quot; -  &quot;batch_cleaning_jetting_interval&quot;) &lt; 10" key="{e43ca7f6-f482-494d-9b5b-6afd52dc86e0}" symbol="6" label="A curer dans 5 a 10 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - &quot;batch_cleaning_date&quot; -  &quot;batch_cleaning_jetting_interval&quot;) >=  10" key="{fa740491-5270-4664-ac48-a5fa706dd2a9}" symbol="7" label="A curer dans plus de 10 ans"/>
           <rule filter="ELSE" key="{fa7fb5e6-1cb1-4507-af80-d7f3845e234e}" symbol="8" label="pas de données"/>
         </rules>
         <symbols>
@@ -49027,7 +49158,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="'Fréq. : ' ||  &quot;batch_cleaning_jetting_interval&quot; || ' ans'"/>
+        <property key="labeling/fieldName" value="batch_cleaning_situation"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
@@ -49047,7 +49178,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fontWeight" value="50"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/isExpression" value="false"/>
         <property key="labeling/labelOffsetInMapUnits" value="true"/>
         <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
         <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
@@ -49345,6 +49476,587 @@ def my_form_open(dialog, layer, feature):
         <default field="batch_cleaning_date" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "obj_id", '&lt;NULL>' )</previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>vw_batch_inspection_agg20190306075530728</id>
+      <datasource>dbname='qgep_prod' service='pg_qgep' sslmode=disable key='row_number' srid=2056 type=MultiCurve table="qgep_sige"."vw_batch_inspection_agg" (batch_inspection_geom) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>03 Lots d'inspection</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins>
+        <join joinFieldName="code" targetFieldName="sige_batch_inspection_id" memoryCache="0" joinLayerId="batch_inspection20190306075313406">
+          <joinFieldsSubset>
+            <field name="code"/>
+            <field name="situation"/>
+            <field name="main_pipe_code"/>
+            <field name="name"/>
+            <field name="inspection_interval"/>
+            <field name="last_inspection"/>
+            <field name="min_chamber_name"/>
+            <field name="max_chamber_name"/>
+            <field name="area"/>
+            <field name="network_name"/>
+            <field name="remark"/>
+            <field name="date"/>
+          </joinFieldsSubset>
+        </join>
+      </vectorjoins>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="Hidden" name="row_number">
+          <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sige_batch_inspection_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="number_of_reaches">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="collecting_pipe_length">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="Hidden" name="batch_inspection_code">
+          <widgetv2config fieldEditable="0" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="batch_inspection_situation">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="Hidden" name="batch_inspection_main_pipe_code">
+          <widgetv2config fieldEditable="0" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="Hidden" name="batch_inspection_name">
+          <widgetv2config fieldEditable="0" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="batch_inspection_inspection_interval">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="Hidden" name="batch_inspection_last_inspection">
+          <widgetv2config fieldEditable="0" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="batch_inspection_min_chamber_name">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="batch_inspection_max_chamber_name">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="batch_inspection_area">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="batch_inspection_network_name">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="batch_inspection_remark">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="batch_inspection_date">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+        <rules key="{0347c89e-eda5-41da-bf62-60ab39d99352}">
+          <rule filter="to_int(substr(now(),1,4)) - &quot;batch_inspection_date&quot; -  &quot;batch_inspection_inspection_interval&quot; &lt;= 0" key="{abbf60f2-30db-4eb7-9cd9-2c7c7c8729ec}" symbol="0" label="A inspecter cette année"/>
+          <rule filter="to_int(substr(now(),1,4)) - &quot;batch_inspection_date&quot; -  &quot;batch_inspection_inspection_interval&quot; = 1" key="{312a9c3c-b00e-4430-8cf6-b35545d7e973}" symbol="1" label="A inspecter dans 1 an"/>
+          <rule filter="to_int(substr(now(),1,4)) - &quot;batch_inspection_date&quot; -  &quot;batch_inspection_inspection_interval&quot; = 2" key="{57b9675e-8144-4489-98da-98ca9dc788aa}" symbol="2" label="A inspecter dans 2 ans"/>
+          <rule filter="to_int(substr(now(),1,4)) - &quot;batch_inspection_date&quot; -  &quot;batch_inspection_inspection_interval&quot; = 3" key="{d735a1d2-e9d0-4c34-bb03-cdfc853c630b}" symbol="3" label="A inspecter dans 3 ans"/>
+          <rule filter="to_int(substr(now(),1,4)) - &quot;batch_inspection_date&quot; -  &quot;batch_inspection_inspection_interval&quot; = 4" key="{b60058fa-7e32-4f49-9c3a-901a4db17867}" symbol="4" label="A inspecter dans 4 ans"/>
+          <rule filter="to_int(substr(now(),1,4)) - &quot;batch_inspection_date&quot; -  &quot;batch_inspection_inspection_interval&quot; = 5" key="{0ae2309c-a58d-492f-97ee-5b261584e388}" symbol="5" label="A inspecter dans 5 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - &quot;batch_inspection_date&quot; -  &quot;batch_inspection_inspection_interval&quot;) >=  5 AND (to_int(substr(now(),1,4)) - &quot;batch_inspection_date&quot; -  &quot;batch_inspection_inspection_interval&quot;) &lt; 10" key="{de588471-3881-4e72-80cc-4f0449baa942}" symbol="6" label="A inspecter dans 5 a 10 ans"/>
+          <rule filter="(to_int(substr(now(),1,4)) - &quot;batch_inspection_date&quot; -  &quot;batch_inspection_inspection_interval&quot;) >=  10" key="{fc33d1af-8bba-4baa-83c7-03700b8ec49a}" symbol="7" label="A inspecter dans plus de 10 ans"/>
+          <rule filter="ELSE" key="{aadd435d-32a7-4439-8bf4-3ddc4eb34b23}" symbol="8" label="pas de données"/>
+        </rules>
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="0">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="255,240,121,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.8"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="1">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="175,233,142,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.8"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="2">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="79,205,176,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.8"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="3">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="43,192,208,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.8"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="4">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="29,145,192,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.8"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="5">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="34,94,168,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.8"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="6">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="37,52,148,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.8"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="7">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="8,29,88,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.8"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="8">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="187,73,39,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.6"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+        </symbols>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="true"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="true"/>
+        <property key="labeling/enabled" value="true"/>
+        <property key="labeling/fieldName" value="batch_inspection_situation"/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="8.25"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="2"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>batch_inspection_name</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="row_number" index="0" name=""/>
+        <alias field="sige_batch_inspection_id" index="1" name="Identifiant de lot"/>
+        <alias field="number_of_reaches" index="2" name="Nombre de tronçons"/>
+        <alias field="collecting_pipe_length" index="3" name="Longueur du lot"/>
+        <alias field="batch_inspection_code" index="4" name=""/>
+        <alias field="batch_inspection_situation" index="5" name="Situation"/>
+        <alias field="batch_inspection_main_pipe_code" index="6" name=""/>
+        <alias field="batch_inspection_name" index="7" name=""/>
+        <alias field="batch_inspection_inspection_interval" index="8" name="Fréquence d'inspection"/>
+        <alias field="batch_inspection_last_inspection" index="9" name=""/>
+        <alias field="batch_inspection_min_chamber_name" index="10" name="Nom de chambre inférieure"/>
+        <alias field="batch_inspection_max_chamber_name" index="11" name="Nom de chambre supérieure"/>
+        <alias field="batch_inspection_area" index="12" name="Secteur"/>
+        <alias field="batch_inspection_network_name" index="13" name="Réseau"/>
+        <alias field="batch_inspection_remark" index="14" name="Remarque"/>
+        <alias field="batch_inspection_date" index="15" name="Date de dernière inspection"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="802614712">
+        <columns>
+          <column width="-1" hidden="1" type="field" name="row_number"/>
+          <column width="-1" hidden="0" type="field" name="sige_batch_inspection_id"/>
+          <column width="-1" hidden="0" type="field" name="number_of_reaches"/>
+          <column width="-1" hidden="0" type="field" name="collecting_pipe_length"/>
+          <column width="-1" hidden="1" type="field" name="batch_inspection_code"/>
+          <column width="-1" hidden="0" type="field" name="batch_inspection_situation"/>
+          <column width="-1" hidden="1" type="field" name="batch_inspection_main_pipe_code"/>
+          <column width="208" hidden="1" type="field" name="batch_inspection_name"/>
+          <column width="-1" hidden="0" type="field" name="batch_inspection_inspection_interval"/>
+          <column width="-1" hidden="1" type="field" name="batch_inspection_last_inspection"/>
+          <column width="-1" hidden="0" type="field" name="batch_inspection_min_chamber_name"/>
+          <column width="-1" hidden="0" type="field" name="batch_inspection_max_chamber_name"/>
+          <column width="-1" hidden="0" type="field" name="batch_inspection_area"/>
+          <column width="-1" hidden="0" type="field" name="batch_inspection_network_name"/>
+          <column width="-1" hidden="0" type="field" name="batch_inspection_remark"/>
+          <column width="-1" hidden="0" type="field" name="batch_inspection_date"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>tablayout</editorlayout>
+      <attributeEditorForm>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="2">
+          <attributeEditorField showLabel="1" index="1" name="sige_batch_inspection_id"/>
+          <attributeEditorField showLabel="1" index="2" name="number_of_reaches"/>
+          <attributeEditorField showLabel="1" index="3" name="collecting_pipe_length"/>
+          <attributeEditorField showLabel="1" index="5" name="batch_inspection_situation"/>
+          <attributeEditorField showLabel="1" index="8" name="batch_inspection_inspection_interval"/>
+          <attributeEditorField showLabel="1" index="15" name="batch_inspection_date"/>
+          <attributeEditorField showLabel="1" index="10" name="batch_inspection_min_chamber_name"/>
+          <attributeEditorField showLabel="1" index="11" name="batch_inspection_max_chamber_name"/>
+          <attributeEditorField showLabel="1" index="12" name="batch_inspection_area"/>
+          <attributeEditorField showLabel="1" index="13" name="batch_inspection_network_name"/>
+          <attributeEditorField showLabel="1" index="14" name="batch_inspection_remark"/>
+        </attributeEditorContainer>
+      </attributeEditorForm>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="row_number" expression=""/>
+        <default field="sige_batch_inspection_id" expression=""/>
+        <default field="number_of_reaches" expression=""/>
+        <default field="collecting_pipe_length" expression=""/>
+        <default field="batch_inspection_code" expression=""/>
+        <default field="batch_inspection_situation" expression=""/>
+        <default field="batch_inspection_main_pipe_code" expression=""/>
+        <default field="batch_inspection_name" expression=""/>
+        <default field="batch_inspection_inspection_interval" expression=""/>
+        <default field="batch_inspection_last_inspection" expression=""/>
+        <default field="batch_inspection_min_chamber_name" expression=""/>
+        <default field="batch_inspection_max_chamber_name" expression=""/>
+        <default field="batch_inspection_area" expression=""/>
+        <default field="batch_inspection_network_name" expression=""/>
+        <default field="batch_inspection_remark" expression=""/>
+        <default field="batch_inspection_date" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "batch_inspection_name", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer minimumScale="100000" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>vw_benching</id>
@@ -49699,7 +50411,7 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression>COALESCE( "identifier", "obj_id")</previewExpression>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>2550816.2961514201015234</xmin>
         <ymin>1139785.92620071000419557</ymin>
@@ -59249,7 +59961,6 @@ def my_form_open(dialog, layer, feature):
     <WMSRestrictedComposers type="QStringList"/>
     <WMSRootName type="QString"></WMSRootName>
     <WMSServiceTitle type="QString"></WMSServiceTitle>
-    <WMSContactPhone type="QString"></WMSContactPhone>
     <PAL>
       <SearchMethod type="int">0</SearchMethod>
       <ShowingShadowRects type="bool">false</ShowingShadowRects>
@@ -59262,6 +59973,7 @@ def my_form_open(dialog, layer, feature):
       <ShowingAllLabels type="bool">false</ShowingAllLabels>
       <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
     </PAL>
+    <WMSContactPhone type="QString"></WMSContactPhone>
     <Palette>
       <Colors type="QStringList">
         <value>255,255,217,255</value>
@@ -59777,6 +60489,12 @@ def copy_style():
     <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
   </properties>
   <visibility-presets>
+    <visibility-preset name="UAS - Collecteurs primaires">
+      <layer style="" id="vw_collecting_pipe_agg20181217110633180"/>
+      <layer style="" id="batch_inspection20190306075313406"/>
+      <layer style="" id="lc_limites_commune20180525110719694"/>
+      <layer style="" id="SWISSIMAGE20170314120137660"/>
+    </visibility-preset>
     <visibility-preset name="UAS - collecteurs - édition">
       <layer style="" id="refoulement20181211133622815"/>
       <layer style="" id="chambre_copier_copier20180726102643036"/>
