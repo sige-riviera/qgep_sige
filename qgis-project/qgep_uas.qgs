@@ -27,6 +27,9 @@
           <property key="expandedLegendNodes"/>
         </customproperties>
       </layer-tree-layer>
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_cover20190307112006113" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=Point table=&quot;qgep&quot;.&quot;vw_cover&quot; (situation_geometry) sql=" name="07 Couvercles">
+        <customproperties/>
+      </layer-tree-layer>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Edition des données aggrégées">
         <customproperties/>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_edit_main_pipe_name20181015145410733" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="11 Edition des noms de collecteurs">
@@ -583,10 +586,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2556657.1426842943765223</xmin>
-      <ymin>1139954.89488911838270724</ymin>
-      <xmax>2562320.2926009432412684</xmax>
-      <ymax>1152726.71273541660048068</ymax>
+      <xmin>2555446.45188309904187918</xmin>
+      <ymin>1142613.25066919415257871</ymin>
+      <xmax>2558278.02684142347425222</xmax>
+      <ymax>1148999.15959234326146543</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -671,6 +674,7 @@
       <item>vw_batch_cleaning_agg20181217105104787</item>
       <item>vw_batch_inspection_agg20190306075530728</item>
       <item>vw_collecting_pipe_agg20181217110633180</item>
+      <item>chambre_copier_copier20180726102643036</item>
       <item>tronçon_copier20190130112017326</item>
       <item>vw_edit_main_pipe_name20181015145410733</item>
       <item>Tronçons___édition_des_noms_de_collecteurs_copier20181213135910977</item>
@@ -710,7 +714,6 @@
       <item>Tronçons_par_numéro_copier_copier_copier20180824133047040</item>
       <item>Tronçon_copier20180724163126100</item>
       <item>Tronçons___date_et_âge_de_dernière_inspection_copier20181011180906702</item>
-      <item>chambre_copier_copier20180726102643036</item>
       <item>vw_last_inspection_copier20181011170745103</item>
       <item>vw_last_inspection_copier_copier20181011170759603</item>
       <item>vw_qgep_wastewater_structure</item>
@@ -817,6 +820,7 @@
       <item>chambre_copier20190130090215392</item>
       <item>batch_inspection20190306075313406</item>
       <item>SWISSIMAGE_Fond_de_plan20190306170954412</item>
+      <item>vw_cover20190307112006113</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="false">
@@ -841,28 +845,33 @@
           <legendlayerfile isInOverview="0" layerid="refoulement20181211133622815" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="4" open="false" checked="Qt::Unchecked" name="05 Tronçons (avec chemisage)" showFeatureCount="0">
+      <legendlayer drawingOrder="5" open="false" checked="Qt::Unchecked" name="05 Tronçons (avec chemisage)" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="tronçon_copier20190130112017326" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="43" open="false" checked="Qt::Unchecked" name="06 Chambres" showFeatureCount="0">
+      <legendlayer drawingOrder="4" open="false" checked="Qt::Unchecked" name="06 Chambres" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="chambre_copier_copier20180726102643036" visible="0"/>
         </filegroup>
       </legendlayer>
+      <legendlayer drawingOrder="150" open="true" checked="Qt::Unchecked" name="07 Couvercles" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="vw_cover20190307112006113" visible="0"/>
+        </filegroup>
+      </legendlayer>
       <legendgroup open="false" checked="Qt::Unchecked" name="Edition des données aggrégées">
-        <legendlayer drawingOrder="5" open="false" checked="Qt::Unchecked" name="11 Edition des noms de collecteurs" showFeatureCount="0">
+        <legendlayer drawingOrder="6" open="false" checked="Qt::Unchecked" name="11 Edition des noms de collecteurs" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_edit_main_pipe_name20181015145410733" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="6" open="false" checked="Qt::Unchecked" name="12 Edition des lots de curages" showFeatureCount="0">
+        <legendlayer drawingOrder="7" open="false" checked="Qt::Unchecked" name="12 Edition des lots de curages" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçons___édition_des_noms_de_collecteurs_copier20181213135910977" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="7" open="false" checked="Qt::Unchecked" name="13 Edition des lots d'inspections" showFeatureCount="0">
+        <legendlayer drawingOrder="8" open="false" checked="Qt::Unchecked" name="13 Edition des lots d'inspections" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Edition_des_lot_de_curages_copier20190110093354404" visible="0"/>
           </filegroup>
@@ -1271,169 +1280,169 @@
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="OLD">
-        <legendlayer drawingOrder="10" open="false" checked="Qt::Unchecked" name="Tronçons par numéro" showFeatureCount="0">
+        <legendlayer drawingOrder="11" open="false" checked="Qt::Unchecked" name="Tronçons par numéro" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçon_test_copier20180724170659439" visible="0"/>
           </filegroup>
         </legendlayer>
         <legendgroup open="false" checked="Qt::Unchecked" name="Tronçons par numéro">
-          <legendlayer drawingOrder="11" open="false" checked="Qt::Unchecked" name="2001" showFeatureCount="0">
+          <legendlayer drawingOrder="12" open="false" checked="Qt::Unchecked" name="2001" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier20180824132632463" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="12" open="false" checked="Qt::Unchecked" name="3001" showFeatureCount="0">
+          <legendlayer drawingOrder="13" open="false" checked="Qt::Unchecked" name="3001" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133119186" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="13" open="false" checked="Qt::Unchecked" name="3002" showFeatureCount="0">
+          <legendlayer drawingOrder="14" open="false" checked="Qt::Unchecked" name="3002" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133052477" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="14" open="false" checked="Qt::Unchecked" name="3003" showFeatureCount="0">
+          <legendlayer drawingOrder="15" open="false" checked="Qt::Unchecked" name="3003" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133119467" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="15" open="false" checked="Qt::Unchecked" name="3004" showFeatureCount="0">
+          <legendlayer drawingOrder="16" open="false" checked="Qt::Unchecked" name="3004" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133045648" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="16" open="false" checked="Qt::Unchecked" name="3005" showFeatureCount="0">
+          <legendlayer drawingOrder="17" open="false" checked="Qt::Unchecked" name="3005" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133119742" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="17" open="false" checked="Qt::Unchecked" name="3006" showFeatureCount="0">
+          <legendlayer drawingOrder="18" open="false" checked="Qt::Unchecked" name="3006" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133052774" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="18" open="false" checked="Qt::Unchecked" name="3007" showFeatureCount="0">
+          <legendlayer drawingOrder="19" open="false" checked="Qt::Unchecked" name="3007" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120029" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="19" open="false" checked="Qt::Unchecked" name="3008" showFeatureCount="0">
+          <legendlayer drawingOrder="20" open="false" checked="Qt::Unchecked" name="3008" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132913433" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="20" open="false" checked="Qt::Unchecked" name="3009" showFeatureCount="0">
+          <legendlayer drawingOrder="21" open="false" checked="Qt::Unchecked" name="3009" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133120295" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="21" open="false" checked="Qt::Unchecked" name="3010" showFeatureCount="0">
+          <legendlayer drawingOrder="22" open="false" checked="Qt::Unchecked" name="3010" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133053039" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="22" open="false" checked="Qt::Unchecked" name="3011" showFeatureCount="0">
+          <legendlayer drawingOrder="23" open="false" checked="Qt::Unchecked" name="3011" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120570" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="23" open="false" checked="Qt::Unchecked" name="3012" showFeatureCount="0">
+          <legendlayer drawingOrder="24" open="false" checked="Qt::Unchecked" name="3012" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133045945" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="24" open="false" checked="Qt::Unchecked" name="3013" showFeatureCount="0">
+          <legendlayer drawingOrder="25" open="false" checked="Qt::Unchecked" name="3013" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120851" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="25" open="false" checked="Qt::Unchecked" name="3014" showFeatureCount="0">
+          <legendlayer drawingOrder="26" open="false" checked="Qt::Unchecked" name="3014" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133053321" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="26" open="false" checked="Qt::Unchecked" name="4001" showFeatureCount="0">
+          <legendlayer drawingOrder="27" open="false" checked="Qt::Unchecked" name="4001" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132911680" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="27" open="false" checked="Qt::Unchecked" name="4003" showFeatureCount="0">
+          <legendlayer drawingOrder="28" open="false" checked="Qt::Unchecked" name="4003" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133053586" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="28" open="false" checked="Qt::Unchecked" name="4005" showFeatureCount="0">
+          <legendlayer drawingOrder="29" open="false" checked="Qt::Unchecked" name="4005" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046226" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="29" open="false" checked="Qt::Unchecked" name="4006" showFeatureCount="0">
+          <legendlayer drawingOrder="30" open="false" checked="Qt::Unchecked" name="4006" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133053836" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="30" open="false" checked="Qt::Unchecked" name="5001" showFeatureCount="0">
+          <legendlayer drawingOrder="31" open="false" checked="Qt::Unchecked" name="5001" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132909477" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="31" open="false" checked="Qt::Unchecked" name="5002" showFeatureCount="0">
+          <legendlayer drawingOrder="32" open="false" checked="Qt::Unchecked" name="5002" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133054102" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="32" open="false" checked="Qt::Unchecked" name="5003" showFeatureCount="0">
+          <legendlayer drawingOrder="33" open="false" checked="Qt::Unchecked" name="5003" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046492" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="33" open="false" checked="Qt::Unchecked" name="5004" showFeatureCount="0">
+          <legendlayer drawingOrder="34" open="false" checked="Qt::Unchecked" name="5004" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133054383" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="34" open="false" checked="Qt::Unchecked" name="5005" showFeatureCount="0">
+          <legendlayer drawingOrder="35" open="false" checked="Qt::Unchecked" name="5005" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132907430" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="35" open="false" checked="Qt::Unchecked" name="5006" showFeatureCount="0">
+          <legendlayer drawingOrder="36" open="false" checked="Qt::Unchecked" name="5006" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133054617" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="36" open="false" checked="Qt::Unchecked" name="5007" showFeatureCount="0">
+          <legendlayer drawingOrder="37" open="false" checked="Qt::Unchecked" name="5007" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046759" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="37" open="false" checked="Qt::Unchecked" name="5008" showFeatureCount="0">
+          <legendlayer drawingOrder="38" open="false" checked="Qt::Unchecked" name="5008" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133054820" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="38" open="false" checked="Qt::Unchecked" name="5010" showFeatureCount="0">
+          <legendlayer drawingOrder="39" open="false" checked="Qt::Unchecked" name="5010" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132902259" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="39" open="false" checked="Qt::Unchecked" name="5011" showFeatureCount="0">
+          <legendlayer drawingOrder="40" open="false" checked="Qt::Unchecked" name="5011" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133055008" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="40" open="false" checked="Qt::Unchecked" name="autres" showFeatureCount="0">
+          <legendlayer drawingOrder="41" open="false" checked="Qt::Unchecked" name="autres" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133047040" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
-        <legendlayer drawingOrder="41" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernière inspection" showFeatureCount="0">
+        <legendlayer drawingOrder="42" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernière inspection" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçon_copier20180724163126100" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="42" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernier curage" showFeatureCount="0">
+        <legendlayer drawingOrder="43" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernier curage" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçons___date_et_âge_de_dernière_inspection_copier20181011180906702" visible="0"/>
           </filegroup>
@@ -1464,12 +1473,12 @@
           <legendlayerfile isInOverview="0" layerid="vw_last_inspection_copier_copier20181011170759603" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="8" open="true" checked="Qt::Unchecked" name="Refoulements (tous)" showFeatureCount="0">
+      <legendlayer drawingOrder="9" open="true" checked="Qt::Unchecked" name="Refoulements (tous)" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_qgep_reach20181211104448297" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="9" open="false" checked="Qt::Unchecked" name="Tronçons avec noms de collecteurs" showFeatureCount="0">
+      <legendlayer drawingOrder="10" open="false" checked="Qt::Unchecked" name="Tronçons avec noms de collecteurs" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="Tronçons___édition_des_noms_de_collecteurs_copier20181113113119692" visible="0"/>
         </filegroup>
@@ -39399,98 +39408,8 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="2" name="cover_shape"/>
           <attributeEditorField showLabel="1" index="1" name="brand"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Ouvrage" groupBox="0" columnCount="2">
-          <attributeEditorField showLabel="1" index="0" name="obj_id"/>
-          <attributeEditorField showLabel="1" index="18" name="identifier"/>
-          <attributeEditorField showLabel="1" index="19" name="accessibility"/>
-          <attributeEditorField showLabel="1" index="24" name="location_name"/>
-          <attributeEditorField showLabel="1" index="34" name="year_of_construction"/>
-          <attributeEditorField showLabel="1" index="31" name="status"/>
-          <attributeEditorField showLabel="1" index="27" name="renovation_necessity"/>
-          <attributeEditorField showLabel="1" index="32" name="structure_condition"/>
-          <attributeEditorField showLabel="1" index="35" name="year_of_replacement"/>
-          <attributeEditorField showLabel="1" index="36" name="fk_owner"/>
-          <attributeEditorField showLabel="1" index="37" name="fk_operator"/>
-          <attributeEditorField showLabel="1" index="23" name="inspection_interval"/>
-          <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
-          <attributeEditorField showLabel="1" index="20" name="contract_section"/>
-          <attributeEditorField showLabel="1" index="25" name="records"/>
-          <attributeEditorField showLabel="1" index="21" name="financing"/>
-          <attributeEditorField showLabel="1" index="22" name="gross_costs"/>
-          <attributeEditorField showLabel="1" index="28" name="replacement_value"/>
-          <attributeEditorField showLabel="1" index="33" name="subsidies"/>
-          <attributeEditorField showLabel="1" index="29" name="rv_base_year"/>
-          <attributeEditorField showLabel="1" index="30" name="rv_construction_type"/>
-          <attributeEditorField showLabel="1" index="39" name="_depth"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'manhole'" name="Chambre" groupBox="0" columnCount="1">
-          <attributeEditorField showLabel="1" index="43" name="manhole_function"/>
-          <attributeEditorField showLabel="1" index="40" name="dimension1"/>
-          <attributeEditorField showLabel="1" index="41" name="dimension2"/>
-          <attributeEditorField showLabel="1" index="44" name="material"/>
-          <attributeEditorField showLabel="1" index="45" name="surface_inflow"/>
-          <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
-          <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'special_structure'" name="Ouvrage spécial" groupBox="0" columnCount="1">
-          <attributeEditorField showLabel="1" index="50" name="special_structure_function"/>
-          <attributeEditorField showLabel="1" index="49" name="bypass"/>
-          <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
-          <attributeEditorField showLabel="1" index="51" name="stormwater_tank_arrangement"/>
-          <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
-          <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'discharge_point'" name="Exutoir" groupBox="0" columnCount="1">
-          <attributeEditorField showLabel="1" index="54" name="terrain_level"/>
-          <attributeEditorField showLabel="1" index="52" name="highwater_level"/>
-          <attributeEditorField showLabel="1" index="55" name="waterlevel_hydraulic"/>
-          <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
-          <attributeEditorField showLabel="1" index="53" name="relevance"/>
-          <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'infiltration_installation'" name="Installation dinfiltration" groupBox="0" columnCount="1">
-          <attributeEditorField showLabel="1" index="61" name="kind"/>
-          <attributeEditorField showLabel="1" index="40" name="dimension1"/>
-          <attributeEditorField showLabel="1" index="41" name="dimension2"/>
-          <attributeEditorField showLabel="1" index="62" name="labeling"/>
-          <attributeEditorField showLabel="1" index="65" name="watertightness"/>
-          <attributeEditorField showLabel="1" index="64" name="vehicle_access"/>
-          <attributeEditorField showLabel="1" index="58" name="distance_to_aquifer"/>
-          <attributeEditorField showLabel="1" index="59" name="effective_area"/>
-          <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
-          <attributeEditorField showLabel="1" index="63" name="seepage_utilization"/>
-          <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
-          <attributeEditorField showLabel="1" index="57" name="defects"/>
-          <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Noeud" groupBox="0" columnCount="0">
-          <attributeEditorField showLabel="1" index="66" name="wn_obj_id"/>
-          <attributeEditorField showLabel="1" index="69" name="wn_identifier"/>
-          <attributeEditorField showLabel="1" index="68" name="bottom_level"/>
-          <attributeEditorField showLabel="1" index="67" name="backflow_level"/>
-          <attributeEditorField showLabel="1" index="70" name="wn_remark"/>
-          <attributeEditorField showLabel="1" index="71" name="wn_last_modification"/>
-          <attributeEditorField showLabel="1" index="-1" name="wn_dataowner"/>
-          <attributeEditorField showLabel="1" index="-1" name="wn_provider"/>
-        </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Couvercles" groupBox="0" columnCount="0">
           <attributeEditorRelation showLinkButton="1" relation="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Elément douvrage" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1" relation="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-          <attributeEditorRelation showLinkButton="1" relation="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-          <attributeEditorRelation showLinkButton="1" relation="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-          <attributeEditorRelation showLinkButton="1" relation="vw_dryweather_flume_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_dryweather_flume_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-          <attributeEditorRelation showLinkButton="1" relation="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="re_maintenance_event_wastewater_structure_fk_wastewater_structure_vw_qgep_wastewater_structure_ws_obj_id"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Noeuds" groupBox="0" columnCount="0">
-          <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="wastewater_node-fk_wastewater-structure"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Fichiers" groupBox="0" columnCount="1">
-          <attributeEditorRelation showLinkButton="1" relation="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id"/>
         </attributeEditorContainer>
       </attributeEditorForm>
       <widgets>
@@ -51864,6 +51783,404 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression>COALESCE( "obj_id", '&lt;NULL>' )</previewExpression>
     </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>vw_cover20190307112006113</id>
+      <datasource>dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=Point table="qgep"."vw_cover" (situation_geometry) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>07 Couvercles</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="obj_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="brand">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cover_shape">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="diameter">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fastening">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="level">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="material">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="positional_accuracy">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sludge_bucket">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="venting">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="identifier">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="remark">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="renovation_demand">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fk_dataowner">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fk_provider">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="last_modification">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fk_wastewater_structure">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+        <rules key="{5ff9b0ad-b15a-42d1-a1ee-a5a7bca9596a}">
+          <rule key="{76f83d51-784e-49cd-96b1-228fd6968a07}" symbol="0"/>
+        </rules>
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="123,45,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="3"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </symbols>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="8.25"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="3"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="6"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>obj_id</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="obj_id" index="0" name=""/>
+        <alias field="brand" index="1" name=""/>
+        <alias field="cover_shape" index="2" name=""/>
+        <alias field="diameter" index="3" name=""/>
+        <alias field="fastening" index="4" name=""/>
+        <alias field="level" index="5" name=""/>
+        <alias field="material" index="6" name=""/>
+        <alias field="positional_accuracy" index="7" name=""/>
+        <alias field="sludge_bucket" index="8" name=""/>
+        <alias field="venting" index="9" name=""/>
+        <alias field="identifier" index="10" name=""/>
+        <alias field="remark" index="11" name=""/>
+        <alias field="renovation_demand" index="12" name=""/>
+        <alias field="fk_dataowner" index="13" name=""/>
+        <alias field="fk_provider" index="14" name=""/>
+        <alias field="last_modification" index="15" name=""/>
+        <alias field="fk_wastewater_structure" index="16" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="668718488">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="obj_id"/>
+          <column width="-1" hidden="0" type="field" name="brand"/>
+          <column width="-1" hidden="0" type="field" name="cover_shape"/>
+          <column width="-1" hidden="0" type="field" name="diameter"/>
+          <column width="-1" hidden="0" type="field" name="fastening"/>
+          <column width="-1" hidden="0" type="field" name="level"/>
+          <column width="-1" hidden="0" type="field" name="material"/>
+          <column width="-1" hidden="0" type="field" name="positional_accuracy"/>
+          <column width="-1" hidden="0" type="field" name="sludge_bucket"/>
+          <column width="-1" hidden="0" type="field" name="venting"/>
+          <column width="-1" hidden="0" type="field" name="identifier"/>
+          <column width="-1" hidden="0" type="field" name="remark"/>
+          <column width="-1" hidden="0" type="field" name="renovation_demand"/>
+          <column width="-1" hidden="0" type="field" name="fk_dataowner"/>
+          <column width="-1" hidden="0" type="field" name="fk_provider"/>
+          <column width="-1" hidden="0" type="field" name="last_modification"/>
+          <column width="-1" hidden="0" type="field" name="fk_wastewater_structure"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="obj_id" expression=""/>
+        <default field="brand" expression=""/>
+        <default field="cover_shape" expression=""/>
+        <default field="diameter" expression=""/>
+        <default field="fastening" expression=""/>
+        <default field="level" expression=""/>
+        <default field="material" expression=""/>
+        <default field="positional_accuracy" expression=""/>
+        <default field="sludge_bucket" expression=""/>
+        <default field="venting" expression=""/>
+        <default field="identifier" expression=""/>
+        <default field="remark" expression=""/>
+        <default field="renovation_demand" expression=""/>
+        <default field="fk_dataowner" expression=""/>
+        <default field="fk_provider" expression=""/>
+        <default field="last_modification" expression=""/>
+        <default field="fk_wastewater_structure" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>vw_cover___</id>
       <datasource>service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=Point table="qgep"."vw_cover" (situation_geometry) sql=</datasource>
@@ -58713,6 +59030,1234 @@ def my_form_open(dialog, layer, feature):
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
+        <map-layer-style name="Altitudes">
+          <qgis version="2.18.28" simplifyAlgorithm="0" minimumScale="1" maximumScale="5000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+            <edittypes>
+              <edittype widgetv2type="TextEdit" name="obj_id">
+                <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="UniqueValues" name="brand">
+                <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0" Editable="1"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="cover_shape">
+                <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_cover_shape" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="diameter">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="10" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="4000" Suffix=" mm"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="fastening">
+                <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_fastening" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="level">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="10" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="Level must not be NULL" Min="0" notNull="0" Max="4000" Suffix=" m.a.s.l."/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="cover_material">
+                <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_material" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="positional_accuracy">
+                <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_positional_accuracy20151117153235900" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="sludge_bucket">
+                <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_sludge_bucket" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="venting">
+                <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_cover_venting" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="co_identifier">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="remark">
+                <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="renovation_demand">
+                <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_structure_part_renovation_demand" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="DateTime" name="last_modification">
+                <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="0" display_format="yyyy-MM-dd" field_format="yyyy-MM-dd" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="fk_dataowner">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="fk_provider">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueMap" name="ws_type">
+                <widgetv2config fieldEditable="1" constraint="&quot;ws_type&quot; IS NOT NULL" labelOnTop="0" constraintDescription="Please choose a wastewater structure type" notNull="0">
+                  <value key="chambre standard" value="manhole"/>
+                  <value key="exutoire au milieu récepteur" value="discharge_point"/>
+                  <value key="installation d'infiltration" value="infiltration_installation"/>
+                  <value key="ouvrage spécial" value="special_structure"/>
+                </widgetv2config>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="co_obj_id">
+                <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="identifier">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="accessibility">
+                <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_accessibility" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="contract_section">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="financing">
+                <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_financing" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="gross_costs">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="9999999.99" Suffix=" CHF"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="inspection_interval">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="20" Suffix=" years"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="location_name">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="records">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="ws_remark">
+                <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="renovation_necessity">
+                <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_renovation_necessity" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="replacement_value">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="9999999.99" Suffix=" CHF"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="rv_base_year">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="1800" notNull="0" Max="2900"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="rv_construction_type">
+                <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_rv_construction_type" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="status">
+                <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_status" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="structure_condition">
+                <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_wastewater_structure_structure_condition" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="subsidies">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="9999999.99" Suffix=" CHF"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="year_of_construction">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="1900" notNull="0" Max="2200"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="year_of_replacement">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="1900" notNull="0" Max="2200"/>
+              </edittype>
+              <edittype widgetv2type="RelationReference" name="fk_owner">
+                <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="vw_qgep_wastewater_structure_fk_owner_od_organisation20160212172933583_obj_id" ReadOnly="0" constraint="" MapIdentification="0" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="0"/>
+              </edittype>
+              <edittype widgetv2type="RelationReference" name="fk_operator">
+                <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="vw_qgep_wastewater_structure_fk_operator_od_organisation20160212172933583_obj_id" ReadOnly="0" constraint="" MapIdentification="0" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="_label">
+                <widgetv2config IsMultiline="1" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="1" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="_depth">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="dimension1">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="4000" Suffix=" mm"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="dimension2">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="4000" Suffix=" mm"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="upper_elevation">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="manhole_function">
+                <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_manhole_function" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="material">
+                <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_manhole_material20151117174216343" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="surface_inflow">
+                <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_manhole_surface_inflow20151117174216393" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="Hidden" name="channel_usage_current">
+                <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="Hidden" name="channel_function_hierarchic">
+                <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="Hidden" name="manhole_orientation">
+                <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="bypass">
+                <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_special_structure_bypass" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="special_structure_function">
+                <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_special_structure_function" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="stormwater_tank_arrangement">
+                <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_special_structure_stormwater_tank_arrangement" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="highwater_level">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="5"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="relevance">
+                <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="vl_discharge_point_relevance" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="terrain_level">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="4000" Suffix=" m.a.s.l."/>
+              </edittype>
+              <edittype widgetv2type="Range" name="waterlevel_hydraulic">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="5"/>
+              </edittype>
+              <edittype widgetv2type="Range" name="absorption_capacity">
+                <widgetv2config AllowNull="1" fieldEditable="1" Step="1" constraint="" Style="SpinBox" labelOnTop="0" constraintDescription="" Min="0" notNull="0" Max="5"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="defects">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="distance_to_aquifer">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="effective_area">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="emergency_spillway">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="kind">
+                <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="labeling">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="seepage_utilization">
+                <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="vehicle_access">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="watertightness">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="wn_obj_id">
+                <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="backflow_level">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="bottom_level">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="wn_identifier">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="wn_remark">
+                <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="wn_last_modification">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="wn_fk_dataowner">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="wn_fk_provider">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+            </edittypes>
+            <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+              <rules key="{6736e613-3750-466f-8a9f-3310fefc92b3}">
+                <rule filter="channel_function_hierarchic IN (5068,5069,5070,5071)" key="{332087cf-932c-4b34-8c89-5af1900d831c}" label="réseau primaire">
+                  <rule filter=" manhole_function = 4536 AND regexp_match( &quot;co_identifier&quot; , '^STAP')" key="{3a626681-2607-46f6-a72b-1ff04443b95d}" symbol="0" label="STAP (pompage)"/>
+                  <rule filter=" manhole_function = 4536 AND regexp_match( &quot;co_identifier&quot; , '^STAR')" key="{a65a04e9-7833-437c-a7ac-ef3365a15add}" symbol="1" label="STAR (relevage)"/>
+                  <rule filter=" manhole_function = 4536 AND regexp_match( &quot;co_identifier&quot; , '^STREF')" key="{215fca55-6e77-4163-ac39-e98f4f32893f}" symbol="2" label="STREF (pneumaflow)"/>
+                  <rule filter=" manhole_function = 4532" key="{051fbae2-733e-424c-962f-959ee9b256b5}" symbol="3" label="chambre de chute"/>
+                  <rule filter="manhole_function NOT IN (4532, 4536)" key="{85c5b6a6-6fb2-405f-97a3-fa306f808220}" symbol="4" label="manhole, unknown, drop_structure, venting, jetting_manhole, separating_structure, stormwater_overflow"/>
+                </rule>
+                <rule filter="ELSE" key="{c431ef56-07b8-43fd-87bf-e0c20098ec5f}" symbol="5"/>
+              </rules>
+              <symbols>
+                <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+                  <layer pass="0" class="SimpleMarker" locked="0">
+                    <prop k="angle" v="0"/>
+                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="color_border_dd_active" v="1"/>
+                    <prop k="color_border_dd_expression" v="CASE WHEN channel_usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN channel_usage_current = 4516 THEN '0,255,0,255' WHEN channel_usage_current = 4518 THEN '0,170,255,255' WHEN channel_usage_current = 4522 THEN '102,0,102,255' WHEN channel_usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
+                    <prop k="color_border_dd_field" v=""/>
+                    <prop k="color_border_dd_useexpr" v="1"/>
+                    <prop k="horizontal_anchor_point" v="1"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="name" v="circle"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="solid"/>
+                    <prop k="outline_width" v="0.35"/>
+                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="scale_method" v="area"/>
+                    <prop k="size" v="4"/>
+                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="size_unit" v="MM"/>
+                    <prop k="vertical_anchor_point" v="1"/>
+                    <effect enabled="0" type="effectStack">
+                      <effect type="drawSource">
+                        <prop k="blend_mode" v="0"/>
+                        <prop k="draw_mode" v="2"/>
+                        <prop k="enabled" v="1"/>
+                        <prop k="transparency" v="0"/>
+                      </effect>
+                    </effect>
+                  </layer>
+                  <layer pass="0" class="SimpleMarker" locked="0">
+                    <prop k="angle" v="0"/>
+                    <prop k="color" v="255,0,0,255"/>
+                    <prop k="color_dd_active" v="1"/>
+                    <prop k="color_dd_expression" v="CASE WHEN channel_usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN channel_usage_current = 4516 THEN '0,255,0,255' WHEN channel_usage_current = 4518 THEN '0,170,255,255' WHEN channel_usage_current = 4522 THEN '102,0,102,255' WHEN channel_usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
+                    <prop k="color_dd_field" v=""/>
+                    <prop k="color_dd_useexpr" v="1"/>
+                    <prop k="horizontal_anchor_point" v="1"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="name" v="equilateral_triangle"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="no"/>
+                    <prop k="outline_width" v="0"/>
+                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="scale_method" v="area"/>
+                    <prop k="size" v="3.7"/>
+                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="size_unit" v="MM"/>
+                    <prop k="vertical_anchor_point" v="1"/>
+                    <effect enabled="0" type="effectStack">
+                      <effect type="drawSource">
+                        <prop k="blend_mode" v="0"/>
+                        <prop k="draw_mode" v="2"/>
+                        <prop k="enabled" v="1"/>
+                        <prop k="transparency" v="0"/>
+                      </effect>
+                    </effect>
+                  </layer>
+                </symbol>
+                <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
+                  <layer pass="0" class="SimpleMarker" locked="0">
+                    <prop k="angle" v="0"/>
+                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="color_border_dd_active" v="1"/>
+                    <prop k="color_border_dd_expression" v="CASE WHEN channel_usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN channel_usage_current = 4516 THEN '0,255,0,255' WHEN channel_usage_current = 4518 THEN '0,170,255,255' WHEN channel_usage_current = 4522 THEN '102,0,102,255' WHEN channel_usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
+                    <prop k="color_border_dd_field" v=""/>
+                    <prop k="color_border_dd_useexpr" v="1"/>
+                    <prop k="horizontal_anchor_point" v="1"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="name" v="circle"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="solid"/>
+                    <prop k="outline_width" v="0.35"/>
+                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="scale_method" v="area"/>
+                    <prop k="size" v="4"/>
+                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="size_unit" v="MM"/>
+                    <prop k="vertical_anchor_point" v="1"/>
+                    <effect enabled="0" type="effectStack">
+                      <effect type="drawSource">
+                        <prop k="blend_mode" v="0"/>
+                        <prop k="draw_mode" v="2"/>
+                        <prop k="enabled" v="1"/>
+                        <prop k="transparency" v="0"/>
+                      </effect>
+                    </effect>
+                  </layer>
+                  <layer pass="0" class="SimpleMarker" locked="0">
+                    <prop k="angle" v="0"/>
+                    <prop k="color" v="255,0,0,255"/>
+                    <prop k="color_dd_active" v="1"/>
+                    <prop k="color_dd_expression" v="CASE WHEN channel_usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN channel_usage_current = 4516 THEN '0,255,0,255' WHEN channel_usage_current = 4518 THEN '0,170,255,255' WHEN channel_usage_current = 4522 THEN '102,0,102,255' WHEN channel_usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
+                    <prop k="color_dd_field" v=""/>
+                    <prop k="color_dd_useexpr" v="1"/>
+                    <prop k="horizontal_anchor_point" v="1"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="name" v="square"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="no"/>
+                    <prop k="outline_width" v="0"/>
+                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="scale_method" v="area"/>
+                    <prop k="size" v="2.5"/>
+                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="size_unit" v="MM"/>
+                    <prop k="vertical_anchor_point" v="1"/>
+                    <effect enabled="0" type="effectStack">
+                      <effect type="drawSource">
+                        <prop k="blend_mode" v="0"/>
+                        <prop k="draw_mode" v="2"/>
+                        <prop k="enabled" v="1"/>
+                        <prop k="transparency" v="0"/>
+                      </effect>
+                    </effect>
+                  </layer>
+                </symbol>
+                <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
+                  <layer pass="0" class="SimpleMarker" locked="0">
+                    <prop k="angle" v="0"/>
+                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="color_border_dd_active" v="1"/>
+                    <prop k="color_border_dd_expression" v="CASE WHEN channel_usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN channel_usage_current = 4516 THEN '0,255,0,255' WHEN channel_usage_current = 4518 THEN '0,170,255,255' WHEN channel_usage_current = 4522 THEN '102,0,102,255' WHEN channel_usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
+                    <prop k="color_border_dd_field" v=""/>
+                    <prop k="color_border_dd_useexpr" v="1"/>
+                    <prop k="horizontal_anchor_point" v="1"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="name" v="circle"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="solid"/>
+                    <prop k="outline_width" v="0.35"/>
+                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="scale_method" v="area"/>
+                    <prop k="size" v="4"/>
+                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="size_unit" v="MM"/>
+                    <prop k="vertical_anchor_point" v="1"/>
+                    <effect enabled="0" type="effectStack">
+                      <effect type="drawSource">
+                        <prop k="blend_mode" v="0"/>
+                        <prop k="draw_mode" v="2"/>
+                        <prop k="enabled" v="1"/>
+                        <prop k="transparency" v="0"/>
+                      </effect>
+                    </effect>
+                  </layer>
+                  <layer pass="0" class="SimpleMarker" locked="0">
+                    <prop k="angle" v="60"/>
+                    <prop k="color" v="255,0,0,255"/>
+                    <prop k="color_dd_active" v="1"/>
+                    <prop k="color_dd_expression" v="CASE WHEN channel_usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN channel_usage_current = 4516 THEN '0,255,0,255' WHEN channel_usage_current = 4518 THEN '0,170,255,255' WHEN channel_usage_current = 4522 THEN '102,0,102,255' WHEN channel_usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
+                    <prop k="color_dd_field" v=""/>
+                    <prop k="color_dd_useexpr" v="1"/>
+                    <prop k="horizontal_anchor_point" v="1"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="name" v="line"/>
+                    <prop k="offset" v="0.80000000000000004,0.19999999999999996"/>
+                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="141,141,141,255"/>
+                    <prop k="outline_style" v="solid"/>
+                    <prop k="outline_width" v="0.4"/>
+                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="scale_method" v="area"/>
+                    <prop k="size" v="3.3"/>
+                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="size_unit" v="MM"/>
+                    <prop k="vertical_anchor_point" v="1"/>
+                    <effect enabled="0" type="effectStack">
+                      <effect type="drawSource">
+                        <prop k="blend_mode" v="0"/>
+                        <prop k="draw_mode" v="2"/>
+                        <prop k="enabled" v="1"/>
+                        <prop k="transparency" v="0"/>
+                      </effect>
+                    </effect>
+                  </layer>
+                  <layer pass="0" class="SimpleMarker" locked="0">
+                    <prop k="angle" v="120"/>
+                    <prop k="color" v="255,0,0,255"/>
+                    <prop k="horizontal_anchor_point" v="1"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="name" v="line"/>
+                    <prop k="offset" v="-0.80000000000000004,0.20000000000000001"/>
+                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="141,141,141,255"/>
+                    <prop k="outline_style" v="solid"/>
+                    <prop k="outline_width" v="0.4"/>
+                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="scale_method" v="diameter"/>
+                    <prop k="size" v="3.3"/>
+                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="size_unit" v="MM"/>
+                    <prop k="vertical_anchor_point" v="1"/>
+                  </layer>
+                </symbol>
+                <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
+                  <layer pass="0" class="SimpleMarker" locked="0">
+                    <prop k="angle" v="0"/>
+                    <prop k="color" v="215,215,215,255"/>
+                    <prop k="color_border_dd_active" v="1"/>
+                    <prop k="color_border_dd_expression" v="CASE WHEN channel_usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN channel_usage_current = 4516 THEN '0,255,0,255' WHEN channel_usage_current = 4518 THEN '0,170,255,255' WHEN channel_usage_current = 4522 THEN '102,0,102,255' WHEN channel_usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
+                    <prop k="color_border_dd_field" v=""/>
+                    <prop k="color_border_dd_useexpr" v="1"/>
+                    <prop k="horizontal_anchor_point" v="1"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="name" v="circle"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="solid"/>
+                    <prop k="outline_width" v="0.3"/>
+                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="scale_method" v="area"/>
+                    <prop k="size" v="3.7"/>
+                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="size_unit" v="MM"/>
+                    <prop k="vertical_anchor_point" v="1"/>
+                    <effect enabled="0" type="effectStack">
+                      <effect type="drawSource">
+                        <prop k="blend_mode" v="0"/>
+                        <prop k="draw_mode" v="2"/>
+                        <prop k="enabled" v="1"/>
+                        <prop k="transparency" v="0"/>
+                      </effect>
+                    </effect>
+                  </layer>
+                </symbol>
+                <symbol alpha="1" clip_to_extent="1" type="marker" name="4">
+                  <layer pass="0" class="SimpleMarker" locked="0">
+                    <prop k="angle" v="0"/>
+                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="color_border_dd_active" v="1"/>
+                    <prop k="color_border_dd_expression" v="CASE WHEN channel_usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN channel_usage_current = 4516 THEN '0,255,0,255' WHEN channel_usage_current = 4518 THEN '0,170,255,255' WHEN channel_usage_current = 4522 THEN '102,0,102,255' WHEN channel_usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
+                    <prop k="color_border_dd_field" v=""/>
+                    <prop k="color_border_dd_useexpr" v="1"/>
+                    <prop k="horizontal_anchor_point" v="1"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="name" v="circle"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="solid"/>
+                    <prop k="outline_width" v="0.35"/>
+                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="scale_method" v="area"/>
+                    <prop k="size" v="3"/>
+                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="size_unit" v="MM"/>
+                    <prop k="vertical_anchor_point" v="1"/>
+                    <effect enabled="0" type="effectStack">
+                      <effect type="drawSource">
+                        <prop k="blend_mode" v="0"/>
+                        <prop k="draw_mode" v="2"/>
+                        <prop k="enabled" v="1"/>
+                        <prop k="transparency" v="0"/>
+                      </effect>
+                    </effect>
+                  </layer>
+                </symbol>
+                <symbol alpha="1" clip_to_extent="1" type="marker" name="5">
+                  <layer pass="0" class="SimpleMarker" locked="0">
+                    <prop k="angle" v="0"/>
+                    <prop k="color" v="255,33,252,255"/>
+                    <prop k="horizontal_anchor_point" v="1"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="name" v="circle"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="solid"/>
+                    <prop k="outline_width" v="0"/>
+                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="scale_method" v="area"/>
+                    <prop k="size" v="2"/>
+                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="size_unit" v="MM"/>
+                    <prop k="vertical_anchor_point" v="1"/>
+                    <effect enabled="0" type="effectStack">
+                      <effect type="drawSource">
+                        <prop k="blend_mode" v="0"/>
+                        <prop k="draw_mode" v="2"/>
+                        <prop k="enabled" v="1"/>
+                        <prop k="transparency" v="0"/>
+                      </effect>
+                    </effect>
+                  </layer>
+                </symbol>
+              </symbols>
+              <effect enabled="0" type="effectStack">
+                <effect type="drawSource">
+                  <prop k="blend_mode" v="0"/>
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="transparency" v="0"/>
+                </effect>
+              </effect>
+            </renderer-v2>
+            <labeling type="simple"/>
+            <customproperties>
+              <property key="embeddedWidgets/count" value="0"/>
+              <property key="labeling" value="pal"/>
+              <property key="labeling/addDirectionSymbol" value="false"/>
+              <property key="labeling/angleOffset" value="0"/>
+              <property key="labeling/blendMode" value="0"/>
+              <property key="labeling/bufferBlendMode" value="0"/>
+              <property key="labeling/bufferColorA" value="255"/>
+              <property key="labeling/bufferColorB" value="255"/>
+              <property key="labeling/bufferColorG" value="255"/>
+              <property key="labeling/bufferColorR" value="255"/>
+              <property key="labeling/bufferDraw" value="true"/>
+              <property key="labeling/bufferJoinStyle" value="64"/>
+              <property key="labeling/bufferNoFill" value="false"/>
+              <property key="labeling/bufferSize" value="1"/>
+              <property key="labeling/bufferSizeInMapUnits" value="false"/>
+              <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
+              <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
+              <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+              <property key="labeling/bufferTransp" value="0"/>
+              <property key="labeling/centroidInside" value="false"/>
+              <property key="labeling/centroidWhole" value="false"/>
+              <property key="labeling/dataDefined/Color" value="1~~1~~CASE WHEN channel_usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN channel_usage_current = 4516 THEN '0,255,0,255' WHEN channel_usage_current = 4518 THEN '0,170,255,255' WHEN channel_usage_current = 4522 THEN '102,0,102,255' WHEN channel_usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END~~"/>
+              <property key="labeling/dataDefined/Show" value="1~~1~~CASE WHEN  channel_function_hierarchic IN (5068,5069,5070,5071) THEN True END~~"/>
+              <property key="labeling/decimals" value="3"/>
+              <property key="labeling/displayAll" value="false"/>
+              <property key="labeling/dist" value="2"/>
+              <property key="labeling/distInMapUnits" value="false"/>
+              <property key="labeling/distMapUnitMaxScale" value="0"/>
+              <property key="labeling/distMapUnitMinScale" value="0"/>
+              <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+              <property key="labeling/drawLabels" value="true"/>
+              <property key="labeling/enabled" value="true"/>
+              <property key="labeling/fieldName" value="CASE WHEN  @map_scale &lt;= 500 THEN &#xa; regexp_replace(regexp_replace( _label, 'I([0-9]+=)', 'E\\1'), 'O([0-9]+=)', 'S\\1')&#xa;|| COALESCE('\nPr='||&quot;_depth&quot; || ' m.','')  ELSE co_identifier END"/>
+              <property key="labeling/fitInPolygonOnly" value="false"/>
+              <property key="labeling/fontBold" value="false"/>
+              <property key="labeling/fontCapitals" value="0"/>
+              <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+              <property key="labeling/fontItalic" value="false"/>
+              <property key="labeling/fontLetterSpacing" value="0"/>
+              <property key="labeling/fontLimitPixelSize" value="false"/>
+              <property key="labeling/fontMaxPixelSize" value="10000"/>
+              <property key="labeling/fontMinPixelSize" value="3"/>
+              <property key="labeling/fontSize" value="7"/>
+              <property key="labeling/fontSizeInMapUnits" value="false"/>
+              <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
+              <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
+              <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+              <property key="labeling/fontStrikeout" value="false"/>
+              <property key="labeling/fontUnderline" value="false"/>
+              <property key="labeling/fontWeight" value="50"/>
+              <property key="labeling/fontWordSpacing" value="0"/>
+              <property key="labeling/formatNumbers" value="false"/>
+              <property key="labeling/isExpression" value="true"/>
+              <property key="labeling/labelOffsetInMapUnits" value="true"/>
+              <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
+              <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
+              <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+              <property key="labeling/labelPerPart" value="false"/>
+              <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+              <property key="labeling/limitNumLabels" value="false"/>
+              <property key="labeling/maxCurvedCharAngleIn" value="20"/>
+              <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
+              <property key="labeling/maxNumLabels" value="2000"/>
+              <property key="labeling/mergeLines" value="false"/>
+              <property key="labeling/minFeatureSize" value="0"/>
+              <property key="labeling/multilineAlign" value="0"/>
+              <property key="labeling/multilineHeight" value="1"/>
+              <property key="labeling/namedStyle" value="Normal"/>
+              <property key="labeling/obstacle" value="true"/>
+              <property key="labeling/obstacleFactor" value="1"/>
+              <property key="labeling/obstacleType" value="0"/>
+              <property key="labeling/offsetType" value="0"/>
+              <property key="labeling/placeDirectionSymbol" value="0"/>
+              <property key="labeling/placement" value="0"/>
+              <property key="labeling/placementFlags" value="0"/>
+              <property key="labeling/plussign" value="false"/>
+              <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+              <property key="labeling/preserveRotation" value="true"/>
+              <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+              <property key="labeling/priority" value="5"/>
+              <property key="labeling/quadOffset" value="4"/>
+              <property key="labeling/repeatDistance" value="0"/>
+              <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
+              <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
+              <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+              <property key="labeling/repeatDistanceUnit" value="1"/>
+              <property key="labeling/reverseDirectionSymbol" value="false"/>
+              <property key="labeling/rightDirectionSymbol" value=">"/>
+              <property key="labeling/scaleMax" value="3001"/>
+              <property key="labeling/scaleMin" value="1"/>
+              <property key="labeling/scaleVisibility" value="true"/>
+              <property key="labeling/shadowBlendMode" value="6"/>
+              <property key="labeling/shadowColorB" value="0"/>
+              <property key="labeling/shadowColorG" value="0"/>
+              <property key="labeling/shadowColorR" value="0"/>
+              <property key="labeling/shadowDraw" value="false"/>
+              <property key="labeling/shadowOffsetAngle" value="135"/>
+              <property key="labeling/shadowOffsetDist" value="1"/>
+              <property key="labeling/shadowOffsetGlobal" value="true"/>
+              <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
+              <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
+              <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+              <property key="labeling/shadowOffsetUnits" value="1"/>
+              <property key="labeling/shadowRadius" value="1.5"/>
+              <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+              <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
+              <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
+              <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+              <property key="labeling/shadowRadiusUnits" value="1"/>
+              <property key="labeling/shadowScale" value="100"/>
+              <property key="labeling/shadowTransparency" value="30"/>
+              <property key="labeling/shadowUnder" value="0"/>
+              <property key="labeling/shapeBlendMode" value="0"/>
+              <property key="labeling/shapeBorderColorA" value="255"/>
+              <property key="labeling/shapeBorderColorB" value="128"/>
+              <property key="labeling/shapeBorderColorG" value="128"/>
+              <property key="labeling/shapeBorderColorR" value="128"/>
+              <property key="labeling/shapeBorderWidth" value="0"/>
+              <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
+              <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
+              <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+              <property key="labeling/shapeBorderWidthUnits" value="1"/>
+              <property key="labeling/shapeDraw" value="false"/>
+              <property key="labeling/shapeFillColorA" value="255"/>
+              <property key="labeling/shapeFillColorB" value="255"/>
+              <property key="labeling/shapeFillColorG" value="255"/>
+              <property key="labeling/shapeFillColorR" value="255"/>
+              <property key="labeling/shapeJoinStyle" value="64"/>
+              <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
+              <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
+              <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+              <property key="labeling/shapeOffsetUnits" value="1"/>
+              <property key="labeling/shapeOffsetX" value="0"/>
+              <property key="labeling/shapeOffsetY" value="0"/>
+              <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
+              <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
+              <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+              <property key="labeling/shapeRadiiUnits" value="1"/>
+              <property key="labeling/shapeRadiiX" value="0"/>
+              <property key="labeling/shapeRadiiY" value="0"/>
+              <property key="labeling/shapeRotation" value="0"/>
+              <property key="labeling/shapeRotationType" value="0"/>
+              <property key="labeling/shapeSVGFile" value=""/>
+              <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
+              <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
+              <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+              <property key="labeling/shapeSizeType" value="0"/>
+              <property key="labeling/shapeSizeUnits" value="1"/>
+              <property key="labeling/shapeSizeX" value="0"/>
+              <property key="labeling/shapeSizeY" value="0"/>
+              <property key="labeling/shapeTransparency" value="0"/>
+              <property key="labeling/shapeType" value="0"/>
+              <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+              <property key="labeling/textColorA" value="255"/>
+              <property key="labeling/textColorB" value="0"/>
+              <property key="labeling/textColorG" value="0"/>
+              <property key="labeling/textColorR" value="0"/>
+              <property key="labeling/textTransp" value="0"/>
+              <property key="labeling/upsidedownLabels" value="0"/>
+              <property key="labeling/useSubstitutions" value="false"/>
+              <property key="labeling/wrapChar" value=""/>
+              <property key="labeling/xOffset" value="0"/>
+              <property key="labeling/yOffset" value="0"/>
+              <property key="labeling/zIndex" value="0"/>
+              <property key="variableNames"/>
+              <property key="variableValues"/>
+            </customproperties>
+            <blendMode>0</blendMode>
+            <featureBlendMode>0</featureBlendMode>
+            <layerTransparency>0</layerTransparency>
+            <displayfield>obj_id</displayfield>
+            <label>0</label>
+            <labelattributes>
+              <label fieldname="" text="Label"/>
+              <family fieldname="" name="Cantarell"/>
+              <size fieldname="" units="pt" value="12"/>
+              <bold fieldname="" on="0"/>
+              <italic fieldname="" on="0"/>
+              <underline fieldname="" on="0"/>
+              <strikeout fieldname="" on="0"/>
+              <color fieldname="" red="0" blue="0" green="0"/>
+              <x fieldname=""/>
+              <y fieldname=""/>
+              <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+              <angle fieldname="" value="0" auto="0"/>
+              <alignment fieldname="" value="center"/>
+              <buffercolor fieldname="" red="255" blue="255" green="255"/>
+              <buffersize fieldname="" units="pt" value="1"/>
+              <bufferenabled fieldname="" on=""/>
+              <multilineenabled fieldname="" on=""/>
+              <selectedonly on=""/>
+            </labelattributes>
+            <SingleCategoryDiagramRenderer diagramType="Pie" sizeLegend="0" attributeLegend="1">
+              <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="5000" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="5000">
+                <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
+                <attribute field="" color="#000000" label=""/>
+              </DiagramCategory>
+              <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+                <layer pass="0" class="SimpleMarker" locked="0">
+                  <prop k="angle" v="0"/>
+                  <prop k="color" v="255,0,0,255"/>
+                  <prop k="horizontal_anchor_point" v="1"/>
+                  <prop k="joinstyle" v="bevel"/>
+                  <prop k="name" v="circle"/>
+                  <prop k="offset" v="0,0"/>
+                  <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                  <prop k="offset_unit" v="MM"/>
+                  <prop k="outline_color" v="0,0,0,255"/>
+                  <prop k="outline_style" v="solid"/>
+                  <prop k="outline_width" v="0"/>
+                  <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                  <prop k="outline_width_unit" v="MM"/>
+                  <prop k="scale_method" v="diameter"/>
+                  <prop k="size" v="2"/>
+                  <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                  <prop k="size_unit" v="MM"/>
+                  <prop k="vertical_anchor_point" v="1"/>
+                </layer>
+              </symbol>
+            </SingleCategoryDiagramRenderer>
+            <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+            <annotationform>$HOME</annotationform>
+            <aliases>
+              <alias field="obj_id" index="0" name=""/>
+              <alias field="brand" index="1" name="fabricant"/>
+              <alias field="cover_shape" index="2" name="forme_couvercle"/>
+              <alias field="diameter" index="3" name="diametre"/>
+              <alias field="fastening" index="4" name="fermeture"/>
+              <alias field="level" index="5" name="cote"/>
+              <alias field="cover_material" index="6" name=""/>
+              <alias field="positional_accuracy" index="7" name="determination_planimetrique"/>
+              <alias field="sludge_bucket" index="8" name="ramasse_boues"/>
+              <alias field="venting" index="9" name="aeration"/>
+              <alias field="co_identifier" index="10" name=""/>
+              <alias field="remark" index="11" name="remarque"/>
+              <alias field="renovation_demand" index="12" name="remise_en_etat"/>
+              <alias field="last_modification" index="13" name="derniere_modification"/>
+              <alias field="fk_dataowner" index="14" name=""/>
+              <alias field="fk_provider" index="15" name=""/>
+              <alias field="ws_type" index="16" name=""/>
+              <alias field="co_obj_id" index="17" name=""/>
+              <alias field="identifier" index="18" name="designation"/>
+              <alias field="accessibility" index="19" name="acces"/>
+              <alias field="contract_section" index="20" name="lot_construction"/>
+              <alias field="financing" index="21" name="financement"/>
+              <alias field="gross_costs" index="22" name="couts_bruts"/>
+              <alias field="inspection_interval" index="23" name="intervalle_inspection"/>
+              <alias field="location_name" index="24" name="lieu_dit"/>
+              <alias field="records" index="25" name="dossier"/>
+              <alias field="ws_remark" index="26" name=""/>
+              <alias field="renovation_necessity" index="27" name="necessite_assainir"/>
+              <alias field="replacement_value" index="28" name="valeur_remplacement"/>
+              <alias field="rv_base_year" index="29" name="vr_annee_reference"/>
+              <alias field="rv_construction_type" index="30" name="vr_type_construction"/>
+              <alias field="status" index="31" name="etat"/>
+              <alias field="structure_condition" index="32" name="etat_constructif"/>
+              <alias field="subsidies" index="33" name="subventions"/>
+              <alias field="year_of_construction" index="34" name="annee_de_construction"/>
+              <alias field="year_of_replacement" index="35" name="annee_de_remplacement"/>
+              <alias field="fk_owner" index="36" name=""/>
+              <alias field="fk_operator" index="37" name=""/>
+              <alias field="_label" index="38" name=""/>
+              <alias field="_depth" index="39" name=""/>
+              <alias field="dimension1" index="40" name="dimension1"/>
+              <alias field="dimension2" index="41" name="dimension2"/>
+              <alias field="upper_elevation" index="42" name="cote_plafond"/>
+              <alias field="manhole_function" index="43" name=""/>
+              <alias field="material" index="44" name="materiau"/>
+              <alias field="surface_inflow" index="45" name="arrivee_eaux_sup"/>
+              <alias field="channel_usage_current" index="46" name=""/>
+              <alias field="channel_function_hierarchic" index="47" name=""/>
+              <alias field="manhole_orientation" index="48" name=""/>
+              <alias field="bypass" index="49" name="bypass"/>
+              <alias field="special_structure_function" index="50" name=""/>
+              <alias field="stormwater_tank_arrangement" index="51" name="bep_disposition"/>
+              <alias field="highwater_level" index="52" name="cote_crue"/>
+              <alias field="relevance" index="53" name="signifiance"/>
+              <alias field="terrain_level" index="54" name="cote_terrain"/>
+              <alias field="waterlevel_hydraulic" index="55" name="niveau_eau_hydraulique"/>
+              <alias field="absorption_capacity" index="56" name="capacite_absorption_sol"/>
+              <alias field="defects" index="57" name="lacunes"/>
+              <alias field="distance_to_aquifer" index="58" name="distance_aquifere"/>
+              <alias field="effective_area" index="59" name="surface_utile"/>
+              <alias field="emergency_spillway" index="60" name="trop_plein_de_secours"/>
+              <alias field="kind" index="61" name="genre"/>
+              <alias field="labeling" index="62" name="signalisation"/>
+              <alias field="seepage_utilization" index="63" name="eau_infiltration"/>
+              <alias field="vehicle_access" index="64" name="vehicule_d_aspiration"/>
+              <alias field="watertightness" index="65" name="etancheite"/>
+              <alias field="wn_obj_id" index="66" name=""/>
+              <alias field="backflow_level" index="67" name="cote_refoulement"/>
+              <alias field="bottom_level" index="68" name="cote_radier"/>
+              <alias field="wn_identifier" index="69" name=""/>
+              <alias field="wn_remark" index="70" name=""/>
+              <alias field="wn_last_modification" index="71" name=""/>
+              <alias field="wn_fk_dataowner" index="72" name=""/>
+              <alias field="wn_fk_provider" index="73" name=""/>
+            </aliases>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions default="0">
+              <actionsetting showInAttributeTable="1" action="" icon="" capture="0" type="0" name="" shortTitle=""/>
+              <actionsetting showInAttributeTable="1" action="from qgepplugin.ui import forms&#xa;&#xa;import qgepplugin&#xa;&#xa;feature = QgsMapLayerRegistry.instance().mapLayer('od_wastewater_structure').getFeatures( QgsFeatureRequest().setFilterExpression( 'obj_id = \'{}\''.format( '[% &quot;obj_id&quot; %]' ) ) ).next()&#xa;qgepplugin.ui.forms.digitizeDrainageChannel(feature.id(), 'od_wastewater_structure')" icon="" capture="0" type="1" name="Digitize Drainage Channel" shortTitle=""/>
+              <actionsetting showInAttributeTable="1" action="ws_lyr = QgsMapLayerRegistry.instance().mapLayer('od_wastewater_structure')&#xa;feature = ws_lyr.getFeatures( QgsFeatureRequest().setFilterExpression( 'obj_id = \'{}\''.format( '[% &quot;obj_id&quot; %]' ) ) ).next()&#xa;ws_lyr.startEditing()&#xa;ws_lyr.setSelectedFeatures([feature.id()])&#xa;qgis.utils.iface.setActiveLayer(ws_lyr)&#xa;qgis.utils.iface.actionAddPart().trigger()" icon="" capture="0" type="1" name="Digitize" shortTitle=""/>
+            </attributeactions>
+            <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+              <columns>
+                <column width="-1" hidden="1" type="field" name="channel_usage_current"/>
+                <column width="-1" hidden="1" type="field" name="channel_function_hierarchic"/>
+                <column width="-1" hidden="1" type="field" name="manhole_orientation"/>
+                <column width="-1" hidden="0" type="field" name="obj_id"/>
+                <column width="-1" hidden="0" type="field" name="brand"/>
+                <column width="-1" hidden="0" type="field" name="cover_shape"/>
+                <column width="-1" hidden="0" type="field" name="diameter"/>
+                <column width="-1" hidden="0" type="field" name="fastening"/>
+                <column width="-1" hidden="0" type="field" name="level"/>
+                <column width="-1" hidden="0" type="field" name="cover_material"/>
+                <column width="-1" hidden="0" type="field" name="positional_accuracy"/>
+                <column width="-1" hidden="0" type="field" name="sludge_bucket"/>
+                <column width="-1" hidden="0" type="field" name="venting"/>
+                <column width="-1" hidden="0" type="field" name="co_identifier"/>
+                <column width="-1" hidden="0" type="field" name="remark"/>
+                <column width="-1" hidden="0" type="field" name="renovation_demand"/>
+                <column width="-1" hidden="0" type="field" name="last_modification"/>
+                <column width="-1" hidden="0" type="field" name="fk_dataowner"/>
+                <column width="-1" hidden="0" type="field" name="fk_provider"/>
+                <column width="-1" hidden="0" type="field" name="ws_type"/>
+                <column width="-1" hidden="0" type="field" name="co_obj_id"/>
+                <column width="-1" hidden="0" type="field" name="identifier"/>
+                <column width="-1" hidden="0" type="field" name="accessibility"/>
+                <column width="-1" hidden="0" type="field" name="contract_section"/>
+                <column width="-1" hidden="0" type="field" name="financing"/>
+                <column width="-1" hidden="0" type="field" name="gross_costs"/>
+                <column width="-1" hidden="0" type="field" name="inspection_interval"/>
+                <column width="-1" hidden="0" type="field" name="location_name"/>
+                <column width="-1" hidden="0" type="field" name="records"/>
+                <column width="-1" hidden="0" type="field" name="ws_remark"/>
+                <column width="-1" hidden="0" type="field" name="renovation_necessity"/>
+                <column width="-1" hidden="0" type="field" name="replacement_value"/>
+                <column width="-1" hidden="0" type="field" name="rv_base_year"/>
+                <column width="-1" hidden="0" type="field" name="rv_construction_type"/>
+                <column width="-1" hidden="0" type="field" name="status"/>
+                <column width="-1" hidden="0" type="field" name="structure_condition"/>
+                <column width="-1" hidden="0" type="field" name="subsidies"/>
+                <column width="-1" hidden="0" type="field" name="year_of_construction"/>
+                <column width="-1" hidden="0" type="field" name="year_of_replacement"/>
+                <column width="-1" hidden="0" type="field" name="fk_owner"/>
+                <column width="-1" hidden="0" type="field" name="fk_operator"/>
+                <column width="-1" hidden="0" type="field" name="_label"/>
+                <column width="-1" hidden="0" type="field" name="dimension1"/>
+                <column width="-1" hidden="0" type="field" name="dimension2"/>
+                <column width="-1" hidden="0" type="field" name="upper_elevation"/>
+                <column width="-1" hidden="0" type="field" name="manhole_function"/>
+                <column width="-1" hidden="0" type="field" name="material"/>
+                <column width="-1" hidden="0" type="field" name="surface_inflow"/>
+                <column width="-1" hidden="0" type="field" name="bypass"/>
+                <column width="-1" hidden="0" type="field" name="special_structure_function"/>
+                <column width="-1" hidden="0" type="field" name="stormwater_tank_arrangement"/>
+                <column width="-1" hidden="0" type="field" name="highwater_level"/>
+                <column width="-1" hidden="0" type="field" name="relevance"/>
+                <column width="-1" hidden="0" type="field" name="terrain_level"/>
+                <column width="-1" hidden="0" type="field" name="waterlevel_hydraulic"/>
+                <column width="-1" hidden="0" type="field" name="absorption_capacity"/>
+                <column width="-1" hidden="0" type="field" name="defects"/>
+                <column width="-1" hidden="0" type="field" name="distance_to_aquifer"/>
+                <column width="-1" hidden="0" type="field" name="effective_area"/>
+                <column width="-1" hidden="0" type="field" name="emergency_spillway"/>
+                <column width="-1" hidden="0" type="field" name="kind"/>
+                <column width="-1" hidden="0" type="field" name="labeling"/>
+                <column width="-1" hidden="0" type="field" name="seepage_utilization"/>
+                <column width="-1" hidden="0" type="field" name="vehicle_access"/>
+                <column width="-1" hidden="0" type="field" name="watertightness"/>
+                <column width="-1" hidden="0" type="field" name="wn_obj_id"/>
+                <column width="-1" hidden="0" type="field" name="backflow_level"/>
+                <column width="-1" hidden="0" type="field" name="bottom_level"/>
+                <column width="-1" hidden="0" type="field" name="wn_identifier"/>
+                <column width="-1" hidden="0" type="field" name="wn_remark"/>
+                <column width="-1" hidden="0" type="field" name="wn_last_modification"/>
+                <column width="-1" hidden="0" type="field" name="wn_fk_dataowner"/>
+                <column width="-1" hidden="0" type="field" name="wn_fk_provider"/>
+                <column width="-1" hidden="1" type="actions"/>
+                <column width="-1" hidden="0" type="field" name="_depth"/>
+              </columns>
+            </attributetableconfig>
+            <editform>$HOME</editform>
+            <editforminit>vw_cover_open</editforminit>
+            <editforminitcodesource>0</editforminitcodesource>
+            <editforminitfilepath>../QGEP-customizer/QGEP/project</editforminitfilepath>
+            <editforminitcode><![CDATA[from qgepplugin.ui.forms import vw_cover_open
+]]></editforminitcode>
+            <featformsuppress>0</featformsuppress>
+            <editorlayout>tablayout</editorlayout>
+            <attributeEditorForm>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="2">
+                <attributeEditorField showLabel="1" index="18" name="identifier"/>
+                <attributeEditorField showLabel="1" index="16" name="ws_type"/>
+                <attributeEditorField showLabel="1" index="43" name="manhole_function"/>
+                <attributeEditorField showLabel="1" index="50" name="special_structure_function"/>
+                <attributeEditorField showLabel="1" index="40" name="dimension1"/>
+                <attributeEditorField showLabel="1" index="41" name="dimension2"/>
+                <attributeEditorField showLabel="1" index="5" name="level"/>
+                <attributeEditorField showLabel="1" index="7" name="positional_accuracy"/>
+                <attributeEditorField showLabel="1" index="31" name="status"/>
+                <attributeEditorField showLabel="1" index="36" name="fk_owner"/>
+                <attributeEditorField showLabel="1" index="24" name="location_name"/>
+                <attributeEditorField showLabel="1" index="34" name="year_of_construction"/>
+                <attributeEditorField showLabel="1" index="27" name="renovation_necessity"/>
+                <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
+                <attributeEditorField showLabel="1" index="9" name="venting"/>
+                <attributeEditorField showLabel="1" index="4" name="fastening"/>
+                <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
+                <attributeEditorField showLabel="1" index="38" name="_label"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Couvercle" groupBox="0" columnCount="2">
+                <attributeEditorField showLabel="1" index="17" name="co_obj_id"/>
+                <attributeEditorField showLabel="1" index="10" name="co_identifier"/>
+                <attributeEditorField showLabel="1" index="3" name="diameter"/>
+                <attributeEditorField showLabel="1" index="6" name="cover_material"/>
+                <attributeEditorField showLabel="1" index="5" name="level"/>
+                <attributeEditorField showLabel="1" index="7" name="positional_accuracy"/>
+                <attributeEditorField showLabel="1" index="9" name="venting"/>
+                <attributeEditorField showLabel="1" index="4" name="fastening"/>
+                <attributeEditorField showLabel="1" index="8" name="sludge_bucket"/>
+                <attributeEditorField showLabel="1" index="-1" name="dataowner"/>
+                <attributeEditorField showLabel="1" index="-1" name="provider"/>
+                <attributeEditorField showLabel="1" index="12" name="renovation_demand"/>
+                <attributeEditorField showLabel="1" index="11" name="remark"/>
+                <attributeEditorField showLabel="1" index="2" name="cover_shape"/>
+                <attributeEditorField showLabel="1" index="1" name="brand"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Ouvrage" groupBox="0" columnCount="2">
+                <attributeEditorField showLabel="1" index="0" name="obj_id"/>
+                <attributeEditorField showLabel="1" index="18" name="identifier"/>
+                <attributeEditorField showLabel="1" index="19" name="accessibility"/>
+                <attributeEditorField showLabel="1" index="24" name="location_name"/>
+                <attributeEditorField showLabel="1" index="34" name="year_of_construction"/>
+                <attributeEditorField showLabel="1" index="31" name="status"/>
+                <attributeEditorField showLabel="1" index="27" name="renovation_necessity"/>
+                <attributeEditorField showLabel="1" index="32" name="structure_condition"/>
+                <attributeEditorField showLabel="1" index="35" name="year_of_replacement"/>
+                <attributeEditorField showLabel="1" index="36" name="fk_owner"/>
+                <attributeEditorField showLabel="1" index="37" name="fk_operator"/>
+                <attributeEditorField showLabel="1" index="23" name="inspection_interval"/>
+                <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
+                <attributeEditorField showLabel="1" index="20" name="contract_section"/>
+                <attributeEditorField showLabel="1" index="25" name="records"/>
+                <attributeEditorField showLabel="1" index="21" name="financing"/>
+                <attributeEditorField showLabel="1" index="22" name="gross_costs"/>
+                <attributeEditorField showLabel="1" index="28" name="replacement_value"/>
+                <attributeEditorField showLabel="1" index="33" name="subsidies"/>
+                <attributeEditorField showLabel="1" index="29" name="rv_base_year"/>
+                <attributeEditorField showLabel="1" index="30" name="rv_construction_type"/>
+                <attributeEditorField showLabel="1" index="39" name="_depth"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'manhole'" name="Chambre" groupBox="0" columnCount="1">
+                <attributeEditorField showLabel="1" index="43" name="manhole_function"/>
+                <attributeEditorField showLabel="1" index="40" name="dimension1"/>
+                <attributeEditorField showLabel="1" index="41" name="dimension2"/>
+                <attributeEditorField showLabel="1" index="44" name="material"/>
+                <attributeEditorField showLabel="1" index="45" name="surface_inflow"/>
+                <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
+                <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'special_structure'" name="Ouvrage spécial" groupBox="0" columnCount="1">
+                <attributeEditorField showLabel="1" index="50" name="special_structure_function"/>
+                <attributeEditorField showLabel="1" index="49" name="bypass"/>
+                <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
+                <attributeEditorField showLabel="1" index="51" name="stormwater_tank_arrangement"/>
+                <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
+                <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'discharge_point'" name="Exutoir" groupBox="0" columnCount="1">
+                <attributeEditorField showLabel="1" index="54" name="terrain_level"/>
+                <attributeEditorField showLabel="1" index="52" name="highwater_level"/>
+                <attributeEditorField showLabel="1" index="55" name="waterlevel_hydraulic"/>
+                <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
+                <attributeEditorField showLabel="1" index="53" name="relevance"/>
+                <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;ws_type&quot; = 'infiltration_installation'" name="Installation dinfiltration" groupBox="0" columnCount="1">
+                <attributeEditorField showLabel="1" index="61" name="kind"/>
+                <attributeEditorField showLabel="1" index="40" name="dimension1"/>
+                <attributeEditorField showLabel="1" index="41" name="dimension2"/>
+                <attributeEditorField showLabel="1" index="62" name="labeling"/>
+                <attributeEditorField showLabel="1" index="65" name="watertightness"/>
+                <attributeEditorField showLabel="1" index="64" name="vehicle_access"/>
+                <attributeEditorField showLabel="1" index="58" name="distance_to_aquifer"/>
+                <attributeEditorField showLabel="1" index="59" name="effective_area"/>
+                <attributeEditorField showLabel="1" index="60" name="emergency_spillway"/>
+                <attributeEditorField showLabel="1" index="63" name="seepage_utilization"/>
+                <attributeEditorField showLabel="1" index="26" name="ws_remark"/>
+                <attributeEditorField showLabel="1" index="57" name="defects"/>
+                <attributeEditorField showLabel="1" index="42" name="upper_elevation"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Noeud" groupBox="0" columnCount="0">
+                <attributeEditorField showLabel="1" index="66" name="wn_obj_id"/>
+                <attributeEditorField showLabel="1" index="69" name="wn_identifier"/>
+                <attributeEditorField showLabel="1" index="68" name="bottom_level"/>
+                <attributeEditorField showLabel="1" index="67" name="backflow_level"/>
+                <attributeEditorField showLabel="1" index="70" name="wn_remark"/>
+                <attributeEditorField showLabel="1" index="71" name="wn_last_modification"/>
+                <attributeEditorField showLabel="1" index="-1" name="wn_dataowner"/>
+                <attributeEditorField showLabel="1" index="-1" name="wn_provider"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Couvercles" groupBox="0" columnCount="0">
+                <attributeEditorRelation showLinkButton="1" relation="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Elément douvrage" groupBox="0" columnCount="0">
+                <attributeEditorRelation showLinkButton="1" relation="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+                <attributeEditorRelation showLinkButton="1" relation="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+                <attributeEditorRelation showLinkButton="1" relation="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+                <attributeEditorRelation showLinkButton="1" relation="vw_dryweather_flume_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_dryweather_flume_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+                <attributeEditorRelation showLinkButton="1" relation="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Maintenance" groupBox="0" columnCount="0">
+                <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="re_maintenance_event_wastewater_structure_fk_wastewater_structure_vw_qgep_wastewater_structure_ws_obj_id"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Noeuds" groupBox="0" columnCount="0">
+                <attributeEditorRelation showLinkButton="1" relation="" showLabel="1" showUnlinkButton="1" name="wastewater_node-fk_wastewater-structure"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Fichiers" groupBox="0" columnCount="1">
+                <attributeEditorRelation showLinkButton="1" relation="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id" showLabel="1" showUnlinkButton="1" name="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id"/>
+              </attributeEditorContainer>
+            </attributeEditorForm>
+            <widgets>
+              <widget name="od_file20160921105557083_object_vw_qgep_wastewater_structure_obj_id">
+                <config/>
+              </widget>
+              <widget name="re_maintenance_event_wastewater_structure_fk_wastewater_structure_vw_qgep_wastewater_structure_ws_obj_id">
+                <config>
+                  <option key="nm-rel" value="re_maintenance_event_wastewater_structure_fk_maintenance_event_od_maintenance_event_obj_id"/>
+                </config>
+              </widget>
+              <widget name="vw_access_aid20150507162234295_fk_wastewater_structure_vw_qgep_wastewater_structure20150506155849784_obj_id">
+                <config/>
+              </widget>
+              <widget name="vw_access_aid_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id">
+                <config/>
+              </widget>
+              <widget name="vw_backflow_prevention20150531093552085_fk_wastewater_structure_vw_qgep_wastewater_structure_ws_obj_id">
+                <config/>
+              </widget>
+              <widget name="vw_backflow_prevention_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id">
+                <config/>
+              </widget>
+              <widget name="vw_benching20150507162234281_fk_wastewater_structure_vw_qgep_wastewater_structure20150506155849784_obj_id">
+                <config/>
+              </widget>
+              <widget name="vw_benching_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id">
+                <config/>
+              </widget>
+              <widget name="vw_cover20150507162234308_fk_wastewater_structure_vw_qgep_wastewater_structure20150506155849784_obj_id">
+                <config/>
+              </widget>
+              <widget name="vw_cover____fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id">
+                <config/>
+              </widget>
+              <widget name="vw_dryweather_downspout20150507162234268_fk_wastewater_structure_vw_qgep_wastewater_structure20150506155849784_obj_id">
+                <config/>
+              </widget>
+              <widget name="vw_dryweather_downspout_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id">
+                <config/>
+              </widget>
+              <widget name="vw_dryweather_flume20150507162234250_fk_wastewater_structure_vw_qgep_wastewater_structure20150506155849784_obj_id">
+                <config/>
+              </widget>
+              <widget name="vw_dryweather_flume_fk_wastewater_structure_vw_qgep_wastewater_structure_obj_id">
+                <config/>
+              </widget>
+              <widget name="wastewater_node-fk_wastewater-structure">
+                <config/>
+              </widget>
+            </widgets>
+            <conditionalstyles>
+              <rowstyles/>
+              <fieldstyles/>
+            </conditionalstyles>
+            <defaults>
+              <default field="obj_id" expression=""/>
+              <default field="brand" expression=""/>
+              <default field="cover_shape" expression=""/>
+              <default field="diameter" expression=""/>
+              <default field="fastening" expression=""/>
+              <default field="level" expression=""/>
+              <default field="cover_material" expression=""/>
+              <default field="positional_accuracy" expression=""/>
+              <default field="sludge_bucket" expression=""/>
+              <default field="venting" expression=""/>
+              <default field="co_identifier" expression=""/>
+              <default field="remark" expression=""/>
+              <default field="renovation_demand" expression=""/>
+              <default field="last_modification" expression=""/>
+              <default field="fk_dataowner" expression=""/>
+              <default field="fk_provider" expression=""/>
+              <default field="ws_type" expression="'manhole'"/>
+              <default field="co_obj_id" expression=""/>
+              <default field="identifier" expression=""/>
+              <default field="accessibility" expression=""/>
+              <default field="contract_section" expression=""/>
+              <default field="financing" expression=""/>
+              <default field="gross_costs" expression=""/>
+              <default field="inspection_interval" expression=""/>
+              <default field="location_name" expression=""/>
+              <default field="records" expression=""/>
+              <default field="ws_remark" expression=""/>
+              <default field="renovation_necessity" expression=""/>
+              <default field="replacement_value" expression=""/>
+              <default field="rv_base_year" expression=""/>
+              <default field="rv_construction_type" expression=""/>
+              <default field="status" expression=""/>
+              <default field="structure_condition" expression=""/>
+              <default field="subsidies" expression=""/>
+              <default field="year_of_construction" expression=""/>
+              <default field="year_of_replacement" expression=""/>
+              <default field="fk_owner" expression=""/>
+              <default field="fk_operator" expression=""/>
+              <default field="_label" expression=""/>
+              <default field="_depth" expression=""/>
+              <default field="dimension1" expression=""/>
+              <default field="dimension2" expression=""/>
+              <default field="upper_elevation" expression=""/>
+              <default field="manhole_function" expression=""/>
+              <default field="material" expression=""/>
+              <default field="surface_inflow" expression=""/>
+              <default field="channel_usage_current" expression=""/>
+              <default field="channel_function_hierarchic" expression=""/>
+              <default field="manhole_orientation" expression=""/>
+              <default field="bypass" expression=""/>
+              <default field="special_structure_function" expression=""/>
+              <default field="stormwater_tank_arrangement" expression=""/>
+              <default field="highwater_level" expression=""/>
+              <default field="relevance" expression=""/>
+              <default field="terrain_level" expression=""/>
+              <default field="waterlevel_hydraulic" expression=""/>
+              <default field="absorption_capacity" expression=""/>
+              <default field="defects" expression=""/>
+              <default field="distance_to_aquifer" expression=""/>
+              <default field="effective_area" expression=""/>
+              <default field="emergency_spillway" expression=""/>
+              <default field="kind" expression=""/>
+              <default field="labeling" expression=""/>
+              <default field="seepage_utilization" expression=""/>
+              <default field="vehicle_access" expression=""/>
+              <default field="watertightness" expression=""/>
+              <default field="wn_obj_id" expression=""/>
+              <default field="backflow_level" expression=""/>
+              <default field="bottom_level" expression=""/>
+              <default field="wn_identifier" expression=""/>
+              <default field="wn_remark" expression=""/>
+              <default field="wn_last_modification" expression=""/>
+              <default field="wn_fk_dataowner" expression=""/>
+              <default field="wn_fk_provider" expression=""/>
+            </defaults>
+            <previewExpression>COALESCE( "identifier", '&lt;NULL>' )</previewExpression>
+            <layerGeometryType>0</layerGeometryType>
+          </qgis>
+        </map-layer-style>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="obj_id">
@@ -59319,7 +60864,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Cantarell"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -59350,7 +60895,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/minFeatureSize" value="0"/>
         <property key="labeling/multilineAlign" value="0"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
+        <property key="labeling/namedStyle" value="Normal"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
@@ -60679,8 +62224,8 @@ def copy_style():
     <visibility-preset name="UAS - Collecteurs primaires">
       <layer style="" id="vw_collecting_pipe_agg20181217110633180"/>
       <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
-      <layer style="" id="batch_inspection20190306075313406"/>
       <layer style="" id="lc_limites_commune20180525110719694"/>
+      <layer style="" id="batch_inspection20190306075313406"/>
     </visibility-preset>
   </visibility-presets>
 </qgis>
