@@ -42,8 +42,8 @@ INSERT INTO qgep_od.vw_qgep_reach(
 )
 SELECT
   --Reach
-  profil_hoehe, --clear_height
-  profil_breite, -- width
+  profil_breite, --clear_height
+  profil_hoehe, -- width (when not isometric)
   rm.new, -- material
   ST_3dLength(geometry), -- length_effective
   gefaelle, --slope per mill
