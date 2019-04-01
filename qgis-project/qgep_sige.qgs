@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.12">
+<qgis projectname="" version="2.18.28">
   <title></title>
   <autotransaction active="1"/>
   <evaluateDefaultValues active="1"/>
@@ -271,23 +271,46 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Zones">
+      <customproperties/>
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="district20190401140521140" source="service='qwat' user='sige' sslmode=allow key='id' srid=2056 type=MultiPolygon table=&quot;qwat_od&quot;.&quot;district&quot; (geometry) sql=" name="noms de communes (QWAT)">
+        <customproperties/>
+      </layer-tree-layer>
+    </layer-tree-group>
     <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Fonds de plans" mutually-exclusive-child="-1">
       <customproperties>
         <property key="embedded" value="1"/>
         <property key="embedded-invisible-layers">
+          <value>no_nomenclature_copier20181108104111532</value>
+          <value>od_entree_batiment_copier20181108104111732</value>
+          <value>bf_point_limite_copier20181108104111885</value>
+          <value>pf_points_fixes_copier20181108104112082</value>
+          <value>ab_rue_copier20181108104112287</value>
+          <value>lc_limites_commune_copier20181108104112378</value>
+          <value>bf_immeuble_copier20181108104112829</value>
+          <value>od_element_lineaire_copier20181108104112570</value>
+          <value>od_element_surfacique_copier20181108104112995</value>
+          <value>cs_couverture_sol_copier20181108104113163</value>
           <value>no_nomenclature20161124151011953</value>
           <value>od_entree_batiment20161124100003328</value>
           <value>bf_point_limite20161123141033694</value>
           <value>pf_points_fixes20161123144654375</value>
           <value>ab_rue20161122113837293</value>
-          <value>od_element_lineaire20161123134458480</value>
+          <value>lc_limites_commune20180525110719694</value>
           <value>bf_immeuble20161019163752305</value>
+          <value>od_element_lineaire20161123134458480</value>
           <value>od_element_surfacique20161123111234045</value>
           <value>cs_couverture_sol20161117155047081</value>
           <value>National_Map_1_25_00020170314120154767</value>
           <value>National_Maps__color_20170314120148938</value>
           <value>SWISSIMAGE20170314120137660</value>
           <value>OpenStreeMap20170131085532398</value>
+          <value>Fond_ASIT_VD___cadastral20180322144711527</value>
+          <value>Fond_ASIT_VD___couleur20180322144715694</value>
+          <value>Fond_ASIT_VD___niveaux_de_gris20180322144719023</value>
+          <value>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</value>
+          <value>SMR10_LV95_SIGE_M_resampled20181107111357915</value>
+          <value>SMR10_LV95_SIGE_NN_resampled20181107111112733</value>
         </property>
         <property key="embedded_project" value="../cadastre/cadastre_pg.qgs"/>
       </customproperties>
@@ -379,10 +402,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2549370.3226892645470798</xmin>
-      <ymin>1133664.13713722210377455</ymin>
-      <xmax>2566111.33371373964473605</xmax>
-      <ymax>1151272.07646827679127455</ymax>
+      <xmin>2553778.00662682671099901</xmin>
+      <ymin>1140225.8569898100104183</ymin>
+      <xmax>2562148.51213906425982714</xmax>
+      <ymax>1149029.8266553373541683</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -461,22 +484,42 @@
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="0">
+      <item>vw_qgep_wastewater_structure</item>
+      <item>vw_qgep_reach</item>
       <item>od_wastewater_structure</item>
-      <item>vl_pipe_profile_profile_type</item>
-      <item>od_pipe_profile</item>
-      <item>vl_channel_bedding_encasement</item>
-      <item>vl_channel_connection_type</item>
-      <item>vl_channel_function_hierarchic</item>
-      <item>vl_channel_function_hydraulic</item>
-      <item>vl_channel_usage_current</item>
-      <item>vl_channel_usage_planned</item>
-      <item>vl_wastewater_structure_accessibility</item>
-      <item>vl_wastewater_structure_financing</item>
-      <item>vl_wastewater_structure_renovation_necessity</item>
-      <item>vl_wastewater_structure_rv_construction_type</item>
-      <item>vl_wastewater_structure_status</item>
-      <item>vl_wastewater_structure_structure_condition</item>
+      <item>vw_access_aid</item>
+      <item>vw_backflow_prevention</item>
+      <item>vw_benching</item>
+      <item>vw_cover___</item>
+      <item>vw_dryweather_downspout</item>
+      <item>vw_dryweather_flume</item>
       <item>vw_channel_</item>
+      <item>od_organisation20160212172933583</item>
+      <item>vw_last_inspection20171004071835261</item>
+      <item>re_maintenance_event_wastewater_structure</item>
+      <item>od_file20160921105557083</item>
+      <item>vw_qgep_maintenance</item>
+      <item>vw_qgep_damage</item>
+      <item>vl_discharge_point_relevance</item>
+      <item>vl_special_structure_bypass</item>
+      <item>vl_special_structure_function</item>
+      <item>vl_special_structure_stormwater_tank_arrangement</item>
+      <item>vl_manhole_material20151117174216343</item>
+      <item>vl_manhole_surface_inflow20151117174216393</item>
+      <item>vl_manhole_function</item>
+      <item>vl_structure_part_renovation_demand</item>
+      <item>vl_cover_positional_accuracy20151117153235900</item>
+      <item>vl_cover_cover_shape</item>
+      <item>vl_cover_fastening</item>
+      <item>vl_cover_sludge_bucket</item>
+      <item>vl_cover_venting</item>
+      <item>vl_cover_material</item>
+      <item>vl_backflow_prevention_kind</item>
+      <item>vl_access_aid_kind</item>
+      <item>vl_maintenance_event_kind</item>
+      <item>vl_maintenance_event_status</item>
+      <item>vl_reach_point_elevation_accuracy</item>
+      <item>vl_reach_point_outlet_shape</item>
       <item>vl_reach_elevation_determination</item>
       <item>vl_reach_horizontal_positioning</item>
       <item>vl_reach_inside_coating</item>
@@ -484,42 +527,18 @@
       <item>vl_reach_reliner_material</item>
       <item>vl_reach_relining_construction</item>
       <item>vl_reach_relining_kind</item>
-      <item>vl_reach_point_elevation_accuracy</item>
-      <item>vl_reach_point_outlet_shape</item>
-      <item>vw_qgep_reach</item>
-      <item>vl_maintenance_event_kind</item>
-      <item>vl_maintenance_event_status</item>
-      <item>vl_access_aid_kind</item>
-      <item>vw_access_aid</item>
-      <item>vl_backflow_prevention_kind</item>
-      <item>vw_backflow_prevention</item>
-      <item>vw_benching</item>
-      <item>vw_cover___</item>
-      <item>vw_dryweather_downspout</item>
-      <item>vw_dryweather_flume</item>
-      <item>vl_cover_cover_shape</item>
-      <item>vl_cover_fastening</item>
-      <item>vl_cover_sludge_bucket</item>
-      <item>vl_cover_venting</item>
-      <item>vl_structure_part_renovation_demand</item>
-      <item>vl_manhole_function</item>
-      <item>vl_cover_material</item>
-      <item>vl_special_structure_bypass</item>
-      <item>vl_special_structure_function</item>
-      <item>vl_special_structure_stormwater_tank_arrangement</item>
-      <item>vl_discharge_point_relevance</item>
-      <item>vw_qgep_wastewater_structure</item>
-      <item>vw_network_segment20150607120529381</item>
-      <item>vw_network_node20150607120529398</item>
-      <item>vw_wastewater_node20150607121012062</item>
-      <item>vl_cover_positional_accuracy20151117153235900</item>
-      <item>vl_manhole_material20151117174216343</item>
-      <item>vl_manhole_surface_inflow20151117174216393</item>
-      <item>re_maintenance_event_wastewater_structure</item>
-      <item>od_organisation20160212172933583</item>
-      <item>od_file20160921105557083</item>
-      <item>vw_qgep_maintenance</item>
-      <item>vw_qgep_damage</item>
+      <item>vl_wastewater_structure_accessibility</item>
+      <item>vl_wastewater_structure_financing</item>
+      <item>vl_wastewater_structure_renovation_necessity</item>
+      <item>vl_wastewater_structure_rv_construction_type</item>
+      <item>vl_wastewater_structure_status</item>
+      <item>vl_wastewater_structure_structure_condition</item>
+      <item>vl_channel_bedding_encasement</item>
+      <item>vl_channel_connection_type</item>
+      <item>vl_channel_function_hierarchic</item>
+      <item>vl_channel_function_hydraulic</item>
+      <item>vl_channel_usage_current</item>
+      <item>vl_channel_usage_planned</item>
       <item>vl_damage_channel_channel_damage_code</item>
       <item>vl_damage_connection</item>
       <item>vl_damage_manhole_manhole_damage_code</item>
@@ -528,20 +547,42 @@
       <item>vl_data_media_kind</item>
       <item>vl_file_class</item>
       <item>vl_file_kind</item>
+      <item>vl_pipe_profile_profile_type</item>
+      <item>od_pipe_profile</item>
+      <item>vw_wastewater_node20150607121012062</item>
+      <item>vw_network_segment20150607120529381</item>
+      <item>vw_network_node20150607120529398</item>
+      <item>no_nomenclature_copier20181108104111532</item>
+      <item>od_entree_batiment_copier20181108104111732</item>
+      <item>bf_point_limite_copier20181108104111885</item>
+      <item>pf_points_fixes_copier20181108104112082</item>
+      <item>ab_rue_copier20181108104112287</item>
+      <item>lc_limites_commune_copier20181108104112378</item>
+      <item>bf_immeuble_copier20181108104112829</item>
+      <item>od_element_lineaire_copier20181108104112570</item>
+      <item>od_element_surfacique_copier20181108104112995</item>
+      <item>cs_couverture_sol_copier20181108104113163</item>
       <item>no_nomenclature20161124151011953</item>
       <item>od_entree_batiment20161124100003328</item>
       <item>bf_point_limite20161123141033694</item>
       <item>pf_points_fixes20161123144654375</item>
       <item>ab_rue20161122113837293</item>
-      <item>od_element_lineaire20161123134458480</item>
+      <item>lc_limites_commune20180525110719694</item>
       <item>bf_immeuble20161019163752305</item>
+      <item>od_element_lineaire20161123134458480</item>
       <item>od_element_surfacique20161123111234045</item>
       <item>cs_couverture_sol20161117155047081</item>
       <item>National_Map_1_25_00020170314120154767</item>
       <item>National_Maps__color_20170314120148938</item>
       <item>SWISSIMAGE20170314120137660</item>
       <item>OpenStreeMap20170131085532398</item>
-      <item>vw_last_inspection20171004071835261</item>
+      <item>Fond_ASIT_VD___cadastral20180322144711527</item>
+      <item>Fond_ASIT_VD___couleur20180322144715694</item>
+      <item>Fond_ASIT_VD___niveaux_de_gris20180322144719023</item>
+      <item>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</item>
+      <item>SMR10_LV95_SIGE_M_resampled20181107111357915</item>
+      <item>SMR10_LV95_SIGE_NN_resampled20181107111112733</item>
+      <item>district20190401140521140</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -925,9 +966,423 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
+    <legendgroup open="false" checked="Qt::Unchecked" name="Zones">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="noms de communes (QWAT)" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="district20190401140521140" visible="0"/>
+        </filegroup>
+      </legendlayer>
+    </legendgroup>
     <legendgroup embedded="1" open="true" checked="Qt::Unchecked" name="Fonds de plans" project="../cadastre/cadastre_pg.qgs"/>
   </legend>
   <projectlayers>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>district20190401140521140</id>
+      <datasource>service='qwat' user='sige' sslmode=allow key='id' srid=2056 type=MultiPolygon table="qwat_od"."district" (geometry) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>noms de communes (QWAT)</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="shortname">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="zip">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="land_registry">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="prefix">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="colorcode">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_visible">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_x">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_y">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_rotation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_text">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_visible">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_x">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_y">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_rotation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_text">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;4"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="0,0,0,0"/>
+              <prop k="line_style" v="dash"/>
+              <prop k="line_width" v="1.1"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="1"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+        <effect enabled="0" type="effectStack">
+          <effect type="drawSource">
+            <prop k="blend_mode" v="0"/>
+            <prop k="draw_mode" v="2"/>
+            <prop k="enabled" v="1"/>
+            <prop k="transparency" v="0"/>
+          </effect>
+        </effect>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="true"/>
+        <property key="labeling/bufferJoinStyle" value="64"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="0"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="true"/>
+        <property key="labeling/enabled" value="true"/>
+        <property key="labeling/fieldName" value="name"/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontBold" value="true"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="true"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="11"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="75"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="20"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="0"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Bold Italic"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="0"/>
+        <property key="labeling/placementFlags" value="0"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/xQuadOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/yQuadOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>name</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="Ubuntu"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="0">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="id" index="0" name=""/>
+        <alias field="name" index="1" name=""/>
+        <alias field="shortname" index="2" name=""/>
+        <alias field="zip" index="3" name=""/>
+        <alias field="land_registry" index="4" name=""/>
+        <alias field="prefix" index="5" name=""/>
+        <alias field="colorcode" index="6" name=""/>
+        <alias field="label_1_visible" index="7" name=""/>
+        <alias field="label_1_x" index="8" name=""/>
+        <alias field="label_1_y" index="9" name=""/>
+        <alias field="label_1_rotation" index="10" name=""/>
+        <alias field="label_1_text" index="11" name=""/>
+        <alias field="label_2_visible" index="12" name=""/>
+        <alias field="label_2_x" index="13" name=""/>
+        <alias field="label_2_y" index="14" name=""/>
+        <alias field="label_2_rotation" index="15" name=""/>
+        <alias field="label_2_text" index="16" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="0">
+        <actionsetting showInAttributeTable="1" action="qgis.utils.plugins['postgres91plusauditor'].showHistory('district20130304110004764',[% $id %])" icon="" capture="0" type="1" name="History audit" shortTitle=""/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="id"/>
+          <column width="-1" hidden="0" type="field" name="name"/>
+          <column width="-1" hidden="0" type="field" name="shortname"/>
+          <column width="-1" hidden="0" type="field" name="zip"/>
+          <column width="-1" hidden="0" type="field" name="land_registry"/>
+          <column width="-1" hidden="0" type="field" name="prefix"/>
+          <column width="-1" hidden="0" type="field" name="colorcode"/>
+          <column width="-1" hidden="0" type="field" name="label_1_visible"/>
+          <column width="-1" hidden="0" type="field" name="label_1_x"/>
+          <column width="-1" hidden="0" type="field" name="label_1_y"/>
+          <column width="-1" hidden="0" type="field" name="label_1_rotation"/>
+          <column width="-1" hidden="0" type="field" name="label_1_text"/>
+          <column width="-1" hidden="0" type="field" name="label_2_visible"/>
+          <column width="-1" hidden="0" type="field" name="label_2_x"/>
+          <column width="-1" hidden="0" type="field" name="label_2_y"/>
+          <column width="-1" hidden="0" type="field" name="label_2_rotation"/>
+          <column width="-1" hidden="0" type="field" name="label_2_text"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="name" expression=""/>
+        <default field="shortname" expression=""/>
+        <default field="zip" expression=""/>
+        <default field="land_registry" expression=""/>
+        <default field="prefix" expression=""/>
+        <default field="colorcode" expression=""/>
+        <default field="label_1_visible" expression=""/>
+        <default field="label_1_x" expression=""/>
+        <default field="label_1_y" expression=""/>
+        <default field="label_1_rotation" expression=""/>
+        <default field="label_1_text" expression=""/>
+        <default field="label_2_visible" expression=""/>
+        <default field="label_2_x" expression=""/>
+        <default field="label_2_y" expression=""/>
+        <default field="label_2_rotation" expression=""/>
+        <default field="label_2_text" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "name", '&lt;NULL>' )</previewExpression>
+    </maplayer>
     <maplayer minimumScale="100000" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>od_file20160921105557083</id>
       <datasource>service='pg_qgep' key='obj_id' table="qgep"."od_file" sql=</datasource>
