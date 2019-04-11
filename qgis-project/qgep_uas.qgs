@@ -49045,6 +49045,7 @@ def my_form_open(dialog, layer, feature):
             <field name="network_name"/>
             <field name="remark"/>
             <field name="date"/>
+            <field name="collecting_pipe_name"/>
           </joinFieldsSubset>
         </join>
       </vectorjoins>
@@ -49057,8 +49058,8 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="Hidden" name="row_number">
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="sige_batch_cleaning_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="Hidden" name="sige_batch_cleaning_id">
+          <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="number_of_reaches">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -49100,6 +49101,9 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="batch_cleaning_date">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="batch_cleaning_collecting_pipe_name">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -49539,6 +49543,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="batch_cleaning_network_name" index="13" name="Réseau"/>
         <alias field="batch_cleaning_remark" index="14" name="Remarque"/>
         <alias field="batch_cleaning_date" index="15" name="Date de dernier curage"/>
+        <alias field="batch_cleaning_collecting_pipe_name" index="16" name="Nom de collecteur"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -49547,10 +49552,11 @@ def my_form_open(dialog, layer, feature):
         <columns>
           <column width="-1" hidden="1" type="actions"/>
           <column width="-1" hidden="1" type="field" name="row_number"/>
-          <column width="-1" hidden="0" type="field" name="sige_batch_cleaning_id"/>
-          <column width="-1" hidden="0" type="field" name="number_of_reaches"/>
+          <column width="160" hidden="0" type="field" name="sige_batch_cleaning_id"/>
+          <column width="186" hidden="0" type="field" name="number_of_reaches"/>
           <column width="-1" hidden="0" type="field" name="collecting_pipe_length"/>
           <column width="-1" hidden="1" type="field" name="batch_cleaning_code"/>
+          <column width="213" hidden="0" type="field" name="batch_cleaning_collecting_pipe_name"/>
           <column width="-1" hidden="0" type="field" name="batch_cleaning_situation"/>
           <column width="-1" hidden="1" type="field" name="batch_cleaning_main_pipe_code"/>
           <column width="-1" hidden="1" type="field" name="batch_cleaning_name"/>
@@ -49648,6 +49654,7 @@ def my_form_open(dialog, layer, feature):
         <default field="batch_cleaning_network_name" expression=""/>
         <default field="batch_cleaning_remark" expression=""/>
         <default field="batch_cleaning_date" expression=""/>
+        <default field="batch_cleaning_collecting_pipe_name" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "obj_id", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -49686,6 +49693,7 @@ def my_form_open(dialog, layer, feature):
             <field name="network_name"/>
             <field name="remark"/>
             <field name="date"/>
+            <field name="collecting_pipe_name"/>
           </joinFieldsSubset>
         </join>
       </vectorjoins>
@@ -49698,8 +49706,8 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="Hidden" name="row_number">
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="sige_batch_inspection_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="Hidden" name="sige_batch_inspection_id">
+          <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="number_of_reaches">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -49741,6 +49749,9 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="batch_inspection_date">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="batch_inspection_collecting_pipe_name">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -50146,6 +50157,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="batch_inspection_network_name" index="13" name="Réseau"/>
         <alias field="batch_inspection_remark" index="14" name="Remarque"/>
         <alias field="batch_inspection_date" index="15" name="Date de dernière inspection"/>
+        <alias field="batch_inspection_collecting_pipe_name" index="16" name="Nom de collecteur"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -50153,10 +50165,11 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="1" type="field" name="row_number"/>
-          <column width="-1" hidden="0" type="field" name="sige_batch_inspection_id"/>
+          <column width="-1" hidden="1" type="field" name="sige_batch_inspection_id"/>
           <column width="-1" hidden="0" type="field" name="number_of_reaches"/>
           <column width="-1" hidden="0" type="field" name="collecting_pipe_length"/>
           <column width="-1" hidden="1" type="field" name="batch_inspection_code"/>
+          <column width="-1" hidden="0" type="field" name="batch_inspection_collecting_pipe_name"/>
           <column width="-1" hidden="0" type="field" name="batch_inspection_situation"/>
           <column width="-1" hidden="1" type="field" name="batch_inspection_main_pipe_code"/>
           <column width="208" hidden="1" type="field" name="batch_inspection_name"/>
@@ -50230,6 +50243,7 @@ def my_form_open(dialog, layer, feature):
         <default field="batch_inspection_network_name" expression=""/>
         <default field="batch_inspection_remark" expression=""/>
         <default field="batch_inspection_date" expression=""/>
+        <default field="batch_inspection_collecting_pipe_name" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "batch_inspection_name", '&lt;NULL>' )</previewExpression>
     </maplayer>
