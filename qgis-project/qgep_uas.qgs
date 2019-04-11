@@ -586,10 +586,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2556500.36105745797976851</xmin>
-      <ymin>1141766.87052361387759447</ymin>
-      <xmax>2559331.93601578241214156</xmax>
-      <ymax>1148152.77944676298648119</ymax>
+      <xmin>2554778.97607267228886485</xmin>
+      <ymin>1142473.3800071650184691</ymin>
+      <xmax>2557610.5510309967212379</xmax>
+      <ymax>1148859.28893031412735581</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -62558,6 +62558,24 @@ def copy_style():
   <visibility-presets>
     <visibility-preset name="UAS - Collecteurs primaires">
       <layer style="" id="vw_collecting_pipe_agg20181217110633180"/>
+      <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
+      <layer style="" id="lc_limites_commune20180525110719694"/>
+      <layer style="" id="batch_inspection20190306075313406"/>
+    </visibility-preset>
+    <visibility-preset name="UAS - Editer le lot d'inspection d'un tronçon">
+      <layer style="" id="Edition_des_lot_de_curages_copier20190110093354404"/>
+      <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
+      <layer style="" id="lc_limites_commune20180525110719694"/>
+      <layer style="" id="batch_inspection20190306075313406"/>
+    </visibility-preset>
+    <visibility-preset name="UAS - Editer le lot de curage d'un tronçon">
+      <layer style="" id="Tronçons___édition_des_noms_de_collecteurs_copier20181213135910977"/>
+      <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
+      <layer style="" id="lc_limites_commune20180525110719694"/>
+      <layer style="" id="batch_inspection20190306075313406"/>
+    </visibility-preset>
+    <visibility-preset name="UAS - Editer le nom de collecteur d'un tronçon">
+      <layer style="" id="vw_edit_main_pipe_name20181015145410733"/>
       <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
       <layer style="" id="lc_limites_commune20180525110719694"/>
       <layer style="" id="batch_inspection20190306075313406"/>
