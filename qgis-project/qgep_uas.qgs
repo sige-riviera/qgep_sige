@@ -30,7 +30,7 @@
       <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_cover20190307112006113" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=Point table=&quot;qgep&quot;.&quot;vw_cover&quot; (situation_geometry) sql=" name="07 Couvercles">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Edition des données aggrégées">
+      <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Edition des données aggrégées" mutually-exclusive-child="2">
         <customproperties/>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_edit_main_pipe_name20181015145410733" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="11 Edition des noms de collecteurs">
           <customproperties/>
@@ -352,7 +352,7 @@
         <property key="embedded_project" value="../cadastre/cadastre_pg.qgs"/>
       </customproperties>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Technique - informatique">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Technique - informatique">
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Develop">
         <customproperties/>
@@ -586,10 +586,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2555446.45188309904187918</xmin>
-      <ymin>1142613.25066919415257871</ymin>
-      <xmax>2558278.02684142347425222</xmax>
-      <ymax>1148999.15959234326146543</ymax>
+      <xmin>2556500.36105745797976851</xmin>
+      <ymin>1141766.87052361387759447</ymin>
+      <xmax>2559331.93601578241214156</xmax>
+      <ymax>1148152.77944676298648119</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -860,7 +860,7 @@
           <legendlayerfile isInOverview="0" layerid="vw_cover20190307112006113" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendgroup open="false" checked="Qt::Unchecked" name="Edition des données aggrégées">
+      <legendgroup open="true" checked="Qt::Unchecked" name="Edition des données aggrégées">
         <legendlayer drawingOrder="6" open="false" checked="Qt::Unchecked" name="11 Edition des noms de collecteurs" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_edit_main_pipe_name20181015145410733" visible="0"/>
@@ -1266,7 +1266,7 @@
       </legendgroup>
     </legendgroup>
     <legendgroup embedded="1" open="false" checked="Qt::PartiallyChecked" name="Fonds de plans" project="../cadastre/cadastre_pg.qgs"/>
-    <legendgroup open="false" checked="Qt::PartiallyChecked" name="Technique - informatique">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Technique - informatique">
       <legendgroup open="false" checked="Qt::Unchecked" name="Develop">
         <legendlayer drawingOrder="146" open="true" checked="Qt::Unchecked" name="troncon - uas - test" showFeatureCount="0">
           <filegroup open="true" hidden="false">
@@ -1529,7 +1529,7 @@
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="sige_batch_inspection_id">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="batch_inspection20190306075313406" Value="situation" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="batch_inspection20190306075313406" Value="Situation et nom de collecteur" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Hidden" name="length_effective">
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -1911,6 +1911,7 @@
           <column width="-1" hidden="0" type="field" name="length_effective"/>
           <column width="-1" hidden="0" type="field" name="function_hydraulic"/>
           <column width="-1" hidden="0" type="field" name="ws_obj_id"/>
+          <column width="-1" hidden="0" type="field" name="width"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -6874,7 +6875,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="sige_batch_cleaning_id">
-          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="batch_cleaning20181217105104951" Value="situation" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="code" constraint="" Layer="batch_cleaning20181217105104951" Value="Situation et nom de collecteur" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Hidden" name="sige_batch_inspection_id">
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -7259,6 +7260,7 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="length_effective"/>
           <column width="-1" hidden="0" type="field" name="function_hydraulic"/>
           <column width="-1" hidden="0" type="field" name="ws_obj_id"/>
+          <column width="-1" hidden="0" type="field" name="width"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -7290,7 +7292,23 @@ def my_form_open(dialog, layer, feature):
           </attributeEditorContainer>
         </attributeEditorContainer>
       </attributeEditorForm>
-      <widgets/>
+      <widgets>
+        <widget name="batch_cleaning_Situation avec noms de collecteur">
+          <config/>
+        </widget>
+        <widget name="collecting_pipe_name">
+          <config>
+            <option key="AllowMulti" value="false"/>
+            <option key="AllowNull" value="true"/>
+            <option key="FilterExpression" value=""/>
+            <option key="Key" value="code"/>
+            <option key="Layer" value="batch_cleaning20181217105104951"/>
+            <option key="OrderByValue" value="false"/>
+            <option key="UseCompleter" value="false"/>
+            <option key="Value" value="Situation avec noms de collecteur"/>
+          </config>
+        </widget>
+      </widgets>
       <conditionalstyles>
         <rowstyles/>
         <fieldstyles/>
@@ -36627,11 +36645,23 @@ def my_form_open(dialog, layer, feature):
           <geographicflag>true</geographicflag>
         </spatialrefsys>
       </srs>
-      <customproperties/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
       <provider encoding="UTF-8">postgres</provider>
-      <vectorjoins/>
+      <vectorjoins>
+        <join joinFieldName="code" targetFieldName="main_pipe_code" memoryCache="0" joinLayerId="collecting_pipe20181217103527350">
+          <joinFieldsSubset>
+            <field name="name"/>
+          </joinFieldsSubset>
+        </join>
+      </vectorjoins>
       <layerDependencies/>
-      <expressionfields/>
+      <expressionfields>
+        <field typeName="char" precision="0" expression="&quot;collecting_pipe_name&quot; || ' - ' ||  &quot;situation&quot;" length="250" type="10" comment="" name="Situation et nom de collecteur"/>
+      </expressionfields>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -36672,6 +36702,12 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="date">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="collecting_pipe_name">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Situation et nom de collecteur">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <aliases>
@@ -36687,21 +36723,58 @@ def my_form_open(dialog, layer, feature):
         <alias field="network_name" index="9" name=""/>
         <alias field="remark" index="10" name=""/>
         <alias field="date" index="11" name=""/>
+        <alias field="collecting_pipe_name" index="12" name=""/>
+        <alias field="Situation et nom de collecteur" index="13" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
+        <columns>
+          <column width="-1" hidden="0" type="field" name="code"/>
+          <column width="-1" hidden="0" type="field" name="situation"/>
+          <column width="-1" hidden="0" type="field" name="main_pipe_code"/>
+          <column width="-1" hidden="0" type="field" name="name"/>
+          <column width="-1" hidden="0" type="field" name="jetting_interval"/>
+          <column width="-1" hidden="0" type="field" name="last_cleaning"/>
+          <column width="-1" hidden="0" type="field" name="min_chamber_name"/>
+          <column width="-1" hidden="0" type="field" name="max_chamber_name"/>
+          <column width="-1" hidden="0" type="field" name="area"/>
+          <column width="-1" hidden="0" type="field" name="network_name"/>
+          <column width="-1" hidden="0" type="field" name="remark"/>
+          <column width="-1" hidden="0" type="field" name="date"/>
+          <column width="-1" hidden="0" type="field" name="collecting_pipe_name"/>
+          <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="Situation et nom de collecteur"/>
+        </columns>
       </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
+      <widgets>
+        <widget name="Situation avec noms de collecteur">
+          <config/>
+        </widget>
+      </widgets>
       <conditionalstyles>
         <rowstyles/>
         <fieldstyles/>
@@ -36719,8 +36792,10 @@ def my_form_open(dialog, layer, feature):
         <default field="network_name" expression=""/>
         <default field="remark" expression=""/>
         <default field="date" expression=""/>
+        <default field="collecting_pipe_name" expression=""/>
+        <default field="Situation et nom de collecteur" expression=""/>
       </defaults>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE("code", '&lt;NULL>')</previewExpression>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>batch_inspection20190306075313406</id>
@@ -36741,11 +36816,23 @@ def my_form_open(dialog, layer, feature):
           <geographicflag>true</geographicflag>
         </spatialrefsys>
       </srs>
-      <customproperties/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
       <provider encoding="UTF-8">postgres</provider>
-      <vectorjoins/>
+      <vectorjoins>
+        <join joinFieldName="code" targetFieldName="main_pipe_code" memoryCache="0" joinLayerId="collecting_pipe20181217103527350">
+          <joinFieldsSubset>
+            <field name="name"/>
+          </joinFieldsSubset>
+        </join>
+      </vectorjoins>
       <layerDependencies/>
-      <expressionfields/>
+      <expressionfields>
+        <field typeName="char" precision="0" expression="&quot;collecting_pipe_name&quot; || ' - ' ||  &quot;situation&quot;" length="250" type="10" comment="" name="Situation et nom de collecteur"/>
+      </expressionfields>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -36786,6 +36873,12 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="date">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="collecting_pipe_name">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Situation et nom de collecteur">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <aliases>
@@ -36801,21 +36894,61 @@ def my_form_open(dialog, layer, feature):
         <alias field="network_name" index="9" name=""/>
         <alias field="remark" index="10" name=""/>
         <alias field="date" index="11" name=""/>
+        <alias field="collecting_pipe_name" index="12" name=""/>
+        <alias field="Situation et nom de collecteur" index="13" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
+        <columns>
+          <column width="-1" hidden="0" type="field" name="code"/>
+          <column width="-1" hidden="0" type="field" name="situation"/>
+          <column width="-1" hidden="0" type="field" name="main_pipe_code"/>
+          <column width="-1" hidden="0" type="field" name="name"/>
+          <column width="-1" hidden="0" type="field" name="inspection_interval"/>
+          <column width="-1" hidden="0" type="field" name="last_inspection"/>
+          <column width="-1" hidden="0" type="field" name="min_chamber_name"/>
+          <column width="-1" hidden="0" type="field" name="max_chamber_name"/>
+          <column width="-1" hidden="0" type="field" name="area"/>
+          <column width="-1" hidden="0" type="field" name="network_name"/>
+          <column width="-1" hidden="0" type="field" name="remark"/>
+          <column width="-1" hidden="0" type="field" name="date"/>
+          <column width="-1" hidden="0" type="field" name="collecting_pipe_name"/>
+          <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="Situation et nom de collecteur"/>
+        </columns>
       </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
+      <widgets>
+        <widget name="Situtation et nom de collecteur">
+          <config>
+            <option key="IsMultiline" value="false"/>
+            <option key="UseHtml" value="false"/>
+          </config>
+        </widget>
+      </widgets>
       <conditionalstyles>
         <rowstyles/>
         <fieldstyles/>
@@ -36833,6 +36966,8 @@ def my_form_open(dialog, layer, feature):
         <default field="network_name" expression=""/>
         <default field="remark" expression=""/>
         <default field="date" expression=""/>
+        <default field="collecting_pipe_name" expression=""/>
+        <default field="Situation et nom de collecteur" expression=""/>
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
@@ -39625,7 +39760,11 @@ def my_form_open(dialog, layer, feature):
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
+      <widgets>
+        <widget name="Situation avec noms de collecteur">
+          <config/>
+        </widget>
+      </widgets>
       <conditionalstyles>
         <rowstyles/>
         <fieldstyles/>
@@ -50474,7 +50613,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="UTF-8">postgres</provider>
       <vectorjoins>
-        <join joinFieldName="code" targetFieldName="sige_collecting_pipe_id" memoryCache="1" joinLayerId="collecting_pipe20181217103527350">
+        <join joinFieldName="code" targetFieldName="sige_collecting_pipe_id" memoryCache="0" joinLayerId="collecting_pipe20181217103527350">
           <joinFieldsSubset>
             <field name="code"/>
             <field name="name"/>
