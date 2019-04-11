@@ -30,7 +30,7 @@
       <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_cover20190307112006113" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=Point table=&quot;qgep&quot;.&quot;vw_cover&quot; (situation_geometry) sql=" name="07 Couvercles">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Edition des données aggrégées" mutually-exclusive-child="2">
+      <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Edition des données aggrégées" mutually-exclusive-child="1">
         <customproperties/>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_edit_main_pipe_name20181015145410733" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="11 Edition des noms de collecteurs">
           <customproperties/>
@@ -352,7 +352,7 @@
         <property key="embedded_project" value="../cadastre/cadastre_pg.qgs"/>
       </customproperties>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Technique - informatique">
+    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Technique - informatique">
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Develop">
         <customproperties/>
@@ -1266,7 +1266,7 @@
       </legendgroup>
     </legendgroup>
     <legendgroup embedded="1" open="false" checked="Qt::PartiallyChecked" name="Fonds de plans" project="../cadastre/cadastre_pg.qgs"/>
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Technique - informatique">
+    <legendgroup open="false" checked="Qt::PartiallyChecked" name="Technique - informatique">
       <legendgroup open="false" checked="Qt::Unchecked" name="Develop">
         <legendlayer drawingOrder="146" open="true" checked="Qt::Unchecked" name="troncon - uas - test" showFeatureCount="0">
           <filegroup open="true" hidden="false">
