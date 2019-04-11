@@ -51790,50 +51790,130 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="48" name="collecting_pipe_max_chamber_name"/>
           <attributeEditorField showLabel="1" index="2" name="number_of_reaches"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Longueurs par matériau" groupBox="0" columnCount="2">
-          <attributeEditorField showLabel="1" index="5" name="material_147"/>
-          <attributeEditorField showLabel="1" index="6" name="material_148"/>
-          <attributeEditorField showLabel="1" index="7" name="material_153"/>
-          <attributeEditorField showLabel="1" index="8" name="material_154"/>
-          <attributeEditorField showLabel="1" index="9" name="material_2754"/>
-          <attributeEditorField showLabel="1" index="10" name="material_2755"/>
-          <attributeEditorField showLabel="1" index="11" name="material_2761"/>
-          <attributeEditorField showLabel="1" index="12" name="material_2762"/>
-          <attributeEditorField showLabel="1" index="13" name="material_3016"/>
-          <attributeEditorField showLabel="1" index="14" name="material_3256"/>
-          <attributeEditorField showLabel="1" index="15" name="material_3638"/>
-          <attributeEditorField showLabel="1" index="16" name="material_3639"/>
-          <attributeEditorField showLabel="1" index="17" name="material_3640"/>
-          <attributeEditorField showLabel="1" index="18" name="material_3641"/>
-          <attributeEditorField showLabel="1" index="19" name="material_3648"/>
-          <attributeEditorField showLabel="1" index="20" name="material_3654"/>
-          <attributeEditorField showLabel="1" index="21" name="material_5076"/>
-          <attributeEditorField showLabel="1" index="22" name="material_5077"/>
-          <attributeEditorField showLabel="1" index="23" name="material_5078"/>
-          <attributeEditorField showLabel="1" index="24" name="material_5079"/>
-          <attributeEditorField showLabel="1" index="25" name="material_5080"/>
-          <attributeEditorField showLabel="1" index="26" name="material_5081"/>
-          <attributeEditorField showLabel="1" index="27" name="material_5381"/>
-          <attributeEditorField showLabel="1" index="28" name="material_5382"/>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Longueurs de collecteurs par matériau ou largeur" groupBox="0" columnCount="2">
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Par matériau" groupBox="1" columnCount="1">
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_147&quot; != 0 AND &quot;material_147&quot; IS NOT NULL" name="Fibrociment" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="5" name="material_147"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_148&quot; != 0 AND &quot;material_148&quot; IS NOT NULL" name="Fonte ductile" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="6" name="material_148"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_153&quot; != 0 AND &quot;material_153&quot; IS NOT NULL" name="Acier" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="7" name="material_153"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_154&quot; != 0 AND &quot;material_154&quot; IS NOT NULL" name="Grès" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="8" name="material_154"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_2754&quot; != 0 AND &quot;material_2754&quot; IS NOT NULL" name="Amiante ciment" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="9" name="material_2754"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_2755&quot; != 0 AND &quot;material_2755&quot; IS NOT NULL" name="Terre cuite" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="10" name="material_2755"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_2761&quot; != 0 AND &quot;material_2761&quot; IS NOT NULL" name="Argile" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="11" name="material_2761"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_2762&quot; != 0 AND &quot;material_2762&quot; IS NOT NULL" name="Ciment" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="12" name="material_2762"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3016&quot; != 0 AND &quot;material_3016&quot; IS NOT NULL" name="Inconnu" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="13" name="material_3016"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3256&quot; != 0 AND &quot;material_3256&quot; IS NOT NULL" name="Béton - type inconnu" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="14" name="material_3256"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3638&quot; != 0 AND &quot;material_3638&quot; IS NOT NULL" name="Béton - normal" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="15" name="material_3638"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3639&quot; != 0 AND &quot;material_3639&quot; IS NOT NULL" name="Béton - coulé sur place" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="16" name="material_3639"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3640&quot; != 0 AND &quot;material_3640&quot; IS NOT NULL" name="Béton - pousse-tube" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="17" name="material_3640"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3641&quot; != 0 AND &quot;material_3641&quot; IS NOT NULL" name="Béton - spécial" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="18" name="material_3641"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3648&quot; != 0 AND &quot;material_3648&quot; IS NOT NULL" name="Fonte grise" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="19" name="material_3648"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3654&quot; != 0 AND &quot;material_3654&quot; IS NOT NULL" name="Acier inoxydable" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="20" name="material_3654"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5076&quot; != 0 AND &quot;material_5076&quot; IS NOT NULL" name="Résine époxy" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="21" name="material_5076"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5077&quot; != 0 AND &quot;material_5077&quot; IS NOT NULL" name="Polyéthylène dur" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="22" name="material_5077"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5078&quot; != 0 AND &quot;material_5078&quot; IS NOT NULL" name="Polyester GUP" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="23" name="material_5078"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5079&quot; != 0 AND &quot;material_5079&quot; IS NOT NULL" name="Polyéthylène" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="24" name="material_5079"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5080&quot; != 0 AND &quot;material_5080&quot; IS NOT NULL" name="Polypropylène" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="25" name="material_5080"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5081&quot; != 0 AND &quot;material_5081&quot; IS NOT NULL" name="PVC" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="26" name="material_5081"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5381&quot; != 0 AND &quot;material_5381&quot; IS NOT NULL" name="Autre" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="27" name="material_5381"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5382&quot; != 0 AND &quot;material_5382&quot; IS NOT NULL" name="Matière synthétique - type inconnu" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="28" name="material_5382"/>
+            </attributeEditorContainer>
+          </attributeEditorContainer>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Par largeur" groupBox="1" columnCount="1">
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_800&quot; != 0 AND &quot;width_800&quot; IS NOT NULL" name="Largeur 800 mm" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="39" name="width_800"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_750&quot; != 0 AND &quot;width_750&quot; IS NOT NULL" name="Largeur 750 mm" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="40" name="width_750"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_700&quot; != 0 AND &quot;width_700&quot; IS NOT NULL" name="Largeur 700 mm" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="37" name="width_700"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_600&quot; != 0 AND &quot;width_600&quot; IS NOT NULL" name="Largeur 600 mm" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="35" name="width_600"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_500&quot; != 0 AND &quot;width_500&quot; IS NOT NULL" name="Largeur 500 mm" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="36" name="width_500"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_450&quot; != 0 AND &quot;width_450&quot; IS NOT NULL" name="Largeur 450 mm" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="38" name="width_450"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_400&quot; != 0 AND &quot;width_400&quot; IS NOT NULL" name="Largeur 400 mm" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="34" name="width_400"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_350&quot; != 0 AND &quot;width_350&quot; IS NOT NULL" name="Largeur 350 mm" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="32" name="width_350"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_315&quot; != 0 AND &quot;width_315&quot; IS NOT NULL" name="Largeur 315 mm" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="33" name="width_315"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_300&quot; != 0 AND &quot;width_300&quot; IS NOT NULL" name="Largeur 300 mm" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="30" name="width_300"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_250&quot; != 0 AND &quot;width_250&quot; IS NOT NULL" name="Largeur 250 mm" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="31" name="width_250"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_200&quot; != 0 AND &quot;width_200&quot; IS NOT NULL" name="Largeur 200 mm" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="41" name="width_200"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_others&quot; != 0 AND &quot;width_others&quot; IS NOT NULL" name="Largeur - autres" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="42" name="width_others"/>
+            </attributeEditorContainer>
+            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_no_data&quot; != 0 AND &quot;width_no_data&quot; IS NOT NULL" name="Largeur - pas de données" groupBox="1" columnCount="1">
+              <attributeEditorField showLabel="1" index="43" name="width_no_data"/>
+            </attributeEditorContainer>
+          </attributeEditorContainer>
+        </attributeEditorContainer>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Longueurs de collecteurs combinées par matériau et diamètre (developpement)" groupBox="0" columnCount="1"/>
+        <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_no_data&quot; != 0 AND &quot;material_no_data&quot; IS NOT NULL" name="Matériau inconnu" groupBox="1" columnCount="1">
           <attributeEditorField showLabel="1" index="29" name="material_no_data"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Longueurs par largeurs" groupBox="0" columnCount="2">
-          <attributeEditorField showLabel="1" index="39" name="width_800"/>
-          <attributeEditorField showLabel="1" index="40" name="width_750"/>
-          <attributeEditorField showLabel="1" index="37" name="width_700"/>
-          <attributeEditorField showLabel="1" index="35" name="width_600"/>
-          <attributeEditorField showLabel="1" index="36" name="width_500"/>
-          <attributeEditorField showLabel="1" index="38" name="width_450"/>
-          <attributeEditorField showLabel="1" index="34" name="width_400"/>
-          <attributeEditorField showLabel="1" index="32" name="width_350"/>
-          <attributeEditorField showLabel="1" index="33" name="width_315"/>
-          <attributeEditorField showLabel="1" index="30" name="width_300"/>
-          <attributeEditorField showLabel="1" index="31" name="width_250"/>
-          <attributeEditorField showLabel="1" index="41" name="width_200"/>
-          <attributeEditorField showLabel="1" index="42" name="width_others"/>
-          <attributeEditorField showLabel="1" index="43" name="width_no_data"/>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Longueurs par matériau et diamètre (developpement)" groupBox="0" columnCount="2"/>
       </attributeEditorForm>
       <widgets/>
       <conditionalstyles>
