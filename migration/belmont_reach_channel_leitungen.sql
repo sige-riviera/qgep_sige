@@ -85,6 +85,7 @@ LEFT JOIN pully_ass.aw_profilart_tbd pa ON pa.id = anschluss.id_profilart
 LEFT JOIN qgep_od.pipe_profile pp ON pp.profile_type =
   CASE WHEN pa.id=1 THEN 3351 -- ovoide
      WHEN pa.id=2 THEN 3350 -- circulaire
+     WHEN pa.id=3 THEN 3350 -- circulaire double
      WHEN pa.id=4 THEN 3352 -- profil en voute
      WHEN pa.id=5 THEN 3354 -- profil ouvert
      WHEN pa.id=6 THEN 3353 -- rectangulaire
