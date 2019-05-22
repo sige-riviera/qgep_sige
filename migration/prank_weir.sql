@@ -10,7 +10,7 @@ SELECT
 FROM migration.netzlinie_geo
 GROUP BY gid)
 
-INSERT INTO qgep_od.vw_overflow_prank_weir ( 
+INSERT INTO qgep_od.vw_prank_weir ( 
   identifier,
   fk_wastewater_node,
   fk_overflow_to
