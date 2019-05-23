@@ -42,9 +42,6 @@ psql "service=${PGSERVICE}" -c "UPDATE qgep_sys.oid_prefixes SET active=FALSE WH
 # Option to restore from backup.
 #PGSERVICE=${PGSERVICE} pg_restore --no-owner -d ${PGSERVICE} ${DIR}/migration/dump_topobase_95.backup
 
-# Ajout des personnalisations de Pully
-
-
 # Function first last
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/aggregates_first_last.sql
 
