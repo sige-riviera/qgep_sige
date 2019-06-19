@@ -22,7 +22,7 @@
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="tronçon_copier20190130112017326" source="service='pg_qgep' key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep&quot;.&quot;vw_qgep_reach&quot; (progression_geometry) sql=" name="05 Tronçons (avec chemisage)">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="chambre_copier_copier20180726102643036" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table=&quot;qgep&quot;.&quot;vw_qgep_wastewater_structure&quot; (situation_geometry) sql=" name="06 Chambres">
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="chambre_copier_copier20180726102643036" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table=&quot;qgep&quot;.&quot;vw_qgep_wastewater_structure&quot; (situation_geometry) sql=" name="06 Chambres">
         <customproperties>
           <property key="expandedLegendNodes"/>
         </customproperties>
@@ -30,7 +30,7 @@
       <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_cover20190307112006113" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=Point table=&quot;qgep&quot;.&quot;vw_cover&quot; (situation_geometry) sql=" name="07 Couvercles">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Edition des données aggrégées" mutually-exclusive-child="1">
+      <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Edition des données aggrégées" mutually-exclusive-child="0">
         <customproperties/>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_edit_main_pipe_name20181015145410733" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="11 Edition des noms de collecteurs">
           <customproperties/>
@@ -850,9 +850,9 @@
           <legendlayerfile isInOverview="0" layerid="tronçon_copier20190130112017326" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="4" open="false" checked="Qt::Unchecked" name="06 Chambres" showFeatureCount="0">
+      <legendlayer drawingOrder="4" open="false" checked="Qt::Checked" name="06 Chambres" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="chambre_copier_copier20180726102643036" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="chambre_copier_copier20180726102643036" visible="1"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="150" open="true" checked="Qt::Unchecked" name="07 Couvercles" showFeatureCount="0">
@@ -50638,7 +50638,11 @@ def my_form_open(dialog, layer, feature):
         </join>
       </vectorjoins>
       <layerDependencies/>
-      <expressionfields/>
+      <expressionfields>
+        <field typeName="numeric" precision="1" expression=" &quot;material_147&quot; + &quot;material_148&quot; + &quot;material_153&quot; + &quot;material_154&quot; + &quot;material_2754&quot; + &quot;material_2755&quot; + &quot;material_2761&quot; + &quot;material_2762&quot; + &quot;material_3016&quot; + &quot;material_3256&quot; + &quot;material_3638&quot; + &quot;material_3639&quot; + &quot;material_3640&quot; + &quot;material_3641&quot; + &quot;material_3648&quot; + &quot;material_3654&quot; + &quot;material_5076&quot; + &quot;material_5077&quot; + &quot;material_5078&quot; + &quot;material_5079&quot; + &quot;material_5080&quot; + &quot;material_5081&quot; + &quot;material_5381&quot; + &quot;material_5382&quot; + &quot;material_no_data&quot; " length="12" type="6" comment="" name="total_length_by_material"/>
+        <field typeName="numeric" precision="1" expression=" &quot;width_300&quot; + &quot;width_250&quot; + &quot;width_350&quot; + &quot;width_315&quot; + &quot;width_400&quot; + &quot;width_600&quot; + &quot;width_500&quot; + &quot;width_700&quot; + &quot;width_450&quot; + &quot;width_800&quot; + &quot;width_750&quot; + &quot;width_200&quot; + &quot;width_others&quot; + &quot;width_no_data&quot; " length="12" type="6" comment="" name="total_length_by_width"/>
+        <field typeName="numeric" precision="1" expression=" &quot;collecting_pipe_length&quot; + &quot;pumped_pipe_length&quot; " length="12" type="6" comment="" name="total_length"/>
+      </expressionfields>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -50788,6 +50792,15 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="collecting_pipe_max_chamber_name">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="total_length_by_material">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="total_length_by_width">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="total_length">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -51853,6 +51866,9 @@ def my_form_open(dialog, layer, feature):
         <alias field="collecting_pipe_situation" index="46" name="Situation"/>
         <alias field="collecting_pipe_min_chamber_name" index="47" name="Chambre aval"/>
         <alias field="collecting_pipe_max_chamber_name" index="48" name="Chambre amont"/>
+        <alias field="total_length_by_material" index="49" name="Somme des longueurs par matériaux"/>
+        <alias field="total_length_by_width" index="50" name="Somme des longueurs par largeur"/>
+        <alias field="total_length" index="51" name="Longueur totale"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -51909,6 +51925,9 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="width_no_data"/>
           <column width="-1" hidden="0" type="field" name="width_200"/>
           <column width="-1" hidden="0" type="field" name="width_500"/>
+          <column width="-1" hidden="0" type="field" name="total_length_by_width"/>
+          <column width="-1" hidden="0" type="field" name="total_length_by_material"/>
+          <column width="-1" hidden="0" type="field" name="total_length"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -51943,124 +51962,131 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="48" name="collecting_pipe_max_chamber_name"/>
           <attributeEditorField showLabel="1" index="2" name="number_of_reaches"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Longueurs de collecteurs par matériau ou largeur" groupBox="0" columnCount="2">
-          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Par matériau" groupBox="1" columnCount="1">
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_147&quot; != 0 AND &quot;material_147&quot; IS NOT NULL" name="Fibrociment" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="5" name="material_147"/>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Longueurs de collecteurs par matériau ou largeur" groupBox="0" columnCount="1">
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="" groupBox="1" columnCount="2">
+            <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Par matériau" groupBox="1" columnCount="1">
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_147&quot; != 0 AND &quot;material_147&quot; IS NOT NULL" name="Fibrociment" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="5" name="material_147"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_148&quot; != 0 AND &quot;material_148&quot; IS NOT NULL" name="Fonte ductile" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="6" name="material_148"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_153&quot; != 0 AND &quot;material_153&quot; IS NOT NULL" name="Acier" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="7" name="material_153"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_154&quot; != 0 AND &quot;material_154&quot; IS NOT NULL" name="Grès" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="8" name="material_154"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_2754&quot; != 0 AND &quot;material_2754&quot; IS NOT NULL" name="Amiante ciment" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="9" name="material_2754"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_2755&quot; != 0 AND &quot;material_2755&quot; IS NOT NULL" name="Terre cuite" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="10" name="material_2755"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_2761&quot; != 0 AND &quot;material_2761&quot; IS NOT NULL" name="Argile" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="11" name="material_2761"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_2762&quot; != 0 AND &quot;material_2762&quot; IS NOT NULL" name="Ciment" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="12" name="material_2762"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3016&quot; != 0 AND &quot;material_3016&quot; IS NOT NULL" name="Inconnu" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="13" name="material_3016"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3256&quot; != 0 AND &quot;material_3256&quot; IS NOT NULL" name="Béton - type inconnu" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="14" name="material_3256"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3638&quot; != 0 AND &quot;material_3638&quot; IS NOT NULL" name="Béton - normal" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="15" name="material_3638"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3639&quot; != 0 AND &quot;material_3639&quot; IS NOT NULL" name="Béton - coulé sur place" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="16" name="material_3639"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3640&quot; != 0 AND &quot;material_3640&quot; IS NOT NULL" name="Béton - pousse-tube" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="17" name="material_3640"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3641&quot; != 0 AND &quot;material_3641&quot; IS NOT NULL" name="Béton - spécial" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="18" name="material_3641"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3648&quot; != 0 AND &quot;material_3648&quot; IS NOT NULL" name="Fonte grise" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="19" name="material_3648"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3654&quot; != 0 AND &quot;material_3654&quot; IS NOT NULL" name="Acier inoxydable" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="20" name="material_3654"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5076&quot; != 0 AND &quot;material_5076&quot; IS NOT NULL" name="Résine époxy" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="21" name="material_5076"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5077&quot; != 0 AND &quot;material_5077&quot; IS NOT NULL" name="Polyéthylène dur" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="22" name="material_5077"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5078&quot; != 0 AND &quot;material_5078&quot; IS NOT NULL" name="Polyester GUP" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="23" name="material_5078"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5079&quot; != 0 AND &quot;material_5079&quot; IS NOT NULL" name="Polyéthylène" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="24" name="material_5079"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5080&quot; != 0 AND &quot;material_5080&quot; IS NOT NULL" name="Polypropylène" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="25" name="material_5080"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5081&quot; != 0 AND &quot;material_5081&quot; IS NOT NULL" name="PVC" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="26" name="material_5081"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5381&quot; != 0 AND &quot;material_5381&quot; IS NOT NULL" name="Autre" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="27" name="material_5381"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5382&quot; != 0 AND &quot;material_5382&quot; IS NOT NULL" name="Matière synthétique - type inconnu" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="28" name="material_5382"/>
+              </attributeEditorContainer>
             </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_148&quot; != 0 AND &quot;material_148&quot; IS NOT NULL" name="Fonte ductile" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="6" name="material_148"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_153&quot; != 0 AND &quot;material_153&quot; IS NOT NULL" name="Acier" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="7" name="material_153"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_154&quot; != 0 AND &quot;material_154&quot; IS NOT NULL" name="Grès" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="8" name="material_154"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_2754&quot; != 0 AND &quot;material_2754&quot; IS NOT NULL" name="Amiante ciment" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="9" name="material_2754"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_2755&quot; != 0 AND &quot;material_2755&quot; IS NOT NULL" name="Terre cuite" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="10" name="material_2755"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_2761&quot; != 0 AND &quot;material_2761&quot; IS NOT NULL" name="Argile" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="11" name="material_2761"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_2762&quot; != 0 AND &quot;material_2762&quot; IS NOT NULL" name="Ciment" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="12" name="material_2762"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3016&quot; != 0 AND &quot;material_3016&quot; IS NOT NULL" name="Inconnu" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="13" name="material_3016"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3256&quot; != 0 AND &quot;material_3256&quot; IS NOT NULL" name="Béton - type inconnu" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="14" name="material_3256"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3638&quot; != 0 AND &quot;material_3638&quot; IS NOT NULL" name="Béton - normal" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="15" name="material_3638"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3639&quot; != 0 AND &quot;material_3639&quot; IS NOT NULL" name="Béton - coulé sur place" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="16" name="material_3639"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3640&quot; != 0 AND &quot;material_3640&quot; IS NOT NULL" name="Béton - pousse-tube" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="17" name="material_3640"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3641&quot; != 0 AND &quot;material_3641&quot; IS NOT NULL" name="Béton - spécial" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="18" name="material_3641"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3648&quot; != 0 AND &quot;material_3648&quot; IS NOT NULL" name="Fonte grise" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="19" name="material_3648"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_3654&quot; != 0 AND &quot;material_3654&quot; IS NOT NULL" name="Acier inoxydable" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="20" name="material_3654"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5076&quot; != 0 AND &quot;material_5076&quot; IS NOT NULL" name="Résine époxy" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="21" name="material_5076"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5077&quot; != 0 AND &quot;material_5077&quot; IS NOT NULL" name="Polyéthylène dur" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="22" name="material_5077"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5078&quot; != 0 AND &quot;material_5078&quot; IS NOT NULL" name="Polyester GUP" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="23" name="material_5078"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5079&quot; != 0 AND &quot;material_5079&quot; IS NOT NULL" name="Polyéthylène" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="24" name="material_5079"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5080&quot; != 0 AND &quot;material_5080&quot; IS NOT NULL" name="Polypropylène" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="25" name="material_5080"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5081&quot; != 0 AND &quot;material_5081&quot; IS NOT NULL" name="PVC" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="26" name="material_5081"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5381&quot; != 0 AND &quot;material_5381&quot; IS NOT NULL" name="Autre" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="27" name="material_5381"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5382&quot; != 0 AND &quot;material_5382&quot; IS NOT NULL" name="Matière synthétique - type inconnu" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="28" name="material_5382"/>
+            <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Par largeur" groupBox="1" columnCount="1">
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_800&quot; != 0 AND &quot;width_800&quot; IS NOT NULL" name="Largeur 800 mm" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="39" name="width_800"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_750&quot; != 0 AND &quot;width_750&quot; IS NOT NULL" name="Largeur 750 mm" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="40" name="width_750"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_700&quot; != 0 AND &quot;width_700&quot; IS NOT NULL" name="Largeur 700 mm" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="37" name="width_700"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_600&quot; != 0 AND &quot;width_600&quot; IS NOT NULL" name="Largeur 600 mm" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="35" name="width_600"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_500&quot; != 0 AND &quot;width_500&quot; IS NOT NULL" name="Largeur 500 mm" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="36" name="width_500"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_450&quot; != 0 AND &quot;width_450&quot; IS NOT NULL" name="Largeur 450 mm" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="38" name="width_450"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_400&quot; != 0 AND &quot;width_400&quot; IS NOT NULL" name="Largeur 400 mm" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="34" name="width_400"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_350&quot; != 0 AND &quot;width_350&quot; IS NOT NULL" name="Largeur 350 mm" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="32" name="width_350"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_315&quot; != 0 AND &quot;width_315&quot; IS NOT NULL" name="Largeur 315 mm" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="33" name="width_315"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_300&quot; != 0 AND &quot;width_300&quot; IS NOT NULL" name="Largeur 300 mm" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="30" name="width_300"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_250&quot; != 0 AND &quot;width_250&quot; IS NOT NULL" name="Largeur 250 mm" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="31" name="width_250"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_200&quot; != 0 AND &quot;width_200&quot; IS NOT NULL" name="Largeur 200 mm" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="41" name="width_200"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_others&quot; != 0 AND &quot;width_others&quot; IS NOT NULL" name="Largeur - autres" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="42" name="width_others"/>
+              </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_no_data&quot; != 0 AND &quot;width_no_data&quot; IS NOT NULL" name="Largeur - pas de données" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="43" name="width_no_data"/>
+              </attributeEditorContainer>
             </attributeEditorContainer>
           </attributeEditorContainer>
-          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Par largeur" groupBox="1" columnCount="1">
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_800&quot; != 0 AND &quot;width_800&quot; IS NOT NULL" name="Largeur 800 mm" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="39" name="width_800"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_750&quot; != 0 AND &quot;width_750&quot; IS NOT NULL" name="Largeur 750 mm" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="40" name="width_750"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_700&quot; != 0 AND &quot;width_700&quot; IS NOT NULL" name="Largeur 700 mm" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="37" name="width_700"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_600&quot; != 0 AND &quot;width_600&quot; IS NOT NULL" name="Largeur 600 mm" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="35" name="width_600"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_500&quot; != 0 AND &quot;width_500&quot; IS NOT NULL" name="Largeur 500 mm" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="36" name="width_500"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_450&quot; != 0 AND &quot;width_450&quot; IS NOT NULL" name="Largeur 450 mm" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="38" name="width_450"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_400&quot; != 0 AND &quot;width_400&quot; IS NOT NULL" name="Largeur 400 mm" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="34" name="width_400"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_350&quot; != 0 AND &quot;width_350&quot; IS NOT NULL" name="Largeur 350 mm" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="32" name="width_350"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_315&quot; != 0 AND &quot;width_315&quot; IS NOT NULL" name="Largeur 315 mm" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="33" name="width_315"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_300&quot; != 0 AND &quot;width_300&quot; IS NOT NULL" name="Largeur 300 mm" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="30" name="width_300"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_250&quot; != 0 AND &quot;width_250&quot; IS NOT NULL" name="Largeur 250 mm" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="31" name="width_250"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_200&quot; != 0 AND &quot;width_200&quot; IS NOT NULL" name="Largeur 200 mm" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="41" name="width_200"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_others&quot; != 0 AND &quot;width_others&quot; IS NOT NULL" name="Largeur - autres" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="42" name="width_others"/>
-            </attributeEditorContainer>
-            <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_no_data&quot; != 0 AND &quot;width_no_data&quot; IS NOT NULL" name="Largeur - pas de données" groupBox="1" columnCount="1">
-              <attributeEditorField showLabel="1" index="43" name="width_no_data"/>
-            </attributeEditorContainer>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Contrôle" groupBox="1" columnCount="1">
+            <attributeEditorField showLabel="1" index="51" name="total_length"/>
+            <attributeEditorField showLabel="1" index="49" name="total_length_by_material"/>
+            <attributeEditorField showLabel="1" index="50" name="total_length_by_width"/>
           </attributeEditorContainer>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Longueurs de collecteurs combinées par matériau et diamètre (developpement)" groupBox="0" columnCount="1"/>
@@ -52123,6 +52149,9 @@ def my_form_open(dialog, layer, feature):
         <default field="collecting_pipe_situation" expression=""/>
         <default field="collecting_pipe_min_chamber_name" expression=""/>
         <default field="collecting_pipe_max_chamber_name" expression=""/>
+        <default field="total_length_by_material" expression=""/>
+        <default field="total_length_by_width" expression=""/>
+        <default field="total_length" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "obj_id", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -62146,7 +62175,7 @@ def copy_style():
       <value>EPSG:2056</value>
     </WMSCrsList>
     <Digitizing>
-      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <DefaultSnapToleranceUnit type="int">1</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
         <value>Edition_des_lot_de_curages_copier20190110093354404</value>
         <value>Tronçon_copier20180724163126100</value>
@@ -62184,34 +62213,16 @@ def copy_style():
         <value>Tronçons_par_numéro_copier_copier_copier_copier20180824133120029</value>
         <value>Tronçons_par_numéro_copier_copier_copier_copier20180824133120570</value>
         <value>Tronçons_par_numéro_copier_copier_copier_copier20180824133120851</value>
-        <value>ab_rue20161122113837293</value>
-        <value>ab_rue_copier20181108104112287</value>
-        <value>bf_immeuble20161019163752305</value>
-        <value>bf_immeuble_copier20181108104112829</value>
-        <value>bf_point_limite20161123141033694</value>
-        <value>bf_point_limite_copier20181108104111885</value>
         <value>chambre_copier20190130090215392</value>
         <value>chambre_copier_copier20180726102643036</value>
-        <value>cs_couverture_sol20161117155047081</value>
-        <value>cs_couverture_sol_copier20181108104113163</value>
-        <value>lc_limites_commune20180525110719694</value>
-        <value>lc_limites_commune_copier20181108104112378</value>
-        <value>no_nomenclature20161124151011953</value>
-        <value>no_nomenclature_copier20181108104111532</value>
-        <value>od_element_lineaire20161123134458480</value>
-        <value>od_element_lineaire_copier20181108104112570</value>
-        <value>od_element_surfacique20161123111234045</value>
-        <value>od_element_surfacique_copier20181108104112995</value>
-        <value>od_entree_batiment20161124100003328</value>
-        <value>od_entree_batiment_copier20181108104111732</value>
         <value>od_wastewater_structure</value>
-        <value>pf_points_fixes20161123144654375</value>
-        <value>pf_points_fixes_copier20181108104112082</value>
         <value>refoulement20181211133622815</value>
         <value>tronçon_copier20190130090129621</value>
         <value>tronçon_copier20190130112017326</value>
         <value>vw_batch_cleaning_agg20181217105104787</value>
+        <value>vw_batch_inspection_agg20190306075530728</value>
         <value>vw_collecting_pipe_agg20181217110633180</value>
+        <value>vw_cover20190307112006113</value>
         <value>vw_cover___</value>
         <value>vw_edit_main_pipe_name20181015145410733</value>
         <value>vw_network_node20150607120529398</value>
@@ -62220,6 +62231,26 @@ def copy_style():
         <value>vw_qgep_reach20181211104448297</value>
         <value>vw_qgep_wastewater_structure</value>
         <value>vw_wastewater_node20150607121012062</value>
+        <value>no_nomenclature_copier20181108104111532</value>
+        <value>od_entree_batiment_copier20181108104111732</value>
+        <value>bf_point_limite_copier20181108104111885</value>
+        <value>pf_points_fixes_copier20181108104112082</value>
+        <value>ab_rue_copier20181108104112287</value>
+        <value>lc_limites_commune_copier20181108104112378</value>
+        <value>bf_immeuble_copier20181108104112829</value>
+        <value>od_element_lineaire_copier20181108104112570</value>
+        <value>od_element_surfacique_copier20181108104112995</value>
+        <value>cs_couverture_sol_copier20181108104113163</value>
+        <value>no_nomenclature20161124151011953</value>
+        <value>od_entree_batiment20161124100003328</value>
+        <value>bf_point_limite20161123141033694</value>
+        <value>pf_points_fixes20161123144654375</value>
+        <value>ab_rue20161122113837293</value>
+        <value>lc_limites_commune20180525110719694</value>
+        <value>bf_immeuble20161019163752305</value>
+        <value>od_element_lineaire20161123134458480</value>
+        <value>od_element_surfacique20161123111234045</value>
+        <value>cs_couverture_sol20161117155047081</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>disabled</value>
@@ -62265,35 +62296,37 @@ def copy_style():
         <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
       </LayerSnappingEnabledList>
       <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
@@ -62341,35 +62374,37 @@ def copy_style():
         <value>2</value>
         <value>2</value>
         <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
         <value>to_vertex_and_segment</value>
@@ -62444,9 +62479,11 @@ def copy_style():
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
       </LayerSnapToList>
-      <DefaultSnapType type="QString">off</DefaultSnapType>
-      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <DefaultSnapType type="QString">to vertex and segment</DefaultSnapType>
+      <DefaultSnapTolerance type="double">20</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
         <value>0.000000</value>
         <value>0.000000</value>
@@ -62491,35 +62528,37 @@ def copy_style():
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
     <Identify>
@@ -62572,23 +62611,27 @@ def copy_style():
   <visibility-presets>
     <visibility-preset name="UAS - Collecteurs primaires">
       <layer style="" id="vw_collecting_pipe_agg20181217110633180"/>
+      <layer style="" id="chambre_copier_copier20180726102643036"/>
       <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
       <layer style="" id="lc_limites_commune20180525110719694"/>
       <layer style="" id="batch_inspection20190306075313406"/>
     </visibility-preset>
     <visibility-preset name="UAS - Editer le lot d'inspection d'un tronçon">
+      <layer style="" id="chambre_copier_copier20180726102643036"/>
       <layer style="" id="Edition_des_lot_de_curages_copier20190110093354404"/>
       <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
       <layer style="" id="lc_limites_commune20180525110719694"/>
       <layer style="" id="batch_inspection20190306075313406"/>
     </visibility-preset>
     <visibility-preset name="UAS - Editer le lot de curage d'un tronçon">
+      <layer style="" id="chambre_copier_copier20180726102643036"/>
       <layer style="" id="Tronçons___édition_des_noms_de_collecteurs_copier20181213135910977"/>
       <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
       <layer style="" id="lc_limites_commune20180525110719694"/>
       <layer style="" id="batch_inspection20190306075313406"/>
     </visibility-preset>
     <visibility-preset name="UAS - Editer le nom de collecteur d'un tronçon">
+      <layer style="" id="chambre_copier_copier20180726102643036"/>
       <layer style="" id="vw_edit_main_pipe_name20181015145410733"/>
       <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
       <layer style="" id="lc_limites_commune20180525110719694"/>
