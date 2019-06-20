@@ -51882,9 +51882,9 @@ def my_form_open(dialog, layer, feature):
         <alias field="width_800" index="39" name="800 mm, circulaire"/>
         <alias field="width_750" index="40" name="750 mm, circulaire"/>
         <alias field="width_200" index="41" name="200 mm, circulaire"/>
-        <alias field="width_others" index="42" name="Largeur - autres dimensions"/>
-        <alias field="width_non_circular" index="43" name="Largeur - non circulaire"/>
-        <alias field="width_no_data" index="44" name="Largeur - pas de données"/>
+        <alias field="width_others" index="42" name="Autres dimensions, circulaire"/>
+        <alias field="width_non_circular" index="43" name="Non-circulaire"/>
+        <alias field="width_no_data" index="44" name="Pas de données"/>
         <alias field="collecting_pipe_code" index="45" name=""/>
         <alias field="collecting_pipe_name" index="46" name="Nom de collecteur"/>
         <alias field="collecting_pipe_situation" index="47" name="Situation"/>
