@@ -1519,7 +1519,13 @@
         <edittype widgetv2type="Hidden" name="material">
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="width">
+        <edittype widgetv2type="TextEdit" name="dimension">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="clear_height">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="height_width_ratio">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Hidden" name="sige_collecting_pipe_id">
@@ -1877,19 +1883,21 @@
       <aliases>
         <alias field="obj_id" index="0" name=""/>
         <alias field="material" index="1" name=""/>
-        <alias field="width" index="2" name=""/>
-        <alias field="sige_collecting_pipe_id" index="3" name=""/>
-        <alias field="sige_batch_cleaning_id" index="4" name=""/>
-        <alias field="sige_batch_inspection_id" index="5" name="Lot d'inspection"/>
-        <alias field="length_effective" index="6" name=""/>
-        <alias field="function_hierarchic" index="7" name=""/>
-        <alias field="function_hydraulic" index="8" name=""/>
-        <alias field="ws_obj_id" index="9" name=""/>
-        <alias field="fk_owner" index="10" name=""/>
-        <alias field="rp_from_obj_id" index="11" name=""/>
-        <alias field="rp_from_identifier" index="12" name=""/>
-        <alias field="rp_to_obj_id" index="13" name=""/>
-        <alias field="rp_to_identifier" index="14" name=""/>
+        <alias field="dimension" index="2" name=""/>
+        <alias field="clear_height" index="3" name=""/>
+        <alias field="height_width_ratio" index="4" name=""/>
+        <alias field="sige_collecting_pipe_id" index="5" name=""/>
+        <alias field="sige_batch_cleaning_id" index="6" name=""/>
+        <alias field="sige_batch_inspection_id" index="7" name="Lot d'inspection"/>
+        <alias field="length_effective" index="8" name=""/>
+        <alias field="function_hierarchic" index="9" name=""/>
+        <alias field="function_hydraulic" index="10" name=""/>
+        <alias field="ws_obj_id" index="11" name=""/>
+        <alias field="fk_owner" index="12" name=""/>
+        <alias field="rp_from_obj_id" index="13" name=""/>
+        <alias field="rp_from_identifier" index="14" name=""/>
+        <alias field="rp_to_obj_id" index="15" name=""/>
+        <alias field="rp_to_identifier" index="16" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -1939,7 +1947,7 @@ def my_form_open(dialog, layer, feature):
       <attributeEditorForm>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Edition des lots d'inspection :" groupBox="0" columnCount="1">
           <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Pour modifier le lot d'inspection d'un tronçon :" groupBox="1" columnCount="1">
-            <attributeEditorField showLabel="1" index="5" name="sige_batch_inspection_id"/>
+            <attributeEditorField showLabel="1" index="7" name="sige_batch_inspection_id"/>
           </attributeEditorContainer>
         </attributeEditorContainer>
       </attributeEditorForm>
@@ -1951,7 +1959,9 @@ def my_form_open(dialog, layer, feature):
       <defaults>
         <default field="obj_id" expression=""/>
         <default field="material" expression=""/>
-        <default field="width" expression=""/>
+        <default field="dimension" expression=""/>
+        <default field="clear_height" expression=""/>
+        <default field="height_width_ratio" expression=""/>
         <default field="sige_collecting_pipe_id" expression=""/>
         <default field="sige_batch_cleaning_id" expression=""/>
         <default field="sige_batch_inspection_id" expression=""/>
@@ -6868,7 +6878,13 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="Hidden" name="material">
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="width">
+        <edittype widgetv2type="TextEdit" name="dimension">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="clear_height">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="height_width_ratio">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="Hidden" name="sige_collecting_pipe_id">
@@ -7226,19 +7242,21 @@ def my_form_open(dialog, layer, feature):
       <aliases>
         <alias field="obj_id" index="0" name=""/>
         <alias field="material" index="1" name=""/>
-        <alias field="width" index="2" name=""/>
-        <alias field="sige_collecting_pipe_id" index="3" name=""/>
-        <alias field="sige_batch_cleaning_id" index="4" name="Lot de curage"/>
-        <alias field="sige_batch_inspection_id" index="5" name=""/>
-        <alias field="length_effective" index="6" name=""/>
-        <alias field="function_hierarchic" index="7" name=""/>
-        <alias field="function_hydraulic" index="8" name=""/>
-        <alias field="ws_obj_id" index="9" name=""/>
-        <alias field="fk_owner" index="10" name=""/>
-        <alias field="rp_from_obj_id" index="11" name=""/>
-        <alias field="rp_from_identifier" index="12" name=""/>
-        <alias field="rp_to_obj_id" index="13" name=""/>
-        <alias field="rp_to_identifier" index="14" name=""/>
+        <alias field="dimension" index="2" name=""/>
+        <alias field="clear_height" index="3" name=""/>
+        <alias field="height_width_ratio" index="4" name=""/>
+        <alias field="sige_collecting_pipe_id" index="5" name=""/>
+        <alias field="sige_batch_cleaning_id" index="6" name="Lot de curage"/>
+        <alias field="sige_batch_inspection_id" index="7" name=""/>
+        <alias field="length_effective" index="8" name=""/>
+        <alias field="function_hierarchic" index="9" name=""/>
+        <alias field="function_hydraulic" index="10" name=""/>
+        <alias field="ws_obj_id" index="11" name=""/>
+        <alias field="fk_owner" index="12" name=""/>
+        <alias field="rp_from_obj_id" index="13" name=""/>
+        <alias field="rp_from_identifier" index="14" name=""/>
+        <alias field="rp_to_obj_id" index="15" name=""/>
+        <alias field="rp_to_identifier" index="16" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -7288,7 +7306,7 @@ def my_form_open(dialog, layer, feature):
       <attributeEditorForm>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Edition des lots de curages" groupBox="0" columnCount="1">
           <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Pour modifier le lot de curage d'un tronçon :" groupBox="1" columnCount="1">
-            <attributeEditorField showLabel="1" index="4" name="sige_batch_cleaning_id"/>
+            <attributeEditorField showLabel="1" index="6" name="sige_batch_cleaning_id"/>
           </attributeEditorContainer>
         </attributeEditorContainer>
       </attributeEditorForm>
@@ -7316,7 +7334,9 @@ def my_form_open(dialog, layer, feature):
       <defaults>
         <default field="obj_id" expression=""/>
         <default field="material" expression=""/>
-        <default field="width" expression=""/>
+        <default field="dimension" expression=""/>
+        <default field="clear_height" expression=""/>
+        <default field="height_width_ratio" expression=""/>
         <default field="sige_collecting_pipe_id" expression=""/>
         <default field="sige_batch_cleaning_id" expression=""/>
         <default field="sige_batch_inspection_id" expression=""/>
@@ -50640,7 +50660,7 @@ def my_form_open(dialog, layer, feature):
       <layerDependencies/>
       <expressionfields>
         <field typeName="numeric" precision="2" expression=" &quot;material_147&quot; + &quot;material_148&quot; + &quot;material_153&quot; + &quot;material_154&quot; + &quot;material_2754&quot; + &quot;material_2755&quot; + &quot;material_2761&quot; + &quot;material_2762&quot; + &quot;material_3016&quot; + &quot;material_3256&quot; + &quot;material_3638&quot; + &quot;material_3639&quot; + &quot;material_3640&quot; + &quot;material_3641&quot; + &quot;material_3648&quot; + &quot;material_3654&quot; + &quot;material_5076&quot; + &quot;material_5077&quot; + &quot;material_5078&quot; + &quot;material_5079&quot; + &quot;material_5080&quot; + &quot;material_5081&quot; + &quot;material_5381&quot; + &quot;material_5382&quot; + &quot;material_no_data&quot; " length="50" type="6" comment="" name="total_length_by_material"/>
-        <field typeName="numeric" precision="2" expression=" &quot;width_300&quot; + &quot;width_250&quot; + &quot;width_350&quot; + &quot;width_315&quot; + &quot;width_400&quot; + &quot;width_600&quot; + &quot;width_500&quot; + &quot;width_700&quot; + &quot;width_450&quot; + &quot;width_800&quot; + &quot;width_750&quot; + &quot;width_200&quot; + &quot;width_others&quot; + &quot;width_no_data&quot; " length="50" type="6" comment="" name="total_length_by_width"/>
+        <field typeName="numeric" precision="2" expression=" &quot;width_300&quot; + &quot;width_250&quot; + &quot;width_350&quot; + &quot;width_315&quot; + &quot;width_400&quot; + &quot;width_600&quot; + &quot;width_500&quot; + &quot;width_700&quot; + &quot;width_450&quot; + &quot;width_800&quot; + &quot;width_750&quot; + &quot;width_200&quot; + &quot;width_others&quot; + &quot;width_non_circular&quot; + &quot;width_no_data&quot; " length="50" type="6" comment="" name="total_length_by_width"/>
         <field typeName="numeric" precision="2" expression=" &quot;collecting_pipe_length&quot;" length="50" type="6" comment="" name="total_length"/>
       </expressionfields>
       <map-layer-style-manager current="">
@@ -50774,6 +50794,9 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="width_others">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="width_non_circular">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="width_no_data">
@@ -51741,7 +51764,7 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>obj_id</displayfield>
+      <displayfield>collecting_pipe_name</displayfield>
       <label>0</label>
       <labelattributes>
         <label fieldname="" text="Étiquette"/>
@@ -51847,28 +51870,29 @@ def my_form_open(dialog, layer, feature):
         <alias field="material_5381" index="27" name="Autre"/>
         <alias field="material_5382" index="28" name="Matière synthétique - type inconnu"/>
         <alias field="material_no_data" index="29" name="Matériau inconnu"/>
-        <alias field="width_300" index="30" name="Largeur 300 mm"/>
-        <alias field="width_250" index="31" name="Largeur 250 mm"/>
-        <alias field="width_350" index="32" name="Largeur 350 mm"/>
-        <alias field="width_315" index="33" name="Largeur 315 mm"/>
-        <alias field="width_400" index="34" name="Largeur 400 mm"/>
-        <alias field="width_600" index="35" name="Largeur 600 mm"/>
-        <alias field="width_500" index="36" name="Largeur 500 mm"/>
-        <alias field="width_700" index="37" name="Largeur 700 mm"/>
-        <alias field="width_450" index="38" name="Largeur 450 mm"/>
-        <alias field="width_800" index="39" name="Largeur 800 mm"/>
-        <alias field="width_750" index="40" name="Largeur 750 mm"/>
-        <alias field="width_200" index="41" name="Largeur 200 mm"/>
+        <alias field="width_300" index="30" name="300 mm, circulaire"/>
+        <alias field="width_250" index="31" name="250 mm, circulaire"/>
+        <alias field="width_350" index="32" name="350 mm, circulaire"/>
+        <alias field="width_315" index="33" name="315 mm, circulaire"/>
+        <alias field="width_400" index="34" name="400 mm, circulaire"/>
+        <alias field="width_600" index="35" name="600 mm, circulaire"/>
+        <alias field="width_500" index="36" name="500 mm, circulaire"/>
+        <alias field="width_700" index="37" name="700 mm, circulaire"/>
+        <alias field="width_450" index="38" name="450 mm, circulaire"/>
+        <alias field="width_800" index="39" name="800 mm, circulaire"/>
+        <alias field="width_750" index="40" name="750 mm, circulaire"/>
+        <alias field="width_200" index="41" name="200 mm, circulaire"/>
         <alias field="width_others" index="42" name="Largeur - autres dimensions"/>
-        <alias field="width_no_data" index="43" name="Largeur - pas de données"/>
-        <alias field="collecting_pipe_code" index="44" name=""/>
-        <alias field="collecting_pipe_name" index="45" name="Nom de collecteur"/>
-        <alias field="collecting_pipe_situation" index="46" name="Situation"/>
-        <alias field="collecting_pipe_min_chamber_name" index="47" name="Chambre aval"/>
-        <alias field="collecting_pipe_max_chamber_name" index="48" name="Chambre amont"/>
-        <alias field="total_length_by_material" index="49" name="Somme des longueurs par matériaux"/>
-        <alias field="total_length_by_width" index="50" name="Somme des longueurs par largeur"/>
-        <alias field="total_length" index="51" name="Longueur totale"/>
+        <alias field="width_non_circular" index="43" name="Largeur - non circulaire"/>
+        <alias field="width_no_data" index="44" name="Largeur - pas de données"/>
+        <alias field="collecting_pipe_code" index="45" name=""/>
+        <alias field="collecting_pipe_name" index="46" name="Nom de collecteur"/>
+        <alias field="collecting_pipe_situation" index="47" name="Situation"/>
+        <alias field="collecting_pipe_min_chamber_name" index="48" name="Chambre aval"/>
+        <alias field="collecting_pipe_max_chamber_name" index="49" name="Chambre amont"/>
+        <alias field="total_length_by_material" index="50" name="Somme des longueurs par matériaux"/>
+        <alias field="total_length_by_width" index="51" name="Somme des longueurs par largeur"/>
+        <alias field="total_length" index="52" name="Longueur totale"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -51928,6 +51952,7 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="total_length_by_width"/>
           <column width="-1" hidden="0" type="field" name="total_length_by_material"/>
           <column width="-1" hidden="0" type="field" name="total_length"/>
+          <column width="-1" hidden="0" type="field" name="width_non_circular"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -51954,12 +51979,12 @@ def my_form_open(dialog, layer, feature):
       <editorlayout>tablayout</editorlayout>
       <attributeEditorForm>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="2">
-          <attributeEditorField showLabel="1" index="45" name="collecting_pipe_name"/>
-          <attributeEditorField showLabel="1" index="46" name="collecting_pipe_situation"/>
+          <attributeEditorField showLabel="1" index="46" name="collecting_pipe_name"/>
+          <attributeEditorField showLabel="1" index="47" name="collecting_pipe_situation"/>
           <attributeEditorField showLabel="1" index="3" name="collecting_pipe_length"/>
           <attributeEditorField showLabel="1" index="4" name="pumped_pipe_length"/>
-          <attributeEditorField showLabel="1" index="47" name="collecting_pipe_min_chamber_name"/>
-          <attributeEditorField showLabel="1" index="48" name="collecting_pipe_max_chamber_name"/>
+          <attributeEditorField showLabel="1" index="48" name="collecting_pipe_min_chamber_name"/>
+          <attributeEditorField showLabel="1" index="49" name="collecting_pipe_max_chamber_name"/>
           <attributeEditorField showLabel="1" index="2" name="number_of_reaches"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Longueurs de collecteurs par matériau ou largeur [m]" groupBox="0" columnCount="1">
@@ -52081,15 +52106,18 @@ def my_form_open(dialog, layer, feature):
               <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_others&quot; != 0 AND &quot;width_others&quot; IS NOT NULL" name="Largeur - autres" groupBox="1" columnCount="1">
                 <attributeEditorField showLabel="1" index="42" name="width_others"/>
               </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_non_circular&quot; != 0 AND &quot;width_non_circular&quot; IS NOT NULL" name="Largeur - non circulaire" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="43" name="width_non_circular"/>
+              </attributeEditorContainer>
               <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_no_data&quot; != 0 AND &quot;width_no_data&quot; IS NOT NULL" name="Largeur - pas de données" groupBox="1" columnCount="1">
-                <attributeEditorField showLabel="1" index="43" name="width_no_data"/>
+                <attributeEditorField showLabel="1" index="44" name="width_no_data"/>
               </attributeEditorContainer>
             </attributeEditorContainer>
           </attributeEditorContainer>
           <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Contrôle" groupBox="1" columnCount="1">
-            <attributeEditorField showLabel="1" index="49" name="total_length_by_material"/>
-            <attributeEditorField showLabel="1" index="50" name="total_length_by_width"/>
-            <attributeEditorField showLabel="1" index="51" name="total_length"/>
+            <attributeEditorField showLabel="1" index="50" name="total_length_by_material"/>
+            <attributeEditorField showLabel="1" index="51" name="total_length_by_width"/>
+            <attributeEditorField showLabel="1" index="52" name="total_length"/>
           </attributeEditorContainer>
         </attributeEditorContainer>
       </attributeEditorForm>
@@ -52142,6 +52170,7 @@ def my_form_open(dialog, layer, feature):
         <default field="width_750" expression=""/>
         <default field="width_200" expression=""/>
         <default field="width_others" expression=""/>
+        <default field="width_non_circular" expression=""/>
         <default field="width_no_data" expression=""/>
         <default field="collecting_pipe_code" expression=""/>
         <default field="collecting_pipe_name" expression=""/>
@@ -53291,7 +53320,13 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="Hidden" name="material">
           <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="width">
+        <edittype widgetv2type="TextEdit" name="dimension">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="clear_height">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="height_width_ratio">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="sige_collecting_pipe_id">
@@ -53649,19 +53684,21 @@ def my_form_open(dialog, layer, feature):
       <aliases>
         <alias field="obj_id" index="0" name=""/>
         <alias field="material" index="1" name=""/>
-        <alias field="width" index="2" name=""/>
-        <alias field="sige_collecting_pipe_id" index="3" name="Collecteur"/>
-        <alias field="sige_batch_cleaning_id" index="4" name=""/>
-        <alias field="sige_batch_inspection_id" index="5" name=""/>
-        <alias field="length_effective" index="6" name=""/>
-        <alias field="function_hierarchic" index="7" name=""/>
-        <alias field="function_hydraulic" index="8" name=""/>
-        <alias field="ws_obj_id" index="9" name=""/>
-        <alias field="fk_owner" index="10" name=""/>
-        <alias field="rp_from_obj_id" index="11" name=""/>
-        <alias field="rp_from_identifier" index="12" name=""/>
-        <alias field="rp_to_obj_id" index="13" name=""/>
-        <alias field="rp_to_identifier" index="14" name=""/>
+        <alias field="dimension" index="2" name=""/>
+        <alias field="clear_height" index="3" name=""/>
+        <alias field="height_width_ratio" index="4" name=""/>
+        <alias field="sige_collecting_pipe_id" index="5" name="Collecteur"/>
+        <alias field="sige_batch_cleaning_id" index="6" name=""/>
+        <alias field="sige_batch_inspection_id" index="7" name=""/>
+        <alias field="length_effective" index="8" name=""/>
+        <alias field="function_hierarchic" index="9" name=""/>
+        <alias field="function_hydraulic" index="10" name=""/>
+        <alias field="ws_obj_id" index="11" name=""/>
+        <alias field="fk_owner" index="12" name=""/>
+        <alias field="rp_from_obj_id" index="13" name=""/>
+        <alias field="rp_from_identifier" index="14" name=""/>
+        <alias field="rp_to_obj_id" index="15" name=""/>
+        <alias field="rp_to_identifier" index="16" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -53710,7 +53747,7 @@ def my_form_open(dialog, layer, feature):
       <attributeEditorForm>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Edition des noms de collecteurs :" groupBox="0" columnCount="1">
           <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Pour modifier nom de collecteur d'un tronçon :" groupBox="1" columnCount="1">
-            <attributeEditorField showLabel="1" index="3" name="sige_collecting_pipe_id"/>
+            <attributeEditorField showLabel="1" index="5" name="sige_collecting_pipe_id"/>
           </attributeEditorContainer>
         </attributeEditorContainer>
       </attributeEditorForm>
@@ -53722,7 +53759,9 @@ def my_form_open(dialog, layer, feature):
       <defaults>
         <default field="obj_id" expression=""/>
         <default field="material" expression=""/>
-        <default field="width" expression=""/>
+        <default field="dimension" expression=""/>
+        <default field="clear_height" expression=""/>
+        <default field="height_width_ratio" expression=""/>
         <default field="sige_collecting_pipe_id" expression=""/>
         <default field="sige_batch_cleaning_id" expression=""/>
         <default field="sige_batch_inspection_id" expression=""/>
