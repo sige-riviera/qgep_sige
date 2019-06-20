@@ -586,10 +586,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2554778.97607267228886485</xmin>
-      <ymin>1142473.3800071650184691</ymin>
-      <xmax>2557610.5510309967212379</xmax>
-      <ymax>1148859.28893031412735581</ymax>
+      <xmin>2554627.8796027391217649</xmin>
+      <ymin>1139262.86039268434979022</ymin>
+      <xmax>2560291.02951938798651099</xmax>
+      <ymax>1152034.67823898256756365</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -51962,7 +51962,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="48" name="collecting_pipe_max_chamber_name"/>
           <attributeEditorField showLabel="1" index="2" name="number_of_reaches"/>
         </attributeEditorContainer>
-        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Longueurs de collecteurs par matériau ou largeur" groupBox="0" columnCount="1">
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Longueurs de collecteurs par matériau ou largeur [m]" groupBox="0" columnCount="1">
           <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="" groupBox="1" columnCount="2">
             <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Par matériau" groupBox="1" columnCount="1">
               <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_147&quot; != 0 AND &quot;material_147&quot; IS NOT NULL" name="Fibrociment" groupBox="1" columnCount="1">
@@ -52037,6 +52037,9 @@ def my_form_open(dialog, layer, feature):
               <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_5382&quot; != 0 AND &quot;material_5382&quot; IS NOT NULL" name="Matière synthétique - type inconnu" groupBox="1" columnCount="1">
                 <attributeEditorField showLabel="1" index="28" name="material_5382"/>
               </attributeEditorContainer>
+              <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_no_data&quot; != 0 AND &quot;material_no_data&quot; IS NOT NULL" name="Matériau inconnu" groupBox="1" columnCount="1">
+                <attributeEditorField showLabel="1" index="29" name="material_no_data"/>
+              </attributeEditorContainer>
             </attributeEditorContainer>
             <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Par largeur" groupBox="1" columnCount="1">
               <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;width_800&quot; != 0 AND &quot;width_800&quot; IS NOT NULL" name="Largeur 800 mm" groupBox="1" columnCount="1">
@@ -52088,9 +52091,6 @@ def my_form_open(dialog, layer, feature):
             <attributeEditorField showLabel="1" index="50" name="total_length_by_width"/>
             <attributeEditorField showLabel="1" index="51" name="total_length"/>
           </attributeEditorContainer>
-        </attributeEditorContainer>
-        <attributeEditorContainer showLabel="0" visibilityExpressionEnabled="1" visibilityExpression="&quot;material_no_data&quot; != 0 AND &quot;material_no_data&quot; IS NOT NULL" name="Matériau inconnu" groupBox="1" columnCount="1">
-          <attributeEditorField showLabel="1" index="29" name="material_no_data"/>
         </attributeEditorContainer>
       </attributeEditorForm>
       <widgets/>
