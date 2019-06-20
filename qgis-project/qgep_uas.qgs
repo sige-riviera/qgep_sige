@@ -46,7 +46,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="QGEP Origine">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="QGEP">
       <customproperties/>
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_qgep_wastewater_structure" source="service='pg_qgep' key='obj_id' estimatedmetadata=true srid=2056 type=MultiPoint table=&quot;qgep&quot;.&quot;vw_qgep_wastewater_structure&quot; (situation_geometry) sql=" name="chambre">
         <customproperties>
@@ -586,10 +586,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2554627.8796027391217649</xmin>
-      <ymin>1139262.86039268434979022</ymin>
-      <xmax>2560291.02951938798651099</xmax>
-      <ymax>1152034.67823898256756365</ymax>
+      <xmin>2555710.57973790680989623</xmin>
+      <ymin>1141883.32098176772706211</ymin>
+      <xmax>2558542.15469623124226928</xmax>
+      <ymax>1148269.22990491683594882</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -680,7 +680,6 @@
       <item>vw_edit_main_pipe_name20181015145410733</item>
       <item>Tronçons___édition_des_noms_de_collecteurs_copier20181213135910977</item>
       <item>Edition_des_lot_de_curages_copier20190110093354404</item>
-      <item>SWISSIMAGE_Fond_de_plan20190306170954412</item>
       <item>vw_qgep_wastewater_structure</item>
       <item>vw_qgep_reach</item>
       <item>od_wastewater_structure</item>
@@ -811,6 +810,7 @@
       <item>od_element_lineaire20161123134458480</item>
       <item>od_element_surfacique20161123111234045</item>
       <item>cs_couverture_sol20161117155047081</item>
+      <item>SWISSIMAGE_Fond_de_plan20190306170954412</item>
       <item>National_Map_1_25_00020170314120154767</item>
       <item>National_Maps__color_20170314120148938</item>
       <item>SWISSIMAGE20170314120137660</item>
@@ -877,94 +877,94 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendlayer drawingOrder="10" open="false" checked="Qt::Checked" name="Image aérienne swisstopo" showFeatureCount="0">
+      <legendlayer drawingOrder="140" open="false" checked="Qt::Checked" name="Image aérienne swisstopo" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="SWISSIMAGE_Fond_de_plan20190306170954412" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Unchecked" name="QGEP Origine">
-      <legendlayer drawingOrder="11" open="false" checked="Qt::Unchecked" name="chambre" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Unchecked" name="QGEP">
+      <legendlayer drawingOrder="10" open="false" checked="Qt::Unchecked" name="chambre" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_qgep_wastewater_structure" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="12" open="false" checked="Qt::Unchecked" name="tronçon" showFeatureCount="0">
+      <legendlayer drawingOrder="11" open="false" checked="Qt::Unchecked" name="tronçon" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_qgep_reach" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendgroup open="false" checked="Qt::Unchecked" name="Ouvrages">
-        <legendlayer drawingOrder="13" open="true" checked="Qt::Unchecked" name="od_wastewater_structure" showFeatureCount="0">
+        <legendlayer drawingOrder="12" open="true" checked="Qt::Unchecked" name="od_wastewater_structure" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_wastewater_structure" visible="0"/>
           </filegroup>
         </legendlayer>
         <legendgroup open="false" checked="Qt::Unchecked" name="Elément douvrage">
-          <legendlayer drawingOrder="14" open="true" checked="Qt::Unchecked" name="vw_access_aid" showFeatureCount="0">
+          <legendlayer drawingOrder="13" open="true" checked="Qt::Unchecked" name="vw_access_aid" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vw_access_aid" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="15" open="true" checked="Qt::Unchecked" name="vw_backflow_prevention" showFeatureCount="0">
+          <legendlayer drawingOrder="14" open="true" checked="Qt::Unchecked" name="vw_backflow_prevention" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vw_backflow_prevention" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="16" open="true" checked="Qt::Unchecked" name="vw_benching" showFeatureCount="0">
+          <legendlayer drawingOrder="15" open="true" checked="Qt::Unchecked" name="vw_benching" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vw_benching" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="17" open="true" checked="Qt::Unchecked" name="vw_cover" showFeatureCount="0">
+          <legendlayer drawingOrder="16" open="true" checked="Qt::Unchecked" name="vw_cover" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vw_cover___" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="18" open="true" checked="Qt::Unchecked" name="vw_dryweather_downspout" showFeatureCount="0">
+          <legendlayer drawingOrder="17" open="true" checked="Qt::Unchecked" name="vw_dryweather_downspout" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vw_dryweather_downspout" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="19" open="true" checked="Qt::Unchecked" name="vw_dryweather_flume" showFeatureCount="0">
+          <legendlayer drawingOrder="18" open="true" checked="Qt::Unchecked" name="vw_dryweather_flume" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vw_dryweather_flume" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
-        <legendlayer drawingOrder="20" open="true" checked="Qt::Unchecked" name="vw_channel" showFeatureCount="0">
+        <legendlayer drawingOrder="19" open="true" checked="Qt::Unchecked" name="vw_channel" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_channel_" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="21" open="true" checked="Qt::Unchecked" name="od_organisation" showFeatureCount="0">
+        <legendlayer drawingOrder="20" open="true" checked="Qt::Unchecked" name="od_organisation" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_organisation20160212172933583" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="Inspection">
-        <legendlayer drawingOrder="22" open="true" checked="Qt::Unchecked" name="vw_last_inspection" showFeatureCount="0">
+        <legendlayer drawingOrder="21" open="true" checked="Qt::Unchecked" name="vw_last_inspection" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_last_inspection20171004071835261" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="23" open="true" checked="Qt::Unchecked" name="re_maintenance_event_wastewater_structure" showFeatureCount="0">
+        <legendlayer drawingOrder="22" open="true" checked="Qt::Unchecked" name="re_maintenance_event_wastewater_structure" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="re_maintenance_event_wastewater_structure" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="24" open="true" checked="Qt::Unchecked" name="od_file" showFeatureCount="0">
+        <legendlayer drawingOrder="23" open="true" checked="Qt::Unchecked" name="od_file" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_file20160921105557083" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="25" open="true" checked="Qt::Unchecked" name="Maintenance" showFeatureCount="0">
+        <legendlayer drawingOrder="24" open="true" checked="Qt::Unchecked" name="Maintenance" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_qgep_maintenance" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="26" open="true" checked="Qt::Unchecked" name="Dégâts" showFeatureCount="0">
+        <legendlayer drawingOrder="25" open="true" checked="Qt::Unchecked" name="Dégâts" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_qgep_damage" visible="0"/>
           </filegroup>
@@ -972,293 +972,293 @@
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="Liste de valeur">
         <legendgroup open="false" checked="Qt::Unchecked" name="Exutoire au milieu récepteur">
-          <legendlayer drawingOrder="27" open="true" checked="Qt::Unchecked" name="Relevance" showFeatureCount="0">
+          <legendlayer drawingOrder="26" open="true" checked="Qt::Unchecked" name="Relevance" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_discharge_point_relevance" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="special structure">
-          <legendlayer drawingOrder="28" open="true" checked="Qt::Unchecked" name="Bypass" showFeatureCount="0">
+          <legendlayer drawingOrder="27" open="true" checked="Qt::Unchecked" name="Bypass" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_special_structure_bypass" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="29" open="true" checked="Qt::Unchecked" name="Function" showFeatureCount="0">
+          <legendlayer drawingOrder="28" open="true" checked="Qt::Unchecked" name="Function" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_special_structure_function" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="30" open="true" checked="Qt::Unchecked" name="Stormwater Tank Arrangement" showFeatureCount="0">
+          <legendlayer drawingOrder="29" open="true" checked="Qt::Unchecked" name="Stormwater Tank Arrangement" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_special_structure_stormwater_tank_arrangement" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Chambre">
-          <legendlayer drawingOrder="31" open="true" checked="Qt::Unchecked" name="MH Material" showFeatureCount="0">
+          <legendlayer drawingOrder="30" open="true" checked="Qt::Unchecked" name="MH Material" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_manhole_material20151117174216343" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="32" open="true" checked="Qt::Unchecked" name="MH Surface Inflow" showFeatureCount="0">
+          <legendlayer drawingOrder="31" open="true" checked="Qt::Unchecked" name="MH Surface Inflow" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_manhole_surface_inflow20151117174216393" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="33" open="true" checked="Qt::Unchecked" name="MH Function" showFeatureCount="0">
+          <legendlayer drawingOrder="32" open="true" checked="Qt::Unchecked" name="MH Function" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_manhole_function" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Elément douvrage">
-          <legendlayer drawingOrder="34" open="true" checked="Qt::Unchecked" name="vl_structure_part_renovation_demand" showFeatureCount="0">
+          <legendlayer drawingOrder="33" open="true" checked="Qt::Unchecked" name="vl_structure_part_renovation_demand" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_structure_part_renovation_demand" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Regard">
-          <legendlayer drawingOrder="35" open="true" checked="Qt::Unchecked" name="C Positional Accuracy" showFeatureCount="0">
+          <legendlayer drawingOrder="34" open="true" checked="Qt::Unchecked" name="C Positional Accuracy" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_cover_positional_accuracy20151117153235900" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="36" open="true" checked="Qt::Unchecked" name="Shape" showFeatureCount="0">
+          <legendlayer drawingOrder="35" open="true" checked="Qt::Unchecked" name="Shape" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_cover_cover_shape" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="37" open="true" checked="Qt::Unchecked" name="Fastening" showFeatureCount="0">
+          <legendlayer drawingOrder="36" open="true" checked="Qt::Unchecked" name="Fastening" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_cover_fastening" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="38" open="true" checked="Qt::Unchecked" name="Sludge Bucket" showFeatureCount="0">
+          <legendlayer drawingOrder="37" open="true" checked="Qt::Unchecked" name="Sludge Bucket" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_cover_sludge_bucket" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="39" open="true" checked="Qt::Unchecked" name="Venting" showFeatureCount="0">
+          <legendlayer drawingOrder="38" open="true" checked="Qt::Unchecked" name="Venting" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_cover_venting" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="40" open="true" checked="Qt::Unchecked" name="C Material" showFeatureCount="0">
+          <legendlayer drawingOrder="39" open="true" checked="Qt::Unchecked" name="C Material" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_cover_material" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Protection contre le refoulement">
-          <legendlayer drawingOrder="41" open="true" checked="Qt::Unchecked" name="vl_backflow_prevention_kind" showFeatureCount="0">
+          <legendlayer drawingOrder="40" open="true" checked="Qt::Unchecked" name="vl_backflow_prevention_kind" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_backflow_prevention_kind" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="uDispositif d'accès">
-          <legendlayer drawingOrder="42" open="true" checked="Qt::Unchecked" name="vl_access_aid_kind" showFeatureCount="0">
+          <legendlayer drawingOrder="41" open="true" checked="Qt::Unchecked" name="vl_access_aid_kind" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_access_aid_kind" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Maintenance">
-          <legendlayer drawingOrder="43" open="true" checked="Qt::Unchecked" name="vl_maintenance_event_kind" showFeatureCount="0">
+          <legendlayer drawingOrder="42" open="true" checked="Qt::Unchecked" name="vl_maintenance_event_kind" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_maintenance_event_kind" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="44" open="true" checked="Qt::Unchecked" name="vl_maintenance_event_status" showFeatureCount="0">
+          <legendlayer drawingOrder="43" open="true" checked="Qt::Unchecked" name="vl_maintenance_event_status" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_maintenance_event_status" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Point de tronçon">
-          <legendlayer drawingOrder="45" open="true" checked="Qt::Unchecked" name="vl_reach_point_elevation_accuracy" showFeatureCount="0">
+          <legendlayer drawingOrder="44" open="true" checked="Qt::Unchecked" name="vl_reach_point_elevation_accuracy" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_point_elevation_accuracy" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="46" open="true" checked="Qt::Unchecked" name="vl_reach_point_outlet_shape" showFeatureCount="0">
+          <legendlayer drawingOrder="45" open="true" checked="Qt::Unchecked" name="vl_reach_point_outlet_shape" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_point_outlet_shape" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Tronçon">
-          <legendlayer drawingOrder="47" open="true" checked="Qt::Unchecked" name="vl_reach_elevation_determination" showFeatureCount="0">
+          <legendlayer drawingOrder="46" open="true" checked="Qt::Unchecked" name="vl_reach_elevation_determination" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_elevation_determination" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="48" open="true" checked="Qt::Unchecked" name="vl_reach_horizontal_positioning" showFeatureCount="0">
+          <legendlayer drawingOrder="47" open="true" checked="Qt::Unchecked" name="vl_reach_horizontal_positioning" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_horizontal_positioning" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="49" open="true" checked="Qt::Unchecked" name="vl_reach_inside_coating" showFeatureCount="0">
+          <legendlayer drawingOrder="48" open="true" checked="Qt::Unchecked" name="vl_reach_inside_coating" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_inside_coating" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="50" open="true" checked="Qt::Unchecked" name="vl_reach_material" showFeatureCount="0">
+          <legendlayer drawingOrder="49" open="true" checked="Qt::Unchecked" name="vl_reach_material" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_material" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="51" open="true" checked="Qt::Unchecked" name="vl_reach_reliner_material" showFeatureCount="0">
+          <legendlayer drawingOrder="50" open="true" checked="Qt::Unchecked" name="vl_reach_reliner_material" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_reliner_material" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="52" open="true" checked="Qt::Unchecked" name="vl_reach_relining_construction" showFeatureCount="0">
+          <legendlayer drawingOrder="51" open="true" checked="Qt::Unchecked" name="vl_reach_relining_construction" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_relining_construction" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="53" open="true" checked="Qt::Unchecked" name="vl_reach_relining_kind" showFeatureCount="0">
+          <legendlayer drawingOrder="52" open="true" checked="Qt::Unchecked" name="vl_reach_relining_kind" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_reach_relining_kind" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Ouvrage">
-          <legendlayer drawingOrder="54" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_accessibility" showFeatureCount="0">
+          <legendlayer drawingOrder="53" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_accessibility" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_accessibility" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="55" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_financing" showFeatureCount="0">
+          <legendlayer drawingOrder="54" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_financing" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_financing" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="56" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_renovation_necessity" showFeatureCount="0">
+          <legendlayer drawingOrder="55" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_renovation_necessity" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_renovation_necessity" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="57" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_rv_construction_type" showFeatureCount="0">
+          <legendlayer drawingOrder="56" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_rv_construction_type" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_rv_construction_type" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="58" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_status" showFeatureCount="0">
+          <legendlayer drawingOrder="57" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_status" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_status" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="59" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_structure_condition" showFeatureCount="0">
+          <legendlayer drawingOrder="58" open="true" checked="Qt::Unchecked" name="vl_wastewater_structure_structure_condition" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_wastewater_structure_structure_condition" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Canalisation">
-          <legendlayer drawingOrder="60" open="true" checked="Qt::Unchecked" name="vl_channel_bedding_encasement" showFeatureCount="0">
+          <legendlayer drawingOrder="59" open="true" checked="Qt::Unchecked" name="vl_channel_bedding_encasement" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_channel_bedding_encasement" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="61" open="true" checked="Qt::Unchecked" name="vl_channel_connection_type" showFeatureCount="0">
+          <legendlayer drawingOrder="60" open="true" checked="Qt::Unchecked" name="vl_channel_connection_type" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_channel_connection_type" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="62" open="true" checked="Qt::Unchecked" name="vl_channel_function_hierarchic" showFeatureCount="0">
+          <legendlayer drawingOrder="61" open="true" checked="Qt::Unchecked" name="vl_channel_function_hierarchic" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_channel_function_hierarchic" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="63" open="true" checked="Qt::Unchecked" name="vl_channel_function_hydraulic" showFeatureCount="0">
+          <legendlayer drawingOrder="62" open="true" checked="Qt::Unchecked" name="vl_channel_function_hydraulic" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_channel_function_hydraulic" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="64" open="true" checked="Qt::Unchecked" name="vl_channel_usage_current" showFeatureCount="0">
+          <legendlayer drawingOrder="63" open="true" checked="Qt::Unchecked" name="vl_channel_usage_current" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_channel_usage_current" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="65" open="true" checked="Qt::Unchecked" name="vl_channel_usage_planned" showFeatureCount="0">
+          <legendlayer drawingOrder="64" open="true" checked="Qt::Unchecked" name="vl_channel_usage_planned" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_channel_usage_planned" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Inspection">
-          <legendlayer drawingOrder="66" open="true" checked="Qt::Unchecked" name="vl_damage_channel_channel_damage_code" showFeatureCount="0">
+          <legendlayer drawingOrder="65" open="true" checked="Qt::Unchecked" name="vl_damage_channel_channel_damage_code" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_damage_channel_channel_damage_code" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="67" open="true" checked="Qt::Unchecked" name="vl_damage_connection" showFeatureCount="0">
+          <legendlayer drawingOrder="66" open="true" checked="Qt::Unchecked" name="vl_damage_connection" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_damage_connection" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="68" open="true" checked="Qt::Unchecked" name="vl_damage_manhole_manhole_damage_code" showFeatureCount="0">
+          <legendlayer drawingOrder="67" open="true" checked="Qt::Unchecked" name="vl_damage_manhole_manhole_damage_code" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_damage_manhole_manhole_damage_code" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="69" open="true" checked="Qt::Unchecked" name="vl_damage_manhole_manhole_shaft_area" showFeatureCount="0">
+          <legendlayer drawingOrder="68" open="true" checked="Qt::Unchecked" name="vl_damage_manhole_manhole_shaft_area" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_damage_manhole_manhole_shaft_area" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="70" open="true" checked="Qt::Unchecked" name="vl_damage_single_damage_class" showFeatureCount="0">
+          <legendlayer drawingOrder="69" open="true" checked="Qt::Unchecked" name="vl_damage_single_damage_class" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_damage_single_damage_class" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="71" open="true" checked="Qt::Unchecked" name="vl_data_media_kind" showFeatureCount="0">
+          <legendlayer drawingOrder="70" open="true" checked="Qt::Unchecked" name="vl_data_media_kind" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_data_media_kind" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="72" open="true" checked="Qt::Unchecked" name="vl_file_class" showFeatureCount="0">
+          <legendlayer drawingOrder="71" open="true" checked="Qt::Unchecked" name="vl_file_class" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_file_class" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="73" open="true" checked="Qt::Unchecked" name="vl_file_kind" showFeatureCount="0">
+          <legendlayer drawingOrder="72" open="true" checked="Qt::Unchecked" name="vl_file_kind" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_file_kind" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
         <legendgroup open="false" checked="Qt::Unchecked" name="Pipe Profile">
-          <legendlayer drawingOrder="74" open="true" checked="Qt::Unchecked" name="vl_pipe_profile_profile_type" showFeatureCount="0">
+          <legendlayer drawingOrder="73" open="true" checked="Qt::Unchecked" name="vl_pipe_profile_profile_type" showFeatureCount="0">
             <filegroup open="true" hidden="false">
               <legendlayerfile isInOverview="0" layerid="vl_pipe_profile_profile_type" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
-        <legendlayer drawingOrder="75" open="true" checked="Qt::Unchecked" name="od_pipe_profile" showFeatureCount="0">
+        <legendlayer drawingOrder="74" open="true" checked="Qt::Unchecked" name="od_pipe_profile" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_pipe_profile" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="Hydraulique">
-        <legendlayer drawingOrder="76" open="true" checked="Qt::Unchecked" name="vw_wastewater_node" showFeatureCount="0">
+        <legendlayer drawingOrder="75" open="true" checked="Qt::Unchecked" name="vw_wastewater_node" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_wastewater_node20150607121012062" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="Topologie">
-        <legendlayer drawingOrder="77" open="true" checked="Qt::Unchecked" name="vw_network_segment" showFeatureCount="0">
+        <legendlayer drawingOrder="76" open="true" checked="Qt::Unchecked" name="vw_network_segment" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_network_segment20150607120529381" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="78" open="true" checked="Qt::Unchecked" name="vw_network_node" showFeatureCount="0">
+        <legendlayer drawingOrder="77" open="true" checked="Qt::Unchecked" name="vw_network_node" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_network_node20150607120529398" visible="0"/>
           </filegroup>
@@ -1268,217 +1268,217 @@
     <legendgroup embedded="1" open="false" checked="Qt::PartiallyChecked" name="Fonds de plans" project="../cadastre/cadastre_pg.qgs"/>
     <legendgroup open="false" checked="Qt::PartiallyChecked" name="Technique - informatique">
       <legendgroup open="false" checked="Qt::Unchecked" name="Develop">
-        <legendlayer drawingOrder="79" open="true" checked="Qt::Unchecked" name="troncon - uas - test" showFeatureCount="0">
+        <legendlayer drawingOrder="78" open="true" checked="Qt::Unchecked" name="troncon - uas - test" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="tronçon_copier20190130090129621" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="80" open="false" checked="Qt::Unchecked" name="chambre - uas - test" showFeatureCount="0">
+        <legendlayer drawingOrder="79" open="false" checked="Qt::Unchecked" name="chambre - uas - test" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="chambre_copier20190130090215392" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="OLD">
-        <legendlayer drawingOrder="81" open="false" checked="Qt::Unchecked" name="Tronçons par numéro" showFeatureCount="0">
+        <legendlayer drawingOrder="80" open="false" checked="Qt::Unchecked" name="Tronçons par numéro" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçon_test_copier20180724170659439" visible="0"/>
           </filegroup>
         </legendlayer>
         <legendgroup open="false" checked="Qt::Unchecked" name="Tronçons par numéro">
-          <legendlayer drawingOrder="82" open="false" checked="Qt::Unchecked" name="2001" showFeatureCount="0">
+          <legendlayer drawingOrder="81" open="false" checked="Qt::Unchecked" name="2001" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier20180824132632463" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="83" open="false" checked="Qt::Unchecked" name="3001" showFeatureCount="0">
+          <legendlayer drawingOrder="82" open="false" checked="Qt::Unchecked" name="3001" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133119186" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="84" open="false" checked="Qt::Unchecked" name="3002" showFeatureCount="0">
+          <legendlayer drawingOrder="83" open="false" checked="Qt::Unchecked" name="3002" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133052477" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="85" open="false" checked="Qt::Unchecked" name="3003" showFeatureCount="0">
+          <legendlayer drawingOrder="84" open="false" checked="Qt::Unchecked" name="3003" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133119467" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="86" open="false" checked="Qt::Unchecked" name="3004" showFeatureCount="0">
+          <legendlayer drawingOrder="85" open="false" checked="Qt::Unchecked" name="3004" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824133045648" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="87" open="false" checked="Qt::Unchecked" name="3005" showFeatureCount="0">
+          <legendlayer drawingOrder="86" open="false" checked="Qt::Unchecked" name="3005" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133119742" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="88" open="false" checked="Qt::Unchecked" name="3006" showFeatureCount="0">
+          <legendlayer drawingOrder="87" open="false" checked="Qt::Unchecked" name="3006" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133052774" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="89" open="false" checked="Qt::Unchecked" name="3007" showFeatureCount="0">
+          <legendlayer drawingOrder="88" open="false" checked="Qt::Unchecked" name="3007" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120029" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="90" open="false" checked="Qt::Unchecked" name="3008" showFeatureCount="0">
+          <legendlayer drawingOrder="89" open="false" checked="Qt::Unchecked" name="3008" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132913433" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="91" open="false" checked="Qt::Unchecked" name="3009" showFeatureCount="0">
+          <legendlayer drawingOrder="90" open="false" checked="Qt::Unchecked" name="3009" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133120295" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="92" open="false" checked="Qt::Unchecked" name="3010" showFeatureCount="0">
+          <legendlayer drawingOrder="91" open="false" checked="Qt::Unchecked" name="3010" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133053039" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="93" open="false" checked="Qt::Unchecked" name="3011" showFeatureCount="0">
+          <legendlayer drawingOrder="92" open="false" checked="Qt::Unchecked" name="3011" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120570" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="94" open="false" checked="Qt::Unchecked" name="3012" showFeatureCount="0">
+          <legendlayer drawingOrder="93" open="false" checked="Qt::Unchecked" name="3012" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133045945" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="95" open="false" checked="Qt::Unchecked" name="3013" showFeatureCount="0">
+          <legendlayer drawingOrder="94" open="false" checked="Qt::Unchecked" name="3013" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133120851" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="96" open="false" checked="Qt::Unchecked" name="3014" showFeatureCount="0">
+          <legendlayer drawingOrder="95" open="false" checked="Qt::Unchecked" name="3014" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133053321" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="97" open="false" checked="Qt::Unchecked" name="4001" showFeatureCount="0">
+          <legendlayer drawingOrder="96" open="false" checked="Qt::Unchecked" name="4001" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132911680" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="98" open="false" checked="Qt::Unchecked" name="4003" showFeatureCount="0">
+          <legendlayer drawingOrder="97" open="false" checked="Qt::Unchecked" name="4003" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133053586" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="99" open="false" checked="Qt::Unchecked" name="4005" showFeatureCount="0">
+          <legendlayer drawingOrder="98" open="false" checked="Qt::Unchecked" name="4005" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046226" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="100" open="false" checked="Qt::Unchecked" name="4006" showFeatureCount="0">
+          <legendlayer drawingOrder="99" open="false" checked="Qt::Unchecked" name="4006" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133053836" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="101" open="false" checked="Qt::Unchecked" name="5001" showFeatureCount="0">
+          <legendlayer drawingOrder="100" open="false" checked="Qt::Unchecked" name="5001" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132909477" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="102" open="false" checked="Qt::Unchecked" name="5002" showFeatureCount="0">
+          <legendlayer drawingOrder="101" open="false" checked="Qt::Unchecked" name="5002" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133054102" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="103" open="false" checked="Qt::Unchecked" name="5003" showFeatureCount="0">
+          <legendlayer drawingOrder="102" open="false" checked="Qt::Unchecked" name="5003" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046492" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="104" open="false" checked="Qt::Unchecked" name="5004" showFeatureCount="0">
+          <legendlayer drawingOrder="103" open="false" checked="Qt::Unchecked" name="5004" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133054383" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="105" open="false" checked="Qt::Unchecked" name="5005" showFeatureCount="0">
+          <legendlayer drawingOrder="104" open="false" checked="Qt::Unchecked" name="5005" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132907430" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="106" open="false" checked="Qt::Unchecked" name="5006" showFeatureCount="0">
+          <legendlayer drawingOrder="105" open="false" checked="Qt::Unchecked" name="5006" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133054617" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="107" open="false" checked="Qt::Unchecked" name="5007" showFeatureCount="0">
+          <legendlayer drawingOrder="106" open="false" checked="Qt::Unchecked" name="5007" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133046759" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="108" open="false" checked="Qt::Unchecked" name="5008" showFeatureCount="0">
+          <legendlayer drawingOrder="107" open="false" checked="Qt::Unchecked" name="5008" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier_copier20180824133054820" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="109" open="false" checked="Qt::Unchecked" name="5010" showFeatureCount="0">
+          <legendlayer drawingOrder="108" open="false" checked="Qt::Unchecked" name="5010" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier20180824132902259" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="110" open="false" checked="Qt::Unchecked" name="5011" showFeatureCount="0">
+          <legendlayer drawingOrder="109" open="false" checked="Qt::Unchecked" name="5011" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133055008" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="111" open="false" checked="Qt::Unchecked" name="autres" showFeatureCount="0">
+          <legendlayer drawingOrder="110" open="false" checked="Qt::Unchecked" name="autres" showFeatureCount="0">
             <filegroup open="false" hidden="false">
               <legendlayerfile isInOverview="0" layerid="Tronçons_par_numéro_copier_copier_copier20180824133047040" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
-        <legendlayer drawingOrder="112" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernière inspection" showFeatureCount="0">
+        <legendlayer drawingOrder="111" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernière inspection" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçon_copier20180724163126100" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="113" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernier curage" showFeatureCount="0">
+        <legendlayer drawingOrder="112" open="false" checked="Qt::Unchecked" name="Tronçons - date et âge de dernier curage" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçons___date_et_âge_de_dernière_inspection_copier20181011180906702" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendlayer drawingOrder="114" open="true" checked="Qt::Unchecked" name="batch_cleaning" showFeatureCount="0">
+      <legendlayer drawingOrder="113" open="true" checked="Qt::Unchecked" name="batch_cleaning" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="batch_cleaning20181217105104951" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="115" open="true" checked="Qt::Checked" name="batch_inspection" showFeatureCount="0">
+      <legendlayer drawingOrder="114" open="true" checked="Qt::Checked" name="batch_inspection" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="batch_inspection20190306075313406" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="116" open="true" checked="Qt::Unchecked" name="collecting_pipe" showFeatureCount="0">
+      <legendlayer drawingOrder="115" open="true" checked="Qt::Unchecked" name="collecting_pipe" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="collecting_pipe20181217103527350" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="117" open="true" checked="Qt::Unchecked" name="vw_last_inspection" showFeatureCount="0">
+      <legendlayer drawingOrder="116" open="true" checked="Qt::Unchecked" name="vw_last_inspection" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_last_inspection_copier20181011170745103" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="118" open="true" checked="Qt::Unchecked" name="vw_last_cleaning" showFeatureCount="0">
+      <legendlayer drawingOrder="117" open="true" checked="Qt::Unchecked" name="vw_last_cleaning" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_last_inspection_copier_copier20181011170759603" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="119" open="true" checked="Qt::Unchecked" name="Refoulements (tous)" showFeatureCount="0">
+      <legendlayer drawingOrder="118" open="true" checked="Qt::Unchecked" name="Refoulements (tous)" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_qgep_reach20181211104448297" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="120" open="false" checked="Qt::Unchecked" name="Tronçons avec noms de collecteurs" showFeatureCount="0">
+      <legendlayer drawingOrder="119" open="false" checked="Qt::Unchecked" name="Tronçons avec noms de collecteurs" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="Tronçons___édition_des_noms_de_collecteurs_copier20181113113119692" visible="0"/>
         </filegroup>
@@ -62608,6 +62608,13 @@ def copy_style():
     <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
   </properties>
   <visibility-presets>
+    <visibility-preset name="QGEP">
+      <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
+      <layer style="" id="vw_qgep_wastewater_structure"/>
+      <layer style="" id="vw_qgep_reach"/>
+      <layer style="" id="lc_limites_commune20180525110719694"/>
+      <layer style="" id="batch_inspection20190306075313406"/>
+    </visibility-preset>
     <visibility-preset name="UAS - Collecteurs primaires">
       <layer style="" id="vw_collecting_pipe_agg20181217110633180"/>
       <layer style="" id="chambre_copier_copier20180726102643036"/>
