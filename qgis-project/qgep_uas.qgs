@@ -30,15 +30,24 @@
       <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_cover20190307112006113" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=Point table=&quot;qgep&quot;.&quot;vw_cover&quot; (situation_geometry) sql=" name="07 Couvercles">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-group expanded="1" checked="Qt::Unchecked" mutually-exclusive="1" name="Edition des données aggrégées" mutually-exclusive-child="0">
+      <layer-tree-group expanded="1" checked="Qt::Checked" mutually-exclusive="1" name="Edition des données aggrégées" mutually-exclusive-child="5">
         <customproperties/>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_edit_main_pipe_name20181015145410733" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="11 Edition des noms de collecteurs">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_edit_main_pipe_name20181015145410733" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="11 Géométrie des noms de collecteurs">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons___édition_des_noms_de_collecteurs_copier20181213135910977" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="12 Edition des lots de curages">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="collecting_pipe20181217103527350" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;collecting_pipe&quot; sql=" name="Collecteurs">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Edition_des_lot_de_curages_copier20190110093354404" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="13 Edition des lots d'inspections">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons___édition_des_noms_de_collecteurs_copier20181213135910977" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="12 Géométrie des lots de curages">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="batch_cleaning20181217105104951" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;batch_cleaning&quot; sql=" name="Lots de curages">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Edition_des_lot_de_curages_copier20190110093354404" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="13 Géométrie des lots d'inspections">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="batch_inspection20190306075313406" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;batch_inspection&quot; sql=" name="Lots d'inspection">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
@@ -352,7 +361,7 @@
         <property key="embedded_project" value="../cadastre/cadastre_pg.qgs"/>
       </customproperties>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Technique - informatique">
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Technique - informatique">
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Develop">
         <customproperties/>
@@ -477,15 +486,6 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="batch_cleaning20181217105104951" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;batch_cleaning&quot; sql=" name="batch_cleaning">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="batch_inspection20190306075313406" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;batch_inspection&quot; sql=" name="batch_inspection">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="collecting_pipe20181217103527350" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;collecting_pipe&quot; sql=" name="collecting_pipe">
-        <customproperties/>
-      </layer-tree-layer>
       <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_last_inspection_copier20181011170745103" source="service='pg_qgep' sslmode=disable key='fk_wastewater_structure' table=&quot;qgep_sige&quot;.&quot;vw_last_inspection&quot; sql=" name="vw_last_inspection">
         <customproperties/>
       </layer-tree-layer>
@@ -586,10 +586,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2555710.57973790680989623</xmin>
-      <ymin>1141883.32098176772706211</ymin>
-      <xmax>2558542.15469623124226928</xmax>
-      <ymax>1148269.22990491683594882</ymax>
+      <xmin>2556284.42193109076470137</xmin>
+      <ymin>1138247.05479082185775042</ymin>
+      <xmax>2561947.57184869330376387</xmax>
+      <ymax>1151018.87263902742415667</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -860,20 +860,35 @@
           <legendlayerfile isInOverview="0" layerid="vw_cover20190307112006113" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendgroup open="true" checked="Qt::Unchecked" name="Edition des données aggrégées">
-        <legendlayer drawingOrder="7" open="false" checked="Qt::Unchecked" name="11 Edition des noms de collecteurs" showFeatureCount="0">
+      <legendgroup open="true" checked="Qt::Checked" name="Edition des données aggrégées">
+        <legendlayer drawingOrder="7" open="false" checked="Qt::Unchecked" name="11 Géométrie des noms de collecteurs" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_edit_main_pipe_name20181015145410733" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="8" open="false" checked="Qt::Unchecked" name="12 Edition des lots de curages" showFeatureCount="0">
+        <legendlayer drawingOrder="115" open="true" checked="Qt::Unchecked" name="Collecteurs" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="collecting_pipe20181217103527350" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="8" open="false" checked="Qt::Unchecked" name="12 Géométrie des lots de curages" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Tronçons___édition_des_noms_de_collecteurs_copier20181213135910977" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="9" open="false" checked="Qt::Unchecked" name="13 Edition des lots d'inspections" showFeatureCount="0">
+        <legendlayer drawingOrder="113" open="true" checked="Qt::Unchecked" name="Lots de curages" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="batch_cleaning20181217105104951" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="9" open="false" checked="Qt::Unchecked" name="13 Géométrie des lots d'inspections" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="Edition_des_lot_de_curages_copier20190110093354404" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="114" open="true" checked="Qt::Checked" name="Lots d'inspection" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="batch_inspection20190306075313406" visible="1"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
@@ -1266,7 +1281,7 @@
       </legendgroup>
     </legendgroup>
     <legendgroup embedded="1" open="false" checked="Qt::PartiallyChecked" name="Fonds de plans" project="../cadastre/cadastre_pg.qgs"/>
-    <legendgroup open="false" checked="Qt::PartiallyChecked" name="Technique - informatique">
+    <legendgroup open="false" checked="Qt::Unchecked" name="Technique - informatique">
       <legendgroup open="false" checked="Qt::Unchecked" name="Develop">
         <legendlayer drawingOrder="78" open="true" checked="Qt::Unchecked" name="troncon - uas - test" showFeatureCount="0">
           <filegroup open="true" hidden="false">
@@ -1448,21 +1463,6 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendlayer drawingOrder="113" open="true" checked="Qt::Unchecked" name="batch_cleaning" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="batch_cleaning20181217105104951" visible="0"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="114" open="true" checked="Qt::Checked" name="batch_inspection" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="batch_inspection20190306075313406" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="115" open="true" checked="Qt::Unchecked" name="collecting_pipe" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="collecting_pipe20181217103527350" visible="0"/>
-        </filegroup>
-      </legendlayer>
       <legendlayer drawingOrder="116" open="true" checked="Qt::Unchecked" name="vw_last_inspection" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_last_inspection_copier20181011170745103" visible="0"/>
@@ -1492,7 +1492,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>13 Edition des lots d'inspections</layername>
+      <layername>13 Géométrie des lots d'inspections</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
@@ -6851,7 +6851,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>12 Edition des lots de curages</layername>
+      <layername>12 Géométrie des lots de curages</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
@@ -36652,7 +36652,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>batch_cleaning</layername>
+      <layername>Lots de curages</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -36823,7 +36823,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>batch_inspection</layername>
+      <layername>Lots d'inspection</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -36989,7 +36989,7 @@ def my_form_open(dialog, layer, feature):
         <default field="collecting_pipe_name" expression=""/>
         <default field="Situation et nom de collecteur" expression=""/>
       </defaults>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE("code", '&lt;NULL>')</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="1" maximumScale="5000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <id>chambre_copier20190130090215392</id>
@@ -39714,7 +39714,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>collecting_pipe</layername>
+      <layername>Collecteurs</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -53293,7 +53293,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>11 Edition des noms de collecteurs</layername>
+      <layername>11 Géométrie des noms de collecteurs</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
@@ -62648,39 +62648,36 @@ def copy_style():
   </properties>
   <visibility-presets>
     <visibility-preset name="QGEP">
+      <layer style="" id="batch_inspection20190306075313406"/>
       <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
       <layer style="" id="vw_qgep_wastewater_structure"/>
       <layer style="" id="vw_qgep_reach"/>
       <layer style="" id="lc_limites_commune20180525110719694"/>
-      <layer style="" id="batch_inspection20190306075313406"/>
     </visibility-preset>
     <visibility-preset name="UAS - Collecteurs primaires">
       <layer style="" id="vw_collecting_pipe_agg20181217110633180"/>
       <layer style="" id="chambre_copier_copier20180726102643036"/>
+      <layer style="" id="batch_inspection20190306075313406"/>
       <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
       <layer style="" id="lc_limites_commune20180525110719694"/>
-      <layer style="" id="batch_inspection20190306075313406"/>
     </visibility-preset>
     <visibility-preset name="UAS - Editer le lot d'inspection d'un tronçon">
       <layer style="" id="chambre_copier_copier20180726102643036"/>
       <layer style="" id="Edition_des_lot_de_curages_copier20190110093354404"/>
       <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
       <layer style="" id="lc_limites_commune20180525110719694"/>
-      <layer style="" id="batch_inspection20190306075313406"/>
     </visibility-preset>
     <visibility-preset name="UAS - Editer le lot de curage d'un tronçon">
       <layer style="" id="chambre_copier_copier20180726102643036"/>
       <layer style="" id="Tronçons___édition_des_noms_de_collecteurs_copier20181213135910977"/>
       <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
       <layer style="" id="lc_limites_commune20180525110719694"/>
-      <layer style="" id="batch_inspection20190306075313406"/>
     </visibility-preset>
     <visibility-preset name="UAS - Editer le nom de collecteur d'un tronçon">
       <layer style="" id="chambre_copier_copier20180726102643036"/>
       <layer style="" id="vw_edit_main_pipe_name20181015145410733"/>
       <layer style="" id="SWISSIMAGE_Fond_de_plan20190306170954412"/>
       <layer style="" id="lc_limites_commune20180525110719694"/>
-      <layer style="" id="batch_inspection20190306075313406"/>
     </visibility-preset>
   </visibility-presets>
 </qgis>
