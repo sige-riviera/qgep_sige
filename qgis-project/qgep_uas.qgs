@@ -35,19 +35,19 @@
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_edit_main_pipe_name20181015145410733" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="11 Géométrie des noms de collecteurs">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="collecting_pipe20181217103527350" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;collecting_pipe&quot; sql=" name="Collecteurs">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="collecting_pipe20181217103527350" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;collecting_pipe&quot; sql=" name="Données des collecteurs">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Tronçons___édition_des_noms_de_collecteurs_copier20181213135910977" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="12 Géométrie des lots de curages">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="batch_cleaning20181217105104951" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;batch_cleaning&quot; sql=" name="Lots de curages">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="batch_cleaning20181217105104951" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;batch_cleaning&quot; sql=" name="Données des lots de curages">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="Edition_des_lot_de_curages_copier20190110093354404" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='obj_id' srid=2056 type=CompoundCurveZ table=&quot;qgep_sige&quot;.&quot;vw_edit_collecting_pipe&quot; (progression_geometry) sql=" name="13 Géométrie des lots d'inspections">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="batch_inspection20190306075313406" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;batch_inspection&quot; sql=" name="Lots d'inspection">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="batch_inspection20190306075313406" source="dbname='qgep_prod' service='pg_qgep' sslmode=disable key='code' table=&quot;qgep_sige&quot;.&quot;batch_inspection&quot; sql=" name="Données des lots d'inspections">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
@@ -586,10 +586,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2556284.42193109076470137</xmin>
-      <ymin>1138247.05479082185775042</ymin>
-      <xmax>2561947.57184869330376387</xmax>
-      <ymax>1151018.87263902742415667</ymax>
+      <xmin>2556016.55697614140808582</xmin>
+      <ymin>1141426.99802849651314318</ymin>
+      <xmax>2558848.13193494267761707</xmax>
+      <ymax>1147812.90695259929634631</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -866,7 +866,7 @@
             <legendlayerfile isInOverview="0" layerid="vw_edit_main_pipe_name20181015145410733" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="115" open="true" checked="Qt::Unchecked" name="Collecteurs" showFeatureCount="0">
+        <legendlayer drawingOrder="115" open="true" checked="Qt::Unchecked" name="Données des collecteurs" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="collecting_pipe20181217103527350" visible="0"/>
           </filegroup>
@@ -876,7 +876,7 @@
             <legendlayerfile isInOverview="0" layerid="Tronçons___édition_des_noms_de_collecteurs_copier20181213135910977" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="113" open="true" checked="Qt::Unchecked" name="Lots de curages" showFeatureCount="0">
+        <legendlayer drawingOrder="113" open="true" checked="Qt::Unchecked" name="Données des lots de curages" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="batch_cleaning20181217105104951" visible="0"/>
           </filegroup>
@@ -886,7 +886,7 @@
             <legendlayerfile isInOverview="0" layerid="Edition_des_lot_de_curages_copier20190110093354404" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="114" open="true" checked="Qt::Checked" name="Lots d'inspection" showFeatureCount="0">
+        <legendlayer drawingOrder="114" open="true" checked="Qt::Checked" name="Données des lots d'inspections" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="batch_inspection20190306075313406" visible="1"/>
           </filegroup>
@@ -36652,7 +36652,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>Lots de curages</layername>
+      <layername>Données des lots de curages</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -36823,7 +36823,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>Lots d'inspection</layername>
+      <layername>Données des lots d'inspections</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -39714,7 +39714,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>Collecteurs</layername>
+      <layername>Données des collecteurs</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -39766,7 +39766,7 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="code"/>
-          <column width="-1" hidden="0" type="field" name="name"/>
+          <column width="242" hidden="0" type="field" name="name"/>
           <column width="-1" hidden="0" type="field" name="situation"/>
           <column width="-1" hidden="0" type="field" name="min_chamber_name"/>
           <column width="-1" hidden="0" type="field" name="max_chamber_name"/>
