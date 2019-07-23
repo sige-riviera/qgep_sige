@@ -51949,10 +51949,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="width_no_data"/>
           <column width="-1" hidden="0" type="field" name="width_200"/>
           <column width="-1" hidden="0" type="field" name="width_500"/>
-          <column width="-1" hidden="0" type="field" name="total_length_by_width"/>
-          <column width="-1" hidden="0" type="field" name="total_length_by_material"/>
+          <column width="100" hidden="0" type="field" name="width_non_circular"/>
+          <column width="199" hidden="0" type="field" name="total_length_by_width"/>
+          <column width="217" hidden="0" type="field" name="total_length_by_material"/>
           <column width="-1" hidden="0" type="field" name="total_length"/>
-          <column width="-1" hidden="0" type="field" name="width_non_circular"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
