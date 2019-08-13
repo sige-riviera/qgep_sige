@@ -83,3 +83,8 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/prank_weir.s
 
 # Change owner
 PGSERVICE=${PGSERVICE} OWNER=qgep SCHEMA=qgep_od DATABASE=qgep_poc ${DIR}/datamodel/scripts/change_owner.sh
+
+# Add Export views
+
+${DIR}/datamodel/view/export/insert_export_views.sh
+
