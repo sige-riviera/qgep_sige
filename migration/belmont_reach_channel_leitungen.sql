@@ -32,6 +32,9 @@ INSERT INTO qgep_od.vw_qgep_reach(
   ws_fk_owner,
   ws_identifier,
   ws_remark,
+  ws_pully_id_topobase,
+  ws_pully_table_topobase,
+  ws_pully_db_topobase,
   --Network element
   identifier,
   --Reach point from
@@ -62,8 +65,11 @@ SELECT
   st.new, -- status
   baujahr, -- year_of_construction
   anschluss.id_eigentumsverhaeltnis, -- fk_owner
-  anschluss.fid, -- ws_identifier
-  bemerkung,--substr(bemerkung, 1, 80),--remark
+  anschluss.name, -- ws_identifier
+  bemerkung,--remark
+  anschluss.fid,
+  'AW_ANSCHLUSSLEITUNG',
+  'BELMONT_ASS',
   --Network element
   anschluss.fid, -- re_identifier
   --(Automatic)

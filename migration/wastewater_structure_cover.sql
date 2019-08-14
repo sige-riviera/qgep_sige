@@ -52,6 +52,9 @@ INSERT INTO qgep_od.vw_qgep_wastewater_structure
   year_of_construction,
   fk_owner,
   ws_type,
+  pully_id_topobase,
+  pully_table_topobase,
+  pully_db_topobase,
   -- cover
   co_shape,
   co_diameter,
@@ -86,6 +89,9 @@ SELECT
   schacht.baujahr, -- construction year
   schacht.id_eigentumsverhaeltnis, -- owner
   COALESCE(st_type.new,'manhole'),
+  schacht.fid,
+  'AW_SCHACHT',
+  'PULLY_ASS',
   --cover
   co_s.new,  -- shape
   deckel.deckel_dn, -- diameter
