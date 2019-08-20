@@ -31,6 +31,7 @@ INSERT INTO qgep_od.vw_qgep_reach(
   ws_fk_owner,
   ws_identifier,
   ws_remark,
+  ws_structure_condition,
   ws_pully_id_topobase,
   ws_pully_table_topobase,
   ws_pully_db_topobase,
@@ -65,6 +66,7 @@ SELECT
   haltung.id_eigentumsverhaeltnis, -- fk_owner
   haltung.name,--identifier
   bemerkung,--remark
+  rst.new,
   haltung.fid,
   'AW_HALTUNG',
   'PULLY_ASS',
@@ -79,6 +81,7 @@ SELECT
 
 FROM pully_ass.aw_haltung haltung
 LEFT JOIN haltungen_geo geom on geom.gid = haltung.gid
+LEFT JOIN migration.map_reach_structure_condition rst ON haltung.p_etat_id = rst.old
 LEFT JOIN migration.map_function_hierarchic fh ON haltung.id_funktion_hierarch = fh.old --OR (fh.old IS NULL AND haltung.id_funktion_hierarch IS NULL)
 LEFT JOIN migration.map_horizontal_positioning hp ON haltung.id_lagegenauigkeit = hp.old
 LEFT JOIN migration.map_usage_current uc ON haltung.id_nutzungs_art = uc.old
