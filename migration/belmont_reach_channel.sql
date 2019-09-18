@@ -104,7 +104,8 @@ LEFT JOIN qgep_od.pipe_profile pp ON pp.profile_type =
 LEFT JOIN migration.map_reach_material rm ON haltung.id_material = rm.old
 LEFT JOIN migration.map_function_hydraulic fhy ON haltung.id_funktion_hydrau = fhy.old
 LEFT JOIN migration.map_elevation_determination ed ON haltung.id_hoehengenauigkeit = ed.old
-LEFT JOIN migration.map_status st ON haltung.id_status = st.old;
+LEFT JOIN migration.map_status st ON haltung.id_status = st.old
+WHERE ST_3dLength(geometry) IS NOT NULL;
 
 /* Deleted items have been filtered at export
 WHERE COALESCE(haltung.deleted, 0) = 0;*/

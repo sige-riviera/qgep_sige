@@ -149,9 +149,10 @@ LEFT JOIN migration.map_manhole_material mm ON schacht.id_material = mm.old
 -- Special structure
 LEFT JOIN migration.map_special_structure_function sf ON schacht.id_schachtart = sf.old
 -- Type
-LEFT JOIN migration.map_structure_type st_type ON schacht.id_schachtart = st_type.old;
+LEFT JOIN migration.map_structure_type st_type ON schacht.id_schachtart = st_type.old
 -- Filter deleted items has been done earlier with FME
 --WHERE COALESCE(deckel.deleted, 0) = 0 AND COALESCE(schacht.deleted, 0) = 0;
+WHERE ST_Multi(ST_SetSRID(ST_MakePoint( schacht_geo.y1, schacht_geo.x1, coalesce(schacht_geo.z1,0)),21781))::geometry(MultiPointZ, 21781)IS NOT NULL;
 
 -------------------------
 -- ACCESS AID

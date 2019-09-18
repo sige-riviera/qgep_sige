@@ -107,7 +107,8 @@ LEFT JOIN qgep_od.pipe_profile pp ON pp.profile_type =
 LEFT JOIN migration.map_reach_material_leitungen rml ON anschluss.id_material = rml.old
 LEFT JOIN migration.map_function_hydraulic_leitungen fhyl ON anschluss.id_funktion_hydrau = fhyl.old
 LEFT JOIN migration.map_elevation_determination ed ON anschluss.id_hoehengenauigkeit = ed.old
-LEFT JOIN migration.map_status st ON anschluss.id_status = st.old;
+LEFT JOIN migration.map_status st ON anschluss.id_status = st.old
+WHERE ST_3dLength(geometry) IS NOT NULL;
 
 /* DELETED have been filtered at export
 WHERE COALESCE(anschluss.deleted, 0) = 0;*/
