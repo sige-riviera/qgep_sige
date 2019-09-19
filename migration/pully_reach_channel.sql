@@ -29,8 +29,8 @@ INSERT INTO qgep_od.vw_qgep_reach(
   ws_status,
   ws_year_of_construction,
   ws_fk_owner,
-  ws_identifier,
-  ws_remark,
+  identifier, --moved to reach
+  remark, --moved to reach
   ws_structure_condition,
   ws_pully_id_topobase,
   ws_pully_table_topobase,

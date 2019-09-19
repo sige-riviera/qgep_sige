@@ -30,8 +30,8 @@ INSERT INTO qgep_od.vw_qgep_reach(
   ws_status,
   ws_year_of_construction,
   ws_fk_owner,
-  ws_identifier,
-  ws_remark,
+  identifier, --moved to reach
+  remark, --moved to reach
   ws_pully_id_topobase,
   ws_pully_table_topobase,
   ws_pully_db_topobase,
@@ -65,7 +65,7 @@ SELECT
   st.new, -- status
   baujahr, -- year_of_construction
   anschluss.id_eigentumsverhaeltnis, -- fk_owner
-  anschluss.name, -- ws_identifier
+  anschluss.fid, -- ws_identifier
   bemerkung,--remark
   anschluss.fid,
   'AW_ANSCHLUSSLEITUNG',
