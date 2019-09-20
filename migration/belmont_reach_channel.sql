@@ -30,12 +30,12 @@ INSERT INTO qgep_od.vw_qgep_reach(
   ws_year_of_construction,
   ws_fk_owner,
   ws_identifier,
-  identifier, --moved to reach
   remark, --moved to reach
   ws_pully_id_topobase,
   ws_pully_table_topobase,
   ws_pully_db_topobase,
   --Network element
+  identifier,
   --Reach point from
   rp_from_identifier,
   rp_from_level,
@@ -64,13 +64,13 @@ SELECT
   st.new, -- status
   baujahr, -- year_of_construction
   haltung.id_eigentumsverhaeltnis, -- fk_owner
-  haltung.name,
   haltung.name,--identifier
   bemerkung,--remark
   haltung.fid,
   'AW_HALTUNG',
   'BELMONT_ASS',
   --Network element
+  haltung.name,
   --(Automatic)
   --Reach point from
   fid_vs,

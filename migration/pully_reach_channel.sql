@@ -30,13 +30,13 @@ INSERT INTO qgep_od.vw_qgep_reach(
   ws_year_of_construction,
   ws_fk_owner,
   ws_identifier,
-  identifier, --moved to reach
   remark, --moved to reach
   ws_structure_condition,
   ws_pully_id_topobase,
   ws_pully_table_topobase,
   ws_pully_db_topobase,
   --Network element
+  identifier,
   --Reach point from
   rp_from_identifier,
   rp_from_level,
@@ -66,13 +66,13 @@ SELECT
   baujahr, -- year_of_construction
   haltung.id_eigentumsverhaeltnis, -- fk_owner
   haltung.name, --ws_identifier
-  haltung.name, --identifier
   bemerkung, --remark
   rst.new,
   haltung.fid,
   'AW_HALTUNG',
   'PULLY_ASS',
   --Network element
+  haltung.name,
   --(Automatic)
   --Reach point from
   fid_vs,
