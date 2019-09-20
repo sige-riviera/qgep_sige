@@ -29,6 +29,7 @@ INSERT INTO qgep_od.vw_qgep_reach(
   ws_status,
   ws_year_of_construction,
   ws_fk_owner,
+  ws_identifier,
   identifier, --moved to reach
   remark, --moved to reach
   ws_structure_condition,
@@ -64,8 +65,9 @@ SELECT
   st.new, -- status
   baujahr, -- year_of_construction
   haltung.id_eigentumsverhaeltnis, -- fk_owner
-  haltung.name,--identifier
-  bemerkung,--remark
+  haltung.name, --ws_identifier
+  haltung.name, --identifier
+  bemerkung, --remark
   rst.new,
   haltung.fid,
   'AW_HALTUNG',
