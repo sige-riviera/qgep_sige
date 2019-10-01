@@ -39,6 +39,9 @@ psql "service=${PGSERVICE}" -c "INSERT INTO qgep_sys.oid_prefixes (prefix,organi
 psql "service=${PGSERVICE}" -c "UPDATE qgep_sys.oid_prefixes SET active=TRUE WHERE prefix='${OIDPREFIX}'"
 psql "service=${PGSERVICE}" -c "UPDATE qgep_sys.oid_prefixes SET active=FALSE WHERE prefix<>'${OIDPREFIX}'"
 
+#Deactivate symbology triggers
+psql "service=${PGSERVICE}" -c "SELECT qgep_sys.drop_symbology_triggers()"
+
 # Option to restore from backup.
 #PGSERVICE=${PGSERVICE} pg_restore --no-owner -d ${PGSERVICE} ${DIR}/migration/dump_topobase_95.backup
 
@@ -92,6 +95,11 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/data_media.s
 
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/lien_chambres_pully.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/lien_collecteurs_pully.sql
+
+#Symbology
+psql "service=${PGSERVICE}" -c "SELECT qgep_sys.create_symbology_triggers()"
+psql "service=${PGSERVICE}" -c "SELECT qgep_od.update_wastewater_structure_label(NULL, true)"
+psql "service=${PGSERVICE}" -c "SELECT qgep_od.update_wastewater_structure_symbology(NULL,true)"
 
 # Add Export views
 
