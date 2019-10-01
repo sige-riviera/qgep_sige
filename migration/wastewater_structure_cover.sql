@@ -82,7 +82,7 @@ INSERT INTO qgep_od.vw_qgep_wastewater_structure
 SELECT
   -- wastewater structure
   acc.new, -- accessibility
-  schacht.fid, -- identifier
+  schacht.name, -- identifier
   schacht.bemerkung, --substr(schacht.bemerkung, 1, 80), -- remark on structure
   st.new, -- status
   stc.new, -- structure condition
