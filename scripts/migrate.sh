@@ -87,6 +87,9 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/prank_weir.s
 # Change owner
 PGSERVICE=${PGSERVICE} OWNER=qgep SCHEMA=qgep_od DATABASE=qgep_poc ${DIR}/datamodel/scripts/change_owner.sh
 
+#Détail des ouvrages
+psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/detail_ouvrages.sql
+
 # Topologie
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/topologie.sql
 
