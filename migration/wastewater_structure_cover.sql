@@ -99,11 +99,11 @@ SELECT
   deckel_geo.z1, -- level
   co_m.new, -- material
 --  hp.new, -- horizontal positionning
-  deckel.name, --identifier
+  deckel.fid, --identifier
   deckel.bemerkung, --substr(deckel.bemerkung, 1, 80), -- remark on cover
   --node
   sohle_geo.z1,
-  schacht.fid,
+  sohle.fid,
   --manhole
   schacht.dn, -- diameter nominal
   schacht.breite, -- width
@@ -152,7 +152,9 @@ LEFT JOIN migration.map_special_structure_function sf ON schacht.id_schachtart =
 LEFT JOIN migration.map_structure_type st_type ON schacht.id_schachtart = st_type.old
 -- Filter deleted items has been done earlier with FME
 --WHERE COALESCE(deckel.deleted, 0) = 0 AND COALESCE(schacht.deleted, 0) = 0;
-WHERE ST_SetSRID(ST_MakePoint( schacht_geo.y1, schacht_geo.x1, coalesce(schacht_geo.z1,0)),21781)::geometry(PointZ, 21781)IS NOT NULL;
+WHERE ST_SetSRID(ST_MakePoint( schacht_geo.y1, schacht_geo.x1, coalesce(schacht_geo.z1,0)),21781)::geometry(PointZ, 21781)IS NOT NULL
+AND deckel.fid IN (SELECT distinct on (fid_schacht ) fid FROM migration.schacht_deckel deckel ORDER by fid_schacht)
+AND sohle.fid IN (SELECT distinct on (fid_schacht ) fid FROM migration.schacht_sohle sohle ORDER by fid_schacht);
 
 -------------------------
 -- ACCESS AID
