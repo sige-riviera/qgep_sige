@@ -153,8 +153,10 @@ LEFT JOIN migration.map_structure_type st_type ON schacht.id_schachtart = st_typ
 -- Filter deleted items has been done earlier with FME
 --WHERE COALESCE(deckel.deleted, 0) = 0 AND COALESCE(schacht.deleted, 0) = 0;
 WHERE ST_SetSRID(ST_MakePoint( schacht_geo.y1, schacht_geo.x1, coalesce(schacht_geo.z1,0)),21781)::geometry(PointZ, 21781)IS NOT NULL
-AND deckel.fid IN (SELECT distinct on (fid_schacht ) fid FROM migration.schacht_deckel deckel ORDER by fid_schacht)
-AND sohle.fid IN (SELECT distinct on (fid_schacht ) fid FROM migration.schacht_sohle sohle ORDER by fid_schacht);
+--AND deckel.fid IN (SELECT distinct on (fid_schacht ) fid FROM migration.schacht_deckel deckel ORDER by fid_schacht)
+--AND sohle.fid IN (SELECT distinct on (fid_schacht ) fid FROM migration.schacht_sohle sohle ORDER by fid_schacht)
+AND schacht.id_status != 3
+;
 
 -------------------------
 -- ACCESS AID
@@ -184,6 +186,7 @@ WHERE id_schachtart = 10006;
 -------------------------
 -- overflows
 -------------------------
+
 
 
 -------------------------
