@@ -184,9 +184,30 @@ LEFT JOIN qgep_od.wastewater_structure ws ON schacht.fid::text = ws.identifier
 WHERE id_schachtart = 10006;
 
 -------------------------
--- overflows
+-- 
 -------------------------
 
+INSERT INTO qgep_od.vw_wastewater_node
+(
+identifier,
+remark,
+bottom_level,
+situation_geometry
+)
+
+SELECT
+schacht.fid,
+art.value,
+coalesce(schacht_geo.z1,sohle_geo.z1,0),
+ST_SetSRID(ST_MakePoint( coalesce(sohle_geo.y1,schacht_geo.y1,0), coalesce(sohle_geo.x1,schacht_geo.x1,0), coalesce(sohle_geo.z1,schacht_geo.z1,0)),21781)::geometry(PointZ, 21781)
+
+FROM migration.schacht schacht
+LEFT JOIN migration.schacht_geo schacht_geo ON schacht_geo.gid = schacht.gid
+LEFT JOIN migration.schacht_sohle sohle ON schacht.fid = sohle.fid_schacht
+LEFT JOIN migration.schacht_sohle_geo sohle_geo ON sohle_geo.gid = sohle.gid
+LEFT JOIN pully_ass.aw_schacht_art_tbd art ON schacht.id_schachtart = art.id
+WHERE schacht.id_status = 3
+AND ST_SetSRID(ST_MakePoint( coalesce(sohle_geo.y1,schacht_geo.y1,0), coalesce(sohle_geo.x1,schacht_geo.x1,0), coalesce(sohle_geo.z1,schacht_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
 
 
 -------------------------
