@@ -67,6 +67,7 @@ INSERT INTO qgep_od.vw_qgep_wastewater_structure
   --node
   wn_bottom_level,
   wn_identifier,
+  wn_pully_node_type,
   --manhole
   ma_dimension1,
   ma_dimension2,
@@ -104,6 +105,7 @@ SELECT
   --node
   sohle_geo.z1,
   sohle.fid,
+  10001,
   --manhole
   schacht.dn, -- diameter nominal
   schacht.breite, -- width
@@ -191,6 +193,7 @@ INSERT INTO qgep_od.vw_wastewater_node
 (
 identifier,
 remark,
+pully_node_type,
 bottom_level,
 situation_geometry
 )
@@ -198,6 +201,7 @@ situation_geometry
 SELECT
 schacht.fid,
 art.value,
+mnt.new,
 coalesce(schacht_geo.z1,sohle_geo.z1,0),
 ST_SetSRID(ST_MakePoint( coalesce(sohle_geo.y1,schacht_geo.y1,0), coalesce(sohle_geo.x1,schacht_geo.x1,0), coalesce(sohle_geo.z1,schacht_geo.z1,0)),21781)::geometry(PointZ, 21781)
 
@@ -206,6 +210,7 @@ LEFT JOIN migration.schacht_geo schacht_geo ON schacht_geo.gid = schacht.gid
 LEFT JOIN migration.schacht_sohle sohle ON schacht.fid = sohle.fid_schacht
 LEFT JOIN migration.schacht_sohle_geo sohle_geo ON sohle_geo.gid = sohle.gid
 LEFT JOIN pully_ass.aw_schacht_art_tbd art ON schacht.id_schachtart = art.id
+LEFT JOIN migration.map_node_type mnt ON schacht.id_schachtart = mnt.old
 WHERE schacht.id_status = 3
 AND ST_SetSRID(ST_MakePoint( coalesce(sohle_geo.y1,schacht_geo.y1,0), coalesce(sohle_geo.x1,schacht_geo.x1,0), coalesce(sohle_geo.z1,schacht_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
 
