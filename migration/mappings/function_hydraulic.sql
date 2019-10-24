@@ -28,7 +28,6 @@ INSERT INTO migration.map_function_hydraulic (old, new) VALUES
 (4,     3610), -- Syphon inversé -> inverted syphon
 (5,     367), -- Conduite a ecoulement libre -> gravity_pipe
 (6,	367), -- Conduite d'assainissement -> gravity_pipe
-(6,     5320), -- conduite d'infiltration ou de drainage -> other
 (7,     21), -- conduite d'accumulation -> retention_pipe
 (8,     2546), -- Conduite de transport -> drainage_transportation_pipe
 (9,     144), -- Conduite de rincage -> jetting_pipe
