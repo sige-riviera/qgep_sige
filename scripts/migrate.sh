@@ -109,3 +109,5 @@ psql "service=${PGSERVICE}" -c "SELECT qgep_od.update_wastewater_structure_symbo
 
 ${DIR}/datamodel/view/export/insert_export_views.sh
 
+${DIR}/datamodel/view/pully/insert_sigip_views.sh
+

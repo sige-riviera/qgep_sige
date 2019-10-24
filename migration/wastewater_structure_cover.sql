@@ -68,6 +68,7 @@ INSERT INTO qgep_od.vw_qgep_wastewater_structure
   wn_bottom_level,
   wn_identifier,
   wn_pully_node_type,
+  wn_pully_orientation,
   --manhole
   ma_dimension1,
   ma_dimension2,
@@ -106,6 +107,7 @@ SELECT
   sohle_geo.z1,
   sohle.fid,
   10001,
+  round(coalesce(sohle_geo.orientation,schacht_geo.orientation,0)/400*360,2),
   --manhole
   schacht.dn, -- diameter nominal
   schacht.breite, -- width
@@ -195,6 +197,7 @@ identifier,
 remark,
 pully_node_type,
 bottom_level,
+pully_orientation,
 situation_geometry
 )
 
@@ -203,6 +206,7 @@ schacht.fid,
 art.value,
 mnt.new,
 coalesce(schacht_geo.z1,sohle_geo.z1,0),
+round(coalesce(sohle_geo.orientation,schacht_geo.orientation,0)/400*360,2),
 ST_SetSRID(ST_MakePoint( coalesce(sohle_geo.y1,schacht_geo.y1,0), coalesce(sohle_geo.x1,schacht_geo.x1,0), coalesce(sohle_geo.z1,schacht_geo.z1,0)),21781)::geometry(PointZ, 21781)
 
 FROM migration.schacht schacht
