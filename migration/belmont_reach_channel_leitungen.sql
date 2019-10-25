@@ -88,22 +88,9 @@ LEFT JOIN migration.map_usage_current uc ON anschluss.id_nutzungs_art = uc.old
 LEFT JOIN pully_ass.aw_profilart_tbd pa ON pa.id = anschluss.id_profilart
 -- Join the profile based on it's type and the height/width-ratio
 -- This code has to match the code in profiles.sql
-LEFT JOIN qgep_od.pipe_profile pp ON pp.profile_type =
-  CASE WHEN pa.id=1 THEN 3351 -- ovoide
-     WHEN pa.id=2 THEN 3350 -- circulaire
-     WHEN pa.id=3 THEN 3350 -- circulaire double
-     WHEN pa.id=4 THEN 3352 -- profil en voute
-     WHEN pa.id=5 THEN 3354 -- profil ouvert
-     WHEN pa.id=6 THEN 3353 -- rectangulaire
-     WHEN pa.id=7 THEN 3355 -- cunette -> profil special
-     WHEN pa.id=8 THEN 3355 -- profil special
-     WHEN pa.id=9 THEN 3357 -- inconnu
-     WHEN pa.id=10 THEN 3355 -- autre -> profil special?
-     WHEN pa.id=100 THEN 3355 -- apparent -> profil special?
-     WHEN pa.id=101 THEN 3355 -- perfore -> profil special?
-  END
+LEFT JOIN migration.map_profile_type mpt ON mpt.old = anschluss.id_profilart
+LEFT JOIN qgep_od.pipe_profile pp ON pp.profile_type = mpt.new
   AND pp.height_width_ratio = COALESCE(round(NULLIF(anschluss.profil_hoehe, 0)/anschluss.profil_breite, 2),1)
-
 LEFT JOIN migration.map_reach_material_leitungen rml ON anschluss.id_material = rml.old
 LEFT JOIN migration.map_function_hydraulic_leitungen fhyl ON anschluss.id_funktion_hydrau = fhyl.old
 LEFT JOIN migration.map_elevation_determination ed ON anschluss.id_hoehengenauigkeit = ed.old
