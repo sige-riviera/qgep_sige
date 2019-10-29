@@ -62,11 +62,11 @@ INSERT INTO qgep_od.vw_qgep_wastewater_structure
   co_level,
   co_material,
 --  positional_accuracy,
-  co_identifier,
+  --co_identifier, takes ws identifier as default
   co_remark,
   --node
   wn_bottom_level,
-  wn_identifier,
+  --wn_identifier, takes ws identifier as default
   wn_pully_node_type,
   wn_pully_orientation,
   --manhole
@@ -84,7 +84,7 @@ INSERT INTO qgep_od.vw_qgep_wastewater_structure
 SELECT
   -- wastewater structure
   acc.new, -- accessibility
-  schacht.name, -- identifier
+  schacht.fid, -- identifier MUST BE REPLACED BY NAME AFTER TOPOLOGY UPDATE
   schacht.bemerkung, --substr(schacht.bemerkung, 1, 80), -- remark on structure
   st.new, -- status
   stc.new, -- structure condition
@@ -101,11 +101,11 @@ SELECT
   deckel_geo.z1, -- level
   co_m.new, -- material
 --  hp.new, -- horizontal positionning
-  deckel.fid, --identifier
+  --deckel.fid, --identifier
   deckel.bemerkung, --substr(deckel.bemerkung, 1, 80), -- remark on cover
   --node
   sohle_geo.z1,
-  sohle.fid,
+  --sohle.fid,
   10001,
   round(coalesce(sohle_geo.orientation,schacht_geo.orientation,0)/400*360,2),
   --manhole
