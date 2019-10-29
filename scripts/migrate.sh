@@ -89,7 +89,7 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/prank_weir.s
 # Change owner
 PGSERVICE=${PGSERVICE} OWNER=qgep SCHEMA=qgep_od DATABASE=qgep_poc ${DIR}/datamodel/scripts/change_owner.sh
 
-#Détail des ouvrages
+# Détail des ouvrages
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/detail_ouvrages.sql
 
 # Topologie
@@ -101,10 +101,13 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/data_media.s
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/lien_chambres_pully.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/lien_collecteurs_pully.sql
 
-#Symbology
-psql "service=${PGSERVICE}" -c "SELECT qgep_sys.create_symbology_triggers()"
-psql "service=${PGSERVICE}" -c "SELECT qgep_od.update_wastewater_structure_label(NULL, true)"
-psql "service=${PGSERVICE}" -c "SELECT qgep_od.update_wastewater_structure_symbology(NULL,true)"
+# Symbology
+psql "service=${PGSERVICE}" -c "SELECT qgep_sys.create_symbology_triggers();"
+psql "service=${PGSERVICE}" -c "SELECT qgep_od.update_wastewater_structure_label(NULL, true);"
+psql "service=${PGSERVICE}" -c "SELECT qgep_od.update_wastewater_structure_symbology(NULL,true);"
+
+# Update depth
+psql "service=${PGSERVICE}" -c "SELECT qgep_od.update_depth(NULL, true);"
 
 # Add Export views
 
