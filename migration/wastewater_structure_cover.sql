@@ -61,7 +61,10 @@ INSERT INTO qgep_od.vw_qgep_wastewater_structure
   co_fastening,
   co_level,
   co_material,
---  positional_accuracy,
+  co_pully_id_topobase,
+  co_pully_table_topobase,
+  co_pully_db_topobase,
+  --  positional_accuracy,
   --co_identifier, takes ws identifier as default
   co_remark,
   --node
@@ -69,6 +72,9 @@ INSERT INTO qgep_od.vw_qgep_wastewater_structure
   --wn_identifier, takes ws identifier as default
   wn_pully_node_type,
   wn_pully_orientation,
+  wn_pully_id_topobase,
+  wn_pully_table_topobase,
+  wn_pully_db_topobase,
   --manhole
   ma_dimension1,
   ma_dimension2,
@@ -100,7 +106,10 @@ SELECT
   co_f.new, -- fastening
   deckel_geo.z1, -- level
   co_m.new, -- material
---  hp.new, -- horizontal positionning
+  --hp.new, -- horizontal positionning
+  deckel.fid,
+  'AW_SCHACHT_DECKEL',
+  'PULLY_ASS',
   --deckel.fid, --identifier
   deckel.bemerkung, --substr(deckel.bemerkung, 1, 80), -- remark on cover
   --node
@@ -108,6 +117,9 @@ SELECT
   --sohle.fid,
   10001,
   round(coalesce(sohle_geo.orientation,schacht_geo.orientation,0)/400*360,2),
+  sohle.fid,
+  'AW_SCHACHT_SOHLE',
+  'PULLY_ASS',
   --manhole
   schacht.dn, -- diameter nominal
   schacht.breite, -- width
