@@ -116,7 +116,7 @@ SELECT
   sohle_geo.z1,
   --sohle.fid,
   10001,
-  round(coalesce(sohle_geo.orientation,schacht_geo.orientation,0)/400*360,2),
+  round(coalesce(sohle_geo.orientation,schacht_geo.orientation,100)/400*360,2),
   sohle.fid,
   'AW_SCHACHT_SOHLE',
   'PULLY_ASS',
@@ -218,7 +218,7 @@ schacht.fid,
 art.value,
 mnt.new,
 coalesce(schacht_geo.z1,sohle_geo.z1,0),
-round(coalesce(sohle_geo.orientation,schacht_geo.orientation,0)/400*360,2),
+round(coalesce(sohle_geo.orientation,schacht_geo.orientation,100)/400*360,2),
 ST_SetSRID(ST_MakePoint( coalesce(sohle_geo.y1,schacht_geo.y1,0), coalesce(sohle_geo.x1,schacht_geo.x1,0), coalesce(sohle_geo.z1,schacht_geo.z1,0)),21781)::geometry(PointZ, 21781)
 
 FROM migration.schacht schacht
@@ -228,8 +228,33 @@ LEFT JOIN migration.schacht_sohle_geo sohle_geo ON sohle_geo.gid = sohle.gid
 LEFT JOIN pully_ass.aw_schacht_art_tbd art ON schacht.id_schachtart = art.id
 LEFT JOIN migration.map_node_type mnt ON schacht.id_schachtart = mnt.old
 WHERE schacht.id_status = 3
-AND ST_SetSRID(ST_MakePoint( coalesce(sohle_geo.y1,schacht_geo.y1,0), coalesce(sohle_geo.x1,schacht_geo.x1,0), coalesce(sohle_geo.z1,schacht_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
+AND ST_SetSRID(ST_MakePoint( coalesce(sohle_geo.y1,schacht_geo.y1,0), coalesce(sohle_geo.x1,schacht_geo.x1,0), coalesce(sohle_geo.z1,schacht_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL;
 
+
+/* Insertion des systèmes d'évacuation (Raccordements privés)*/
+
+INSERT INTO qgep_od.vw_wastewater_node
+(
+identifier,
+pully_node_type,
+pully_se_type,
+bottom_level,
+pully_orientation,
+situation_geometry
+)
+
+SELECT
+concat('SE ',evac.fid),
+10009,
+mst.new,
+coalesce(evac_geo.z1,0),
+round(coalesce(evac_geo.orientation,100)/400*360,2),
+ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781)
+
+FROM pully_ass.se_point_evac evac
+LEFT JOIN pully_ass.se_point_evac_geo evac_geo ON evac_geo.gid = evac.gid
+LEFT JOIN migration.map_se_type mst ON evac.types = mst.old
+WHERE ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL;
 
 -------------------------
 -- Surfacic wastewaterstructure
