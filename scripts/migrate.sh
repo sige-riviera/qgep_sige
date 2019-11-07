@@ -116,3 +116,9 @@ ${DIR}/datamodel/view/export/insert_export_views.sh
 
 ${DIR}/datamodel/view/pully/insert_sigip_views.sh
 
+# Topologie refresh
+
+psql "service=${PGSERVICE}" -c "REFRESH MATERIALIZED view qgep_od.vw_network_node WITH DATA";
+psql "service=${PGSERVICE}" -c "REFRESH MATERIALIZED view qgep_od.vw_network_segment WITH DATA";
+
+
