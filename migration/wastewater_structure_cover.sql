@@ -254,7 +254,216 @@ ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coale
 FROM pully_ass.se_point_evac evac
 LEFT JOIN pully_ass.se_point_evac_geo evac_geo ON evac_geo.gid = evac.gid
 LEFT JOIN migration.map_se_type mst ON evac.types = mst.old
-WHERE ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL;
+WHERE ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL 
+AND mst.new NOT IN (10110,10102,10103,10107,10108);
+
+/* Insertion des Raccordements dans wn raccordement */
+
+INSERT INTO qgep_od.vw_wastewater_node
+(
+identifier,
+pully_node_type,
+bottom_level,
+pully_orientation,
+situation_geometry
+)
+
+SELECT
+concat('SE ',evac.fid),
+10008,
+coalesce(evac_geo.z1,0),
+round(coalesce(evac_geo.orientation,100)/400*360,2),
+ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781)
+
+FROM pully_ass.se_point_evac evac
+LEFT JOIN pully_ass.se_point_evac_geo evac_geo ON evac_geo.gid = evac.gid
+LEFT JOIN migration.map_se_type mst ON evac.types = mst.old
+WHERE ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
+AND mst.new IN (10107);
+
+/* Insertion des chambres standard issues de SE Evac*/
+
+INSERT INTO qgep_od.vw_qgep_wastewater_structure
+ (
+  -- wastewater structure
+  identifier,
+  status,
+  structure_condition,
+  fk_owner,
+  ws_type,
+  pully_id_topobase,
+  pully_table_topobase,
+  pully_db_topobase,
+  --node
+  wn_bottom_level,
+  --wn_identifier, takes ws identifier as default
+  wn_pully_node_type,
+  wn_pully_orientation,
+  ma_function,
+  ma_material,
+  --infiltration_installation
+  situation_geometry
+)
+
+SELECT
+concat('SE ',evac.fid),
+8493, -- en service
+3362, -- aucun defaut
+2, -- prive
+'manhole',
+evac.fid, --fid
+'SE_POINT_EVAC',
+'PULLY_ASS',
+coalesce(evac_geo.z1,0),
+10001, --radier
+round(coalesce(evac_geo.orientation,100)/400*360,2),
+204, --regard de visite
+4541, --materiau
+ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781)
+
+FROM pully_ass.se_point_evac evac
+LEFT JOIN pully_ass.se_point_evac_geo evac_geo ON evac_geo.gid = evac.gid
+LEFT JOIN migration.map_se_type mst ON evac.types = mst.old
+WHERE ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
+AND mst.new IN (10110);
+
+/* Insertion des separateurs issues de SE Evac*/
+
+INSERT INTO qgep_od.vw_qgep_wastewater_structure
+ (
+  -- wastewater structure
+  identifier,
+  status,
+  structure_condition,
+  fk_owner,
+  ws_type,
+  pully_id_topobase,
+  pully_table_topobase,
+  pully_db_topobase,
+  --node
+  wn_bottom_level,
+  --wn_identifier, takes ws identifier as default
+  wn_pully_node_type,
+  wn_pully_orientation,
+  ma_function,
+  ma_material,
+  --infiltration_installation
+  situation_geometry
+)
+
+SELECT
+concat('SE ',evac.fid),
+8493, -- en service
+3362, -- aucun defaut
+2, -- prive
+'manhole',
+evac.fid, --fid
+'SE_POINT_EVAC',
+'PULLY_ASS',
+coalesce(evac_geo.z1,0),
+10001, --radier
+round(coalesce(evac_geo.orientation,100)/400*360,2),
+1008, --separateur d'hydrocarbures
+4541, --materiau
+ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781)
+
+FROM pully_ass.se_point_evac evac
+LEFT JOIN pully_ass.se_point_evac_geo evac_geo ON evac_geo.gid = evac.gid
+LEFT JOIN migration.map_se_type mst ON evac.types = mst.old
+WHERE ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
+AND mst.new IN (10108);
+
+/* Insertion des cheneaux issues de SE Evac*/
+
+INSERT INTO qgep_od.vw_qgep_wastewater_structure
+ (
+  -- wastewater structure
+  identifier,
+  status,
+  structure_condition,
+  fk_owner,
+  ws_type,
+  pully_id_topobase,
+  pully_table_topobase,
+  pully_db_topobase,
+  --node
+  wn_bottom_level,
+  --wn_identifier, takes ws identifier as default
+  wn_pully_node_type,
+  wn_pully_orientation,
+  ma_function,
+  ma_material,
+  --infiltration_installation
+  situation_geometry
+)
+
+SELECT
+concat('SE ',evac.fid),
+8493, -- en service
+3362, -- aucun defaut
+2, -- prive
+'manhole',
+evac.fid, --fid
+'SE_POINT_EVAC',
+'PULLY_ASS',
+coalesce(evac_geo.z1,0),
+10001, --radier
+round(coalesce(evac_geo.orientation,100)/400*360,2),
+3267, --chambre de récolte des eaux de toiture
+4541, --materiau
+ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781)
+
+FROM pully_ass.se_point_evac evac
+LEFT JOIN pully_ass.se_point_evac_geo evac_geo ON evac_geo.gid = evac.gid
+LEFT JOIN migration.map_se_type mst ON evac.types = mst.old
+WHERE ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
+AND mst.new IN (10103);
+
+/* Insertion des  issues de SE Evac*/
+
+INSERT INTO qgep_od.vw_qgep_wastewater_structure
+ (
+  -- wastewater structure
+  identifier,
+  status,
+  structure_condition,
+  fk_owner,
+  ws_type,
+  pully_id_topobase,
+  pully_table_topobase,
+  pully_db_topobase,
+  --node
+  wn_bottom_level,
+  --wn_identifier, takes ws identifier as default
+  wn_pully_node_type,
+  wn_pully_orientation,
+  ma_function,
+  ma_material,
+  --infiltration_installation
+  situation_geometry
+)
+
+SELECT
+concat('SE ',evac.fid),
+8493, -- en service
+3362, -- aucun defaut
+2, -- prive
+'manhole',
+evac.fid, --fid
+'SE_POINT_EVAC',
+'PULLY_ASS',
+coalesce(evac_geo.z1,0),
+10001, --radier
+round(coalesce(evac_geo.orientation,100)/400*360,2),
+3266, --chambre avec grille d'entrée
+4541, --materiau
+ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781)
+
+FROM pully_ass.se_point_evac evac
+LEFT JOIN pully_ass.se_point_evac_geo evac_geo ON evac_geo.gid = evac.gid
+LEFT JOIN migration.map_se_type mst ON evac.types = mst.old
+WHERE ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
+AND mst.new IN (10102);
 
 -------------------------
 -- Surfacic wastewaterstructure
