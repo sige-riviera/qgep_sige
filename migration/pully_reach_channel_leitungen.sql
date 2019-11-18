@@ -16,7 +16,7 @@ INSERT INTO qgep_od.vw_qgep_reach(
   width,
   material,
   length_effective,
-  _slope_per_mill,
+  --_slope_per_mill,
   progression_geometry,
   elevation_determination,
   horizontal_positioning,
@@ -50,8 +50,8 @@ SELECT
   profil_breite, --clear_height
   profil_hoehe, -- width
   rml.new, -- material
-  ST_3dLength(geometry), -- length_effective
-  gefaelle, --slope per mill
+  ST_3dLength(geometry)::numeric(7,2), -- length_effective
+  --gefaelle, --slope per mill
   geometry, -- progression_geometry
   ed.new,
   COALESCE(hp.new, 5379),
@@ -59,7 +59,7 @@ SELECT
   --Channel
   fhl.new, -- function_hierarchic
   fhyl.new, -- function_hydraulic
-  laenge, -- pipe_length
+  laenge::numeric(7,2), -- ch_pipe_length
   uc.new, -- usage_current
   --Wastewater Structure
   st.new, -- status
@@ -75,10 +75,10 @@ SELECT
   --(Automatic)
   --Reach point from
   fid_vs,
-  rp_from_level,
+  rp_from_level::numeric(7,2),
   --Reach point to
   fid_bs,
-  rp_to_level
+  rp_to_level::numeric(7,2)
 
 FROM pully_ass.aw_anschlussleitung anschluss
 LEFT JOIN anschlussleitungen_geo geom on geom.gid = anschluss.gid

@@ -81,7 +81,8 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/pully_reach_
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/belmont_reach_channel.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/pully_reach_channel_leitungen.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/belmont_reach_channel_leitungen.sql
-psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/prank_weir.sql
+#psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/prank_weir.sql
+#To be solved
 
 # Recreate views
 #psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/90_create_topology.sql
@@ -121,4 +122,7 @@ ${DIR}/datamodel/view/pully/insert_sigip_views.sh
 psql "service=${PGSERVICE}" -c "REFRESH MATERIALIZED view qgep_od.vw_network_node WITH DATA";
 psql "service=${PGSERVICE}" -c "REFRESH MATERIALIZED view qgep_od.vw_network_segment WITH DATA";
 
+# Audit update (Temp for delta test)
+
+psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/audit.sql
 
