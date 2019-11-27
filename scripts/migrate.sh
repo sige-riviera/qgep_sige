@@ -103,6 +103,9 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/data_media.s
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/lien_chambres_pully.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/lien_collecteurs_pully.sql
 
+# Post migration
+psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/post_migration.sql
+
 # Symbology
 psql "service=${PGSERVICE}" -c "SELECT qgep_sys.create_symbology_triggers();"
 psql "service=${PGSERVICE}" -c "SELECT qgep_od.update_wastewater_structure_label(NULL, true);"
@@ -118,11 +121,9 @@ ${DIR}/datamodel/view/export/insert_export_views.sh
 ${DIR}/datamodel/view/pully/insert_sigip_views.sh
 
 # Topologie refresh
-
 psql "service=${PGSERVICE}" -c "REFRESH MATERIALIZED view qgep_od.vw_network_node WITH DATA";
 psql "service=${PGSERVICE}" -c "REFRESH MATERIALIZED view qgep_od.vw_network_segment WITH DATA";
 
 # Audit update (Temp for delta test)
-
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/audit.sql
 

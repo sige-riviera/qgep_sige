@@ -503,3 +503,42 @@ SET identifier = schacht.name
 FROM sa.aw_schacht AS schacht
 WHERE ws.identifier = schacht.fid::text;
 */
+
+------------------------
+-- Update Covers geometries
+------------------------
+
+UPDATE qgep_od.vw_cover
+SET
+  situation_geometry = selection.cover_geometry
+FROM
+(SELECT
+  deckel.fid as cover_fid,
+  ST_SetSRID(ST_MakePoint( deckel_geo.y1, deckel_geo.x1, coalesce(deckel_geo.z1,0)),21781)::geometry(PointZ, 21781) as cover_geometry
+
+FROM migration.schacht_deckel deckel
+LEFT JOIN migration.schacht_deckel_geo deckel_geo ON deckel_geo.gid = deckel.gid
+) as selection
+
+WHERE pully_id_topobase = selection.cover_fid::character varying
+AND selection.cover_geometry IS NOT NULL;
+
+------------------------
+-- Update Nodes geometries
+------------------------
+
+UPDATE qgep_od.vw_wastewater_node
+SET
+  situation_geometry = selection.node_geometry
+FROM
+(SELECT
+  sohle.fid as node_fid,
+  ST_SetSRID(ST_MakePoint( sohle_geo.y1, sohle_geo.x1, coalesce(sohle_geo.z1,0)),21781)::geometry(PointZ, 21781) as node_geometry
+
+FROM migration.schacht_sohle sohle
+LEFT JOIN migration.schacht_sohle_geo sohle_geo ON sohle_geo.gid = sohle.gid
+) as selection
+
+WHERE pully_id_topobase = selection.node_fid::character varying
+AND selection.node_geometry IS NOT NULL;
+
