@@ -21,14 +21,13 @@ CREATE TABLE migration.map_usage_current (
 ALTER TABLE migration.map_usage_current OWNER TO postgres;
 
 INSERT INTO migration.map_usage_current (old, new) VALUES
-(1,	4524), -- Eaux industrielles -> industrial wastewater
+(1,	4571), -- Eaux industrielles -> industrial wastewater
 (2,	4571), -- conduite de drainage -> inconnu / ajouter channel_function hydraulic seepage waterdrain	
 (4,	4522), -- Eaux mixtes -> combined wastewater
-(5,	4520), -- Eaux pluviales -> rain_wastewater
+(5,	4514), -- Eaux pluviales -> eaux claires
 (6,	4526), -- Eaux usées -> wastewater
 (7,	4571), -- inconnu -> unknown
 (10,	5322), -- tout a l'égout -> combined wastewater
 (11,	4514), -- Eaux claires -> clean wastewater
-(12,	5322), -- inconnu au bataillon -> DOC SIGE?
 (NULL,	4571) -- NULL -> unknown
 ;
