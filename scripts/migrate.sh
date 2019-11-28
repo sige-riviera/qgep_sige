@@ -76,6 +76,7 @@ psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/mappings/pro
 # Migration
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/organisations.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/wastewater_structure_cover.sql
+psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/points_detail.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/profiles.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/pully_reach_channel.sql
 psql "service=${PGSERVICE}" -v ON_ERROR_STOP=on -f ${DIR}/migration/belmont_reach_channel.sql

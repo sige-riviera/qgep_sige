@@ -492,17 +492,6 @@ SET detail_geometry_geometry = schachtdetail_geo.geometry
 FROM schachtdetail_geo
 WHERE ws.identifier = schachtdetail_geo.fid_schacht::text;
 */
-------------------------
--- Update wastewaterstructure_identifier
-------------------------
-
-/*
-To uncomment and run for final migration
-UPDATE qgep.od_wastewater_structure AS ws
-SET identifier = schacht.name
-FROM sa.aw_schacht AS schacht
-WHERE ws.identifier = schacht.fid::text;
-*/
 
 ------------------------
 -- Update Covers geometries
