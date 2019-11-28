@@ -23,6 +23,14 @@
  * At the end of the script the old fid is replaced with the real identifier.
  */
 
+/* Clean the table before import*/
+
+TRUNCATE qgep_dr.constructionpoint;
+TRUNCATE qgep_dr.constructionline;
+
+ALTER SEQUENCE qgep_dr.constructionpoint_id_seq RESTART 1;
+ALTER SEQUENCE qgep_dr.constructionline_id_seq RESTART 1;
+
 /*Insertion des points de détail Pully*/
 
 INSERT INTO qgep_dr.constructionpoint
@@ -33,9 +41,9 @@ remark,
 geometry
 )
 
-SELECT 
+SELECT
 coalesce(geo.z1,0),
-400, 
+400,
 concat('PdD Pully ', punkt.fid),
 ST_SetSRID(ST_MakePoint( coalesce(geo.y1,0), coalesce(geo.x1,0), coalesce(geo.z1,0)),21781)::geometry(PointZ, 21781)
 FROM
@@ -45,7 +53,7 @@ LEFT JOIN pully_ass.aw_detail_punkt_geo geo ON punkt.gid = geo.gid
 --LEFT JOIN pully_ass.aw_detail_punkt_fkt_tbd fkt ON punkt.id_funktion = fkt.id
 --LEFT JOIN pully_ass.aw_lagegenauigkeit_tbd lage ON punkt.id_lagegenauigkeit = lage.id
 WHERE ST_SetSRID(ST_MakePoint( coalesce(geo.y1,0), coalesce(geo.x1,0), coalesce(geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
-AND id_art = 1
+AND id_art = 1;
 
 /*Insertion des points de détail Belmont*/
 
@@ -57,19 +65,18 @@ remark,
 geometry
 )
 
-SELECT 
+SELECT
 coalesce(geo.z1,0),
-400, 
+400,
 concat('PdD Belmont ', punkt.fid),
 ST_SetSRID(ST_MakePoint( coalesce(geo.y1,0), coalesce(geo.x1,0), coalesce(geo.z1,0)),21781)::geometry(PointZ, 21781)
 FROM
 belmont_ass.aw_detail_punkt punkt
 LEFT JOIN belmont_ass.aw_detail_punkt_geo geo ON punkt.gid = geo.gid
 WHERE ST_SetSRID(ST_MakePoint( coalesce(geo.y1,0), coalesce(geo.x1,0), coalesce(geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
-AND id_art = 1
+AND id_art = 1;
 
-
-/*Insertion des points de conduite Pully*/
+/* Insertion des points de conduite Pully */
 
 INSERT INTO qgep_dr.constructionpoint
 (
@@ -88,9 +95,9 @@ FROM
 pully_ass.aw_detail_punkt punkt
 LEFT JOIN pully_ass.aw_detail_punkt_geo geo ON punkt.gid = geo.gid
 WHERE ST_SetSRID(ST_MakePoint( coalesce(geo.y1,0), coalesce(geo.x1,0), coalesce(geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
-AND id_art = 3
+AND id_art = 3;
 
-/*Insertion des points de conduite Belmont*/
+/* Insertion des points de conduite Belmont */
 
 INSERT INTO qgep_dr.constructionpoint
 (
@@ -109,6 +116,46 @@ FROM
 belmont_ass.aw_detail_punkt punkt
 LEFT JOIN belmont_ass.aw_detail_punkt_geo geo ON punkt.gid = geo.gid
 WHERE ST_SetSRID(ST_MakePoint( coalesce(geo.y1,0), coalesce(geo.x1,0), coalesce(geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
-AND id_art = 3
+AND id_art = 3;
 
+/* Insertion des points de raccordement Pully */
 
+INSERT INTO qgep_dr.constructionpoint
+(
+altitude,
+code,
+remark,
+geometry
+)
+
+SELECT
+coalesce(geo.z1,0),
+403,
+concat('PdR Pully ', punkt.fid),
+ST_SetSRID(ST_MakePoint( coalesce(geo.y1,0), coalesce(geo.x1,0), coalesce(geo.z1,0)),21781)::geometry(PointZ, 21781)
+FROM
+pully_ass.aw_anschlusspunkte punkt
+LEFT JOIN pully_ass.aw_anschlusspunkte_geo geo ON punkt.gid = geo.gid
+WHERE ST_SetSRID(ST_MakePoint( coalesce(geo.y1,0), coalesce(geo.x1,0), coalesce(geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
+AND id_art = 3;
+
+/* Insertion des points de raccordement Belmont */
+
+INSERT INTO qgep_dr.constructionpoint
+(
+altitude,
+code,
+remark,
+geometry
+)
+
+SELECT
+coalesce(geo.z1,0),
+403,
+concat('PdR Belmont ', punkt.fid),
+ST_SetSRID(ST_MakePoint( coalesce(geo.y1,0), coalesce(geo.x1,0), coalesce(geo.z1,0)),21781)::geometry(PointZ, 21781)
+FROM
+belmont_ass.aw_anschlusspunkte punkt
+LEFT JOIN belmont_ass.aw_anschlusspunkte_geo geo ON punkt.gid = geo.gid
+WHERE ST_SetSRID(ST_MakePoint( coalesce(geo.y1,0), coalesce(geo.x1,0), coalesce(geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL
+AND id_art = 3;
