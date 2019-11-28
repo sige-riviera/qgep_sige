@@ -35,6 +35,7 @@ INSERT INTO qgep_od.vw_qgep_reach(
   ws_pully_id_topobase,
   ws_pully_table_topobase,
   ws_pully_db_topobase,
+  ws_pully_validation,
   --Network element
   identifier,
   --Reach point from
@@ -70,6 +71,7 @@ SELECT
   anschluss.fid,
   'AW_ANSCHLUSSLEITUNG',
   'PULLY_ASS',
+  true,
   --Network element
   anschluss.fid, -- re_identifier
   --(Automatic)

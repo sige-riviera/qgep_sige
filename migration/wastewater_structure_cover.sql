@@ -55,6 +55,7 @@ INSERT INTO qgep_od.vw_qgep_wastewater_structure
   pully_id_topobase,
   pully_table_topobase,
   pully_db_topobase,
+  pully_validation,
   -- cover
   co_shape,
   co_diameter,
@@ -100,6 +101,7 @@ SELECT
   schacht.fid,
   'AW_SCHACHT',
   'PULLY_ASS',
+  true,
   --cover
   co_s.new,  -- shape
   deckel.deckel_dn, -- diameter
