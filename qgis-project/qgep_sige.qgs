@@ -12825,7 +12825,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="5;2"/>
+              <prop k="customdash" v=""/>
               <prop k="customdash_dd_active" v="0"/>
               <prop k="customdash_dd_expression" v=""/>
               <prop k="customdash_dd_field" v=""/>
@@ -12841,7 +12841,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="1"/>
+              <prop k="use_custom_dash" v="0"/>
               <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
@@ -12860,7 +12860,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="1.5;1"/>
+              <prop k="customdash" v=""/>
               <prop k="customdash_dd_active" v="0"/>
               <prop k="customdash_dd_expression" v=""/>
               <prop k="customdash_dd_field" v=""/>
@@ -12876,7 +12876,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="1"/>
+              <prop k="use_custom_dash" v="0"/>
               <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
@@ -12895,7 +12895,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="color_dd_expression" v="CASE WHEN usage_current IN (4514, 4520) THEN '0,0,255,255' WHEN usage_current = 4516 THEN '0,255,0,255' WHEN usage_current = 4518 THEN '0,170,255,255' WHEN usage_current = 4522 THEN '102,0,102,255' WHEN usage_current IN (4524, 4526) THEN '255,0,0,255' ELSE '161,161,161,255' END"/>
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
-              <prop k="customdash" v="1.5;1"/>
+              <prop k="customdash" v=""/>
               <prop k="customdash_dd_active" v="0"/>
               <prop k="customdash_dd_expression" v=""/>
               <prop k="customdash_dd_field" v=""/>
@@ -12911,7 +12911,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="1"/>
+              <prop k="use_custom_dash" v="0"/>
               <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
               <effect enabled="0" type="effectStack">
                 <effect type="drawSource">
