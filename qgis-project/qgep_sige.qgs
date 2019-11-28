@@ -12826,10 +12826,10 @@ def my_form_open(dialog, layer, feature):
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="5;2"/>
-              <prop k="customdash_dd_active" v="1"/>
-              <prop k="customdash_dd_expression" v="CASE WHEN horizontal_positioning = 5378 THEN '1;0' ELSE '4;2' END"/>
+              <prop k="customdash_dd_active" v="0"/>
+              <prop k="customdash_dd_expression" v=""/>
               <prop k="customdash_dd_field" v=""/>
-              <prop k="customdash_dd_useexpr" v="1"/>
+              <prop k="customdash_dd_useexpr" v="0"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
@@ -12861,10 +12861,10 @@ def my_form_open(dialog, layer, feature):
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_dd_active" v="1"/>
-              <prop k="customdash_dd_expression" v="CASE WHEN horizontal_positioning = 5378 THEN '1;0' ELSE '4;2' END"/>
+              <prop k="customdash_dd_active" v="0"/>
+              <prop k="customdash_dd_expression" v=""/>
               <prop k="customdash_dd_field" v=""/>
-              <prop k="customdash_dd_useexpr" v="1"/>
+              <prop k="customdash_dd_useexpr" v="0"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
@@ -12896,10 +12896,10 @@ def my_form_open(dialog, layer, feature):
               <prop k="color_dd_field" v=""/>
               <prop k="color_dd_useexpr" v="1"/>
               <prop k="customdash" v="1.5;1"/>
-              <prop k="customdash_dd_active" v="1"/>
-              <prop k="customdash_dd_expression" v="CASE WHEN horizontal_positioning = 5378 THEN '1;0' ELSE '4;2' END"/>
+              <prop k="customdash_dd_active" v="0"/>
+              <prop k="customdash_dd_expression" v=""/>
               <prop k="customdash_dd_field" v=""/>
-              <prop k="customdash_dd_useexpr" v="1"/>
+              <prop k="customdash_dd_useexpr" v="0"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
@@ -12991,7 +12991,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Cantarell"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -13022,7 +13022,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/minFeatureSize" value="12"/>
         <property key="labeling/multilineAlign" value="0"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
+        <property key="labeling/namedStyle" value="Normal"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
@@ -15132,8 +15132,9 @@ def copy_style():
       <value>EPSG:2056</value>
     </WMSCrsList>
     <Digitizing>
-      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <DefaultSnapToleranceUnit type="int">1</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
+        <value>district20190401140521140</value>
         <value>od_wastewater_structure</value>
         <value>vw_cover___</value>
         <value>vw_network_node20150607120529398</value>
@@ -15141,26 +15142,88 @@ def copy_style():
         <value>vw_qgep_reach</value>
         <value>vw_qgep_wastewater_structure</value>
         <value>vw_wastewater_node20150607121012062</value>
+        <value>no_nomenclature_copier20181108104111532</value>
+        <value>od_entree_batiment_copier20181108104111732</value>
+        <value>bf_point_limite_copier20181108104111885</value>
+        <value>pf_points_fixes_copier20181108104112082</value>
+        <value>ab_rue_copier20181108104112287</value>
+        <value>lc_limites_commune_copier20181108104112378</value>
+        <value>bf_immeuble_copier20181108104112829</value>
+        <value>od_element_lineaire_copier20181108104112570</value>
+        <value>od_element_surfacique_copier20181108104112995</value>
+        <value>cs_couverture_sol_copier20181108104113163</value>
+        <value>no_nomenclature20161124151011953</value>
+        <value>od_entree_batiment20161124100003328</value>
+        <value>bf_point_limite20161123141033694</value>
+        <value>pf_points_fixes20161123144654375</value>
+        <value>ab_rue20161122113837293</value>
+        <value>lc_limites_commune20180525110719694</value>
+        <value>bf_immeuble20161019163752305</value>
+        <value>od_element_lineaire20161123134458480</value>
+        <value>od_element_surfacique20161123111234045</value>
+        <value>cs_couverture_sol20161117155047081</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
       </LayerSnappingEnabledList>
       <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
       <LayerSnappingToleranceUnitList type="QStringList">
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
         <value>to_vertex_and_segment</value>
@@ -15170,17 +15233,59 @@ def copy_style():
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
       </LayerSnapToList>
-      <DefaultSnapType type="QString">off</DefaultSnapType>
-      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <DefaultSnapType type="QString">to vertex and segment</DefaultSnapType>
+      <DefaultSnapTolerance type="double">20</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
     <Identify>
