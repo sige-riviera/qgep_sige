@@ -32,6 +32,8 @@ INSERT INTO qgep_od.vw_qgep_reach(
   ws_identifier,
   remark, --moved to reach
   ws_structure_condition,
+  ws_pully_controle_video_date,
+  ws_pully_controle_terrain_date,
   ws_pully_id_topobase,
   ws_pully_table_topobase,
   ws_pully_db_topobase,
@@ -69,6 +71,8 @@ SELECT
   haltung.name, --ws_identifier
   bemerkung, --remark
   rst.new,
+  haltung.p_controle_video_date,
+  haltung.p_controle_terrain_date,
   haltung.fid,
   'AW_HALTUNG',
   'PULLY_ASS',
