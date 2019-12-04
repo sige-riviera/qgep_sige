@@ -43,7 +43,8 @@ SELECT
 FROM belmont_ass_spatial.aw_schachtdetail
 WHERE   ST_GeometryType(geom) = 'ST_Polygon'
 	AND fid_schacht IS NOT NULL) AS selection
-WHERE wastewater_structure.pully_id_topobase = selection.fid_schacht::character varying;
+WHERE wastewater_structure.pully_id_topobase = selection.fid_schacht::character varying
+AND wastewater_structure.obj_id LIKE '%WS%';
 
 --Update detailed wastwater structures
 
@@ -57,7 +58,8 @@ LEFT JOIN pully_ass_spatial.aw_sbwdetail detail ON detail.fid_sonderbauwerk = sb
 WHERE sbw.fid_schacht IS NOT NULL
 AND detail.fid_sonderbauwerk IS NOT NULL
 AND ST_GeometryType(geom) = 'ST_Polygon') as selection
-WHERE selection.fid_schacht::character varying = wastewater_structure.pully_id_topobase;
+WHERE selection.fid_schacht::character varying = wastewater_structure.pully_id_topobase
+AND wastewater_structure.obj_id LIKE '%WS%';
 
 --Update sbw detail
 
@@ -71,5 +73,6 @@ LEFT JOIN pully_ass_spatial.aw_sbwdetail detail ON detail.fid_sbw_wehr = sbw_w.f
 WHERE sbw_w.s_id IS NOT NULL
 AND detail.fid_sbw_wehr IS NOT NULL
 AND ST_GeometryType(geom) = 'ST_Polygon') as selection
-WHERE selection.fid_schacht::character varying = wastewater_structure.pully_id_topobase;
+WHERE selection.fid_schacht::character varying = wastewater_structure.pully_id_topobase
+AND wastewater_structure.obj_id LIKE '%WS%';
 
