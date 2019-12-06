@@ -220,7 +220,7 @@ schacht.fid,
 art.value,
 mnt.new,
 coalesce(schacht_geo.z1,sohle_geo.z1,0),
-round(coalesce(sohle_geo.orientation,schacht_geo.orientation,100)/400*360,2),
+round(coalesce(sohle_geo.orientation,schacht_geo.orientation,0.0)/400.0*360.0 + 90.0,2),
 ST_SetSRID(ST_MakePoint( coalesce(sohle_geo.y1,schacht_geo.y1,0), coalesce(sohle_geo.x1,schacht_geo.x1,0), coalesce(sohle_geo.z1,schacht_geo.z1,0)),21781)::geometry(PointZ, 21781)
 
 FROM migration.schacht schacht
@@ -250,7 +250,7 @@ concat('SE ',evac.fid),
 10009,
 mst.new,
 coalesce(evac_geo.z1,0),
-round(coalesce(evac_geo.orientation,100)/400*360,2),
+round(coalesce(evac_geo.orientation,0.0)/400.0*360.0+90.0,2),
 ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781)
 
 FROM pully_ass.se_point_evac evac
@@ -274,7 +274,7 @@ SELECT
 concat('SE ',evac.fid),
 10008,
 coalesce(evac_geo.z1,0),
-round(coalesce(evac_geo.orientation,100)/400*360,2),
+round(coalesce(evac_geo.orientation,0.0)/400.0*360.0+90.0,2),
 ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781)
 
 FROM pully_ass.se_point_evac evac
@@ -318,7 +318,7 @@ evac.fid, --fid
 'PULLY_ASS',
 coalesce(evac_geo.z1,0),
 10001, --radier
-round(coalesce(evac_geo.orientation,100)/400*360,2),
+round(coalesce(evac_geo.orientation,0.0)/400.0*360.0+90.0,2),
 204, --regard de visite
 4541, --materiau
 ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781)
@@ -364,7 +364,7 @@ evac.fid, --fid
 'PULLY_ASS',
 coalesce(evac_geo.z1,0),
 10001, --radier
-round(coalesce(evac_geo.orientation,100)/400*360,2),
+round(coalesce(evac_geo.orientation,0.0)/400.0*360.0+90.0,2),
 1008, --separateur d'hydrocarbures
 4541, --materiau
 ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781)
@@ -410,7 +410,7 @@ evac.fid, --fid
 'PULLY_ASS',
 coalesce(evac_geo.z1,0),
 10001, --radier
-round(coalesce(evac_geo.orientation,100)/400*360,2),
+round(coalesce(evac_geo.orientation,0.0)/400.0*360.0+90.0,2),
 3267, --chambre de récolte des eaux de toiture
 4541, --materiau
 ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781)
@@ -456,7 +456,7 @@ evac.fid, --fid
 'PULLY_ASS',
 coalesce(evac_geo.z1,0),
 10001, --radier
-round(coalesce(evac_geo.orientation,100)/400*360,2),
+round(coalesce(evac_geo.orientation,0.0)/400.0*360.0+90.0,2),
 3266, --chambre avec grille d'entrée
 4541, --materiau
 ST_SetSRID(ST_MakePoint( coalesce(evac_geo.y1,0), coalesce(evac_geo.x1,0), coalesce(evac_geo.z1,0)),21781)::geometry(PointZ, 21781)
