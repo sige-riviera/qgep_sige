@@ -9,26 +9,34 @@ UPDATE qgep_od.vw_qgep_reach AS reach
 SET identifier = haltung.name
 FROM pully_ass.aw_haltung AS haltung
 WHERE reach.ws_pully_db_topobase = 'PULLY_ASS'
-AND reach.identifier = haltung.fid::text;
+AND reach.identifier = haltung.fid::text
+AND reach.ws_pully_table_topobase = 'AW_HALTUNG'
+;
 
 -- Update identifiers for reaches Belmont
 UPDATE qgep_od.vw_qgep_reach AS reach
 SET identifier = haltung.name
 FROM belmont_ass.aw_haltung AS haltung
 WHERE reach.ws_pully_db_topobase = 'BELMONT_ASS'
-AND reach.identifier = haltung.fid::text;
+AND reach.identifier = haltung.fid::text
+AND reach.ws_pully_table_topobase = 'AW_HALTUNG'
+;
 
 -- Update identifiers for raccs Pully
 UPDATE qgep_od.vw_qgep_reach AS reach
 SET identifier = anschluss.name
 FROM pully_ass.aw_anschlussleitung AS anschluss
 WHERE reach.ws_pully_db_topobase = 'PULLY_ASS'
-AND reach.identifier = anschluss.fid::text;
+AND reach.identifier = anschluss.fid::text
+AND reach.ws_pully_table_topobase = 'AW_ANSCHLUSSLEITUNG'
+;
 
 -- Update identifiers for raccs Belmont
 UPDATE qgep_od.vw_qgep_reach AS reach
 SET identifier = anschluss.name
 FROM belmont_ass.aw_anschlussleitung AS anschluss
 WHERE reach.ws_pully_db_topobase = 'BELMONT_ASS'
-AND reach.identifier = anschluss.fid::text;
+AND reach.identifier = anschluss.fid::text
+AND reach.ws_pully_table_topobase = 'AW_ANCHLUSSLEITUNG'
+;
 

@@ -70,7 +70,7 @@ SELECT
   haltung.id_eigentumsverhaeltnis, -- fk_owner
   haltung.name, --ws_identifier
   bemerkung, --remark
-  rst.new,
+  rst.new, --reach condition
   haltung.p_controle_video_date,
   haltung.p_controle_terrain_date,
   haltung.fid,
