@@ -208,7 +208,7 @@ LEFT JOIN qgep_od.wastewater_structure ws ON schacht.fid::text = ws.identifier
 WHERE id_schachtart = 10006;
 
 -------------------------
--- 
+-- Chambres fictives
 -------------------------
 
 INSERT INTO qgep_od.vw_wastewater_node
@@ -218,6 +218,7 @@ remark,
 pully_node_type,
 bottom_level,
 pully_orientation,
+pully_fk_positional_accuracy,
 situation_geometry
 )
 
@@ -227,6 +228,7 @@ art.value,
 mnt.new,
 coalesce(schacht_geo.z1,sohle_geo.z1,0),
 round(coalesce(sohle_geo.orientation,schacht_geo.orientation,0.0)/400.0*360.0 + 90.0,2),
+coalesce(wn_pa.new,ws_pa.new,14778),
 ST_SetSRID(ST_MakePoint( coalesce(sohle_geo.y1,schacht_geo.y1,0), coalesce(sohle_geo.x1,schacht_geo.x1,0), coalesce(sohle_geo.z1,schacht_geo.z1,0)),21781)::geometry(PointZ, 21781)
 
 FROM migration.schacht schacht
@@ -235,6 +237,8 @@ LEFT JOIN migration.schacht_sohle sohle ON schacht.fid = sohle.fid_schacht
 LEFT JOIN migration.schacht_sohle_geo sohle_geo ON sohle_geo.gid = sohle.gid
 LEFT JOIN pully_ass.aw_schacht_art_tbd art ON schacht.id_schachtart = art.id
 LEFT JOIN migration.map_node_type mnt ON schacht.id_schachtart = mnt.old
+LEFT JOIN migration.map_node_positional_accuracy ws_pa ON schacht.id_lagegenauigkeit = ws_pa.old
+LEFT JOIN migration.map_node_positional_accuracy wn_pa ON sohle.id_lagegenauigkeit = wn_pa.old
 WHERE schacht.id_status = 3
 AND ST_SetSRID(ST_MakePoint( coalesce(sohle_geo.y1,schacht_geo.y1,0), coalesce(sohle_geo.x1,schacht_geo.x1,0), coalesce(sohle_geo.z1,schacht_geo.z1,0)),21781)::geometry(PointZ, 21781) IS NOT NULL;
 
