@@ -65,11 +65,12 @@ INSERT INTO qgep_od.vw_qgep_wastewater_structure
   co_pully_id_topobase,
   co_pully_table_topobase,
   co_pully_db_topobase,
-  --  positional_accuracy,
   --co_identifier, takes ws identifier as default
   co_remark,
+  co_positional_accuracy,
   --node
   wn_bottom_level,
+  wn_pully_fk_positional_accuracy,
   --wn_identifier, takes ws identifier as default
   wn_pully_node_type,
   wn_pully_orientation,
@@ -108,14 +109,15 @@ SELECT
   co_f.new, -- fastening
   deckel_geo.z1, -- level
   co_m.new, -- material
-  --hp.new, -- horizontal positionning
   deckel.fid,
   'AW_SCHACHT_DECKEL',
   'PULLY_ASS',
   --deckel.fid, --identifier
   deckel.bemerkung, --substr(deckel.bemerkung, 1, 80), -- remark on cover
+  coalesce(co_pa.new,15379),
   --node
   sohle_geo.z1,
+  coalesce(wn_pa.new,ws_pa.new,14778),
   --sohle.fid,
   10001,
   round(coalesce(sohle_geo.orientation,schacht_geo.orientation,100)/400*360,2),
@@ -159,8 +161,12 @@ LEFT JOIN migration.map_cover_shape co_s ON deckel.id_deckel_form = co_s.old
 LEFT JOIN migration.map_cover_fastening co_f ON deckel.id_deckel_form = co_f.old
 -- Material
 LEFT JOIN migration.map_cover_material co_m ON deckel.id_material = co_m.old
--- Horizontal positioning
---LEFT JOIN sa.map_horizontal_positioning hp ON deckel.id_lagegenauigkeit = hp.old
+-- Schacht Positioning
+LEFT JOIN migration.map_node_positional_accuracy ws_pa ON schacht.id_lagegenauigkeit = ws_pa.old
+-- Cover Positioning
+LEFT JOIN migration.map_cover_positional_accuracy co_pa  ON deckel.id_lagegenauigkeit = co_pa.old
+-- Node Positioning
+LEFT JOIN migration.map_node_positional_accuracy wn_pa ON sohle.id_lagegenauigkeit = wn_pa.old
 -- Manhole
 -- Material
 LEFT JOIN migration.map_manhole_material mm ON schacht.id_material = mm.old
